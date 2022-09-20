@@ -68,5 +68,6 @@ cmd = code-insiders --wait $MERGED
 
 [difftool "vscode"]
 cmd = code-insiders --wait --diff $LOCAL $REMOTE
+
 [fetch]
 prune = true
