@@ -62,10 +62,8 @@ export EDITOR='nano'
 export ARCHFLAGS="-arch x86_64"
 
 # pnpm
-if [ -z $WSLENV ]; then
-	export PNPM_HOME="/home/nikola/.local/share/pnpm"
-	export PATH="$PNPM_HOME:$PATH"
-fi
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
@@ -79,6 +77,8 @@ fi
 if [ -f "$HOME/.cargo/env" ]; then
 	. "$HOME/.cargo/env"
 fi
+
+export PATH="$PATH:$HOME/.cargo/bin"
 
 if [ -f "$NVM_DIR/nvm.sh" ]; then
 	. "$NVM_DIR/nvm.sh"
