@@ -1,0 +1,44 @@
+# tree(1) completion                                       -*- shell-script -*-
+
+_comp_cmd_tree()
+{
+    local cur prev words cword split
+    _init_completion -s || return
+
+    case $prev in
+        -!(-*)[LPIHT] | --filelimit | --timefmt | --help | --version)
+            return
+            ;;
+        --charset)
+            _comp_xfunc iconv charsets
+            return
+            ;;
+        -!(-*)o)
+            _filedir
+            return
+            ;;
+        --sort)
+            COMPREPLY=($(compgen -W "name version size mtime ctime" -- "$cur"))
+            return
+            ;;
+    esac
+
+    $split && return
+
+    if [[ $cur == -* ]]; then
+        COMPREPLY=($(compgen -W '$(_parse_help "$1")' -- "$cur"))
+        return
+    fi
+
+    # Note: bash-4.2 has a bug with [[ ${arr[*]} == *text* ]], so we
+    # assign ${words[*]} in a temporary variable "line".
+    local line="${words[*]}"
+    if [[ $line == *\ --fromfile\ * ]]; then
+        _filedir
+    else
+        _filedir -d
+    fi
+} &&
+    complete -F _comp_cmd_tree tree
+
+# ex: filetype=sh

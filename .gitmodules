@@ -1,0 +1,20 @@
+[submodule ".config/bash-completion"]
+path = .config/bash-completion
+url = ssh://git@github.com/NikolaRHristov/bash-completion.git
+
+[submodule ".config/dircolors-moonshine"]
+path = .config/dircolors-moonshine
+url = https://github.com/karoliskoncevicius/dircolors-moonshine
+
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = ssh://git@github.com/NikolaRHristov/nvim.git
+[submodule ".oh-my-bash"]
+	path = .oh-my-bash
+	url = ssh://git@github.com/NikolaRHristov/bash.git
+[submodule ".oh-my-posh"]
+	path = .oh-my-posh
+	url = ssh://git@github.com/NikolaRHristov/powershell.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = ssh://git@github.com/NikolaRHristov/zsh

@@ -1,0 +1,16 @@
+# Python >= 3.6.1 required here
+
+-r requirements.txt
+
+black ==22.3.0
+
+flake8 ==5.0.4
+pycodestyle ==2.9.1
+pyflakes ==2.5.0
+flake8-bugbear ==22.8.23
+
+isort ==5.9.3
+
+mypy ==0.941
+
+pre-commit >=2.4.0
