@@ -62,8 +62,10 @@ export EDITOR='nano'
 export ARCHFLAGS="-arch x86_64"
 
 # pnpm
-export PNPM_HOME="$HOME/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+if [ -z $WSLENV ]; then
+	export PNPM_HOME="$HOME/.local/share/pnpm"
+	export PATH="$PNPM_HOME:$PATH"
+fi
 # pnpm end
 
 if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
