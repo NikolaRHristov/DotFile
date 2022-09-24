@@ -48,5 +48,6 @@ yarn-error.log*
 
 .npmrc
 known_hosts
-.config
+.config/*
 !.config/nvim
+!.config/bash-completion
