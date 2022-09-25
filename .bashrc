@@ -62,7 +62,7 @@ export EDITOR='nano'
 export ARCHFLAGS="-arch x86_64"
 
 # pnpm
-if [ -z $WSLENV ]; then
+if [ -z ${WSLENV+} ]; then
 	export PNPM_HOME="$HOME/.local/share/pnpm"
 	export PATH="$PNPM_HOME:$PATH"
 fi
