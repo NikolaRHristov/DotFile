@@ -1,8 +1,11 @@
-
 case $- in
 *i*) ;;
 *) return ;;
 esac
+
+if [ -f ${WSLENV+} ]; then
+	export PATH="$PATH:$HOME/.config/xclip"
+fi
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
