@@ -1,3 +1,4 @@
+
 case $- in
 *i*) ;;
 *) return ;;
@@ -75,7 +76,6 @@ fi
 if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
 	. /usr/share/bash-completion/bash_completion
 fi
-
 
 if [ -f "$HOME/.cargo/env" ]; then
 	. "$HOME/.cargo/env"

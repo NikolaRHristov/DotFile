@@ -51,3 +51,5 @@ known_hosts
 .config/*
 !.config/nvim
 !.config/bash-completion
+!.config/xclip
+
