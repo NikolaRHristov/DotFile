@@ -1,0 +1,55 @@
+# Personal
+~*.docx
+~*.tmp
+Cargo.lock
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+debug.log
+.snowpack/
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Next.js
+.next/
+out/
+build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Turbo
+.turbo
+
+# Super
+.super
+
+# Moon
+.moon/cache
+
+.npmrc
+known_hosts
+.config/*
+!.config/nvim
+!.config/bash-completion
+!.config/xclip
+
