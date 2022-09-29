@@ -1,18 +1,12 @@
 [submodule ".oh-my-bash"]
 path = .oh-my-bash
-url = ssh://git@github.com/nikolarhristov/BASH.git
-[submodule ".oh-my-zsh"]
-path = .oh-my-zsh
-url = ssh://git@github.com/nikolarhristov/ZSH.git
+url = ssh://git@github.com/nikolarhristov/bash.git
 [submodule ".oh-my-posh"]
 path = .oh-my-posh
-url = ssh://git@github.com/nikolarhristov/Powershell.git
+url = ssh://git@github.com/nikolarhristov/powershell.git
 [submodule ".config/bash-completion"]
 path = .config/bash-completion
-url = ssh://git@github.com/nikolarhristov/BASH-completion.git
+url = ssh://git@github.com/nikolarhristov/bash-completion.git
 [submodule ".config/nvim"]
 path = .config/nvim
-url = ssh://git@github.com/nikolarhristov/VIM.git
-[submodule ".config/xclip"]
-	path = .config/xclip
-	url = ssh://git@github.com/nikolarhristov/XClip.git
+url = ssh://git@github.com/nikolarhristov/nvim.git
