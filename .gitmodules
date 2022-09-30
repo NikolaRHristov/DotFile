@@ -4,6 +4,9 @@ url = ssh://git@github.com/nikolarhristov/bash.git
 [submodule ".oh-my-posh"]
 path = .oh-my-posh
 url = ssh://git@github.com/nikolarhristov/powershell.git
+[submodule ".oh-my-zsh"]
+path = .oh-my-zsh
+url = ssh://git@github.com/nikolarhristov/zsh.git
 [submodule ".config/bash-completion"]
 path = .config/bash-completion
 url = ssh://git@github.com/nikolarhristov/bash-completion.git
