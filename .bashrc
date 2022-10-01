@@ -101,3 +101,4 @@ fi
 if [ -f ~/.functions ]; then
 	. ~/.functions
 fi
+export PATH=/root/.meteor:$PATH
