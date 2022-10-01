@@ -17,7 +17,7 @@ pager = delta
 excludesfile = ~/.gitignore
 sshCommand = plink
 fsmonitor = false
-editor = nvim
+editor = nano
 
 [pull]
 rebase = false
