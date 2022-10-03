@@ -1,7 +1,7 @@
 [user]
-name = Nikola R. Hristov
+name = Nikola Hristov
 email = nikola@nikolahristov.tech
-signingkey = CB09EB1F516B43D1
+signingkey = BAF2F5C7BAAD1367
 
 [filter "lfs"]
 clean = git-lfs clean -- %f
