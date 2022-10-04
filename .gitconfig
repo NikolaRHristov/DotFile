@@ -17,7 +17,7 @@ pager = delta
 excludesfile = ~/.gitignore
 sshCommand = plink
 fsmonitor = false
-editor = nano
+	editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
 
 [pull]
 rebase = false
