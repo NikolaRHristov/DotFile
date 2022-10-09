@@ -1,5 +1,5 @@
 [user]
-name = Nikola
+name = Nikola Hristov
 email = nikola@nikolahristov.tech
 signingkey = BAF2F5C7BAAD1367
 
@@ -17,7 +17,7 @@ pager = delta
 excludesfile = ~/.gitignore
 sshCommand = plink
 fsmonitor = false
-	editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
 
 [pull]
 rebase = false
