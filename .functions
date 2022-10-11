@@ -239,6 +239,7 @@ function clean_dependencies() {
 	find -iname .next -prune -exec rm -rf {} \;
 	find -iname yarn.lock -exec rm {} \;
 	find -iname yaml.lock -exec rm {} \;
+	find -iname berry.lock -exec rm {} \;
 	find -iname pnpm-lock.yaml -exec rm {} \;
 	find -iname package-lock.json -exec rm {} \;
 	find -iname composer.lock -execdir cargo clean \;
