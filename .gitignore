@@ -1,10 +1,6 @@
 # Personal
 ~*.docx
 ~*.tmp
-Cargo.lock
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
 debug.log
 .snowpack/
 
