@@ -16,7 +16,7 @@ symlinks = true
 pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
-fsmonitor = false
+fsmonitor = true
 editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
 
 [pull]
@@ -26,7 +26,7 @@ rebase = false
 autoSetupRemote = true
 
 [credential]
-helper = manager-core
+	helper = wincred
 
 [credential "https://dev.azure.com"]
 useHttpPath = true
