@@ -44,8 +44,4 @@ yarn-error.log*
 
 .npmrc
 known_hosts
-.config/*
-!.config/nvim
-!.config/bash-completion
-!.config/xclip
-
+.config/configstore

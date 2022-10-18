@@ -1,3 +1,4 @@
+#!/bin/bash
 function backup_database() {
 	DB_EXCLUDE=(
 		"accounts"
@@ -9,24 +10,24 @@ function backup_database() {
 	)
 
 	echo "Enter Backup Directory:"
-	read -s DB_DIR
+	read -r -s DB_DIR
 
 	echo "Enter User:"
-	read -s DB_USER
+	read -r -s DB_USER
 
 	echo "Enter Password:"
-	read -s DB_PASS
+	read -r -s DB_PASS
 
 	echo "Enter Host:"
-	read -s DB_HOST
+	read -r -s DB_HOST
 
-	mkdir -p $DB_DIR
-	cd $DB_DIR
+	mkdir -p "$DB_DIR"
+	builtin cd "$DB_DIR" || exit
 
-	DBS=$(mysql -u$DB_USER -p"$DB_PASS" --host="$DB_HOST" -e "SHOW DATABASES;" | tr -d "| " | grep -v Database)
+	DBS=$(mysql -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" -e "SHOW DATABASES;" | tr -d "| " | grep -v Database)
 	BACKUP_DATE=$(date +%d_%m_%Y)
 
-	mkdir $BACKUP_DATE
+	mkdir -p "$BACKUP_DATE"
 
 	for DBC in $DBS; do
 		for DBX in "${DB_EXCLUDE[@]}"; do
@@ -37,11 +38,11 @@ function backup_database() {
 
 		if [[ "$DBC" != _* ]]; then
 			echo "Dumping Database: $DBC"
-			mysqldump --single-transaction --set-gtid-purged=OFF -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" --databases $DBC >$BACKUP_DATE/$DBC.sql
+			mysqldump --single-transaction --set-gtid-purged=OFF -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" --databases "$DBC" >"$BACKUP_DATE"/"$DBC".sql
 		fi
 	done
 
-	cd -
+	builtin cd - || exit
 
 	unset DB_EXCLUDE
 	unset DBS
@@ -74,23 +75,23 @@ function extract() {
 	if [ -z "$1" ]; then
 		echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
 	else
-		if [ -f $1 ]; then
+		if [ -f "$1" ]; then
 			case $1 in
-			*.tar.bz2) tar xvjf ./$1 ;;
-			*.tar.gz) tar xvzf ./$1 ;;
-			*.tar.xz) tar xvJf ./$1 ;;
-			*.lzma) unlzma ./$1 ;;
-			*.bz2) bunzip2 ./$1 ;;
-			*.rar) unrar x -ad ./$1 ;;
-			*.gz) gunzip ./$1 ;;
-			*.tar) tar xvf ./$1 ;;
-			*.tbz2) tar xvjf ./$1 ;;
-			*.tgz) tar xvzf ./$1 ;;
-			*.zip) unzip ./$1 ;;
-			*.Z) uncompress ./$1 ;;
-			*.7z) 7z x ./$1 ;;
-			*.xz) unxz ./$1 ;;
-			*.exe) cabextract ./$1 ;;
+			*.tar.bz2) tar xvjf ./"$1" ;;
+			*.tar.gz) tar xvzf ./"$1" ;;
+			*.tar.xz) tar xvJf ./"$1" ;;
+			*.lzma) unlzma ./"$1" ;;
+			*.bz2) bunzip2 ./"$1" ;;
+			*.rar) unrar x -ad ./"$1" ;;
+			*.gz) gunzip ./"$1" ;;
+			*.tar) tar xvf ./"$1" ;;
+			*.tbz2) tar xvjf ./"$1" ;;
+			*.tgz) tar xvzf ./"$1" ;;
+			*.zip) unzip ./"$1" ;;
+			*.Z) uncompress ./"$1" ;;
+			*.7z) 7z x ./"$1" ;;
+			*.xz) unxz ./"$1" ;;
+			*.exe) cabextract ./"$1" ;;
 			*) echo "extract: '$1' - unknown archive method" ;;
 			esac
 		else
@@ -109,7 +110,7 @@ function get_id() {
 	if [ -z "$1" ]; then
 		printf "Usage: get_id <process_name>"
 	else
-		printf "Listing IDs for $1:\n\n"
+		printf "Listing IDs for %s:\n\n" "$1"
 
 		bash -c "ps aux | grep '$1' | awk '{printf \$11\" \"\$12 \" %s  \\n\", \$2} END {print \"\"}'"
 	fi
@@ -128,17 +129,17 @@ function install_npm() {
 }
 
 function proper_permissions() {
-	sudo \find . -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
-	sudo \find . -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
+	find . -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
+	find . -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
 }
 
 function run_in_dirs() {
 	for DIR in ./*; do
 		if [ -d "$DIR" ]; then
-			builtin cd "$DIR"
-			echo $PWD
+			builtin cd "$DIR" || exit
+			echo "$PWD"
 			bash -cl "$*"
-			builtin cd "$OLDPWD"
+			builtin cd "$OLDPWD" || exit
 		fi
 	done
 
@@ -155,11 +156,11 @@ function sign_all_commits() {
 }
 
 function sign_commits() {
-	git rebase --exec 'git commit --amend --no-edit -n -S' -i $1
+	git rebase --exec 'git commit --amend --no-edit -n -S' -i "$1"
 }
 
 function sshagent_findsockets() {
-	\find /tmp -uid $(id -u) -type s -name agent.\* 2>/dev/null
+	find /tmp -uid "$(id -u)" -type s -name agent.\* 2>/dev/null
 }
 
 function sshagent_testsocket() {
@@ -176,11 +177,11 @@ function sshagent_testsocket() {
 		return 2
 	fi
 
-	if [ -S $SSH_AUTH_SOCK ]; then
+	if [ -S "$SSH_AUTH_SOCK" ]; then
 		ssh-add -l >/dev/null
 		if [ $? = 2 ]; then
 			echo "Socket $SSH_AUTH_SOCK is dead!  Deleting!"
-			rm -f $SSH_AUTH_SOCK
+			rm -f "$SSH_AUTH_SOCK"
 			return 4
 		else
 			echo "Found ssh-agent $SSH_AUTH_SOCK"
@@ -200,12 +201,12 @@ function sshagent_init() {
 	if [ $AGENTFOUND = 0 ]; then
 		for agentsocket in $(sshagent_findsockets); do
 			if [ $AGENTFOUND != 0 ]; then break; fi
-			if sshagent_testsocket $agentsocket; then AGENTFOUND=1; fi
+			if sshagent_testsocket "$agentsocket"; then AGENTFOUND=1; fi
 		done
 	fi
 
 	if [ $AGENTFOUND = 0 ]; then
-		eval $(ssh-agent)
+		eval "$(ssh-agent)"
 	fi
 
 	unset AGENTFOUND
@@ -228,24 +229,24 @@ function update_npm() {
 
 function bump_dependencies() {
 	ncu -u --deep --dep "dev,optional,peer,prod,bundle" --color --concurrency 60
-	find -iname cargo.toml -execdir cargo upgrade \;
-	find -iname composer.json -execdir composer update \;
+	find . -iname cargo.toml -execdir cargo upgrade \;
+	find . -iname composer.json -execdir composer update \;
 }
 
 function clean_dependencies() {
-	find -iname node_modules -prune -exec rm -rf {} \;
-	find -iname .turbo -prune -exec rm -rf {} \;
-	find -iname .pnpm-debug.log -prune -exec rm -rf {} \;
-	find -iname .next -prune -exec rm -rf {} \;
-	find -iname yarn.lock -exec rm {} \;
-	find -iname yaml.lock -exec rm {} \;
-	find -iname berry.lock -exec rm {} \;
-	find -iname pnpm-lock.yaml -exec rm {} \;
-	find -iname package-lock.json -exec rm {} \;
-	find -iname composer.lock -execdir cargo clean \;
-	find -iname cargo.toml -execdir cargo clean \;
-	find -iname cargo.lock -exec rm {} \;
-	find -iname bun.lockb -exec rm {} \;
+	find . -iname node_modules -prune -exec rm -rf {} \;
+	find . -iname .turbo -prune -exec rm -rf {} \;
+	find . -iname .pnpm-debug.log -prune -exec rm -rf {} \;
+	find . -iname .next -prune -exec rm -rf {} \;
+	find . -iname yarn.lock -exec rm {} \;
+	find . -iname yaml.lock -exec rm {} \;
+	find . -iname berry.lock -exec rm {} \;
+	find . -iname pnpm-lock.yaml -exec rm {} \;
+	find . -iname package-lock.json -exec rm {} \;
+	find . -iname composer.lock -execdir cargo clean \;
+	find . -iname cargo.toml -execdir cargo clean \;
+	find . -iname cargo.lock -exec rm {} \;
+	find . -iname bun.lockb -exec rm {} \;
 }
 
 function tere() {
