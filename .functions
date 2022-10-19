@@ -129,8 +129,8 @@ function install_npm() {
 }
 
 function proper_permissions() {
-	find . -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
-	find . -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
+	find -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
+	find -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
 }
 
 function run_in_dirs() {
@@ -160,7 +160,7 @@ function sign_commits() {
 }
 
 function sshagent_findsockets() {
-	find /tmp -uid "$(id -u)" -type s -name agent.\* 2>/dev/null
+	\find /tmp -uid "$(id -u)" -type s -name agent.\* 2>/dev/null
 }
 
 function sshagent_testsocket() {
@@ -229,31 +229,33 @@ function update_npm() {
 
 function bump_dependencies() {
 	ncu -u --deep --dep "dev,optional,peer,prod,bundle" --color --concurrency 60
-	find . -iname cargo.toml -execdir cargo upgrade \;
-	find . -iname composer.json -execdir composer update \;
+	find -iname cargo.toml -execdir cargo upgrade \;
+	find -iname composer.json -execdir composer update \;
 }
 
 function clean_dependencies() {
-	find . -iname node_modules -prune -exec rm -rf {} \;
-	find . -iname .turbo -prune -exec rm -rf {} \;
-	find . -iname .pnpm-debug.log -prune -exec rm -rf {} \;
-	find . -iname .next -prune -exec rm -rf {} \;
-	find . -iname yarn.lock -exec rm {} \;
-	find . -iname yaml.lock -exec rm {} \;
-	find . -iname berry.lock -exec rm {} \;
-	find . -iname pnpm-lock.yaml -exec rm {} \;
-	find . -iname package-lock.json -exec rm {} \;
-	find . -iname composer.lock -execdir cargo clean \;
-	find . -iname cargo.toml -execdir cargo clean \;
-	find . -iname cargo.lock -exec rm {} \;
-	find . -iname bun.lockb -exec rm {} \;
+	find -iname node_modules -prune -exec rm -rf {} \;
+	find -iname .turbo -prune -exec rm -rf {} \;
+	find -iname .pnpm-debug.log -prune -exec rm -rf {} \;
+	find -iname .next -prune -exec rm -rf {} \;
+	find -iname yarn.lock -exec rm {} \;
+	find -iname yaml.lock -exec rm {} \;
+	find -iname berry.lock -exec rm {} \;
+	find -iname pnpm-lock.yaml -exec rm {} \;
+	find -iname package-lock.json -exec rm {} \;
+	find -iname composer.lock -execdir cargo clean \;
+	find -iname cargo.toml -execdir cargo clean \;
+	find -iname cargo.lock -exec rm {} \;
+	find -iname bun.lockb -exec rm {} \;
 }
 
 function tere() {
-	local result=$(/c/Users/nhris/.cargo/bin/tere "$@")
-	[ -n "$result" ] && cd -- "$result"
+	local result
+	result=$(/c/Users/nhris/.cargo/bin/tere "$@")
+	[ -n "$result" ] && cd -- "$result" || exit
 }
 
 function refresh() {
+	# shellcheck source=/dev/null
 	source ~/.bash_profile
 }

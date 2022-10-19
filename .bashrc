@@ -1,3 +1,4 @@
+#!/bin/bash
 case $- in
 *i*) ;;
 *) return ;;
@@ -11,7 +12,8 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export DO_NOT_TRACK=1
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+export GPG_TTY
 export PATH=$PATH:/usr/local/go/bin
 export OSH=~/.oh-my-bash
 
@@ -73,10 +75,12 @@ fi
 # pnpm end
 
 if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
+	# shellcheck source=/dev/null
 	. ~/.config/bash-completion/bash_completion
 fi
 
 if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
+	# shellcheck source=/dev/null
 	. /usr/share/bash-completion/bash_completion
 fi
 

@@ -22,6 +22,7 @@ module.exports = {
 	useTabs: true,
 	vueIndentScriptAndStyle: true,
 	plugins: [
+		// MODULES_DIR + "@trivago/prettier-plugin-sort-imports",
 		MODULES_DIR + "prettier-plugin-tailwindcss",
 		MODULES_DIR + "@prettier/plugin-php",
 		MODULES_DIR + "@prettier/plugin-lua",
@@ -33,9 +34,8 @@ module.exports = {
 		MODULES_DIR + "prettier-plugin-sh",
 		MODULES_DIR + "prettier-plugin-svelte",
 		MODULES_DIR + "prettier-plugin-toml",
-		MODULES_DIR + "@trivago/prettier-plugin-sort-imports",
 	],
-	tailwindConfig: "",
+	tailwindConfig: "D:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
 	overrides: [
 		{
 			files: "*.astro",
