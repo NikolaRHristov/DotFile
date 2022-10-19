@@ -1,4 +1,5 @@
-const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
+const MODULES_DIR =
+	"C:\\Users\\nhris\\AppData\\Local\\pnpm\\global\\5\\node_modules\\";
 
 module.exports = {
 	content: [

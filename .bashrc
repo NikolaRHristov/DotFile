@@ -45,9 +45,11 @@ completions=(
 	ssh
 	terraform
 )
+
 aliases=(
 	general
 )
+
 plugins=(
 	git
 	bashmarks
@@ -59,6 +61,7 @@ plugins=(
 #      plugins+=(tmux-autoattach)
 #  fi
 
+# shellcheck source=/dev/null
 source "$OSH"/oh-my-bash.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -85,12 +88,14 @@ if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
 fi
 
 if [ -f "$HOME/.cargo/env" ]; then
+	# shellcheck source=/dev/null
 	. "$HOME/.cargo/env"
 fi
 
 export PATH="$PATH:$HOME/.cargo/bin"
 
 if [ -f "$NVM_DIR/nvm.sh" ]; then
+	# shellcheck source=/dev/null
 	. "$NVM_DIR/nvm.sh"
 fi
 
@@ -105,3 +110,5 @@ fi
 if [ -f ~/.functions ]; then
 	. ~/.functions
 fi
+
+export npm_package_engines_node="v20.0.0"

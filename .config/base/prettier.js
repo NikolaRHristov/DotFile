@@ -1,4 +1,5 @@
-const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
+const MODULES_DIR =
+	"C:\\Users\\nhris\\AppData\\Local\\pnpm\\global\\5\\node_modules\\";
 
 module.exports = {
 	editorConfig: true,
@@ -22,7 +23,7 @@ module.exports = {
 	useTabs: true,
 	vueIndentScriptAndStyle: true,
 	plugins: [
-		// MODULES_DIR + "@trivago/prettier-plugin-sort-imports",
+		MODULES_DIR + "@trivago/prettier-plugin-sort-imports",
 		MODULES_DIR + "prettier-plugin-tailwindcss",
 		MODULES_DIR + "@prettier/plugin-php",
 		MODULES_DIR + "@prettier/plugin-lua",
@@ -35,7 +36,8 @@ module.exports = {
 		MODULES_DIR + "prettier-plugin-svelte",
 		MODULES_DIR + "prettier-plugin-toml",
 	],
-	tailwindConfig: "D:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
+	tailwindConfig:
+		"D:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
 	overrides: [
 		{
 			files: "*.astro",
