@@ -229,7 +229,7 @@ function update_npm() {
 
 function bump_dependencies() {
 	ncu -u --deep --dep "dev,optional,peer,prod,bundle" --color --concurrency 60
-	find -iname cargo.toml -execdir cargo upgrade \;
+	find -iname cargo.toml -execdir cargo upgrade --incompatible \;
 	find -iname composer.json -execdir composer update \;
 }
 
