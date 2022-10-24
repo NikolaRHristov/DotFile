@@ -23,7 +23,7 @@ editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insider
 rebase = false
 
 [push]
-autoSetupRemote = true
+	autoSetupRemote = true
 
 [credential]
 helper = wincred
@@ -72,3 +72,5 @@ cmd = code-insiders --wait --diff $LOCAL $REMOTE
 
 [fetch]
 prune = true
+[branch]
+	autoSetupMerge = true
