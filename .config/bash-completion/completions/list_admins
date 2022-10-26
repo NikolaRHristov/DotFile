@@ -1,0 +1,16 @@
+# mailman list_admins completion                           -*- shell-script -*-
+
+_list_admins() {
+	local cur prev words cword
+	_init_completion || return
+
+	if [[ $cur == -* ]]; then
+		COMPREPLY=($(compgen -W '--all-vhost --all --help' -- "$cur"))
+	else
+		_comp_xfunc list_lists mailman_lists
+	fi
+
+} &&
+	complete -F _list_admins list_admins
+
+# ex: filetype=sh

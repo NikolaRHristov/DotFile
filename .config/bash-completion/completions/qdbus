@@ -1,0 +1,13 @@
+# Qt qdbus, dcop completion                                -*- shell-script -*-
+
+_qdbus() {
+	local cur prev words cword
+	_init_completion || return
+
+	[[ $cur ]] && unset -v "words[$((${#words[@]} - 1))]"
+	COMPREPLY=($(compgen -W '$(command ${words[@]} 2>/dev/null | \
+        command sed "s/(.*)//")' -- "$cur"))
+} &&
+	complete -F _qdbus qdbus dcop
+
+# ex: filetype=sh

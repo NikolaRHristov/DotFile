@@ -1,0 +1,128 @@
+default_stages: [commit]
+
+repos:
+
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.17.0
+    hooks:
+      - id: gitlint
+        stages: [commit-msg]
+
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.5.1-1
+    hooks:
+      - id: shfmt-docker
+        types: [text]
+        files: ^(bash_completion|completions/.+|test/(config/bashrc|update-test-cmd-list)|.+\.sh(\.in)?)$
+        exclude: ^completions/(\.gitignore|Makefile.*)$
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.8.0.1
+    hooks:
+      - id: shellcheck
+        args: [-f, gcc]
+        types: [text]
+        files: ^(bash_completion|completions/.+|test/(config/bashrc|update-test-cmd-list)|.+\.sh(\.in)?)$
+        exclude: ^completions/(\.gitignore|Makefile.*)$
+        require_serial: false  # We disable SC1090 anyway, so parallel is ok
+
+  - repo: local
+    hooks:
+      - id: update-test-cmd-list
+        name: update-test-cmd-list
+        language: script
+        entry: test/update-test-cmd-list
+        files: ^test/t/.+\.py$
+        pass_filenames: false
+
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        types: [text]
+        files: ^(helpers/python|.+\.py)$
+        exclude: ^completions/
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 5.0.4
+    hooks:
+      - id: flake8
+        args: [--config=test/setup.cfg]
+        additional_dependencies:
+          # Splitting dashes and items on separate lines is intentional,
+          # enables Renovate's pip_requirements manager to update this file.
+          -
+            pycodestyle ==2.9.1
+          -
+            pyflakes ==2.5.0
+          -
+            flake8-bugbear ==22.8.23
+        types: [text]
+        files: ^(helpers/python|.+\.py)$
+        exclude: ^completions/
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.9.3
+    hooks:
+      - id: isort
+        args: [--filter-files, --settings-path=test/setup.cfg]
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        language: python
+        additional_dependencies:
+          -
+            venv-run ==0.1.0
+        entry: venv-run mypy
+        args: [--config-file=test/setup.cfg]
+        types: [python]
+        # Intentionally not run on helpers/python (we support very old versions)
+        exclude: ^completions/|^test/fixtures/pytest/
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.24.0
+    hooks:
+      - id: pyupgrade
+        args: [--py36-plus, --keep-percent-format]
+        exclude: ^completions/
+
+  - repo: https://github.com/perltidy/perltidy
+    rev: "20210717"
+    hooks:
+      - id: perltidy
+        types: [text]
+        files: ^(helpers/perl|.+\.p[ml])$
+
+  - repo: local
+    hooks:
+      - id: perlcritic
+        name: perlcritic
+        language: perl
+        additional_dependencies: [PETDANCE/Perl-Critic-1.140.tar.gz]
+        entry: perlcritic
+        args: [--quiet, --verbose, "5"]
+        types: [text]
+        files: ^(helpers/perl|.+\.p[ml])$
+
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.6
+    hooks:
+      - id: pymarkdown
+        entry: pymarkdown
+        args:
+          - --config=.pymarkdown.json
+          - scan
+        exclude: ^CHANGELOG\.md$
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-case-conflict
+
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.0.11
+    hooks:
+      - id: typos
+        exclude: ^(CHANGELOG\.md|test/(test-cmd-list\.txt|fixtures/.+))$
