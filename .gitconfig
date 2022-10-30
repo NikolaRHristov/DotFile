@@ -17,7 +17,7 @@ pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
-editor = nano
+editor = code-insiders --wait
 
 [pull]
 rebase = false
