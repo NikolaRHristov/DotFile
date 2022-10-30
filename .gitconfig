@@ -17,13 +17,13 @@ pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
-editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+editor = nano
 
 [pull]
 rebase = false
 
 [push]
-	autoSetupRemote = true
+autoSetupRemote = true
 
 [credential]
 helper = wincred
@@ -72,5 +72,6 @@ cmd = code-insiders --wait --diff $LOCAL $REMOTE
 
 [fetch]
 prune = true
+
 [branch]
-	autoSetupMerge = true
+autoSetupMerge = true
