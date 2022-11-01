@@ -1,0 +1,77 @@
+[user]
+name = Nikola Hristov
+email = nikola@nikolahristov.tech
+signingkey = BAF2F5C7BAAD1367
+
+[filter "lfs"]
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true
+
+[core]
+autocrlf = input
+fscache = false
+symlinks = true
+pager = delta
+excludesfile = "D:\\Developer\\.gitignore"
+sshCommand = plink
+fsmonitor = false
+editor = code-insiders --wait
+
+[pull]
+rebase = false
+
+[push]
+autoSetupRemote = true
+
+[credential]
+helper = wincred
+
+[credential "https://dev.azure.com"]
+useHttpPath = true
+
+[init]
+defaultBranch = main
+
+[commit]
+gpgsign = true
+
+[merge]
+tool = vscode
+
+[diff]
+colorMoved = default
+tool = vscode
+
+[delta]
+features = unobtrusive-line-numbers decorations
+whitespace-error-style = 22 reverse
+
+[delta "unobtrusive-line-numbers"]
+line-numbers = true
+line-numbers-minus-style = "#fafafa"
+line-numbers-zero-style = "#fafafa"
+line-numbers-plus-style = "#fafafa"
+line-numbers-left-format = "{nm:>3}┊"
+line-numbers-right-format = "{np:>3}│"
+line-numbers-left-style = blue
+line-numbers-right-style = blue
+
+[delta "decorations"]
+commit-decoration-style = bold yellow box ul
+file-style = bold yellow ul
+file-decoration-style = none
+hunk-header-decoration-style = yellow box ul
+
+[mergetool "vscode"]
+cmd = code-insiders --wait $MERGED
+
+[difftool "vscode"]
+cmd = code-insiders --wait --diff $LOCAL $REMOTE
+
+[fetch]
+prune = true
+
+[branch]
+autoSetupMerge = true
