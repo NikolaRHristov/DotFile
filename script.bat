@@ -11,6 +11,7 @@ rm C:\Users\nhris\.ssh
 rm C:\Users\nhris\prettier.config.js
 rm C:\Users\nhris\rustfmt.toml
 rm C:\Users\nhris\tailwind.config.js
+rm C:\Users\nhris\rome.json
 
 mklink C:\Users\nhris\.aliases D:\Developer\app\nikolaxhristov\dot\.aliases
 mklink C:\Users\nhris\.bash_profile D:\Developer\app\nikolaxhristov\dot\.bash_profile
@@ -23,5 +24,6 @@ mklink /D C:\Users\nhris\.oh-my-posh D:\Developer\app\nikolaxhristov\dot\.oh-my-
 mklink /D C:\Users\nhris\.oh-my-zsh D:\Developer\app\nikolaxhristov\dot\.oh-my-zsh
 mklink /D C:\Users\nhris\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
 mklink C:\Users\nhris\prettier.config.js D:\Developer\app\nikolaxhristov\dot\prettier.config.js
+mklink C:\Users\nhris\rome.json D:\Developer\app\nikolaxhristov\dot\rome.json
 mklink C:\Users\nhris\rustfmt.toml D:\Developer\app\nikolaxhristov\dot\rustfmt.toml
 mklink C:\Users\nhris\tailwind.config.js D:\Developer\app\nikolaxhristov\dot\tailwind.config.js
