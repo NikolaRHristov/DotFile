@@ -43,6 +43,7 @@ tool = vscode
 [diff]
 colorMoved = default
 tool = vscode
+	context = 0
 
 [delta]
 features = unobtrusive-line-numbers decorations
