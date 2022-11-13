@@ -112,3 +112,5 @@ if [ -f ~/.functions ]; then
 fi
 
 export npm_package_engines_node="v20.0.0"
+
+export PATH="$PATH:/c/Users/nhris/.bin"
