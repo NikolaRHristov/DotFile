@@ -7,7 +7,7 @@
 				{
 					"background": "#ffea00",
 					"foreground": "#000000",
-					"leading_diamond": "\ue0c7\u2593",
+					"leading_diamond": "▓",
 					"style": "diamond",
 					"type": "text"
 				},
@@ -15,29 +15,29 @@
 					"background": "#ffea00",
 					"foreground": "#000000",
 					"style": "powerline",
-					"template": " \ufd31{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
+					"template": " ﴱ{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ",
 					"type": "kubectl"
 				},
 				{
 					"background": "#008AD7",
 					"foreground": "#000000",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"source": "cli"
 					},
 					"style": "powerline",
-					"template": " \ufd03 {{ .Name }} [ {{ .Origin }} ] ",
+					"template": " ﴃ {{ .Name }} [ {{ .Origin }} ] ",
 					"type": "az"
 				},
 				{
 					"background": "#012456",
 					"foreground": "#FFFFFF",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"source": "pwsh"
 					},
 					"style": "powerline",
-					"template": " \ufd03 {{ .Name }} [ {{ .Origin }} ] ",
+					"template": " ﴃ {{ .Name }} [ {{ .Origin }} ] ",
 					"type": "az"
 				}
 			],
@@ -50,53 +50,53 @@
 				{
 					"background": "#2f2f2f",
 					"foreground": "#26C6DA",
-					"leading_diamond": "\ue0c7\u2593",
+					"leading_diamond": "▓",
 					"properties": {
-						"alpine": "\uf300",
-						"arch": "\uf303",
-						"centos": "\uf304",
-						"debian": "\uf306",
-						"elementary": "\uf309",
-						"fedora": "\uf30a",
-						"gentoo": "\uf30d",
-						"linux": "\ue712",
-						"macos": "\ue711",
-						"manjaro": "\uf312",
-						"mint": "\uf30f",
-						"opensuse": "\uf314",
-						"raspbian": "\uf315",
-						"ubuntu": "\uf31c",
-						"windows": "\ue70f"
+						"alpine": "",
+						"arch": "",
+						"centos": "",
+						"debian": "",
+						"elementary": "",
+						"fedora": "",
+						"gentoo": "",
+						"linux": "",
+						"macos": "",
+						"manjaro": "",
+						"mint": "",
+						"opensuse": "",
+						"raspbian": "",
+						"ubuntu": "",
+						"windows": ""
 					},
 					"style": "diamond",
-					"template": " {{ if .WSL }}{{ .Icon }} on \ue70f{{ end }} <#ffea00>\ue0b1</>",
+					"template": " {{ if .WSL }}{{ .Icon }} on {{ end }} <#ffea00></>",
 					"type": "os"
 				},
 				{
 					"background": "#2f2f2f",
 					"foreground": "#ffea00",
 					"style": "diamond",
-					"template": " {{ if ne .Env.POSH_SESSION_DEFAULT_USER .UserName }}{{ .UserName }}{{ end }}<#ffea00> \ue0b1</>",
+					"template": " {{ if ne .Env.POSH_SESSION_DEFAULT_USER .UserName }}{{ .UserName }}{{ end }}<#ffea00> </>",
 					"type": "session"
 				},
 				{
 					"background": "#2f2f2f",
 					"foreground": "#ffea00",
 					"style": "diamond",
-					"template": " \uf0e7<#ffea00> \ue0b1</>",
+					"template": " <#ffea00> </>",
 					"type": "root"
 				},
 				{
 					"background": "#2f2f2f",
 					"foreground": "#fafafa",
 					"properties": {
-						"folder_icon": "<#B5B2C2>\ue5fe </>",
-						"folder_separator_icon": "<#ffea00>\ue0b1 </>",
-						"home_icon": "\uf7db ",
+						"folder_icon": "<#B5B2C2> </>",
+						"folder_separator_icon": "<#ffea00> </>",
+						"home_icon": " ",
 						"style": "agnoster_short"
 					},
 					"style": "diamond",
-					"template": "<#f2f200> \ue5ff </>{{ .Path }} ",
+					"template": "<#f2f200>  </>{{ .Path }} ",
 					"type": "path"
 				},
 				{
@@ -113,14 +113,14 @@
 						"fetch_upstream_icon": true
 					},
 					"style": "diamond",
-					"template": "<#ffea00>\ue0b1 </>{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#E84855> \uf044 {{ .Working.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#2FDA4E> \uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": "<#ffea00> </>{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#E84855>  {{ .Working.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#2FDA4E>  {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"background": "#2f2f2f",
 					"foreground": "#fafafa",
 					"style": "diamond",
-					"trailing_diamond": "\ue0b0",
+					"trailing_diamond": "",
 					"type": "text"
 				}
 			],
@@ -132,7 +132,7 @@
 				{
 					"foreground": "#ffea00",
 					"style": "plain",
-					"template": " \u276f ",
+					"template": " ❯ ",
 					"type": "text"
 				}
 			],

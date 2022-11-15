@@ -7,21 +7,21 @@
 				{
 					"background": "#2e9599",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
-					"powerline_symbol": "\ue0b0",
+					"leading_diamond": "",
+					"powerline_symbol": "",
 					"style": "diamond",
-					"template": "\ufcbe {{ .HostName }} ",
+					"template": "ﲾ {{ .HostName }} ",
 					"type": "session"
 				},
 				{
 					"background": "#0080ff",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "full"
 					},
 					"style": "powerline",
-					"template": " \ue5ff {{ .Path }} ",
+					"template": "  {{ .Path }} ",
 					"type": "path"
 				},
 				{
@@ -33,14 +33,14 @@
 						"{{ if gt .Behind 0 }}#90F090{{ end }}"
 					],
 					"foreground": "#000000",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
@@ -54,7 +54,7 @@
 					},
 					"style": "diamond",
 					"template": "  ",
-					"trailing_diamond": "\ue0b4",
+					"trailing_diamond": "",
 					"type": "exit"
 				}
 			],
@@ -66,13 +66,13 @@
 				{
 					"background": "#2e9599",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
 						"time_format": "15:04:05"
 					},
 					"style": "diamond",
 					"template": " {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b4",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],
@@ -85,7 +85,7 @@
 				{
 					"foreground": "#ff0000",
 					"style": "plain",
-					"template": "\ue00a ",
+					"template": " ",
 					"type": "root"
 				},
 				{
@@ -97,7 +97,7 @@
 				{
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "\uf054 ",
+					"template": " ",
 					"type": "text"
 				}
 			],

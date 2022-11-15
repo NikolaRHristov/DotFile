@@ -11,7 +11,7 @@
 						"display_host": true
 					},
 					"style": "plain",
-					"template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>\u250c\u2500\u2500(</>{{ .UserName }}{{ if .Root }}💀{{ else }}㉿{{ end }}{{ .HostName }}<{{ if .Root }}lightBlue{{ else }}green{{ end }}>)</>",
+					"template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>┌──(</>{{ .UserName }}{{ if .Root }}💀{{ else }}㉿{{ end }}{{ .HostName }}<{{ if .Root }}lightBlue{{ else }}green{{ end }}>)</>",
 					"type": "session"
 				},
 				{
@@ -21,7 +21,7 @@
 						"fetch_virtual_env": true
 					},
 					"style": "plain",
-					"template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>-[</>\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ .Full }}{{ end }}<{{ if .Root }}lightBlue{{ else }}green{{ end }}>]</>",
+					"template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>-[</> {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ .Full }}{{ end }}<{{ if .Root }}lightBlue{{ else }}green{{ end }}>]</>",
 					"type": "python"
 				},
 				{
@@ -63,7 +63,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": " {{ if gt .Code 0 }}\u2a2f{{else}}\u2713{{ end }} ",
+					"template": " {{ if gt .Code 0 }}⨯{{else}}✓{{ end }} ",
 					"type": "exit"
 				}
 			],
@@ -76,7 +76,7 @@
 				{
 					"foreground": "lightBlue",
 					"style": "plain",
-					"template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>\u2514\u2500</>{{ if .Root }}<lightRed>#</>{{ else }}${{ end }} ",
+					"template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>└─</>{{ if .Root }}<lightRed>#</>{{ else }}${{ end }} ",
 					"type": "text"
 				}
 			],

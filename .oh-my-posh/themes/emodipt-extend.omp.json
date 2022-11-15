@@ -14,18 +14,18 @@
 					"type": "time"
 				},
 				{
-					"type": "shell",
-					"style": "plain",
 					"foreground": "#E06C75",
 					"properties": {
 						"mapped_shell_names": {
-							"pwsh": "Shell",
-							"powershell": "Shell",
+							"bash": "Bash",
 							"cmd": "Cmd",
-							"bash": "Bash"
+							"powershell": "Shell",
+							"pwsh": "Shell"
 						}
 					},
-					"template": " \ue795 {{ .Name }}"
+					"style": "plain",
+					"template": "  {{ .Name }}",
+					"type": "shell"
 				},
 				{
 					"foreground": "#F3C267",
@@ -42,7 +42,7 @@
 						"fetch_upstream_icon": true
 					},
 					"style": "plain",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				}
 			],
@@ -52,13 +52,13 @@
 			"alignment": "right",
 			"segments": [
 				{
-					"type": "exit",
-					"style": "plain",
 					"foreground": "#b8ff75",
 					"foreground_templates": [
 						"{{ if gt .Code 0 }}#E06C75{{ end }}"
 					],
-					"template": " x{{ .Meaning }}"
+					"style": "plain",
+					"template": " x{{ .Meaning }}",
+					"type": "exit"
 				},
 				{
 					"foreground": "#b8ff75",
@@ -66,8 +66,8 @@
 						"{{ if gt .Code 0 }}#E06C75{{ end }}"
 					],
 					"properties": {
-						"style": "roundrock",
-						"always_enabled": true
+						"always_enabled": true,
+						"style": "roundrock"
 					},
 					"style": "diamond",
 					"template": " {{ .FormattedMs }} ",
@@ -86,7 +86,7 @@
 						"style": "full"
 					},
 					"style": "plain",
-					"template": "\ue5ff {{ .Path }}",
+					"template": " {{ .Path }}",
 					"type": "path"
 				}
 			],
@@ -99,13 +99,13 @@
 				{
 					"foreground": "#E06C75",
 					"style": "plain",
-					"template": "\u0021",
+					"template": "!",
 					"type": "root"
 				},
 				{
 					"foreground": "#E06C75",
 					"style": "plain",
-					"template": "\u276f",
+					"template": "❯",
 					"type": "text"
 				}
 			],

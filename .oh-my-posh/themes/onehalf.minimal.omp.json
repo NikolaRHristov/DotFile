@@ -1,19 +1,5 @@
 {
 	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-	"palette": {
-		"black": "#282c34",
-		"red": "#e06c75",
-		"green": "#98c379",
-		"yellow": "#e5c07b",
-		"blue": "#61afef",
-		"magenta": "#c678dd",
-		"cyan": "#56b6c2",
-		"white": "#dcdfe4",
-		"foreground": "#dcdfe4",
-		"background": "#282c34"
-	},
-	"terminal_background": "p:background",
-	"console_title_template": "{{ .UserName }}@{{ .HostName }}",
 	"blocks": [
 		{
 			"alignment": "left",
@@ -27,18 +13,18 @@
 				},
 				{
 					"foreground": "p:blue",
-					"style": "plain",
 					"properties": {
 						"style": "full"
 					},
+					"style": "plain",
 					"template": "{{ .Path }} ",
 					"type": "path"
 				},
 				{
 					"properties": {
 						"branch_icon": "",
-						"fetch_status": true,
 						"fetch_stash_count": true,
+						"fetch_status": true,
 						"fetch_worktree_count": true
 					},
 					"style": "plain",
@@ -65,5 +51,19 @@
 			"type": "prompt"
 		}
 	],
+	"console_title_template": "{{ .UserName }}@{{ .HostName }}",
+	"palette": {
+		"background": "#282c34",
+		"black": "#282c34",
+		"blue": "#61afef",
+		"cyan": "#56b6c2",
+		"foreground": "#dcdfe4",
+		"green": "#98c379",
+		"magenta": "#c678dd",
+		"red": "#e06c75",
+		"white": "#dcdfe4",
+		"yellow": "#e5c07b"
+	},
+	"terminal_background": "p:background",
 	"version": 2
 }

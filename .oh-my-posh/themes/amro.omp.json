@@ -7,7 +7,7 @@
 				{
 					"foreground": "#45F1C2",
 					"style": "plain",
-					"template": "\uf508 {{ .UserName }} on",
+					"template": " {{ .UserName }} on",
 					"type": "session"
 				},
 				{
@@ -17,18 +17,18 @@
 						"style": "full"
 					},
 					"style": "plain",
-					"template": " \uf07b {{ .Path }} ",
+					"template": "  {{ .Path }} ",
 					"type": "path"
 				},
 				{
 					"foreground": "#14A5AE",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "plain",
-					"template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				}
 			],
@@ -41,7 +41,7 @@
 				{
 					"foreground": "#cd5e42",
 					"style": "plain",
-					"template": "\ue3bf ",
+					"template": " ",
 					"type": "root"
 				},
 				{

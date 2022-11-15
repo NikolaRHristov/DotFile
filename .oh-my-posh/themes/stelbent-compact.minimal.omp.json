@@ -1,37 +1,31 @@
 {
 	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-	"console_title_template": "{{if .Segments.Git.RepoName}} {{.Segments.Git.RepoName}} {{else}} {{.Folder}} {{end}}",
 	"blocks": [
 		{
-			"type": "prompt",
 			"alignment": "left",
 			"newline": true,
 			"segments": [
 				{
-					"type": "session",
 					"foreground": "#757575",
 					"properties": {
 						"display_host": true
 					},
 					"style": "plain",
-					"template": "\u250c {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} "
+					"template": "┌ {{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }} ",
+					"type": "session"
 				},
 				{
-					"type": "path",
 					"background": "#91ddff",
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "agnoster_full"
 					},
 					"style": "powerline",
-					"template": " {{ .Path }} "
+					"template": " {{ .Path }} ",
+					"type": "path"
 				},
 				{
-					"type": "git",
-					"style": "powerline",
-					"powerline_symbol": "\ue0b0",
-					"foreground": "#100e23",
 					"background": "#95ffa4",
 					"background_templates": [
 						"{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9248{{ end }}",
@@ -39,73 +33,79 @@
 						"{{ if gt .Ahead 0 }}#89d1dc{{ end }}",
 						"{{ if gt .Behind 0 }}#c5b6ad{{ end }}"
 					],
-					"template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} \u2502{{ end }}{{ if .Staging.Changed }} {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} {{ .StashCount }}{{ end }} ",
+					"foreground": "#100e23",
+					"powerline_symbol": "",
 					"properties": {
-						"branch_ahead_icon": "\u2191",
-						"branch_behind_icon": "\u2193",
-						"branch_gone": "\u2262",
-						"branch_icon": "\ue0a0 ",
-						"branch_identical_icon": "\u2261",
-						"cherry_pick_icon": "\u2713 ",
-						"commit_icon": "\u25b7 ",
+						"branch_ahead_icon": "↑",
+						"branch_behind_icon": "↓",
+						"branch_gone": "≢",
+						"branch_icon": " ",
+						"branch_identical_icon": "≡",
+						"cherry_pick_icon": "✓ ",
+						"commit_icon": "▷ ",
 						"fetch_stash_count": true,
 						"fetch_status": true,
-						"merge_icon": "\u25f4 ",
+						"merge_icon": "◴ ",
 						"no_commits_icon": "[no commits]",
-						"rebase_icon": "\u2c62 ",
-						"tag_icon": "\u25b6 ",
+						"rebase_icon": "Ɫ ",
+						"tag_icon": "▶ ",
 						"untracked_modes": {
 							"/Users/user/Projects/oh-my-posh/": "no"
 						}
-					}
+					},
+					"style": "powerline",
+					"template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} │{{ end }}{{ if .Staging.Changed }} {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} {{ .StashCount }}{{ end }} ",
+					"type": "git"
 				},
 				{
-					"type": "terraform",
 					"background": "#ffee58",
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " {{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }} "
+					"template": " {{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }} ",
+					"type": "terraform"
 				},
 				{
-					"type": "exit",
 					"background": "#ff8080",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " {{ if gt .Code 0 }}error{{ else }}\uf42e{{ end }} "
+					"template": " {{ if gt .Code 0 }}error{{ else }}{{ end }} ",
+					"type": "exit"
 				},
 				{
-					"type": "time",
 					"foreground": "#689f38",
 					"properties": {
 						"time_format": "15:04:05"
 					},
 					"style": "plain",
-					"template": " <#757575,>|</> {{ .CurrentDate | date .Format }}"
+					"template": " <#757575,>|</> {{ .CurrentDate | date .Format }}",
+					"type": "time"
 				}
-			]
+			],
+			"type": "prompt"
 		},
 		{
-			"type": "prompt",
 			"alignment": "left",
 			"newline": true,
 			"segments": [
 				{
-					"type": "text",
 					"foreground": "#757575",
 					"style": "plain",
-					"template": "\u2514"
+					"template": "└",
+					"type": "text"
 				},
 				{
-					"type": "text",
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "$"
+					"template": "$",
+					"type": "text"
 				}
-			]
+			],
+			"type": "prompt"
 		}
 	],
+	"console_title_template": "{{if .Segments.Git.RepoName}} {{.Segments.Git.RepoName}} {{else}} {{.Folder}} {{end}}",
 	"final_space": true,
 	"version": 2
 }

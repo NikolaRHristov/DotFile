@@ -1,16 +1,16 @@
 {
-    "plugins": {
-        "first-line-heading": {
-            "//": "Does not work with GitHub issue templates",
-            "enabled": false
-        },
-        "no-inline-html": {
-            "//": "!-- for issue template, kbd for README and in general",
-            "allowed_elements": "!--,kbd"
-        },
-        "ul-indent": {
-            "//": "Disabled for lists in FAQ/A",
-            "enabled": false
-        }
-    }
+	"plugins": {
+		"first-line-heading": {
+			"//": "Does not work with GitHub issue templates",
+			"enabled": false
+		},
+		"no-inline-html": {
+			"//": "!-- for issue template, kbd for README and in general",
+			"allowed_elements": "!--,kbd"
+		},
+		"ul-indent": {
+			"//": "Disabled for lists in FAQ/A",
+			"enabled": false
+		}
+	}
 }

@@ -7,14 +7,14 @@
 				{
 					"background": "#feae34",
 					"foreground": "#262b44",
-					"leading_diamond": "\ue0b6",
-					"powerline_symbol": "\ue0b0",
+					"leading_diamond": "",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "folder"
 					},
 					"style": "diamond",
-					"template": " \ue5ff {{ .Path }} ",
-					"trailing_diamond": "\ue0b0",
+					"template": "  {{ .Path }} ",
+					"trailing_diamond": "",
 					"type": "path"
 				},
 				{
@@ -26,14 +26,14 @@
 						"{{ if gt .Behind 0 }}#f77622{{ end }}"
 					],
 					"foreground": "#262b44",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
@@ -42,13 +42,13 @@
 						"{{ if gt .Code 0 }}#ff0044{{ end }}"
 					],
 					"foreground": "#ffffff",
-					"leading_diamond": "<transparent,background>\ue0b0</>",
+					"leading_diamond": "<transparent,background></>",
 					"properties": {
 						"always_enabled": true
 					},
 					"style": "diamond",
-					"template": " \uf0e7 ",
-					"trailing_diamond": "\ue0b4",
+					"template": "  ",
+					"trailing_diamond": "",
 					"type": "exit"
 				}
 			],

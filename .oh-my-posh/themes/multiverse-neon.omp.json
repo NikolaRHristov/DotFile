@@ -7,13 +7,13 @@
 				{
 					"background": "#29315A",
 					"foreground": "#3EC669",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
 						"style": "mixed"
 					},
 					"style": "diamond",
-					"template": "\ue5ff {{ .Path }}",
-					"trailing_diamond": "\ue0b4",
+					"template": " {{ .Path }}",
+					"trailing_diamond": "",
 					"type": "path"
 				},
 				{
@@ -25,7 +25,7 @@
 						"{{ if gt .Ahead 0 }}#B388FF{{ end }}",
 						"{{ if gt .Behind 0 }}#B388FF{{ end }}"
 					],
-					"leading_diamond": " \ue0b6",
+					"leading_diamond": " ",
 					"properties": {
 						"branch_max_length": 25,
 						"fetch_stash_count": true,
@@ -33,11 +33,10 @@
 						"fetch_upstream_icon": true
 					},
 					"style": "diamond",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
-					"trailing_diamond": "\ue0b4",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
+					"trailing_diamond": "",
 					"type": "git"
 				},
-
 				{
 					"foreground": "#C94A16",
 					"style": "plain",
@@ -56,11 +55,11 @@
 						"display_mode": "files",
 						"fetch_package_manager": true,
 						"fetch_version": true,
-						"npm_icon": "<#FE4A49>\ue71e npm</> ",
-						"yarn_icon": "<#44FFD2>\uf487 yarn</> "
+						"npm_icon": "<#FE4A49> npm</> ",
+						"yarn_icon": "<#44FFD2> yarn</> "
 					},
 					"style": "plain",
-					"template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}\ue718 {{ .Full }}",
+					"template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }} {{ .Full }}",
 					"type": "node"
 				},
 				{
@@ -103,7 +102,7 @@
 				{
 					"foreground": "#63F08C",
 					"style": "plain",
-					"template": "\u279c ",
+					"template": "➜ ",
 					"type": "text"
 				}
 			],

@@ -12,10 +12,10 @@
 				},
 				{
 					"foreground": "#42a9ff",
-					"style": "plain",
 					"properties": {
 						"style": "full"
 					},
+					"style": "plain",
 					"template": "{{ .Path }} ",
 					"type": "path"
 				},

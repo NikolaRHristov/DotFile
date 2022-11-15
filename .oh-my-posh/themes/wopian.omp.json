@@ -94,7 +94,7 @@
 						"always_enabled": true
 					},
 					"style": "powerline",
-					"template": "\u279c ",
+					"template": "➜ ",
 					"type": "exit"
 				}
 			],

@@ -2,78 +2,78 @@
 	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
 	"blocks": [
 		{
-			"type": "prompt",
 			"alignment": "right",
 			"overflow": "hide",
 			"segments": [
 				{
-					"type": "executiontime",
-					"style": "powerline",
 					"foreground": "#a9ffb4",
-					"template": " {{ .FormattedMs }}s <#ffffff>\ue601</>",
 					"properties": {
-						"threshold": 0,
-						"style": "dallas"
-					}
+						"style": "dallas",
+						"threshold": 0
+					},
+					"style": "powerline",
+					"template": " {{ .FormattedMs }}s <#ffffff></>",
+					"type": "executiontime"
 				},
 				{
-					"type": "node",
-					"style": "powerline",
 					"foreground": "#45bf17",
-					"template": " \ue718 {{ .Full }} "
+					"style": "powerline",
+					"template": "  {{ .Full }} ",
+					"type": "node"
 				},
 				{
-					"type": "npm",
-					"style": "powerline",
 					"foreground": "#FE4A49",
-					"template": "<#F3EFF5>and</> \ue71e {{ .Full }} "
+					"style": "powerline",
+					"template": "<#F3EFF5>and</>  {{ .Full }} ",
+					"type": "npm"
 				}
-			]
+			],
+			"type": "prompt"
 		},
 		{
-			"type": "prompt",
 			"alignment": "left",
 			"newline": true,
 			"overflow": "break",
 			"segments": [
 				{
-					"type": "path",
-					"style": "powerline",
 					"foreground": "#ffafd2",
 					"properties": {
-						"style": "agnoster_full",
+						"folder_icon": "",
+						"folder_separator_icon": " ❯ ",
 						"home_icon": "home",
-						"folder_icon": "\uf07b",
-						"folder_separator_icon": " \u276f "
+						"style": "agnoster_full"
 					},
-					"template": "\ue5ff {{ .Path }} "
+					"style": "powerline",
+					"template": " {{ .Path }} ",
+					"type": "path"
 				},
 				{
-					"type": "git",
-					"style": "powerline",
 					"foreground": "#f14e32",
 					"properties": {
-						"branch_icon": "\ue725 "
+						"branch_icon": " "
 					},
-					"template": "({{ .HEAD }})"
+					"style": "powerline",
+					"template": "({{ .HEAD }})",
+					"type": "git"
 				}
-			]
+			],
+			"type": "prompt"
 		},
 		{
 			"alignment": "left",
 			"newline": true,
-			"type": "prompt",
 			"segments": [
 				{
-					"type": "exit",
-					"style": "diamond",
 					"foreground": "#00c7fc",
 					"properties": {
 						"always_enabled": true
 					},
-					"template": "<#00c7fc>\u276f</>_: "
+					"style": "diamond",
+					"template": "<#00c7fc>❯</>_: ",
+					"type": "exit"
 				}
-			]
+			],
+			"type": "prompt"
 		}
 	],
 	"console_title_template": "{{ .Folder }}",

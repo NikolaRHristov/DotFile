@@ -35,13 +35,13 @@
 				{
 					"foreground": "#757575",
 					"style": "plain",
-					"template": "\u250c {{ .UserName }}@{{ .HostName }} ",
+					"template": "┌ {{ .UserName }}@{{ .HostName }} ",
 					"type": "session"
 				},
 				{
 					"background": "#91ddff",
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "folder"
 					},
@@ -58,30 +58,30 @@
 						"{{ if gt .Behind 0 }}#c5b6ad{{ end }}"
 					],
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"branch_ahead_icon": "\u2191",
-						"branch_behind_icon": "\u2193",
-						"branch_gone": "\u2262",
-						"branch_icon": "\ue0a0 ",
-						"branch_identical_icon": "\u2261",
-						"cherry_pick_icon": "\u2713 ",
-						"commit_icon": "\u25b7 ",
+						"branch_ahead_icon": "↑",
+						"branch_behind_icon": "↓",
+						"branch_gone": "≢",
+						"branch_icon": " ",
+						"branch_identical_icon": "≡",
+						"cherry_pick_icon": "✓ ",
+						"commit_icon": "▷ ",
 						"fetch_stash_count": true,
 						"fetch_status": true,
-						"merge_icon": "\u25f4 ",
+						"merge_icon": "◴ ",
 						"no_commits_icon": "[no commits]",
-						"rebase_icon": "\u2c62 ",
-						"tag_icon": "\u25b6 "
+						"rebase_icon": "Ɫ ",
+						"tag_icon": "▶ "
 					},
 					"style": "powerline",
-					"template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} \u2502{{ end }}{{ if .Staging.Changed }} {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} {{ .StashCount }}{{ end }} ",
+					"template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} │{{ end }}{{ if .Staging.Changed }} {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"background": "#ffee58",
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
 					"template": " {{ .WorkspaceName }} ",
 					"type": "terraform"
@@ -89,7 +89,7 @@
 				{
 					"background": "#ff8080",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
 					"template": " error ",
 					"type": "exit"
@@ -104,7 +104,7 @@
 				{
 					"foreground": "#757575",
 					"style": "plain",
-					"template": "\u2514 ",
+					"template": "└ ",
 					"type": "text"
 				},
 				{

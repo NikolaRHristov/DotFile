@@ -8,29 +8,29 @@
 					"background": "#000000",
 					"foreground": "#dd1e1e",
 					"style": "plain",
-					"template": " \u26a1",
+					"template": " ⚡",
 					"type": "root"
 				},
 				{
 					"background": "#000000",
 					"foreground": "#ffffff",
 					"properties": {
-						"alpine": "\uf300",
-						"arch": "\uf303",
-						"centos": "\uf304",
-						"debian": "\uf306",
-						"elementary": "\uf309",
-						"fedora": "\uf30a",
-						"gentoo": "\uf30d",
-						"linux": "\ue712",
-						"macos": "\ue711",
-						"manjaro": "\uf312",
-						"mint": "\uf30f",
-						"opensuse": "\uf314",
-						"raspbian": "\uf315",
-						"ubuntu": "\uf31c",
-						"windows": "\ue62a",
-						"wsl": "\ue712"
+						"alpine": "",
+						"arch": "",
+						"centos": "",
+						"debian": "",
+						"elementary": "",
+						"fedora": "",
+						"gentoo": "",
+						"linux": "",
+						"macos": "",
+						"manjaro": "",
+						"mint": "",
+						"opensuse": "",
+						"raspbian": "",
+						"ubuntu": "",
+						"windows": "",
+						"wsl": ""
 					},
 					"style": "plain",
 					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
@@ -39,13 +39,13 @@
 				{
 					"background": "#272727",
 					"foreground": "#3EC669",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
 						"style": "folder"
 					},
 					"style": "diamond",
-					"template": "\ue5ff {{ .Path }}",
-					"trailing_diamond": "\ue0b4",
+					"template": " {{ .Path }}",
+					"trailing_diamond": "",
 					"type": "path"
 				},
 				{
@@ -56,51 +56,51 @@
 						"fetch_status": true
 					},
 					"style": "plain",
-					"template": "<#000000>\ue0b1 </>{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": "<#000000> </>{{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00>  {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"background": "#306998",
 					"foreground": "#FFE873",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
-					"trailing_diamond": "\ue0b4 ",
+					"template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+					"trailing_diamond": " ",
 					"type": "python"
 				},
 				{
 					"background": "#ffffff",
 					"foreground": "#06aad5",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
-					"trailing_diamond": "\ue0b4 ",
+					"template": "ﳑ {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+					"trailing_diamond": " ",
 					"type": "go"
 				},
 				{
 					"background": "#565656",
 					"foreground": "#faa029",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "\ue7ad {{.Profile}}{{if .Region}}@{{.Region}}{{end}}",
-					"trailing_diamond": "\ue0b4 ",
+					"template": " {{.Profile}}{{if .Region}}@{{.Region}}{{end}}",
+					"trailing_diamond": " ",
 					"type": "aws"
 				},
 				{
-					"type": "terraform",
-					"style": "powerline",
-					"powerline_symbol": "\uE0B0",
-					"foreground": "#000000",
 					"background": "#ebcc34",
-					"template": "{{.WorkspaceName}}"
+					"foreground": "#000000",
+					"powerline_symbol": "",
+					"style": "powerline",
+					"template": "{{.WorkspaceName}}",
+					"type": "terraform"
 				},
 				{
 					"background": "#316ce4",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "\ufd31 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
-					"trailing_diamond": "\ue0b4",
+					"template": "ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
+					"trailing_diamond": "",
 					"type": "kubectl"
 				}
 			],
@@ -111,8 +111,8 @@
 			"segments": [
 				{
 					"properties": {
-						"style": "roundrock",
-						"always_enabled": true
+						"always_enabled": true,
+						"style": "roundrock"
 					},
 					"style": "diamond",
 					"template": "{{ .FormattedMs }} ",
@@ -134,14 +134,14 @@
 					],
 					"foreground": "#262626",
 					"invert_powerline": true,
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"properties": {
-						"charged_icon": "\uf58e ",
-						"charging_icon": "\uf1e6 ",
-						"discharging_icon": "\ue234 "
+						"charged_icon": " ",
+						"charging_icon": " ",
+						"discharging_icon": " "
 					},
 					"style": "plain",
-					"template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 <#262626>\ue0b2</>",
+					"template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} <#262626></>",
 					"type": "battery"
 				},
 				{

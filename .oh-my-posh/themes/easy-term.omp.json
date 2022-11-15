@@ -8,32 +8,32 @@
 				{
 					"background": "#0c7bbb",
 					"foreground": "#ffffff",
-					"leading_diamond": "\u256d\u2500\ue0b2",
+					"leading_diamond": "╭─",
 					"properties": {
-						"alpine": "\uf300",
-						"arch": "\uf303",
-						"centos": "\uf304",
-						"debian": "\uf306",
-						"elementary": "\uf309",
-						"fedora": "\uf30a",
-						"gentoo": "\uf30d",
-						"linux": "\ue712",
-						"macos": "\ue711",
-						"manjaro": "\uf312",
-						"mint": "\uf30f",
-						"opensuse": "\uf314",
-						"raspbian": "\uf315",
-						"ubuntu": "\uf31c",
-						"windows": "\ue70f"
+						"alpine": "",
+						"arch": "",
+						"centos": "",
+						"debian": "",
+						"elementary": "",
+						"fedora": "",
+						"gentoo": "",
+						"linux": "",
+						"macos": "",
+						"manjaro": "",
+						"mint": "",
+						"opensuse": "",
+						"raspbian": "",
+						"ubuntu": "",
+						"windows": ""
 					},
 					"style": "diamond",
-					"template": " {{ if .WSL }}\ue712 on {{ end }}{{ .Icon }}  ",
+					"template": " {{ if .WSL }} on {{ end }}{{ .Icon }}  ",
 					"type": "os"
 				},
 				{
 					"background": "#DA627D",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "diamond",
 					"template": " 🏠  ",
 					"type": "text"
@@ -41,7 +41,7 @@
 				{
 					"background": "#8a62da",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "folder"
 					},
@@ -52,22 +52,22 @@
 				{
 					"background": "#191f48",
 					"foreground": "#43CCEA",
-					"style": "powerline",
-					"powerline_symbol": "\ue0b0",
 					"foreground_templates": [
 						"{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}",
 						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}",
 						"{{ if gt .Ahead 0 }}#B388FF{{ end }}",
 						"{{ if gt .Behind 0 }}#B388FF{{ end }}"
 					],
+					"powerline_symbol": "",
 					"properties": {
 						"branch_max_length": 25,
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
-					"trailing_diamond": "\ue0b4",
+					"style": "powerline",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
+					"trailing_diamond": "",
 					"type": "git"
 				}
 			],
@@ -79,7 +79,7 @@
 				{
 					"foreground": "#81ff91",
 					"style": "diamond",
-					"template": "<#cc7eda> \u007C </><#7eb8da>RAM:</> {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB",
+					"template": "<#cc7eda> | </><#7eb8da>RAM:</> {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB",
 					"type": "sysinfo"
 				},
 				{
@@ -88,50 +88,50 @@
 						"fetch_version": true
 					},
 					"style": "powerline",
-					"template": "<#cc7eda> \u007C </><#7eb8da>\ue718</> {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+					"template": "<#cc7eda> | </><#7eb8da></> {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
 					"type": "node"
 				},
 				{
-					"type": "php",
-					"style": "powerline",
 					"foreground": "#81ff91",
-					"template": "<#cc7eda> \u007C </><#7eb8da>\ue73d</> {{ .Full }}"
+					"style": "powerline",
+					"template": "<#cc7eda> | </><#7eb8da></> {{ .Full }}",
+					"type": "php"
 				},
 				{
-					"type": "npm",
-					"style": "powerline",
 					"foreground": "#81ff91",
-					"template": "<#cc7eda> \u007C </><#7eb8da>\ue71e </> {{ .Full }}"
+					"style": "powerline",
+					"template": "<#cc7eda> | </><#7eb8da> </> {{ .Full }}",
+					"type": "npm"
 				},
 				{
-					"type": "sysinfo",
-					"style": "powerline",
 					"foreground": "#81ff91",
-					"template": "<> </>"
+					"style": "powerline",
+					"template": "<> </>",
+					"type": "sysinfo"
 				},
 				{
 					"background": "#cecece",
 					"foreground": "#4b4b4b",
-					"leading_diamond": "\ue0b2",
-					"trailing_diamond": "\ue0b0",
+					"leading_diamond": "",
 					"properties": {
 						"style": "austin",
 						"threshold": 150
 					},
 					"style": "diamond",
 					"template": "⌛  {{ .FormattedMs }} ",
+					"trailing_diamond": "",
 					"type": "executiontime"
 				},
 				{
 					"background": "#cecece",
 					"foreground": "#4b4b4b",
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"properties": {
 						"time_format": "15:04:05"
 					},
 					"style": "diamond",
 					"template": "⏰  {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b0",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],
@@ -144,7 +144,7 @@
 				{
 					"foreground": "#0c7bbb",
 					"style": "plain",
-					"template": "\u2570\u2500",
+					"template": "╰─",
 					"type": "text"
 				}
 			],

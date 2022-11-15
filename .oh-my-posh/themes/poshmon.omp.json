@@ -7,20 +7,20 @@
 				{
 					"background": "#2e9599",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
-					"powerline_symbol": "\ue0b0",
+					"leading_diamond": "",
+					"powerline_symbol": "",
 					"style": "diamond",
-					"template": "\uf91c {{ .HostName }} ",
+					"template": "卵 {{ .HostName }} ",
 					"type": "session"
 				},
 				{
 					"background": "#D51111",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"home_icon": "\uf46d",
-						"folder_separator_icon": " <transparent>\ue0b1</> ",
-						"folder_icon": "\uf115",
+						"folder_icon": "",
+						"folder_separator_icon": " <transparent></> ",
+						"home_icon": "",
 						"style": "agnoster"
 					},
 					"style": "powerline",
@@ -36,14 +36,14 @@
 						"{{ if gt .Behind 0 }}#90F090{{ end }}"
 					],
 					"foreground": "#000000",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " \uf113 {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": "  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				}
 			],
@@ -55,48 +55,48 @@
 				{
 					"background": "#303030",
 					"foreground": "#3C873A",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
 						"fetch_package_manager": true,
-						"npm_icon": " <#cc3a3a>\ue5fa</> ",
-						"yarn_icon": " <#348cba>\uf61a</>"
+						"npm_icon": " <#cc3a3a></> ",
+						"yarn_icon": " <#348cba></>"
 					},
 					"style": "diamond",
-					"template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
-					"trailing_diamond": "\ue0b4 ",
+					"template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+					"trailing_diamond": " ",
 					"type": "node"
 				},
 				{
 					"background": "#306998",
 					"foreground": "#FFE873",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
-					"trailing_diamond": "\ue0b4 ",
+					"template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+					"trailing_diamond": " ",
 					"type": "python"
 				},
 				{
 					"background": "#ffffff",
 					"foreground": "#06aad5",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
-					"trailing_diamond": "\ue0b4 ",
+					"template": "ﳑ {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+					"trailing_diamond": " ",
 					"type": "go"
 				},
 				{
 					"background": "#2e9599",
-					"foreground": "#fff",
 					"background_templates": [
 						"{{ if gt .Code 0 }}#D51111{{ end }}"
 					],
-					"leading_diamond": "\ue0b6",
+					"foreground": "#fff",
+					"leading_diamond": "",
 					"properties": {
 						"time_format": "_2, 15:04:05"
 					},
 					"style": "diamond",
-					"template": " \uf5ef {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b4",
+					"template": "  {{ .CurrentDate | date .Format }} ",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],
@@ -112,7 +112,7 @@
 						"{{ if gt .Code 0 }}#D51111{{ end }}"
 					],
 					"style": "plain",
-					"template": " \uf0a4 ",
+					"template": "  ",
 					"type": "text"
 				}
 			],

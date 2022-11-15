@@ -7,7 +7,7 @@
 				{
 					"foreground": "#88c0d0",
 					"style": "plain",
-					"template": "<#5e81ac>\u250f[</>{{ .UserName }}<#5e81ac>]</>",
+					"template": "<#5e81ac>┏[</>{{ .UserName }}<#5e81ac>]</>",
 					"type": "session"
 				},
 				{
@@ -18,7 +18,7 @@
 						"fetch_upstream_icon": true
 					},
 					"style": "plain",
-					"template": "<#5e81ac>--[</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#8fbcbb> \u25cf </>{{ end }}{{ if .Staging.Changed }}<#88c0d0> \u25cf </>{{ end }}<#5e81ac>]</>",
+					"template": "<#5e81ac>--[</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#8fbcbb> ● </>{{ end }}{{ if .Staging.Changed }}<#88c0d0> ● </>{{ end }}<#5e81ac>]</>",
 					"type": "git"
 				},
 				{
@@ -36,7 +36,7 @@
 				{
 					"foreground": "#d8dee9",
 					"style": "plain",
-					"template": "<#5e81ac>[</>\uf0e7<#5e81ac>]</>",
+					"template": "<#5e81ac>[</><#5e81ac>]</>",
 					"type": "root"
 				},
 				{
@@ -58,7 +58,7 @@
 						"style": "full"
 					},
 					"style": "plain",
-					"template": "<#5e81ac>\u2516[</>{{ .Path }}<#5e81ac>]</>",
+					"template": "<#5e81ac>┖[</>{{ .Path }}<#5e81ac>]</>",
 					"type": "path"
 				}
 			],
@@ -71,7 +71,7 @@
 				{
 					"foreground": "#5e81ac",
 					"style": "plain",
-					"template": " \ue602 ",
+					"template": "  ",
 					"type": "text"
 				}
 			],

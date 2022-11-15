@@ -14,20 +14,20 @@
 						"display_host": false
 					},
 					"style": "powerline",
-					"template": "{{if .Root}} \uf0e7 {{.UserName}} {{else}} {{.UserName}} {{end}}",
+					"template": "{{if .Root}}  {{.UserName}} {{else}} {{.UserName}} {{end}}",
 					"type": "session"
 				},
 				{
 					"background": "#ec9706",
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"folder_icon": "\ue5ff",
-						"folder_separator_icon": "\ue0b9",
-						"home_icon": "\uf7db",
+						"folder_icon": "",
+						"folder_separator_icon": "",
+						"home_icon": "",
 						"mapped_locations": {
-							"C:\\Users": "\uf007",
-							"C:\\Windows": "\ue62a"
+							"C:\\Users": "",
+							"C:\\Windows": ""
 						},
 						"mixed_threshold": 8,
 						"style": "mixed"
@@ -39,7 +39,7 @@
 				{
 					"background": "#3feb56",
 					"foreground": "#193549",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
 					"template": " {{ .HEAD }} ",
 					"type": "git"
@@ -47,9 +47,9 @@
 				{
 					"background": "#906cff",
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+					"template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
 					"type": "python"
 				}
 			],
@@ -61,16 +61,16 @@
 				{
 					"background": "#ff4040",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0c2",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": " \ue70f ",
-					"trailing_diamond": "\ue0c0",
+					"template": "  ",
+					"trailing_diamond": "",
 					"type": "exit"
 				},
 				{
 					"background": "#2f2f2f",
 					"foreground": "#fafafa",
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"properties": {
 						"style": "austin"
 					},
@@ -82,12 +82,12 @@
 			"type": "rprompt"
 		}
 	],
-	"console_title_template": "{{if .Root}} \u26a1 {{end}}{{.UserName}} \u2794 📁{{.Folder}}",
+	"console_title_template": "{{if .Root}} ⚡ {{end}}{{.UserName}} ➔ 📁{{.Folder}}",
 	"final_space": true,
 	"secondary_prompt": {
 		"background": "#ec9706",
 		"foreground": "#100e23",
-		"template": " \uf061 "
+		"template": "  "
 	},
 	"version": 2
 }

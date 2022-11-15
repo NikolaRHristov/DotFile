@@ -15,22 +15,22 @@
 					"foreground": "#ffaed8",
 					"properties": {
 						"folder_separator_icon": " 🢖 ",
-						"home_icon": "\u2764",
+						"home_icon": "❤",
 						"style": "letter"
 					},
 					"style": "plain",
-					"template": "<#eaeaea>\u23a7</> \u27e8{{ .Path }}\u27e9 ",
+					"template": "<#eaeaea>⎧</> ⟨{{ .Path }}⟩ ",
 					"type": "path"
 				},
 				{
 					"foreground": "#62beff",
 					"properties": {
-						"branch_icon": "\u27df",
-						"branch_identical_icon": "\u2261",
+						"branch_icon": "⟟",
+						"branch_identical_icon": "≡",
 						"fetch_status": true
 					},
 					"style": "plain",
-					"template": "\u27e8{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \u2206{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}\u27e9",
+					"template": "⟨{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} ∆{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}⟩",
 					"type": "git"
 				},
 				{
@@ -39,7 +39,7 @@
 						"fetch_version": true
 					},
 					"style": "plain",
-					"template": "<#ffffff>\u25e6</> \u2622{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+					"template": "<#ffffff>◦</> ☢{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
 					"type": "node"
 				}
 			],
@@ -61,7 +61,7 @@
 						"threshold": 0
 					},
 					"style": "plain",
-					"template": "\u27e8{{ .FormattedMs }}\u27e9 <#eaeaea>\u23ab</>",
+					"template": "⟨{{ .FormattedMs }}⟩ <#eaeaea>⎫</>",
 					"type": "executiontime"
 				}
 			],
@@ -74,7 +74,7 @@
 				{
 					"foreground": "#3ce6bf",
 					"style": "plain",
-					"template": "<#eaeaea>\u23a9</>\u27e9\u27e9\u27e9\u27e9\u27e9\u27e9 ",
+					"template": "<#eaeaea>⎩</>⟩⟩⟩⟩⟩⟩ ",
 					"type": "text"
 				}
 			],
@@ -89,7 +89,7 @@
 						"time_format": "15:04:05"
 					},
 					"style": "plain",
-					"template": "\u27e8{{ .CurrentDate | date .Format }}\u27e9 <#eaeaea>\u23ad</>",
+					"template": "⟨{{ .CurrentDate | date .Format }}⟩ <#eaeaea>⎭</>",
 					"type": "time"
 				}
 			],

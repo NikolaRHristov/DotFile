@@ -8,7 +8,7 @@
 					"background": "#003543",
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": " \uf64f {{ .CurrentDate | date .Format }} ",
+					"template": "  {{ .CurrentDate | date .Format }} ",
 					"type": "time"
 				},
 				{
@@ -18,7 +18,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": " \ufa1e{{ .FormattedMs }} ",
+					"template": " 羽{{ .FormattedMs }} ",
 					"type": "executiontime"
 				}
 			],
@@ -34,17 +34,17 @@
 						"display_host": false
 					},
 					"style": "diamond",
-					"template": "{{if .Root}} \uf0e7 {{.UserName}} {{else}} {{.UserName}} {{end}}",
-					"trailing_diamond": "\ue0b0",
+					"template": "{{if .Root}}  {{.UserName}} {{else}} {{.UserName}} {{end}}",
+					"trailing_diamond": "",
 					"type": "session"
 				},
 				{
 					"background": "#C678DD",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"folder_icon": "\uf115",
-						"folder_separator_icon": " \ue0b1 ",
+						"folder_icon": "",
+						"folder_separator_icon": "  ",
 						"max_depth": 2,
 						"style": "agnoster_short"
 					},
@@ -55,7 +55,7 @@
 				{
 					"background": "#95ffa4",
 					"foreground": "#193549",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
 					"template": " {{ .HEAD }} ",
 					"type": "git"
@@ -64,7 +64,7 @@
 			"type": "prompt"
 		}
 	],
-	"console_title_template": "{{if .Root}} \u26a1 {{end}}{{.UserName}} \u2794 📁{{.Folder}}",
+	"console_title_template": "{{if .Root}} ⚡ {{end}}{{.UserName}} ➔ 📁{{.Folder}}",
 	"final_space": true,
 	"version": 2
 }

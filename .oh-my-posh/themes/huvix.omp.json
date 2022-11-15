@@ -7,7 +7,7 @@
 				{
 					"foreground": "#FFE082",
 					"style": "plain",
-					"template": "@{{ .UserName }} \u279c",
+					"template": "@{{ .UserName }} ➜",
 					"type": "session"
 				},
 				{
@@ -22,13 +22,13 @@
 				{
 					"foreground": "#7FD5EA",
 					"style": "powerline",
-					"template": "(\ufcd1{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}) ",
+					"template": "(ﳑ{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}) ",
 					"type": "go"
 				},
 				{
 					"foreground": "#9e7eff",
 					"style": "powerline",
-					"template": "(\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}) ",
+					"template": "( {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}) ",
 					"type": "python"
 				},
 				{
@@ -66,12 +66,12 @@
 						"{{if eq \"Full\" .State.String}}#66BB6A{{end}}"
 					],
 					"properties": {
-						"charged_icon": "\ue22f ",
-						"charging_icon": "\ue234 ",
-						"discharging_icon": "\ue231 "
+						"charged_icon": " ",
+						"charging_icon": " ",
+						"discharging_icon": " "
 					},
 					"style": "powerline",
-					"template": "[{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295]",
+					"template": "[{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}]",
 					"type": "battery"
 				}
 			],

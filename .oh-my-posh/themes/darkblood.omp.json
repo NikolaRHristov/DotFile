@@ -7,7 +7,7 @@
 				{
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "<#CB4B16>\u250f[</>{{ .UserName }}<#CB4B16>]</>",
+					"template": "<#CB4B16>┏[</>{{ .UserName }}<#CB4B16>]</>",
 					"type": "session"
 				},
 				{
@@ -19,7 +19,7 @@
 				{
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "<#CB4B16>[</>\uf0e7<#CB4B16>]</>",
+					"template": "<#CB4B16>[</><#CB4B16>]</>",
 					"type": "root"
 				},
 				{
@@ -41,7 +41,7 @@
 						"style": "full"
 					},
 					"style": "plain",
-					"template": "<#CB4B16>\u2516[</>{{ .Path }}<#CB4B16>]></>",
+					"template": "<#CB4B16>┖[</>{{ .Path }}<#CB4B16>]></>",
 					"type": "path"
 				}
 			],

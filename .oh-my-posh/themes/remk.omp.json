@@ -7,7 +7,7 @@
 				{
 					"background": "lightMagenta",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
 					"template": "{{ .UserName }} ",
 					"type": "session"
@@ -40,7 +40,7 @@
 					},
 					"style": "diamond",
 					"template": " {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b0",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],

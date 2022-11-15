@@ -1,13 +1,5 @@
 {
 	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-	"palette": {
-		"os": "#ACB0BE",
-		"pink": "#F5BDE6",
-		"lavender": "#B7BDF8",
-		"blue": "#8AADF4",
-		"wight": "#FFFFFF",
-		"text": "#494D64"
-	},
 	"blocks": [
 		{
 			"alignment": "left",
@@ -15,8 +7,8 @@
 				{
 					"background": "p:blue",
 					"foreground": "p:wight",
-					"powerline_symbol": "\ue0b4",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
+					"powerline_symbol": "",
 					"style": "diamond",
 					"template": "{{.Icon}} ",
 					"type": "os"
@@ -24,7 +16,7 @@
 				{
 					"background": "p:blue",
 					"foreground": "p:text",
-					"powerline_symbol": "\ue0b4",
+					"powerline_symbol": "",
 					"style": "diamond",
 					"template": "{{ .UserName }}@{{ .HostName }}",
 					"type": "session"
@@ -32,12 +24,12 @@
 				{
 					"background": "p:pink",
 					"foreground": "p:text",
+					"powerline_symbol": "",
 					"properties": {
-						"folder_icon": "..\ue5fe..",
+						"folder_icon": "....",
 						"home_icon": "~",
 						"style": "agnoster_short"
 					},
-					"powerline_symbol": "\ue0b4",
 					"style": "powerline",
 					"template": " {{ .Path }}",
 					"type": "path"
@@ -45,20 +37,20 @@
 				{
 					"background": "p:lavender",
 					"foreground": "p:text",
-					"style": "powerline",
+					"powerline_symbol": "",
 					"properties": {
-						"branch_icon": "\ue725 ",
-						"cherry_pick_icon": "\ue29b ",
-						"commit_icon": "\uf417 ",
+						"branch_icon": " ",
+						"cherry_pick_icon": " ",
+						"commit_icon": " ",
 						"fetch_status": false,
 						"fetch_upstream_icon": false,
-						"merge_icon": "\ue727 ",
-						"no_commits_icon": "\uf594 ",
-						"rebase_icon": "\ue728 ",
-						"revert_icon": "\uf0e2 ",
-						"tag_icon": "\uf412 "
+						"merge_icon": " ",
+						"no_commits_icon": " ",
+						"rebase_icon": " ",
+						"revert_icon": " ",
+						"tag_icon": " "
 					},
-					"powerline_symbol": "\ue0b4",
+					"style": "powerline",
 					"template": " {{ .HEAD }}",
 					"type": "git"
 				}
@@ -67,5 +59,13 @@
 		}
 	],
 	"final_space": true,
+	"palette": {
+		"blue": "#8AADF4",
+		"lavender": "#B7BDF8",
+		"os": "#ACB0BE",
+		"pink": "#F5BDE6",
+		"text": "#494D64",
+		"wight": "#FFFFFF"
+	},
 	"version": 2
 }

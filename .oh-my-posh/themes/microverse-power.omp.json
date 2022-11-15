@@ -13,7 +13,7 @@
 				{
 					"background": "#242424",
 					"foreground": "#f1184c",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
 					"template": " {{ .UserName }}",
 					"type": "session"
@@ -21,15 +21,15 @@
 				{
 					"background": "#242424",
 					"foreground": "#f1184c",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": "- root \uf0e7",
+					"template": "- root ",
 					"type": "root"
 				},
 				{
 					"background": "#242424",
 					"foreground": "#FFBB00",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"time_format": "2006-01-02 15:04:05"
 					},
@@ -40,25 +40,25 @@
 				{
 					"background": "#242424",
 					"foreground": "#33DD2D",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"folder_separator_icon": "/",
 						"style": "full"
 					},
 					"style": "powerline",
-					"template": "\ue5ff {{ .Path }} ",
+					"template": " {{ .Path }} ",
 					"type": "path"
 				},
 				{
 					"background": "#242424",
 					"foreground": "#3A86FF",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
@@ -67,12 +67,12 @@
 						"{{ if gt .Code 0 }}#f1184c{{ end }}"
 					],
 					"foreground": "#242424",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"always_enabled": true
 					},
 					"style": "powerline",
-					"template": " \ufc8d ",
+					"template": " ﲍ ",
 					"type": "exit"
 				}
 			],
@@ -85,7 +85,7 @@
 				{
 					"foreground": "#f1184c",
 					"style": "plain",
-					"template": "\u279c ",
+					"template": "➜ ",
 					"type": "text"
 				}
 			],

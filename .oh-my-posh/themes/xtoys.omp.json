@@ -43,7 +43,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": "<#66CDAA>\u276f</><#76EEC6>\u276f</><foreground>\u276f</> ",
+					"template": "<#66CDAA>❯</><#76EEC6>❯</><foreground>❯</> ",
 					"type": "exit"
 				}
 			],

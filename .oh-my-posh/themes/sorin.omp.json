@@ -13,7 +13,7 @@
 				{
 					"foreground": "#CECE04",
 					"style": "plain",
-					"template": " \uf0e7 ",
+					"template": "  ",
 					"type": "root"
 				},
 				{
@@ -40,13 +40,13 @@
 				{
 					"foreground": "#100e23",
 					"style": "plain",
-					"template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+					"template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
 					"type": "python"
 				},
 				{
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "<#CB4B16>\u276f</><#CACA02>\u276f</><#4E9A06>\u276f</> ",
+					"template": "<#CB4B16>❯</><#CACA02>❯</><#4E9A06>❯</> ",
 					"type": "text"
 				}
 			],

@@ -7,7 +7,7 @@
 				{
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "<#C591E8>\u276f</><#69FF94>\u276f</> ",
+					"template": "<#C591E8>❯</><#69FF94>❯</> ",
 					"type": "text"
 				},
 				{
@@ -31,7 +31,7 @@
 				{
 					"foreground": "#DCB977",
 					"style": "plain",
-					"template": " \uf119 ",
+					"template": "  ",
 					"type": "exit"
 				}
 			],
@@ -60,7 +60,7 @@
 				{
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "\uf441 ",
+					"template": " ",
 					"type": "text"
 				}
 			],

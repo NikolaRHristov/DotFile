@@ -16,7 +16,7 @@
 				{
 					"foreground": "#B5B50D",
 					"style": "plain",
-					"template": " \uf0e7 ",
+					"template": "  ",
 					"type": "root"
 				},
 				{
@@ -31,8 +31,8 @@
 				{
 					"foreground": "#F3C267",
 					"properties": {
-						"branch_gone_icon": "\u274e",
-						"branch_identical_icon": "\uf14a"
+						"branch_gone_icon": "❎",
+						"branch_identical_icon": ""
 					},
 					"style": "plain",
 					"template": " {{ .HEAD }} ",
@@ -47,7 +47,7 @@
 				{
 					"foreground": "#E06C75",
 					"style": "plain",
-					"template": "\u276f ",
+					"template": "❯ ",
 					"type": "text"
 				}
 			],

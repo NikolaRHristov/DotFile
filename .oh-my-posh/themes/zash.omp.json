@@ -13,7 +13,7 @@
 				{
 					"foreground": "#62ED8B",
 					"style": "plain",
-					"template": "\u279c",
+					"template": "➜",
 					"type": "text"
 				},
 				{
@@ -37,7 +37,7 @@
 				{
 					"foreground": "#DCB977",
 					"style": "plain",
-					"template": " \uf119",
+					"template": " ",
 					"type": "exit"
 				}
 			],

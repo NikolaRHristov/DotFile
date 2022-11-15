@@ -7,12 +7,12 @@
 				{
 					"background": "#EB9654",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
 						"display_host": false
 					},
 					"style": "diamond",
-					"template": "{{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} ",
+					"template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} ",
 					"type": "session"
 				},
 				{
@@ -32,7 +32,7 @@
 						"fetch_status": true
 					},
 					"style": "plain",
-					"template": " branch ({{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}) ",
+					"template": " branch ({{ .HEAD }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}) ",
 					"type": "git"
 				},
 				{
@@ -56,7 +56,7 @@
 					},
 					"style": "diamond",
 					"template": " {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b0",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],

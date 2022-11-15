@@ -1,44 +1,35 @@
 {
-	"extends": ["config:base", ":prConcurrentLimit20", ":preserveSemverRanges"],
-	"ignorePresets": [":dependencyDashboard", ":ignoreModulesAndTests"],
-	"semanticCommits": "enabled",
 	"commitMessageTopic": "{{depName}}",
-	"pip_requirements": {
-		"fileMatch": [
-			"(^|/)(test/requirements[\\w-]*\\.txt|\\.pre-commit-config\\.yaml)$"
-		]
-	},
 	"dockerfile": {
 		"enabled": false
 	},
-	"pre-commit": {
-		"enabled": true
-	},
+	"extends": ["config:base", ":prConcurrentLimit20", ":preserveSemverRanges"],
+	"ignorePresets": [":dependencyDashboard", ":ignoreModulesAndTests"],
 	"packageRules": [
 		{
 			"matchFiles": ["test/requirements.txt"],
 			"semanticCommitType": "test"
 		},
 		{
-			"matchManagers": ["pre-commit"],
 			"commitMessageTopic": "{{depName}}",
+			"matchManagers": ["pre-commit"],
 			"semanticCommitScope": "pre-commit"
 		},
 		{
-			"matchPackagePatterns": ["(^|/)black$"],
-			"versioning": "pep440",
+			"groupName": "black",
 			"ignoreUnstable": false,
-			"groupName": "black"
+			"matchPackagePatterns": ["(^|/)black$"],
+			"versioning": "pep440"
 		},
 		{
+			"groupName": "flake8",
 			"matchPackagePatterns": ["(^|/)flake8$"],
-			"versioning": "pep440",
-			"groupName": "flake8"
+			"versioning": "pep440"
 		},
 		{
+			"groupName": "isort",
 			"matchPackagePatterns": ["(^|/)isort$"],
-			"versioning": "pep440",
-			"groupName": "isort"
+			"versioning": "pep440"
 		},
 		{
 			"matchPackageNames": ["perltidy/perltidy"],
@@ -51,5 +42,14 @@
 			],
 			"versioning": "loose"
 		}
-	]
+	],
+	"pip_requirements": {
+		"fileMatch": [
+			"(^|/)(test/requirements[\\w-]*\\.txt|\\.pre-commit-config\\.yaml)$"
+		]
+	},
+	"pre-commit": {
+		"enabled": true
+	},
+	"semanticCommits": "enabled"
 }

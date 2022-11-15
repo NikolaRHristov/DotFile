@@ -14,9 +14,9 @@
 		"#1": {
 			"0409": {
 				"description": "A prompt theme engine for any shell.",
-				"minimum-os": "win8",
 				"execution-level": "as invoker",
 				"long-path-aware": true,
+				"minimum-os": "win8",
 				"segment-heap": true
 			}
 		}

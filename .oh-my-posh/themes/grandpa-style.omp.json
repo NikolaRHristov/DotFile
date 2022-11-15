@@ -8,7 +8,7 @@
 					"background": "#000000",
 					"foreground": "#dd1e1e",
 					"style": "plain",
-					"template": " \u26a1 ",
+					"template": " ⚡ ",
 					"type": "root"
 				},
 				{
@@ -22,9 +22,9 @@
 					"background": "#5a3d29",
 					"foreground": "#43CCEA",
 					"properties": {
-						"folder_icon": "\uf6d7",
-						"folder_separator_icon": "<transparent> \ue0bd </>",
-						"home_icon": "\uf7db",
+						"folder_icon": "",
+						"folder_separator_icon": "<transparent>  </>",
+						"home_icon": "",
 						"style": "agnoster_short"
 					},
 					"style": "plain",
@@ -40,19 +40,19 @@
 						"{{ if gt .Behind 0 }}#B388FF{{ end }}"
 					],
 					"foreground": "#000000",
-					"leading_diamond": "<parentBackground,background>\ue0b0</>",
+					"leading_diamond": "<parentBackground,background></>",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true
 					},
 					"style": "diamond",
-					"template": " {{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00>  {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"background": "#2ba1bb",
 					"foreground": "#5a3d29",
-					"leading_diamond": "<parentBackground,background>\ue0b0</>",
+					"leading_diamond": "<parentBackground,background></>",
 					"properties": {
 						"style": "dallas",
 						"threshold": 0
@@ -64,12 +64,12 @@
 				{
 					"background": "#910000",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": "{{ if gt .Code 0 }}<parentBackground,background>\ue0b0</><transparent> \uf12a</> {{ .Meaning }} <background,transparent>\ue0b0</>{{ else }}<parentBackground,transparent>\ue0b0</>{{ end }}",
+					"template": "{{ if gt .Code 0 }}<parentBackground,background></><transparent> </> {{ .Meaning }} <background,transparent></>{{ else }}<parentBackground,transparent></>{{ end }}",
 					"type": "exit"
 				}
 			],
@@ -81,9 +81,9 @@
 				{
 					"background": "#5a3d29",
 					"foreground": "#43CCEA",
-					"leading_diamond": "\ue0c5",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": "  {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}<transparent> / </>{{ .HostName }}",
+					"template": "  {{ if .SSHSession }} {{ end }}{{ .UserName }}<transparent> / </>{{ .HostName }}",
 					"type": "session"
 				},
 				{
@@ -93,7 +93,7 @@
 						"time_format": "3:04:05 PM"
 					},
 					"style": "plain",
-					"template": "<transparent> \ue0ba\ue0bc </>{{ .CurrentDate | date .Format }} ",
+					"template": "<transparent>  </>{{ .CurrentDate | date .Format }} ",
 					"type": "time"
 				}
 			],
@@ -112,13 +112,13 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": "\u276f ",
+					"template": "❯ ",
 					"type": "exit"
 				}
 			],
 			"type": "prompt"
 		}
 	],
-	"console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏚\" }} @ {{.HostName}}",
+	"console_title_template": "{{if .Root}} ⚡ {{end}}{{.Folder | replace \"~\" \"🏚\" }} @ {{.HostName}}",
 	"version": 2
 }

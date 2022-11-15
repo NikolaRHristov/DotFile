@@ -8,17 +8,17 @@
 				{
 					"background": "#fbfbfb",
 					"foreground": "#0077c2",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
-						"arch": "\uf303",
-						"debian": "\uf306",
-						"fedora": "\uf30a",
-						"linux": "\uf17c",
-						"macos": "\uf179",
-						"manjaro": "\uf312",
-						"opensuse": "\uf314",
-						"ubuntu": "\uf31b",
-						"windows": "\uf17a"
+						"arch": "",
+						"debian": "",
+						"fedora": "",
+						"linux": "",
+						"macos": "",
+						"manjaro": "",
+						"opensuse": "",
+						"ubuntu": "",
+						"windows": ""
 					},
 					"style": "diamond",
 					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
@@ -27,7 +27,7 @@
 				{
 					"background": "#fbfbfb",
 					"foreground": "#0077c2",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"display_host": true
 					},
@@ -38,15 +38,15 @@
 				{
 					"background": "#e06c75",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \ue799\u2800",
+					"template": " ⠀",
 					"type": "root"
 				},
 				{
 					"background": "#0077c2",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"folder_separator_icon": "/",
 						"home_icon": "~",
@@ -54,7 +54,7 @@
 						"style": "letter"
 					},
 					"style": "powerline",
-					"template": " \ue5fe {{ .Path }} ",
+					"template": "  {{ .Path }} ",
 					"type": "path"
 				},
 				{
@@ -66,14 +66,14 @@
 						"{{ if gt .Behind 0 }}#89d1dc{{ end }}"
 					],
 					"foreground": "#193549",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
@@ -93,7 +93,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": " {{ if gt .Code 0 }}\uf659{{ else }}\uf633{{ end }} ",
+					"template": " {{ if gt .Code 0 }}{{ else }}{{ end }} ",
 					"type": "exit"
 				},
 				{
@@ -114,11 +114,11 @@
 					],
 					"foreground": "#ffffff",
 					"invert_powerline": true,
-					"powerline_symbol": "\ue0b2",
+					"powerline_symbol": "",
 					"properties": {
-						"charged_icon": "\uf583 ",
-						"charging_icon": "\uf588 ",
-						"discharging_icon": "\uf57d "
+						"charged_icon": " ",
+						"charging_icon": " ",
+						"discharging_icon": " "
 					},
 					"style": "powerline",
 					"template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}% ",
@@ -133,7 +133,7 @@
 					},
 					"style": "diamond",
 					"template": " {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b4",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],

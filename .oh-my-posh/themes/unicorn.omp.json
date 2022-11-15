@@ -7,9 +7,9 @@
 				{
 					"background": "#003543",
 					"foreground": "#fff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"windows": "\ue62a "
+						"windows": " "
 					},
 					"style": "powerline",
 					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
@@ -18,13 +18,13 @@
 				{
 					"background": "#0087D8",
 					"foreground": "#003544",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"folder_separator_icon": "/",
 						"style": "full"
 					},
 					"style": "powerline",
-					"template": " \ue5ff {{ .Path }} ",
+					"template": "  {{ .Path }} ",
 					"type": "path"
 				},
 				{
@@ -36,22 +36,22 @@
 						"{{ if gt .Behind 0 }}#f17c37{{ end }}"
 					],
 					"foreground": "#193549",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"background": "#003543",
 					"foreground": "#fff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": "<#fff> \uf64f </>{{ .CurrentDate | date .Format }} ",
+					"template": "<#fff>  </>{{ .CurrentDate | date .Format }} ",
 					"type": "time"
 				},
 				{
@@ -61,8 +61,8 @@
 						"always_enabled": true
 					},
 					"style": "diamond",
-					"template": " \ufbab {{ .FormattedMs }}\u2800",
-					"trailing_diamond": "\ue0b4",
+					"template": " ﮫ {{ .FormattedMs }}⠀",
+					"trailing_diamond": "",
 					"type": "executiontime"
 				}
 			],
@@ -75,7 +75,7 @@
 				{
 					"foreground": "#fff",
 					"style": "plain",
-					"template": " \u26a1 ",
+					"template": " ⚡ ",
 					"type": "root"
 				},
 				{

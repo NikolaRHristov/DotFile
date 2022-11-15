@@ -7,46 +7,46 @@
 				{
 					"background": "#E36464",
 					"foreground": "#fff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
 					"template": "{{ .UserName }} ",
-					"trailing_diamond": "\ue0c6",
+					"trailing_diamond": "",
 					"type": "session"
 				},
 				{
 					"background": "green",
 					"foreground": "#fff",
-					"leading_diamond": "\ue0c7",
+					"leading_diamond": "",
 					"properties": {
 						"style": "folder"
 					},
 					"style": "diamond",
 					"template": " {{ .Path }} ",
-					"trailing_diamond": "\ue0c6",
+					"trailing_diamond": "",
 					"type": "path"
 				},
 				{
 					"background": "lightCyan",
 					"foreground": "#fff",
-					"leading_diamond": "\ue0c7",
+					"leading_diamond": "",
 					"properties": {
 						"branch_icon": ""
 					},
 					"style": "diamond",
 					"template": " git({{ .HEAD }}) ",
-					"trailing_diamond": "\ue0c6",
+					"trailing_diamond": "",
 					"type": "git"
 				},
 				{
 					"background": "lightMagenta",
 					"foreground": "#fff",
-					"leading_diamond": "\ue0c7",
+					"leading_diamond": "",
 					"properties": {
 						"time_format": "15:04"
 					},
 					"style": "diamond",
 					"template": " {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0c6",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],

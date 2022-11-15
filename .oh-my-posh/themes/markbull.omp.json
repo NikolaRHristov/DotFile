@@ -7,23 +7,23 @@
 				{
 					"foreground": "#ffce7b",
 					"style": "plain",
-					"template": "\u250c ",
+					"template": "┌ ",
 					"type": "text"
 				},
 				{
 					"background": "#ffce7b",
 					"foreground": "#1d1626",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \uf26c  {{ if .SSHSession }}\uf817  {{ end }}{{ .UserName }}@{{ .HostName }} ",
+					"template": "   {{ if .SSHSession }}  {{ end }}{{ .UserName }}@{{ .HostName }} ",
 					"type": "session"
 				},
 				{
 					"background": "#C678DD",
 					"foreground": "#fffef9",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"windows": "\uf17a"
+						"windows": ""
 					},
 					"style": "powerline",
 					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
@@ -32,7 +32,7 @@
 				{
 					"background": "#C678DD",
 					"foreground": "#fffef9",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "full"
 					},
@@ -50,44 +50,44 @@
 						"{{ if .UpstreamGone }}#d1c7b7{{ end }}"
 					],
 					"foreground": "#100e23",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"azure_devops_icon": "\ufd03 ",
-						"bitbucket_icon": "\uf171 ",
-						"branch_gone_icon": "\uf68e ",
-						"branch_icon": "\ue0a0 ",
-						"branch_identical_icon": "\uf690 ",
-						"commit_icon": "\uf417 ",
+						"azure_devops_icon": "ﴃ ",
+						"bitbucket_icon": " ",
+						"branch_gone_icon": " ",
+						"branch_icon": " ",
+						"branch_identical_icon": " ",
+						"commit_icon": " ",
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true,
 						"fetch_worktree_count": true,
-						"git_icon": "\uf1d3 ",
-						"github_icon": "\uf408 ",
-						"gitlab_icon": "\uf296 ",
-						"tag_icon": "\uf412 "
+						"git_icon": " ",
+						"github_icon": " ",
+						"gitlab_icon": " ",
+						"tag_icon": " "
 					},
 					"style": "powerline",
-					"template": " {{ if( .UpstreamIcon ) }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <#ed1941>\uf044 {{.Working.String}}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <#225a1f>\uf046 {{.Staging.String}}</>{{ end }}{{ if gt .StashCount 0 }}  \uf692 {{.StashCount}}{{ end }}{{ if gt .WorktreeCount 0 }}{{if .IsWorkTree}}<#1d953f>{{ end }}  \uf1bb {{if .IsWorkTree}}</>{{ end }}{{.WorktreeCount}}{{ end }} ",
+					"template": " {{ if( .UpstreamIcon ) }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <#ed1941> {{.Working.String}}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <#225a1f> {{.Staging.String}}</>{{ end }}{{ if gt .StashCount 0 }}   {{.StashCount}}{{ end }}{{ if gt .WorktreeCount 0 }}{{if .IsWorkTree}}<#1d953f>{{ end }}   {{if .IsWorkTree}}</>{{ end }}{{.WorktreeCount}}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"background": "#33a3dc",
 					"foreground": "#fffef9",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"always_enabled": true
 					},
 					"style": "powerline",
-					"template": " \uf064  {{ .FormattedMs }} ",
+					"template": "   {{ .FormattedMs }} ",
 					"type": "executiontime"
 				},
 				{
 					"background": "#ed1941",
 					"foreground": "#fffef9",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \uf12a >>{{ .Meaning }} ",
+					"template": "  >>{{ .Meaning }} ",
 					"type": "exit"
 				}
 			],
@@ -100,7 +100,7 @@
 				{
 					"foreground": "#ffce7b",
 					"style": "plain",
-					"template": "\u2514",
+					"template": "└",
 					"type": "text"
 				},
 				{
@@ -113,7 +113,7 @@
 			"type": "prompt"
 		}
 	],
-	"console_title_template": "{{if .Root}}\u26a1 {{end}}{{.Folder}}",
+	"console_title_template": "{{if .Root}}⚡ {{end}}{{.Folder}}",
 	"final_space": true,
 	"version": 2
 }

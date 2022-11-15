@@ -7,7 +7,7 @@
 				{
 					"background": "#B4009E",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
 					"template": "{{ .UserName }} ",
 					"type": "session"
@@ -15,7 +15,7 @@
 				{
 					"background": "#FFFF00",
 					"foreground": "#000000",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "folder"
 					},
@@ -26,7 +26,7 @@
 				{
 					"background": "#4E44FF",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"branch_icon": "",
 						"fetch_stash_count": true,
@@ -34,15 +34,15 @@
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}) ",
+					"template": " ➜ ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}) ",
 					"type": "git"
 				},
 				{
 					"background": "#4e903d",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+					"template": "  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
 					"type": "node"
 				},
 				{
@@ -52,8 +52,8 @@
 						"time_format": "15:04"
 					},
 					"style": "diamond",
-					"template": " \u2665 {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b0",
+					"template": " ♥ {{ .CurrentDate | date .Format }} ",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],

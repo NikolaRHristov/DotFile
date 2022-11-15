@@ -1,6 +1,5 @@
 {
 	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-	"console_title_template": "{{ if .Root }}root @ {{ end }}{{ .Shell }} in {{ .Folder }}",
 	"blocks": [
 		{
 			"alignment": "left",
@@ -8,51 +7,51 @@
 				{
 					"background": "#575656",
 					"foreground": "#D6DEEB",
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"properties": {
-						"alpine": "\uf300",
-						"arch": "\uf303",
-						"centos": "\uf304",
-						"debian": "\uf306",
-						"elementary": "\uf309",
-						"fedora": "\uf30a",
-						"gentoo": "\uf30d",
-						"linux": "\ue712",
-						"macos": "\ue711",
-						"manjaro": "\uf312",
-						"mint": "\uf30f",
-						"opensuse": "\uf314",
-						"raspbian": "\uf315",
-						"ubuntu": "\uf31c",
-						"windows": "\ue70f"
+						"alpine": "",
+						"arch": "",
+						"centos": "",
+						"debian": "",
+						"elementary": "",
+						"fedora": "",
+						"gentoo": "",
+						"linux": "",
+						"macos": "",
+						"manjaro": "",
+						"mint": "",
+						"opensuse": "",
+						"raspbian": "",
+						"ubuntu": "",
+						"windows": ""
 					},
 					"style": "diamond",
-					"template": " {{ if .WSL }}\ue712 on {{ end }}{{ .Icon }} ",
+					"template": " {{ if .WSL }} on {{ end }}{{ .Icon }} ",
 					"type": "os"
 				},
 				{
 					"background": "#00C7FC",
 					"foreground": "#011627",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \uf489 {{ .Name }} ",
+					"template": "  {{ .Name }} ",
 					"type": "shell"
 				},
 				{
 					"background": "#EF541C",
 					"foreground": "#D6DEEB",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \uf09c admin ",
+					"template": "  admin ",
 					"type": "root"
 				},
 				{
-					"type": "cmake",
-					"style": "powerline",
-					"powerline_symbol": "\uE0B0",
-					"foreground": "#E8EAEE",
 					"background": "#1E9748",
-					"template": " \ue61e \ue61d cmake {{ .Full }} "
+					"foreground": "#E8EAEE",
+					"powerline_symbol": "",
+					"style": "powerline",
+					"template": "   cmake {{ .Full }} ",
+					"type": "cmake"
 				},
 				{
 					"background": "#1BD4CD",
@@ -63,16 +62,16 @@
 						"{{ if gt .Behind 0 }}#B787D7{{ end }}"
 					],
 					"foreground": "#011627",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"branch_icon": "\ue725 ",
+						"branch_icon": " ",
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true,
 						"fetch_worktree_count": true
 					},
 					"style": "powerline",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#CAEBE1> \uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#CAEBE1>  {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				}
 			],
@@ -90,12 +89,12 @@
 					"foreground_templates": [
 						"{{ if gt .Code 0 }}#D6DEEB{{ end }}"
 					],
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"properties": {
 						"always_enabled": true
 					},
 					"style": "diamond",
-					"template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
+					"template": " {{ if gt .Code 0 }}{{ else }}{{ end }} ",
 					"type": "exit"
 				},
 				{
@@ -106,8 +105,8 @@
 						"threshold": 0
 					},
 					"style": "diamond",
-					"template": " \uf252 {{ .FormattedMs }} ",
-					"trailing_diamond": "\ue0b4",
+					"template": "  {{ .FormattedMs }} ",
+					"trailing_diamond": "",
 					"type": "executiontime"
 				}
 			],
@@ -120,13 +119,13 @@
 				{
 					"foreground": "#D6DEEB",
 					"style": "plain",
-					"template": "\u256d\u2500",
+					"template": "╭─",
 					"type": "text"
 				},
 				{
 					"foreground": "#F2D3B6",
 					"properties": {
-						"time_format": "<#D6DEEB>\uf64f 15:04:05</> <#79DFE1>|</> \uf5ef 2 Jan, Monday"
+						"time_format": "<#D6DEEB> 15:04:05</> <#79DFE1>|</>  2 Jan, Monday"
 					},
 					"style": "plain",
 					"template": "{{ .CurrentDate | date .Format }} <#79DFE1>|</>",
@@ -134,13 +133,13 @@
 				},
 				{
 					"foreground": "#B6D6F2",
-					"leading_diamond": "<#00C7FC> \uf07b </><#B6D6F2> in </>",
+					"leading_diamond": "<#00C7FC>  </><#B6D6F2> in </>",
 					"properties": {
-						"folder_icon": " \uf07c ",
-						"folder_separator_icon": " \uf554 ",
-						"home_icon": "\uf7db ",
-						"style": "agnoster_short",
-						"max_depth": 3
+						"folder_icon": "  ",
+						"folder_separator_icon": "  ",
+						"home_icon": " ",
+						"max_depth": 3,
+						"style": "agnoster_short"
 					},
 					"style": "diamond",
 					"template": " {{ .Path }} ",
@@ -156,7 +155,7 @@
 				{
 					"foreground": "#D6DEEB",
 					"style": "plain",
-					"template": "\u2570\u2500",
+					"template": "╰─",
 					"type": "text"
 				},
 				{
@@ -165,23 +164,24 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": "\u276f ",
+					"template": "❯ ",
 					"type": "exit"
 				}
 			],
 			"type": "prompt"
 		}
 	],
+	"console_title_template": "{{ if .Root }}root @ {{ end }}{{ .Shell }} in {{ .Folder }}",
 	"osc99": true,
-	"transient_prompt": {
-		"background": "transparent",
-		"foreground": "#FEF5ED",
-		"template": "\ue285 "
-	},
 	"secondary_prompt": {
 		"background": "transparent",
 		"foreground": "#D6DEEB",
-		"template": "\u2570\u2500\u276f "
+		"template": "╰─❯ "
+	},
+	"transient_prompt": {
+		"background": "transparent",
+		"foreground": "#FEF5ED",
+		"template": " "
 	},
 	"version": 2
 }

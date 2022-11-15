@@ -8,57 +8,57 @@
 				{
 					"foreground": "#1865f5",
 					"properties": {
-						"alpine": "\uf300",
-						"arch": "\uf303",
-						"centos": "\uf304",
-						"debian": "\uf306",
-						"elementary": "\uf309",
-						"fedora": "\uf30a",
-						"gentoo": "\uf30d",
-						"linux": "\ue712",
-						"macos": "\uf179 ",
-						"manjaro": "\uf312",
-						"mint": "\uf30f",
-						"opensuse": "\uf314",
-						"raspbian": "\uf315",
-						"ubuntu": "\uf31b ",
-						"windows": "\uf871 ",
-						"wsl": "\ue712"
+						"alpine": "",
+						"arch": "",
+						"centos": "",
+						"debian": "",
+						"elementary": "",
+						"fedora": "",
+						"gentoo": "",
+						"linux": "",
+						"macos": " ",
+						"manjaro": "",
+						"mint": "",
+						"opensuse": "",
+						"raspbian": "",
+						"ubuntu": " ",
+						"windows": " ",
+						"wsl": ""
 					},
 					"style": "diamond",
 					"template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
-					"trailing_diamond": "<transparent,>\ue0b2</>",
+					"trailing_diamond": "<transparent,></>",
 					"type": "os"
 				},
 				{
 					"background": "#00c7fc",
 					"foreground": "#000000",
-					"style": "diamond",
-					"leading_diamond": "<transparent,#00c7fc>\ue0b0</>",
+					"leading_diamond": "<transparent,#00c7fc></>",
 					"properties": {
-						"template": " \uf85a CPU: {{ round .PhysicalPercentUsed .Precision }}% | "
+						"template": "  CPU: {{ round .PhysicalPercentUsed .Precision }}% | "
 					},
+					"style": "diamond",
 					"type": "sysinfo"
 				},
 				{
 					"background": "#00c7fc",
 					"foreground": "#000000",
 					"style": "diamond",
-					"template": "RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB \uf85a ",
-					"trailing_diamond": "<transparent,#00c7fc>\ue0b2</>",
+					"template": "RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB  ",
+					"trailing_diamond": "<transparent,#00c7fc></>",
 					"type": "sysinfo"
 				},
 				{
 					"background": "#2343e2",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"properties": {
 						"style": "roundrock",
 						"threshold": 0
 					},
 					"style": "diamond",
 					"template": " {{ .FormattedMs }} ",
-					"trailing_diamond": "\ue0b0",
+					"trailing_diamond": "",
 					"type": "executiontime"
 				}
 			],
@@ -72,15 +72,15 @@
 					"foreground": "#000000",
 					"leading_diamond": "",
 					"properties": {
-						"branch_icon": "\ue725 ",
+						"branch_icon": " ",
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true,
 						"fetch_worktree_count": true
 					},
 					"style": "diamond",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
-					"trailing_diamond": "\ue0b0",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
+					"trailing_diamond": "",
 					"type": "git"
 				}
 			],
@@ -93,48 +93,48 @@
 				{
 					"foreground": "#91f2ff",
 					"style": "plain",
-					"template": "\u256d\u2500",
+					"template": "╭─",
 					"type": "text"
 				},
 				{
 					"background": "#91f2ff",
 					"foreground": "#000000",
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": " \uf489 {{ .Name }} ",
-					"trailing_diamond": "<transparent,#91f2ff>\ue0b2</>",
+					"template": "  {{ .Name }} ",
+					"trailing_diamond": "<transparent,#91f2ff></>",
 					"type": "shell"
 				},
 				{
 					"background": "#ff8c94",
 					"foreground": "#000000",
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"properties": {
 						"time_format": "3:04:05 PM | Monday"
 					},
 					"style": "diamond",
-					"template": " \uf64f {{ .CurrentDate | date .Format }} \uf5ef ",
-					"trailing_diamond": "\ue0b0",
+					"template": "  {{ .CurrentDate | date .Format }}  ",
+					"trailing_diamond": "",
 					"type": "time"
 				},
 				{
 					"properties": {
-						"root_icon": "\uf292 "
+						"root_icon": " "
 					},
 					"style": "diamond",
-					"template": " \uf0e7 ",
+					"template": "  ",
 					"type": "root"
 				},
 				{
 					"background": "#f8677b",
 					"foreground": "#000000",
-					"leading_diamond": "<transparent,#F8677b>\ue0b0</>",
+					"leading_diamond": "<transparent,#F8677b></>",
 					"properties": {
-						"folder_icon": "\uf07b ",
-						"folder_separator_icon": " \uf554 ",
+						"folder_icon": " ",
+						"folder_separator_icon": "  ",
 						"home_icon": " ",
 						"style": "agnoster_full",
-						"template": " \ue5ff {{ .Path }} "
+						"template": "  {{ .Path }} "
 					},
 					"style": "diamond",
 					"trailing_diamond": "",
@@ -154,7 +154,7 @@
 					],
 					"properties": {
 						"always_enabled": true,
-						"template": "\u2570\u2500\ue285  "
+						"template": "╰─  "
 					},
 					"style": "plain",
 					"template": " ",
@@ -166,12 +166,11 @@
 	],
 	"console_title": true,
 	"console_title_style": "template",
-
 	"console_title_template": "{{ .Folder }}",
 	"transient_prompt": {
 		"background": "transparent",
 		"foreground": "#FEF5ED",
-		"template": "\ue285 "
+		"template": " "
 	},
 	"version": 2
 }

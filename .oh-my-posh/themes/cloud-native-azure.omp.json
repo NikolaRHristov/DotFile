@@ -7,21 +7,21 @@
 				{
 					"background": "#c386f1",
 					"foreground": "#ffffff",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} ",
-					"trailing_diamond": "\ue0b0",
+					"template": " {{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }} ",
+					"trailing_diamond": "",
 					"type": "session"
 				},
 				{
 					"background": "#ff479c",
 					"foreground": "#ffffff",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "folder"
 					},
 					"style": "powerline",
-					"template": " \uf07b  {{ .Path }} ",
+					"template": "   {{ .Path }} ",
 					"type": "path"
 				},
 				{
@@ -33,14 +33,14 @@
 						"{{ if gt .Behind 0 }}#B388FF{{ end }}"
 					],
 					"foreground": "#193549",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
@@ -49,13 +49,13 @@
 						"{{ if gt .Code 0 }}#f1184c{{ end }}"
 					],
 					"foreground": "#ffffff",
-					"leading_diamond": "<transparent,background>\ue0b0</>",
+					"leading_diamond": "<transparent,background></>",
 					"properties": {
 						"always_enabled": true
 					},
 					"style": "diamond",
-					"template": " \ue23a {{ if gt .Code 0 }}\uf00d {{ .Meaning }}{{ else }}\uf42e{{ end }} ",
-					"trailing_diamond": "\ue0b4",
+					"template": "  {{ if gt .Code 0 }} {{ .Meaning }}{{ else }}{{ end }} ",
+					"trailing_diamond": "",
 					"type": "exit"
 				}
 			],
@@ -68,7 +68,7 @@
 					"background": "#0077c2",
 					"foreground": "#ffffff",
 					"style": "plain",
-					"template": "<#0077c2,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,#0077c2>\ue0b2</>",
+					"template": "<#0077c2,transparent></>  {{ .Name }} <transparent,#0077c2></>",
 					"type": "shell"
 				},
 				{
@@ -80,24 +80,24 @@
 					],
 					"foreground": "#ffffff",
 					"invert_powerline": true,
-					"powerline_symbol": "\ue0b2",
+					"powerline_symbol": "",
 					"properties": {
-						"charged_icon": "\ue22f ",
-						"charging_icon": "\uf583 ",
-						"discharging_icon": "\uf582 "
+						"charged_icon": " ",
+						"charging_icon": " ",
+						"discharging_icon": " "
 					},
 					"style": "powerline",
-					"template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 ",
+					"template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} ",
 					"type": "battery"
 				},
 				{
 					"background": "#2e9599",
 					"foreground": "#111111",
 					"invert_powerline": true,
-					"leading_diamond": "\ue0b2",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": " \uf64f {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b4",
+					"template": "  {{ .CurrentDate | date .Format }} ",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],
@@ -110,18 +110,18 @@
 				{
 					"background": "#ebcc34",
 					"foreground": "#000000",
-					"leading_diamond": "\ue0b6",
+					"leading_diamond": "",
 					"style": "diamond",
-					"template": " \ufd31 Kubernetes {{.Context}} cluster {{if .Namespace}}- {{.Namespace}} namespace{{end}} ",
-					"trailing_diamond": "\ue0b0",
+					"template": " ﴱ Kubernetes {{.Context}} cluster {{if .Namespace}}- {{.Namespace}} namespace{{end}} ",
+					"trailing_diamond": "",
 					"type": "kubectl"
 				},
 				{
 					"background": "#9ec3f0",
 					"foreground": "#000000",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"style": "powerline",
-					"template": " \ufd03 Subscription {{ .Name }} ({{ if .EnvironmentName | contains \"AzureCloud\" }}{{ \"Global\" }}{{ else }}{{ .EnvironmentName }}{{ end }}) ",
+					"template": " ﴃ Subscription {{ .Name }} ({{ if .EnvironmentName | contains \"AzureCloud\" }}{{ \"Global\" }}{{ else }}{{ .EnvironmentName }}{{ end }}) ",
 					"type": "az"
 				}
 			],

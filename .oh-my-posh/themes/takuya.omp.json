@@ -7,7 +7,7 @@
 				{
 					"background": "#0077c2",
 					"foreground": "#ffffff",
-					"leading_diamond": "\u256d\u2500\ue0b6",
+					"leading_diamond": "╭─",
 					"style": "diamond",
 					"template": " {{ .Name }} ",
 					"type": "shell"
@@ -16,16 +16,16 @@
 					"background": "#ef5350",
 					"foreground": "#FFFB38",
 					"properties": {
-						"root_icon": "\uf292"
+						"root_icon": ""
 					},
 					"style": "diamond",
-					"template": "<parentBackground>\ue0b0</> \uf0e7 ",
+					"template": "<parentBackground></>  ",
 					"type": "root"
 				},
 				{
 					"background": "#444444",
 					"foreground": "#E4E4E4",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
 						"style": "full"
 					},
@@ -42,14 +42,14 @@
 						"{{ if gt .Behind 0 }}#C792EA{{ end }}"
 					],
 					"foreground": "#011627",
-					"powerline_symbol": "\ue0b0",
+					"powerline_symbol": "",
 					"properties": {
-						"branch_icon": "\ue725 ",
+						"branch_icon": " ",
 						"fetch_status": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "powerline",
-					"template": " {{ .HEAD }} {{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350> \uf046 {{ .Staging.String }}</>{{ end }} ",
+					"template": " {{ .HEAD }} {{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350>  {{ .Staging.String }}</>{{ end }} ",
 					"type": "git"
 				}
 			],
@@ -61,25 +61,25 @@
 				{
 					"background": "#303030",
 					"foreground": "#3C873A",
-					"leading_diamond": " \ue0b6",
+					"leading_diamond": " ",
 					"properties": {
 						"fetch_package_manager": true,
-						"npm_icon": " <#cc3a3a>\ue5fa</> ",
-						"yarn_icon": " <#348cba>\uf61a</>"
+						"npm_icon": " <#cc3a3a></> ",
+						"yarn_icon": " <#348cba></>"
 					},
 					"style": "diamond",
-					"template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
-					"trailing_diamond": "\ue0b4",
+					"template": " {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+					"trailing_diamond": "",
 					"type": "node"
 				},
 				{
 					"background": "#40c4ff",
 					"foreground": "#ffffff",
 					"invert_powerline": true,
-					"leading_diamond": " \ue0b6",
+					"leading_diamond": " ",
 					"style": "diamond",
-					"template": " \uf64f {{ .CurrentDate | date .Format }} ",
-					"trailing_diamond": "\ue0b4",
+					"template": "  {{ .CurrentDate | date .Format }} ",
+					"trailing_diamond": "",
 					"type": "time"
 				}
 			],
@@ -92,7 +92,7 @@
 				{
 					"foreground": "#21c7c7",
 					"style": "plain",
-					"template": "\u2570\u2500",
+					"template": "╰─",
 					"type": "text"
 				},
 				{
@@ -104,7 +104,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": "\u276f ",
+					"template": "❯ ",
 					"type": "exit"
 				}
 			],

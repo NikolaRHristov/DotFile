@@ -18,7 +18,7 @@
 				{
 					"foreground": "#BFA8BF",
 					"properties": {
-						"branch_icon": "\ue725 ",
+						"branch_icon": " ",
 						"fetch_stash_count": true,
 						"fetch_status": true,
 						"fetch_upstream_icon": true,
@@ -31,7 +31,7 @@
 				{
 					"foreground": "#BFA8BF",
 					"style": "powerline",
-					"template": " <#fff>\ufcb5</> {{ .Name }} ",
+					"template": " <#fff>ﲵ</> {{ .Name }} ",
 					"type": "shell"
 				}
 			],
@@ -52,7 +52,7 @@
 						"threshold": 0
 					},
 					"style": "diamond",
-					"template": " <#BBC4B9>{{ .FormattedMs }}s</> <#fff>\uf6dc</>",
+					"template": " <#BBC4B9>{{ .FormattedMs }}s</> <#fff></>",
 					"type": "executiontime"
 				},
 				{
@@ -66,16 +66,16 @@
 				},
 				{
 					"properties": {
-						"root_icon": "\uf292 "
+						"root_icon": " "
 					},
 					"style": "diamond",
-					"template": " \uf0e7",
+					"template": " ",
 					"type": "root"
 				},
 				{
 					"foreground": "#BBC4B9",
 					"style": "diamond",
-					"template": "<#fff>\uf6dc \ue718</> {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+					"template": "<#fff> </> {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
 					"type": "node"
 				}
 			],
@@ -89,13 +89,13 @@
 					"foreground": "#B6D6F2",
 					"leading_diamond": "<#BFA8BF>~</>",
 					"properties": {
-						"folder_icon": "\u002F",
-						"folder_separator_icon": " \u002F ",
+						"folder_icon": "/",
+						"folder_separator_icon": " / ",
 						"home_icon": "home",
 						"style": "agnoster_full"
 					},
 					"style": "diamond",
-					"template": " \ue5ff {{ .Path }}",
+					"template": "  {{ .Path }}",
 					"trailing_diamond": "",
 					"type": "path"
 				},
@@ -108,7 +108,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": " \u007E ",
+					"template": " ~ ",
 					"type": "exit"
 				}
 			],
@@ -119,7 +119,7 @@
 	"transient_prompt": {
 		"background": "transparent",
 		"foreground": "#FEF5ED",
-		"template": "\ue285 "
+		"template": " "
 	},
 	"version": 2
 }
