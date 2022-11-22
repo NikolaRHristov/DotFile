@@ -31,6 +31,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # OMB_DEFAULT_ALIASES="check"
 # OSH_CUSTOM=/path/to/new-custom-folder
 # OMB_USE_SUDO=true
+
 completions=(
 	composer
 	defaults
@@ -110,7 +111,5 @@ fi
 if [ -f ~/.functions ]; then
 	. ~/.functions
 fi
-
-export npm_package_engines_node="v20.0.0"
 
 export PATH="$PATH:/c/Users/nhris/.bin"
