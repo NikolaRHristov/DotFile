@@ -23,6 +23,7 @@ module.exports = {
 	vueIndentScriptAndStyle: true,
 	plugins: [
 		`${MODULES_DIR}@trivago/prettier-plugin-sort-imports`,
+		`${MODULES_DIR}prettier-plugin-sort-imports`,
 		`${MODULES_DIR}prettier-plugin-tailwindcss`,
 		`${MODULES_DIR}@prettier/plugin-php`,
 		`${MODULES_DIR}@prettier/plugin-lua`,
