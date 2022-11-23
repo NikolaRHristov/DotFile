@@ -1,5 +1,4 @@
-const MODULES_DIR =
-	"C:\\Users\\nhris\\AppData\\Local\\pnpm\\global\\5\\node_modules\\";
+const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
 
 module.exports = {
 	content: [
@@ -14,9 +13,9 @@ module.exports = {
 	},
 	variants: {},
 	plugins: [
-		require(MODULES_DIR + "@tailwindcss/forms"),
-		require(MODULES_DIR + "@tailwindcss/typography"),
-		require(MODULES_DIR + "@tailwindcss/line-clamp"),
-		require(MODULES_DIR + "@tailwindcss/aspect-ratio"),
+		require(`${MODULES_DIR}@tailwindcss/forms`),
+		require(`${MODULES_DIR}@tailwindcss/typography`),
+		require(`${MODULES_DIR}@tailwindcss/line-clamp`),
+		require(`${MODULES_DIR}@tailwindcss/aspect-ratio`),
 	],
 };
