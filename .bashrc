@@ -113,3 +113,4 @@ if [ -f ~/.functions ]; then
 fi
 
 export PATH="$PATH:/c/Users/nhris/.bin"
+export AWS_CLI_AUTO_PROMPT=on-partial
