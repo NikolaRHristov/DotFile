@@ -17,21 +17,30 @@ export GPG_TTY
 export PATH=$PATH:/usr/local/go/bin
 export OSH=~/.oh-my-bash
 
+# shellcheck disable=SC2034
 OSH_THEME="powerline-multiline"
+# shellcheck disable=SC2034
 CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 # export UPDATE_OSH_DAYS=13
+# shellcheck disable=SC2034
 DISABLE_LS_COLORS="true"
+# shellcheck disable=SC2034
 DISABLE_AUTO_TITLE="true"
+# shellcheck disable=SC2034
 ENABLE_CORRECTION="true"
+# shellcheck disable=SC2034
 COMPLETION_WAITING_DOTS="true"
+# shellcheck disable=SC2034
 DISABLE_UNTRACKED_FILES_DIRTY="true"
+# shellcheck disable=SC2034
 HIST_STAMPS="mm/dd/yyyy"
 # OMB_DEFAULT_ALIASES="check"
 # OSH_CUSTOM=/path/to/new-custom-folder
 # OMB_USE_SUDO=true
 
+# shellcheck disable=SC2034
 completions=(
 	composer
 	defaults
@@ -47,10 +56,12 @@ completions=(
 	terraform
 )
 
+# shellcheck disable=SC2034
 aliases=(
 	general
 )
 
+# shellcheck disable=SC2034
 plugins=(
 	git
 	bashmarks
@@ -68,7 +79,7 @@ source "$OSH"/oh-my-bash.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 
-export EDITOR='nano'
+export EDITOR="nano"
 export ARCHFLAGS="-arch x86_64"
 
 # pnpm
@@ -101,14 +112,17 @@ if [ -f "$NVM_DIR/nvm.sh" ]; then
 fi
 
 if [ -f "$NVM_DIR/bash_completion" ]; then
+	# shellcheck source=/dev/null
 	. "$NVM_DIR/bash_completion"
 fi
 
 if [ -f ~/.aliases ]; then
+	# shellcheck source=/dev/null
 	. ~/.aliases
 fi
 
 if [ -f ~/.functions ]; then
+	# shellcheck source=/dev/null
 	. ~/.functions
 fi
 
