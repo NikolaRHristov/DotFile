@@ -1,4 +1,5 @@
 const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
+// "C:\Users\nhris\.local\share\pnpm\global\5"
 
 module.exports = {
 	editorConfig: true,
