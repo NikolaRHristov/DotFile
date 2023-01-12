@@ -234,6 +234,7 @@ function bump_dependencies() {
 }
 
 function clean_dependencies() {
+	find -iname .pnpm-store -prune -exec rm -rf {} \;
 	find -iname node_modules -prune -exec rm -rf {} \;
 	find -iname .turbo -prune -exec rm -rf {} \;
 	find -iname .pnpm-debug.log -prune -exec rm -rf {} \;
