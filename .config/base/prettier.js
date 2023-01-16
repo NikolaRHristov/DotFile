@@ -35,6 +35,7 @@ module.exports = {
 		`${MODULES_DIR}prettier-plugin-sh`,
 		`${MODULES_DIR}prettier-plugin-svelte`,
 		`${MODULES_DIR}prettier-plugin-toml`,
+		`${MODULES_DIR}prettier-plugin-sql`,
 	],
 	tailwindConfig:
 		"D:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
