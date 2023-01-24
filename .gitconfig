@@ -17,7 +17,7 @@ pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
-	editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+editor = \"C:\\Users\\nhris\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
 
 [pull]
 rebase = false
@@ -43,7 +43,7 @@ tool = vscode
 [diff]
 colorMoved = default
 tool = vscode
-	context = 0
+context = 0
 
 [delta]
 features = unobtrusive-line-numbers decorations
@@ -76,3 +76,6 @@ prune = true
 
 [branch]
 autoSetupMerge = true
+
+[alias]
+sync = !git pull && git add . && git commit && git push
