@@ -78,4 +78,4 @@ prune = true
 autoSetupMerge = true
 
 [alias]
-sync = !git pull && git add . && git commit && git push
+sync = !git pull && git push
