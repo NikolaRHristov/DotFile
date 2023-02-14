@@ -36,6 +36,7 @@ module.exports = {
 		`${MODULES_DIR}prettier-plugin-svelte`,
 		`${MODULES_DIR}prettier-plugin-toml`,
 		`${MODULES_DIR}prettier-plugin-sql`,
+		`${MODULES_DIR}prettier-plugin-organize-attributes`,
 	],
 	tailwindConfig:
 		"D:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
@@ -84,4 +85,7 @@ module.exports = {
 	],
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
+	attributeGroups: ["$DEFAULT", "^data-"],
+	attributeSort: "ASC",
+	attributeIgnoreCase: false,
 };
