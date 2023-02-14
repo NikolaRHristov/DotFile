@@ -5,18 +5,21 @@ module.exports = {
 	arrowParens: "always",
 	bracketSameLine: true,
 	bracketSpacing: true,
+	// rome-ignore lint/nursery/noPrecisionLoss:
 	cursorOffset: -1,
 	embeddedLanguageFormatting: "auto",
 	endOfLine: "lf",
 	htmlWhitespaceSensitivity: "css",
 	insertPragma: false,
 	jsxSingleQuote: false,
+	// rome-ignore lint/nursery/noPrecisionLoss:
 	printWidth: 80,
 	proseWrap: "always",
 	quoteProps: "preserve",
 	requirePragma: false,
 	semi: true,
 	singleQuote: false,
+	// rome-ignore lint/nursery/noPrecisionLoss:
 	tabWidth: 4,
 	trailingComma: "es5",
 	useTabs: true,
