@@ -157,3 +157,6 @@ export POWERSHELL_TELEMETRY_OPTOUT=1
 export SAM_CLI_TELEMETRY=0
 export STNOUPGRADE=1
 export STRIPE_CLI_TELEMETRY_OPTOUT=1
+
+# Turso
+export PATH="/home/nikola/.turso:$PATH"
