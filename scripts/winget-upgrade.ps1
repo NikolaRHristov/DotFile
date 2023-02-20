@@ -1,1 +1,1 @@
-winget upgrade all
+winget upgrade --all --include-unknown
