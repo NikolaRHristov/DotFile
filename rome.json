@@ -5,7 +5,8 @@
 			"**/node_modules/**",
 			"**/dist/**",
 			"**/build/**",
-			"**/output/**"
+			"**/output/**",
+			"**/.astro/**"
 		],
 		"maxSize": null
 	},
@@ -16,7 +17,8 @@
 			"**/node_modules/**",
 			"**/dist/**",
 			"**/build/**",
-			"**/output/**"
+			"**/output/**",
+			"**/.astro/**"
 		],
 		"indentSize": 4,
 		"indentStyle": "tab",
@@ -37,7 +39,8 @@
 			"**/node_modules/**",
 			"**/dist/**",
 			"**/build/**",
-			"**/output/**"
+			"**/output/**",
+			"**/.astro/**"
 		],
 		"rules": {
 			"a11y": {
