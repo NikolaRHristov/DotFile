@@ -1,5 +1,5 @@
 const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
 		"**/public/**/*.html",
