@@ -1,13 +1,13 @@
 {
 	"$schema": "https://raw.githubusercontent.com/rome/tools/main/npm/rome/configuration_schema.json",
 	"files": {
-		"ignore": ["**/node_modules/**"],
+		"ignore": ["**/node_modules/**", "**/dist/**", "**/build/**"],
 		"maxSize": null
 	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
-		"ignore": ["**/node_modules/**"],
+		"ignore": ["**/node_modules/**", "**/dist/**", "**/build/**"],
 		"indentSize": 4,
 		"indentStyle": "tab",
 		"lineWidth": 80
@@ -23,7 +23,7 @@
 	},
 	"linter": {
 		"enabled": true,
-		"ignore": ["**/node_modules/**"],
+		"ignore": ["**/node_modules/**", "**/dist/**", "**/build/**"],
 		"rules": {
 			"a11y": {
 				"noAutofocus": "error",
