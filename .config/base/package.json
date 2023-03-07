@@ -1,0 +1,15 @@
+{
+	"name": "@nikolarhristov/base",
+	"version": "0.0.1",
+	"license": "MIT",
+	"private": true,
+	"devDependencies": {
+		"@lightrix/config": "workspace:0.0.7",
+		"@types/prettier": "2.7.2",
+		"prettier": "2.8.4",
+		"tailwindcss": "3.2.7"
+	},
+	"publishConfig": {
+		"access": "restricted"
+	}
+}
