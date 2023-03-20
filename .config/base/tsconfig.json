@@ -1,5 +1,5 @@
 {
-	"extends": "./node_modules/@lightrix/config/base/ts",
+	"extends": "@lightrix/config/base/ts",
 	"compilerOptions": {
 		"types": [
 			"@types/prettier"
