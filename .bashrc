@@ -4,7 +4,7 @@ case $- in
 *) return ;;
 esac
 
-if [ -f ${WSLENV+} ]; then
+ if [ -f ${WSLENV+} ]; then
 	export PATH="$PATH:$HOME/.config/xclip"
 fi
 
@@ -42,31 +42,31 @@ HIST_STAMPS="mm/dd/yyyy"
 
 # shellcheck disable=SC2034
 completions=(
-	composer
-	defaults
-	dirs
-	docker
-	docker-compose
-	gh
-	git
-	npm
-	pip
-	pip3
-	ssh
-	terraform
+#	composer
+#	defaults
+#	dirs
+#	docker
+#	docker-compose
+#	gh
+#	git
+#	npm
+#	pip
+#	pip3
+#	ssh
+#	terraform
 )
 
 # shellcheck disable=SC2034
 aliases=(
-	general
+#	general
 )
 
 # shellcheck disable=SC2034
 plugins=(
-	git
-	bashmarks
-	npm
-	progress
+#	git
+#	bashmarks
+#	npm
+#	progress
 )
 
 #  if [ "$DISPLAY" ] || [ "$SSH" ]; then
@@ -89,15 +89,15 @@ if [ -z ${WSLENV+} ]; then
 fi
 # pnpm end
 
-if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
-	# shellcheck source=/dev/null
-	. ~/.config/bash-completion/bash_completion
-fi
+#if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
+#	# shellcheck source=/dev/null
+#	. ~/.config/bash-completion/bash_completion
+#fi
 
-if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
-	# shellcheck source=/dev/null
-	. /usr/share/bash-completion/bash_completion
-fi
+#if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
+#	# shellcheck source=/dev/null
+#	. /usr/share/bash-completion/bash_completion
+#fi
 
 if [ -f "$HOME/.cargo/env" ]; then
 	# shellcheck source=/dev/null
@@ -106,15 +106,15 @@ fi
 
 export PATH="$PATH:$HOME/.cargo/bin"
 
-if [ -f "$NVM_DIR/nvm.sh" ]; then
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/nvm.sh"
-fi
+#if [ -f "$NVM_DIR/nvm.sh" ]; then
+#	# shellcheck source=/dev/null
+#	. "$NVM_DIR/nvm.sh"
+#fi
 
-if [ -f "$NVM_DIR/bash_completion" ]; then
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/bash_completion"
-fi
+#if [ -f "$NVM_DIR/bash_completion" ]; then
+#	# shellcheck source=/dev/null
+#	. "$NVM_DIR/bash_completion"
+#fi
 
 if [ -f ~/.aliases ]; then
 	# shellcheck source=/dev/null
