@@ -4,7 +4,7 @@ case $- in
 *) return ;;
 esac
 
- if [ -f ${WSLENV+} ]; then
+if [ -f ${WSLENV+} ]; then
 	export PATH="$PATH:$HOME/.config/xclip"
 fi
 
@@ -12,8 +12,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export DO_NOT_TRACK=1
-GPG_TTY=$(tty)
-export GPG_TTY
 export PATH=$PATH:/usr/local/go/bin
 export OSH=~/.oh-my-bash
 
@@ -22,7 +20,8 @@ OSH_THEME="powerline-multiline"
 # shellcheck disable=SC2034
 CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
-# DISABLE_AUTO_UPDATE="true"
+# shellcheck disable=SC2034
+DISABLE_AUTO_UPDATE="true"
 # export UPDATE_OSH_DAYS=13
 # shellcheck disable=SC2034
 DISABLE_LS_COLORS="true"
@@ -42,31 +41,31 @@ HIST_STAMPS="mm/dd/yyyy"
 
 # shellcheck disable=SC2034
 completions=(
-#	composer
-#	defaults
-#	dirs
-#	docker
-#	docker-compose
-#	gh
-#	git
-#	npm
-#	pip
-#	pip3
-#	ssh
-#	terraform
+	composer
+	defaults
+	dirs
+	docker
+	docker-compose
+	gh
+	git
+	npm
+	pip
+	pip3
+	ssh
+	terraform
 )
 
 # shellcheck disable=SC2034
 aliases=(
-#	general
+	general
 )
 
 # shellcheck disable=SC2034
 plugins=(
-#	git
-#	bashmarks
-#	npm
-#	progress
+	git
+	bashmarks
+	npm
+	progress
 )
 
 #  if [ "$DISPLAY" ] || [ "$SSH" ]; then
@@ -161,3 +160,6 @@ export TERRAFORM_TELEMETRY=0
 
 # Turso
 export PATH="/home/nikola/.turso:$PATH"
+GPG_TTY=$(tty)
+export GPG_TTY
+export GPG_AGENT_INFO
