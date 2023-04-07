@@ -2,7 +2,7 @@ const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
 
 /** @type {import('prettier').Config} */
 module.exports = {
-	editorConfig: true,
+	// editorConfig: true,
 	arrowParens: "always",
 	bracketSameLine: true,
 	bracketSpacing: true,
