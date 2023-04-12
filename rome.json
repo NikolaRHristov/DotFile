@@ -85,12 +85,10 @@
 				"useValidForDirection": "error"
 			},
 			"nursery": {
-				"noAriaUnsupportedElements": "error",
 				"noAssignInExpressions": "error",
 				"noBannedTypes": "error",
 				"noClassAssign": "error",
 				"noCommaOperator": "error",
-				"noConfusingArrow": "error",
 				"noConfusingLabels": "error",
 				"noDuplicateCase": "error",
 				"noDuplicateClassMembers": "error",
@@ -123,8 +121,8 @@
 				"noUselessSwitchCase": "error",
 				"noWith": "error",
 				"recommended": true,
-				"useAriaPropTypes": "error",
 				"useAriaPropsForRole": "error",
+				"useAriaPropTypes": "error",
 				"useCamelCase": "error",
 				"useExhaustiveDependencies": "error",
 				"useHookAtTopLevel": "error",
@@ -195,5 +193,8 @@
 				"useValidTypeof": "error"
 			}
 		}
+	},
+	"organizeImports": {
+		"enabled": true
 	}
 }
