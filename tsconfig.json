@@ -1,15 +1,18 @@
 {
-	"compilerOptions": {
-		"emitDeclarationOnly": false,
-		"lib": ["ESNext", "DOM"],
-		"noEmit": true
-	},
-	"extends": "@lightrix/config/base/ts",
-	"watchOptions": {
-		"excludeDirectories": ["**/node_modules", "**/dist", "**/samples"],
-		"fallbackPolling": "dynamicPriority",
-		"synchronousWatchDirectory": true,
-		"watchDirectory": "useFsEvents",
-		"watchFile": "useFsEvents"
-	}
+    "compilerOptions": {
+        "emitDeclarationOnly": false,
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "noEmit": true
+    },
+    "extends": "@lightrix/config/base/ts",
+    "watchOptions": {
+        "excludeDirectories": [
+            "**/node_modules",
+            "**/dist",
+            "**/samples"
+        ]
+    }
 }
