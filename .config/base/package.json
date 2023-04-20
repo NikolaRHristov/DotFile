@@ -10,7 +10,6 @@
 		"tailwindcss": "3.3.1"
 	},
 	"publishConfig": {
-		"provenance": true,
 		"access": "restricted"
 	}
 }
