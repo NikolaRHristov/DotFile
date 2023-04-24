@@ -4,6 +4,7 @@
 		"lib": ["ESNext", "DOM"],
 		"noEmit": true
 	},
+	"exclude": ["**/node_modules/**", "**/dist/**", "**/build/**"],
 	"extends": "@lightrix/config/base/ts",
 	"watchOptions": {
 		"excludeDirectories": ["**/node_modules", "**/dist", "**/samples"]
