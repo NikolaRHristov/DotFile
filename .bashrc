@@ -1,7 +1,7 @@
 #!/bin/bash
 case $- in
-*i*) ;;
-*) return ;;
+	*i*) ;;
+	*) return ;;
 esac
 
 if [ -f ${WSLENV+} ]; then
