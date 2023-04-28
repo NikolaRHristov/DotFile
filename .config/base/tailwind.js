@@ -1,4 +1,4 @@
-const MODULES_DIR = "C:\\Users\\nhris\\AppData\\Roaming\\npm\\node_modules\\";
+const MODULES_DIR = "C:\\Users\\nikola\\AppData\\Roaming\\npm\\node_modules\\";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

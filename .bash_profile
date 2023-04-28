@@ -4,4 +4,4 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-if [ -e /home/nhris/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nhris/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /home/nikola/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nikola/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

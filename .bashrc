@@ -125,7 +125,7 @@ if [ -f ~/.functions ]; then
 	. ~/.functions
 fi
 
-export PATH="$PATH:/c/Users/nhris/.bin"
+export PATH="$PATH:/c/Users/nikola/.bin"
 export AWS_CLI_AUTO_PROMPT=on-partial
 
 # Telemetry
