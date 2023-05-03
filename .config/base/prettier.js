@@ -42,7 +42,7 @@ module.exports = {
 		`${MODULES_DIR}prettier-plugin-toml`,
 	],
 	tailwindConfig:
-		"D:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
+		"F:\\Developer\\app\\nikolaxhristov\\dot\\.config\\base\\tailwind.js",
 	overrides: [
 		{
 			files: "*.astro",

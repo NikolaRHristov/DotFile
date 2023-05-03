@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVDIR="/d/Developer/app"
+DEVDIR="/f/Developer/app"
 
 USERS=(
 	"nikolaxhristov"
