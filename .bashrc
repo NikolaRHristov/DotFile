@@ -88,15 +88,15 @@ if [ -z ${WSLENV+} ]; then
 fi
 # pnpm end
 
-#if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
-#	# shellcheck source=/dev/null
-#	. ~/.config/bash-completion/bash_completion
-#fi
+if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
+	# shellcheck source=/dev/null
+	. ~/.config/bash-completion/bash_completion
+fi
 
-#if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
-#	# shellcheck source=/dev/null
-#	. /usr/share/bash-completion/bash_completion
-#fi
+if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
+	# shellcheck source=/dev/null
+	. /usr/share/bash-completion/bash_completion
+fi
 
 if [ -f "$HOME/.cargo/env" ]; then
 	# shellcheck source=/dev/null
@@ -105,15 +105,15 @@ fi
 
 export PATH="$PATH:$HOME/.cargo/bin"
 
-#if [ -f "$NVM_DIR/nvm.sh" ]; then
-#	# shellcheck source=/dev/null
-#	. "$NVM_DIR/nvm.sh"
-#fi
+if [ -f "$NVM_DIR/nvm.sh" ]; then
+	# shellcheck source=/dev/null
+	. "$NVM_DIR/nvm.sh"
+fi
 
-#if [ -f "$NVM_DIR/bash_completion" ]; then
-#	# shellcheck source=/dev/null
-#	. "$NVM_DIR/bash_completion"
-#fi
+if [ -f "$NVM_DIR/bash_completion" ]; then
+	# shellcheck source=/dev/null
+	. "$NVM_DIR/bash_completion"
+fi
 
 if [ -f ~/.aliases ]; then
 	# shellcheck source=/dev/null
