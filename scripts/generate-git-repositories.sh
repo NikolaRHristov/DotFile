@@ -3,7 +3,7 @@
 DEVDIR="/f/Developer/app"
 
 USERS=(
-	"nikolaxhristov"
+	"NikolaRHristov"
 )
 
 for USER in "${USERS[@]}"; do
