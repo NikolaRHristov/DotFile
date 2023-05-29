@@ -33,7 +33,6 @@ useHttpPath = true
 
 [init]
 defaultBranch = main
-templatedir = ~/.git-templates
 
 [commit]
 gpgsign = true
