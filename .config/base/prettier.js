@@ -1,4 +1,4 @@
-const MODULES_DIR = "C:\\Users\\nikola\\AppData\\Roaming\\npm\\node_modules\\";
+const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
 
 /** @type {import('prettier').Config} */
 module.exports = {
