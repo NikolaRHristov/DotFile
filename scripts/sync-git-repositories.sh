@@ -39,13 +39,7 @@ for USER in "${USERS[@]}"; do
 					git clone --recurse-submodules "$REPO"
 				fi
 			else
-				if [[ "$ORG" == "playform" ]]; then
-					if ! [[ "$REPO" =~ .*aws.* ]] && ! [[ "$REPO" =~ .*ec2.* ]]; then
-						git clone --recurse-submodules "$REPO"
-					fi
-				else
-					git clone --recurse-submodules "$REPO"
-				fi
+				git clone --recurse-submodules "$REPO"
 			fi
 		done
 
