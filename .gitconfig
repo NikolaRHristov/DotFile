@@ -18,6 +18,7 @@ excludesfile = "F:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
+ignorecase = false
 
 [pull]
 rebase = false
@@ -80,4 +81,4 @@ autoSetupMerge = true
 [alias]
 sync = !git pull && git push
 [safe]
-	directory = F:/Developer/app/Now-Playing-Cards/socket
+directory = F:/Developer/app/Now-Playing-Cards/socket

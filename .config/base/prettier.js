@@ -28,6 +28,7 @@ module.exports = {
 	plugins: [
 		`${MODULES_DIR}@prettier/plugin-lua`,
 		`${MODULES_DIR}@prettier/plugin-php`,
+		`${MODULES_DIR}@prettier/plugin-xml`,
 		`${MODULES_DIR}@trivago/prettier-plugin-sort-imports`,
 		`${MODULES_DIR}prettier-plugin-astro`,
 		`${MODULES_DIR}prettier-plugin-java`,
