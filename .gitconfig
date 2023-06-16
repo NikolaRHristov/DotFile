@@ -37,6 +37,7 @@ defaultBranch = main
 
 [commit]
 gpgsign = true
+	template = C:/Users/nikola/.gitmessage
 
 [merge]
 tool = vscode
