@@ -13,3 +13,6 @@ url = https://github.com/NikolaRHristov/zsh.git
 [submodule ".config/bash-completion"]
 path = .config/bash-completion
 url = https://github.com/NikolaRHristov/bash-completion.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = ssh://git@github.com/NikolaRHristov/nvim.git
