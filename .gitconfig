@@ -19,6 +19,7 @@ sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
 ignorecase = false
+askpass =
 
 [pull]
 rebase = false
@@ -28,16 +29,12 @@ autoSetupRemote = true
 
 [credential]
 helper = wincred
-
-[credential "https://dev.azure.com"]
-useHttpPath = true
-
 [init]
 defaultBranch = main
 
 [commit]
 gpgsign = true
-	template = C:/Users/nikola/.gitmessage
+template = C:/Users/nikola/.gitmessage
 
 [merge]
 tool = vscode
@@ -81,6 +78,3 @@ autoSetupMerge = true
 
 [alias]
 sync = !git pull && git push
-[safe]
-directory = F:/Developer/app/Now-Playing-Cards/socket
-	directory = F:/Developer/app/Now-Playing-Cards/now-playing.cards
