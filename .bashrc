@@ -164,3 +164,5 @@ export PATH="/home/nikola/.turso:$PATH"
 GPG_TTY=$(tty)
 export GPG_TTY
 export GPG_AGENT_INFO
+
+export RUSTC_WRAPPER=sccache
