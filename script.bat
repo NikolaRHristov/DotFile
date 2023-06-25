@@ -28,7 +28,7 @@ mklink C:\Users\nikola\rome.json F:\Developer\app\NikolaRHristov\dot\rome.json
 mklink C:\Users\nikola\rustfmt.toml F:\Developer\app\NikolaRHristov\dot\rustfmt.toml
 mklink C:\Users\nikola\tailwind.config.js F:\Developer\app\NikolaRHristov\dot\tailwind.config.js
 
-mklink /D C:\Users\nikola\.config\nvim C:\Users\nikola\AppData\Local\nvim
+mklink /D C:\Users\nikola\AppData\Local\nvim C:\Users\nikola\.config\nvim
 
 rm F:\Developer\.clang-format 
 rm F:\Developer\.csharpierrc 
