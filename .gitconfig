@@ -11,7 +11,7 @@ required = true
 
 [core]
 autocrlf = input
-fscache = false
+fscache = true
 symlinks = true
 pager = delta
 excludesfile = "F:\\Developer\\.gitignore"
@@ -19,7 +19,6 @@ sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
 ignorecase = false
-askpass =
 
 [pull]
 rebase = false
@@ -27,8 +26,6 @@ rebase = false
 [push]
 autoSetupRemote = true
 
-[credential]
-helper = wincred
 [init]
 defaultBranch = main
 
@@ -78,3 +75,5 @@ autoSetupMerge = true
 
 [alias]
 sync = !git pull && git push
+[safe]
+	directory = C:/Program Files/Git/__w/
