@@ -81,13 +81,6 @@ export LANG=en_US.UTF-8
 export EDITOR="nano"
 export ARCHFLAGS="-arch x86_64"
 
-# pnpm
-if [ -z ${WSLENV+} ]; then
-	export PNPM_HOME="$HOME/.local/share/pnpm"
-	export PATH="$PNPM_HOME:$PATH"
-fi
-# pnpm end
-
 if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
 	# shellcheck source=/dev/null
 	. ~/.config/bash-completion/bash_completion
