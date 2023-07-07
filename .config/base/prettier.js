@@ -1,6 +1,6 @@
 const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
 
-/** @type {import('prettier').Config} */
+/** @type {import('../../../../../../tools/.pnpm-global/5/node_modules/prettier/index').Config} */
 module.exports = {
 	// editorConfig: true,
 	arrowParens: "always",
@@ -28,19 +28,18 @@ module.exports = {
 	plugins: [
 		`${MODULES_DIR}@prettier/plugin-lua`,
 		`${MODULES_DIR}@prettier/plugin-php`,
-		`${MODULES_DIR}@prettier/plugin-xml`,
-		`${MODULES_DIR}@trivago/prettier-plugin-sort-imports`,
-		`${MODULES_DIR}prettier-plugin-astro`,
-		`${MODULES_DIR}prettier-plugin-java`,
-		`${MODULES_DIR}prettier-plugin-kotlin`,
-		`${MODULES_DIR}prettier-plugin-organize-attributes`,
-		`${MODULES_DIR}prettier-plugin-pkg`,
-		`${MODULES_DIR}prettier-plugin-sh`,
-		`${MODULES_DIR}prettier-plugin-sort-imports`,
-		`${MODULES_DIR}prettier-plugin-sql`,
-		`${MODULES_DIR}prettier-plugin-svelte`,
-		`${MODULES_DIR}prettier-plugin-tailwindcss`,
-		`${MODULES_DIR}prettier-plugin-toml`,
+		// `${MODULES_DIR}@trivago/prettier-plugin-sort-imports`,
+		// `${MODULES_DIR}prettier-plugin-astro`,
+		// `${MODULES_DIR}prettier-plugin-java`,
+		// `${MODULES_DIR}prettier-plugin-kotlin`,
+		// `${MODULES_DIR}prettier-plugin-organize-attributes`,
+		// `${MODULES_DIR}prettier-plugin-pkg`,
+		// `${MODULES_DIR}prettier-plugin-sh`,
+		// `${MODULES_DIR}prettier-plugin-sort-imports`,
+		// `${MODULES_DIR}prettier-plugin-sql`,
+		// `${MODULES_DIR}prettier-plugin-svelte`,
+		// `${MODULES_DIR}prettier-plugin-tailwindcss`,
+		// `${MODULES_DIR}prettier-plugin-toml`,
 	],
 	tailwindConfig:
 		"F:\\Developer\\app\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",
