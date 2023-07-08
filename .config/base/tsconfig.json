@@ -1,6 +1,3 @@
 {
-	"extends": "@lightrix/config/base/ts",
-	"compilerOptions": {
-		"types": ["@types/prettier"]
-	}
+	"extends": "@lightrix/config/base/ts"
 }

@@ -1,6 +1,6 @@
 const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
 
-/** @type {import('../../../../../../tools/.pnpm-global/5/node_modules/prettier/index').Config} */
+/** @type {import('prettier').Config} */
 module.exports = {
 	// editorConfig: true,
 	arrowParens: "always",
