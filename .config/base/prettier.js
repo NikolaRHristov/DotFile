@@ -6,14 +6,12 @@ module.exports = {
 	arrowParens: "always",
 	bracketSameLine: true,
 	bracketSpacing: true,
-
 	cursorOffset: -1,
 	embeddedLanguageFormatting: "auto",
 	endOfLine: "lf",
 	htmlWhitespaceSensitivity: "css",
 	insertPragma: false,
 	jsxSingleQuote: false,
-
 	printWidth: 80,
 	proseWrap: "always",
 	quoteProps: "preserve",

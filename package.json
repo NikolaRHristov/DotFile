@@ -1,0 +1,13 @@
+{
+	"name": "dot",
+	"description": "Nikola Hristov's Dot Files",
+	"version": "0.0.1",
+	"dependencies": {
+		"prettier": "3.0.0"
+	},
+	"private": true,
+	"publishConfig": {
+		"access": "restricted"
+	}
+}
+
