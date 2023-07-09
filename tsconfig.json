@@ -2,8 +2,7 @@
 	"compilerOptions": {
 		"emitDeclarationOnly": false,
 		"lib": ["ESNext", "DOM"],
-		"noEmit": true,
-		"moduleResolution": "NodeNext"
+		"noEmit": true
 	},
 	"exclude": ["**/node_modules/**", "**/dist/**", "**/build/**"],
 	"extends": "@lightrix/config/base/ts",
