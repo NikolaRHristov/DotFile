@@ -75,7 +75,9 @@ autoSetupMerge = true
 
 [alias]
 sync = !git pull && git push
+
 [safe]
-	directory = C:/Program Files/Git/__w/
+directory = C:/Program Files/Git/__w/
+
 [protocol "file"]
-	allow = always
+allow = always
