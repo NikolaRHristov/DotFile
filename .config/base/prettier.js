@@ -32,11 +32,12 @@ module.exports = {
 		// `${MODULES_DIR}prettier-plugin-java`,
 		// `${MODULES_DIR}prettier-plugin-kotlin`,
 		// `${MODULES_DIR}prettier-plugin-organize-attributes`,
-		// `${MODULES_DIR}prettier-plugin-pkg`,
-		// `${MODULES_DIR}prettier-plugin-sh`,
+		`${MODULES_DIR}prettier-plugin-autocorrect`,
+		`${MODULES_DIR}prettier-plugin-pkg`,
+		`${MODULES_DIR}prettier-plugin-sh`,
 		// @TODO: Check for support
 		// `${MODULES_DIR}prettier-plugin-sort-imports`,
-		// `${MODULES_DIR}prettier-plugin-sql`,
+		`${MODULES_DIR}prettier-plugin-sql`,
 		// `${MODULES_DIR}prettier-plugin-svelte`,
 		// @TODO: Check for support
 		// `${MODULES_DIR}prettier-plugin-tailwindcss`,
