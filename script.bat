@@ -4,6 +4,7 @@ rm C:\Users\nikola\.bashrc
 rm C:\Users\nikola\.config
 rm C:\Users\nikola\.functions
 rm C:\Users\nikola\.gitconfig
+rm C:\Users\nikola\.gitmessage
 rm C:\Users\nikola\.oh-my-bash
 rm C:\Users\nikola\.oh-my-posh
 rm C:\Users\nikola\.oh-my-zsh
@@ -19,6 +20,7 @@ mklink C:\Users\nikola\.bashrc F:\Developer\app\NikolaRHristov\dot\.bashrc
 mklink /D C:\Users\nikola\.config F:\Developer\app\NikolaRHristov\dot\.config
 mklink C:\Users\nikola\.functions F:\Developer\app\NikolaRHristov\dot\.functions
 mklink C:\Users\nikola\.gitconfig F:\Developer\app\NikolaRHristov\dot\.gitconfig
+mklink C:\Users\nikola\.gitmessage F:\Developer\app\NikolaRHristov\dot\.gitmessage
 mklink /D C:\Users\nikola\.oh-my-bash F:\Developer\app\NikolaRHristov\dot\.oh-my-bash
 mklink /D C:\Users\nikola\.oh-my-posh F:\Developer\app\NikolaRHristov\dot\.oh-my-posh
 mklink /D C:\Users\nikola\.oh-my-zsh F:\Developer\app\NikolaRHristov\dot\.oh-my-zsh
