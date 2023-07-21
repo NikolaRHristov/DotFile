@@ -78,9 +78,6 @@ sync = !git pull && git push
 
 [safe]
 directory = C:/Program Files/Git/__w/
-	directory = F:/Developer/app/withpatches/tauri
-	directory = F:/Developer/app/withpatches/wry
-	directory = F:/Developer/app/withpatches/tao
 
 [protocol "file"]
 allow = always
