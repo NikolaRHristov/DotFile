@@ -48,12 +48,12 @@ module.exports = {
 	tailwindConfig:
 		"F:\\Developer\\app\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",
 	overrides: [
-		{
-			files: "*.astro",
-			options: {
-				parser: "astro",
-			},
-		},
+		// {
+		// 	files: "*.astro",
+		// 	options: {
+		// 		parser: "astro",
+		// 	},
+		// },
 		{
 			files: "*.svelte",
 			options: {
