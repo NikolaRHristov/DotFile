@@ -1,4 +1,4 @@
-const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
+const MODULES_DIR = "file://f/tools/.pnpm-global/5/node_modules/";
 
 /** @type {import('prettier').Config} */
 module.exports = {
@@ -48,12 +48,12 @@ module.exports = {
 	tailwindConfig:
 		"F:\\Developer\\app\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",
 	overrides: [
-		// {
-		// 	files: "*.astro",
-		// 	options: {
-		// 		parser: "astro",
-		// 	},
-		// },
+		{
+			files: "*.astro",
+			options: {
+				parser: "astro",
+			},
+		},
 		{
 			files: "*.svelte",
 			options: {
