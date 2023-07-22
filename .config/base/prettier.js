@@ -1,4 +1,4 @@
-const MODULES_DIR = "file://f/tools/.pnpm-global/5/node_modules/";
+const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
 
 /** @type {import('prettier').Config} */
 module.exports = {
