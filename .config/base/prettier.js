@@ -2,7 +2,7 @@ const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
 
 /** @type {import('prettier').Config} */
 module.exports = {
-	// editorConfig: true,
+	editorConfig: true,
 	arrowParens: "always",
 	bracketSameLine: true,
 	bracketSpacing: true,
@@ -23,27 +23,27 @@ module.exports = {
 	useTabs: true,
 	vueIndentScriptAndStyle: true,
 	plugins: [
-		// `${MODULES_DIR}@prettier/plugin-lua`,
-		// `${MODULES_DIR}@prettier/plugin-php`,
+		"@prettier/plugin-lua",
+		"@prettier/plugin-php",
 		// @TODO: Check for support
-		`${MODULES_DIR}@trivago/prettier-plugin-sort-imports`,
+		"@trivago/prettier-plugin-sort-imports",
 		// @TODO: Check for support
-		// `${MODULES_DIR}prettier-plugin-astro`,
-		// `${MODULES_DIR}prettier-plugin-java`,
-		// `${MODULES_DIR}prettier-plugin-kotlin`,
-		// `${MODULES_DIR}prettier-plugin-organize-attributes`,
-		// `${MODULES_DIR}prettier-plugin-autocorrect`,
-		// `${MODULES_DIR}prettier-plugin-pkg`,
-		// `${MODULES_DIR}prettier-plugin-sh`,
+		"prettier-plugin-astro",
+		"prettier-plugin-java",
+		"prettier-plugin-kotlin",
+		"prettier-plugin-organize-attributes",
+		"prettier-plugin-autocorrect",
+		"prettier-plugin-pkg",
+		"prettier-plugin-sh",
 		// @TODO: Check for support
-		// `${MODULES_DIR}prettier-plugin-sort-imports`,
-		// `${MODULES_DIR}prettier-plugin-sql`,
-		// `${MODULES_DIR}prettier-plugin-svelte`,
+		"prettier-plugin-sort-imports",
+		"prettier-plugin-sql",
+		"prettier-plugin-svelte",
 		// @TODO: Check for support
-		// `${MODULES_DIR}prettier-plugin-tailwindcss`,
+		"prettier-plugin-tailwindcss",
 		// @TODO: Check for support
-		// `${MODULES_DIR}prettier-plugin-toml`,
-		// `${MODULES_DIR}prettier-plugin-packagejson`,
+		"prettier-plugin-toml",
+		"prettier-plugin-packagejson",
 	],
 	tailwindConfig:
 		"F:\\Developer\\app\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",
