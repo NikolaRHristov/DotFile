@@ -6,9 +6,9 @@ OMIT="astro-community"
 
 ORGS=()
 
-for element in "${array[@]}"; do
-	if [[ "$element" != "$OMIT" ]]; then
-		ORGS+=("$element")
+for E in "${array[@]}"; do
+	if [[ "$E" != "$OMIT" ]]; then
+		ORGS+=("$E")
 	fi
 done
 
