@@ -56,3 +56,246 @@ git log --oneline
 cd /f/Developer/app/RoundedCorners/app
 #1690109775
 git log --oneline 
+#1690109782
+dum tauri build
+#1690110614
+explorer .
+#1690110640
+git add .
+#1690110647
+git log --oneline
+#1690110663
+git add .
+#1690110668
+ci CHANGELOG.md package.json 
+#1690110704
+dum tauri build
+#1690110841
+git add .
+#1690110844
+git commit -m "0.0.7"
+#1690110857
+git tag -s -m "v0.0.7" -a "v0.0.7"
+#1690110887
+git push --tags
+#1690110889
+git push
+#1690110965
+gh release -h
+#1690110982
+gh release create v0.0.7 --generate-release-notes
+#1690110987
+gh release create v0.0.7 --generate-notes
+#1690111102
+git add .
+#1690111109
+git commit -m "squash!"
+#1690111110
+git push
+#1690111700
+cd ../../Now-Playing-Cards/common/
+#1690111702
+git log --oneline 
+#1690111707
+git add .
+#1690111708
+ci package.json 
+#1690111988
+dum prepublishOnly
+#1690112283
+ci package.json CHANGELOG.md 
+#1690112291
+git log --oneline 
+#1690112308
+git add .
+#1690112316
+dum prepublishOnly
+#1690112621
+ci package.json 
+#1690112688
+git add. 
+#1690112690
+git add .
+#1690112696
+git commit -m "0.0.10"
+#1690112736
+git tag -s -m "v0.0.10" -a "v0.0.10"
+#1690112744
+git push
+#1690112747
+git push --tags
+#1690112779
+git tag -l
+#1690112783
+git push --tags
+#1690112790
+gh release create v0.0.10 --generate-notes
+#1690112952
+npm show @nowplayingcards/common
+#1690112959
+npm show @nowplayingcards/common version
+#1690113011
+cd /f/Developer/
+#1690113012
+bmd
+#1690114629
+cd app/Mytheme-Cloud/cargo/
+#1690114632
+git log --oneline 
+#1690114641
+ci Cargo.toml
+#1690116315
+git add .
+#1690116318
+git commit -m "0.0.2"
+#1690116330
+cargo build
+#1690116453
+git add .
+#1690116457
+git commit --amend --no-edit
+#1690116464
+git tag -s -m "v0.0.2" -a "v0.0.2"
+#1690116466
+git push
+#1690116469
+git push --tags
+#1690116693
+gh release create v0.0.2 --generate-notes
+#1690118727
+cargo build
+#1690120895
+cargo install mytheme
+#1690120905
+cargo publish
+#1690120910
+cargo login
+#1690121155
+cd /f/Developer/
+#1690121271
+cd app/Mytheme-Cloud/cargo/
+#1690121272
+git add .
+#1690121292
+git log --oneline
+#1690121300
+git commit -m "0.0.2
+"
+#1690121307
+git tag -D 0.0.2
+#1690121312
+git tag -d v0.0.2 
+#1690121328
+git push --delete origin v0.0.2
+#1690121337
+git tag -s -m "v0.0.2" -a "v0.0.2"
+#1690121340
+git push --tags
+#1690121344
+gh release delete v0.0.2
+#1690121350
+git push
+#1690121352
+git push --tags
+#1690121407
+gh release create v0.0.2 --generate-notes
+#1690121208
+./app/NikolaRHristov/dot/scripts/tag-latest.sh 
+#1690121417
+git remote -v
+#1690121418
+cd /f/Developer/
+#1690121426
+git log --oneline
+#1690121440
+find -iname .git -execdir bash -c 'pwd && git remote -v' \;
+#1690121469
+find -iname .git -execdir bash -c 'pwd && git remote -v' \; > text.md
+#1690121844
+cd app/Lightrix/npm/
+#1690121847
+git add. 
+#1690121849
+git add .
+#1690121853
+dum prepublishOnly
+#1690122760
+cd scripts/
+#1690122763
+git log --oneline
+#1690122774
+git remote -v
+#1690122839
+cd /f/Developer/
+#1690122847
+find -iname package.json -execdir sort-package-json \;
+#1690122898
+cd -
+#1690122915
+ci package.json 
+#1690122927
+npm show @lightrix/scripts version
+#1690125493
+./text.sh 
+#1690126134
+cd app/Lightrix/npm/
+#1690126138
+cd scripts/
+#1690126144
+ci package.json CHANGELOG.md 
+#1690126637
+cargo show
+#1690126644
+cargo --list innkeeper
+#1690126926
+cd /f/Developer/app/Lightrix/inn/
+#1690126933
+gh release create v0.0.7 --generate-notes 
+#1690127291
+git push
+#1690127295
+git log -one
+#1690127297
+git sync
+#1690127305
+./target/release/inn.exe -V
+#1690127329
+ci CHANGELOG.md 
+#1690127394
+cargo add toml
+#1690130715
+git add .
+#1690130954
+cargo build
+#1690130983
+./target/release/inn.exe -V
+#1690131032
+git add .
+#1690131132
+cargo build
+#1690131147
+ci Cargo.
+#1690131154
+ci Cargo.toml 
+#1690131175
+git add .
+#1690131178
+cargo build
+#1690132132
+git add .
+#1690132305
+git commit -m "0.0.8"
+#1690132321
+git tag -s -m "v0.0.8" -a "v0.0.8"
+#1690132323
+git push
+#1690132326
+git push --tags
+#1690132338
+gh release create v0.0.8 --generate-notes 
+#1690132585
+./target/release/inn.exe -V
+#1690132623
+cargo publish
+#1690134132
+cd /f/Developer/
