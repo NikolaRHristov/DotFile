@@ -1,7 +1,7 @@
 #!/bin/bash
 case $- in
-	*i*) ;;
-	*) return ;;
+*i*) ;;
+*) return ;;
 esac
 
 if [ -f ${WSLENV+} ]; then
@@ -159,3 +159,13 @@ export GPG_TTY
 export GPG_AGENT_INFO
 
 # export RUSTC_WRAPPER=sccache
+
+# Append commands to the history file as soon as they are executed
+shopt -s histappend
+
+# Set the maximum number of history lines to store (optional)
+HISTSIZE=10000
+HISTFILESIZE=10000
+
+# Define a common history file
+HISTFILE="$HOME/.bash_history_shared"

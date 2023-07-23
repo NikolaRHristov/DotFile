@@ -1,0 +1,46 @@
+#1690103361
+github-dependents-info --repo astro-community/astro-compress --json > jq .all_public_dependent_repos.[].name
+#1690103368
+github-dependents-info --repo astro-community/astro-compress --json | jq .all_public_dependent_repos.[].name
+#1690103377
+github-dependents-info --repo astro-community/astro-compress --json | jq .[].all_public_dependent_repos.[].name
+#1690103415
+github-dependents-info --repo astro-community/astro-compress --json | jq .all_public_dependent_repos[].name
+#1690103598
+github-dependents-info --repo astro-community/astro-compress --json | jq .packages[0][0].public_dependents[].name
+#1690103941
+./app/NikolaRHristov/dot/scripts/star-used.sh 
+#1690104202
+github-dependents-info --repo astro-community/astro-compress --json | jq '.all_public_dependent_repos[].name'
+#1690104213
+github-dependents-info --repo astro-community/astro-compress --json | jq -r '.all_public_dependent_repos[].name'
+#1690104301
+ci ~/.bash_history
+#1690104316
+gh api -X PUT user/starred/astro-community/astro-compress
+#1690104348
+gh repo star playform/blank-web-starter
+#1690104357
+gh api -X put user/starred/playform/blank-web-starter
+#1690104540
+./app/NikolaRHristov/dot/scripts/star-used.sh 
+#1690104559
+gh api 		--method PUT 		-H "Accept: application/vnd.github+json" 		-H "X-GitHub-Api-Version: 2022-11-28" 		user/starred/playform/blank-web-starter
+#1690104810
+gh api 		--method GET 		-H "Accept: application/vnd.github+json" 		-H "X-GitHub-Api-Version: 2022-11-28" 		user/repos"
+
+
+#1690104820
+gh api 		--method GET 		-H "Accept: application/vnd.github+json" 		-H "X-GitHub-Api-Version: 2022-11-28" 		user/repos
+#1690104863
+gh api 		--method GET 		-H "Accept: application/vnd.github+json" 		-H "X-GitHub-Api-Version: 2022-11-28" 		users/NikolaRHristov/repos
+#1690104921
+gh api 		--method GET 		-H "Accept: application/vnd.github+json" 		-H "X-GitHub-Api-Version: 2022-11-28" 		users/NikolaRHristov/repos | jq.[].full_name
+#1690104924
+gh api 		--method GET 		-H "Accept: application/vnd.github+json" 		-H "X-GitHub-Api-Version: 2022-11-28" 		users/NikolaRHristov/repos | jq .[].full_name
+#1690104621
+./app/NikolaRHristov/dot/scripts/star-used.sh 
+#1690105452
+gh api --method GET -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" orgs/playform/repos | jq -r '.[].full_name'
+#1690105975
+./app/NikolaRHristov/dot/scripts/star-used.sh 

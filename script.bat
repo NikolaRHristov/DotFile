@@ -1,5 +1,7 @@
 rm C:\Users\nikola\.aliases
 rm C:\Users\nikola\.bash_profile
+rm C:\Users\nikola\.bash_logout
+rm C:\Users\nikola\.bash_history_shared
 rm C:\Users\nikola\.bashrc
 rm C:\Users\nikola\.config
 rm C:\Users\nikola\.functions
@@ -16,6 +18,8 @@ rm C:\Users\nikola\rome.json
 
 mklink C:\Users\nikola\.aliases F:\Developer\app\NikolaRHristov\dot\.aliases
 mklink C:\Users\nikola\.bash_profile F:\Developer\app\NikolaRHristov\dot\.bash_profile
+mklink C:\Users\nikola\.bash_logout F:\Developer\app\NikolaRHristov\dot\.bash_logout
+mklink C:\Users\nikola\.bash_history_shared F:\Developer\app\NikolaRHristov\dot\.bash_history_shared
 mklink C:\Users\nikola\.bashrc F:\Developer\app\NikolaRHristov\dot\.bashrc
 mklink /D C:\Users\nikola\.config F:\Developer\app\NikolaRHristov\dot\.config
 mklink C:\Users\nikola\.functions F:\Developer\app\NikolaRHristov\dot\.functions
