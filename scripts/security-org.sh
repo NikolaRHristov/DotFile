@@ -4,47 +4,47 @@ mapfile -t array < <(printf "%s" "$(gh api -X GET user/orgs | jq -r '.[].login')
 
 omit="astro-community"
 
-orgs=()
+ORGS=()
 
 for element in "${array[@]}"; do
 	if [[ "$element" != "$omit" ]]; then
-		orgs+=("$element")
+		ORGS+=("$element")
 	fi
 done
 
-for org in "${orgs[@]}"; do
+for ORG in "${ORGS[@]}"; do
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/dependency_graph/enable_all \
+		orgs/"${ORG}"/dependency_graph/enable_all \
 		-f query_suite='extended' \
 		--silent
 
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/dependabot_alerts/enable_all \
+		orgs/"${ORG}"/dependabot_alerts/enable_all \
 		-f query_suite='extended' \
 		--silent
 
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/dependabot_security_updates/enable_all \
+		orgs/"${ORG}"/dependabot_security_updates/enable_all \
 		-f query_suite='extended' \
 		--silent
 
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/advanced_security/enable_all \
+		orgs/"${ORG}"/advanced_security/enable_all \
 		-f query_suite='extended' \
 		--silent
 
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/code_scanning_default_setup/enable_all \
+		orgs/"${ORG}"/code_scanning_default_setup/enable_all \
 		-f query_suite='extended' \
 		--silent
 
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/secret_scanning/enable_all \
+		orgs/"${ORG}"/secret_scanning/enable_all \
 		-f query_suite='extended' \
 		--silent
 
 	gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}"/secret_scanning_push_protection/enable_all \
+		orgs/"${ORG}"/secret_scanning_push_protection/enable_all \
 		-f query_suite='extended' \
 		--silent
 done

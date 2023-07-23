@@ -2,17 +2,17 @@
 
 mapfile -t array < <(printf "%s" "$(gh api -X GET user/orgs | jq -r '.[].login')" | tr -d '\r')
 
-omit="astro-community"
+OMIT="astro-community"
 
-orgs=()
+ORGS=()
 
 for element in "${array[@]}"; do
-	if [[ "$element" != "$omit" ]]; then
-		orgs+=("$element")
+	if [[ "$element" != "$OMIT" ]]; then
+		ORGS+=("$element")
 	fi
 done
 
-for org in "${orgs[@]}"; do
+for org in "${ORGS[@]}"; do
 	billing_email="hello@lightrix.help"
 	email="hello@lightrix.help"
 
