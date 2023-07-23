@@ -2,12 +2,12 @@
 
 mapfile -t array < <(printf "%s" "$(gh api -X GET user/orgs | jq -r '.[].login')" | tr -d '\r')
 
-omit="astro-community"
+OMIT="astro-community"
 
 ORGS=()
 
 for element in "${array[@]}"; do
-	if [[ "$element" != "$omit" ]]; then
+	if [[ "$element" != "$OMIT" ]]; then
 		ORGS+=("$element")
 	fi
 done

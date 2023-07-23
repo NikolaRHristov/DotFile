@@ -12,58 +12,58 @@ for element in "${array[@]}"; do
 	fi
 done
 
-for org in "${ORGS[@]}"; do
-	billing_email="hello@lightrix.help"
-	email="hello@lightrix.help"
+for ORG in "${ORGS[@]}"; do
+	EMAIL_BILLING="hello@lightrix.help"
+	EMAIL="hello@lightrix.help"
 
-	case "$org" in
+	case "$ORG" in
 	"Playform")
-		billing_email="hello@playform.cloud"
-		email="hello@playform.cloud"
+		EMAIL_BILLING="hello@playform.cloud"
+		EMAIL="hello@playform.cloud"
 		;;
 	"windowsdock")
-		billing_email="hello@windowsdock.app"
-		email="hello@windowsdock.app"
+		EMAIL_BILLING="hello@windowsdock.app"
+		EMAIL="hello@windowsdock.app"
 		;;
 	"RoundedCorners")
-		billing_email="hello@roundedcorners.app"
-		email="hello@roundedcorners.app"
+		EMAIL_BILLING="hello@roundedcorners.app"
+		EMAIL="hello@roundedcorners.app"
 		;;
 	"BlackRainbowAI")
-		billing_email="hello@blackrainbow.media"
-		email="hello@blackrainbow.media"
+		EMAIL_BILLING="hello@blackrainbow.media"
+		EMAIL="hello@blackrainbow.media"
 		;;
 	"imagewtf")
-		billing_email="hello@image.wtf"
-		email="hello@image.wtf"
+		EMAIL_BILLING="hello@image.wtf"
+		EMAIL="hello@image.wtf"
 		;;
 	"returnthief")
-		billing_email="hello@returnthief.quest"
-		email="hello@returnthief.quest"
+		EMAIL_BILLING="hello@returnthief.quest"
+		EMAIL="hello@returnthief.quest"
 		;;
 	"Doccer-Page")
-		billing_email="hello@doccer.page"
-		email="hello@doccer.page"
+		EMAIL_BILLING="hello@doccer.page"
+		EMAIL="hello@doccer.page"
 		;;
 	"hristov-foundation")
-		billing_email="hello@hristov.foundation"
-		email="hello@hristov.foundation"
+		EMAIL_BILLING="hello@hristov.foundation"
+		EMAIL="hello@hristov.foundation"
 		;;
 	"mytheme-cloud")
-		billing_email="hello@mytheme.cloud"
-		email="hello@mytheme.cloud"
+		EMAIL_BILLING="hello@mytheme.cloud"
+		EMAIL="hello@mytheme.cloud"
 		;;
 	"NowPlayingCards")
-		billing_email="hello@nowplaying.cards"
-		email="hello@nowplaying.cards"
+		EMAIL_BILLING="hello@nowplaying.cards"
+		EMAIL="hello@nowplaying.cards"
 		;;
 	"NeovimSpace")
-		billing_email="hello@neovim.space"
-		email="hello@neovim.space"
+		EMAIL_BILLING="hello@neovim.space"
+		EMAIL="hello@neovim.space"
 		;;
 	"HalleSoftware")
-		billing_email="hello@halle.software"
-		email="hello@halle.software"
+		EMAIL_BILLING="hello@halle.software"
+		EMAIL="hello@halle.software"
 		;;
 	esac
 
@@ -71,11 +71,11 @@ for org in "${ORGS[@]}"; do
 		--method PATCH \
 		-H "Accept: application/vnd.github+json" \
 		-H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${org}" \
+		orgs/"${ORG}" \
 		-f location='Bulgaria' \
 		-f company='Lightrix' \
-		-f billing_email=${billing_email} \
-		-f email=${email} \
+		-f billing_email=${EMAIL_BILLING} \
+		-f email=${EMAIL} \
 		-F has_organization_projects=false \
 		-F has_repository_projects=false \
 		-f default_repository_permission='none' \
