@@ -299,3 +299,13 @@ gh release create v0.0.8 --generate-notes
 cargo publish
 #1690134132
 cd /f/Developer/
+#1690134200
+cd app/Lightrix/npm/
+#1690134202
+git status
+#1690134205
+git log --oneline
+#1690134918
+ci scripts/package.json scripts/CHANGELOG.md 
+#1690135068
+cd scripts/
