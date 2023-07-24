@@ -309,3 +309,31 @@ git log --oneline
 ci scripts/package.json scripts/CHANGELOG.md 
 #1690135068
 cd scripts/
+#1690135071
+dum prepublishOnly
+#1690135226
+git add .
+#1690135230
+cd ../
+#1690135232
+git add .
+#1690135246
+git commit -m "@lightrix/scripts@1.0.7"
+#1690135266
+git tag -s -m "@lightrix/scripts@v1.0.7" -a "@lightrix/scripts@v1.0.7"
+#1690135278
+git push --tags
+#1690135312
+git push 
+#1690135324
+gh release create @lightrix/scripts@v1.0.7 --generate-notes 
+#1690135331
+npm show @lightrix/scripts
+#1690135340
+npm show @lightrix/scripts versions
+#1690135854
+git push --tags
+#1690135857
+git tag -l
+#1690173562
+cd /f/Developer/
