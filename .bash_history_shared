@@ -535,3 +535,49 @@ web-ext
 web-ext -c config/ext.ts 
 #1690197105
 dum prepublishOnly
+#1690197651
+cd /f/Developer/
+#1690197659
+dum prepublishOnly --filter=glory-of-twitter
+#1690197906
+[A
+#1690197911
+dum prepublishOnly --filter=glory-of-twitter
+#1690197974
+dum dev --filter=glory-of-twitter
+#1690199194
+web-ext docs
+#1690199225
+dum dev --filter=glory-of-twitter
+#1690199435
+web-dev lint
+#1690199439
+web-ext lint
+#1690199616
+cd app/NikolaRHristov/we
+#1690199677
+cd app/NikolaRHristov/
+#1690199681
+cd glory-of-twitter/
+#1690199684
+web-ext lint
+#1690199729
+dum prepublishOnly && web-ext lint
+#1690203868
+git add .
+#1690203871
+git commit -m "squash!"
+#1690203878
+git push
+#1690207546
+cd /f/Developer/app/NikolaRHristov/nikolahristov.tech/
+#1690207547
+dum build
+#1690207574
+ci dist/index.html 
+#1690208273
+cd /f/Developer/
+#1690208282
+dum prepublishOnly --filter=@yesmaintenance/scripts
+#1690208287
+maintenance clean
