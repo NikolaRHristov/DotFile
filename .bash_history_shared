@@ -475,3 +475,17 @@ dum dev
 cd app/NikolaRHristov/bot/
 #1690189060
 dum prepublishOnly
+#1690189168
+node dist/apps/discord.js 
+#1690189272
+dum prepublishOnly && node ./dist/apps/discord.js 
+#1690189489
+dum install -E axios
+#1690189573
+dum prepublishOnly
+#1690189637
+node ./dist/apps/getWebhooks.js 
+#1690189721
+dum prepublishOnly && node ./dist/apps/getWebhooks.js 
+#1690190092
+dum prepublishOnly && node ./dist/apps/discord.js 
