@@ -367,3 +367,99 @@ git push --tags
 gh release create @lightrix/config@v0.0.12 --generate-notes 
 #1690175476
 git push
+#1690175991
+bmd
+#1690176936
+curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify"      -H "Authorization: Bearer 4xR51BnJq-l-sfSgDWRaU4gfIGSPZD1y23Yfw38c"      -H "Content-Type:application/json"
+#1690177951
+cd ../../Now-Playing-Cards/socket/
+#1690177954
+bmd
+#1690178200
+cd ../../Lightrix/inn/
+#1690178201
+git status
+#1690178203
+git tag -l
+#1690178208
+git log --oneline 
+#1690178255
+cd ../files-pipe/
+#1690178259
+git log --oneline 
+#1690178267
+ci CHANGELOG.md package.json 
+#1690178270
+bmd
+#1690178279
+dum prepublishOnly
+#1690177962
+bmd
+#1690179375
+git add .
+#1690179440
+npm show @lightrix/files-pipe
+#1690179454
+npm show files-pipe
+#1690179457
+git add .
+#1690179462
+bmd && dum install && dum prepublishOnly
+#1690179619
+git log --oneline
+#1690179639
+git tag -s -m "v0.0.8" -a "v0.0.8"
+#1690179642
+git push --tags
+#1690179660
+gh release create v0.0.8 --generate-notes 
+#1690179733
+git log --oneline
+#1690179755
+gh release create v0.0.8 --generate-notes 
+#1690179765
+gh release
+#1690179772
+gh release list
+#1690179825
+v0.0.11
+#1690179825
+gh release delete v0.0.12
+#1690179826
+gh release delete v0.0.9
+#1690179827
+gh release delete v0.1.0
+#1690179833
+gh release delete v0.1.1
+#1690179836
+gh release delete v0.1.2
+#1690179862
+gh release delete -h
+#1690179869
+gh release delete v0.0.10 -y
+#1690179870
+gh release delete v0.0.11 -y
+#1690179872
+gh release delete v0.0.12 -y
+#1690179873
+gh release delete v0.0.9 -y
+#1690179874
+gh release delete v0.1.0 -y
+#1690179876
+gh release delete v0.1.1 -y
+#1690179877
+gh release delete v0.1.2 -y
+#1690179879
+gh release delete v0.1.3 -y
+#1690179880
+gh release delete v0.1.4 -y
+#1690179881
+gh release delete v0.1.5 -y
+#1690179883
+gh release delete v0.1.6 -y
+#1690180020
+cd /f/Developer/
+#1690180030
+find -iname CHANGELOG.md -execdir code-insiders CONTRIBUTING.md \;
+#1690181265
+dum build --filter=nikolahristov-web
