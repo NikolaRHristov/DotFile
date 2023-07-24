@@ -337,3 +337,33 @@ git push --tags
 git tag -l
 #1690173562
 cd /f/Developer/
+#1690173570
+./app/NikolaRHristov/dot/scripts/tag-latest.sh 
+#1690174094
+cd app/Lightrix/npm/
+#1690174104
+git status
+#1690174106
+git tag -l
+#1690174128
+git log --oneline
+#1690174134
+git tag -l
+#1690175093
+ci config/package.json config/CHANGELOG.md 
+#1690175119
+git add. 
+#1690175120
+git add .
+#1690175409
+git commit -m "@lightrix/config@0.0.12"
+#1690175436
+git tag -s -m "@lightrix/config@v0.0.12" -a "@lightrix/config@v0.0.12"
+#1690175438
+git push
+#1690175442
+git push --tags
+#1690175474
+gh release create @lightrix/config@v0.0.12 --generate-notes 
+#1690175476
+git push
