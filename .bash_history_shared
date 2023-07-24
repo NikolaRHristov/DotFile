@@ -495,3 +495,43 @@ bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir b
 cld
 #1690194496
 cd app/NikolaRHristov/
+#1690193431
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690195693
+git clone ssh://git@github.com/glory-of-twitter.git
+#1690195702
+git clone ssh://git@github.com/NikolaRHristov/glory-of-twitter.git
+#1690195706
+cd glory-of-twitter/
+#1690195708
+npm init
+#1690195730
+dum install -D -E @lightrix/config @lightrix/scripts
+#1690196090
+sort-package-json
+#1690196093
+cd /f/Developer/
+#1690196099
+find -iname package.json -execdir sort-package-json
+#1690196100
+find -iname package.json -execdir sort-package-json \;
+#1690196156
+cd app/NikolaRHristov/glory-of-twitter/
+#1690196159
+dum install -D -E web-ext
+#1690196423
+dum prepublishOnly
+#1690196468
+dum install -g web-ext
+#1690196633
+dum install -D -E esbuild-plugin-copy esbuild
+#1690196824
+dum prepublishOnly
+#1690196828
+sort-package-json
+#1690196848
+web-ext
+#1690196894
+web-ext -c config/ext.ts 
+#1690197105
+dum prepublishOnly
