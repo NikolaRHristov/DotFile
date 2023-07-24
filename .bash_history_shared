@@ -489,3 +489,5 @@ node ./dist/apps/getWebhooks.js
 dum prepublishOnly && node ./dist/apps/getWebhooks.js 
 #1690190092
 dum prepublishOnly && node ./dist/apps/discord.js 
+#1690189132
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
