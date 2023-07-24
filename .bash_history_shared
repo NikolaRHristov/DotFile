@@ -465,3 +465,5 @@ find -iname CHANGELOG.md -execdir code-insiders CONTRIBUTING.md \;
 dum build --filter=nikolahristov-web
 #1690180448
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690186858
+dum prepublishOnly --filter=@nikolarhristov/scripts
