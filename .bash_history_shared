@@ -467,3 +467,11 @@ dum build --filter=nikolahristov-web
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690186858
 dum prepublishOnly --filter=@nikolarhristov/scripts
+#1690188920
+cd app/NikolaRHristov/bot/
+#1690188925
+dum dev
+#1690189009
+cd app/NikolaRHristov/bot/
+#1690189060
+dum prepublishOnly
