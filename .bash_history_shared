@@ -581,3 +581,13 @@ cd /f/Developer/
 dum prepublishOnly --filter=@yesmaintenance/scripts
 #1690208287
 maintenance clean
+#1690210437
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690221854
+dum build --filter=nikolahristov-web
+#1690221918
+ci app/NikolaRHristov/nikolahristov.tech/dist/raw/readmes/NikolaRHristov/index.html 
+#1690267751
+cd app/NikolaRHristov/nikolahristov.tech/
+#1690267753
+dum build
