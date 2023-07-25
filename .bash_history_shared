@@ -591,3 +591,5 @@ ci app/NikolaRHristov/nikolahristov.tech/dist/raw/readmes/NikolaRHristov/index.h
 cd app/NikolaRHristov/nikolahristov.tech/
 #1690267753
 dum build
+#1690267526
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
