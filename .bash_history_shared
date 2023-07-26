@@ -607,3 +607,15 @@ cd playform.cloud/
 cd app/Playform/playform.cloud/
 #1690376753
 git push --force
+#1690383971
+cd /f/Developer/
+#1690383977
+./app/NikolaRHristov/dot/scripts/tag-latest.sh 
+#1690385338
+cd app/YesMaintenance/npm/
+#1690385341
+git log --one
+#1690385342
+git log --oneline 
+#1690385373
+git remote -v
