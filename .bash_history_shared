@@ -619,3 +619,9 @@ git log --one
 git log --oneline 
 #1690385373
 git remote -v
+#1690387533
+bmd
+#1690387537
+dum install
+#1690387541
+dum prepublishOnly
