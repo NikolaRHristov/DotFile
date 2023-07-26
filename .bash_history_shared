@@ -593,3 +593,17 @@ cd app/NikolaRHristov/nikolahristov.tech/
 dum build
 #1690267526
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690368563
+cd app
+#1690368565
+mkdir Playform
+#1690368567
+cd Playform/
+#1690368576
+git clone ssh://git@github.com/Playform/playform.cloud.git
+#1690368590
+cd playform.cloud/
+#1690376750
+cd app/Playform/playform.cloud/
+#1690376753
+git push --force
