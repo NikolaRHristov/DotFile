@@ -625,3 +625,11 @@ bmd
 dum install
 #1690387541
 dum prepublishOnly
+#1690387598
+corepack prepare pnpm@8.6.10 --activate
+#1690387571
+dum install
+#1690387637
+corepack enable
+#1690385658
+./app/NikolaRHristov/dot/scripts/star-used.sh 
