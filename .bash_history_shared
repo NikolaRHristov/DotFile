@@ -733,3 +733,165 @@ git remote -v
 git remote set-url origin ssh://git@github.com/Playform/wordpress.git
 #1690453322
 git push
+#1690452227
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690454399
+cd /f/Developer/
+#1690454407
+./app/NikolaRHristov/dot/scripts/tag-latest.sh > test3.md
+#1690455267
+cd app/astro-community/astro-compress/
+#1690455269
+ci CHANGELOG.md package.json 
+#1690455290
+git add .
+#1690455294
+git commit -m "1.1.50"
+#1690455306
+bmd && dum install && dum prepublishOnly
+#1690455369
+git tag -s -m "v1.1.50" -a "v1.1.50"
+#1690455371
+git push
+#1690455374
+git push --tags
+#1690455392
+gh release create v1.1.50 --generate-notes 
+#1690456113
+npm show astro-compress
+#1690456137
+cd ../astro-critters/
+#1690456139
+git add .
+#1690456142
+bmd && dum install && dum prepublishOnly
+#1690456904
+git log --oneline
+#1690457479
+ci package.json CHANGELOG.md 
+#1690457573
+bmd
+#1690457583
+dum install && dum prepublishOnly
+#1690457720
+cd /f/Developer/
+#1690457724
+find -iname package.json -execdir sort-package-json \;
+#1690457797
+cd app/astro-community/astro-critters/
+#1690457799
+git add .
+#1690457804
+git tag -s -m "v1.1.40" -a "v1.1.40"
+#1690457806
+git push --tags
+#1690457811
+git push
+#1690457820
+gh release create v1.1.40 --generate-notes 
+#1690458554
+npm show astro-critters version
+#1690459660
+cd ../astro-rome/
+#1690459665
+ci package.json CHANGELOG.md 
+#1690459721
+bmd && dum install && dum prepublishOnly
+#1690459900
+git tag -s -m "v0.1.21" -a "v0.1.21"
+#1690459902
+git push
+#1690459906
+git push --tags
+#1690460106
+gh release create v0.1.21 --generate-notes 
+#1690461564
+cd ../../Lightrix/files-pipe/
+#1690461568
+git log --oneline 
+#1690461574
+ci CHANGELOG.md package.json 
+#1690462510
+git add .
+#1690462573
+ci CHANGELOG.md 
+#1690463277
+git add. 
+#1690463278
+git add .
+#1690463282
+ci CHANGELOG.md package.json 
+#1690463288
+npm show files-pipe
+#1690463359
+git add. 
+#1690463361
+git add .
+#1690463364
+bmd && dum install && dum prepublishOnly
+#1690463622
+git add .
+#1690463644
+git tag -s -m "v0.0.9" -a "v0.0.9"
+#1690463653
+git push --tags
+#1690463665
+gh release create v0.0.9 --generate-notes 
+#1690463950
+cd /f/Developer/
+#1690463964
+cd app/Lightrix/inn/
+#1690463969
+bmd && dum install && dum prepublishOnly
+#1690464045
+cargo 
+#1690464048
+cargo check
+#1690464968
+cd ../files-pipe/
+#1690464971
+gh release create v0.0.9 --generate-notes 
+#1690465077
+gh release delete v0.0.9
+#1690465084
+ci package.json CHANGELOG.md 
+#1690465092
+git add .
+#1690465094
+git log --one
+#1690465095
+git log --onele
+#1690465097
+git log --oneline 
+#1690465106
+bmd && dum install && dum prepublishOnly
+#1690465126
+git log --oneline 
+#1690465131
+git tag -d v0.0.9 
+#1690465137
+git push --delete origin v0.0.9
+#1690465140
+git push --force
+#1690465143
+git add .
+#1690465148
+git log --oneline 
+#1690465154
+git add .
+#1690465161
+git tag -d v0.0.9
+#1690465165
+git push --delete origin v0.0.9
+#1690465172
+cat package.json 
+#1690465176
+cat CHANGELOG.md 
+#1690465180
+git add .
+#1690465186
+git tag -s -m "v0.0.9" -a "v0.0.9"
+#1690465188
+git push --tags
+#1690465193
+gh release create v0.0.9 --generate-notes 
