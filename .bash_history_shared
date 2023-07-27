@@ -633,3 +633,103 @@ dum install
 corepack enable
 #1690385658
 ./app/NikolaRHristov/dot/scripts/star-used.sh 
+#1690447425
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690449385
+find -iname *ablert*
+#1690449388
+find -iname *albert*
+#1690449399
+find -iname *albert* -execdir pwd > text.md
+#1690449408
+find -iname *albert* -execdir pwd \; > text.md
+#1690449448
+explorer /f/Developer/app/Lightrix/lightrix.help/public/fonts
+#1690449473
+explorer F:\Developer\app\Lightrix\lightrix.help\public\fonts
+#1690449473
+explorer F:\Developer\app\Now-Playing-Cards\now-playing.cards\public\Fonts
+#1690449473
+explorer F:\Developer\app\Playform\playform.cloud\public\fonts
+#1690449545
+find -iname *albert* -execdir pwd \; > text.md
+#1690449833
+cd app/Playform/playform.cloud/
+#1690449837
+git add .
+#1690449841
+git commit -m "squash!"
+#1690450165
+git add .
+#1690450168
+git commit -m "squash!"
+#1690450374
+git add .
+#1690450377
+git commit -m "squash!"
+#1690450457
+git add .
+#1690450466
+git commit -m "squash!"
+#1690450484
+git push
+#1690451119
+git add .
+#1690451120
+git commit -m "squash!"
+#1690451128
+git push
+#1690452226
+cd /f/Developer/
+#1690453103
+cd app/Playform/playform.cloud/
+#1690453105
+git remote -v
+#1690453106
+cd ../
+#1690453111
+cd bl
+#1690453112
+cd bla
+#1690453114
+cd blank-web-starter/
+#1690453116
+git remote -v
+#1690453127
+git remote set-url ssh://git@github.com/Lightrix/blank-web-starter.git
+#1690453131
+git remote set-url origin ssh://git@github.com/Lightrix/blank-web-starter.git
+#1690453132
+git push
+#1690453134
+cd ../
+#1690453138
+cd -
+#1690453143
+git remote set-url origin ssh://git@github.com/Playform/blank-web-starter.git
+#1690453145
+cd ../
+#1690453147
+cd create-blank-web-starter/
+#1690453156
+git remote -v
+#1690453215
+git remote set-url origin ssh://git@github.com/Playform/create-blank-web-starter.git
+#1690453249
+git push
+#1690453266
+cd ../
+#1690453286
+git rels
+#1690453291
+cd playform.cloud/
+#1690453292
+git remote -v
+#1690453296
+cd ../wordpress/
+#1690453297
+git remote -v
+#1690453308
+git remote set-url origin ssh://git@github.com/Playform/wordpress.git
+#1690453322
+git push
