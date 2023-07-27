@@ -895,3 +895,35 @@ git tag -s -m "v0.0.9" -a "v0.0.9"
 git push --tags
 #1690465193
 gh release create v0.0.9 --generate-notes 
+#1690463953
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690467370
+cd ../inn/
+#1690467373
+git log --oneline 
+#1690467379
+ci CHANGELOG.md Cargo.toml 
+#1690467392
+cargo build
+#1690467402
+git add ..
+#1690467943
+git add .
+#1690467948
+cat Cargo.toml 
+#1690467952
+cat CHANGELOG.md 
+#1690467954
+git add. 
+#1690467957
+git add .
+#1690467961
+git commit -m "0.0.9"
+#1690468594
+git push
+#1690468596
+git push --tags
+#1690468600
+git tag -s -m "v0.0.9" -a "v0.0.9"
+#1690476225
+cd /f/Developer/
