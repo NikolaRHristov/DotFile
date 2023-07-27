@@ -927,3 +927,5 @@ git push --tags
 git tag -s -m "v0.0.9" -a "v0.0.9"
 #1690476225
 cd /f/Developer/
+#1690476227
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
