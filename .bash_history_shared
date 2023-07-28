@@ -947,3 +947,41 @@ bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir b
 ./app/NikolaRHristov/dot/scripts/star-used.sh 
 #1690559239
 dum prepublishOnly --filter=files-pipe
+#1690563982
+find -iname *.d.ts -exec rm -rf {} \;
+#1690563963
+bmd
+#1690566968
+\ find . -iname *.d.ts -exec rm -rf {} \;
+#1690566798
+bmd
+#1690566970
+\find . -iname *.d.ts -exec rm -rf {} \;
+#1690567442
+cld
+#1690568526
+cd app/Lightrix/files-pipe/
+#1690569811
+гит адд .
+#1690569813
+git add .
+#1690569818
+dum prepublishOnly
+#1690569820
+bmd
+#1690569832
+dum instlal
+#1690569836
+dum install
+#1690569869
+dum prepublishOnly
+#1690569904
+git add .
+#1690569910
+git commit -m "0.1.0"
+#1690569914
+git log --oneline
+#1690569919
+git diff --staged
+#1690569927
+git diff HEAD
