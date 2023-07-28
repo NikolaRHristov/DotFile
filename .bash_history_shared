@@ -985,3 +985,35 @@ git log --oneline
 git diff --staged
 #1690569927
 git diff HEAD
+#1690569946
+git commit --amend --no-edit -m "0.1.0"
+#1690569949
+git push --force
+#1690568226
+dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690573136
+gh api repos/astro-community/astro-compress/languages
+#1690573143
+gh api repos/astro-community/astro-compress/languages --json
+#1690573152
+gh api repos/astro-community/astro-compress/languages
+#1690573182
+git log --oneline 
+#1690573194
+git tag -s -m "v0.1.0" -a "v0.1.0"
+#1690573209
+gh release create v0.1.0 --generate-notes 
+#1690573216
+git push --tags
+#1690573219
+gh release create v0.1.0 --generate-notes 
+#1690573233
+bmd
+#1690573357
+git push --tags
+#1690574129
+cd ../../NikolaRHristov/nikola
+#1690574131
+cd ../../NikolaRHristov/nikolahristov.tech/
+#1690574132
+dum start
