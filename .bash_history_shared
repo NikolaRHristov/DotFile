@@ -933,3 +933,15 @@ bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir b
 npm i @trout.run/cli -g
 #1690541722
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690547881
+cd /f/Developer/
+#1690547884
+cd /proc/
+#1690547887
+cd mo
+#1690547893
+cat mounts 
+#1690549550
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690547537
+./app/NikolaRHristov/dot/scripts/star-used.sh 
