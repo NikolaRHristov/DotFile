@@ -5,7 +5,23 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@lightrix/config": "0.0.11",
+		"@prettier/plugin-lua": "0.0.3",
+		"@prettier/plugin-php": "0.19.6",
+		"@trivago/prettier-plugin-sort-imports": "4.2.0",
 		"prettier": "3.0.0",
+		"prettier-plugin-astro": "0.11.0",
+		"prettier-plugin-autocorrect": "0.4.1",
+		"prettier-plugin-java": "2.2.0",
+		"prettier-plugin-kotlin": "2.1.0",
+		"prettier-plugin-organize-attributes": "1.0.0",
+		"prettier-plugin-packagejson": "2.4.5",
+		"prettier-plugin-pkg": "0.18.0",
+		"prettier-plugin-sh": "0.13.1",
+		"prettier-plugin-sort-imports": "1.7.2",
+		"prettier-plugin-sql": "0.15.1",
+		"prettier-plugin-svelte": "3.0.3",
+		"prettier-plugin-tailwindcss": "0.4.1",
+		"prettier-plugin-toml": "0.3.1",
 		"tailwindcss": "3.3.3"
 	},
 	"publishConfig": {

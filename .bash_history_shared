@@ -1017,3 +1017,135 @@ cd ../../NikolaRHristov/nikola
 cd ../../NikolaRHristov/nikolahristov.tech/
 #1690574132
 dum start
+#1690574716
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690615696
+dum start --filter=nikolahristov-web
+#1690616635
+cd app/NikolaRHristov/nikolahristov.tech/
+#1690616638
+dum start
+#1690621539
+cd app/NikolaRHristov/nikola
+#1690621541
+cd app/NikolaRHristov/nikolahristov.tech/
+#1690621543
+dum start
+#1690624993
+cd app/NikolaRHristov/nikolahristov.tech/
+#1690624994
+dum start
+#1690632012
+npm show prettier versions
+#1690632021
+pnpm install -g 2.8.8
+#1690632025
+pnpm install -g prettier@2.8.8
+#1690632063
+pnpm uninstall -g prettier
+#1690632069
+which prettier
+#1690632081
+pnpm config get global-bin
+#1690632083
+pnpm config get global-bin-dir
+#1690632093
+which prettier
+#1690632103
+rm -rf /f/tools/.pnpm-global/bin/prettier*
+#1690632106
+which prettier
+#1690632109
+pnpm install -g prettier@2.8.8
+#1690632115
+which prettier
+#1690632338
+rm -rf node_modules/prettier
+#1690632361
+dum install
+#1690632406
+cd ../dot/
+#1690632418
+cd .config/base/
+#1690632420
+car package.json 
+#1690632422
+cat package.json 
+#1690632700
+bmd
+#1690632456
+dum install -D -E @prettier/plugin-lua
+#1690632462
+dum install -D -E @prettier/plugin-php
+#1690632468
+dum install -D -E @trivago/prettier-plugin-sort-imports
+#1690632497
+dum install -D -E prettier-plugin-astro
+#1690632533
+dum install -D -E prettier-plugin-autocorrect
+#1690632537
+dum install -D -E prettier-plugin-java
+#1690632540
+dum install -D -E prettier-plugin-kotlin
+#1690632546
+dum install -D -E prettier-plugin-organize-attributes
+#1690632549
+dum install -D -E prettier-plugin-packagejson
+#1690632725
+dum install -D -E prettier-plugin-pkg
+#1690632728
+dum install -D -E prettier-plugin-sh
+#1690632732
+dum install -D -E prettier-plugin-sort-imports
+#1690632736
+dum install -D -E prettier-plugin-sql
+#1690632741
+dum install -D -E prettier-plugin-svelte
+#1690632746
+dum install -D -E prettier-plugin-tailwindcss
+#1690632751
+dum install -D -E prettier-plugin-toml
+#1690632995
+cd app/NikolaRHristov/dot/.config/bas
+#1690632997
+cd app/NikolaRHristov/dot/.config/base
+#1690633001
+git add. 
+#1690633003
+git add .
+#1690633004
+bmd
+#1690640265
+prettier -v
+#1690640269
+ncu -u -g 
+#1690640355
+npm -g install diskernet@3.0.6
+#1690640368
+pnpm upgrade --global
+#1690640351
+bmd
+#1690648176
+ls app/NikolaRHristov/nikolahristov.tech/src/assets/images/packages/
+#1690663652
+cd /f/Developer/
+#1690663653
+cd app/NikolaRHristov/nikola
+#1690663655
+cd app/NikolaRHristov/nikolahristov.tech/
+#1690663656
+dum build
+#1690663914
+git add .
+#1690663923
+dum build && git commit -m "squash!"
+#1690664661
+dum start
+#1690664690
+cargo install dum
+#1690664809
+dum
+#1690664812
+dum start
+#1690667614
+dum build
