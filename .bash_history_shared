@@ -1265,3 +1265,11 @@ find -iname base.css -execdir mv base.css base2.css \;
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
 #1690744699
 find -iname base2.css -execdir mv base2.css Base.css \;
+#1690745459
+la
+#1690746733
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690747595
+find -iname swup.ts
+#1690747603
+find -iname swup.ts -execdir mv swup.ts swup2.ts \;
