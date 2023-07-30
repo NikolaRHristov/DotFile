@@ -23,22 +23,37 @@ module.exports = {
 	useTabs: true,
 	vueIndentScriptAndStyle: true,
 	plugins: [
-		"@prettier/plugin-lua",
-		"@prettier/plugin-php",
-		"@trivago/prettier-plugin-sort-imports",
+		// @TODO: Check for support
+		// "@prettier/plugin-lua",
+		// @TODO: Check for support
+		// "@prettier/plugin-php",
+		// @TODO: Check for support
+		// "@trivago/prettier-plugin-sort-imports",
 		"prettier-plugin-astro",
-		"prettier-plugin-java",
-		"prettier-plugin-kotlin",
-		"prettier-plugin-organize-attributes",
-		"prettier-plugin-autocorrect",
-		"prettier-plugin-pkg",
-		"prettier-plugin-sh",
-		"prettier-plugin-sort-imports",
-		"prettier-plugin-sql",
-		"prettier-plugin-svelte",
-		"prettier-plugin-tailwindcss",
-		"prettier-plugin-toml",
-		"prettier-plugin-packagejson",
+		// @TODO: Check for support
+		// "prettier-plugin-java",
+		// @TODO: Check for support
+		// "prettier-plugin-kotlin",
+		// @TODO: Check for support
+		// "prettier-plugin-organize-attributes",
+		// @TODO: Check for support
+		// "prettier-plugin-autocorrect",
+		// @TODO: Check for support
+		// "prettier-plugin-pkg",
+		// @TODO: Check for support
+		// "prettier-plugin-sh",
+		// @TODO: Check for support
+		// "prettier-plugin-sort-imports",
+		// @TODO: Check for support
+		// "prettier-plugin-sql",
+		// @TODO: Check for support
+		// "prettier-plugin-svelte",
+		// @TODO: Check for support
+		// "prettier-plugin-tailwindcss",
+		// @TODO: Check for support
+		// "prettier-plugin-toml",
+		// @TODO: Check for support
+		// "prettier-plugin-packagejson",
 	],
 	tailwindConfig:
 		"F:\\Developer\\app\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",

@@ -1167,3 +1167,59 @@ find -iname cargo.toml -execdir cargo check \;
 hx
 #1690708165
 dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690719367
+cd /f/Developer/
+#1690719369
+cd app/NikolaRHristov/
+#1690719378
+cd dot/
+#1690719425
+cd scripts/
+#1690719429
+cd ../
+#1690719430
+cd .config/
+#1690719436
+cd base/
+#1690719444
+rm bash.exe.stackdump 
+#1690719448
+bmd
+#1690719629
+cat app/astro-community/astro-compress/CODE_OF_CONDUCT.md > app/astro-community/astro-critters/CODE_OF_CONDUCT.md
+#1690720800
+dum install
+#1690721080
+find -iname CONTRIBUTING.md -execdir cat /f/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+#1690721109
+find -iname CONTRIBUTING.md
+#1690721130
+find -iname CONTRIBUTING.md -execdir cat /f/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+#1690721143
+find -iname CODE_OF_CONDUCT.md
+#1690721161
+cd app/
+#1690721167
+find -iname code_of_conduct.md
+#1690721172
+find -iname code_of_conduct.md -exec rm -rf {} \;
+#1690721685
+find -iname CONTRIBUTING.md -execdir cat /f/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+#1690721708
+find -iname CONTRIBUTING.md -execdir /f/Developer/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+#1690721720
+find -iname CODE_OF_CONDUCT.md
+#1690721726
+find -iname CODE_OF_CONDUCT.md -exec rm -rf {} \;
+#1690721734
+find -iname CONTRIBUTING.md -execdir cat /f/Developer/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+#1690721738
+find -iname CODE_OF_CONDUCT.md
+#1690721741
+rm CODE_OF_CONDUCT.md 
+#1690721761
+find -iname CONTRIBUTING.md -execdir bash -c 'cat /f/Developer/CODE_OF_CONDUCT.md > $(pwd)/CODE_OF_CONDUCT.md' \;
+#1690721949
+ci ../../Developer.code-workspace 
+#1690721956
+nano ../../Developer.code-workspace 
