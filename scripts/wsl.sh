@@ -38,17 +38,17 @@ ln -s /mnt/f/Developer/app/NikolaRHristov/dot/tailwind.config.js /mnt/c/Users/ni
 
 ln -s /mnt/c/Users/nikola/AppData/Local/nvim /mnt/c/Users/nikola/.config/nvim
 
-rm /mnt/f/Developer/.clang-format 
-rm /mnt/f/Developer/.csharpierrc 
-rm /mnt/f/Developer/.editorconfig 
-rm /mnt/f/Developer/.jshintrc 
-rm /mnt/f/Developer/.npmrc 
-rm /mnt/f/Developer/.prettierignore 
-rm /mnt/f/Developer/.stylua.toml 
-rm /mnt/f/Developer/jsconfig.json 
-rm /mnt/f/Developer/rome.json 
-rm /mnt/f/Developer/rustfmt.toml 
-rm /mnt/f/Developer/tsconfig.json 
+rm /mnt/f/Developer/.clang-format
+rm /mnt/f/Developer/.csharpierrc
+rm /mnt/f/Developer/.editorconfig
+rm /mnt/f/Developer/.jshintrc
+rm /mnt/f/Developer/.npmrc
+rm /mnt/f/Developer/.prettierignore
+rm /mnt/f/Developer/.stylua.toml
+rm /mnt/f/Developer/jsconfig.json
+rm /mnt/f/Developer/rome.json
+rm /mnt/f/Developer/rustfmt.toml
+rm /mnt/f/Developer/tsconfig.json
 
 ln -s /mnt/f/Developer/.clang-format /mnt/f/Developer/app/NikolaRHristov/dot/.clang-format
 ln -s /mnt/f/Developer/.csharpierrc /mnt/f/Developer/app/NikolaRHristov/dot/.csharpierrc

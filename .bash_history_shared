@@ -1149,3 +1149,11 @@ dum
 dum start
 #1690667614
 dum build
+#1690669905
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690703673
+dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690703693
+bmd ; dum dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690703697
+lcear
