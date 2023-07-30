@@ -1231,3 +1231,17 @@ maintenance clean
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690729822
 find -iname swup.ts
+#1690731537
+find -iname dist
+#1690731543
+find -iname dist -exec rm -rf {} \;
+#1690731551
+find -iname build
+#1690731555
+find -iname target
+#1690731559
+find -iname target -exec rm -rf {} \;
+#1690731529
+cld
+#1690733211
+rm -rf app/NikolaRHristov/bench
