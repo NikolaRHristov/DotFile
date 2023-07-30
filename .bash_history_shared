@@ -1247,3 +1247,7 @@ cld
 rm -rf app/NikolaRHristov/bench
 #1690736214
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690742562
+find -iname global.css
+#1690742572
+find -iname global.css -execdir mv Global.css Global2.css \;
