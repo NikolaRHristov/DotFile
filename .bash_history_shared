@@ -1273,3 +1273,5 @@ bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir b
 find -iname swup.ts
 #1690747603
 find -iname swup.ts -execdir mv swup.ts swup2.ts \;
+#1690747608
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
