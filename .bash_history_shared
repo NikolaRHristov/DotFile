@@ -1245,3 +1245,5 @@ find -iname target -exec rm -rf {} \;
 cld
 #1690733211
 rm -rf app/NikolaRHristov/bench
+#1690736214
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
