@@ -1165,3 +1165,5 @@ find -iname cargo.toml
 find -iname cargo.toml -execdir cargo check \;
 #1690707257
 hx
+#1690708165
+dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
