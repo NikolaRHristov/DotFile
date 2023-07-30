@@ -1223,3 +1223,5 @@ find -iname CONTRIBUTING.md -execdir bash -c 'cat /f/Developer/CODE_OF_CONDUCT.m
 ci ../../Developer.code-workspace 
 #1690721956
 nano ../../Developer.code-workspace 
+#1690722068
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
