@@ -1157,3 +1157,11 @@ dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fe
 bmd ; dum dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690703697
 lcear
+#1690703709
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690706067
+find -iname cargo.toml
+#1690706072
+find -iname cargo.toml -execdir cargo check \;
+#1690707257
+hx
