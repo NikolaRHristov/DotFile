@@ -1285,3 +1285,7 @@ find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git syn
 find -iname swup2.ts
 #1690751261
 maintenance clean
+#1690801469
+dum build --filter=nikolahristov-web
+#1690800191
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
