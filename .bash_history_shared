@@ -1347,3 +1347,13 @@ Y
 dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690907458
 dum prepublishOnly --filter=@nikolarhristov/scripts
+#1690912722
+cd app/childrens-books/
+#1690912723
+cd we
+#1690912727
+cd app/
+#1690912801
+cd app/web/
+#1690912821
+dum install -D -E sass
