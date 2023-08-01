@@ -1343,3 +1343,5 @@ bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir b
 Y
 #1690896147
 ./app/NikolaRHristov/dot/scripts/star-used.sh 
+#1690898097
+dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
