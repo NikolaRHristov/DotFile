@@ -15,27 +15,38 @@ done
 for ORG in "${ORGS[@]}"; do
 	EMAIL_BILLING="hello@lightrix.help"
 	EMAIL="hello@lightrix.help"
+	TWITTER="LightrixHelp"
 
 	case "$ORG" in
 	"Playform")
 		EMAIL_BILLING="hello@playform.cloud"
 		EMAIL="hello@playform.cloud"
+		TWITTER="PlayformCloud"
 		;;
 	"windowsdock")
 		EMAIL_BILLING="hello@windowsdock.app"
 		EMAIL="hello@windowsdock.app"
+		TWITTER="windowsdock"
+		;;
+	"NastyHTML")
+		EMAIL_BILLING="nasty@lightrix.help"
+		EMAIL="nasty@lightrix.help"
+		TWITTER="NastyHTML"
 		;;
 	"RoundedCorners")
 		EMAIL_BILLING="hello@roundedcorners.app"
 		EMAIL="hello@roundedcorners.app"
+		TWITTER="RCAppWindows"
 		;;
 	"BlackRainbowAI")
 		EMAIL_BILLING="hello@blackrainbow.media"
 		EMAIL="hello@blackrainbow.media"
+		TWITTER="BlackRainbowAI"
 		;;
 	"imagewtf")
 		EMAIL_BILLING="hello@image.wtf"
 		EMAIL="hello@image.wtf"
+		TWITTER="ImageWTF"
 		;;
 	"returnthief")
 		EMAIL_BILLING="hello@returnthief.quest"
@@ -48,6 +59,7 @@ for ORG in "${ORGS[@]}"; do
 	"hristov-foundation")
 		EMAIL_BILLING="hello@hristov.foundation"
 		EMAIL="hello@hristov.foundation"
+		TWITTER="NikolaRHristov"
 		;;
 	"mytheme-cloud")
 		EMAIL_BILLING="hello@mytheme.cloud"
@@ -56,14 +68,37 @@ for ORG in "${ORGS[@]}"; do
 	"NowPlayingCards")
 		EMAIL_BILLING="hello@nowplaying.cards"
 		EMAIL="hello@nowplaying.cards"
+		TWITTER="NowPlayingC"
 		;;
 	"NeovimSpace")
 		EMAIL_BILLING="hello@neovim.space"
 		EMAIL="hello@neovim.space"
+		TWITTER="NeovimSpace"
 		;;
 	"HalleSoftware")
 		EMAIL_BILLING="hello@halle.software"
 		EMAIL="hello@halle.software"
+		TWITTER="HalleSoftware"
+		;;
+	"GrenadierJS")
+		EMAIL_BILLING="grenadier@lightrix.help"
+		EMAIL="grenadier@lightrix.help"
+		TWITTER="GrenadierJS"
+		;;
+	"SileaJS")
+		EMAIL_BILLING="silea@lightrix.help"
+		EMAIL="silea@lightrix.help"
+		TWITTER="SileaJS"
+		;;
+	"CrepesJS")
+		EMAIL_BILLING="crepes@lightrix.help"
+		EMAIL="crepes@lightrix.help"
+		TWITTER="CrepesJS"
+		;;
+	"SouqRs")
+		EMAIL_BILLING="souq@lightrix.help"
+		EMAIL="souq@lightrix.help"
+		TWITTER="SouqRs"
 		;;
 	esac
 
@@ -76,6 +111,7 @@ for ORG in "${ORGS[@]}"; do
 		-f company='Lightrix' \
 		-f billing_email=${EMAIL_BILLING} \
 		-f email=${EMAIL} \
+		-f twitter_username=${TWITTER} \
 		-F has_organization_projects=false \
 		-F has_repository_projects=false \
 		-f default_repository_permission='none' \

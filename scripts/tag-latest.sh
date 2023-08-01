@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVDIR="/f/Developer/app"
+DEVDIR="/d/Developer/app"
 
 mkdir -p $DEVDIR/"$USER"
 cd $DEVDIR/"$USER" || exit

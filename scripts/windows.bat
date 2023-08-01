@@ -16,46 +16,46 @@ rm C:\Users\nikola\rustfmt.toml
 rm C:\Users\nikola\tailwind.config.js
 rm C:\Users\nikola\rome.json
 
-mklink C:\Users\nikola\.aliases F:\Developer\app\NikolaRHristov\dot\.aliases
-mklink C:\Users\nikola\.bash_profile F:\Developer\app\NikolaRHristov\dot\.bash_profile
-mklink C:\Users\nikola\.bash_logout F:\Developer\app\NikolaRHristov\dot\.bash_logout
-mklink C:\Users\nikola\.bash_history_shared F:\Developer\app\NikolaRHristov\dot\.bash_history_shared
-mklink C:\Users\nikola\.bashrc F:\Developer\app\NikolaRHristov\dot\.bashrc
-mklink /D C:\Users\nikola\.config F:\Developer\app\NikolaRHristov\dot\.config
-mklink C:\Users\nikola\.functions F:\Developer\app\NikolaRHristov\dot\.functions
-mklink C:\Users\nikola\.gitconfig F:\Developer\app\NikolaRHristov\dot\.gitconfig
-mklink C:\Users\nikola\.gitmessage F:\Developer\app\NikolaRHristov\dot\.gitmessage
-mklink /D C:\Users\nikola\.oh-my-bash F:\Developer\app\NikolaRHristov\dot\.oh-my-bash
-mklink /D C:\Users\nikola\.oh-my-posh F:\Developer\app\NikolaRHristov\dot\.oh-my-posh
-mklink /D C:\Users\nikola\.oh-my-zsh F:\Developer\app\NikolaRHristov\dot\.oh-my-zsh
+mklink C:\Users\nikola\.aliases D:\Developer\app\NikolaRHristov\dot\.aliases
+mklink C:\Users\nikola\.bash_profile D:\Developer\app\NikolaRHristov\dot\.bash_profile
+mklink C:\Users\nikola\.bash_logout D:\Developer\app\NikolaRHristov\dot\.bash_logout
+mklink C:\Users\nikola\.bash_history_shared D:\Developer\app\NikolaRHristov\dot\.bash_history_shared
+mklink C:\Users\nikola\.bashrc D:\Developer\app\NikolaRHristov\dot\.bashrc
+mklink /D C:\Users\nikola\.config D:\Developer\app\NikolaRHristov\dot\.config
+mklink C:\Users\nikola\.functions D:\Developer\app\NikolaRHristov\dot\.functions
+mklink C:\Users\nikola\.gitconfig D:\Developer\app\NikolaRHristov\dot\.gitconfig
+mklink C:\Users\nikola\.gitmessage D:\Developer\app\NikolaRHristov\dot\.gitmessage
+mklink /D C:\Users\nikola\.oh-my-bash D:\Developer\app\NikolaRHristov\dot\.oh-my-bash
+mklink /D C:\Users\nikola\.oh-my-posh D:\Developer\app\NikolaRHristov\dot\.oh-my-posh
+mklink /D C:\Users\nikola\.oh-my-zsh D:\Developer\app\NikolaRHristov\dot\.oh-my-zsh
 mklink /D C:\Users\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
-mklink C:\Users\nikola\prettier.config.js F:\Developer\app\NikolaRHristov\dot\prettier.config.js
-mklink C:\Users\nikola\rome.json F:\Developer\app\NikolaRHristov\dot\rome.json
-mklink C:\Users\nikola\rustfmt.toml F:\Developer\app\NikolaRHristov\dot\rustfmt.toml
-mklink C:\Users\nikola\tailwind.config.js F:\Developer\app\NikolaRHristov\dot\tailwind.config.js
+mklink C:\Users\nikola\prettier.config.js D:\Developer\app\NikolaRHristov\dot\prettier.config.js
+mklink C:\Users\nikola\rome.json D:\Developer\app\NikolaRHristov\dot\rome.json
+mklink C:\Users\nikola\rustfmt.toml D:\Developer\app\NikolaRHristov\dot\rustfmt.toml
+mklink C:\Users\nikola\tailwind.config.js D:\Developer\app\NikolaRHristov\dot\tailwind.config.js
 
 mklink /D C:\Users\nikola\AppData\Local\nvim C:\Users\nikola\.config\nvim
 
-rm F:\Developer\.clang-format 
-rm F:\Developer\.csharpierrc 
-rm F:\Developer\.editorconfig 
-rm F:\Developer\.jshintrc 
-rm F:\Developer\.npmrc 
-rm F:\Developer\.prettierignore 
-rm F:\Developer\.stylua.toml 
-rm F:\Developer\jsconfig.json 
-rm F:\Developer\rome.json 
-rm F:\Developer\rustfmt.toml 
-rm F:\Developer\tsconfig.json 
+rm D:\Developer\.clang-format 
+rm D:\Developer\.csharpierrc 
+rm D:\Developer\.editorconfig 
+rm D:\Developer\.jshintrc 
+rm D:\Developer\.npmrc 
+rm D:\Developer\.prettierignore 
+rm D:\Developer\.stylua.toml 
+rm D:\Developer\jsconfig.json 
+rm D:\Developer\rome.json 
+rm D:\Developer\rustfmt.toml 
+rm D:\Developer\tsconfig.json 
 
-mklink F:\Developer\.clang-format F:\Developer\app\NikolaRHristov\dot\.clang-format
-mklink F:\Developer\.csharpierrc F:\Developer\app\NikolaRHristov\dot\.csharpierrc
-mklink F:\Developer\.editorconfig F:\Developer\app\NikolaRHristov\dot\.editorconfig
-mklink F:\Developer\.jshintrc F:\Developer\app\NikolaRHristov\dot\.jshintrc
-mklink F:\Developer\.npmrc F:\Developer\app\NikolaRHristov\dot\.npmrc
-mklink F:\Developer\.prettierignore F:\Developer\app\NikolaRHristov\dot\.prettierignore
-mklink F:\Developer\.stylua.toml F:\Developer\app\NikolaRHristov\dot\.stylua.toml
-mklink F:\Developer\jsconfig.json F:\Developer\app\NikolaRHristov\dot\jsconfig.json
-mklink F:\Developer\rome.json F:\Developer\app\NikolaRHristov\dot\rome.json
-mklink F:\Developer\rustfmt.toml F:\Developer\app\NikolaRHristov\dot\rustfmt.toml
-mklink F:\Developer\tsconfig.json F:\Developer\app\NikolaRHristov\dot\tsconfig.json
+mklink D:\Developer\.clang-format D:\Developer\app\NikolaRHristov\dot\.clang-format
+mklink D:\Developer\.csharpierrc D:\Developer\app\NikolaRHristov\dot\.csharpierrc
+mklink D:\Developer\.editorconfig D:\Developer\app\NikolaRHristov\dot\.editorconfig
+mklink D:\Developer\.jshintrc D:\Developer\app\NikolaRHristov\dot\.jshintrc
+mklink D:\Developer\.npmrc D:\Developer\app\NikolaRHristov\dot\.npmrc
+mklink D:\Developer\.prettierignore D:\Developer\app\NikolaRHristov\dot\.prettierignore
+mklink D:\Developer\.stylua.toml D:\Developer\app\NikolaRHristov\dot\.stylua.toml
+mklink D:\Developer\jsconfig.json D:\Developer\app\NikolaRHristov\dot\jsconfig.json
+mklink D:\Developer\rome.json D:\Developer\app\NikolaRHristov\dot\rome.json
+mklink D:\Developer\rustfmt.toml D:\Developer\app\NikolaRHristov\dot\rustfmt.toml
+mklink D:\Developer\tsconfig.json D:\Developer\app\NikolaRHristov\dot\tsconfig.json

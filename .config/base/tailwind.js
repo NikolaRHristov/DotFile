@@ -1,4 +1,4 @@
-const MODULES_DIR = "F:\\tools\\.pnpm-global\\5\\node_modules\\";
+const MODULES_DIR = "D:\\tools\\.pnpm-global\\5\\node_modules\\";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

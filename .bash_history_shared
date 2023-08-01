@@ -49,11 +49,11 @@ bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir b
 #1690109152
 ./app/NikolaRHristov/dot/scripts/tag-latest.sh 
 #1690109742
-cd /f/Developer/app/YesMaintenance/npm/
+cd /d/Developer/app/YesMaintenance/npm/
 #1690109745
 git log --oneline 
 #1690109769
-cd /f/Developer/app/RoundedCorners/app
+cd /d/Developer/app/RoundedCorners/app
 #1690109775
 git log --oneline 
 #1690109782
@@ -135,7 +135,7 @@ npm show @nowplayingcards/common
 #1690112959
 npm show @nowplayingcards/common version
 #1690113011
-cd /f/Developer/
+cd /d/Developer/
 #1690113012
 bmd
 #1690114629
@@ -171,7 +171,7 @@ cargo publish
 #1690120910
 cargo login
 #1690121155
-cd /f/Developer/
+cd /d/Developer/
 #1690121271
 cd app/Mytheme-Cloud/cargo/
 #1690121272
@@ -204,7 +204,7 @@ gh release create v0.0.2 --generate-notes
 #1690121417
 git remote -v
 #1690121418
-cd /f/Developer/
+cd /d/Developer/
 #1690121426
 git log --oneline
 #1690121440
@@ -226,7 +226,7 @@ git log --oneline
 #1690122774
 git remote -v
 #1690122839
-cd /f/Developer/
+cd /d/Developer/
 #1690122847
 find -iname package.json -execdir sort-package-json \;
 #1690122898
@@ -248,7 +248,7 @@ cargo show
 #1690126644
 cargo --list innkeeper
 #1690126926
-cd /f/Developer/app/Lightrix/inn/
+cd /d/Developer/app/Lightrix/inn/
 #1690126933
 gh release create v0.0.7 --generate-notes 
 #1690127291
@@ -298,7 +298,7 @@ gh release create v0.0.8 --generate-notes
 #1690132623
 cargo publish
 #1690134132
-cd /f/Developer/
+cd /d/Developer/
 #1690134200
 cd app/Lightrix/npm/
 #1690134202
@@ -336,7 +336,7 @@ git push --tags
 #1690135857
 git tag -l
 #1690173562
-cd /f/Developer/
+cd /d/Developer/
 #1690173570
 ./app/NikolaRHristov/dot/scripts/tag-latest.sh 
 #1690174094
@@ -458,7 +458,7 @@ gh release delete v0.1.5 -y
 #1690179883
 gh release delete v0.1.6 -y
 #1690180020
-cd /f/Developer/
+cd /d/Developer/
 #1690180030
 find -iname CHANGELOG.md -execdir code-insiders CONTRIBUTING.md \;
 #1690181265
@@ -510,7 +510,7 @@ dum install -D -E @lightrix/config @lightrix/scripts
 #1690196090
 sort-package-json
 #1690196093
-cd /f/Developer/
+cd /d/Developer/
 #1690196099
 find -iname package.json -execdir sort-package-json
 #1690196100
@@ -536,7 +536,7 @@ web-ext -c config/ext.ts
 #1690197105
 dum prepublishOnly
 #1690197651
-cd /f/Developer/
+cd /d/Developer/
 #1690197659
 dum prepublishOnly --filter=glory-of-twitter
 #1690197906
@@ -570,13 +570,13 @@ git commit -m "squash!"
 #1690203878
 git push
 #1690207546
-cd /f/Developer/app/NikolaRHristov/nikolahristov.tech/
+cd /d/Developer/app/NikolaRHristov/nikolahristov.tech/
 #1690207547
 dum build
 #1690207574
 ci dist/index.html 
 #1690208273
-cd /f/Developer/
+cd /d/Developer/
 #1690208282
 dum prepublishOnly --filter=@yesmaintenance/scripts
 #1690208287
@@ -608,7 +608,7 @@ cd app/Playform/playform.cloud/
 #1690376753
 git push --force
 #1690383971
-cd /f/Developer/
+cd /d/Developer/
 #1690383977
 ./app/NikolaRHristov/dot/scripts/tag-latest.sh 
 #1690385338
@@ -644,13 +644,13 @@ find -iname *albert* -execdir pwd > text.md
 #1690449408
 find -iname *albert* -execdir pwd \; > text.md
 #1690449448
-explorer /f/Developer/app/Lightrix/lightrix.help/public/fonts
+explorer /d/Developer/app/Lightrix/lightrix.help/public/fonts
 #1690449473
-explorer F:\Developer\app\Lightrix\lightrix.help\public\fonts
+explorer D:\Developer\app\Lightrix\lightrix.help\public\fonts
 #1690449473
-explorer F:\Developer\app\Now-Playing-Cards\now-playing.cards\public\Fonts
+explorer D:\Developer\app\Now-Playing-Cards\now-playing.cards\public\Fonts
 #1690449473
-explorer F:\Developer\app\Playform\playform.cloud\public\fonts
+explorer D:\Developer\app\Playform\playform.cloud\public\fonts
 #1690449545
 find -iname *albert* -execdir pwd \; > text.md
 #1690449833
@@ -680,7 +680,7 @@ git commit -m "squash!"
 #1690451128
 git push
 #1690452226
-cd /f/Developer/
+cd /d/Developer/
 #1690453103
 cd app/Playform/playform.cloud/
 #1690453105
@@ -736,7 +736,7 @@ git push
 #1690452227
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690454399
-cd /f/Developer/
+cd /d/Developer/
 #1690454407
 ./app/NikolaRHristov/dot/scripts/tag-latest.sh > test3.md
 #1690455267
@@ -774,7 +774,7 @@ bmd
 #1690457583
 dum install && dum prepublishOnly
 #1690457720
-cd /f/Developer/
+cd /d/Developer/
 #1690457724
 find -iname package.json -execdir sort-package-json \;
 #1690457797
@@ -838,7 +838,7 @@ git push --tags
 #1690463665
 gh release create v0.0.9 --generate-notes 
 #1690463950
-cd /f/Developer/
+cd /d/Developer/
 #1690463964
 cd app/Lightrix/inn/
 #1690463969
@@ -926,7 +926,7 @@ git push --tags
 #1690468600
 git tag -s -m "v0.0.9" -a "v0.0.9"
 #1690476225
-cd /f/Developer/
+cd /d/Developer/
 #1690476227
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690539211
@@ -934,7 +934,7 @@ npm i @trout.run/cli -g
 #1690541722
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690547881
-cd /f/Developer/
+cd /d/Developer/
 #1690547884
 cd /proc/
 #1690547887
@@ -1128,7 +1128,7 @@ bmd
 #1690648176
 ls app/NikolaRHristov/nikolahristov.tech/src/assets/images/packages/
 #1690663652
-cd /f/Developer/
+cd /d/Developer/
 #1690663653
 cd app/NikolaRHristov/nikola
 #1690663655
@@ -1168,7 +1168,7 @@ hx
 #1690708165
 dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690719367
-cd /f/Developer/
+cd /d/Developer/
 #1690719369
 cd app/NikolaRHristov/
 #1690719378
@@ -1190,11 +1190,11 @@ cat app/astro-community/astro-compress/CODE_OF_CONDUCT.md > app/astro-community/
 #1690720800
 dum install
 #1690721080
-find -iname CONTRIBUTING.md -execdir cat /f/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+find -iname CONTRIBUTING.md -execdir cat /d/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
 #1690721109
 find -iname CONTRIBUTING.md
 #1690721130
-find -iname CONTRIBUTING.md -execdir cat /f/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+find -iname CONTRIBUTING.md -execdir cat /d/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
 #1690721143
 find -iname CODE_OF_CONDUCT.md
 #1690721161
@@ -1204,21 +1204,21 @@ find -iname code_of_conduct.md
 #1690721172
 find -iname code_of_conduct.md -exec rm -rf {} \;
 #1690721685
-find -iname CONTRIBUTING.md -execdir cat /f/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+find -iname CONTRIBUTING.md -execdir cat /d/Developer/app/astro-community/astro-compress/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
 #1690721708
-find -iname CONTRIBUTING.md -execdir /f/Developer/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+find -iname CONTRIBUTING.md -execdir /d/Developer/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
 #1690721720
 find -iname CODE_OF_CONDUCT.md
 #1690721726
 find -iname CODE_OF_CONDUCT.md -exec rm -rf {} \;
 #1690721734
-find -iname CONTRIBUTING.md -execdir cat /f/Developer/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
+find -iname CONTRIBUTING.md -execdir cat /d/Developer/CODE_OF_CONDUCT.md > CODE_OF_CONDUCT.md \;
 #1690721738
 find -iname CODE_OF_CONDUCT.md
 #1690721741
 rm CODE_OF_CONDUCT.md 
 #1690721761
-find -iname CONTRIBUTING.md -execdir bash -c 'cat /f/Developer/CODE_OF_CONDUCT.md > $(pwd)/CODE_OF_CONDUCT.md' \;
+find -iname CONTRIBUTING.md -execdir bash -c 'cat /d/Developer/CODE_OF_CONDUCT.md > $(pwd)/CODE_OF_CONDUCT.md' \;
 #1690721949
 ci ../../Developer.code-workspace 
 #1690721956
@@ -1289,3 +1289,33 @@ maintenance clean
 dum build --filter=nikolahristov-web
 #1690800191
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690813077
+cd /f/
+#1690813077
+cld
+#1690827093
+node
+#1690827289
+npm
+#1690827297
+winget search nodejs
+#1690827314
+winget install --id OpenJS.NodeJS -i -s winget --force
+#1690831126
+corepack prepare pnpm@8.6.10 --activate
+#1690831129
+corepack enable
+#1690836331
+gh api user/NikolaRHristov/repos | jq .[].login
+#1690836334
+gh api user/NikolaRHristov/repos | jq .[].url
+#1690836338
+gh api user/NikolaRHristov/repos
+#1690836346
+gh api user/repos
+#1690836374
+gh api user/repos | jq .[].url
+#1690836389
+gh api users/NikolaRHristov/repos | jq .[].url
+#1690842137
+./app/NikolaRHristov/dot/scripts/settings-org.sh 

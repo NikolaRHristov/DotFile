@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /f/Developer || exit
+cd /d/Developer || exit
 
 inn -p -f .git git add .
 inn -p -f .git git commit -m squash!
