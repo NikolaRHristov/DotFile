@@ -1337,3 +1337,9 @@ dum build --filter=@nikolarhristov/scripts
 dum prepublishOnly --filter=@nikolarhristov/scripts
 #1690895793
 find -iname *.scss
+#1690895654
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690898093
+Y
+#1690896147
+./app/NikolaRHristov/dot/scripts/star-used.sh 
