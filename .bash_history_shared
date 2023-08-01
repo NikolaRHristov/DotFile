@@ -1248,13 +1248,13 @@ rm -rf app/NikolaRHristov/bench
 #1690736214
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690742562
-find -iname global.css
+find -iname Global.css
 #1690742572
-find -iname global.css -execdir mv Global.css Global2.css \;
+find -iname Global.css -execdir mv Global.css Global2.css \;
 #1690742596
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
 #1690743157
-find -iname global.css -execdir mv Global2.css Global.css \;
+find -iname Global.css -execdir mv Global2.css Global.css \;
 #1690743164
 find -iname global2.css -execdir mv Global2.css Global.css \;
 #1690743167
@@ -1323,3 +1323,17 @@ gh api users/NikolaRHristov/repos | jq .[].url
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
 #1690892973
 find -iname *.css
+#1690895212
+dum build --filter=@nikolarhristov/scripts
+#1690895260
+cd app/NikolaRHristov/scripts/
+#1690895263
+dum prepublishOnly
+#1690895276
+cd -
+#1690895444
+dum build --filter=@nikolarhristov/scripts
+#1690895453
+dum prepublishOnly --filter=@nikolarhristov/scripts
+#1690895793
+find -iname *.scss
