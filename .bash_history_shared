@@ -1260,7 +1260,7 @@ find -iname global2.css -execdir mv Global2.css Global.css \;
 #1690743167
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
 #1690744074
-find -iname base.css -execdir mv base.css base2.css \;
+find -iname Base.css -execdir mv Base.css base2.css \;
 #1690744077
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
 #1690744699
@@ -1319,3 +1319,7 @@ gh api user/repos | jq .[].url
 gh api users/NikolaRHristov/repos | jq .[].url
 #1690842137
 ./app/NikolaRHristov/dot/scripts/settings-org.sh 
+#1690887968
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690892973
+find -iname *.css
