@@ -1345,3 +1345,5 @@ Y
 ./app/NikolaRHristov/dot/scripts/star-used.sh 
 #1690898097
 dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690907458
+dum prepublishOnly --filter=@nikolarhristov/scripts
