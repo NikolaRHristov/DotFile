@@ -1357,3 +1357,7 @@ cd app/
 cd app/web/
 #1690912821
 dum install -D -E sass
+#1690915523
+find -iname *.ts
+#1690916697
+./text.sh 
