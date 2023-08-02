@@ -1443,3 +1443,11 @@ find -iname *.astro
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
 #1690981327
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ;' \;
+#1690984316
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1690987344
+find -iname *.tsx
+#1690987361
+explorer app/RoundedCorners/app/src
+#1690987369
+explorer ./app/RoundedCorners/app/src
