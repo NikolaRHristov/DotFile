@@ -1401,3 +1401,43 @@ find -iname dom.js
 find -iname dom.ts
 #1690970965
 dum prepublishOnly ; dum build ;
+#1690972246
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
+#1690975717
+find -iname *.astro
+#1690975735
+cd ./app/astro-starters/PAC-STAC/app/web/.astro
+#1690975739
+cd ../
+#1690975741
+rm -rf .astro/
+#1690975749
+cd /f/d
+#1690975750
+cd /d/Developer
+#1690975753
+rm -rf ./app/astro-starters/pac-stac-web/.astro
+#1690975767
+rm -rf ./app/astro-starters/PAC-STAC/app/web/.astro
+#1690975767
+rm -rf ./app/astro-starters/pac-stac-web/.astro
+#1690975767
+rm -rf ./app/Lightrix/lightrix.help/.astro
+#1690975767
+rm -rf ./app/MythemeCloud/mytheme-web/.astro
+#1690975767
+rm -rf ./app/Playform/playform.cloud/.astro
+#1690978529
+./text.sh 
+#1690978564
+mv ./app/Lightrix/lightrix.help/src/pages/[slug].astro ./app/Lightrix/lightrix.help/src/pages/[Slug].astro
+#1690978564
+mv ./app/NikolaRHristov/nikolahristov.tech/src/pages/readmes/[slug].astro ./app/NikolaRHristov/nikolahristov.tech/src/pages/readmes/[Slug].astro
+#1690978565
+mv ./app/Playform/playform.cloud/src/pages/[slug].astro ./app/Playform/playform.cloud/src/pages/[Slug].astro
+#1690981150
+find -iname *.astro
+#1690981154
+./text.sh 
+#1690981164
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
