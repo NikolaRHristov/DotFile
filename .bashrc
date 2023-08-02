@@ -158,7 +158,7 @@ GPG_TTY=$(tty)
 export GPG_TTY
 export GPG_AGENT_INFO
 
-# export RUSTC_WRAPPER=sccache
+export RUSTC_WRAPPER=sccache
 
 # Append commands to the history file as soon as they are executed
 shopt -s histappend
