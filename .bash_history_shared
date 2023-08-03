@@ -1655,3 +1655,5 @@ gh api orgs/image-repository | jq .twitter_username
 gh api orgs/astro-starters | jq .twitter_username
 #1691068616
 gh api orgs/withastra | jq .twitter_username
+#1691068997
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
