@@ -8,7 +8,7 @@
 		"@prettier/plugin-lua": "0.0.3",
 		"@prettier/plugin-php": "0.19.6",
 		"@trivago/prettier-plugin-sort-imports": "4.2.0",
-		"prettier": "3.0.0",
+		"prettier": "3.0.1",
 		"prettier-plugin-astro": "0.11.0",
 		"prettier-plugin-autocorrect": "0.4.1",
 		"prettier-plugin-java": "2.2.0",

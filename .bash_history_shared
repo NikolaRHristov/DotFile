@@ -1607,3 +1607,51 @@ tsc --watch -p tsconfig.json
 tsc --watch -p tsconfig.json 
 #1691014366
 bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1691018659
+dum prepublishOnly
+#1691020757
+bmd ; dum install ; dum build ; dum prepublishOnly ; find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git add . ; git commit -m "squash!" ; git sync ; git merge upstream/main ; git sync;' \;
+#1691062030
+winget search OBS
+#1691068582
+gh api users/NikolaRHristov/orgs | jq .[].url
+#1691068607
+gh api orgs/windowsdock | jq .twitter_username
+#1691068608
+gh api orgs/GrenadierJS | jq .twitter_username
+#1691068608
+gh api orgs/SileaJS | jq .twitter_username
+#1691068608
+gh api orgs/CrepesJS | jq .twitter_username
+#1691068609
+gh api orgs/SouqRs | jq .twitter_username
+#1691068609
+gh api orgs/lernaeaninc | jq .twitter_username
+#1691068610
+gh api orgs/latticebuilds | jq .twitter_username
+#1691068610
+gh api orgs/astro-community | jq .twitter_username
+#1691068611
+gh api orgs/RoundedCorners | jq .twitter_username
+#1691068611
+gh api orgs/intakenomnom | jq .twitter_username
+#1691068612
+gh api orgs/BlackRainbowAI | jq .twitter_username
+#1691068612
+gh api orgs/Lightrix | jq .twitter_username
+#1691068613
+gh api orgs/imagewtf | jq .twitter_username
+#1691068613
+gh api orgs/YesMaintenance | jq .twitter_username
+#1691068613
+gh api orgs/returnthief | jq .twitter_username
+#1691068614
+gh api orgs/withpatches | jq .twitter_username
+#1691068614
+gh api orgs/spectresquid | jq .twitter_username
+#1691068615
+gh api orgs/image-repository | jq .twitter_username
+#1691068615
+gh api orgs/astro-starters | jq .twitter_username
+#1691068616
+gh api orgs/withastra | jq .twitter_username
