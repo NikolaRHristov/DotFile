@@ -244,3 +244,7 @@ find -iname binary
 find -iname options -type d
 #1691184616
 find -iname options -type d -execdir mv options options2 \;
+#1691184638
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691184678
+find -iname options2 -type d -execdir mv options2 Options \;
