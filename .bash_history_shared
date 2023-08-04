@@ -228,3 +228,5 @@ rm ~/.bash_history
 find -iname bin
 #1691179477
 find -iname bin -execdir mv bin Binary \;
+#1691179795
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
