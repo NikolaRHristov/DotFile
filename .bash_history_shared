@@ -230,3 +230,17 @@ find -iname bin
 find -iname bin -execdir mv bin Binary \;
 #1691179795
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691182759
+cld 
+#1691183071
+find -iname cargo.toml 
+#1691183087
+readarray -t 
+#1691183264
+find -iname bin
+#1691183268
+find -iname binary
+#1691184438
+find -iname options -type d
+#1691184616
+find -iname options -type d -execdir mv options options2 \;
