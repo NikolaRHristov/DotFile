@@ -220,3 +220,11 @@ pnpm upgrade -g
 ncu -u -g
 #1691170441
 npm -g install google-closure-compiler@20230802.0.0
+#1691179218
+cat ~/.bash_history
+#1691179223
+rm ~/.bash_history
+#1691179430
+find -iname bin
+#1691179477
+find -iname bin -execdir mv bin Binary \;
