@@ -1,6 +1,5 @@
 .pnpm-debug.log
-**/dist
-**/target
+**/Target
 ~*.docx
 ~*.tmp
 Cargo.lock

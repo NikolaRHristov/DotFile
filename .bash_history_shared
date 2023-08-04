@@ -1,30 +1,222 @@
-#1691095774
-dum install
-#1691096179
-cd app/Lightrix/npm/
-#1691096180
-cd scripts/
-#1691096184
-dum prepublishOnly
-#1691096193
-cd ../fil
-#1691096196
-cd ../../files-pipe/
-#1691096200
-dum prepublishOnly
-#1691096824
-cd ../npm/scripts/
-#1691096857
-lear
-#1691096914
-bmd
-#1691097113
-dum prepublishOnly
-#1691097130
-sort-package-json
-#1691097133
+#1691104427
+find -iname .git -execdir git remote -v \;
+#1691104441
+find -iname .git -execdir git remote -v \; > text.md
+#1691107303
+find -iname .git -execdir bash -c 'pwd && git remote -v' \; > text.md
+#1691107610
+find -type d -iname lib
+#1691107631
+find -type d -iname lib
+#1691107651
+find -type d -iname lib -execdir mv lib lib2 \;
+#1691107655
+find -iname lib2
+#1691107664
+find -type d -iname lib2 -execdir mv lib2 Lib \;
+#1691107675
+find -iname .git -execdir git add . \;
+#1691107693
+find -iname .git -execdir git commit -m "squash!"
+#1691107695
+find -iname .git -execdir git commit -m "squash!" \;
+#1691107738
+find -iname .git
+#1691107744
+find -type d -empty
+#1691107754
+rm -rf app/NikolaRHristov/astro-icon/
+#1691107898
+find -type d -empty
+#1691107921
+find -type d -empty -exec rm -rf {} \;
+#1691107938
+find -type d -empty
+#1691107940
+find -type f -empty
+#1691108044
+cd app/
+#1691108046
+find -type d
+#1691108087
+find -type d -iname src
+#1691108151
+find -type d -iname src -execdir mv src src2 \;
+#1691108160
+find -type d -iname src2 -execdir mv src2 Src \;
+#1691108167
+find -iname .git -execdir git add . \;
+#1691108186
+cat ~/.bash_history_shared 
+#1691107938
+find -type d -empty
+#1691107940
+find -type f -empty
+#1691108044
+cd app/
+#1691108046
+find -type d
+#1691108087
+find -type d -iname src
+#1691108186
+cat ~/.bash_history_shared 
+#1691108287
+find -type d -iname lib -execdir mv lib lib2 \;
+#1691108324
+find -type d -iname lib2 -execdir mv lib2 Lib \;
+#1691108351
+find -type d -iname src -execdir mv src src2 \;
+#1691108381
+find -type d -iname src2 -execdir mv src2 Src \;
+#1691108383
+find -iname .git -execdir git add . \;
+#1691108388
+find -iname .git -execdir git commit -m "squash!" \;
+#1691108509
+find -iname src
+#1691108514
+find -name src
+#1691108516
+find -name Src
+#1691108519
+find -name Lib
+#1691108524
+cd astro-community/
+#1691108527
+cd astro-compress/
+#1691109195
 cd /d/Developer/
-#1691097143
-find -iname package.json -execdir sort-package-json \;
-#1691098000
-ci ~/.bash_history_shared 
+#1691109731
+find -iname styles
+#1691109772
+find -iname styles -type d -execdir mv styles styles2 \;
+#1691109828
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691109956
+find -iname styles2 -type d -execdir mv styles2 Styles \;
+#1691110038
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110073
+find -type d
+#1691110090
+rm -rf text.md 
+#1691110093
+find -type d > text.md
+#1691110095
+ci text.md 
+#1691110198
+find -iname scripts -type d -execdir mv scripts scripts2 \;
+#1691110211
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110240
+find -iname scripts2 -type d -execdir mv scripts2 Scripts \;
+#1691110243
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110279
+find -iname styles -type d -execdir mv styles styles2 \;
+#1691110290
+find -iname styles2 -type d -execdir mv styles2 Styles \;
+#1691110309
+find -iname public -d -execdir mv public public2 \;
+#1691110321
+find -iname public -type d -execdir mv public public2 \;
+#1691110324
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110373
+find -iname public2 -type d -execdir mv public2 Public \;
+#1691110377
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110522
+find -iname img -type d -execdir mv img Images \;
+#1691110526
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110637
+find -iname favicon -type d -execdir mv favicon ../Favicon \;
+#1691110643
+find -iname favicon 
+#1691110697
+cd app/CrepesJS/crepes.dev/Public/favicon
+#1691110705
+cd ../
+#1691110711
+cd favicon
+#1691110719
+cd /d/Developer/
+#1691110722
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691110874
+find -iname .git -execdir git sync \;
+#1691112265
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691114741
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691114760
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691155477
+bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691158355
+find -name Public -type d -execdir mv Public public2 \;
+#1691158366
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691158400
+find -name public2 -type d -execdir mv public2 public \;
+#1691158404
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691158481
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691159454
+find -iname Public
+#1691159512
+find -iname img
+#1691159700
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691162474
+find -name Src
+#1691162488
+find -name Src -execdir mv Src Source \;
+#1691162936
+find -iname astro.config.ts -exec code-insiders {} \;
+#1691162975
+find -iname astro.config.ts
+#1691162993
+man tr
+#1691162995
+tr
+#1691162998
+tr --help
+#1691163016
+find -iname astro.config.ts | tr \n
+#1691163023
+find -iname astro.config.ts | tr '\n'
+#1691163038
+find -iname astro.config.ts | tr "\n"
+#1691163043
+find -iname astro.config.ts | tr \n
+#1691163045
+find -iname astro.config.ts | tr \r
+#1691163048
+find -iname astro.config.ts | tr \\n
+#1691163054
+find -iname astro.config.ts | tr -d
+#1691163105
+find -iname astro.config.ts | tr -d '\r'
+#1691163117
+$(find -iname astro.config.ts) > tr -d '\r'
+#1691163122
+find -iname astro.config.ts
+#1691162504
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691163172
+code-insiders ./app/astro-starters/PAC-STAC/app/web/astro.config.ts ./app/astro-starters/pac-stac-web/astro.config.ts ./app/BlackRainbowAI/blackrainbow.media/astro.config.ts ./app/childrens-books/app/app/web/astro.config.ts ./app/CrepesJS/crepes.dev/astro.config.ts ./app/DoccerPage/doccer.page/astro.config.ts ./app/GrenadierJS/grenadier.dev/astro.config.ts ./app/HalleSoftware/halle.software/astro.config.ts ./app/ImageWtf/image.wtf/astro.config.ts ./app/IntakeNomNom/intakenomnom.com/astro.config.ts ./app/Lightrix/astro-deno-deploy/astro.config.ts ./app/Lightrix/astro-sst-template/astro.config.ts ./app/Lightrix/astro-starter-template/astro.config.ts ./app/Lightrix/lightrix.help/astro.config.ts ./app/Lightrix/overbrowser/astro.config.ts ./app/MythemeCloud/mytheme-web/astro.config.ts ./app/NeovimSpace/neovim.space/astro.config.ts ./app/NikolaRHristov/nikolahristov.tech/astro.config.ts ./app/NowPlayingCards/now-playing.cards/astro.config.ts ./app/Playform/blank-web-starter/astro.config.ts ./app/Playform/playform.cloud/astro.config.ts ./app/ReturnThief/returnthief.quest/astro.config.ts ./app/SileaJS/silea.dev/astro.config.ts ./app/SouqRs/souq.dev/astro.config.ts ./app/windowsdock/windowsdock.app/astro.config.ts
+#1691163991
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691166573
+find -iname vite.config.ts
+#1691168461
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691170412
+pnpm upgrade -g
+#1691170425
+ncu -u -g
+#1691170441
+npm -g install google-closure-compiler@20230802.0.0
