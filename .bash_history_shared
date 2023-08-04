@@ -252,3 +252,7 @@ find -iname options2 -type d -execdir mv options2 Options \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
 #1691184701
 find -iname options -type d
+#1691184708
+bmd
+#1691183537
+bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
