@@ -612,3 +612,7 @@ find -iname components -execdir mv components Component \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1691265588
 cld
+#1691265635
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691265831
+dum install

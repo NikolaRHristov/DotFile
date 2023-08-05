@@ -5,7 +5,7 @@
 		"noEmit": true
 	},
 	"exclude": ["**/node_modules/**", "**/Target/**"],
-	"extends": "@lightrix/configuration/base/ts",
+	"extends": "@lightrix/configuration/Base/TypeScript",
 	"watchOptions": {
 		"excludeDirectories": [
 			"**/node_modules/**",
