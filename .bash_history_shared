@@ -758,3 +758,5 @@ dum install
 cd /f/d
 #1691275466
 /d/Developer/
+#1691275472
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
