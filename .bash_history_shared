@@ -482,3 +482,11 @@ find -iname .git -execdir git add . \;
 find -iname .git -execdir git commit -m "squash!" \;
 #1691252218
 find -iname Images2 -type d -execdir mv Images2 Image \;
+#1691252222
+find -iname .git -execdir git add . \;
+#1691252228
+find -iname .git -execdir git commit -m "squash!" \;
+#1691252253
+find -iname Images
+#1691252255
+find -iname Image
