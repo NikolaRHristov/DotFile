@@ -476,3 +476,9 @@ find -iname Images -type d
 find -iname Images -type d -execdir mv Images Images2 \;
 #1691252112
 find -iname .git -execdir git add .
+#1691252115
+find -iname .git -execdir git add . \;
+#1691252135
+find -iname .git -execdir git commit -m "squash!" \;
+#1691252218
+find -iname Images2 -type d -execdir mv Images2 Image \;
