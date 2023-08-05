@@ -516,3 +516,7 @@ maintenance
 maintenance star
 #1691255466
 find -iname workflows -type d -execdir mv workflows workflows2 \;
+#1691255476
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691255552
+find -iname workflows2 -type d -execdir mv workflows2 workflows \;
