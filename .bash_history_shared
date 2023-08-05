@@ -642,3 +642,23 @@ mv ./app/NowPlayingCards/now-playing.cards/Source/Styles/pages ./app/NowPlayingC
 mv ./app/Playform/playform.cloud/Src/pages ./app/Playform/playform.cloud/Src/Pages2
 #1691266554
 mv ./app/Playform/playform.cloud/Src/Styles/pages ./app/Playform/playform.cloud/Src/Styles/Pages2
+#1691266558
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691266603
+mv ./app/childrens-books/app/app/web/Source/Script/Pages2 ./app/childrens-books/app/app/web/Source/Script/Page
+#1691266603
+mv ./app/childrens-books/app/app/web/Source/Styles/Pages2 ./app/childrens-books/app/app/web/Source/Styles/Page
+#1691266603
+mv ./app/Lightrix/lightrix.help/Source/Styles/Pages2 ./app/Lightrix/lightrix.help/Source/Styles/Page
+#1691266603
+mv ./app/NikolaRHristov/nikolahristov.tech/public/Image/Pages2 ./app/NikolaRHristov/nikolahristov.tech/public/Image/Page
+#1691266603
+mv ./app/NikolaRHristov/nikolahristov.tech/Source/Styles/Pages2 ./app/NikolaRHristov/nikolahristov.tech/Source/Styles/Page
+#1691266603
+mv ./app/NowPlayingCards/now-playing.cards/Source/elements/Pages2 ./app/NowPlayingCards/now-playing.cards/Source/elements/Page
+#1691266603
+mv ./app/NowPlayingCards/now-playing.cards/Source/Styles/Pages2 ./app/NowPlayingCards/now-playing.cards/Source/Styles/Page
+#1691266603
+mv ./app/Playform/playform.cloud/Src/Pages2 ./app/Playform/playform.cloud/Src/Page
+#1691266603
+mv ./app/Playform/playform.cloud/Src/Styles/Pages2 ./app/Playform/playform.cloud/Src/Styles/Page
