@@ -676,3 +676,15 @@ find -iname npm.yml -execdir mv npm.yml npm.yml2 \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1691267236
 find -iname npm.yml2 -execdir mv npm.yml2 NPM.yml \;
+#1691267239
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691267561
+find -type d
+#1691267672
+find -iname bin
+#1691267710
+find -iname .git -execdir git sync \;
+#1691268343
+find -iname badges
+#1691268479
+find -iname badges -execdir mv badges Badge \;
