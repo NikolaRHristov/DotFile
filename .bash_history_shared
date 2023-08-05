@@ -720,3 +720,7 @@ find -iname command -type d -execdir mv command command2 \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1691271779
 find -iname command2 -type d -execdir mv command2 Command \;
+#1691271781
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691271833
+find -iname command -type d
