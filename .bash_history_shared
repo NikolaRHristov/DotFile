@@ -538,3 +538,5 @@ git remote -v
 ./app/NikolaRHristov/dot/Script/star-used.sh 
 #1691257470
 rm -rf app/NikolaRHristov/dart/
+#1691258185
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
