@@ -662,3 +662,13 @@ mv ./app/NowPlayingCards/now-playing.cards/Source/Styles/Pages2 ./app/NowPlaying
 mv ./app/Playform/playform.cloud/Src/Pages2 ./app/Playform/playform.cloud/Src/Page
 #1691266603
 mv ./app/Playform/playform.cloud/Src/Styles/Pages2 ./app/Playform/playform.cloud/Src/Styles/Page
+#1691266606
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691266782
+find -iname pages -type d
+#1691266786
+find -iname page -type d
+#1691267192
+find -iname npm.yml
+#1691267202
+find -iname npm.yml -execdir mv npm.yml npm.yml2 \;
