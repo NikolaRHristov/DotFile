@@ -528,3 +528,13 @@ find -iname workflows
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1691255688
 find -iname .git -execdir git sync \;
+#1691256298
+cd app/NikolaRHristov/
+#1691256301
+cd dart/
+#1691256303
+git remote -v
+#1691255710
+./app/NikolaRHristov/dot/Script/star-used.sh 
+#1691257470
+rm -rf app/NikolaRHristov/dart/
