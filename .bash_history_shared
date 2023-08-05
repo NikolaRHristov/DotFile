@@ -280,3 +280,143 @@ code-insiders ./app/astro-starters/PAC-STAC/app/web/astro.config.ts ./app/astro-
 find -iname astro.config.ts -execdir pwd \;
 #1691201061
 code-insiders /d/Developer/app/astro-starters/PAC-STAC/app/web/package.json /d/Developer/app/astro-starters/pac-stac-web/package.json /d/Developer/app/BlackRainbowAI/blackrainbow.media/package.json /d/Developer/app/childrens-books/app/app/web/package.json /d/Developer/app/CrepesJS/crepes.dev/package.json /d/Developer/app/DoccerPage/doccer.page/package.json /d/Developer/app/GrenadierJS/grenadier.dev/package.json /d/Developer/app/HalleSoftware/halle.software/package.json /d/Developer/app/ImageWtf/image.wtf/package.json /d/Developer/app/IntakeNomNom/intakenomnom.com/package.json /d/Developer/app/Lightrix/astro-deno-deploy/package.json /d/Developer/app/Lightrix/astro-sst-template/package.json /d/Developer/app/Lightrix/astro-starter-template/package.json /d/Developer/app/Lightrix/lightrix.help/package.json /d/Developer/app/Lightrix/overbrowser/package.json /d/Developer/app/MythemeCloud/mytheme-web/package.json /d/Developer/app/NeovimSpace/neovim.space/package.json /d/Developer/app/NikolaRHristov/nikolahristov.tech/package.json /d/Developer/app/NowPlayingCards/now-playing.cards/package.json /d/Developer/app/Playform/blank-web-starter/package.json /d/Developer/app/Playform/playform.cloud/package.json /d/Developer/app/ReturnThief/returnthief.quest/package.json /d/Developer/app/SileaJS/silea.dev/package.json /d/Developer/app/SouqRs/souq.dev/package.json /d/Developer/app/windowsdock/windowsdock.app/package.json
+#1691201130
+bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691248381
+dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691248420
+cd app/Lightrix/npm/config/
+#1691248425
+git log --oneline 
+#1691248436
+ci package.json 
+#1691248534
+cd ../
+#1691248540
+cd /d/Developer/app/Lightrix/npm/
+#1691248543
+git add .
+#1691248552
+cd app/Lightrix/npm/
+#1691248557
+git add .
+#1691248562
+git commit -m "squash!"
+#1691248683
+cd /d/Developer/
+#1691248691
+find -iname package.json -execdir sort-package-json \;
+#1691248784
+find -iname *script*
+#1691248798
+find -iname *script* -type d
+#1691248802
+find -iname scripts -type d
+#1691248811
+find -iname scripts -type d -execdir mv Scripts Script \;
+#1691248818
+find -iname *script* -type d
+#1691248880
+find -iname *config* -type d
+#1691248887
+find -iname '*config*' -type d
+#1691248925
+mv ./app/astro-community/astro-rome/config ./app/astro-community/astro-rome/Configuration
+#1691248925
+mv ./app/astro-community/astro-rome/Source/config ./app/astro-community/astro-rome/Source/Configuration
+#1691248925
+mv ./app/BlackRainbowAI/npm/config ./app/BlackRainbowAI/npm/Configuration
+#1691248925
+mv ./app/childrens-books/app/app/web/Source/Script/react/config ./app/childrens-books/app/app/web/Source/Script/react/Configuration
+#1691248925
+mv ./app/Lightrix/npm/Configuration ./app/Lightrix/npm/Configuration
+#1691248925
+mv ./app/Lightrix/npm/Script/Source/config ./app/Lightrix/npm/Script/Source/Configuration
+#1691248925
+mv ./app/MythemeCloud/npm/config ./app/MythemeCloud/npm/Configuration
+#1691248925
+mv ./app/NikolaRHristov/bash-completion/test/config ./app/NikolaRHristov/bash-completion/test/Configuration
+#1691248925
+mv ./app/NikolaRHristov/bot/Source/config ./app/NikolaRHristov/bot/Source/Configuration
+#1691248925
+mv ./app/NikolaRHristov/dot/.config ./app/NikolaRHristov/dot/.Configuration
+#1691248925
+mv ./app/NikolaRHristov/dot/.config/configstore ./app/NikolaRHristov/dot/.config/Configuration
+#1691248925
+mv ./app/NikolaRHristov/dot/.config/nvim/lua/plugins/configs ./app/NikolaRHristov/dot/.config/nvim/lua/plugins/Configuration
+#1691248925
+mv ./app/NikolaRHristov/dot/.oh-my-posh/website/docs/configuration ./app/NikolaRHristov/dot/.oh-my-posh/website/docs/Configuration
+#1691248943
+find -iname *config* -type d
+#1691248948
+find -iname "*config*" -type d
+#1691248992
+cd app/NikolaRHristov/dot/
+#1691248997
+mv .Configuration .config
+#1691249013
+cd /f/d
+#1691249014
+/d/Developer/
+#1691249017
+/d/Developer/app/
+#1691249020
+/d/Developer/
+#1691249027
+find -iname .git -execdir git add . \;
+#1691249056
+cd ./app/NikolaRHristov/dot/.config/nvim/lua/plugins/configs
+#1691249078
+cd ../../
+#1691249088
+cd ../.oh-my-posh/
+#1691249103
+cd website/
+#1691249109
+rm -rf docs/
+#1691249285
+/d/Developer/
+#1691249290
+find -type d
+#1691250488
+cd ./app/astro-starters/PAC-STAC/app/content/Source/collections
+#1691250491
+cd ../
+#1691250496
+mv collections Collection
+#1691250518
+cd d
+#1691250521
+cd /d/Developer/./app/astro-starters/PAC-STAC/app/web/Source/content
+#1691250525
+cd ../
+#1691250529
+mv content content2
+#1691250531
+git add .
+#1691250534
+git commit -m "squash!"
+#1691250550
+mv content2/ Content
+#1691250552
+git add .
+#1691250555
+git commit -m "squash!"
+#1691250568
+mv layouts layouts2
+#1691250569
+git add .
+#1691250572
+git commit -m "squash!"
+#1691250573
+git push
+#1691250583
+mv layouts2 Layout
+#1691250586
+git add .
+#1691250598
+git commit -m "squash!"
+#1691250608
+cd /f/d
+#1691250611
+/d/Developer/
