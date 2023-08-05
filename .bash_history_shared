@@ -554,3 +554,5 @@ mv ./app/YesMaintenance/npm/Script/Source/command ./app/YesMaintenance/npm/Scrip
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1691263143
 mv ./app/YesMaintenance/npm/Script/Source/command2 ./app/YesMaintenance/npm/Script/Source/Command
+#1691263145
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
