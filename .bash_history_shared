@@ -462,3 +462,17 @@ find -type d
 find -iname workflows -type d
 #1691251630
 find -iname workflows -type d -execdir mv workflows workflows2 \;
+#1691251640
+find -iname .git -execdir git add . \;
+#1691251650
+find -iname .git -execdir git commit -m "squash!" \;
+#1691251694
+find -iname .git -execdir git add .
+#1691251697
+find -iname .git -execdir git add . \;
+#1691252087
+find -iname Images -type d
+#1691252110
+find -iname Images -type d -execdir mv Images Images2 \;
+#1691252112
+find -iname .git -execdir git add .
