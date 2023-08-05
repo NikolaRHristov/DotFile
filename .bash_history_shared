@@ -568,3 +568,5 @@ find -iname *2 -typed
 find -iname *2 -type d
 #1691264728
 mv ./app/YesMaintenance/npm/Script/Source/templates2 ./app/YesMaintenance/npm/Script/Source/Template
+#1691264731
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
