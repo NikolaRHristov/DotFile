@@ -598,3 +598,13 @@ find -iname options
 find -name Options
 #1691265262
 find -name Options -execdir mv Options Option \;
+#1691265265
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691265325
+find -iname assets
+#1691265334
+find -iname assets -execdir mv assets Asset \;
+#1691265353
+find -iname components
+#1691265361
+find -iname components -execdir mv components Component \;
