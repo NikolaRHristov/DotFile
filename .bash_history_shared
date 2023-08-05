@@ -268,3 +268,5 @@ find -iname pages
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
 #1691197117
 find -iname .git -execdir git add . \; find -iname .git -execdir git commit -m "squash!" \; find -iname .git -execdir git sync \;
+#1691197133
+find -iname .git -execdir git add . \; ; find -iname .git -execdir git commit -m "squash!" \; ; find -iname .git -execdir git sync \;
