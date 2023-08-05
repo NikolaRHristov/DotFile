@@ -285,7 +285,7 @@ bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname .git -execdir b
 #1691248381
 dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
 #1691248420
-cd app/Lightrix/npm/config/
+cd app/Lightrix/NPM/config/
 #1691248425
 git log --oneline 
 #1691248436
@@ -293,11 +293,11 @@ ci package.json
 #1691248534
 cd ../
 #1691248540
-cd /d/Developer/app/Lightrix/npm/
+cd /d/Developer/app/Lightrix/NPM/
 #1691248543
 git add .
 #1691248552
-cd app/Lightrix/npm/
+cd app/Lightrix/NPM/
 #1691248557
 git add .
 #1691248562
@@ -329,9 +329,9 @@ mv ./app/BlackRainbowAI/npm/config ./app/BlackRainbowAI/npm/Configuration
 #1691248925
 mv ./app/childrens-books/app/app/web/Source/Script/react/config ./app/childrens-books/app/app/web/Source/Script/react/Configuration
 #1691248925
-mv ./app/Lightrix/npm/Configuration ./app/Lightrix/npm/Configuration
+mv ./app/Lightrix/NPM/Configuration ./app/Lightrix/NPM/Configuration
 #1691248925
-mv ./app/Lightrix/npm/Script/Source/config ./app/Lightrix/npm/Script/Source/Configuration
+mv ./app/Lightrix/NPM/Script/Source/config ./app/Lightrix/NPM/Script/Source/Configuration
 #1691248925
 mv ./app/MythemeCloud/npm/config ./app/MythemeCloud/npm/Configuration
 #1691248925
@@ -692,3 +692,27 @@ find -iname badges -execdir mv badges Badge \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1691270250
 tsc --watch -p tsconfig.json 
+#1691270280
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691270296
+find -iname badges
+#1691270497
+cld
+#1691270501
+dum installl
+#1691270503
+dum install
+#1691271385
+cd app/Lightrix/NPM/Configuration/
+#1691271387
+git add .
+#1691271392
+ci package.json 
+#1691271686
+find -iname command -type d
+#1691271697
+/d/Developer/
+#1691271698
+find -iname command -type d
+#1691271707
+find -iname command -type d -execdir mv command command2 \;
