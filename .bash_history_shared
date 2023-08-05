@@ -726,3 +726,5 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 find -iname command -type d
 #1691271836
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691273608
+find -iname command -type d
