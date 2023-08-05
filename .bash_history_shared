@@ -420,3 +420,45 @@ git commit -m "squash!"
 cd /f/d
 #1691250611
 /d/Developer/
+#1691250618
+find -iname .git -execdir git add . \;
+#1691250657
+find -iname .git -execdir git commit -m "squash!" \;
+#1691250963
+find -type d
+#1691250973
+rm text.md 
+#1691250976
+find -type d > text.md
+#1691251174
+find -iname .git
+#1691251191
+find -iname .git -execdir bash -c 'find -type d' \;
+#1691251199
+find -iname .git -execdir bash -c 'source ~/.bashrc ; find -type d' \;
+#1691251208
+find -iname .git -execdir bash -c 'source ~/.bash_profile ; find -type d' \;
+#1691251252
+find -iname .git
+#1691251256
+rm text.md 
+#1691251259
+find -iname .git
+#1691251261
+find -iname .git > text.md
+#1691251342
+./text.sh 
+#1691251359
+rm text.md 
+#1691251360
+./text.sh 
+#1691251394
+rm text.md 
+#1691251408
+./text.sh 
+#1691251567
+find -type d
+#1691251583
+find -iname workflows -type d
+#1691251630
+find -iname workflows -type d -execdir mv workflows workflows2 \;
