@@ -730,3 +730,31 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 find -iname command -type d
 #1691273609
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691274232
+find -iname firebase.ts -exec code-insiders {} \;
+#1691274836
+dum install --filter=@nikolarhristov/dot
+#1691274846
+cd app/NikolaRHristov/dot/
+#1691274856
+cd Li
+#1691274857
+cd Library/
+#1691274859
+cd Script/
+#1691274863
+cd ../../
+#1691274865
+rm -rf Library/
+#1691274873
+cd Script/
+#1691274877
+cd ../.config/
+#1691274880
+cd base/
+#1691274884
+dum install
+#1691274904
+cd /f/d
+#1691275466
+/d/Developer/
