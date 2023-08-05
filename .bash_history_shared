@@ -578,3 +578,11 @@ find -iname pages -type d
 find -type d
 #1691265073
 find -iname Layouts
+#1691265086
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691265122
+find -iname Layouts
+#1691265126
+find -name Layouts
+#1691265159
+find -name layouts -type d -execdir mv layouts Layout \;
