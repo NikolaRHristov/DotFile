@@ -570,3 +570,11 @@ find -iname *2 -type d
 mv ./app/YesMaintenance/npm/Script/Source/templates2 ./app/YesMaintenance/npm/Script/Source/Template
 #1691264731
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691265051
+find -type d
+#1691265059
+find -iname pages -type d
+#1691265063
+find -type d
+#1691265073
+find -iname Layouts
