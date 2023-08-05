@@ -608,3 +608,7 @@ find -iname assets -execdir mv assets Asset \;
 find -iname components
 #1691265361
 find -iname components -execdir mv components Component \;
+#1691265488
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691265588
+cld
