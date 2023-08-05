@@ -550,3 +550,7 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 find -type d
 #1691263114
 mv ./app/YesMaintenance/npm/Script/Source/command ./app/YesMaintenance/npm/Script/Source/command2
+#1691263116
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691263143
+mv ./app/YesMaintenance/npm/Script/Source/command2 ./app/YesMaintenance/npm/Script/Source/Command
