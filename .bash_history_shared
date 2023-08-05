@@ -544,3 +544,9 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 find -type d
 #1691261319
 mv app/YesMaintenance/npm/Script/Source/templates/ app/YesMaintenance/npm/Script/Source/templates2
+#1691261324
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691263106
+find -type d
+#1691263114
+mv ./app/YesMaintenance/npm/Script/Source/command ./app/YesMaintenance/npm/Script/Source/command2
