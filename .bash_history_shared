@@ -496,3 +496,7 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 find -iname workflows2
 #1691252605
 find -iname workflows2 -execdir mv workflows2 Workflows \;
+#1691252608
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691252293
+find -iname .git -execdir git sync \;
