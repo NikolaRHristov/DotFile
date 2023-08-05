@@ -586,3 +586,15 @@ find -iname Layouts
 find -name Layouts
 #1691265159
 find -name layouts -type d -execdir mv layouts Layout \;
+#1691265167
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691265234
+find -iname scripts
+#1691265242
+find -iname script
+#1691265247
+find -iname options
+#1691265257
+find -name Options
+#1691265262
+find -name Options -execdir mv Options Option \;
