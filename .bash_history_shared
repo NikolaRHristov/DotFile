@@ -490,3 +490,9 @@ find -iname .git -execdir git commit -m "squash!" \;
 find -iname Images
 #1691252255
 find -iname Image
+#1691252275
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691252586
+find -iname workflows2
+#1691252605
+find -iname workflows2 -execdir mv workflows2 Workflows \;
