@@ -540,3 +540,7 @@ git remote -v
 rm -rf app/NikolaRHristov/dart/
 #1691258185
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691261301
+find -type d
+#1691261319
+mv app/YesMaintenance/npm/Script/Source/templates/ app/YesMaintenance/npm/Script/Source/templates2
