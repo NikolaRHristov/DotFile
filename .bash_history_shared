@@ -256,3 +256,15 @@ find -iname options -type d
 bmd
 #1691183537
 bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ; git fetch upstream ; git merge upstream/main ; git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691186402
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691187594
+find -type d
+#1691194677
+find -type d > text.md
+#1691195313
+find -iname pages
+#1691196939
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691197117
+find -iname .git -execdir git add . \; find -iname .git -execdir git commit -m "squash!" \; find -iname .git -execdir git sync \;
