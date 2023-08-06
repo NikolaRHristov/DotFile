@@ -775,55 +775,55 @@ gh release list
 #1691277480
 gh release delete @lightrix/config@v0.0.12
 #1691277484
-gh release delete @lightrix/scripts@v1.0.7
+gh release delete @lightrix/script@v1.0.7
 #1691277487
-gh release delete @lightrix/scripts@v1.0.6
+gh release delete @lightrix/script@v1.0.6
 #1691277488
-gh release delete @lightrix/scripts@v1.0.5
+gh release delete @lightrix/script@v1.0.5
 #1691277490
-gh release delete @lightrix/scripts@v1.0.4
+gh release delete @lightrix/script@v1.0.4
 #1691277491
-gh release delete @lightrix/scripts@v1.0.3
+gh release delete @lightrix/script@v1.0.3
 #1691277492
-gh release delete @lightrix/scripts@v1.0.2
+gh release delete @lightrix/script@v1.0.2
 #1691277493
-gh release delete @lightrix/scripts@v1.0.1
+gh release delete @lightrix/script@v1.0.1
 #1691277494
 gh release delete @lightrix/config@v0.0.11
 #1691277495
 gh release delete @lightrix/config@v0.0.10
 #1691277497
-gh release delete @lightrix/scripts@v1.0.0
+gh release delete @lightrix/script@v1.0.0
 #1691277498
-gh release delete @lightrix/scripts@v0.1.7
+gh release delete @lightrix/script@v0.1.7
 #1691277499
 gh release delete @lightrix/config@v0.0.9
 #1691277500
 gh release delete @lightrix/config@v0.0.8
 #1691277502
-gh release delete @lightrix/scripts@v0.1.5
+gh release delete @lightrix/script@v0.1.5
 #1691277503
-gh release delete @lightrix/scripts@v0.1.4
+gh release delete @lightrix/script@v0.1.4
 #1691277504
-gh release delete @lightrix/scripts@v0.1.3
+gh release delete @lightrix/script@v0.1.3
 #1691277505
 gh release delete @lightrix/config@v0.0.7
 #1691277506
-gh release delete @lightrix/scripts@v0.1.2
+gh release delete @lightrix/script@v0.1.2
 #1691277508
-gh release delete @lightrix/scripts@v0.1.1
+gh release delete @lightrix/script@v0.1.1
 #1691277509
-gh release delete @lightrix/scripts@v0.1.0
+gh release delete @lightrix/script@v0.1.0
 #1691277510
-gh release delete @lightrix/scripts@v0.0.19
+gh release delete @lightrix/script@v0.0.19
 #1691277511
-gh release delete @lightrix/scripts@v0.0.18
+gh release delete @lightrix/script@v0.0.18
 #1691277512
-gh release delete @lightrix/scripts@v0.0.17
+gh release delete @lightrix/script@v0.0.17
 #1691277514
-gh release delete @lightrix/scripts@v0.0.16
+gh release delete @lightrix/script@v0.0.16
 #1691277515
-gh release delete @lightrix/scripts@v0.0.15
+gh release delete @lightrix/script@v0.0.15
 #1691277591
 /d/Developer/app/Lightrix/NPM/Configuration/
 #1691277595
@@ -1602,3 +1602,139 @@ cd ../../
 cd ../
 #1691299616
 find -iname .git.archive -execdir mv .git.archive .git \;
+#1691299634
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691299710
+mkdir /d/Developer/nikolarhristov
+#1691299726
+mv NikolaRHristov/NikolaRHristov/NikolaRHristov/.git /d/Developer/nikolarhristov/
+#1691299728
+pwd
+#1691299737
+cd NikolaRHristov/
+#1691299746
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691326652
+cd app/NikolaRHristov/NikolaRHristov/Lightrix/NPM/
+#1691326658
+cd Configuration/
+#1691326668
+npm publish
+#1691326764
+cd ../Script/
+#1691326767
+bmd
+#1691326787
+dum install
+#1691326844
+npm show @lightrix/configuration
+#1691327015
+dum prepublishOnly
+#1691327376
+dum install
+#1691327857
+dum prepublishOnly
+#1691327946
+dum install
+#1691328054
+dum prepublishOnly
+#1691328096
+npm show @Lightrix/Configuration
+#1691328104
+npm show @lightrix/configuration
+#1691328143
+find -iname dist
+#1691328147
+find -iname dist -exec rm -rf {} \;
+#1691328154
+cd app/Lightrix/NPM/
+#1691328155
+cd Script/
+#1691328158
+ci package.json 
+#1691328171
+dum prepublishOnly
+#1691328180
+cd node_modules/
+#1691328184
+cd \@lightrix/
+#1691328186
+cd configuration/
+#1691328189
+cd Base/
+#1691328216
+cd ../../
+#1691328218
+dum prepublishOnly
+#1691328225
+cd ../../
+#1691328227
+dum prepublishOnly
+#1691328331
+cd /d/Developer/
+#1691328334
+dum install
+#1691328658
+dum prepublishOnly
+#1691328697
+cd app/Lightrix/NPM/
+#1691328699
+cd Script/
+#1691328712
+find -iname .git-archive
+#1691328719
+find -iname .git-archive -execdir mv .git-archive .git \;
+#1691328725
+find -iname .git.archive
+#1691328736
+find -iname .git -execdir git add . \;
+#1691328700
+dum install
+#1691328848
+dum prepublishOnly
+#1691328916
+dum install
+#1691329057
+dum prepublishOnly
+#1691329083
+cd app/Lightrix/NPM/Script/
+#1691329085
+dum prepublishOnly
+#1691329101
+cd /d/Developer/
+#1691329106
+cd node_modules/
+#1691329111
+cd \@lightrix/
+#1691329117
+cd /f/d
+#1691329143
+cd -
+#1691329146
+cd /d/Developer/app/Lightrix/
+#1691329150
+cd NPM/
+#1691329151
+cd Configuration/
+#1691329155
+dum prepublishOnly
+#1691329158
+cd ../Script/
+#1691329162
+dum prepublishOnly
+#1691329239
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691329254
+node --no-warnings --loader ts-node/esm Source/Index.ts -h
+#1691330624
+бмд
+#1691330625
+bmd
+#1691331083
+dum prepublishOnly
+#1691331775
+cd /d/Developer/
+#1691331935
+cd app/Lightrix/NPM/Configuration/
+#1691331937
+git log --oneline 
