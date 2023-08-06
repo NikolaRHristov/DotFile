@@ -1052,3 +1052,13 @@ git add . ; git commit -m "squash!" ; git push ;
 cd /d/Developer/
 #1691288734
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691289561
+find -iname dist
+#1691289567
+find -iname Target
+#1691289585
+find -iname Target -exec rm -rf {} \;
+#1691289593
+find -iname build
+#1691289604
+find -iname build -exec rm -rf {} \;
