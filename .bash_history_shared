@@ -1152,3 +1152,453 @@ find -iname .git -execdir bash -c 'pwd && git remote -v' \;
 find -iname .git -execdir bash -c 'pwd && git remote -v' \; > text.md
 #1691297928
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691298155
+cd app/NikolaRHristov/NikolaRHristov/
+#1691298160
+find -iname .git
+#1691298194
+mv ./astro-community/astro-compress/.git ./astro-community/astro-compress/.git.archive
+#1691298194
+mv ./astro-community/astro-critters/.git ./astro-community/astro-critters/.git.archive
+#1691298194
+mv ./astro-community/astro-rome/.git ./astro-community/astro-rome/.git.archive
+#1691298194
+mv ./AstroStarters/PAC-STAC/.git ./AstroStarters/PAC-STAC/.git.archive
+#1691298194
+mv ./AstroStarters/PAC-STAC/app/content/.git ./AstroStarters/PAC-STAC/app/content/.git.archive
+#1691298194
+mv ./AstroStarters/PAC-STAC/app/web/.git ./AstroStarters/PAC-STAC/app/web/.git.archive
+#1691298194
+mv ./AstroStarters/pac-stac-content/.git ./AstroStarters/pac-stac-content/.git.archive
+#1691298194
+mv ./AstroStarters/pac-stac-web/.git ./AstroStarters/pac-stac-web/.git.archive
+#1691298195
+mv ./BlackRainbowAI/blackrainbow.media/.git ./BlackRainbowAI/blackrainbow.media/.git.archive
+#1691298195
+mv ./BlackRainbowAI/NPM/.git ./BlackRainbowAI/NPM/.git.archive
+#1691298195
+mv ./BlackRainbowAI/rfc/.git ./BlackRainbowAI/rfc/.git.archive
+#1691298195
+mv ./CrepesJS/crates/.git ./CrepesJS/crates/.git.archive
+#1691298195
+mv ./CrepesJS/create-crepes-app/.git ./CrepesJS/create-crepes-app/.git.archive
+#1691298195
+mv ./CrepesJS/crepes.dev/.git ./CrepesJS/crepes.dev/.git.archive
+#1691298195
+mv ./CrepesJS/mfw-gatsby/.git ./CrepesJS/mfw-gatsby/.git.archive
+#1691298195
+mv ./CrepesJS/mfw-next/.git ./CrepesJS/mfw-next/.git.archive
+#1691298195
+mv ./CrepesJS/ui-baseweb/.git ./CrepesJS/ui-baseweb/.git.archive
+#1691298195
+mv ./CrepesJS/ui-blueprint/.git ./CrepesJS/ui-blueprint/.git.archive
+#1691298195
+mv ./CrepesJS/ui-bootstrap/.git ./CrepesJS/ui-bootstrap/.git.archive
+#1691298195
+mv ./CrepesJS/ui-carbon/.git ./CrepesJS/ui-carbon/.git.archive
+#1691298195
+mv ./CrepesJS/ui-chakra/.git ./CrepesJS/ui-chakra/.git.archive
+#1691298195
+mv ./CrepesJS/ui-clarity/.git ./CrepesJS/ui-clarity/.git.archive
+#1691298195
+mv ./CrepesJS/ui-element/.git ./CrepesJS/ui-element/.git.archive
+#1691298195
+mv ./CrepesJS/ui-elemental/.git ./CrepesJS/ui-elemental/.git.archive
+#1691298195
+mv ./CrepesJS/ui-evergreen/.git ./CrepesJS/ui-evergreen/.git.archive
+#1691298195
+mv ./CrepesJS/ui-fast/.git ./CrepesJS/ui-fast/.git.archive
+#1691298195
+mv ./CrepesJS/ui-fluent/.git ./CrepesJS/ui-fluent/.git.archive
+#1691298195
+mv ./CrepesJS/ui-foundation/.git ./CrepesJS/ui-foundation/.git.archive
+#1691298195
+mv ./CrepesJS/ui-grommet/.git ./CrepesJS/ui-grommet/.git.archive
+#1691298195
+mv ./CrepesJS/ui-headless/.git ./CrepesJS/ui-headless/.git.archive
+#1691298195
+mv ./CrepesJS/ui-material/.git ./CrepesJS/ui-material/.git.archive
+#1691298195
+mv ./CrepesJS/ui-polaris/.git ./CrepesJS/ui-polaris/.git.archive
+#1691298195
+mv ./CrepesJS/ui-semantic/.git ./CrepesJS/ui-semantic/.git.archive
+#1691298195
+mv ./CrepesJS/ui-shards/.git ./CrepesJS/ui-shards/.git.archive
+#1691298195
+mv ./CrepesJS/ui-uikit/.git ./CrepesJS/ui-uikit/.git.archive
+#1691298195
+mv ./CrepesJS/ui-uswds/.git ./CrepesJS/ui-uswds/.git.archive
+#1691298195
+mv ./DoccerPage/doccer.page/.git ./DoccerPage/doccer.page/.git.archive
+#1691298195
+mv ./GrenadierJS/awesome-grenadier/.git ./GrenadierJS/awesome-grenadier/.git.archive
+#1691298195
+mv ./GrenadierJS/cookbook-third-party-apis/.git ./GrenadierJS/cookbook-third-party-apis/.git.archive
+#1691298195
+mv ./GrenadierJS/create-grenadier-app/.git ./GrenadierJS/create-grenadier-app/.git.archive
+#1691298195
+mv ./GrenadierJS/example-blog/.git ./GrenadierJS/example-blog/.git.archive
+#1691298195
+mv ./GrenadierJS/example-invoice/.git ./GrenadierJS/example-invoice/.git.archive
+#1691298195
+mv ./GrenadierJS/example-todo/.git ./GrenadierJS/example-todo/.git.archive
+#1691298195
+mv ./GrenadierJS/grenadier.dev/.git ./GrenadierJS/grenadier.dev/.git.archive
+#1691298195
+mv ./GrenadierJS/netlify-plugin-prisma-provider/.git ./GrenadierJS/netlify-plugin-prisma-provider/.git.archive
+#1691298195
+mv ./GrenadierJS/NPM/.git ./GrenadierJS/NPM/.git.archive
+#1691298195
+mv ./GrenadierJS/playground-auth/.git ./GrenadierJS/playground-auth/.git.archive
+#1691298195
+mv ./ImageRepository/logos/.git ./ImageRepository/logos/.git.archive
+#1691298195
+mv ./ImageWtf/image.wtf/.git ./ImageWtf/image.wtf/.git.archive
+#1691298195
+mv ./IntakeNomNom/crates/.git ./IntakeNomNom/crates/.git.archive
+#1691298195
+mv ./IntakeNomNom/intakenomnom.com/.git ./IntakeNomNom/intakenomnom.com/.git.archive
+#1691298195
+mv ./IntakeNomNom/marketplace/.git ./IntakeNomNom/marketplace/.git.archive
+#1691298195
+mv ./IntakeNomNom/NPM/.git ./IntakeNomNom/NPM/.git.archive
+#1691298195
+mv ./Lightrix/astro-deno-deploy/.git ./Lightrix/astro-deno-deploy/.git.archive
+#1691298195
+mv ./Lightrix/astro-query/.git ./Lightrix/astro-query/.git.archive
+#1691298196
+mv ./Lightrix/astro-sst-template/.git ./Lightrix/astro-sst-template/.git.archive
+#1691298196
+mv ./Lightrix/astro-starter-template/.git ./Lightrix/astro-starter-template/.git.archive
+#1691298196
+mv ./Lightrix/auto-save/.git ./Lightrix/auto-save/.git.archive
+#1691298196
+mv ./Lightrix/compress/.git ./Lightrix/compress/.git.archive
+#1691298196
+mv ./Lightrix/delete-old-deployments/.git ./Lightrix/delete-old-deployments/.git.archive
+#1691298196
+mv ./Lightrix/experiments/.git ./Lightrix/experiments/.git.archive
+#1691298196
+mv ./Lightrix/files-pipe/.git ./Lightrix/files-pipe/.git.archive
+#1691298196
+mv ./Lightrix/flights-dispatch/.git ./Lightrix/flights-dispatch/.git.archive
+#1691298196
+mv ./Lightrix/inn/.git ./Lightrix/inn/.git.archive
+#1691298196
+mv ./Lightrix/lightrix.help/.git ./Lightrix/lightrix.help/.git.archive
+#1691298196
+mv ./Lightrix/NPM/.git ./Lightrix/NPM/.git.archive
+#1691298196
+mv ./Lightrix/overbrowser/.git ./Lightrix/overbrowser/.git.archive
+#1691298196
+mv ./MythemeCloud/cargo/.git ./MythemeCloud/cargo/.git.archive
+#1691298196
+mv ./MythemeCloud/mytheme-web/.git ./MythemeCloud/mytheme-web/.git.archive
+#1691298196
+mv ./MythemeCloud/NPM/.git ./MythemeCloud/NPM/.git.archive
+#1691298196
+mv ./NeovimSpace/neovim.space/.git ./NeovimSpace/neovim.space/.git.archive
+#1691298196
+mv ./NikolaRHristov/api/.git ./NikolaRHristov/api/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-convert/.git ./NikolaRHristov/astro-convert/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-dashboard/.git ./NikolaRHristov/astro-dashboard/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-dead-links/.git ./NikolaRHristov/astro-dead-links/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-inlang/.git ./NikolaRHristov/astro-inlang/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-lint/.git ./NikolaRHristov/astro-lint/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-networks/.git ./NikolaRHristov/astro-networks/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-query/.git ./NikolaRHristov/astro-query/.git.archive
+#1691298196
+mv ./NikolaRHristov/astro-short-urls/.git ./NikolaRHristov/astro-short-urls/.git.archive
+#1691298196
+mv ./NikolaRHristov/auto-save/.git ./NikolaRHristov/auto-save/.git.archive
+#1691298196
+mv ./NikolaRHristov/bash/.git ./NikolaRHristov/bash/.git.archive
+#1691298196
+mv ./NikolaRHristov/bash-completion/.git ./NikolaRHristov/bash-completion/.git.archive
+#1691298196
+mv ./NikolaRHristov/bench-piscina/.git ./NikolaRHristov/bench-piscina/.git.archive
+#1691298196
+mv ./NikolaRHristov/bot/.git ./NikolaRHristov/bot/.git.archive
+#1691298196
+mv ./NikolaRHristov/camera-tools/.git ./NikolaRHristov/camera-tools/.git.archive
+#1691298196
+mv ./NikolaRHristov/dispatch/.git ./NikolaRHristov/dispatch/.git.archive
+#1691298196
+mv ./NikolaRHristov/nikolahristov.tech/.git ./NikolaRHristov/nikolahristov.tech/.git.archive
+#1691298196
+mv ./NikolaRHristov/NikolaRHristov/.git ./NikolaRHristov/NikolaRHristov/.git.archive
+#1691298196
+mv ./NikolaRHristov/obs/.git ./NikolaRHristov/obs/.git.archive
+#1691298196
+mv ./NikolaRHristov/Script/.git ./NikolaRHristov/Script/.git.archive
+#1691298196
+mv ./NikolaRHristov/walle/.git ./NikolaRHristov/walle/.git.archive
+#1691298196
+mv ./Playform/blank-web-starter/.git ./Playform/blank-web-starter/.git.archive
+#1691298196
+mv ./Playform/create-blank-web-starter/.git ./Playform/create-blank-web-starter/.git.archive
+#1691298196
+mv ./Playform/playform.cloud/.git ./Playform/playform.cloud/.git.archive
+#1691298196
+mv ./Playform/wordpress/.git ./Playform/wordpress/.git.archive
+#1691298196
+mv ./ReturnThief/returnthief.quest/.git ./ReturnThief/returnthief.quest/.git.archive
+#1691298196
+mv ./RoundedCorners/app/.git ./RoundedCorners/app/.git.archive
+#1691298196
+mv ./SileaJS/silea.dev/.git ./SileaJS/silea.dev/.git.archive
+#1691298196
+mv ./SouqRs/crates/.git ./SouqRs/crates/.git.archive
+#1691298197
+mv ./SouqRs/souq.dev/.git ./SouqRs/souq.dev/.git.archive
+#1691298197
+mv ./windowsdock/app/.git ./windowsdock/app/.git.archive
+#1691298197
+mv ./windowsdock/database/.git ./windowsdock/database/.git.archive
+#1691298197
+mv ./windowsdock/windowsdock.app/.git ./windowsdock/windowsdock.app/.git.archive
+#1691298197
+mv ./YesMaintenance/NPM/.git ./YesMaintenance/NPM/.git.archive
+#1691298203
+mv ./astro-community/astro-compress/.git ./astro-community/astro-compress/.git.archive
+#1691298203
+mv ./astro-community/astro-critters/.git ./astro-community/astro-critters/.git.archive
+#1691298203
+mv ./astro-community/astro-rome/.git ./astro-community/astro-rome/.git.archive
+#1691298203
+mv ./AstroStarters/PAC-STAC/.git ./AstroStarters/PAC-STAC/.git.archive
+#1691298203
+mv ./AstroStarters/PAC-STAC/app/content/.git ./AstroStarters/PAC-STAC/app/content/.git.archive
+#1691298203
+mv ./AstroStarters/PAC-STAC/app/web/.git ./AstroStarters/PAC-STAC/app/web/.git.archive
+#1691298203
+mv ./AstroStarters/pac-stac-content/.git ./AstroStarters/pac-stac-content/.git.archive
+#1691298203
+mv ./AstroStarters/pac-stac-web/.git ./AstroStarters/pac-stac-web/.git.archive
+#1691298203
+mv ./BlackRainbowAI/blackrainbow.media/.git ./BlackRainbowAI/blackrainbow.media/.git.archive
+#1691298203
+mv ./BlackRainbowAI/NPM/.git ./BlackRainbowAI/NPM/.git.archive
+#1691298203
+mv ./BlackRainbowAI/rfc/.git ./BlackRainbowAI/rfc/.git.archive
+#1691298203
+mv ./CrepesJS/crates/.git ./CrepesJS/crates/.git.archive
+#1691298203
+mv ./CrepesJS/create-crepes-app/.git ./CrepesJS/create-crepes-app/.git.archive
+#1691298203
+mv ./CrepesJS/crepes.dev/.git ./CrepesJS/crepes.dev/.git.archive
+#1691298203
+mv ./CrepesJS/mfw-gatsby/.git ./CrepesJS/mfw-gatsby/.git.archive
+#1691298203
+mv ./CrepesJS/mfw-next/.git ./CrepesJS/mfw-next/.git.archive
+#1691298203
+mv ./CrepesJS/ui-baseweb/.git ./CrepesJS/ui-baseweb/.git.archive
+#1691298203
+mv ./CrepesJS/ui-blueprint/.git ./CrepesJS/ui-blueprint/.git.archive
+#1691298203
+mv ./CrepesJS/ui-bootstrap/.git ./CrepesJS/ui-bootstrap/.git.archive
+#1691298203
+mv ./CrepesJS/ui-carbon/.git ./CrepesJS/ui-carbon/.git.archive
+#1691298203
+mv ./CrepesJS/ui-chakra/.git ./CrepesJS/ui-chakra/.git.archive
+#1691298204
+mv ./CrepesJS/ui-clarity/.git ./CrepesJS/ui-clarity/.git.archive
+#1691298204
+mv ./CrepesJS/ui-element/.git ./CrepesJS/ui-element/.git.archive
+#1691298204
+mv ./CrepesJS/ui-elemental/.git ./CrepesJS/ui-elemental/.git.archive
+#1691298204
+mv ./CrepesJS/ui-evergreen/.git ./CrepesJS/ui-evergreen/.git.archive
+#1691298204
+mv ./CrepesJS/ui-fast/.git ./CrepesJS/ui-fast/.git.archive
+#1691298204
+mv ./CrepesJS/ui-fluent/.git ./CrepesJS/ui-fluent/.git.archive
+#1691298204
+mv ./CrepesJS/ui-foundation/.git ./CrepesJS/ui-foundation/.git.archive
+#1691298204
+mv ./CrepesJS/ui-grommet/.git ./CrepesJS/ui-grommet/.git.archive
+#1691298204
+mv ./CrepesJS/ui-headless/.git ./CrepesJS/ui-headless/.git.archive
+#1691298204
+mv ./CrepesJS/ui-material/.git ./CrepesJS/ui-material/.git.archive
+#1691298204
+mv ./CrepesJS/ui-polaris/.git ./CrepesJS/ui-polaris/.git.archive
+#1691298204
+mv ./CrepesJS/ui-semantic/.git ./CrepesJS/ui-semantic/.git.archive
+#1691298204
+mv ./CrepesJS/ui-shards/.git ./CrepesJS/ui-shards/.git.archive
+#1691298204
+mv ./CrepesJS/ui-uikit/.git ./CrepesJS/ui-uikit/.git.archive
+#1691298204
+mv ./CrepesJS/ui-uswds/.git ./CrepesJS/ui-uswds/.git.archive
+#1691298204
+mv ./DoccerPage/doccer.page/.git ./DoccerPage/doccer.page/.git.archive
+#1691298204
+mv ./GrenadierJS/awesome-grenadier/.git ./GrenadierJS/awesome-grenadier/.git.archive
+#1691298204
+mv ./GrenadierJS/cookbook-third-party-apis/.git ./GrenadierJS/cookbook-third-party-apis/.git.archive
+#1691298204
+mv ./GrenadierJS/create-grenadier-app/.git ./GrenadierJS/create-grenadier-app/.git.archive
+#1691298204
+mv ./GrenadierJS/example-blog/.git ./GrenadierJS/example-blog/.git.archive
+#1691298204
+mv ./GrenadierJS/example-invoice/.git ./GrenadierJS/example-invoice/.git.archive
+#1691298204
+mv ./GrenadierJS/example-todo/.git ./GrenadierJS/example-todo/.git.archive
+#1691298204
+mv ./GrenadierJS/grenadier.dev/.git ./GrenadierJS/grenadier.dev/.git.archive
+#1691298204
+mv ./GrenadierJS/netlify-plugin-prisma-provider/.git ./GrenadierJS/netlify-plugin-prisma-provider/.git.archive
+#1691298204
+mv ./GrenadierJS/NPM/.git ./GrenadierJS/NPM/.git.archive
+#1691298204
+mv ./GrenadierJS/playground-auth/.git ./GrenadierJS/playground-auth/.git.archive
+#1691298204
+mv ./ImageRepository/logos/.git ./ImageRepository/logos/.git.archive
+#1691298204
+mv ./ImageWtf/image.wtf/.git ./ImageWtf/image.wtf/.git.archive
+#1691298204
+mv ./IntakeNomNom/crates/.git ./IntakeNomNom/crates/.git.archive
+#1691298204
+mv ./IntakeNomNom/intakenomnom.com/.git ./IntakeNomNom/intakenomnom.com/.git.archive
+#1691298204
+mv ./IntakeNomNom/marketplace/.git ./IntakeNomNom/marketplace/.git.archive
+#1691298204
+mv ./IntakeNomNom/NPM/.git ./IntakeNomNom/NPM/.git.archive
+#1691298204
+mv ./Lightrix/astro-deno-deploy/.git ./Lightrix/astro-deno-deploy/.git.archive
+#1691298204
+mv ./Lightrix/astro-query/.git ./Lightrix/astro-query/.git.archive
+#1691298204
+mv ./Lightrix/astro-sst-template/.git ./Lightrix/astro-sst-template/.git.archive
+#1691298204
+mv ./Lightrix/astro-starter-template/.git ./Lightrix/astro-starter-template/.git.archive
+#1691298204
+mv ./Lightrix/auto-save/.git ./Lightrix/auto-save/.git.archive
+#1691298204
+mv ./Lightrix/compress/.git ./Lightrix/compress/.git.archive
+#1691298204
+mv ./Lightrix/delete-old-deployments/.git ./Lightrix/delete-old-deployments/.git.archive
+#1691298204
+mv ./Lightrix/experiments/.git ./Lightrix/experiments/.git.archive
+#1691298204
+mv ./Lightrix/files-pipe/.git ./Lightrix/files-pipe/.git.archive
+#1691298204
+mv ./Lightrix/flights-dispatch/.git ./Lightrix/flights-dispatch/.git.archive
+#1691298205
+mv ./Lightrix/inn/.git ./Lightrix/inn/.git.archive
+#1691298205
+mv ./Lightrix/lightrix.help/.git ./Lightrix/lightrix.help/.git.archive
+#1691298205
+mv ./Lightrix/NPM/.git ./Lightrix/NPM/.git.archive
+#1691298205
+mv ./Lightrix/overbrowser/.git ./Lightrix/overbrowser/.git.archive
+#1691298205
+mv ./MythemeCloud/cargo/.git ./MythemeCloud/cargo/.git.archive
+#1691298205
+mv ./MythemeCloud/mytheme-web/.git ./MythemeCloud/mytheme-web/.git.archive
+#1691298205
+mv ./MythemeCloud/NPM/.git ./MythemeCloud/NPM/.git.archive
+#1691298205
+mv ./NeovimSpace/neovim.space/.git ./NeovimSpace/neovim.space/.git.archive
+#1691298205
+mv ./NikolaRHristov/api/.git ./NikolaRHristov/api/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-convert/.git ./NikolaRHristov/astro-convert/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-dashboard/.git ./NikolaRHristov/astro-dashboard/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-dead-links/.git ./NikolaRHristov/astro-dead-links/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-inlang/.git ./NikolaRHristov/astro-inlang/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-lint/.git ./NikolaRHristov/astro-lint/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-networks/.git ./NikolaRHristov/astro-networks/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-query/.git ./NikolaRHristov/astro-query/.git.archive
+#1691298205
+mv ./NikolaRHristov/astro-short-urls/.git ./NikolaRHristov/astro-short-urls/.git.archive
+#1691298205
+mv ./NikolaRHristov/auto-save/.git ./NikolaRHristov/auto-save/.git.archive
+#1691298205
+mv ./NikolaRHristov/bash/.git ./NikolaRHristov/bash/.git.archive
+#1691298205
+mv ./NikolaRHristov/bash-completion/.git ./NikolaRHristov/bash-completion/.git.archive
+#1691298205
+mv ./NikolaRHristov/bench-piscina/.git ./NikolaRHristov/bench-piscina/.git.archive
+#1691298205
+mv ./NikolaRHristov/bot/.git ./NikolaRHristov/bot/.git.archive
+#1691298205
+mv ./NikolaRHristov/camera-tools/.git ./NikolaRHristov/camera-tools/.git.archive
+#1691298205
+mv ./NikolaRHristov/dispatch/.git ./NikolaRHristov/dispatch/.git.archive
+#1691298205
+mv ./NikolaRHristov/nikolahristov.tech/.git ./NikolaRHristov/nikolahristov.tech/.git.archive
+#1691298205
+mv ./NikolaRHristov/NikolaRHristov/.git ./NikolaRHristov/NikolaRHristov/.git.archive
+#1691298205
+mv ./NikolaRHristov/obs/.git ./NikolaRHristov/obs/.git.archive
+#1691298205
+mv ./NikolaRHristov/Script/.git ./NikolaRHristov/Script/.git.archive
+#1691298205
+mv ./NikolaRHristov/walle/.git ./NikolaRHristov/walle/.git.archive
+#1691298205
+mv ./Playform/blank-web-starter/.git ./Playform/blank-web-starter/.git.archive
+#1691298205
+mv ./Playform/create-blank-web-starter/.git ./Playform/create-blank-web-starter/.git.archive
+#1691298205
+mv ./Playform/playform.cloud/.git ./Playform/playform.cloud/.git.archive
+#1691298205
+mv ./Playform/wordpress/.git ./Playform/wordpress/.git.archive
+#1691298205
+mv ./ReturnThief/returnthief.quest/.git ./ReturnThief/returnthief.quest/.git.archive
+#1691298205
+mv ./RoundedCorners/app/.git ./RoundedCorners/app/.git.archive
+#1691298205
+mv ./SileaJS/silea.dev/.git ./SileaJS/silea.dev/.git.archive
+#1691298205
+mv ./SouqRs/crates/.git ./SouqRs/crates/.git.archive
+#1691298205
+mv ./SouqRs/souq.dev/.git ./SouqRs/souq.dev/.git.archive
+#1691298205
+mv ./windowsdock/app/.git ./windowsdock/app/.git.archive
+#1691298205
+mv ./windowsdock/database/.git ./windowsdock/database/.git.archive
+#1691298205
+mv ./windowsdock/windowsdock.app/.git ./windowsdock/windowsdock.app/.git.archive
+#1691298205
+mv ./YesMaintenance/NPM/.git ./YesMaintenance/NPM/.git.archive
+#1691298208
+git add .
+#1691298264
+git commit -m "squash!"
+#1691298275
+git push
+#1691298803
+rm -rf .git/
+#1691298805
+git init
+#1691298811
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691298816
+git add .
+#1691298972
+git commit -m "Archives everything."
+#1691299058
+git push --force
+#1691299569
+cd NikolaRHristov/NikolaRHristov/
+#1691299579
+cd ../../
+#1691299581
+cd ../
+#1691299616
+find -iname .git.archive -execdir mv .git.archive .git \;
