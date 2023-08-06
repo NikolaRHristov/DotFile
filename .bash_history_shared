@@ -1062,3 +1062,5 @@ find -iname Target -exec rm -rf {} \;
 find -iname build
 #1691289604
 find -iname build -exec rm -rf {} \;
+#1691289609
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
