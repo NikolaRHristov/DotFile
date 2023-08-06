@@ -1142,3 +1142,11 @@ cd Configuration/
 npm publish
 #1691297135
 cd /d/Developer/
+#1691297137
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691297188
+cd app/NikolaRHristov/NikolaRHristov/
+#1691297205
+find -iname .git -execdir bash -c 'pwd && git remote -v' \;
+#1691297216
+find -iname .git -execdir bash -c 'pwd && git remote -v' \; > text.md
