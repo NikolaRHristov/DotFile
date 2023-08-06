@@ -1084,3 +1084,61 @@ git init
 git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
 #1691290161
 git add .
+#1691290892
+git log --oneline 
+#1691290916
+git add . ; git commit --amend -m "Archives Everything" ; git push --force ;
+#1691291798
+cd app/NikolaRHristov/NikolaRHristov/
+#1691291800
+git status
+#1691291806
+git add . ; git commit --amend -m "Archives Everything" ; git push --force ;
+#1691296733
+code-insiders ~/.npmrc 
+#1691296743
+cd app/NikolaRHristov/NikolaRHristov/
+#1691296751
+cd Lightrix/
+#1691296752
+cd files-pipe/
+#1691296756
+mv .git-archive/ .git
+#1691296761
+git status
+#1691296762
+git add .
+#1691296765
+git commit -m "squash!"
+#1691296784
+git push
+#1691296802
+ci package.json 
+#1691296818
+dum install
+#1691296993
+cd app/NikolaRHristov/NikolaRHristov/
+#1691296999
+cd Lightrix/
+#1691297003
+cd ../../
+#1691297006
+cd NikolaRHristov/
+#1691297010
+find -iname .git-archive
+#1691297018
+find -iname .git-archive -execdir mv .git-archive .git \;
+#1691297027
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691297033
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691297111
+cd Lightrix/
+#1691297116
+cd NPM/
+#1691297118
+cd Configuration/
+#1691297124
+npm publish
+#1691297135
+cd /d/Developer/
