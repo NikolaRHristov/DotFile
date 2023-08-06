@@ -1150,3 +1150,5 @@ cd app/NikolaRHristov/NikolaRHristov/
 find -iname .git -execdir bash -c 'pwd && git remote -v' \;
 #1691297216
 find -iname .git -execdir bash -c 'pwd && git remote -v' \; > text.md
+#1691297928
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
