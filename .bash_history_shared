@@ -760,3 +760,293 @@ cd /f/d
 /d/Developer/
 #1691275472
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1691277399
+cd app/Lightrix/NPM/Configuration/
+#1691277404
+cd ../
+#1691277425
+cd NPM/
+#1691277427
+delete_all_tags 
+#1691277434
+gh release
+#1691277441
+gh release list
+#1691277480
+gh release delete @lightrix/config@v0.0.12
+#1691277484
+gh release delete @lightrix/scripts@v1.0.7
+#1691277487
+gh release delete @lightrix/scripts@v1.0.6
+#1691277488
+gh release delete @lightrix/scripts@v1.0.5
+#1691277490
+gh release delete @lightrix/scripts@v1.0.4
+#1691277491
+gh release delete @lightrix/scripts@v1.0.3
+#1691277492
+gh release delete @lightrix/scripts@v1.0.2
+#1691277493
+gh release delete @lightrix/scripts@v1.0.1
+#1691277494
+gh release delete @lightrix/config@v0.0.11
+#1691277495
+gh release delete @lightrix/config@v0.0.10
+#1691277497
+gh release delete @lightrix/scripts@v1.0.0
+#1691277498
+gh release delete @lightrix/scripts@v0.1.7
+#1691277499
+gh release delete @lightrix/config@v0.0.9
+#1691277500
+gh release delete @lightrix/config@v0.0.8
+#1691277502
+gh release delete @lightrix/scripts@v0.1.5
+#1691277503
+gh release delete @lightrix/scripts@v0.1.4
+#1691277504
+gh release delete @lightrix/scripts@v0.1.3
+#1691277505
+gh release delete @lightrix/config@v0.0.7
+#1691277506
+gh release delete @lightrix/scripts@v0.1.2
+#1691277508
+gh release delete @lightrix/scripts@v0.1.1
+#1691277509
+gh release delete @lightrix/scripts@v0.1.0
+#1691277510
+gh release delete @lightrix/scripts@v0.0.19
+#1691277511
+gh release delete @lightrix/scripts@v0.0.18
+#1691277512
+gh release delete @lightrix/scripts@v0.0.17
+#1691277514
+gh release delete @lightrix/scripts@v0.0.16
+#1691277515
+gh release delete @lightrix/scripts@v0.0.15
+#1691277591
+/d/Developer/app/Lightrix/NPM/Configuration/
+#1691277595
+cd ../
+#1691277596
+git add .
+#1691277614
+git commit -m "squash!"
+#1691277624
+cd Configuration/
+#1691278069
+/d/Developer/
+#1691278072
+mkdir test2
+#1691278074
+cd test2/
+#1691278080
+mkdir phantmpackagedontinstall
+#1691278081
+cd phantmpackagedontinstall/
+#1691278083
+npm init
+#1691278089
+ci package.json 
+#1691278105
+npm publish
+#1691278113
+npm publish --dry-run
+#1691278154
+ci /d/tools/.npm-global/cache/_logs/2023-08-05T23_28_34_610Z-debug-0.log 
+#1691278251
+npm publish --dry-run
+#1691279520
+/d/Developer/
+#1691279522
+dum install
+#1691284639
+gh api user/repos
+#1691284647
+gh api user/repos | jq.[].login
+#1691284650
+gh api user/repos | jq .[].login
+#1691284655
+gh api user/repos | jq .[].url
+#1691284671
+gh repo
+#1691284676
+gh repo delete
+#1691284679
+gh repo -h
+#1691284681
+gh repo delete -h
+#1691284688
+gh repo delete  NikolaRHristov/api
+#1691284705
+gh repo delete NikolaRHristov/api --yes
+#1691284706
+gh repo delete NikolaRHristov/astro-convert --yes
+#1691284706
+gh repo delete NikolaRHristov/astro-dashboard --yes
+#1691284707
+gh repo delete NikolaRHristov/astro-dead-links --yes
+#1691284707
+gh repo delete NikolaRHristov/astro-inlang --yes
+#1691284708
+gh repo delete NikolaRHristov/astro-lint --yes
+#1691284708
+gh repo delete NikolaRHristov/astro-networks --yes
+#1691284709
+gh repo delete NikolaRHristov/astro-query --yes
+#1691284710
+gh repo delete NikolaRHristov/astro-short-urls --yes
+#1691284710
+gh repo delete NikolaRHristov/auto-save --yes
+#1691284711
+gh repo delete NikolaRHristov/bash --yes
+#1691284711
+gh repo delete NikolaRHristov/bash-completion --yes
+#1691284712
+gh repo delete NikolaRHristov/bench --yes
+#1691284712
+gh repo delete NikolaRHristov/bench-piscina --yes
+#1691284713
+gh repo delete NikolaRHristov/bot --yes
+#1691284714
+gh repo delete NikolaRHristov/camera-tools --yes
+#1691284714
+gh repo delete NikolaRHristov/critters --yes
+#1691284715
+gh repo delete NikolaRHristov/Developer --yes
+#1691284715
+gh repo delete NikolaRHristov/dispatch --yes
+#1691284716
+gh repo delete NikolaRHristov/dot --yes
+#1691284716
+gh repo delete NikolaRHristov/evanmmo.tv --yes
+#1691284717
+gh repo delete NikolaRHristov/forker --yes
+#1691284717
+gh repo delete NikolaRHristov/fresh-compress --yes
+#1691284718
+gh repo delete NikolaRHristov/fresh-critters --yes
+#1691284719
+gh repo delete NikolaRHristov/furl --yes
+#1691284719
+gh repo delete NikolaRHristov/github-history-slider --yes
+#1691284720
+gh repo delete NikolaRHristov/glory-of-twitter --yes
+#1691284720
+gh repo delete NikolaRHristov/hls-nginx-streaming --yes
+#1691284721
+gh repo delete NikolaRHristov/launchpad --yes
+#1691284721
+gh repo delete NikolaRHristov/nikolahristov.tech --yes
+#1691285265
+cd app/NikolaRHristov/
+#1691285268
+mkdir Archive
+#1691285276
+gh repo create NikolaRHristov/Archive --public
+#1691285575
+cd app/NikolaRHristov/Archive/
+#1691285582
+find -iname .git -type d
+#1691285592
+find -iname .git -type d -execdir mv .git .git-archive
+#1691285594
+find -iname .git -type d -execdir mv .git .git-archive \;
+#1691285608
+mv .git-archive/ .git/
+#1691285610
+git add .
+#1691285614
+git commit --amend --no-edit 
+#1691285617
+git push --force
+#1691285632
+git remote -v
+#1691285635
+find -iname .git
+#1691285655
+mv AstroStarters/pac-stac/app/web/.git AstroStarters/pac-stac/app/web/.git-archive
+#1691285662
+git add .
+#1691285665
+git commit --amend --no-edit
+#1691285669
+git push --force
+#1691285692
+cd ..//
+#1691285695
+cd ../
+#1691285702
+cd NikolaRHristov/
+#1691285708
+mv Archive NikolaRHristov
+#1691285717
+gh repo create NikolaRHristov/NikolaRHristov --public
+#1691285726
+cd NikolaRHristov/NikolaRHristov/
+#1691285729
+git remote -v
+#1691285740
+cd ../
+#1691285757
+cd NikolaRHristov/
+#1691285762
+git init
+#1691285781
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691285786
+git add .
+#1691285941
+git commit -m "Archive"
+#1691286020
+git push
+#1691286415
+git add .
+#1691286422
+git commit --amend --no-edit && git push --force
+#1691287062
+cd app/NikolaRHristov/NikolaRHristov/
+#1691287072
+find -iname .git-archive -execdir pwd
+#1691287074
+find -iname .git-archive -execdir pwd \;
+#1691286847
+git add . ; git commit --amend --no-edit ; git push --force
+#1691287186
+git add .
+#1691287189
+git add . ; git commit --amend --no-edit ; git push --force
+#1691287936
+cd app/NikolaRHristov/NikolaRHristov/
+#1691287968
+find -iname .git-archive -execdir pwd \;
+#1691287938
+git add . ; git commit --amend --no-edit ; git push --force
+#1691288036
+rm -rf .git/
+#1691288038
+git init
+#1691288041
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691288043
+git add .
+#1691288103
+git commit -m "archive"
+#1691288201
+cd app/NikolaRHristov/NikolaRHristov/
+#1691288327
+npm show astro-compress
+#1691288209
+git add . ; git commit --amend --no-edit -m "Archive" ; git push --force
+#1691288653
+git add .
+#1691288661
+git commit -m "squash!"
+#1691288664
+gt push
+#1691288666
+git push
+#1691288682
+git add . ; git commit -m "squash!" ; git push ;
+#1691288722
+cd /d/Developer/
