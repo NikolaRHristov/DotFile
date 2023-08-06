@@ -1064,3 +1064,23 @@ find -iname build
 find -iname build -exec rm -rf {} \;
 #1691289609
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691289976
+find -iname .git
+#1691290010
+cd app/NikolaRHristov/NikolaRHristov/
+#1691290024
+find -iname .git-archive -execdir pwd \;
+#1691290093
+git add .
+#1691290096
+git commit -m "squash!"
+#1691290103
+git push
+#1691290154
+rm -rf .git/
+#1691290155
+git init
+#1691290159
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691290161
+git add .
