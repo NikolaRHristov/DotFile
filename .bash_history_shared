@@ -1050,3 +1050,5 @@ git push
 git add . ; git commit -m "squash!" ; git push ;
 #1691288722
 cd /d/Developer/
+#1691288734
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
