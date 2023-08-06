@@ -1908,3 +1908,103 @@ cd NikolaRHristov/
 find -name .git -execdir git remote -v \;
 #1691343015
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691343332
+find -iname .git -execdir bash -c 'pwd ; git remote -v' \;
+#1691343494
+cd /d/Developer/
+#1691343497
+./text.sh 
+#1691343871
+./text2.sh 
+#1691344164
+gh api user/repos | jq .url
+#1691344167
+gh api user/repos | jq .[].url
+#1691344227
+gh repo delete NikolaRHristov/astro-community_astro-compress --yes
+#1691344227
+gh repo delete NikolaRHristov/astro-community_astro-critters --yes
+#1691344228
+gh repo delete NikolaRHristov/astro-community_astro-rome --yes
+#1691344228
+gh repo delete NikolaRHristov/astro-starters_PAC-STAC --yes
+#1691344229
+gh repo delete NikolaRHristov/astro-starters_pac-stac-content --yes
+#1691344229
+gh repo delete NikolaRHristov/astro-starters_pac-stac-web --yes
+#1691344230
+gh repo delete NikolaRHristov/BlackRainbowAI_blackrainbow.media --yes
+#1691344230
+gh repo delete NikolaRHristov/BlackRainbowAI_npm --yes
+#1691344231
+gh repo delete NikolaRHristov/BlackRainbowAI_rfc --yes
+#1691344231
+gh repo delete NikolaRHristov/CrepesJS_crates --yes
+#1691344232
+gh repo delete NikolaRHristov/CrepesJS_create-crepes-app --yes
+#1691344233
+gh repo delete NikolaRHristov/CrepesJS_crepes.dev --yes
+#1691344233
+gh repo delete NikolaRHristov/CrepesJS_mfw-gatsby --yes
+#1691344234
+gh repo delete NikolaRHristov/CrepesJS_mfw-next --yes
+#1691344234
+gh repo delete NikolaRHristov/crepesjs_ui-baseweb --yes
+#1691344235
+gh repo delete NikolaRHristov/crepesjs_ui-blueprint --yes
+#1691344235
+gh repo delete NikolaRHristov/crepesjs_ui-bootstrap --yes
+#1691344236
+gh repo delete NikolaRHristov/crepesjs_ui-carbon --yes
+#1691344236
+gh repo delete NikolaRHristov/crepesjs_ui-chakra --yes
+#1691344237
+gh repo delete NikolaRHristov/crepesjs_ui-clarity --yes
+#1691344238
+gh repo delete NikolaRHristov/NikolaRHristov_bash --yes
+#1691344238
+gh repo delete NikolaRHristov/NikolaRHristov_dot --yes
+#1691344239
+gh repo delete NikolaRHristov/NikolaRHristov_nvim --yes
+#1691344239
+gh repo delete NikolaRHristov/NikolaRHristov_powershell --yes
+#1691344240
+gh repo delete NikolaRHristov/NikolaRHristov_zsh --yes
+#1691344360
+./text2.sh 
+#1691344994
+./text.sh 
+#1691345028
+cd app/NikolaRHristov/NikolaRHristov/
+#1691345039
+find -iname .git 
+#1691345053
+find -iname .git -execdir git remote -v \;
+#1691345066
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691345321
+find -iname .git -execdir git remote remove origin \;
+#1691345428
+/d/Developer/
+#1691345436
+./text.sh 
+#1691345449
+cd app/NikolaRHristov/NikolaRHristov/
+#1691345456
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691345494
+cd astro-community/astro-compress/
+#1691345496
+git remote -v
+#1691345498
+git push
+#1691345515
+cd /d/Developer/
+#1691345520
+find -iname .git -execdir git sync \;
+#1691345573
+find -iname .git -execdir bash -c 'git branch --set-upstream-to=origin/main main ; git sync ' \;
+#1691345593
+find -iname .git -execdir bash -c 'git push' \;
+#1691346827
+find -iname .git -execdir bash -c 'pwd ; git remote -v' \;
