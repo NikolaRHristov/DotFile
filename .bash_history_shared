@@ -2008,3 +2008,25 @@ find -iname .git -execdir bash -c 'git branch --set-upstream-to=origin/main main
 find -iname .git -execdir bash -c 'git push' \;
 #1691346827
 find -iname .git -execdir bash -c 'pwd ; git remote -v' \;
+#1691346956
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691346998
+cd app/NikolaRHristov/
+#1691347000
+cd NikolaRHristov/
+#1691347004
+rm -rf .git/
+#1691347006
+git init
+#1691347008
+git add .
+#1691347015
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691347023
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691347606
+cd /d/Developer/
+#1691347626
+find -iname Target 
+#1691347631
+find -iname Target -exec rm -rf {} \;
