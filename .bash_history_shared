@@ -1738,3 +1738,171 @@ cd /d/Developer/
 cd app/Lightrix/NPM/Configuration/
 #1691331937
 git log --oneline 
+#1691331959
+cd ../Script/
+#1691331972
+dum prepublishOnly
+#1691331781
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691332426
+find -iname .git -execdir bash -c 'pwd && git remote -v' \; > text.md
+#1691332506
+gh repo create NikolaRHristov/astro-community/astro-compress --public
+#1691332518
+gh repo create 
+#1691332573
+gh repo create NikolaRHristov/astro-community/astro-compress --public
+#1691332583
+gh repo create NikolaRHristov/astro-community-astro-compress --public
+#1691333742
+dum prepublishOnly
+#1691333781
+dum prepublishOnly
+#1691333788
+git add .
+#1691333795
+git commit -m "squash!"
+#1691333824
+npm publish
+#1691333909
+cd ../../files-pipe/
+#1691333838
+dum install
+#1691333912
+bmd
+#1691333924
+find -iname dist -exec rm -rf {} \;
+#1691333948
+dum prepublishOnly
+#1691334082
+dum prepublishOnly --filter=files-pipe
+#1691334508
+find -iname dists
+#1691334510
+find -iname dist
+#1691334515
+find -iname dist -exec rm -rf {} \;
+#1691334539
+dum prepublishOnly --filter=files-pipe
+#1691334901
+find -iname .turbo -exec rm -rf {} \;
+#1691334903
+dum prepublishOnly --filter=files-pipe
+#1691334945
+dum install -D -E @lightrix/configuration
+#1691334948
+dum install -D -E @lightrix/configuration w
+#1691334949
+dum install -D -E @lightrix/configuration -w
+#1691335062
+dum install -D -E @lightrix/configuration 
+#1691335098
+dum install -D -E @lightrix/configuration -w
+#1691335664
+dum prepublishOnly --filter=files-pipe
+#1691335749
+dum install
+#1691336108
+dum prepublishOnly --filter=files-pipe
+#1691336209
+dum install ; dum prepublishOnly --filter=files-pipe
+#1691336474
+dum prepublishOnly --filter=files-pipe
+#1691338866
+pnpm install -g @lightrix/script
+#1691338871
+cd app/Lightrix/NPM/Script/
+#1691338874
+pnpm link -g
+#1691338882
+cd /f/d
+#1691338886
+cd /d/Developer/
+#1691338893
+lightrix
+#1691338953
+cd app/Lightrix/NPM/Script/
+#1691338949
+dum prepublishOnly --filter=files-pipe
+#1691338997
+dum install ; dum prepublishOnly --filter=files-pipe
+#1691340845
+npm unpublish
+#1691340858
+find -iname package.json -execdir npm unpublish \;
+#1691340871
+find -iname package.json -execdir npm unpublish --force \;
+#1691341110
+find -iname package.json -execdir cat package.json | jq .name \;
+#1691341116
+find -iname package.json -execdir bash -c 'cat package.json | jq .name' \;
+#1691341652
+cd app/NikolaRHristov/
+#1691341655
+cd NikolaRHristov/
+#1691341658
+find -iname .git
+#1691341793
+find -iname CHANGELOG.md \;
+#1691341800
+find -iname CHANGELOG.md -exec code-insiders {} \;
+#1691342076
+find -iname .git*
+#1691342137
+rm -rf .git/
+#1691342142
+git init
+#1691342146
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691342148
+git add .
+#1691342161
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691342172
+cd NikolaRHristov/nikolahristov.tech/
+#1691342176
+cd ../NikolaRHristov/
+#1691342179
+git remote -v
+#1691342182
+git remote remote origin
+#1691342187
+git remote remove origin
+#1691342191
+/d/Developer/
+#1691342193
+cd app/
+#1691342199
+cd NikolaRHristov/
+#1691342212
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691342449
+git push
+#1691342453
+git remote add origin ssh://git@github.com/NikolaRHristov/NikolaRHristov.git
+#1691342458
+git push
+#1691342463
+git push --force
+#1691342503
+cd /d/
+#1691342505
+mkdir Test
+#1691342506
+cd Test/
+#1691342508
+git clone https://github.com/NikolaRHristov/NikolaRHristov
+#1691342512
+cd NikolaRHristov/
+#1691342516
+cd Lightrix/files-pipe/
+#1691342547
+rm -rf /d/Test/
+#1691342549
+cd Deve
+#1691342552
+cd app/
+#1691342985
+cd NikolaRHristov/
+#1691342991
+find -name .git -execdir git remote -v \;
