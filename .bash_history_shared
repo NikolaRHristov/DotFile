@@ -2030,3 +2030,7 @@ cd /d/Developer/
 find -iname Target 
 #1691347631
 find -iname Target -exec rm -rf {} \;
+#1691347644
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1691348273
+find -iname Target
