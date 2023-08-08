@@ -2034,3 +2034,1530 @@ find -iname Target -exec rm -rf {} \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
 #1691348273
 find -iname Target
+#1691348658
+gh api user/repos | jq .[].url
+#1691348699
+gh api users/NikolaRHristov/repos | jq .[].url
+#1691348720
+gh repo delete NikolaRHristov/astro-community_astro-compress --yes
+#1691348721
+gh repo delete NikolaRHristov/astro-community_astro-critters --yes
+#1691348721
+gh repo delete NikolaRHristov/astro-community_astro-rome --yes
+#1691348722
+gh repo delete NikolaRHristov/astro-starters_PAC-STAC --yes
+#1691348722
+gh repo delete NikolaRHristov/astro-starters_pac-stac-content --yes
+#1691348723
+gh repo delete NikolaRHristov/astro-starters_pac-stac-web --yes
+#1691348723
+gh repo delete NikolaRHristov/BlackRainbowAI_blackrainbow.media --yes
+#1691348724
+gh repo delete NikolaRHristov/BlackRainbowAI_npm --yes
+#1691348724
+gh repo delete NikolaRHristov/BlackRainbowAI_rfc --yes
+#1691348725
+gh repo delete NikolaRHristov/CrepesJS_crates --yes
+#1691348726
+gh repo delete NikolaRHristov/CrepesJS_create-crepes-app --yes
+#1691348726
+gh repo delete NikolaRHristov/CrepesJS_crepes.dev --yes
+#1691348727
+gh repo delete NikolaRHristov/CrepesJS_mfw-gatsby --yes
+#1691348727
+gh repo delete NikolaRHristov/CrepesJS_mfw-next --yes
+#1691348728
+gh repo delete NikolaRHristov/crepesjs_ui-baseweb --yes
+#1691348728
+gh repo delete NikolaRHristov/crepesjs_ui-blueprint --yes
+#1691348729
+gh repo delete NikolaRHristov/crepesjs_ui-bootstrap --yes
+#1691348730
+gh repo delete NikolaRHristov/crepesjs_ui-carbon --yes
+#1691348730
+gh repo delete NikolaRHristov/crepesjs_ui-chakra --yes
+#1691348731
+gh repo delete NikolaRHristov/crepesjs_ui-clarity --yes
+#1691348731
+gh repo delete NikolaRHristov/crepesjs_ui-element --yes
+#1691348732
+gh repo delete NikolaRHristov/crepesjs_ui-elemental --yes
+#1691348733
+gh repo delete NikolaRHristov/crepesjs_ui-evergreen --yes
+#1691348733
+gh repo delete NikolaRHristov/crepesjs_ui-fast --yes
+#1691348734
+gh repo delete NikolaRHristov/crepesjs_ui-fluent --yes
+#1691348735
+gh repo delete NikolaRHristov/crepesjs_ui-foundation --yes
+#1691348735
+gh repo delete NikolaRHristov/crepesjs_ui-grommet --yes
+#1691348736
+gh repo delete NikolaRHristov/crepesjs_ui-headless --yes
+#1691348736
+gh repo delete NikolaRHristov/crepesjs_ui-material --yes
+#1691348737
+gh repo delete NikolaRHristov/crepesjs_ui-polaris --yes
+#1691349117
+gh api users/NikolaRHristov/repos | jq .[].url
+#1691349138
+gh repo delete NikolaRHristov/crepesjs_ui-semantic --yes
+#1691349139
+gh repo delete NikolaRHristov/crepesjs_ui-shards --yes
+#1691349139
+gh repo delete NikolaRHristov/crepesjs_ui-uikit --yes
+#1691349140
+gh repo delete NikolaRHristov/crepesjs_ui-uswds --yes
+#1691349141
+gh repo delete NikolaRHristov/DoccerPage_doccer.page --yes
+#1691349141
+gh repo delete NikolaRHristov/GrenadierJS_awesome-grenadier --yes
+#1691349142
+gh repo delete NikolaRHristov/GrenadierJS_cookbook-third-party-apis --yes
+#1691349142
+gh repo delete NikolaRHristov/GrenadierJS_create-grenadier-app --yes
+#1691349143
+gh repo delete NikolaRHristov/GrenadierJS_example-blog --yes
+#1691349143
+gh repo delete NikolaRHristov/GrenadierJS_example-invoice --yes
+#1691349144
+gh repo delete NikolaRHristov/GrenadierJS_example-todo --yes
+#1691349145
+gh repo delete NikolaRHristov/GrenadierJS_grenadier.dev --yes
+#1691349145
+gh repo delete NikolaRHristov/GrenadierJS_netlify-plugin-prisma-provider --yes
+#1691349146
+gh repo delete NikolaRHristov/GrenadierJS_npm --yes
+#1691349146
+gh repo delete NikolaRHristov/GrenadierJS_playground-auth --yes
+#1691349147
+gh repo delete NikolaRHristov/HalleSoftware_halle.software --yes
+#1691349147
+gh repo delete NikolaRHristov/image-repository_logos --yes
+#1691349148
+gh repo delete NikolaRHristov/imagewtf_image.wtf --yes
+#1691349148
+gh repo delete NikolaRHristov/IntakeNomNom_crates --yes
+#1691349149
+gh repo delete NikolaRHristov/IntakeNomNom_intakenomnom.com --yes
+#1691349149
+gh repo delete NikolaRHristov/IntakeNomNom_marketplace --yes
+#1691349150
+gh repo delete NikolaRHristov/IntakeNomNom_npm --yes
+#1691349151
+gh repo delete NikolaRHristov/Lightrix_astro-deno-deploy --yes
+#1691349151
+gh repo delete NikolaRHristov/Lightrix_astro-sst-template --yes
+#1691349152
+gh repo delete NikolaRHristov/Lightrix_astro-starter-template --yes
+#1691349152
+gh repo delete NikolaRHristov/Lightrix_auto-save --yes
+#1691349153
+gh repo delete NikolaRHristov/Lightrix_compress --yes
+#1691349153
+gh repo delete NikolaRHristov/Lightrix_delete-old-deployments --yes
+#1691349154
+gh repo delete NikolaRHristov/Lightrix_experiments --yes
+#1691349154
+gh repo delete NikolaRHristov/Lightrix_files-pipe --yes
+#1691349273
+gh api users/NikolaRHristov/repos | jq .[].url
+#1691349325
+gh repo delete NikolaRHristov/Lightrix_flights-dispatch --yes
+#1691349326
+gh repo delete NikolaRHristov/Lightrix_inn --yes
+#1691349326
+gh repo delete NikolaRHristov/Lightrix_Lightrix.help --yes
+#1691349327
+gh repo delete NikolaRHristov/Lightrix_npm --yes
+#1691349327
+gh repo delete NikolaRHristov/Lightrix_overbrowser --yes
+#1691349328
+gh repo delete NikolaRHristov/MythemeCloud_cargo --yes
+#1691349328
+gh repo delete NikolaRHristov/MythemeCloud_mytheme-web --yes
+#1691349329
+gh repo delete NikolaRHristov/MythemeCloud_npm --yes
+#1691349329
+gh repo delete NikolaRHristov/NeovimSpace_neovim.space --yes
+#1691349330
+gh repo delete NikolaRHristov/NikolaRHristov --yes
+#1691349331
+gh repo delete NikolaRHristov/NikolaRHristov_api --yes
+#1691349331
+gh repo delete NikolaRHristov/NikolaRHristov_astro-convert --yes
+#1691349332
+gh repo delete NikolaRHristov/NikolaRHristov_astro-dashboard --yes
+#1691349332
+gh repo delete NikolaRHristov/NikolaRHristov_astro-dead-links --yes
+#1691349333
+gh repo delete NikolaRHristov/NikolaRHristov_astro-inlang --yes
+#1691349333
+gh repo delete NikolaRHristov/NikolaRHristov_astro-lint --yes
+#1691349334
+gh repo delete NikolaRHristov/NikolaRHristov_astro-networks --yes
+#1691349334
+gh repo delete NikolaRHristov/NikolaRHristov_astro-query --yes
+#1691349335
+gh repo delete NikolaRHristov/NikolaRHristov_astro-short-urls --yes
+#1691349336
+gh repo delete NikolaRHristov/NikolaRHristov_auto-save --yes
+#1691349336
+gh repo delete NikolaRHristov/NikolaRHristov_bash --yes
+#1691349337
+gh repo delete NikolaRHristov/NikolaRHristov_bash-completion --yes
+#1691349337
+gh repo delete NikolaRHristov/NikolaRHristov_bench-piscina --yes
+#1691349338
+gh repo delete NikolaRHristov/NikolaRHristov_bot --yes
+#1691349338
+gh repo delete NikolaRHristov/NikolaRHristov_camera-tools --yes
+#1691349339
+gh repo delete NikolaRHristov/NikolaRHristov_dispatch --yes
+#1691349339
+gh repo delete NikolaRHristov/NikolaRHristov_dot --yes
+#1691349340
+gh repo delete NikolaRHristov/NikolaRHristov_nikolahristov.tech --yes
+#1691349341
+gh repo delete NikolaRHristov/NikolaRHristov_obs --yes
+#1691349341
+gh repo delete NikolaRHristov/NikolaRHristov_powershell --yes
+#1691349433
+gh api users/NikolaRHristov/repos | jq .[].url
+#1691349460
+gh repo delete NikolaRHristov/NikolaRHristov_scripts --yes
+#1691349460
+gh repo delete NikolaRHristov/NikolaRHristov_walle --yes
+#1691349461
+gh repo delete NikolaRHristov/NikolaRHristov_zsh --yes
+#1691349461
+gh repo delete NikolaRHristov/NowPlayingCards_api --yes
+#1691349462
+gh repo delete NikolaRHristov/NowPlayingCards_common --yes
+#1691349463
+gh repo delete NikolaRHristov/NowPlayingCards_now-playing.cards --yes
+#1691349463
+gh repo delete NikolaRHristov/NowPlayingCards_socket --yes
+#1691349464
+gh repo delete NikolaRHristov/Playform_blank-web-starter --yes
+#1691349464
+gh repo delete NikolaRHristov/Playform_create-blank-web-starter --yes
+#1691349465
+gh repo delete NikolaRHristov/Playform_playform.cloud --yes
+#1691349465
+gh repo delete NikolaRHristov/Playform_wordpress --yes
+#1691349466
+gh repo delete NikolaRHristov/ReturnThief_returnthief.quest --yes
+#1691349466
+gh repo delete NikolaRHristov/RoundedCorners_app --yes
+#1691349467
+gh repo delete NikolaRHristov/SileaJS_silea.dev --yes
+#1691349468
+gh repo delete NikolaRHristov/SouqRs_crates --yes
+#1691349468
+gh repo delete NikolaRHristov/SouqRs_souq.dev --yes
+#1691349469
+gh repo delete NikolaRHristov/windowsdock_app --yes
+#1691349469
+gh repo delete NikolaRHristov/windowsdock_database --yes
+#1691349470
+gh repo delete NikolaRHristov/windowsdock_windowsdock.app --yes
+#1691349470
+gh repo delete NikolaRHristov/YesMaintenance_npm --yes
+#1691349512
+gh api users/NikolaRHristov/repos | jq .[].url
+#1691349632
+gh
+#1691349642
+gh api user/NikolaRHristov
+#1691349719
+gh api users/NikolaRHristov
+#1691349965
+gh api orgs/PlayformCloud
+#1691350529
+find -iname .turbo -exec rm -rf {} \;
+#1691351152
+find -iname dist
+#1691351157
+find -iname dist -exec rm -rf {} \;
+#1691356840
+cd /d/Developer/
+#1691356842
+bmd
+#1691366009
+cd app/
+#1691366014
+cd ../
+#1691366018
+cd app/
+#1691366048
+cd ../app2/
+#1691366054
+mkdir lovelydev/astro-compress
+#1691366060
+cd lovelydev/astro-compress/
+#1691366062
+npm init
+#1691366202
+npm publish
+#1691366214
+npm publish --dry-run
+#1691366295
+cd ..
+#1691366321
+./every_5_seconds.sh 
+#1691366370
+cd /d/Developer/
+#1691366374
+find -iname astro*
+#1691366377
+find -iname astro-*
+#1691366419
+cd app2/
+#1691366426
+cd lovelydev/
+#1691366431
+mkdir astro-compress
+#1691366432
+mkdir astro-convert
+#1691366432
+mkdir astro-critters
+#1691366432
+mkdir astro-dashboard
+#1691366432
+mkdir astro-dead-links
+#1691366432
+mkdir astro-deno-deploy
+#1691366432
+mkdir astro-inlang
+#1691366432
+mkdir astro-lint
+#1691366432
+mkdir astro-networks
+#1691366432
+mkdir astro-query
+#1691366432
+mkdir astro-rome
+#1691366432
+mkdir astro-short-urls
+#1691366432
+mkdir astro-sst-template
+#1691366432
+mkdir astro-starter-template
+#1691367385
+cd app
+#1691367387
+cd app2
+#1691367409
+cd ../app2/
+#1691367416
+mv lovelydev anchor1
+#1691367898
+npm login
+#1691368029
+mv anchor1 baxast
+#1691368120
+	find . -type d
+#1691368127
+find -type d
+#1691368143
+cd baxast/
+#1691368144
+find -type d
+#1691368149
+find -type d -execdir npm publish \;
+#1691368180
+find -type d -exec bash -c 'cd {} && npm publish' \;
+#1691368199
+npm publish -h
+#1691368810
+cd app2/
+#1691368812
+cd baxast/
+#1691368815
+find -type d
+#1691368820
+find -type d -execdir git init
+#1691368823
+find -type d -execdir git init \;
+#1691368849
+find -type d -execdir git remote add origin ssh://git@github.com/baxast/$(pwd) \;
+#1691368859
+cd astro-compress/
+#1691368861
+git remote -v
+#1691368867
+cd ../
+#1691368877
+find -type d -execdir git remote remove origin \;
+#1691369404
+find -iname .git
+#1691369409
+find -iname .git -exec rm -rf {} \;
+#1691368438
+./every_10_minutes.sh 
+#1691369921
+cd app2/
+#1691369923
+./baxast/
+#1691369926
+./every_10_minutes.sh 
+#1691371370
+npm show astro-compress
+#1691371390
+./every_10_minutes.sh 
+#1691371485
+cd files-pipe/
+#1691371492
+npm publish 
+#1691371506
+npm publish --access public
+#1691371537
+npm show files-pipe
+#1691371555
+npm show astro-compress
+#1691371656
+cd
+#1691371659
+-
+#1691371661
+cd ../
+#1691371665
+./every_10_minutes.sh 
+#1691373818
+cd astro-co
+#1691373822
+cd astro-compress/
+#1691373825
+dum install
+#1691380877
+cd app2/
+#1691380879
+cd baxast/
+#1691380884
+./every_10_minutes.sh 
+#1691381180
+cd app2/baxast/files-pipe/
+#1691381183
+npm publish
+#1691381882
+cd /d/Developer/
+#1691381915
+cd app2/baxast/files-pipe/
+#1691381919
+./every_10_minutes.sh 
+#1691381921
+cd ../
+#1691423167
+cd app2/
+#1691423170
+cd baxast/
+#1691423174
+./every_10_minutes.sh 
+#1691423181
+cd files-pipe/
+#1691423186
+ci package.json 
+#1691423203
+./every_10_minutes.sh 
+#1691423210
+npm publish --access public
+#1691423347
+cd ../../Lightrix/NPM/
+#1691423357
+git clone ssh://git@github.com/Lightrix/NPM.git 
+#1691423360
+git clone ssh://git@github.com/Lightrix/NPM.git .
+#1691423516
+git log --oneline 
+#1691423552
+cd ../../
+#1691423556
+cd baxast/
+#1691423559
+cd files-pipe/
+#1691423565
+npm publish
+#1691423898
+cd ../../Lightrix/NPM/
+#1691423902
+cd ../../Lightrix/
+#1691423904
+../
+#1691423907
+cd Lightrix/
+#1691423909
+cd NPM/
+#1691423917
+git log --oneline 
+#1691425226
+cd ../../baxast/
+#1691425924
+cd app2/Lightrix/NPM/
+#1691425926
+cd ../files-pipe/
+#1691425934
+npm publish --access public
+#1691425231
+./every_10_minutes.sh 
+#1691428748
+cd ../../appli
+#1691432481
+cd app2/Lightrix/NPM/
+#1691432491
+cd ../
+#1691432496
+mv NPM/ ../baxast/
+#1691432502
+mv files-pipe ../baxast/
+#1691433920
+mkdir files-pipe
+#1691433921
+cd files-pipe/
+#1691433924
+ci package.json
+#1691433936
+npm publish
+#1691434642
+cd ../
+#1691434643
+./every_10_minutes.sh 
+#1691435995
+cd app2/
+#1691435997
+cd baxast/
+#1691436001
+cd astro-networks/
+#1691436005
+npm publish
+#1691436087
+cd ../astro-rome/
+#1691436088
+npm publish
+#1691436165
+cd ../astro-short-urls/
+#1691437276
+cld
+#1691437428
+pnpm install -g prettier-plugin-astro
+#1691439503
+cd app2/
+#1691439506
+cd baxast/
+#1691439945
+cd /d/Developer/
+#1691441061
+cd app2/baxast/
+#1691441067
+cd baxast/
+#1691441070
+npm publish
+#1691441156
+npm publish --access public
+#1691441574
+ci package.json 
+#1691441575
+npm login
+#1691441673
+npm publish
+#1691441722
+cd Source/
+#1691442116
+cd app2/
+#1691442122
+cd baxast/
+#1691442140
+bmd
+#1691442822
+cd baxast/
+#1691442824
+dum install
+#1691444206
+cd ../
+#1691444208
+cd. ./
+#1691444211
+cd ../
+#1691444214
+cd baxast/
+#1691444223
+find -iname package.json -execdir sort-package-json \;
+#1691444385
+cd baxast/
+#1691444393
+dum install
+#1691444405
+bmd && dum install
+#1691444927
+dum prepublishOnly
+#1691445378
+bmd && dum install && dum prepublishOnly
+#1691445563
+dum prepublishOnly
+#1691445800
+sort-package-json
+#1691445908
+node --no-warnings --loader ts-node/esm Source/Test.ts 
+#1691445913
+node --no-warnings --loader ts-node/esm Source/Index.ts.ts 
+#1691445916
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691446407
+cd ../
+#1691446410
+cd astro-rome/
+#1691446412
+ci package.json 
+#1691446416
+npm publish
+#1691446421
+cd ../
+#1691446426
+rm -rf astro-rome/
+#1691446431
+cd astro-networks/
+#1691446434
+npm publish
+#1691446443
+cd ../
+#1691446446
+rm -rf astro-networks/
+#1691446456
+cd /d/Developer/app2/baxast/astro-short-urls/
+#1691446458
+ci package.json 
+#1691446463
+npm publish
+#1691446469
+cd ../
+#1691446472
+rm -rf astro-short-urls/
+#1691446475
+cd astro-starter-template/
+#1691446479
+cat package.json 
+#1691446481
+cd ../
+#1691446483
+cd astro-starter-template/
+#1691446484
+npm publish
+#1691446524
+cd ../
+#1691446526
+rm -rf astro-starter-template/
+#1691446530
+cd files-pipe/
+#1691449842
+cd ../baxast/
+#1691449851
+node --no-warnings --loader ts-node/esm Source/Index.ts.ts 
+#1691449853
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691450486
+cd ../../
+#1691450488
+cd ../
+#1691450491
+mkdir files-pipe
+#1691450492
+cd files-pipe/
+#1691450494
+ci package.json
+#1691450529
+npm publish
+#1691450538
+cd ../
+#1691450539
+rm -rf files-pipe/
+#1691451345
+npm login
+#1691452104
+cd app2/baxast/
+#1691452230
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691452243
+cd baxast/
+#1691452244
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691452365
+npx ts-node Source/Index.ts 
+#1691452372
+npx ts-node Source/Index
+#1691452377
+npx ts-node Source/Index.ts
+#1691452406
+pnpm install -g ts-node
+#1691452416
+npx ts-node --esm Source/Index.ts
+#1691452506
+dum prepublishOnly
+#1691452568
+node --experimental-specifier-resolution=node --loader ts-node/esm Source/Index.ts 
+#1691452579
+node --loader ts-node/esm Source/Index.ts 
+#1691452679
+dum prepublishOnly
+#1691454271
+node --experimental-specifier-resolution=node --loader ts-node/esm Source/Index.ts 
+#1691454309
+dum prepublishOnly
+#1691454613
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691455046
+dum prepublishOnly
+#1691455050
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691455059
+node --no-warnings --loader ts-node/esm Source/Index.ts build
+#1691455092
+node --no-warnings --loader ts-node/esm Source/Index.ts
+#1691455109
+node --no-warnings --loader ts-node/esm Source/Index.ts -h
+#1691455265
+node --no-warnings --loader ts-node/esm Source/Index.ts build -h
+#1691455321
+node --no-warnings --loader ts-node/esm Source/Index.ts build -V
+#1691455330
+node --no-warnings --loader ts-node/esm Source/Index.ts 
+#1691455343
+node --no-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts'
+#1691455461
+node --trace-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts'
+#1691455595
+node --no-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts'
+#1691455863
+dum install -D -E esbuild-plugin-copy
+#1691455890
+node --no-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts'
+#1691456085
+dum prepublishOnly
+#1691456615
+npm publish --dry-run
+#1691456654
+bmd 
+#1691456658
+dum install
+#1691456701
+cd ../
+#1691456706
+dum install
+#1691456708
+cd ../
+#1691456710
+dum install
+#1691456745
+dum prepublishOnly
+#1691457437
+cd app2/baxast/
+#1691457440
+cd baxast/
+#1691457441
+git init
+#1691457458
+git remote add origin ssh://git@github.com/baxast/baxast.git
+#1691457581
+maintenance
+#1691457589
+maintenance workflows
+#1691456859
+bmd ; dum install ; dum prepublishOnly
+#1691457908
+cd app2/baxast/baxast/
+#1691457910
+git init
+#1691457913
+git remote -v
+#1691457926
+git add .
+#1691457935
+dum prepublishOnly
+#1691457967
+npm show pnpm
+#1691458083
+dum prepublishOnly
+#1691458956
+ts-node Source/Index.ts 
+#1691458964
+ts-node-esm Source/Index.ts 
+#1691458973
+ts-node-esm Source/Index.js 
+#1691458981
+ts-node-esm Source/Index.ts 
+#1691459041
+dum prepublishOnly
+#1691459280
+node --no-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts' -es Test/esbuild.ts
+#1691459657
+cd /d/Developer/
+#1691459658
+cld
+#1691459730
+dum install
+#1691459844
+cd app2/baxast/baxast/
+#1691459849
+node --no-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts' -es Test/esbuild.ts
+#1691459998
+node --no-warnings --loader ts-node/esm Source/Index.ts 'Source/**/*.ts'
+#1691460743
+npm show baxast
+#1691460774
+git add .
+#1691460779
+dum prepublishOnly
+#1691460787
+git log --oneline 
+#1691460790
+git add .
+#1691460831
+sort-package-json
+#1691460960
+git init
+#1691460961
+git add .
+#1691460964
+dum prepublishOnly
+#1691460984
+git commit -m "Initial commit"
+#1691461003
+git push
+#1691461011
+gh auth
+#1691461016
+gh login 
+#1691461025
+gh auth login
+#1691461107
+gh repo create baxast --public
+#1691461115
+git push
+#1691461144
+git remote -v
+#1691461146
+git push
+#1691461209
+cat ~/.ssh/Personal\ Computer.pub
+#1691461213
+cat ~/.ssh/Personal\ Computer.pub.SSH 
+#1691461286
+cat /e/nikola/Desktop/PC 
+#1691461343
+git push
+#1691461368
+cat ~/.ssh/id_rsa.pub 
+#1691461391
+gh auth login
+#1691461472
+git push
+#1691461559
+git add .
+#1691461568
+git commit --amend --no-edit && git push --force
+#1691461597
+npm show baxast
+#1691461613
+git tag -s -m "v0.0.2" -a "v0.0.2" 
+#1691461617
+git push --tags
+#1691461642
+gh release create v0.0.2 --generate-notes
+#1691461750
+delete_all_tags 
+#1691461759
+git add . && git commit --amend --no-edit && git push --force
+#1691461769
+gh release delete v0.0.2
+#1691461776
+git add . && git commit --amend --no-edit && git push --force
+#1691461779
+dum prepublishOnly
+#1691461891
+git add . && git commit --amend --no-edit && git push --force
+#1691461976
+git tag -s -m "v0.0.2" -a "v0.0.2" 
+#1691462021
+delete_all_tags 
+#1691462027
+git add . && git commit --amend --no-edit && git push --force
+#1691462205
+dum prepublishOnly
+#1691462251
+dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691463192
+git tag -s -m "v0.0.2" -a "v0.0.2" 
+#1691463196
+git push --tags
+#1691463202
+gh release create v0.0.2 --generate-notes
+#1691463247
+npm show baxast
+#1691463330
+sort-package-json
+#1691463337
+gh release delete v0.0.2
+#1691463343
+delete_all_tags 
+#1691463352
+dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691463468
+git tag -s -m "v0.0.2" -a "v0.0.2" 
+#1691463471
+git push --tags
+#1691463507
+sort-package-json
+#1691463512
+gh release create v0.0.2 --generate-notes
+#1691463616
+npm unpublish 0.0.1
+#1691463624
+npm unpublish v0.0.1
+#1691463630
+npm unpublish baxast@0.0.1
+#1691463634
+npm unpublish baxast@v0.0.1
+#1691463686
+npm deprecate baxast@"0.0.1" "Initial version started in 0.0.2"
+#1691463701
+npm deprecate baxast@0.0.1 "Initial version started in 0.0.2"
+#1691463706
+cd ~/
+#1691463708
+npm deprecate baxast@0.0.1 "Initial version started in 0.0.2"
+#1691463727
+npm deprecate "baxast@0.0.1" "Initial version started in 0.0.2"
+#1691463833
+cd /d/Developer/
+#1691463843
+dum prepublishOnly --filter=files-pipe
+#1691463864
+dum install
+#1691463949
+dum prepublishOnly
+#1691464111
+npm show files-pipe 
+#1691464149
+cd app2/
+#1691464152
+cd baxast/
+#1691464155
+cd files-pipe/
+#1691464157
+git log
+#1691464158
+git init
+#1691464166
+gh repo create baxast/files-pipe
+#1691464169
+gh repo create baxast/files-pipe --public
+#1691464203
+git remote add origin ssh://git@github.com/baxast/files-pipe.git
+#1691464215
+dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691464242
+sort-package-json
+#1691464244
+cd ../baxast/
+#1691464245
+sort-package-json
+#1691464247
+cd -
+#1691464283
+dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691464363
+git log --oneline 
+#1691464365
+git add .
+#1691464369
+git commit -m "Initial commit"
+#1691464379
+git add .
+#1691464409
+cat /e/MEGA/PROJECTS/Personal/Credentials/Keys/Nikola\ Hristov_0xBAAD1367_public.asc 
+#1691464486
+cat ~/.ssh/Personal\ Computer.openssh.SSH 
+#1691464589
+npm show files-pipe
+#1691464608
+ci /e/MEGA/PROJECTS/Personal/Credentials/Recovery/npm.md
+#1691464735
+git add .
+#1691464740
+git commit -m "Initial commit"
+#1691464744
+git log --oneline 
+#1691464748
+rm -rf .git
+#1691464753
+git init
+#1691464756
+git add .
+#1691464764
+git commit -m "Initial commit"
+#1691464774
+npm show files-pipe
+#1691464840
+bmd
+#1691464844
+dum install
+#1691464895
+git remote add origin ssh://git@github.com/baxast/files-pipe.git
+#1691464897
+git push
+#1691464930
+git log --oneline 
+#1691464953
+dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691465357
+cd /d/Developer/
+#1691465358
+cd app2/
+#1691465359
+cd baxast/
+#1691465292
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691465407
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.3" ; git tag -s -m "v0.0.3" -a "v0.0.3" ' gh release create v0.0.3 --genereate-notes
+
+#1691465442
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.3" ; git tag -s -m "v0.0.3" -a "v0.0.3" ; gh release create v0.0.3 --genereate-notes
+#1691465464
+git log --oneline 
+#1691465453
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.3" ; git tag -s -m "v0.0.3" -a "v0.0.3" ; gh release create v0.0.3 --generate-notes
+#1691465466
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691465528
+git tag -l
+#1691465548
+git log --oneline 
+#1691465558
+git status
+#1691465585
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.3" ; git tag -s -m "v0.0.3" -a "v0.0.3" ; git push --tags ; gh release create v0.0.3 --generate-notes
+#1691465936
+gh release delete v0.0.3
+#1691465947
+git tag -d v0.0.3 
+#1691465952
+git push --delete origin v0.0.3
+#1691465983
+bmd
+#1691465988
+dum install
+#1691465996
+dum rpepublishOnly
+#1691465998
+git add .
+#1691466002
+dum prepublishOnly
+#1691466018
+git comimt -m "0.0.3"
+#1691466023
+git commit -m "0.0.3"
+#1691466031
+rm .git/index
+#1691466051
+rm -rf .git
+#1691466060
+git init 
+#1691466067
+git remote add origin ssh://git@github.com/baxast/baxast.git
+#1691466069
+git add .
+#1691466077
+git commit -m "0.0.3"
+#1691466081
+git pull
+#1691466093
+git branch --set-upstream-to=origin/main main
+#1691466095
+git pull
+#1691466111
+git pull --allow-unrelated-histories 
+#1691466151
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.3" ; git tag -s -m "v0.0.3" -a "v0.0.3" ; git push --tags ; gh release create v0.0.3 --generate-notes
+#1691466234
+npm show baxast
+#1691466240
+bmd
+#1691466343
+cd app2/
+#1691466345
+cd baxast/
+#1691466355
+git tag -s -m "v0.0.3" -a "v0.0.3" 
+#1691466366
+git tag -s -m "v0.0.4" -a "v0.0.4" 
+#1691466371
+gh release create v0.0.4
+#1691466679
+git push --tags
+#1691466684
+git tag -l
+#1691466688
+git log --oneline 
+#1691466693
+gh release create v0.0.4
+#1691467063
+gh release create v0.0.4 --generate-notes
+#1691466243
+dum install
+#1691467131
+cd ../baxast/
+#1691467132
+npm pkg fix
+#1691467164
+cd ../files-pipe/
+#1691467172
+git log --oneline 
+#1691467176
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691467532
+cd app2/baxast/baxast/
+#1691467561
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.5" ; git tag -s -m "v0.0.5" -a "v0.0.5" ; git push --tags ; gh release create v0.0.5 --generate-notes
+#1691468472
+gh release delete v0.0.5
+#1691468478
+git tag -d v0.0.5 
+#1691468484
+git push --delete origin v0.0.5
+#1691468530
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.5" ; git push ; git tag -s -m "v0.0.5" -a "v0.0.5" ; git push --tags ; gh release create v0.0.5 --generate-notes
+#1691468703
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.6" ; git push ; git tag -s -m "v0.0.6" -a "v0.0.6" ; git push --tags ; gh release create v0.0.6 --generate-notes
+#1691468972
+git remote -v
+#1691468974
+git pull
+#1691468983
+git remote -v
+#1691468986
+git pull --allow-unrelated-histories 
+#1691468993
+ci .npmignore 
+#1691469010
+git log --oneline 
+#1691469014
+git rebase -i --root
+#1691469043
+cd ../
+#1691469045
+rm -rf files-pipe/
+#1691469063
+git clone ssh://git@github.com/baxast/files-pipe.git
+#1691469070
+cd files-pipe/
+#1691470087
+git log --oneline 
+#1691470090
+rm -rf .git
+#1691470092
+git init
+#1691470100
+git remote add origin ssh://git@github.com/baxast/files-pipe.git
+#1691470107
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691470111
+git add .
+#1691470117
+git commit -m "Initial commit"
+#1691470127
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691470417
+git log --oneline 
+#1691470451
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force
+#1691471599
+cd ../
+#1691471603
+mkdir astro-compress
+#1691471605
+cd astro-compress/
+#1691471616
+git init 
+#1691471624
+gh repo create baxast/astro-compress --public
+#1691471628
+gh repo create baxast/astro-critters --public
+#1691471677
+cd ../
+#1691471678
+cd files-pipe/
+#1691471681
+git log --oneline 
+#1691471725
+ci ~/.bash_history_shared 
+#1691471784
+npm show files-pipe
+#1691471825
+bmd
+#1691471827
+dum install
+#1691471847
+dum prepublishOnly
+#1691471848
+git add .
+#1691471849
+git commit -m "2.0.1"
+#1691471850
+git push
+#1691471851
+git tag -s -m "v2.0.1" -a "v2.0.1"
+#1691471852
+git push --tags
+#1691471853
+gh release create v2.0.1 --generate-notes
+#1691472060
+bmd
+#1691472062
+dum install
+#1691472131
+dum prepublishOnly
+#1691472133
+git add .
+#1691472134
+git commit -m "2.0.2"
+#1691472135
+git push
+#1691472137
+git tag -s -m "v2.0.2" -a "v2.0.2"
+#1691472137
+git push --tags
+#1691472139
+gh release create v2.0.2 --generate-notes
+#1691472264
+npm deprecate baxast@2.0.0 "Initial version started in 2.0.1"
+#1691472268
+cd ~/
+#1691472269
+npm deprecate baxast@2.0.0 "Initial version started in 2.0.1"
+#1691472286
+npm show baxast
+#1691472297
+npm deprecate files-pipe@2.0.0 "Initial version started in 2.0.1"
+#1691472349
+npm config set registry https://registry.npmjs.org/
+#1691472361
+ci ~/.npmrc 
+#1691472416
+npm deprecate files-pipe@v2.0.0 "Initial version started in 2.0.1"
+#1691472424
+npm deprecate files-pipe@2.0.0 "Initial version started in 2.0.1"
+#1691472433
+npm deprecate files-pipe@"<2.0.1" "Initial version started in 2.0.1"
+#1691472437
+npm deprecate files-pipe@"< 2.0.1" "Initial version started in 2.0.1"
+#1691472442
+cd /d/Developer/
+#1691472636
+dum install
+#1691473605
+cd app2/
+#1691473607
+cd baxast/
+#1691473611
+cd astro-compress/
+#1691473612
+git init 
+#1691473621
+git remote add origin ssh://git@github.com/baxast/astro-compress.git
+#1691473624
+git add .
+#1691473632
+dum install
+#1691473767
+dum prepublishOnly
+#1691473816
+cd node_modules/
+#1691473819
+cd files-pipe/
+#1691473823
+npm show files-pipe
+#1691473840
+cld
+#1691474354
+dum install
+#1691474518
+cd app2/
+#1691474519
+bmd
+#1691474538
+cd baxast/
+#1691474541
+cd astro-compress/
+#1691474989
+git remote -v
+#1691474991
+git add .
+#1691474995
+git commit -m "Initial commit"
+#1691475469
+git log --oneline 
+#1691475493
+bmd ;
+#1691475496
+dum install ;
+#1691475525
+dum prepublishOnly ;
+#1691475526
+git add . ;
+#1691475526
+git commit --amend --no-edit ;
+#1691475527
+git push --force ;
+#1691475566
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force ;
+#1691477665
+cd /d/Developer/
+#1691477673
+cd app2/
+#1691477678
+cd baxast/astro-compress/
+#1691477680
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force ;
+#1691481274
+cd ../astro-rome/
+#1691481278
+cd -
+#1691481280
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force ;
+#1691482609
+dum prepublishOnly
+#1691482744
+sort-package-json
+#1691483508
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit --amend --no-edit ; git push --force ;
+#1691484721
+cd app2/
+#1691484736
+cd baxast/files-pipe/
+#1691484749
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691484777
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691486035
+dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691486436
+dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691486441
+dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691488522
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691488530
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691488687
+cd /d/Developer/
+#1691488688
+cld
+#1691488697
+cd -
+#1691488699
+cd /d/Developer/
+#1691488701
+dum install
+#1691488811
+cd -
+#1691488814
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691522530
+cd /d/Developer/app2/baxast/files-pipe/
+#1691522533
+git log --oneline 
+#1691522536
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691522763
+cd /d/Developer/
+#1691522769
+bmd ; dum install ; dum prepublishOnly ;
+#1691522843
+cd app2/baxast/files-pipe/
+#1691522847
+git add .
+#1691522873
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691523135
+dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691523142
+cd ../baxast/
+#1691523149
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691523210
+git add .
+#1691523225
+git commit -m "0.0.7"
+#1691523227
+git push 
+#1691523253
+git log --oneline 
+#1691523271
+git tag -s -m "v0.0.7" -a "v0.0.7" 
+#1691523274
+git push
+#1691523276
+git push --tags
+#1691523296
+gh release create v0.0.7 --generate-notes
+#1691523333
+npm show baxast
+#1691523345
+git log --oneline 
+#1691523388
+cd ../files-pipe/
+#1691523391
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691523463
+npm show files-pipe
+#1691523505
+cd /d/Developer/
+#1691523507
+dum install
+#1691523533
+dum prepublishOnly --filter=astro-compress
+#1691524423
+cd app2/baxast/astro-compress/
+#1691524426
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691524719
+cd /d/Developer/
+#1691524722
+dum install -D -E baxast
+#1691524724
+dum install -D -E baxast -w
+#1691524773
+rm every_10_minutes.sh 
+#1691524807
+tsc --watch -p tsconfig.json 
+#1691525454
+cd app2/baxast/files-pipe/
+#1691525458
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691525526
+cd /d/Developer/
+#1691525625
+dum prepublishOnly
+#1691525977
+cd app2/
+#1691525987
+bmd
+#1691526121
+dum install
+#1691526148
+nano bmd.sh
+#1691526198
+bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git push ; ' \;
+#1691526343
+cd baxast/baxast/
+#1691526345
+git log --oneline 
+#1691526352
+git remote -v
+#1691526380
+ci CHANGELOG.md package.json 
+#1691527819
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.8" ; git push ; git tag -s -m "v0.0.8" -a "v0.0.8" ; git push --tags ; gh release create v0.0.8 --generate-notes 
+#1691527893
+git push
+#1691527896
+git sync
+#1691527903
+git log --oneline 
+#1691528374
+npm show baxast version
+#1691528531
+ci package.json CHANGELOG.md 
+#1691528549
+cd ../files-pipe/
+#1691528556
+ci package.json CHANGELOG.md 
+#1691528561
+ci package.json 
+#1691528574
+npm show files-pipe versions
+#1691528577
+npm show files-pipe version
+#1691528795
+cd ../astro-compress/
+#1691528804
+bmd ; dum install ; dum prepublishOnly
+#1691528973
+npm i -g npm-check-updates
+#1691528994
+npm show files-pipe
+#1691528999
+cd ../files-pipe/
+#1691529001
+ci package.json 
+#1691529033
+cd /d/Developer/
+#1691529034
+cd app2/
+#1691529036
+bmd ; dum install ; dum prepublishOnly
+#1691529074
+cd baxast/baxast/
+#1691529078
+ci package.json CHANGELOG.md 
+#1691529099
+bmd ; dum install ; dum prepublishOnly
+#1691529131
+npm show baxast
+#1691529152
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.9" ; git push ; git tag -s -m "v0.0.9" -a "v0.0.9" ; git push --tags ; gh release create v0.0.9 --generate-notes 
+#1691529191
+cd ../files-pipe/
+#1691529196
+npm show baxast
+#1691529441
+npm show files-pipe
+#1691529465
+ci package.json CHANGELOG.md 
+#1691529471
+bmd ; dum install ; dum prepublishOnly
+#1691529489
+git log --oneline
+#1691529541
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.3" ; git push ; git tag -s -m "v2.0.3" -a "v2.0.3" ; git push --tags ; gh release create v2.0.3 --generate-notes 
+#1691529561
+choco
+#1691529570
+winget search go
+#1691529594
+winget searhc golang
+#1691529606
+winget search golang
+#1691529621
+winget search go
+#1691529674
+npm show files-pipe
+#1691529677
+npm show files-pipe versions
+#1691529701
+cd ../astro-compress/
+#1691529705
+bmd ; dum install ; dum prepublishOnly
+#1691530011
+bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push
+#1691530143
+npm show astro-compress version
+#1691530214
+ci package.json CHANGELOG.md 
+#1691530225
+cd ../../../app/NikolaRHristov/nikolahristov.tech/
+#1691530228
+git remote -v
+#1691530251
+gh repo create NikolaRhristov/nikolahristov.tech --public
+#1691530255
+ci package.json 
+#1691530896
+npm show astro-compress version
+#1691531206
+cd /d/Developer/
+#1691531209
+cd app2/NikolaRHristov/nikolahristov.tech/
+#1691531217
+bmd ; dum install ; dum prepublishOnly 
+#1691531265
+cd /d/Developer/

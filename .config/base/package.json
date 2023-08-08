@@ -1,6 +1,6 @@
 {
 	"name": "@nikolarhristov/base",
-	"version": "0.0.1",
+	"version": "2.0.0",
 	"private": true,
 	"license": "MIT",
 	"devDependencies": {

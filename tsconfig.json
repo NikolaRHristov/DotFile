@@ -1,16 +1,24 @@
 {
-	"compilerOptions": {
-		"emitDeclarationOnly": false,
-		"lib": ["ESNext", "DOM"],
-		"noEmit": true
-	},
-	"exclude": ["**/node_modules/**", "**/Target/**"],
-	"extends": "./app/Lightrix/NPM/Configuration/Base/TypeScript",
-	"watchOptions": {
-		"excludeDirectories": [
-			"**/node_modules/**",
-			"**/Target/**",
-			"**/samples/**"
-		]
-	}
+    "compilerOptions": {
+        "emitDeclarationOnly": false,
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "noEmit": true
+    },
+    "exclude": [
+        "**/node_modules/**",
+        "**/Target/**"
+    ],
+    "include": [
+        "app2"
+    ],
+    "watchOptions": {
+        "excludeDirectories": [
+            "**/node_modules/**",
+            "**/Target/**",
+            "**/samples/**"
+        ]
+    }
 }
