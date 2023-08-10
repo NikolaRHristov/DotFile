@@ -758,3 +758,63 @@ find -iname astro.config.ts -execdir mv public public2 \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
 #1691671752
 find -iname astro.config.ts -execdir mv public2 Public \;
+#1691671754
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691671810
+cd app2/playform/playform.cloud/
+#1691671812
+git push
+#1691672060
+cd /d/Developer/app
+#1691672062
+cat text.sh 
+#1691672069
+./text.sh 
+#1691672339
+gh org
+#1691705512
+mkdir app2/NikolaRHristov/nikolahristov.tech
+#1691705534
+cp -rf app/NikolaRHristov/nikolahristov.tech app2/NikolaRHristov/
+#1691705622
+cd app2/NikolaRHristov/nikolahristov.tech/
+#1691705624
+git remote -v
+#1691705627
+git push
+#1691705636
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
+#1691705928
+cd /d/Developer/
+#1691705934
+find -iname LICENSE
+#1691705942
+find -iname LICENSE -exec rm -rf {} \;
+#1691705949
+bmd
+#1691706977
+cd app2/
+#1691706981
+cd NikolaRHristov/nikolahristov.tech/
+#1691706983
+git add .
+#1691707045
+git commit -m "squash!"
+#1691707049
+cd ../../playform/playform.cloud/
+#1691707053
+git add . ; git commit -m "squash!"
+#1691707054
+git push
+#1691707058
+cd -
+#1691707064
+git add . ; git commit -m "squash!" ; git sync 
+#1691707172
+dum install -D -E baxast
+#1691708137
+cd /d/Developer/
+#1691708145
+find -iname Styles -type d
+#1691708160
+find -iname Styles -type d -execdir mv Styles Style \;

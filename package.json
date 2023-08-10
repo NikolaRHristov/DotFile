@@ -1,9 +1,5 @@
 {
 	"name": "dot",
 	"version": "2.0.0",
-	"private": true,
-	"description": "Nikola Hristov's Dot Files",
-	"publishConfig": {
-		"access": "restricted"
-	}
+	"description": "Nikola Hristov's Dot Files"
 }
