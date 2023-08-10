@@ -29,7 +29,7 @@ module.exports = {
 		// "@prettier/plugin-php",
 		// @TODO: Check for support
 		// "@trivago/prettier-plugin-sort-imports",
-		// "prettier-plugin-astro",
+		"prettier-plugin-astro",
 		// @TODO: Check for support
 		// "prettier-plugin-java",
 		// @TODO: Check for support
