@@ -682,3 +682,11 @@ find -iname index.astro -execdir mv Index.astro index2.astro
 find -iname index.astro -execdir mv Index.astro index2.astro \;
 #1691669922
 find -iname .git -execdir git add . \;
+#1691669939
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691670023
+find -iname index2.astro
+#1691670030
+find -iname index2.astro -execdir mv index2.astro Index.astro \;\
+#1691670032
+find -iname index2.astro -execdir mv index2.astro Index.astro \;
