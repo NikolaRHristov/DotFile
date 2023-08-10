@@ -704,3 +704,25 @@ find -iname index.astro -execdir mv Index.astro index2.astro \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
 #1691670197
 find -iname index2.astro -execdir mv index2.astro index.astro \;
+#1691670200
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691670352
+cd app2/
+#1691670360
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname package.json -execdir sort-package-json \;
+#1691670741
+cd playform/
+#1691670744
+cd ../
+#1691670757
+cd app
+#1691670769
+find -iname .git -execdir bash -c 'pwd ; git remote -v ' \;
+#1691670916
+find -iname .git -execdir bash -c 'pwd ; git remote remove origin ; ' \;
+#1691670930
+find -iname .git -execdir bash -c 'pwd ; git remote -v ' \;
+#1691671097
+cat ./text.sh 
+#1691671103
+./text.sh 
