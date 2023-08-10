@@ -818,3 +818,5 @@ cd /d/Developer/
 find -iname Styles -type d
 #1691708160
 find -iname Styles -type d -execdir mv Styles Style \;
+#1691708169
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
