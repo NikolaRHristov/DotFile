@@ -726,3 +726,31 @@ find -iname .git -execdir bash -c 'pwd ; git remote -v ' \;
 cat ./text.sh 
 #1691671103
 ./text.sh 
+#1691671119
+find -iname .git -execdir git add . \;
+#1691671132
+find -iname .git -execdir git commit -m "squash!" \;
+#1691671339
+cd /d/Developer/app2/playform/playform.cloud/
+#1691671341
+git add .
+#1691671344
+git commit -m "squash!"
+#1691671345
+git push
+#1691671205
+./text.sh 
+#1691671670
+cd /d/Developer/
+#1691671677
+fidn -iname public -type d 
+#1691671681
+find -iname astro.config.ts
+#1691671687
+find -iname astro.config.ts -execdir ls public
+#1691671689
+find -iname astro.config.ts -execdir ls public \;
+#1691671694
+find -iname astro.config.ts -execdir ls Public \;
+#1691671705
+find -iname astro.config.ts -execdir mv public public2 \;
