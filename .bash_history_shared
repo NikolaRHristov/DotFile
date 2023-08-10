@@ -754,3 +754,7 @@ find -iname astro.config.ts -execdir ls public \;
 find -iname astro.config.ts -execdir ls Public \;
 #1691671705
 find -iname astro.config.ts -execdir mv public public2 \;
+#1691671719
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691671752
+find -iname astro.config.ts -execdir mv public2 Public \;
