@@ -700,3 +700,7 @@ git push
 cd /d/Developer/
 #1691670125
 find -iname index.astro -execdir mv Index.astro index2.astro \;
+#1691670133
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691670197
+find -iname index2.astro -execdir mv index2.astro index.astro \;
