@@ -820,3 +820,21 @@ find -iname Styles -type d
 find -iname Styles -type d -execdir mv Styles Style \;
 #1691708169
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691709385
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build
+#1691712722
+npm show files-pipe 
+#1691712731
+dum build --filter=playform-web
+#1691712761
+cd app2/
+#1691712813
+dum build --filter=playform-web
+#1691714626
+dum instsall ; dum build --filter=playform-web
+#1691714638
+dum install ; dum build --filter=playform-web
+#1691716187
+dum build --filter=playform-web
+#1691718525
+cd ../
