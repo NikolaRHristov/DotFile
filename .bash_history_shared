@@ -838,3 +838,5 @@ dum install ; dum build --filter=playform-web
 dum build --filter=playform-web
 #1691718525
 cd ../
+#1691718527
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
