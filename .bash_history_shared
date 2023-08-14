@@ -1,842 +1,1860 @@
-#1691558442
-cd app2/
-#1691558719
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build --filter=playform-web
-#1691559687
-cd baxast/
-#1691559716
-cd ..
-#1691559718
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build --filter=playform-web
-#1691561318
-cd baxast/
-#1691561499
-dum build --filter=playform-web
-#1691561806
-dum install
-#1691562516
-dum build --filter=playform-web
-#1691564886
-bmd ; dum install ; dum prepublishOnly ; dum build --filter=playform-web
-#1691566110
-dum build --filter=playform-web
-#1691566166
-cd ../playform/playform.cloud/
-#1691566174
-ci astro.config.ts 
-#1691566300
-cd ../bax
-#1691566302
-cd ../../baxast/
-#1691566523
-cd  files-pipe/
-#1691566559
-git add .
-#1691566563
-ci package.json CHANGELOG.md 
-#1691566625
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.5" ; git push ; git tag -s -m "v2.0.5" -a "v2.0.5" ; git push --tags ;
-#1691567299
-npm show files-pipe versions
-#1691567371
-gh release create v2.0.5 --generate-notes
-#1691567376
-cd ../astro-compress/
-#1691567393
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" 
-#1691567401
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git push 
-#1691567446
-npm show astro-compress version
-#1691567453
-ci package.json  CHANGELOG.md 
-#1691567474
-git add .
-#1691567485
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.2" ; git push 
-#1691567569
-git add .
-#1691567579
-git log --oneline 
-#1691567601
-git tag -s -m "v2.0.2" -a "v2.0.2" 
-#1691567609
-git push --tags
-#1691567662
-git log --oneline 
-#1691567666
-git add .
-#1691567669
-git status
-#1691567698
-git tag -d v2.0.2
-#1691567704
-git push --delete origin v2.0.2
-#1691567766
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.2" ; git push ; git tag -s -m "v2.0.2" -a "v2.0.2" ; git push --tags ; gh release create v2.0.2 --generate-notes
-#1691567936
-npm show astro-compress version
-#1691567941
-npm show astro-critters version
-#1691567992
-cd ../../
-#1691568009
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build --filter=playform-web
-#1691568245
-dum install ; dum prepublishOnly ; dum build --filter=playform-web
-#1691568507
-cd baxast/astro-critters/
-#1691568510
-git log --oneline 
-#1691568537
-git tag -s -m "v2.0.0" -a "v2.0.0" 9e137f8
-#1691568540
-git push --tags
-#1691568560
-git tag -s -m "v2.0.1" -a "v2.0.1"
-#1691568567
-git push --tags
-#1691568634
-gh release create v2.0.1 --generate-notes
-#1691568682
-dum prepublishOnly
-#1691568687
-npm show astro-critters
-#1691568690
-bmd
-#1691568694
-dum install
-#1691568922
-bmd ; dum install ; dum prepublishOnly ; 
-#1691569043
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.2" ; git push ; git tag -s -m "v2.0.2" -a "v2.0.2" ; git push --tags ; gh release create v2.0.2 --generate-notes
-#1691569463
-cd ../files-pipe/
-#1691569486
-git log --oneline 
-#1691569491
-git add .
-#1691569497
-ci package.json CHANGELOG.md 
-#1691569505
-npm show files-pipe versions
-#1691569718
-bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.6" ; git push ; git tag -s -m "v2.0.6" -a "v2.0.6" ; git push --tags ; gh release create v2.0.6 --generate-notes
-#1691569843
-cd ../
-#1691569852
-cd files-pipe/
-#1691569860
-npm show files-pipe versions
-#1691569870
-cd ../astro-rome/
-#1691570887
-git init
-#1691570890
-git add .
-#1691571021
-git remote add origin ssh://git@github.com/baxast/astro-rome.git
-#1691572342
-cd ../../
-#1691572442
-cd baxast/astro-rome/
-#1691572446
-sort-package-json
-#1691572699
-cd ../
-#1691572703
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build --filter=playform-web
-#1691572857
-cd baxast/
-#1691572863
-git log --oneline 
-#1691572889
-cld ; bmd ; dum install ; dum prepublishOnly 
-#1691618872
-cd baxast/
-#1691618875
-cd app2/
-#1691618877
-cd baxast/
-#1691618881
-bmd
-#1691630822
-cd app2/
-#1691630824
-cd baxast/baxast/
-#1691630827
-git remote -v
-#1691630829
-git add .
-#1691630832
-bmd
-#1691630836
-dum installl
-#1691630838
-dum install
-#1691630852
-dm prepublishOnly
-#1691630877
-cd Source/
-#1691630879
-cd ../
-#1691630881
-git add .
-#1691630885
-git log --oneline 
-#1691630891
-ci CHANGELOG.md package.json 
-#1691630898
-npm show baxast
-#1691630902
-git add. 
-#1691630904
-git add .
-#1691630908
-git commit -m "0.0.11"
-#1691630922
-git push
-#1691630936
-git tag -s -m "v0.0.11" -a "v0.0.11"
-#1691630938
-git push --tags
-#1691630947
-gh release --create v0.0.11
-#1691630962
-gh release create v0.0.11 --generate-notes 
-#1691630986
-dum prepublishOnly -v
-#1691631005
-node --no-warnings --loader ts-node/esm Source/Index.ts -V
-#1691631009
-node --no-warnings --loader ts-node/esm Source/Index.ts
-#1691631012
-node --no-warnings --loader ts-node/esm Source/Index.ts -h
-#1691631019
-cd ../../
-#1691631022
-cd baxast/
-#1691631025
-cd astro-compress/
-#1691631034
-bmd ; dum install ; dum prepublishOnly
-#1691632014
-cd ../../
-#1691632019
-cd baxast/
-#1691632022
-cd astro-compress/
-#1691632025
-git log --oneline 
-#1691632032
-ci package.json CHANGELOG.md 
-#1691632056
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . 
-#1691636998
-git log --oneline 
-#1691637008
-git add .
-#1691637808
-git status
-#1691637810
-git add .
-#1691637816
-git log --oneline 
-#1691637820
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . 
-#1691637888
-git add .
-#1691637893
-ci package.json CHANGELOG.md 
-#1691637900
-npm show astro-compress version
-#1691637974
-git add .
-#1691637980
-git commit -m "2.0.3" 
-#1691637994
-git tag -s -m "v2.0.3" -a "v2.0.3"
-#1691637996
-git push --tags
-#1691638016
-gh release create v2.0.3 --generate-notes
-#1691638243
-git log
-#1691638250
-git push
-#1691638261
-npm show astro-compress version
-#1691638271
-ci CHANGELOG.md 
-#1691638276
-ci package.json 
-#1691638283
-git add .
-#1691638397
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.4" ; git tag -d v2.0.3 ; git push --delete origin v2.0.3 ; git tag -s -m "v2.0.4" -a "v2.0.4" ; git push --tags ; gh release create v2.0.4 --generate-notes
-#1691638488
-cd ../astro-critters/
-#1691638491
-git log --oneline 
-#1691638518
-ci CHANGELOG.md package.json 
-#1691638648
-ci package.json CHANGELOG.md 
-#1691638656
-npm show astro-critters versions
-#1691638676
-cd -
-#1691638693
-npm show astro-compress version
-#1691638807
-cd ../astro-critters/
-#1691638809
-ci package.json CHANGELOG.md 
-#1691638819
-git log --oneline 
-#1691638857
-git add .
-#1691638913
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.3" ; git sync ; git tag -s -m "v2.0.3" -a "v2.0.3" ; git push --tags ; gh release create v2.0.3 --generate-notes
-#1691639008
-npm show astro-critters version
-#1691639028
-cd ../astro-rome/
-#1691639033
-ci package.json CHANGELOG.md 
-#1691639037
-cd ../
-#1691639041
-bmd
-#1691639103
-cd baxast/files-pipe/
-#1691639105
-cd ../
-#1691639108
-cd baxast/
-#1691639117
-npm show baxast version
-#1691639122
-ci CHANGELOG.md 
-#1691639138
-ci package.json 
-#1691639329
-npm show files-pipe version
-#1691639617
-ci package.json 
-#1691639625
-ci CHANGELOG.md 
-#1691639807
-cd ../
-#1691639816
-dum prepublishOnly --filter=astro-rome
-#1691640024
-find -iname package.json -execdir sort-package-json
-#1691640045
-find -iname package.json -execdir sort-package-json \;
-#1691640056
-npm show astro-rome
-#1691640080
-find -iname package.json -execdir sort-package-json \;
-#1691640899
-cd baxast/astro-rome/
-#1691640901
-git remote -v
-#1691640903
-git push
-#1691640907
-git log --oneline 
-#1691640916
-git commit --amend --no-edit -m "Initial commit"
-#1691640918
-git push
-#1691640922
-git push --force
-#1691640929
-cd ../
-#1691640988
-bmd
-#1691641089
-dum install
-#1691641122
-dum prepublishOnly
-#1691641299
-dum install
-#1691641318
-dum prepublishOnly --filter=astro-rome
-#1691642044
-cd baxast/
-#1691642048
-cd ../
-#1691642050
-dum prepublishOnly --filter=astro-rome
-#1691642906
-ci ~/.bash_profile 
-#1691642946
-ls ../app/NikolaRHristov/dot/.oh-my-bash/themes/
-#1691643031
-source ~/.bashrc 
-#1691643355
-while true; do; echo "hello"; sleep 5; done;
-#1691643358
-while true; do echo "hello"; sleep 5; done;
-#1691643377
-while true; do source ~/.bashrc; sleep 5; done;
-#1691643417
-source ~/.bashrc 
-#1691643712
-cd playform/
-#1691643714
-cd playform.cloud/
-#1691643718
-ci package.json 
-#1691643749
-bmd
-#1691643844
-git add .
-#1691643846
-bmd
-#1691643854
-git status
-#1691643860
-ci astro.config.ts 
-#1691643982
-dum build
-#1691644121
-nano ~/.bash_profile 
-#1691644130
-ci ~/.bashrc 
-#1691644148
-ls ../app/NikolaRHristov/dot/.oh-my-bash/themes/
-#1691644160
-ls /d/Developer/app/NikolaRHristov/dot/.oh-my-bash/themes/
-#1691644187
-source ~/.bashrc 
-#1691644345
-cd. ./
-#1691644346
-cd ../
-#1691644349
-cd. .
-#1691644352
-cd ../
-#1691644356
-cd baxast/
-#1691644358
-cd. ./
-#1691644360
-cd ../
-#1691644365
-dum prepublishOnly
-#1691644430
-dum build --filter=playformw-eb
-#1691644433
-dum build --filter=playform-web
-#1691644448
-dum install
-#1691644492
-dum build --filter=playform-web
-#1691644499
-dum install
-#1691644514
-dum build --filter=playform-web
-#1691645231
-source ~/.bashrc 
-#1691645237
-ci ~/.bashrc 
-#1691645251
-source ~/.bashrc 
-#1691645264
-dum build --filter=playform-web
-#1691646810
-cd baxast/files-pipe/
-#1691646812
-git add .
-#1691646816
-git log --oneline 
-#1691646825
-npm show files-pipe versions
-#1691647065
-wsl
-#1691647070
-wsl --list
-#1691647075
-wsl shutdown
-#1691647107
-wsl reboot
-#1691647136
-wsl --list
-#1691647143
-wsl reboot
-#1691647151
-wsl shutdown
-#1691647158
-wsl reboot
-#1691647162
-wsl shutdown
-#1691647188
-wsl --list
-#1691647213
-wsl --set-default-version 2
-#1691647239
-cd ../
-#1691647242
-dum build --filter=playform-web
-#1691647696
-dum prepublishOnly --filter=files-pipe
-#1691647709
-dum prepublishOnly --filter=astro-rome
-#1691647719
-dum install
-#1691647734
-cd app2/
-#1691647738
-cld
-#1691647774
-dum prepublishOnly --filter=astro-rome
-#1691647805
-dum prepublishOnly --filter=astro-compress
-#1691647809
-dum install
-#1691647832
-npm show files-pipe versions
-#1691647841
-dum build --filter=playform-web
-#1691649904
+#1691741322
 cd /d/Developer/
-#1691649905
-cld
-#1691649931
+#1691741328
+cd app/NikolaRHristov/dot/
+#1691741331
+cd .config/base/
+#1691741333
 dum install
-#1691650018
-dum build --filter=playform-web
-#1691650855
-cd app2/baxast/baxast/
-#1691650859
-dum install -E @types/node
-#1691650948
-git log
-#1691650951
-git add .
-#1691651077
-git log --oneline
-#1691652246
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.0" ; git sync ; git tag -s -m "v0.1.0" -a "v0.1.0" ; git push --tags ; gh release create v0.1.0 --generate-notes
-#1691652249
-npm show baxast
-#1691653348
-git log --oneline 
-#1691653642
-cld ; bmd ; dum install ; dum prepublishOnly 
-#1691654471
-dum prepublishOnly
-#1691654510
-git add .
-#1691654515
-ci CHANGELOG.md package.json 
-#1691654526
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.0" ; git sync ; git tag -s -m "v0.1.0" -a "v0.1.0" ; git push --tags ; gh release create v0.1.0 --generate-notes
-#1691654603
-cld ; bmd ; dum install ; dum prepublishOnly 
-#1691655169
-npm show baxast version
-#1691655185
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.0" ; git sync ; git tag -s -m "v0.1.0" -a "v0.1.0" ; git push --tags ; gh release create v0.1.0 --generate-notes
-#1691655468
-npm show baxast
-#1691655476
-cd ../astro-compress/
-#1691655480
-npm show package.json
-#1691655487
-npm show astro-compress
-#1691655943
-npm show baxast
-#1691655949
-npm show astro-compress
-#1691655955
-cd ../files-pipe/
-#1691655963
-npm show files-pipe
-#1691656081
-ci package.json CHANGELOG.md 
-#1691656166
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.7" ; git sync ; git tag -s -m "v2.0.7" -a "v2.0.7" ; git push --tags ; gh release create v2.0.7 --generate-notes
-#1691656215
-npm show files-pipe
-#1691656787
+#1691741654
 cd /d/Developer/
-#1691656789
-cd app2/
-#1691656794
-cd /d/Developer/
-#1691656920
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname package.json -execdir sort-package-json \;
-#1691657990
-dum install ; dum prepublishOnly ; dum build ; 
-#1691664863
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
-#1691664868
-cld
-#1691665005
-cd app2/
-#1691665006
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
-#1691665237
-cd baxast/files-pipe/
-#1691665243
-git log --oneline 
-#1691665429
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
-#1691665468
-git tag -s -m "v2.0.8" -a "v2.0.8"
-#1691665480
-git push
-#1691665482
-git push --tags
-#1691665490
-gh release create v2.0.8 --generate-notes
-#1691665584
-cd ../astro-rome/
-#1691665592
-ci CHANGELOG.md package.json 
-#1691665772
-cd ./.../
-#1691665774
-../../
-#1691665779
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
-#1691667212
-npm show files-pipe 
-#1691667641
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
-#1691667885
-cd baxast/astro-compress/
-#1691667908
-ci package.json CHANGELOG.md 
-#1691667913
-npm show astro-compress
-#1691667916
-npm show astro-compress versions
-#1691667949
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.5" ; git sync ; git tag -s -m "v2.0.5" -a "v2.0.5" ; git push --tags ; gh release create v2.0.5 --generate-notes
-#1691668119
-npm show astro-critters versions
-#1691668142
-cd ../astro-critters/
-#1691668159
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.4" ; git sync ; git tag -s -m "v2.0.4" -a "v2.0.4" ; git push --tags ; gh release create v2.0.4 --generate-notes
-#1691668216
-cd ../astro-rome/
-#1691668220
-ci package.json CHANGELOG.md 
-#1691668253
-cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.1" ; git sync ; git tag -s -m "v2.0.1" -a "v2.0.1" ; git push --tags ; gh release create v2.0.1 --generate-notes
-#1691668348
-npm show astro-rome
-#1691668527
-cd ../../
-#1691668542
-dum build --filter=playform-web
-#1691668630
-cd playform/playform.cloud/
-#1691668631
-git remote -v
-#1691668633
-git add .
-#1691668638
-git commit -m "squash!"
-#1691668639
-git push
-#1691668645
-git remote remove origin
-#1691668678
-git remote add origin ssh://git@github.com/Playform/playform.cloud.git
-#1691668681
-git push
-#1691668690
-gh repo create Playform/playform.cloud --public
-#1691668693
-git push
-#1691669671
-git add .
-#1691669674
-git commit -m "squash!"
-#1691669675
-git push
-#1691669746
-cd ../../baxast/
-#1691669747
-cd files-pipe/
-#1691669748
+#1691741660
+ci package.json turbo.json 
+#1691741727
+dum install
+#1691803249
+cd app/NikolaRHristov/dot/
+#1691803252
+cd .config/base/
+#1691803253
 ci package.json 
-#1691669785
-sort-package-json
-#1691669900
+#1691803256
+bmd
+#1691803264
+dum install
+#1691803800
 cd /d/Developer/
-#1691669904
-find -iname index.astro
-#1691669914
-find -iname index.astro -execdir mv Index.astro index2.astro
-#1691669916
-find -iname index.astro -execdir mv Index.astro index2.astro \;
-#1691669922
-find -iname .git -execdir git add . \;
-#1691669939
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691670023
-find -iname index2.astro
-#1691670030
-find -iname index2.astro -execdir mv index2.astro Index.astro \;\
-#1691670032
-find -iname index2.astro -execdir mv index2.astro Index.astro \;
-#1691670036
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691670079
-cd app2/playform/playform.cloud/
-#1691670082
-git push
-#1691670116
-cd /d/Developer/
-#1691670125
-find -iname index.astro -execdir mv Index.astro index2.astro \;
-#1691670133
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691670197
-find -iname index2.astro -execdir mv index2.astro index.astro \;
-#1691670200
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691670352
+#1691803801
 cd app2/
-#1691670360
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; find -iname package.json -execdir sort-package-json \;
-#1691670741
-cd playform/
-#1691670744
-cd ../
-#1691670757
+#1691806415
+find -iname code_of_conduct.md
+#1691806420
+find -iname code_of_conduct.md -exec rm -rf {} \;
+#1691806427
+find -iname contributing.md -exec rm -rf {} \;
+#1691806477
+find -iname license.txt
+#1691806487
+rm app/NikolaRHristov/dot/.oh-my-zsh/LICENSE.txt 
+#1691806688
 cd app
-#1691670769
-find -iname .git -execdir bash -c 'pwd ; git remote -v ' \;
-#1691670916
-find -iname .git -execdir bash -c 'pwd ; git remote remove origin ; ' \;
-#1691670930
-find -iname .git -execdir bash -c 'pwd ; git remote -v ' \;
-#1691671097
-cat ./text.sh 
-#1691671103
-./text.sh 
-#1691671119
-find -iname .git -execdir git add . \;
-#1691671132
-find -iname .git -execdir git commit -m "squash!" \;
-#1691671339
-cd /d/Developer/app2/playform/playform.cloud/
-#1691671341
-git add .
-#1691671344
-git commit -m "squash!"
-#1691671345
-git push
-#1691671205
-./text.sh 
-#1691671670
-cd /d/Developer/
-#1691671677
-fidn -iname public -type d 
-#1691671681
-find -iname astro.config.ts
-#1691671687
-find -iname astro.config.ts -execdir ls public
-#1691671689
-find -iname astro.config.ts -execdir ls public \;
-#1691671694
-find -iname astro.config.ts -execdir ls Public \;
-#1691671705
-find -iname astro.config.ts -execdir mv public public2 \;
-#1691671719
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691671752
-find -iname astro.config.ts -execdir mv public2 Public \;
-#1691671754
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691671810
-cd app2/playform/playform.cloud/
-#1691671812
-git push
-#1691672060
-cd /d/Developer/app
-#1691672062
-cat text.sh 
-#1691672069
-./text.sh 
-#1691672339
-gh org
-#1691705512
-mkdir app2/NikolaRHristov/nikolahristov.tech
-#1691705534
-cp -rf app/NikolaRHristov/nikolahristov.tech app2/NikolaRHristov/
-#1691705622
-cd app2/NikolaRHristov/nikolahristov.tech/
-#1691705624
+#1691806695
+ci text.sh 
+#1691806731
+ci todo.md 
+#1691807144
+cd ../app2/
+#1691807146
+cd ls
+#1691807149
+cd NikolaRHristov/
+#1691807152
+cd astro-
+#1691807155
+cd astro-critters/
+#1691807158
 git remote -v
-#1691705627
-git push
-#1691705636
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
-#1691705928
-cd /d/Developer/
-#1691705934
-find -iname LICENSE
-#1691705942
-find -iname LICENSE -exec rm -rf {} \;
-#1691705949
-bmd
-#1691706977
-cd app2/
-#1691706981
-cd NikolaRHristov/nikolahristov.tech/
-#1691706983
-git add .
-#1691707045
-git commit -m "squash!"
-#1691707049
-cd ../../playform/playform.cloud/
-#1691707053
-git add . ; git commit -m "squash!"
-#1691707054
-git push
-#1691707058
-cd -
-#1691707064
-git add . ; git commit -m "squash!" ; git sync 
-#1691707172
-dum install -D -E baxast
-#1691708137
-cd /d/Developer/
-#1691708145
-find -iname Styles -type d
-#1691708160
-find -iname Styles -type d -execdir mv Styles Style \;
-#1691708169
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
-#1691709385
-cld ; bmd ; dum install ; dum prepublishOnly ; dum build
-#1691712722
-npm show files-pipe 
-#1691712731
-dum build --filter=playform-web
-#1691712761
-cd app2/
-#1691712813
-dum build --filter=playform-web
-#1691714626
-dum instsall ; dum build --filter=playform-web
-#1691714638
-dum install ; dum build --filter=playform-web
-#1691716187
-dum build --filter=playform-web
-#1691718525
+#1691807174
+git remote set-url origin ssh://git@github.com/NikolaRHristov/astro-critters.git
+#1691807179
+cd ../astro-compress/
+#1691807182
+git remote set-url origin ssh://git@github.com/NikolaRHristov/astro-compress.git
+#1691807185
+cd ../astro-rome/
+#1691807188
+git remote set-url origin ssh://git@github.com/NikolaRHristov/astro-rome.git
+#1691807190
+cd ../baxast/
+#1691807193
+git remote set-url origin ssh://git@github.com/NikolaRHristov/baxast.git
+#1691807197
+cd ../files-pipe/
+#1691807212
+git remote set-url origin ssh://git@github.com/NikolaRHristov/files-pipe.git
+#1691807720
 cd ../
-#1691718527
-find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1691807727
+mkdir delete-old-deployments
+#1691807729
+cd delete-old-deployments/
+#1691807730
+git init 
+#1691807738
+gh repo create NikolaRHristov/DeleteOldDeployments
+#1691807740
+cd. ./
+#1691807741
+cd ../
+#1691807743
+rm -rf delete-old-deployments/
+#1691807749
+mkdir DeleteOldDeployment
+#1691807751
+cd DeleteOldDeployment/
+#1691807752
+git init
+#1691807764
+gh repo create NikolaRHristov/DeleteOldDeployment --private
+#1691807789
+gh remote add origin ssh://git@github.com/NikolaRHristov/DeleteOldDeployment.git
+#1691807796
+git remote add origin ssh://git@github.com/NikolaRHristov/DeleteOldDeployment.git
+#1691807799
+git push
+#1691808619
+git remote add origin ssh://git@github.com/NikolaRHristov/DeleteOldDeployment.git
+#1691808623
+git remote remove origin 
+#1691808624
+ssh://git@github.com/baxast/astro-critters.git
+#1691808626
+git remote add origin ssh://git@github.com/NikolaRHristov/DeleteOldDeployment.git
+#1691808628
+git push
+#1691808630
+git add .
+#1691808635
+ci package.json 
+#1691808655
+dum install -D -E baxast
+#1691809052
+dum install -E dotenv zod
+#1691809093
+sort-package-json
+#1691809139
+dum install -D -E @cloudflare/workers-types
+#1691809280
+dum prepublishOnly
+#1691811354
+ci ~/.bash_history_shared 
+#1691811361
+dum prepublishOnly
+#1691813540
+sort-package-json
+#1691813541
+cd /d/Developer/
+#1691813551
+find -iname package.json -execdir sort-package-json \;
+#1691813633
+dum prepublishOnly
+#1691816847
+cd app2/
+#1691816850
+cd NikolaRHristov/
+#1691816853
+dum prepublishOnly
+#1691817059
+dum build --filter=delete-old-deployment
+#1691817064
+dum prepublishOnly --filter=delete-old-deployment
+#1691817070
+cd DeleteOldDeployment/
+#1691817075
+pnpm link -g
+#1691817084
+cd /d/Developer/
+#1691817085
+dod
+#1691817099
+dum prepublishOnly --filter=delete-old-deployment dod
+#1691817102
+dum prepublishOnly --filter=delete-old-deployment ; dod
+#1691817778
+pnpm install -g wrangler
+#1691817952
+cd app2/NikolaRHristov/
+#1691817956
+cd DeploymentDelete/
+#1691817957
+dd
+#1691817981
+dum prepublishOnly --filter=delete-old-deployment ; dd
+#1691817986
+dum prepublishOnly ; dd
+#1691818194
+dum prepublishOnly ; DeploymentDelete
+#1691818201
+pnpm link -g
+#1691818259
+DeploymentDelete
+#1691818268
+wrangler dev
+#1691818313
+ci wrangler.toml 
+#1691818322
+wrangler dev
+#1691822855
+dum prepublishOnly ; DeploymentDelete
+#1691823123
+wrangler dev
+#1691826179
+cd app2/NikolaRHristov/DeploymentDelete/
+#1691827697
+cd app2/NikolaRHristov/
+#1691827700
+cd DeploymentDelete/
+#1691827708
+wrangler dev
+#1691830077
+dum prepublishOnly ; DeploymentDelete
+#1691830164
+dum prepublishOnly ; DeploymentDelete -v
+#1691830167
+dum prepublishOnly ; DeploymentDelete -V
+#1691830172
+dum prepublishOnly ; DeploymentDelete -e nikola
+#1691830242
+dum prepublishOnly ; DeploymentDelete -e nikola -i test -k test
+#1691830264
+dum prepublishOnly ; DeploymentDelete -e nikola -i test -k- test
+#1691830304
+dum prepublishOnly ; DeploymentDelete -e nikola -i test -k test
+#1691830308
+dum prepublishOnly ; DeploymentDelete -e nikola -i test -k test2
+#1691831880
+dum prepublishOnly ; DeploymentDelete
+#1691832638
+cd /d/Developer/
+#1691832642
+cd app2/
+#1691832647
+cd NikolaRHristov/DeploymentDelete/
+#1691832650
+git remote -v
+#1691833286
+cd ../
+#1691833295
+find -iname package.json -execdir sort-package-json \;
+#1691833315
+dum prepublishOnly
+#1691833873
+cd NikolaRHristov/DeploymentDelete/
+#1691833875
+wrangler publish
+#1691834894
+sort-package-json
+#1691834967
+ci /e/MEGA/PROJECTS/Personal/Credentials/Keys/blood.md 
+#1691835082
+DeploymentDelete
+#1691835192
+cd app2/NikolaRHristov/DeploymentDelete/
+#1691835211
+DeploymentDelete -g
+#1691835213
+DeploymentDelete -V
+#1691835214
+DeploymentDelete -h
+#1691835177
+dum prepublishOnly ; DeploymentDelete
+#1691836787
+git add .
+#1691836793
+git tag -s -m "v0.0.1" -a "v0.0.1"
+#1691836805
+git push gh release create v0.0.1 --generate
+#1691836813
+git push ; git push --tags ; gh release create v0.0.1 --generate-notes
+#1691836953
+git push --delete origin v0.0.1
+#1691836959
+git tag -d v0.0.1 
+#1691836961
+git add .
+#1691836964
+dum prepublishOnly
+#1691836977
+npm publish --dry-run
+#1691837157
+dum prepublishOnly
+#1691837210
+git tag -d v0.0.1 
+#1691837218
+gh release delete v0.0.1
+#1691837229
+wrangler publish
+#1691837254
+npm publish --dry-run
+#1691837992
+cld ; bmd ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release create v0.0.1 --generate-notes
+#1691838017
+sort-package-json
+#1691838019
+cld ; bmd ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release create v0.0.1 --generate-notes
+#1691838046
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release create v0.0.1 --generate-notes
+#1691838258
+sort
+#1691838261
+sort-package-json
+#1691838263
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release create v0.0.1 --generate-notes
+#1691838298
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git push --delete origin v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release delete v0.0.1 ; gh release create v0.0.1 --generate-notes
+#1691838400
+gh release delete -h
+#1691838406
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git push --delete origin v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release delete v0.0.1 -y ; gh release create v0.0.1 --generate-notes
+#1691838418
+npm publish --dry-run
+#1691838423
+dum install ;npm publish --dry-run
+#1691838493
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.1" ; git sync ; git tag -d v0.0.1 ; git push --delete origin v0.0.1 ; git tag -s -m "v0.0.1" -a "v0.0.1" ; git push --tags ; gh release delete v0.0.1 -y ; gh release create v0.0.1 --generate-notes
+#1691839232
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.2" ; git sync ; git tag -d v0.0.2 ; git push --delete origin v0.0.2 ; git tag -s -m "v0.0.2" -a "v0.0.2" ; git push --tags ; gh release delete v0.0.2 -y ; gh release create v0.0.2 --generate-notes
+#1691839778
+DeploymentDelete -V 
+#1691839782
+DeploymentDelete
+#1691839898
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.3" ; git sync ; git tag -d v0.0.3 ; git push --delete origin v0.0.3 ; git tag -s -m "v0.0.3" -a "v0.0.3" ; git push --tags ; gh release delete v0.0.3 -y ; gh release create v0.0.3 --generate-notes
+#1691839983
+DeploymentDelete -V
+#1691839987
+DeploymentDelete 
+#1691840068
+dum prepublishOnly ; DeploymentDelete 
+#1691840171
+npm show deploymentdelete versions
+#1691840181
+sort-package-json
+#1691840478
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.4" ; git sync ; git tag -d v0.0.4 ; git push --delete origin v0.0.4 ; git tag -s -m "v0.0.4" -a "v0.0.4" ; git push --tags ; gh release delete v0.0.4 -y ; gh release create v0.0.4 --generate-notes
+#1691840684
+ci wrangler.toml 
+#1691840713
+wrangler publish
+#1691840813
+DeploymentDelete
+#1691842233
+nano Every10Min.sh
+#1691842302
+./Every10Min.sh 
+#1691843462
+mv Every10Min.sh EveryMin.sh 
+#1691843465
+nano EveryMin.sh 
+#1691843477
+./EveryMin.sh 
+#1691843562
+DeploymentDelete
+#1691843793
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.5" ; git sync ; git tag -d v0.0.5 ; git push --delete origin v0.0.5 ; git tag -s -m "v0.0.5" -a "v0.0.5" ; git push --tags ; gh release delete v0.0.5 -y ; gh release create v0.0.5 --generate-notes
+#1691843942
+wrangler publish
+#1691843997
+DeploymentDelete
+#1691844176
+DeploymentDelete -V
+#1691844177
+DeploymentDelete
+#1691846102
+./EveryMin.sh 
+#1691846703
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.6" ; git sync ; git tag -d v0.0.6 ; git push --delete origin v0.0.6 ; git tag -s -m "v0.0.6" -a "v0.0.6" ; git push --tags ; gh release delete v0.0.6 -y ; gh release create v0.0.6 --generate-notes
+#1691848289
+cd app2/NikolaRHristov/DeploymentDelete/
+#1691848294
+./EveryMin.sh 
+#1691848410
+wrangler publish
+#1691848439
+dum prepublishOnly ; DeploymentDelete 
+#1691848611
+dum install -D -E @types/node
+#1691848639
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.7" ; git sync ; git tag -d v0.0.7 ; git push --delete origin v0.0.7 ; git tag -s -m "v0.0.7" -a "v0.0.7" ; git push --tags ; gh release delete v0.0.7 -y ; gh release create v0.0.7 --generate-notes
+#1691849023
+DeploymentDelete
+#1691849035
+./EveryMin.sh 
+#1691850460
+DeploymentDelete -v
+#1691850463
+DeploymentDelete -h
+#1691850481
+./EveryMin.sh 
+#1691850812
+cd ../test/
+#1691850816
+dum install -E deploymentdelete
+#1691850845
+bmd
+#1691850972
+cd ../
+#1691850974
+cd /d/Developer/
+#1691851370
+cd app2/NikolaRHristov/DeploymentDelete/
+#1691851372
+sort-package-json
+#1691851411
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.0.8" ; git sync ; git tag -d v0.0.8 ; git push --delete origin v0.0.8 ; git tag -s -m "v0.0.8" -a "v0.0.8" ; git push --tags ; gh release delete v0.0.8 -y ; gh release create v0.0.8 --generate-notes
+#1691851483
+sort-package-json
+#1691851564
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.0" ; git sync ; git tag -d v0.1.0 ; git push --delete origin v0.1.0 ; git tag -s -m "v0.1.0" -a "v0.1.0" ; git push --tags ; gh release delete v0.1.0 -y ; gh release create v0.1.0 --generate-notes
+#1691852621
+cd app2/NikolaRHristov/DeploymentDelete/
+#1691852622
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.1" ; git sync ; git tag -d v0.1.1 ; git push --delete origin v0.1.1 ; git tag -s -m "v0.1.1" -a "v0.1.1" ; git push --tags ; gh release delete v0.1.1 -y ; gh release create v0.1.1 --generate-notes
+#1691852737
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691854662
+cd app2/NikolaRHristov/baxast/
+#1691854664
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.1" ; git sync ; git tag -d v0.1.1 ; git push --delete origin v0.1.1 ; git tag -s -m "v0.1.1" -a "v0.1.1" ; git push --tags ; gh release delete v0.1.1 -y ; gh release create v0.1.1 --generate-notes
+#1691855904
+cd app2/NikolaRHristov/astro-compress/
+#1691855995
+git rebase -i --root
+#1691856147
+git log --oneline 
+#1691856156
+git switch -b rebase
+#1691856158
+git switch -c rebase
+#1691856161
+git push
+#1691856973
+cd app2/
+#1691856980
+cd NikolaRHristov/DeploymentDelete/
+#1691856982
+./EveryMin.sh 
+#1691857028
+cd ../
+#1691857031
+rm -rf astro-compress/
+#1691857035
+cd astro-critters/
+#1691857040
+git rebase -i --root
+#1691857092
+git commit --allow-empty
+#1691857098
+git rebase -i --root
+#1691857101
+git add .
+#1691857104
+git rebase --continue
+#1691857129
+git push
+#1691857213
+cd ../astro-rome/
+#1691857217
+git rebase -i --root
+#1691857245
+git commit --allow-empty
+#1691857251
+git add .
+#1691857253
+git rebase --continue
+#1691857338
+git push
+#1691857919
+cd ../baxast/
+#1691857975
+ci README.md 
+#1691858130
+cd app2/NikolaRHristov/baxast/
+#1691858134
+git rebase --continue
+#1691858138
+git rebase -i --root
+#1691858202
+git rebase --continue 
+#1691858204
+git add .
+#1691858206
+git rebase --continue 
+#1691858215
+git add .
+#1691858265
+git rebase --continue 
+#1691858312
+git add .
+#1691858315
+rebase -i --root
+#1691858322
+git rebase -i --root
+#1691858367
+git push
+#1691858471
+ci CHANGELOG.md 
+#1691858475
+ci package.json 
+#1691887813
+cd app2/NikolaRHristov/
+#1691887844
+git clone ssh://git@github.com/NikolaRHristov/astro-compress.git
+#1691887848
+git clone ssh://git@github.com/NikolaRHristov/astro-critters.git
+#1691887857
+git clone ssh://git@github.com/NikolaRHristov/astro-rome.git
+#1691887934
+cd TypeScriptBuild/
+#1691888226
+git add .
+#1691888335
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691888693
+pnpm link -g
+#1691888716
+npm show javascriptbuild
+#1691889020
+sort-package-json
+#1691889499
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691890389
+pnpm link -g
+#1691890414
+dum prepublishOnly
+#1691890469
+cd ../
+#1691890518
+cd app2/NikolaRHristov/JavaScriptBuild/
+#1691890540
+node --no-warnings --loader ts-node/esm Source/Index.ts -h
+#1691890561
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691890692
+sort-package-json; cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691890704
+sort-package-json ; cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691890722
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.2" ; git sync ; git tag -d v0.1.2 ; git push --delete origin v0.1.2 ; git tag -s -m "v0.1.2" -a "v0.1.2" ; git push --tags ; gh release delete v0.1.2 -y ; gh release create v0.1.2 --generate-notes
+#1691890866
+sort-package-json
+#1691890910
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.3" ; git sync ; git tag -d v0.1.3 ; git push --delete origin v0.1.3 ; git tag -s -m "v0.1.3" -a "v0.1.3" ; git push --tags ; gh release delete v0.1.3 -y ; gh release create v0.1.3 --generate-notes
+#1691891080
+cd /d/Developer/
+#1691891081
+cd app2/
+#1691891110
+cld ; bmd ; dum install ; dum prepublishOnly ; 
+#1691891887
+cd app2/NikolaRHristov/JavaScriptBuild/
+#1691891906
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.4" ; git sync ; git tag -d v0.1.4 ; git push --delete origin v0.1.4 ; git tag -s -m "v0.1.4" -a "v0.1.4" ; git push --tags ; gh release delete v0.1.4 -y ; gh release create v0.1.4 --generate-notes
+#1691892761
+mkdir npm
+#1691893140
+cd app2/NikolaRHristov/
+#1691893142
+cd JavaScriptBuild/
+#1691893144
+git add .
+#1691893364
+dum prepublishOnly
+#1691893625
+git status
+#1691893629
+git branch -v
+#1691893634
+git branch
+#1691893648
+git switch rebase 
+#1691893653
+git pull
+#1691893662
+git merge origin/main 
+#1691893665
+git merge origin/main --allow-unrelated-histories 
+#1691893733
+git add .
+#1691893737
+git push 
+#1691893938
+git switch main 
+#1691893993
+cld ; bmd ; dum install ; dum prepublishOnly ; 
+#1691893997
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691894991
+cd app2/NikolaRHristov/Syclone/
+#1691894994
+cd NPM/
+#1691895051
+cld
+#1691895052
+bmd
+#1691895055
+dum install
+#1691895076
+dum prepublishOnly
+#1691895078
+git add .
+#1691895078
+git commit -m "syclone@0.1.5"
+#1691895079
+git sync
+#1691895082
+git tag -d syclone@v0.1.5
+#1691895082
+git push --delete origin syclone@v0.1.5
+#1691895083
+git tag -s -m "syclone@v0.1.5" -a "syclone@v0.1.5"
+#1691895084
+git push --tags
+#1691895086
+gh release delete syclone@v0.1.5 -y
+#1691895086
+gh release create syclone@v0.1.5 --generate-notes
+#1691895429
+git status
+#1691895435
+ci ../website/package.json 
+#1691895443
+git status
+#1691895711
+cd ../
+#1691895716
+cld
+#1691895717
+bmd
+#1691895725
+dum install
+#1691895745
+dum prepublishOnly
+#1691895746
+git add .
+#1691895746
+git commit -m "syclone@0.1.5"
+#1691895746
+git sync
+#1691895746
+git tag -d syclone@v0.1.5
+#1691895746
+git push --delete origin syclone@v0.1.5
+#1691895748
+git tag -s -m "syclone@v0.1.5" -a "syclone@v0.1.5"
+#1691895748
+git push --tags
+#1691895750
+gh release delete syclone@v0.1.5 -y
+#1691895751
+gh release create syclone@v0.1.5 --generate-notes
+#1691895753
+Y
+#1691895825
+cld
+#1691895825
+bmd
+#1691895833
+dum install
+#1691895846
+dum prepublishOnly
+#1691895855
+git add .
+#1691895855
+git commit -m "syclone@0.1.5"
+#1691895856
+git sync
+#1691895859
+git tag -d syclone@v0.1.5
+#1691895859
+git push --delete origin syclone@v0.1.5
+#1691895861
+git tag -s -m "syclone@v0.1.5" -a "syclone@v0.1.5"
+#1691895861
+git push --tags
+#1691895863
+gh release delete syclone@v0.1.5 -y
+#1691895864
+gh release create syclone@v0.1.5 --generate-notes
+#1691896259
+cd NPM/
+#1691896266
+npm login --registry=https://npm.pkg.github.com --scope=@NikolaRHristov
+#1691896297
+npm login --registry=https://npm.pkg.github.com
+#1691896377
+npm login --registry=https://npm.pkg.github.com --scope=syclone
+#1691896579
+cd ../
+#1691896581
+cld
+#1691896582
+bmd
+#1691896589
+dum install
+#1691896602
+dum prepublishOnly
+#1691896611
+git add .
+#1691896611
+git commit -m "syclone@0.1.5"
+#1691896648
+git sync
+#1691896651
+git tag -d syclone@v0.1.5
+#1691896651
+git push --delete origin syclone@v0.1.5
+#1691896653
+git tag -s -m "syclone@v0.1.5" -a "syclone@v0.1.5"
+#1691896653
+git push --tags
+#1691896655
+gh release delete syclone@v0.1.5 -y
+#1691896656
+gh release create syclone@v0.1.5 --generate-notes
+#1691899999
+cd app2/NikolaRHristov/
+#1691900001
+cd TSBundle/
+#1691900003
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "syclone@0.1.5" ; git sync ; git tag -d syclone@v0.1.5 ; git push --delete origin syclone@v0.1.5 ; git tag -s -m "syclone@v0.1.5" -a "syclone@v0.1.5" ; git push --tags ; gh release delete syclone@v0.1.5 -y ; gh release create syclone@v0.1.5 --generate-notes
+#1691900251
+npm show syclone -v
+#1691900260
+npm show syclone version
+#1691900358
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "syclone@0.1.6" ; git sync ; git tag -d syclone@v0.1.6 ; git push --delete origin syclone@v0.1.6 ; git tag -s -m "syclone@v0.1.6" -a "syclone@v0.1.6" ; git push --tags ; gh release delete syclone@v0.1.6 -y ; gh release create syclone@v0.1.6 --generate-notes
+#1691900818
+cd app2/
+#1691900821
+cd NikolaRHristov/Syclone/
+#1691901008
+pnpm link -g
+#1691901016
+syclone -v
+#1691901018
+syclone -h
+#1691901021
+syclone -V
+#1691901024
+Syclone -V
+#1691901055
+git rebase -i --root
+#1691901106
+git push
+#1691901112
+git sync
+#1691901126
+git remote -v
+#1691901137
+git remote set-url origin ssh://git@github.com/NikolaRHristov/Syclone.git
+#1691904257
+cd app2/NikolaRHristov/
+#1691904262
+NowPlayingCards/
+#1691904264
+cd api/
+#1691904265
+cat package.json 
+#1691904271
+dum install -D -E syclone
+#1691904276
+cd ../socket/
+#1691904277
+cat package.json 
+#1691904280
+dum install -D -E syclone
+#1691904296
+cd ../
+#1691904297
+bmd
+#1691904418
+cd ../../
+#1691904422
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691917641
+cd app2/NikolaRHristov/
+#1691917652
+git clone https://github.com/NikolaRHristov/developer-roadmap.git
+#1691917766
+git clone https://github.com/NikolaRHristov/developer-roadmap.git --depth=1
+#1691917808
+cd developer-roadmap/
+#1691917814
+dum install -D astro-compress
+#1691917963
+git add .
+#1691917990
+git branch restores-astro-compress
+#1691917992
+git add .
+#1691918000
+git commit -m "Restores astro-compress"
+#1691918027
+git push
+#1691918051
+git remote set-url ssh://git@github.com/NikolaRHristov/developer-roadmap.git
+#1691918055
+git remote set-url origin ssh://git@github.com/NikolaRHristov/developer-roadmap.git
+#1691918057
+git push
+#1691918078
+git branch -v
+#1691918087
+git switch restores-astro-compress 
+#1691918094
+cd ../
+#1691918097
+git log --oneline 
+#1691918100
+cd developer-roadmap/
+#1691918103
+git log --oneline 
+#1691918106
+cd ../
+#1691918117
+cd -
+#1691918120
+git branch -d restores-astro-compress 
+#1691918123
+git log --oneline 
+#1691918130
+git checkout main
+#1691918132
+git branch -d restores-astro-compress 
+#1691918137
+cd ../
+#1691920645
+cd app2/
+#1691920657
+cd NikolaRHristov/
+#1691920669
+mv Syclone TypeScriptBuild
+#1691920862
+cd TypeScriptBuild/
+#1691920899
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "syclone@0.1.7" ; git sync ; git tag -d syclone@v0.1.7 ; git push --delete origin syclone@v0.1.7 ; git tag -s -m "syclone@v0.1.7" -a "syclone@v0.1.7" ; git push --tags ; gh release delete syclone@v0.1.7 -y ; gh release create syclone@v0.1.7 --generate-notes
+#1691920909
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.7" ; git sync ; git tag -d v0.1.7 ; git push --delete origin v0.1.7 ; git tag -s -m "v0.1.7" -a "v0.1.7" ; git push --tags ; gh release delete v0.1.7 -y ; gh release create v0.1.7 --generate-notes
+#1691921308
+npm show typescript-build
+#1691921318
+npm show typescript-build version
+#1691921579
+cd ../
+#1691921587
+mv TypeScriptBuild TypeScriptESBuild
+#1691921640
+find -iname *typescriptbuild*
+#1691921655
+cd TypeScriptESBuild/
+#1691921665
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.7" ; git sync ; git tag -d v0.1.7 ; git push --delete origin v0.1.7 ; git tag -s -m "v0.1.7" -a "v0.1.7" ; git push --tags ; gh release delete v0.1.7 -y ; gh release create v0.1.7 --generate-notes
+#1691922222
+npm show typescript-esbuild
+#1691922246
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.7" ; git sync ; git tag -d v0.1.7 ; git push --delete origin v0.1.7 ; git tag -s -m "v0.1.7" -a "v0.1.7" ; git push --tags ; gh release delete v0.1.7 -y ; gh release create v0.1.7 --generate-notes
+#1691922284
+git remote set-url ssh://git@github.com/NikolaHristov/TypeScriptESBuild.git
+#1691922288
+git remote set-url origin ssh://git@github.com/NikolaHristov/TypeScriptESBuild.git
+#1691922291
+git push
+#1691922357
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.7" ; git sync ; git tag -d v0.1.7 ; git push --delete origin v0.1.7 ; git tag -s -m "v0.1.7" -a "v0.1.7" ; git push --tags ; gh release delete v0.1.7 -y ; gh release create v0.1.7 --generate-notes
+#1691922460
+git remote set-url origin ssh://git@github.com/NikolaHristov/TypeScriptESBuild.git
+#1691922462
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.7" ; git sync ; git tag -d v0.1.7 ; git push --delete origin v0.1.7 ; git tag -s -m "v0.1.7" -a "v0.1.7" ; git push --tags ; gh release delete v0.1.7 -y ; gh release create v0.1.7 --generate-notes
+#1691922531
+sort-package-json
+#1691922692
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.8" ; git sync ; git tag -d v0.1.8 ; git push --delete origin v0.1.8 ; git tag -s -m "v0.1.8" -a "v0.1.8" ; git push --tags ; gh release delete v0.1.8 -y ; gh release create v0.1.8 --generate-notes
+#1691922771
+git remote set-url origin ssh://git@github.com/NikolaRHristov/TypeScriptESBuild.git
+#1691922772
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "0.1.8" ; git sync ; git tag -d v0.1.8 ; git push --delete origin v0.1.8 ; git tag -s -m "v0.1.8" -a "v0.1.8" ; git push --tags ; gh release delete v0.1.8 -y ; gh release create v0.1.8 --generate-notes
+#1691922956
+npm show files-pipe versions
+#1691923201
+gh release delete v2.09
+#1691923204
+gh release delete v2.0.9
+#1691923213
+git push --delete origin v2.0.9
+#1691923221
+git tag -d v2.0.9 
+#1691923223
+cd ../FilesPipe/
+#1691924745
+cd app2/NikolaRHristov/
+#1691924747
+cd Astro
+#1691924748
+cd AstroC
+#1691924750
+cd AstroCompress/
+#1691924753
+git remote -v
+#1691924761
+git remote set-url origin ssh://git@github.com/NikolaRHristov/AstroCompress.git
+#1691924763
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.6" ; git sync ; git tag -d v2.0.6 ; git push --delete origin v2.0.6 ; git tag -s -m "v2.0.6" -a "v2.0.6" ; git push --tags ; gh release delete v2.0.6 -y ; gh release create v2.0.6 --generate-notes
+#1691924879
+cd ../AstroCritters/
+#1691925046
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.5" ; git sync ; git tag -d v2.0.5 ; git push --delete origin v2.0.5 ; git tag -s -m "v2.0.5" -a "v2.0.5" ; git push --tags ; gh release delete v2.0.5 -y ; gh release create v2.0.5 --generate-notes
+#1691925658
+npm show astro-compress version
+#1691925669
+npm show astro-critters version
+#1691925679
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.5" ; git sync ; git tag -d v2.0.5 ; git push --delete origin v2.0.5 ; git tag -s -m "v2.0.5" -a "v2.0.5" ; git push --tags ; gh release delete v2.0.5 -y ; gh release create v2.0.5 --generate-notes
+#1691925770
+git remote set-url origin ssh://git@github.com/NikolaRHristov/AstroCritters.git
+#1691925777
+git tag -d v2.0.5 
+#1691925796
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.5" ; git sync ; git tag -d v2.0.5 ; git push --delete origin v2.0.5 ; git tag -s -m "v2.0.5" -a "v2.0.5" ; git push --tags ; gh release delete v2.0.5 -y ; gh release create v2.0.5 --generate-notes
+#1691925867
+npm show astro-critters version
+#1691926445
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.2" ; git sync ; git tag -d v2.0.2 ; git push --delete origin v2.0.2 ; git tag -s -m "v2.0.2" -a "v2.0.2" ; git push --tags ; gh release delete v2.0.2 -y ; gh release create v2.0.2 --generate-notes
+#1691926629
+cd ../AstroRome/
+#1691926639
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.2" ; git sync ; git tag -d v2.0.2 ; git push --delete origin v2.0.2 ; git tag -s -m "v2.0.2" -a "v2.0.2" ; git push --tags ; gh release delete v2.0.2 -y ; gh release create v2.0.2 --generate-notes
+#1691926653
+Y
+#1691926666
+sort-package-json
+#1691926715
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "2.0.2" ; git sync ; git tag -d v2.0.2 ; git push --delete origin v2.0.2 ; git tag -s -m "v2.0.2" -a "v2.0.2" ; git push --tags ; gh release delete v2.0.2 -y ; gh release create v2.0.2 --generate-notes
+#1691927107
+git remote -v astro-rome
+#1691927112
+npm show astro-rome
+#1691933595
+cd app2/
+#1691933607
+cd NikolaRHristov/i
+#1691933613
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691933775
+dum build --filter=now-playing-web
+#1691934034
+cd NikolaRHristov/NowPlayingCards/now-playing.cards/
+#1691934044
+dum install -D -E tippy.js
+#1691934362
+dum prepublishonly
+#1691934367
+dum prepublishOnly
+#1691934371
+dum build
+#1691934886
+loc
+#1691934896
+npx cloc Source/
+#1691934988
+dum build
+#1691979110
+cd app2/
+#1691979111
+cd astro-community/
+#1691979113
+cd AstroCompress/
+#1691979126
+git clone ssh://git@github.com/astro-community/AstroCompress.git
+#1691979130
+cd ../
+#1691979133
+cd AstroCompress/
+#1691979136
+rm -rf AstroCompress/
+#1691979137
+cd. ./
+#1691979139
+../
+#1691979144
+git clone ssh://git@github.com/astro-community/AstroCompress.git
+#1691979157
+git clone ssh://git@github.com/astro-community/AstroRome.git
+#1691979163
+git clone ssh://git@github.com/astro-community/AstroCritters.git
+#1691979169
+cd AstroCompress/
+#1691979182
+git switch -m rebase
+#1691979185
+git switch -b rebase
+#1691979192
+git switch -c rebase
+#1691979194
+cd ../AstroRome/
+#1691979196
+git switch -c rebase
+#1691979198
+cd ../AstroCritters/
+#1691979200
+git switch -c rebase
+#1691979203
+git push
+#1691979207
+cd ../AstroRome/
+#1691979209
+git push
+#1691979214
+cd ../AstroCompress/
+#1691979215
+git push
+#1691979246
+git push --delete origin/main 
+#1691979252
+git push --delete rebase 
+#1691979257
+git branch -D rebase 
+#1691979262
+git checkout main
+#1691979313
+git branhc -v
+#1691979317
+cd. ./
+#1691979318
+cd ../
+#1691979320
+rm -rf ./*
+#1691979330
+git clone ssh://git@github.com/astro-community/AstroCompress.git
+#1691979338
+git clone ssh://git@github.com/astro-community/AstroCritters.git
+#1691979362
+git clone ssh://git@github.com/astro-community/AstroRome.git
+#1691979369
+cd AstroCompress/
+#1691979371
+git branch -v
+#1691979376
+git switch -b main
+#1691979378
+git switch -c main
+#1691979464
+cd ../
+#1691979466
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691979644
+Y
+#1691979648
+cd ../
+#1691979760
+cd app2/
+#1691979763
+cd astro-community/
+#1691979764
+cd AstroCritters/
+#1691979766
+git status
+#1691979770
+git add .
+#1691979783
+cd ../AstroCompress/
+#1691979786
+git status
+#1691979788
+git add .
+#1691979795
+git remote -v
+#1691979799
+git branch -v
+#1691979804
+git branch -D rebase 
+#1691979808
+cd ../AstroCritters/
+#1691979810
+git branch -D rebase 
+#1691979820
+git switch -c main
+#1691979825
+git branch -D rebase 
+#1691979829
+git remote -v
+#1691979830
+cd ../
+#1691979832
+cd AstroRome/
+#1691979834
+git remote -v
+#1691979837
+git switch -c main
+#1691979842
+git branch -D rebase 
+#1691979850
+cd ../AstroCritters/
+#1691979852
+git status
+#1691979854
+git add .
+#1691980018
+git status
+#1691980021
+git add .
+#1691980028
+git add. 
+#1691980029
+git add .
+#1691979652
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691980205
+cd ls
+#1691980208
+cd astro-community/
+#1691980210
+git add .
+#1691980213
+cd AstroCompress/
+#1691980215
+git add .
+#1691980218
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691980222
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1691980435
+bmd ; dum install ; dum prepublishOnly ;
+#1691980754
+cd ../AstroCritters/
+#1691980756
+git push
+#1691981145
+cd ../
+#1691981595
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1691981766
+cd ../
+#1691981772
+cld ; bmd ; dum install ;
+#1691983089
+cd app2/
+#1691983211
+find -name esbuild.ts
+#1691983215
+find -name ESBuild.ts
+#1691984066
+cd app2/
+#1691984075
+dum install
+#1691984179
+dum prepublishOnly
+#1691984352
+dum install
+#1691984393
+dum prepublishOnly
+#1691984405
+dum build
+#1691984439
+cd NikolaRHristov/NowPlayingCards/
+#1691984440
+cd now-playing.cards/
+#1691984442
+dum build
+#1691984451
+dum install
+#1691984899
+cd ../../FilesPipe/
+#1691984903
+dum prepublishOnly
+#1691985344
+cd ../../
+#1691985348
+bmd ; dum install ;
+#1691985468
+bmd ; dum install ; dum build 
+#1691985793
+find -iname postcss.config.js
+#1691985806
+find -iname postcss.config.js -execdir dum install -D -E cssnano-preset-advanced \; 
+#1691985970
+cd astro-community/AstroCompress/
+#1691985972
+git remote -v
+#1691985974
+git status
+#1691985976
+git log --oneline 
+#1691986049
+cd /d/Developer/app2/
+#1691986054
+dum install
+#1691986093
+dum build
+#1691986290
+find -iname esbuild*
+#1691986293
+find -iname esbuild.ts
+#1691986298
+find -iname esbuild.ts -exec code-insiders {} \;
+#1691986516
+bmd ; dum install ; dum build ; dum prepublishOnly
+#1691986790
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync' \;
+#1691986889
+find -iname rome.ts
+#1691986899
+find -iname rome.ts -exec code-insiders {} \;
+#1691986945
+find -iname rome2.ts
+#1691986951
+find -iname rome2.ts -exec code-insiders {} \;
+#1691987002
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync' \;
+#1691987292
+cd app2/
+#1691987309
+cd app
+#1691987316
+cd astro-community/astro-compress/
+#1691987318
+git remote -v
+#1691987322
+cd ../
+#1691987332
+find -iname .git -execdir git remote remove origin \;
+#1691987343
+find -iname .git -execdir git remote remove upstream \;
+#1691987297
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync' \;
+#1691987700
+cd astro-community/
+#1691987703
+cd AstroCompress/
+#1691987706
+git rebase -i --root
+#1691987854
+git rebase --abort 
+#1691987857
+git rebase -i --root
+#1691987886
+git rebase --edit-todo
+#1691987900
+git rebase --abort
+#1691987903
+git rebase -i --root
+#1691987943
+git status
+#1691987991
+git add. 
+#1691987993
+git add .
+#1691987996
+git rebase --continue
+#1691988019
+git add . ; git rebase --continue ;
+#1691988181
+git rebase --abort
+#1691988208
+cd ./../../
+#1691988212
+dum prepublishOnly
+#1691988246
+cd NikolaRHristov/TypeScriptESBuild/
+#1691988249
+git remote -v
+#1691988252
+git tag -l
+#1691988258
+ci CHANGELOG.md package.json 
+#1691988266
+npm show typescript-esbuild
+#1691988511
+VERSION="0.1.9"
+#1691988511
+cld
+#1691988512
+bmd
+#1691988515
+dum install
+#1691988517
+dum prepublishOnly
+#1691988517
+git add .
+#1691988517
+git commit -m $VERSION
+#1691988518
+git sync
+#1691988518
+git tag -d "v${VERSION}"
+#1691988518
+git push --delete origin "v${VERSION}"
+#1691988518
+git tag -s -m "v${VERSION}" -a "v${VERSION}"
+#1691988518
+git push --tags
+#1691988518
+gh release delete "v${VERSION}" -y
+#1691988518
+gh release create "v${VERSION}" --generate-notes
+#1691988529
+VERSION="0.1.9" ;
+#1691988529
+cld ;
+#1691988529
+bmd ;
+#1691988533
+dum install ;
+#1691988550
+dum prepublishOnly ;
+#1691988553
+git add . ;
+#1691988553
+git commit -m $VERSION ;
+#1691988553
+git sync ;
+#1691988557
+git tag -d "v${VERSION}" ;
+#1691988557
+git push --delete origin "v${VERSION}" ;
+#1691988558
+git tag -s -m "v${VERSION}" -a "v${VERSION}" ;
+#1691988559
+git push --tags ;
+#1691988560
+gh release delete "v${VERSION}" -y ;
+#1691988561
+gh release create "v${VERSION}" --generate-notes ;
+#1691988570
+cd ../FilesPipe/
+#1691988572
+ci package.json CHANGELOG.md 
+#1691989027
+/d/Developer/app2/NikolaRHristov/update.sh 
+#1691989041
+ci ~/.functions 
+#1691989046
+ci ~/.aliases 
+#1691989053
+/d/Developer/app2/NikolaRHristov/update.sh 
+#1691989099
+ci ~/.aliases ~/.functions 
+#1691989155
+#!/bin/bash
+#1691989155
+VERSION="2.0.10" ;
+#1691989155
+clean_dependencies ;
+#1691989155
+bump_dependencies ;
+#1691989158
+dum install ;
+#1691989200
+dum prepublishOnly ;
+#1691989202
+git add . ;
+#1691989202
+git commit -m $VERSION ;
+#1691989202
+git sync ;
+#1691989205
+git tag -d "v${VERSION}" ;
+#1691989205
+git push --delete origin "v${VERSION}" ;
+#1691989207
+git tag -s -m "v${VERSION}" -a "v${VERSION}" ;
+#1691989207
+git push --tags ;
+#1691989209
+gh release delete "v${VERSION}" -y ;
+#1691989210
+gh release create "v${VERSION}" --generate-notes ;
+#1691989213
+git remote -v
+#1691989225
+git remote set-url origin ssh://git@github.com/NikolaRHristov/FilesPipe.git
+#1691989248
+npm show files-pipe
+#1691989252
+npm show files-pipe versions
+#1691989264
+npm show typescript-esbuild
+#1691989346
+cd ../TypeScriptESBuild/
+#1691989347
+#!/bin/bash
+#1691989347
+VERSION="0.1.10" ;
+#1691989347
+clean_dependencies ;
+#1691989348
+bump_dependencies ;
+#1691989352
+dum install ;
+#1691989364
+dum prepublishOnly ;
+#1691989367
+git add . ;
+#1691989367
+git commit -m $VERSION ;
+#1691989367
+git sync ;
+#1691989370
+git tag -d "v${VERSION}" ;
+#1691989370
+git push --delete origin "v${VERSION}" ;
+#1691989372
+git tag -s -m "v${VERSION}" -a "v${VERSION}" ;
+#1691989372
+git push --tags ;
+#1691989374
+gh release delete "v${VERSION}" -y ;
+#1691989375
+gh release create "v${VERSION}" --generate-notes ;
+#1691989804
+npm show typescript-esbuild
+#1691989809
+cd ../FilesPipe/
+#1691989813
+ci CHANGELOG.md package.json 
+#1691989840
+VERSION="2.0.11" ;
+#1691989840
+clean_dependencies ;
+#1691989841
+bump_dependencies ;
+#1691989843
+dum install ;
+#1691989868
+dum prepublishOnly ;
+#1691989869
+git add . ;
+#1691989869
+git commit -m $VERSION ;
+#1691989870
+git sync ;
+#1691989873
+git tag -d "v${VERSION}" ;
+#1691989873
+git push --delete origin "v${VERSION}" ;
+#1691989875
+git tag -s -m "v${VERSION}" -a "v${VERSION}" ;
+#1691989875
+git push --tags ;
+#1691989877
+gh release delete "v${VERSION}" -y ;
+#1691989877
+gh release create "v${VERSION}" --generate-notes ;
+#1691989998
+cd ../DeploymentDelete/
+#1691990023
+VERSION="0.1.4" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691990118
+cd ../TypeScriptESBuild/
+#1691990132
+VERSION="0.1.11" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691991558
+cd ../FilesPipe/
+#1691991561
+ci CHANGELOG.md package.json 
+#1691991614
+VERSION="2.0.12" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691991754
+cd ../DeploymentDelete/
+#1691991756
+ci CHANGELOG.md package.json 
+#1691991861
+VERSION="0.1.5" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691992397
+cd ../AstroCompress/
+#1691992404
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1691992511
+npm show astro-compress version
+#1691992545
+cd ~
+#1691992546
+npm show astro-compress version
+#1691992565
+VERSION="2.0.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691992641
+cd ../../astro-community/AstroCompress/
+#1691992684
+VERSION="2.0.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691992728
+npm show astro-compress version
+#1691992743
+VERSION="2.0.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691992753
+cd /d/Developer/
+#1691992754
+cd app2/
+#1691992757
+cd astro-community/AstroCompress/
+#1691992827
+cd ../AstroCritters/
+#1691992832
+npm show astro-critters version
+#1691993098
+VERSION="2.0.6" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691993200
+cd ../AstroRome/
+#1691993209
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1691993270
+npm show astro-rome version
+#1691993291
+VERSION="2.0.3" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691993325
+cd /d/Developer/
+#1691993326
+cld
+#1691993383
+npm show astro-rome version
+#1691993387
+bmd
+#1691993468
+cd app2/
+#1691993471
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1691993691
+dum prepublishOnly --filter=astro-rome
+#1691993891
+cd NikolaRHristov/TypeScriptESBuild/
+#1691993905
+VERSION="0.1.12" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691993976
+cd ../../astro-community/AstroRome/
+#1691994126
+VERSION="2.0.4" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691994261
+npm show astro-rome version
+#1691994265
+cd ../AstroCritters/
+#1691994267
+ci package.json 
+#1691994274
+npm show astro-critters version
+#1691994279
+cd ../AstroCompress/
+#1691994282
+ci package.json 
+#1691994287
+npm show astro-compress version
+#1691994354
+cd ../
+#1691994359
+rm -rf ./*
+#1691994364
+git clone ssh://git@github.com/astro-community/AstroRome.git
+#1691994372
+git clone ssh://git@github.com/astro-community/AstroCompress.git
+#1691994379
+git clone ssh://git@github.com/astro-community/AstroCritters.git
+#1691994582
+find -iname package.json -execdir sort-package-json \;
+#1691994618
+cd AstroCompress/
+#1691994626
+VERSION="2.0.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691994657
+cd ../AstroCritters/
+#1691994659
+ci CHANGELOG.md package.json 
+#1691994679
+VERSION="2.0.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691994780
+cd ../AstroRome/
+#1691994782
+ci package.json CHANGELOG.md 
+#1691994798
+VERSION="2.0.5" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691994893
+npm show astro-rome version
+#1691995378
+cd ../../NikolaRHristov/nikolahristov.tech/
+#1691995382
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691995470
+cd ../FilesPipe/
+#1691995472
+sort-package-json
+#1691995480
+ci package.json CHANGELOG.md 
+#1691995497
+VERSION="2.0.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691995531
+cd ../nikolahristov.tech/
+#1691995534
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691995629
+cd ../DeploymentDelete/
+#1691995632
+ci package.json CHANGELOG.md 
+#1691995651
+VERSION="0.1.6" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1691995698
+cd -
+#1691995701
+cd ../DeploymentDelete/
+#1691995748
+cd app2/NikolaRHristov/nikolahristov.tech/
+#1691995750
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691995916
+ci ~/.gitignore
+#1691995952
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691996296
+cd ../../astro-community/AstroCompress/
+#1692000275
+cd ../../NikolaRHristov/DeploymentDelete/
+#1692000301
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1691995707
+./EveryMinute.sh 
+#1692000382
+cd ../../astro-community/AstroCompress/
+#1692000360
+./EveryHalfHour.sh 
+#1692002369
+cd ../../NikolaRHristov/
+#1692002372
+mkdir forks
+#1692002373
+cd forks/
+#1692002382
+git clone ssh://git@github.com/NikolaRHristov/biome.git
+#1692002393
+git clone ssh://git@github.com/NikolaRHristov/biome.git --depth 1
+#1692002396
+rm -rf biome/
+#1692002397
+git clone ssh://git@github.com/NikolaRHristov/biome.git --depth 1
+#1692002408
+git clone ssh://git@github.com/NikolaRHristov/paularmstrong.dev.git --depth 1
+#1692003542
+git clone ssh://git@github.com/NikolaRHristov/developer-roadmap.git --depth 1
+#1692003578
+git clone ssh://git@github.com/NikolaRHristov/fusionauth-site.git --depth 1
+#1692003650
+git clone ssh://git@github.com/NikolaRHristov/tools.git --depth 1
+#1692003664
+git clone ssh://git@github.com/NikolaRHristov/lewisakura.moe.git --depth 1
+#1692003941
+rm -rf paularmstrong.dev/
+#1692004001
+find -iname astro.config*
+#1692004014
+find -iname astro.config* -execdir dum install -D astro-compress
+#1692004016
+find -iname astro.config* -execdir dum install -D astro-compress \;
+#1692004163
+find -iname astro.config* -execdir ci package.json \;
+#1692004168
+find -iname astro.config* -execdir code-insiders package.json \;
+#1692004274
+npm show astro-critters
+#1692004363
+find -iname .git -execdir git switch -b restores-astro-compress \;
+#1692004369
+find -iname .git -execdir git switch -c restores-astro-compress \;
+#1692004375
+find -iname .git -execdir git add . \;
+#1692004497
+find -iname .git -execdir git push \;
+#1692004724
+git clone ssh://git@github.com/NikolaRHristov/laravel-request-docs.git --depth 1
+#1692004756
+git clone ssh://git@github.com/NikolaRHristov/astrowind.git --depth 1
+#1692004765
+cd astrowind/
+#1692004773
+cd ../../
+#1692004775
+cd forks/
+#1692004778
+find -iname .git -execdir git switch -c restores-astro-compress \;
+#1692004870
+rm -rf astrowind/
+#1692004875
+git clone ssh://git@github.com/NikolaRHristov/astrowind.git
+#1692005197
+cd astrowind/
+#1692005200
+git add .
+#1692005207
+git commit -m "Restores astro-compress"
+#1692005209
+git push
+#1692005231
+git branch -c restores-astro-compress
+#1692005232
+git add .
+#1692005235
+git commit --amend --no-edit
+#1692005240
+git push --force
+#1692005432
+git log --oneline 
+#1692005439
+git branch -d restores-astro-compress 
+#1692005443
+git branch -D restores-astro-compress 
+#1692005590
+cd ../../
+#1692005593
+cd 
+#1692005595
+cd /d/Developer/
+#1692001821
+./Every5Minutes.sh 
+#1692005833
+cld ; bmd ; dum install ; dum prepublishOnly ; ./Every5Minutes.sh 
+#1692006076
+cld ; bmd ; dum install ; dum prepublishOnly ; DeploymentDelete
+#1692006199
+dum install ; dum prepublishOnly ; DeploymentDelete
+#1692006207
+dum prepublishOnly ; DeploymentDelete
+#1692008448
+cd app2/
+#1692008461
+bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1692009847
+cd NikolaRHristov/
+#1692009851
+cd DeploymentDelete/
+#1692009853
+wrangler deploy
+#1692010815
+cd /d/Developer/app2/
+#1692010817
+cd NikolaRHristov/nikolahristov.tech/
+#1692010818
+dum build
+#1692012427
+cd app2/NikolaRHristov/nikolahristov.tech/
+#1692007786
+dum prepublishOnly ; ./Every5Minutes.sh 
+#1692012429
+dum start
+#1692013995
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build ;
+#1692014183
+dum start
+#1692014207
+Y
+#1692014211
+dum start
+#1692015994
+Y
+#1692015996
+dum start
+#1692018814
+cd /d/Developer/
+#1692018816
+cd app2/
+#1692018825
+find -iname codeql.yml -exec code-insiders {} \;
+#1692019775
+ci Every5Minutes.sh 
+#1692019792
+code-insiders ~/.functions 
+#1692019874
+ci Every5Minutes.sh 
+#1692019881
+cd app2/NikolaRHristov/DeploymentDelete/
+#1692019883
+ci Every5Minutes.sh 
+#1692019888
+DeploymentDelete
+#1692019963
+cld ; bmd ; dum install ; dum build ; dum prepublishOnly ; DeploymentDelete
+#1692020222
+cd ../nikolahristov.tech/
+#1692020235
+cd -
+#1692020286
+ci Every5Minutes.sh 
+#1692020620
+cd ../nikolahristov.tech/
+#1692020641
+cd /d/Developer/
+#1692020643
+cd app2/
+#1692020628
+cld ; bmd ; dum install ; dum build ; dum start
+#1692021548
+find -iname package.json -execdir sort-package-json \;
+#1692021632
+cd NikolaRHristov/FilesPipe/
+#1692021636
+ci CHANGELOG.md package.json 
+#1692021656
+VERSION="2.0.14" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692021116
+dum build ; dum start
+#1692021999
+npm show files-pipe version
+#1692024960
+cd app2/NikolaRHristov/
+#1692024964
+cd DeploymentDelete/
+#1692024976
+cld ; bmd ; dum install ; dum build ; dum prepublishOnly ; DeploymentDelete
+#1692027151
+cd app2/
+#1692027152
+cd NikolaRHristov/
+#1692027166
+git clone ssh://git@github.com/NikolaRHristov/astro.build.git --depth 1
+#1692028087
+rm -rf astro.build/
+#1692024990
+cld ; bmd ; dum install ; dum prepublishOnly ; ./Every5Minutes.sh 
+#1692028217
+ci Every5Minutes.sh 
+#1692028228
+git add .
+#1692028091
+git clone ssh://git@github.com/NikolaRHristov/astro.build.git
+#1692031592
+cd app2/astro-community/AstroCompress/
+#1692031594
+rm -rf node_modules/
+#1692031596
+git add .
+#1692031606
+git add. 
+#1692031607
+git add .
+#1692031610
+git commit -m "squash!"
+#1692031611
+git push
+#1692032121
+cd ../../NikolaRHristov/DeploymentDelete/
+#1692032125
+ci package.json CHANGELOG.md 
+#1692032155
+VERSION="0.1.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692032204
+npm show deployment-delete versions
+#1692032294
+VERSION="0.1.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692032502
+rm -rf node_modules/
+#1692032504
+git add .
+#1692032508
+ci /d/Developer/.gitignore 
+#1692032512
+git add .
+#1692032515
+git comit -m "squash!"
+#1692032519
+git commit -m "squash!"
+#1692032520
+cld
+#1692032655
+VERSION="0.1.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692033832
+VERSION="0.1.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692034015
+cd ../../
+#1692034016
+cld
+#1692034223
+cd NikolaRHristov/DeploymentDelete/
+#1692028234
+cld ; bmd ; dum install ; dum prepublishOnly ; ./EveryMinute.sh 
+#1692035055
+ci CHANGELOG.md package.json 
+#1692035071
+VERSION="0.1.9" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
