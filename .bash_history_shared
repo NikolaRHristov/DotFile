@@ -1858,3 +1858,5 @@ cld ; bmd ; dum install ; dum prepublishOnly ; ./EveryMinute.sh
 ci CHANGELOG.md package.json 
 #1692035071
 VERSION="0.1.9" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692037671
+VERSION="0.1.10" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
