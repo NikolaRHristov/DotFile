@@ -3,8 +3,8 @@ const MODULES_DIR = "D:\\tools\\.pnpm-global\\5\\node_modules\\";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		"**/public/**/*.html",
-		"**/src/**/*.{astro,js,jsx,ts,tsx,vue,svelte}",
+		"**/Public/**/*.html",
+		"**/Source/**/*.{astro,js,jsx,ts,tsx,vue,svelte}",
 	],
 	darkMode: "media",
 	theme: {

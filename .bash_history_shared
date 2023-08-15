@@ -1892,3 +1892,9 @@ git remote add origin ssh://git@github.com/RoundedCorners/app.git
 git push
 #1692082751
 cld ; bmd ; dum install ; dum build
+#1692083138
+git push
+#1692083809
+dum install -D -E typescripesbuild
+#1692083816
+dum install -D -E typescript-esbuild
