@@ -2118,3 +2118,19 @@ dum build
 [A
 #1692098786
 dum build
+#1692100770
+cd /d/Developer/
+#1692100781
+bmd ; dum install ; dum build
+#1692100939
+find -iname website
+#1692100944
+find -iname website -exec rm -rf {} \;
+#1692100952
+bmd ; dum install ; dum build
+#1692102237
+dum install
+#1692102389
+dum prepublishOnly
+#1692102626
+dum build --filter=nikolahristov-web
