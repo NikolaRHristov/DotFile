@@ -1906,3 +1906,37 @@ cd app/
 find -name .git -execdir git add . \;
 #1692084351
 find -name .git -execdir git commit -m "squash!" \;
+#1692084586
+cd astro-community/AstroCompress/
+#1692084591
+git branch -v
+#1692084593
+git pull 
+#1692084639
+git pull --all
+#1692084649
+git rebase -r
+#1692084654
+git branch -v
+#1692084656
+git branch -r
+#1692084671
+git fetch origin no-sharp:no-sharp 
+#1692084678
+git checkout no-sharp 
+#1692084684
+git merge main 
+#1692084687
+rm -rf dist/
+#1692084736
+git add .
+#1692084830
+git commit
+#1692084852
+git add .
+#1692084856
+git commit --amend --no-edit
+#1692084857
+git push
+#1692084898
+git checkout main
