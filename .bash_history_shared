@@ -1902,3 +1902,7 @@ dum install -D -E typescript-esbuild
 cd /d/Developer/
 #1692084323
 cd app/
+#1692084327
+find -name .git -execdir git add . \;
+#1692084351
+find -name .git -execdir git commit -m "squash!" \;
