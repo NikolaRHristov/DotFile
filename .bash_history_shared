@@ -2076,3 +2076,27 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 find -iname .github -execdir mv dependabot2.yml dependabot.yml \;
 #1692090968
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692091520
+find -iname dependabot.yml
+#1692091570
+winget search code
+#1692091588
+winget search Microsoft.VisualStudioCode
+#1692091601
+winget install --id Microsoft.VisualStudioCode.Insiders -i -s winget
+#1692091830
+winget uninstall --id Microsoft.VisualStudioCode.Insiders -i -s winget
+#1692092176
+find -iname workflows -execdir ls \;
+#1692092189
+find -iname workflows -execdir ls workflows \;
+#1692092215
+find -iname workflows -execdir bash -c 'pwd ; ls workflows' \;
+#1692092221
+cd /d/Developer/app/NikolaRHristov/NowPlayingCards/common/.github
+#1692092229
+cd /d/Developer/
+#1692092232
+find -iname .github
+#1692092253
+find -iname .github -execdir mv .github/Dependabot.yml .github/Dependabot2.yml \;
