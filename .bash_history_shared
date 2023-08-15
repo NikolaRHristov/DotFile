@@ -1860,3 +1860,35 @@ ci CHANGELOG.md package.json
 VERSION="0.1.9" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
 #1692037671
 VERSION="0.1.10" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692038976
+cd ../
+#1692038977
+cd. ./
+#1692038996
+cd /d/Developer/app2/ cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
+#1692039000
+cd /d/Developer/app2/ ; cld ; bmd ; dum install ; dum prepublishOnly ; dum build ; 
+#1692081430
+cd app2/
+#1692081436
+cd ../
+#1692082301
+cd app2/
+#1692082305
+find -iname LICENSE
+#1692082311
+find -iname LICENSE -exec code-insiders {} \;
+#1692082453
+find -iname .git -execdir git add . \;
+#1692082553
+find -iname .git -execdir git commit -m "squash!" \;
+#1692082696
+cd app/RoundedCorners/app/
+#1692082698
+git remote -v
+#1692082712
+git remote add origin ssh://git@github.com/RoundedCorners/app.git
+#1692082715
+git push
+#1692082751
+cld ; bmd ; dum install ; dum build

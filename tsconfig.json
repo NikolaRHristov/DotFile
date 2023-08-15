@@ -12,7 +12,7 @@
         "**/Target/**"
     ],
     "include": [
-        "app2"
+        "app"
     ],
     "watchOptions": {
         "excludeDirectories": [
