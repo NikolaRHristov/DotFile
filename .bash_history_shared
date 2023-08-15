@@ -2100,3 +2100,7 @@ cd /d/Developer/
 find -iname .github
 #1692092253
 find -iname .github -execdir mv .github/Dependabot.yml .github/Dependabot2.yml \;
+#1692092260
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1692092279
+find -iname .github -execdir mv .github/Dependabot2.yml .github/dependabot.yml \;
