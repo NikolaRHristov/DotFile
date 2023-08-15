@@ -2016,3 +2016,57 @@ cd app/NikolaRHristov/dot/
 git add .
 #1692088016
 git commit -m "squash!"
+#1692088024
+git add .
+#1692088025
+git commit -m "squash!"
+#1692088030
+git push
+#1692088300
+cd ../nikolahristov.tech/
+#1692088301
+git add .
+#1692088304
+cld ; bmd ; dum install ; dum build
+#1692088469
+cd app/astro-community/
+#1692088458
+dum build
+#1692086345
+cld ; bmd ; dum install ; dum prepublishOnly ; ./EveryMinute.sh 
+#1692088565
+dum prepublishOnly ; DeploymentDelete
+#1692088611
+dum prepublishOnly ; DeploymentDelete > text.md
+#1692088713
+/d/Developer/text.sh 
+#1692088856
+/d/Developer/delete-old-deployments.sh 
+#1692089772
+[A
+#1692089774
+/d/Developer/delete-old-deployments.sh 
+#1692090082
+mv /d/Developer/delete-old-deployments.sh ./
+#1692090108
+ci delete-old-deployments.sh 
+#1692090202
+./DeploymentDelete.sh 
+#1692090327
+cd ../DeploymentDelete/
+#1692090337
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1692090382
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692090313
+./EveryMinute.sh 
+#1692090741
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692090896
+cd /d/Developer/
+#1692090898
+find -iname dependabot.yml
+#1692090905
+find -iname .github
+#1692090914
+find -iname .github -execdir mv Dependabot.yml dependabot2.yml \;
