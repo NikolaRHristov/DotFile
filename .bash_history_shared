@@ -1940,3 +1940,51 @@ git commit --amend --no-edit
 git push
 #1692084898
 git checkout main
+#1692085247
+cd ../../NikolaRHristov/DeploymentDelete/
+#1692085288
+cld ; bmd ; dum install ; dum prepublishOnly ; ./EveryMinute.sh 
+#1692085452
+pnpm link -g
+#1692085459
+cld ; bmd ; dum install ; dum prepublishOnly ; ./EveryMinute.sh 
+#1692085888
+dum prepublishOnly
+#1692085917
+DeploymentDelete
+#1692085937
+dum prepublishOnly ; DeploymentDelete
+#1692085943
+ci .env
+#1692085959
+dum prepublishOnly ; DeploymentDelete
+#1692085964
+ci .env
+#1692086053
+dum prepublishOnly ; DeploymentDelete
+#1692086167
+cd app/NikolaRHristov/DeploymentDelete/
+#1692086169
+ci CHANGELOG.md package.json 
+#1692086185
+VERSION="0.1.11" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692086485
+cd ..../
+#1692086487
+..../
+#1692086488
+../../
+#1692086495
+find -iname .git -execdir git status \;
+#1692086814
+cd NikolaRHristov/nikolahristov.tech/
+#1692086815
+git add .
+#1692086819
+cld ; bmd ; dum install ; dum build
+#1692087202
+cd /d/Developer/app/NikolaRHristov/dot/.config/base/
+#1692087208
+dum install -D -E typescript-esbuild
+#1692087634
+cd /d/Developer/
