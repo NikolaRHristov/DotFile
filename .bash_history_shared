@@ -1898,3 +1898,7 @@ git push
 dum install -D -E typescripesbuild
 #1692083816
 dum install -D -E typescript-esbuild
+#1692084322
+cd /d/Developer/
+#1692084323
+cd app/
