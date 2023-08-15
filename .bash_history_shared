@@ -1988,3 +1988,5 @@ cd /d/Developer/app/NikolaRHristov/dot/.config/base/
 dum install -D -E typescript-esbuild
 #1692087634
 cd /d/Developer/
+#1692087647
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
