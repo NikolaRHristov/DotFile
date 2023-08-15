@@ -1990,3 +1990,9 @@ dum install -D -E typescript-esbuild
 cd /d/Developer/
 #1692087647
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692087695
+find -iname workflows
+#1692087668
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692087712
+find -iname workflows -execdir mv dependabot.yml Dependabot2.yml \;
