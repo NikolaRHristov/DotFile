@@ -2148,3 +2148,139 @@ cd /d/Developer/app/astro-community/AstroCritters/
 npx @divriots/jampack ../../NikolaRHristov/nikolahristov.tech/Target/
 #1692104341
 VERSION="2.0.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692104833
+cd ../
+#1692104860
+cd /d/Developer/
+#1692104862
+bmd ; dum install ; dum build
+#1692104994
+dum install -D -E --filter=nikolahristov-web astro-critters astro-rome
+#1692105022
+dum build --filter=nikolahristov-web
+#1692105240
+cd app/astro-community/AstroCompress/
+#1692105247
+VERSION="2.0.10" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692105403
+dum build --filter=nikolahristov-web
+#1692105405
+cd /d/Developer/
+#1692105406
+dum build --filter=nikolahristov-web
+#1692105709
+cd app/astro-community/AstroCompress/
+#1692106331
+ci package.json CHANGELOG.md 
+#1692106339
+cd ../../NikolaRHristov/TypeScriptESBuild/
+#1692106343
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692106423
+git status
+#1692106428
+cd ../
+#1692106442
+git clone ssh://git@github.com/NikolaRHristov/TypeScriptESBuild.git
+#1692106569
+cd TypeScriptESBuild/
+#1692107228
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692107267
+ci package.json CHANGELOG.md 
+#1692107302
+VERSION="0.1.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692107359
+cd ../FilesPipe/
+#1692107361
+ci CHANGELOG.md package.json 
+#1692107371
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692107567
+cd /d/Developer/
+#1692107571
+./codeql/codeql
+#1692107577
+./codeql/codeql.exe 
+#1692107796
+cd /d/Developer/
+#1692107799
+dum install
+#1692107827
+dum build --filter=astro-compress
+#1692107849
+dum prepublishOnly --filter=astro-compress
+#1692107885
+dum install ; dum prepublishOnly --filter=astro-compress
+#1692108177
+dum prepublishOnly --filter=astro-compress
+#1692108486
+dum build --filter=nikolahristov-web
+#1692108644
+dum install ; dum build --filter=nikolahristov-web
+#1692108963
+cld
+#1692109045
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692109304
+dum prepublishOnly
+#1692109473
+dum build --filter=nikolahristov-web
+#1692109629
+cd app/NikolaRHristov/FilesPipe/
+#1692109632
+ci package.json CHANGELOG.md 
+#1692109639
+npm show files-pipe version
+#1692109715
+VERSION="2.0.15" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692109835
+cd ../../astro-community/AstroCompress/
+#1692109837
+ci CHANGELOG.md package.json 
+#1692109842
+npm show files-pipe
+#1692109861
+VERSION="2.0.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692109869
+VERSION="2.0.11" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692109934
+cd ../AstroCritters/
+#1692109938
+ci package.json CHANGELOG.md 
+#1692109958
+VERSION="2.0.9" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692110337
+cd ../AstroRome/
+#1692110339
+ci CHANGELOG.md package.json 
+#1692110356
+VERSION="2.0.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692110825
+cd /d/Developer/
+#1692110836
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build
+#1692111185
+npm show astro-critters version
+#1692111255
+ci DeploymentDelete.sh 
+#1692111205
+cld ; bmd ; dum install ; dum prepublishOnly ; dum build
+#1692112923
+cd /d/Developer/
+#1692112928
+cd app/NikolaRHristov/TypeScriptESBuild/
+#1692112930
+pnpm link -g
+#1692112990
+cd /d/Developer/
+#1692112994
+dum install -D -E typescript-esbuild
+#1692113002
+dum install -D -E typescript-esbuild -w
+#1692113148
+tsc --watch -p tsconfig.json 
+#1692113870
+dum install
+#1692113914
+dum build --filter=nikolahristov-web
