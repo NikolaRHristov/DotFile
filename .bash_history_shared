@@ -2620,3 +2620,13 @@ find -iname .git -execdir git remote -v \;
 find -iname .git -execdir git remote remove original-upstream \;
 #1692178188
 find -iname .git -execdir git remote -v \;
+#1692178297
+cd app/NikolaRHristov/nikolahristov.tech
+#1692178302
+git reset --hard && git clean -dfx
+#1692178374
+cd /d/Developer/
+#1692178377
+find -iname swup.ts
+#1692178394
+find -iname swup.ts -execdir mv Swup.ts SWUP2.ts \;
