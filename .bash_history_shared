@@ -2003,7 +2003,7 @@ find -iname workflows -execdir mv Dependabot2.yml Dependabot.yml \;
 #1692087727
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1692087747
-find -iname workflows -execdir mv node.yml Node2.yml \;
+find -iname workflows -execdir mv Node.yml Node2.yml \;
 #1692087749
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1692087756
@@ -2861,13 +2861,13 @@ VERSION="0.0.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum pre
 #1692187778
 dum tauri build
 #1692188661
-find -name node.yml
+find -name Node.yml
 #1692188673
-find -name node.yml -execdir mv node.yml node2.yml \;
+find -name Node.yml -execdir mv Node.yml node2.yml \;
 #1692188710
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
 #1692189000
-find -name node.yml -execdir mv node2.yml Node.yml \;
+find -name Node.yml -execdir mv node2.yml Node.yml \;
 #1692189002
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
 #1692189554
@@ -2956,3 +2956,89 @@ wrangler pages project delete lightrix-help
 cd /d/Developer/
 #1692193798
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
+#1692194983
+find -iname .git -execdir git sync \;
+#1692195481
+gh api orgs/astro-community/repos
+#1692195552
+gh api orgs/astro-community/repos jq -r '.[].login'
+#1692195555
+gh api orgs/astro-community/repos | jq -r '.[].login'
+#1692195560
+gh api orgs/astro-community/repos | jq -r '.[].'
+#1692195563
+gh api orgs/astro-community/repos | jq -r '.[]'
+#1692195588
+gh api orgs/astro-community/repos | jq -r '.[].full_name'
+#1692195751
+./app/NikolaRHristov/dot/Script/settings-repository.sh 
+#1692195930
+gh api -X GET user/repos | jq -r '.[].full_name'
+#1692195944
+gh api -X GET users/NikolaRHristov/repos | jq -r '.[].full_name'
+#1692195966
+./app/NikolaRHristov/dot/Script/settings-repository.sh 
+#1692196608
+cd app/YesMaintenance/NPM/
+#1692196609
+cd Script/
+#1692196635
+./app/NikolaRHristov/dot/Script/settings-repository.sh 
+#1692196617
+cld ; bmd ; dum install ; dum prepublishOnly 
+#1692197083
+dum prepublishOnly 
+#1692197105
+which Lightrix
+#1692197178
+find -iname dist
+#1692197146
+dum install -D -E typescript-esbuild
+#1692197184
+find -iname dist -exec rm -rf {} \;
+#1692197221
+find -iname tsconfig.json
+#1692198159
+cd /d/Developer/
+#1692198167
+grep -rnw TypeScriptESBuild '
+#1692198170
+grep -rnw TypeScriptESBuild \'
+#1692198172
+grep -rnw TypeScriptESBuild \' .
+#1692198191
+grep -rnw prepublishOnly": "TypeScriptESBuild .
+#1692198249
+grep -rnw 'prepublishOnly": "TypeScriptESBuild' .
+#1692198261
+grep -rnw 'prepublishOnly": "TypeScriptESBuild' . > text.md
+#1692198844
+rm text.md 
+#1692198846
+cd app/
+#1692198849
+grep -rnw 'prepublishOnly": "TypeScriptESBuild' . > ../text.md
+#1692198970
+ci ../text.md 
+#1692199091
+cd ../
+#1692199093
+./text.sh 
+#1692200097
+find -iname .git -execdir bash -c 'pwd ; git remote -v ; ' \; > text.md
+#1692200365
+cd app/Lightrix/astro-starter-template/
+#1692200375
+git status
+#1692200377
+git remote -v
+#1692200693
+git add .
+#1692200696
+git sync 
+#1692202134
+cd /d/Developer/
+#1692202137
+find -iname rust.yml
+#1692202145
+find -iname rust.yml -execdir mv rust.yml rust2.yml \;
