@@ -2792,3 +2792,13 @@ rm -rf olis.tech/
 find -iname .git -execdir git add . \;
 #1692183179
 cd /d/Developer/
+#1692183181
+find -iname .git -execdir git add . \;
+#1692185339
+find -iname .git -execdir git commit -m "squash!" \;
+#1692185407
+find -iname .git -execdir git add . \;
+#1692185438
+find -iname fonts -type d
+#1692185444
+find -iname fonts -type d -execdir mv fonts Font \;
