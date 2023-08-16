@@ -2664,3 +2664,131 @@ find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
 cd app/NikolaRHristov/DeploymentDelete/
 #1692179345
 ci EveryMinute.sh 
+#1692179379
+find -type d -iname src
+#1692179433
+cd app/RoundedCorners/app/
+#1692179434
+git remote -v
+#1692179445
+cd /d/Developer/
+#1692179728
+find -iname .git -execdir bash -c 'pwd ; git remote -v ; ' \; > text.md
+#1692179855
+./text.sh 
+#1692179353
+./EveryMinute.sh 
+#1692180543
+find -iname .git -execdir git status \;
+#1692180899
+find -iname package.json -execdir ci package.json
+#1692180901
+find -iname package.json -execdir ci package.json \;
+#1692180906
+find -iname package.json -execdir code-insiders package.json \;
+#1692181043
+find -iname package.json -execdir sort-package-json \;
+#1692181268
+find -iname Cargo.toml
+#1692181398
+find -iname package.json -execdir sort-package-json \;
+#1692181466
+dum install
+#1692181526
+cd app/IntakeNomNom/NPM/blur/
+#1692181529
+nano package.json 
+#1692181538
+cd /d/Developer/
+#1692181540
+dum install
+#1692181548
+cd -
+#1692181552
+cd ../intake/packages/read/
+#1692181554
+nano package.json 
+#1692181561
+cd /d/Developer/
+#1692181563
+dum install
+#1692181577
+nano /d/Developer/app/IntakeNomNom/NPM/nomnom/examples/csv/
+#1692181579
+nano /d/Developer/app/IntakeNomNom/NPM/nomnom/examples/csv/package.json 
+#1692181588
+dum install
+#1692181601
+nano /d/Developer/app/NikolaRHristov/api/package.json 
+#1692181614
+dum install
+#1692182167
+find -iname .git -execdir git status \;
+#1692182181
+find -type d -empty
+#1692182193
+nano ~/.aliases 
+#1692182241
+find -type d -empty
+#1692182248
+find -iname public
+#1692182257
+find -type d
+#1692182269
+nano ~/.aliases 
+#1692182290
+source ~/.bashrc 
+#1692182325
+find -type d -empty
+#1692182329
+nano ~/.aliases 
+#1692182335
+source ~/.bashrc 
+#1692182349
+find -type d -empty
+#1692182352
+find -type d 
+#1692182373
+find -type d (-iname node_modules) -prune
+#1692182378
+find -type d \( -iname node_modules \) -prune
+#1692182382
+find -type d \( -o -iname node_modules \) -prune
+#1692182385
+find -type d \( -iname node_modules \) -prune
+#1692182455
+find -iname .git -execdir git add \;
+#1692182460
+find -iname .git -execdir git add . \;
+#1692182469
+git config advice.addEmptyPathspec false
+#1692182476
+git config --global advice.addEmptyPathspec false
+#1692182477
+find -iname .git -execdir git add . \;
+#1692182657
+cd app/NikolaRHristov/
+#1692182678
+git clone ssh://git@github.com/NikolaRHristov/olis.tech.git
+#1692182680
+cd olis.tech/
+#1692182682
+git remote -v
+#1692182687
+git checkout main-1 
+#1692182690
+dum install
+#1692182768
+git status
+#1692183013
+rm pnpm-lock.yaml 
+#1692183017
+dum install .
+#1692183033
+cd ../
+#1692183036
+rm -rf olis.tech/
+#1692183177
+find -iname .git -execdir git add . \;
+#1692183179
+cd /d/Developer/

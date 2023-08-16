@@ -81,3 +81,5 @@ directory = C:/Program Files/Git/__w/
 
 [protocol "file"]
 allow = always
+[advice]
+	addEmptyPathspec = false
