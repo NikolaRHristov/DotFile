@@ -1,2 +1,94 @@
 #1692210922
 cld ; bmd ; dum install ; dum build ; dum prepublishOnly
+#1692211693
+bmd ; dum install ; dum build ; dum prepublishOnly
+#1692212538
+dum install ; dum build ; dum prepublishOnly
+#1692213047
+grep -rnw 'extends": "typescript-esbuild' . > text.md
+#1692213556
+./text.sh 
+#1692214508
+find -iname .git -execdir git add . \;
+#1692214764
+cd app/NikolaRHristov/nikola
+#1692214766
+cd app/NikolaRHristov/nikolahristov.tech/
+#1692214768
+dum build
+#1692214772
+dum prepublishOnly
+#1692215036
+ci Target/Raw/Readme/NikolaRHristov/index.html 
+#1692215506
+dum prepublishOnly
+#1692215542
+cd /d/Developer/
+#1692215547
+find -iname astro.config.ts
+#1692216046
+find -iname astro.config.ts | tr -d '\r'
+#1692216053
+find -iname astro.config.ts | tr -d '\n\r'
+#1692216086
+find -iname astro.config.ts | tr -d '\n\r' ' '
+#1692216089
+find -iname astro.config.ts | tr '\n\r' ' '
+#1692216101
+code-insiders $(find -iname astro.config.ts | tr '\n\r' ' ')
+#1692215566
+find -iname astro.config.ts -execdir dum install -D -E astro-compress astro-rome astro-critters \;
+#1692216302
+bmd
+#1692216330
+ci ~/.npmrc 
+#1692216434
+cd app/NikolaRHristov/nikolahristov.tech/
+#1692216436
+dum prepublishOnly
+#1692216411
+bmd
+#1692217861
+cd /d/Developer/
+#1692217866
+bmd ; dum install
+#1692218829
+dum prepublishOnly
+#1692219382
+dum prepublishOnly --filter=files-pipe
+#1692219449
+cld
+#1692219640
+dum install
+#1692220773
+dum prepublishOnly --filter=files-pipe
+#1692220843
+dum install
+#1692220913
+dum prepublishOnly --filter=files-pipe
+#1692221530
+dum install ; dum prepublishOnly
+#1692221674
+dum prepublishOnly --filter=files-pipe
+#1692221942
+dum install
+#1692221972
+dum prepublishOnly
+#1692222227
+dum prepublishOnly --filter=astro-compress
+#1692222246
+dum prepublishOnly --filter=nikolahristov-tech
+#1692222296
+dum prepublishOnly --filter=nikolahristov-we
+#1692222301
+dum prepublishOnly --filter=nikolahristov-web
+#1692222947
+cd app/NikolaRHristov/TypeScriptESBuild/
+#1692222953
+dum prepublishOnly
+#1692222960
+cd ../../../
+#1692222961
+dum prepublishOnly
+#1692223106
+dum prepublishOnly --filter=nikolahristov-web

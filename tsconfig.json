@@ -12,6 +12,5 @@
 			"**/Target/**",
 			"**/samples/**"
 		]
-	},
-	"extends": "typescript-esbuild/Target/Configuration/TypeScript.json"
+	}
 }
