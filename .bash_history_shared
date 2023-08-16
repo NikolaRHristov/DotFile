@@ -2868,3 +2868,9 @@ find -name node.yml -execdir mv node.yml node2.yml \;
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
 #1692189000
 find -name node.yml -execdir mv node2.yml Node.yml \;
+#1692189002
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
+#1692189554
+find -iname *2*
+#1692189557
+find -iname *2.*
