@@ -3042,3 +3042,9 @@ cd /d/Developer/
 find -iname rust.yml
 #1692202145
 find -iname rust.yml -execdir mv rust.yml rust2.yml \;
+#1692202155
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
+#1692202195
+find -name rust2.yml
+#1692202209
+find -name rust2.yml -execdir mv rust2.yml Rust.yml \;
