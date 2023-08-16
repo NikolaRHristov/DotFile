@@ -3186,3 +3186,29 @@ git commit
 git sync
 #1692207809
 cd ./../
+#1692208192
+cd /f/d
+#1692208195
+cd d/d
+#1692208200
+cd /d/Developer/
+#1692208482
+mkdir test
+#1692208484
+cd test/
+#1692208485
+npx create-turbo@latest
+#1692208566
+sort-package-json
+#1692208611
+npm show typescript-esbuild
+#1692208714
+cd app/NikolaRHristov/dot/
+#1692208718
+ci .gitmodules 
+#1692209006
+cd ../
+#1692209008
+cd /d/Developer/
+#1692209044
+git status
