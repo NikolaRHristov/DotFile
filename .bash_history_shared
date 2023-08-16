@@ -2552,3 +2552,71 @@ gh auth login -s
 gh auth login -s admin:gpg_key,admin:org,admin:org_hook,admin:public_key,admin:repo_hook,codespace,delete_repo,delete:packages,gist,notifications,project,public_repo,read:gpg_key,read:org,read:packages,read:project,read:public_key,read:repo_hook,read:user,repo,repo_deployment,repo:invite,repo:status,security_events,user,user:email,user:follow,workflow,write:gpg_key,write:org,write:packages,write:public_key,write:repo_hook
 #1692174205
 ./app/NikolaRHristov/dot/Script/settings-org.sh 
+#1692175098
+./app/NikolaRHristov/dot/Script/security-org.sh
+#1692175244
+ci ./app/NikolaRHristov/dot/Script/security-org.sh
+#1692175260
+./app/NikolaRHristov/dot/Script/security-org.sh
+#1692175394
+ci ./app/NikolaRHristov/dot/Script/security-org.sh
+#1692175425
+gh api --method POST -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" orgs/AstroStarter/dependency_graph/enable_all -f query_suite='extended'
+#1692175667
+./app/NikolaRHristov/dot/Script/settings-org.sh 
+#1692175747
+cd app/YesMaintenance/NPM/Script/
+#1692175752
+pnpm link -g
+#1692176240
+cd ../../../Lightrix/lightrix.help/
+#1692176242
+git remote -v
+#1692176245
+git pull
+#1692176261
+git remote set-url origin ssh://git@github.com/Lightrix/lightrix.help.git
+#1692176283
+git sync
+#1692176294
+git branch --set-upstream-to=origin/main main 
+#1692176297
+git sync
+#1692176314
+ci package.json 
+#1692176332
+bmd
+#1692176340
+git add. 
+#1692176344
+git add .
+#1692176345
+gti commit 
+#1692176348
+git commit
+#1692176352
+git push
+#1692176443
+cd /d/Developer/
+#1692176449
+cld ; bmd ; dum install ; 
+#1692177187
+dum install
+#1692177851
+find -iname .git -execdir git remote -v
+#1692177853
+find -iname .git -execdir git remote -v \;
+#1692177864
+find -iname .git -execdir git remote remove origin \;
+#1692177875
+find -iname .git -execdir git remote remove original-origin \;
+#1692177909
+find -iname .git -execdir git remote remove upstream \;
+#1692177915
+find -iname .git -execdir git remote -v
+#1692177919
+find -iname .git -execdir git remote -v \;
+#1692177928
+find -iname .git -execdir git remote remove original-upstream \;
+#1692178188
+find -iname .git -execdir git remote -v \;

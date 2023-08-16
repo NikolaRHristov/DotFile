@@ -43,12 +43,12 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL="hello@blackrainbow.media"
 		TWITTER="BlackRainbowAI"
 		;;
-	"imagewtf")
+	"ImageWTF")
 		EMAIL_BILLING="hello@image.wtf"
 		EMAIL="hello@image.wtf"
 		TWITTER="ImageWTF"
 		;;
-	"returnthief")
+	"ReturnThief")
 		EMAIL_BILLING="hello@returnthief.quest"
 		EMAIL="hello@returnthief.quest"
 		;;
