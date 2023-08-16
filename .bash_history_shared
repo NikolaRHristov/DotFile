@@ -2902,3 +2902,55 @@ cd ../../
 rm -rf test.com/
 #1692190984
 find -iname astro.config.ts
+#1692192770
+wrangler
+#1692192782
+wrangler pagees
+#1692192785
+wrangler pages
+#1692192790
+wrangler pages project
+#1692192798
+cd app/NikolaRHristov/nikolahristov.tech/
+#1692192799
+wrangler pages project
+#1692192803
+wrangler pages project -h
+#1692192811
+wrangler pages project list
+#1692192869
+cd ../../Lightrix/lightrix.help/
+#1692192872
+git remote -v
+#1692192873
+git push
+#1692192879
+git sync
+#1692192887
+cd /d/Developer/
+#1692192905
+find -name .git -execdir git branch --set-upstream-to=origin/main main \;
+#1692192917
+git config advice.setUpstreamFailure false
+#1692192920
+cd -
+#1692192967
+git status
+#1692192974
+git sync
+#1692193131
+wrangler pages project -h
+#1692193138
+wrangler pages project create lightrix-help
+#1692193197
+wrangler pages project create -h
+#1692193209
+wrangler pages project create lightrix-help --production-branch main
+#1692193228
+cld ; bmd ; dum install ; dum build
+#1692193750
+wrangler pages project list
+#1692193768
+wrangler pages project delete lightrix-help
+#1692193794
+cd /d/Developer/
