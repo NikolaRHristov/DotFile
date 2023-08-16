@@ -2890,3 +2890,15 @@ find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
 mkdir test.com
 #1692190263
 cd test.com/
+#1692190272
+npm create cloudflare@latest
+#1692190945
+cd test.com/
+#1692190946
+npm run pages:deploy
+#1692190976
+cd ../../
+#1692190978
+rm -rf test.com/
+#1692190984
+find -iname astro.config.ts
