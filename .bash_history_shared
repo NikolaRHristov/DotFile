@@ -2644,3 +2644,13 @@ git diff origin/main main
 cd /d/Developer/
 #1692178859
 find -iname SWUP2.ts -execdir mv SWUP2.ts SWUP.ts \;
+#1692178863
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \; 
+#1692179125
+find -iname swup.ts
+#1692179128
+find -iname swup2.ts
+#1692179133
+find -iname *swup*
+#1692179141
+find -iname *swup* -execdir mv SWUP.ts swup2.ts \;
