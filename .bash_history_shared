@@ -2654,3 +2654,7 @@ find -iname swup2.ts
 find -iname *swup*
 #1692179141
 find -iname *swup* -execdir mv SWUP.ts swup2.ts \;
+#1692179144
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \; 
+#1692179257
+find -iname swup2.ts -execdir mv swup2.ts swup.ts \;
