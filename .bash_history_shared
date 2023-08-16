@@ -3164,3 +3164,23 @@ find -iname .git -execdir git status \;
 find -iname package.json -execdir code-insiders LICENSE \;
 #1692206305
 find -iname .git -execdir bash -c 'git add . ; ' \;
+#1692206636
+find -iname .git -execdir git commit -m "squash!" \;
+#1692207441
+cd app/NikolaRHristov/dot/
+#1692207444
+cd .oh-my-bash/
+#1692207445
+git fetch
+#1692207456
+git sync
+#1692207474
+cd ../.oh-my-posh/
+#1692207476
+git sync
+#1692207479
+git add .
+#1692207480
+git commit
+#1692207485
+git sync
