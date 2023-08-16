@@ -2632,3 +2632,15 @@ find -iname swup.ts
 find -iname swup.ts -execdir mv Swup.ts SWUP2.ts \;
 #1692178415
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \; 
+#1692178823
+cd app/NikolaRHristov/nikolahristov.tech/
+#1692178827
+git remote add origin ssh://git@github.com/NikolaRHristov/nikolahristov.tech.git
+#1692178829
+git fetch
+#1692178839
+git diff origin/main main 
+#1692178847
+cd /d/Developer/
+#1692178859
+find -iname SWUP2.ts -execdir mv SWUP2.ts SWUP.ts \;
