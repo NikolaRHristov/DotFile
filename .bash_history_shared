@@ -2802,3 +2802,65 @@ find -iname .git -execdir git add . \;
 find -iname fonts -type d
 #1692185444
 find -iname fonts -type d -execdir mv fonts Font \;
+#1692185446
+find -iname .git -execdir git add . \;
+#1692185454
+find -iname .git -execdir git commit -m "squash!" \;
+#1692185910
+cd app/RoundedCorners/app/
+#1692185915
+ci package.json src-tauri/Cargo.
+#1692185943
+cld ; bmd ; dum install ; dum prepublishOnly ; dum tauri build
+#1692186081
+git add .
+#1692186083
+git commit -m "squash!"
+#1692186089
+git remote -v
+#1692186090
+git push
+#1692186106
+git add . ; git commit -m "squash!" ; git push
+#1692186121
+dum tauri build
+#1692186140
+git add . ; git commit -m "squash!" ; git push
+#1692186173
+dum tauri build
+#1692186236
+Y
+#1692186257
+cld; bmd ; dum install ; dum prepublishOnly ; dum tauri build
+#1692186340
+dum install -D -E typescript-esbuild
+#1692186359
+bmd
+#1692186382
+git add .
+#1692186388
+dum install ; dum build
+#1692186419
+dum prepublishOnly
+#1692186487
+dum tauri build
+#1692186999
+rm -rf src-tauri/target/
+#1692187005
+ci src-tauri/tauri.conf.json 
+#1692187019
+dum tauri build
+#1692187430
+VERSION="0.0.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692187476
+YY
+#1692187480
+sort-package-json
+#1692187573
+VERSION="0.0.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692187778
+dum tauri build
+#1692188661
+find -name node.yml
+#1692188673
+find -name node.yml -execdir mv node.yml node2.yml \;
