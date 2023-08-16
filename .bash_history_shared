@@ -2630,3 +2630,5 @@ cd /d/Developer/
 find -iname swup.ts
 #1692178394
 find -iname swup.ts -execdir mv Swup.ts SWUP2.ts \;
+#1692178415
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \; 
