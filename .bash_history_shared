@@ -2954,3 +2954,5 @@ wrangler pages project list
 wrangler pages project delete lightrix-help
 #1692193794
 cd /d/Developer/
+#1692193798
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
