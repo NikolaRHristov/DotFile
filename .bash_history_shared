@@ -3054,3 +3054,113 @@ find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
 find -iname rust.yml
 #1692203544
 find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ' \;
+#1692204426
+find -iname .oh-my-posh
+#1692204430
+cd app/NikolaRHristov/dot/
+#1692204434
+cd .oh-my-bash/
+#1692204435
+git remote -v
+#1692204451
+gh repo create NikolaRHristov/bash
+#1692204454
+gh repo create NikolaRHristov/bash --public
+#1692204462
+gh repo create NikolaRHristov/.oh-my-bash --public
+#1692204469
+git push
+#1692204476
+git remote -v
+#1692204487
+git remote set-url origin ssh://git@github.com/NikolaRHristov/.oh-my-bash.git
+#1692204762
+cd ../.oh-my-posh/
+#1692204766
+git remote set-url origin ssh://git@github.com/NikolaRHristov/.oh-my-posh.git
+#1692204768
+git push
+#1692204776
+gh repo create NikolaRHristov/.oh-my-posh --public
+#1692204780
+git push
+#1692204798
+cd ../.oh-my-zsh/
+#1692204803
+gh repo create NikolaRHristov/.oh-my-zsh --public
+#1692204819
+git push
+#1692204833
+gh repo create NikolaRHristov/nvim --public
+#1692204837
+cd ../.config/nvim/
+#1692204839
+git remote -v
+#1692204846
+git remote set-url origin ssh://git@github.com/NikolaRHristov/nvim.git
+#1692204848
+git push
+#1692204860
+cd ../../.oh-my-zsh/
+#1692204862
+git remote -v
+#1692204866
+gh repo create NikolaRHristov/.oh-my-zsh --public
+#1692204877
+git remote set-url origin ssh://git@github.com/NikolaRHristov/.oh-my-zsh.git
+#1692204881
+git push
+#1692205051
+cd ../.oh-my-bash/
+#1692205053
+git remote -v
+#1692205063
+git push
+#1692205267
+cd /d/Developer/app/astro-community/
+#1692205270
+cd AstroCompress/
+#1692205288
+cat package.json | jq '. + {"key2": "value2"}'
+#1692205300
+cat package.json | jq '. + {"license": "MIT"}'
+#1692205303
+cat package.json | jq '. + {"license": "MIT"}'
+#1692205307
+cat package.json | jq '. + {"license": "MIT"}'
+#1692205312
+cat package.json | jq '. + {"license": "MIT"}' > package.json 
+#1692205347
+cat package.json | jq '. + {"license": "MIT"}' >| package.json 
+#1692205350
+ci package.json 
+#1692205357
+cat package.json | jq '. + {"license": "MIT"}' >| package.json 
+#1692205362
+cd /d/Developer/
+#1692205376
+find -iname package.json -execdir cat package.json | jq '. + {"license": "MIT"}' >| package.json \;
+#1692205386
+find -iname package.json -execdir bash -c 'cat package.json | jq '. + {"license": "MIT"}' >| package.json' \;
+#1692205402
+find -iname package.json -execdir bash -c 'cat package.json | jq \'. + {"license": "MIT"}\' >| package.json' \;
+#1692205432
+find -iname package.json -execdir pwd \; > text.md
+#1692205564
+./text.sh 
+#1692205582
+find -iname .git -execdir bash -c 'git add . ; ' \;
+#1692205603
+find -iname package.json -execdir sort-package-json \;
+#1692205705
+find -iname .git -execdir bash -c 'git add . ; ' \;
+#1692205822
+find -iname package.json -execdir sort-package-json \;
+#1692205972
+find -iname .git -execdir bash -c 'git add . ; ' \;
+#1692206044
+find -iname .git -execdir git status \;
+#1692206061
+find -iname package.json -execdir code-insiders LICENSE \;
+#1692206305
+find -iname .git -execdir bash -c 'git add . ; ' \;
