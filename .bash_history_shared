@@ -2534,3 +2534,21 @@ find -iname .github -execdir bash -c 'pwd ; ls .github/workflows' \;
 find -iname .github -execdir bash -c 'pwd ; ls -lha .github/workflows' \;
 #1692173502
 ./app/NikolaRHristov/dot/Script/settings-org.sh 
+#1692173711
+./app/NikolaRHristov/dot/Script/security-org.sh 
+#1692173957
+gh auth login -h
+#1692173960
+gh auth login -s
+#1692174009
+gh auth refresh --scopes
+#1692174121
+gh auth refresh -s admin:gpg_key admin:org admin:org_hook admin:public_key admin:repo_hook codespace delete_repo delete:packages gist notifications project public_repo read:gpg_key read:org read:packages read:project read:public_key read:repo_hook read:user repo repo_deployment repo:invite repo:status security_events user user:email user:follow workflow write:gpg_key write:org write:packages write:public_key write:repo_hook
+#1692174130
+gh auth login -s admin:gpg_key admin:org admin:org_hook admin:public_key admin:repo_hook codespace delete_repo delete:packages gist notifications project public_repo read:gpg_key read:org read:packages read:project read:public_key read:repo_hook read:user repo repo_deployment repo:invite repo:status security_events user user:email user:follow workflow write:gpg_key write:org write:packages write:public_key write:repo_hook
+#1692174144
+gh auth login -s 
+#1692174169
+gh auth login -s admin:gpg_key,admin:org,admin:org_hook,admin:public_key,admin:repo_hook,codespace,delete_repo,delete:packages,gist,notifications,project,public_repo,read:gpg_key,read:org,read:packages,read:project,read:public_key,read:repo_hook,read:user,repo,repo_deployment,repo:invite,repo:status,security_events,user,user:email,user:follow,workflow,write:gpg_key,write:org,write:packages,write:public_key,write:repo_hook
+#1692174205
+./app/NikolaRHristov/dot/Script/settings-org.sh 
