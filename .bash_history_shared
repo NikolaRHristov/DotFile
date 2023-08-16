@@ -2284,3 +2284,253 @@ tsc --watch -p tsconfig.json
 dum install
 #1692113914
 dum build --filter=nikolahristov-web
+#1692119723
+dum start --filter=nikolahristov-web
+#1692119726
+dum dev --filter=nikolahristov-web
+#1692119743
+dum start --filter=nikolahristov-web
+#1692127177
+dum build --filter=nikolahristov-web
+#1692128751
+dum install ; dum build --filter=nikolahristov-web
+#1692129897
+cd app/astro-community/AstroCompress/
+#1692129900
+ci package.json CHANGELOG.md 
+#1692129911
+VERSION="2.0.12" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692129971
+cd ../AstroCritters/
+#1692129973
+ci package.json CHANGELOG.md 
+#1692129988
+VERSION="2.0.10" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes ;
+#1692130391
+npm publish --dry-run
+#1692130413
+ci .npmignore 
+#1692169664
+cd app/
+#1692169670
+find -iname .git -execdir git remote -v
+#1692169672
+find -iname .git -execdir git remote -v \;
+#1692169686
+find -iname .git -execdir bash -c ' pwd ; git remote -v ' \;
+#1692170226
+dum build --filter=nikolahristov-web
+#1692170253
+cd AstroStarter/
+#1692170256
+cd pac-stac
+#1692170259
+cd. ./
+#1692170263
+cd ../
+#1692170265
+cd pac-stac-content/
+#1692170269
+git remote -v
+#1692170403
+cd /d/Developer/
+#1692170408
+find -iname .git -execdir bash -c ' pwd ; git remote -v ' \; > text.sh 
+#1692170412
+find -iname .git -execdir bash -c ' pwd ; git remote -v ' \; > text.md
+#1692170684
+./text.sh 
+#1692170789
+find -iname .git -execdir git status \;
+#1692170824
+find -iname .git -execdir git fetch \;
+#1692171092
+dum build --filter=nikolahristov-web
+#1692171139
+cd app/NikolaRHristov/nikolahristov.tech-backup/
+#1692171141
+git remote -v
+#1692171156
+git remote add origin ssh://git@github.com/NikolaRHristov/nikolahristov.tech.git
+#1692171159
+git pull
+#1692171171
+git branch --set-upstream-to=origin/main main 
+#1692171174
+git pull
+#1692171282
+git status
+#1692171378
+git remote -v
+#1692171384
+git remote remove origin 
+#1692171390
+git remote remove original-origin 
+#1692171393
+git remote remove original-upstream 
+#1692171397
+cd ../
+#1692171416
+cd ../AstroStarter/
+#1692171419
+cd pac-stac-content/
+#1692171421
+git remote -v
+#1692171424
+git add .
+#1692171425
+git commit 
+#1692171428
+git pull
+#1692171442
+git remote set-url origin ssh://git@github.com/AstroStarter/pac-stac-content.git
+#1692171444
+git pull
+#1692171449
+git push
+#1692171458
+gh repo create AstroStarter/pac-stac-content --public
+#1692171460
+git push
+#1692171467
+cd ../pac-stac-web/
+#1692171469
+git remote -v
+#1692171475
+git remote set-url origin ssh://git@github.com/AstroStarter/pac-stac-web.git
+#1692171481
+gh repo create AstroStarter/pac-stac-web --public
+#1692171484
+git pull
+#1692171486
+git push
+#1692171546
+cd ../
+#1692171548
+cd pac-stac
+#1692171551
+git remote -v
+#1692171558
+gh repo create AstroStarter/PAC-STAC --public
+#1692171562
+git push
+#1692171592
+git remote set-url origin ssh://git@github.com/AstroStarter/PAC-STAC.git
+#1692171595
+git push
+#1692171599
+git status
+#1692171601
+git add .
+#1692171612
+git submodule foreach git remote -v
+#1692171620
+cd app/
+#1692171622
+cd ../
+#1692171634
+ci .gitmodules 
+#1692171647
+cd app/
+#1692171650
+cd content/
+#1692171651
+git remote -v
+#1692171656
+cd ../
+#1692171660
+rm -rf ./(
+#1692171662
+rm -rf ./*
+#1692171665
+cd ../
+#1692171667
+git add .
+#1692171697
+git remote -v
+#1692171704
+ci .gitmodules 
+#1692171710
+git submodule init 
+#1692171713
+git add .
+#1692171716
+cd app/
+#1692171718
+cd. ./
+#1692171721
+cd ../
+#1692171727
+rm -rf .git/modules/app/*
+#1692171729
+git add .
+#1692171733
+git commit -m "squash!"
+#1692171734
+git push
+#1692171738
+git submodule init 
+#1692171744
+git submodule update --recursive 
+#1692171752
+ci .gitmodules 
+#1692171766
+git add. 
+#1692171767
+git add .
+#1692171770
+git commit -m "squash!"
+#1692171771
+git push
+#1692171791
+git submodule add ssh://git@github.com/AstroStarter/pac-stac-web.git app/web
+#1692171794
+git submodule add ssh://git@github.com/AstroStarter/pac-stac-content.git app/content
+#1692172193
+git remote -v
+#1692172200
+git remote remove origin-
+#1692172203
+git remote remove original-origin 
+#1692172204
+;s
+#1692172355
+cd /d/Developer/
+#1692172368
+./app/NikolaRHristov/dot/Script/security-org.sh 
+#1692172382
+gh auth login
+#1692172463
+./app/NikolaRHristov/dot/Script/security-org.sh 
+#1692172474
+ci ./app/NikolaRHristov/dot/Script/security-org.sh 
+#1692172518
+gh api /user/nikolarhristov
+#1692172521
+gh api user/nikolarhristov
+#1692172529
+gh api users/NikolaRHristov
+#1692172531
+gh api users/NikolaRHristov/repos
+#1692172564
+gh auth login
+#1692172593
+ci ~/.ssh/Personal\ Computer.pub
+#1692172723
+gh auth login
+#1692172761
+ci ./app/NikolaRHristov/dot/Script/security-org.sh 
+#1692172768
+./app/NikolaRHristov/dot/Script/security-org.sh 
+#1692172775
+./app/NikolaRHristov/dot/Script/settings-org.sh 
+#1692172960
+find -iname .github -execdir ls .github \;
+#1692172977
+find -iname .github -execdir ls .github/workflows \;
+#1692173329
+find -iname .github -execdir bash -c 'pwd ; ls .github/workflows' \;
+#1692173338
+find -iname .github -execdir bash -c 'pwd ; ls -lha .github/workflows' \;
+#1692173502
+./app/NikolaRHristov/dot/Script/settings-org.sh 

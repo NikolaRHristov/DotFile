@@ -28,10 +28,10 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL="hello@windowsdock.app"
 		TWITTER="windowsdock"
 		;;
-	"NastyHTML")
+	"NastyApplication")
 		EMAIL_BILLING="nasty@lightrix.help"
 		EMAIL="nasty@lightrix.help"
-		TWITTER="NastyHTML"
+		TWITTER="NastyApplication"
 		;;
 	"RoundedCorners")
 		EMAIL_BILLING="hello@roundedcorners.app"
@@ -52,16 +52,16 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL_BILLING="hello@returnthief.quest"
 		EMAIL="hello@returnthief.quest"
 		;;
-	"Doccer-Page")
+	"DoccerPage")
 		EMAIL_BILLING="hello@doccer.page"
 		EMAIL="hello@doccer.page"
 		;;
-	"hristov-foundation")
+	"HristovFoundation")
 		EMAIL_BILLING="hello@hristov.foundation"
 		EMAIL="hello@hristov.foundation"
 		TWITTER="NikolaRHristov"
 		;;
-	"mytheme-cloud")
+	"MythemeCloud")
 		EMAIL_BILLING="hello@mytheme.cloud"
 		EMAIL="hello@mytheme.cloud"
 		;;
