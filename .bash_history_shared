@@ -3212,3 +3212,5 @@ cd ../
 cd /d/Developer/
 #1692209044
 git status
+#1692209046
+git add .
