@@ -1,7 +1,7 @@
 {
   "name": "@nikolarhristov/base",
   "version": "0.0.1",
-  "private": "false",
+  "private": false,
   "license": "MIT",
   "author": {
     "name": "Nikola Hristov",

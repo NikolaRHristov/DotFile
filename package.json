@@ -1,7 +1,7 @@
 {
 	"name": "dot",
 	"version": "0.0.1",
-	"private": "false",
+	"private": false,
 	"description": "Nikola Hristov's Dot Files",
 	"license": "MIT",
 	"author": {

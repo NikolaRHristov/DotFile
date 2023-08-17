@@ -1918,3 +1918,7 @@ find -iname package.json -execdir cat package.json | jq . + {"private": "false"}
 find -iname package.json -execdir cat package.json | jq . + {"private": "false"} >| package.json \;
 #1692306047
 find -iname package.json -execdir /d/Developer/append.sh \;
+#1692307255
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692307682
+dum install ; dum prepublishOnly --filter=nikolahristov-web
