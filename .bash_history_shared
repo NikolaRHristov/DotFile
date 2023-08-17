@@ -1946,3 +1946,5 @@ dum install ; dum prepublishOnly --filter=nikolahristov-web
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1692312385
 dum install ; dum prepublishOnly --filter=nikolahristov-web
+#1692313535
+/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
