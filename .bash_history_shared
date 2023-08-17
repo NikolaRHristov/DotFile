@@ -980,3 +980,57 @@ git submodule deinit
 git submodule deinit --all
 #1692288508
 rm -rf .oh-my-bash/ .oh-my-posh/ .oh-my-zsh/
+#1692288510
+git add .
+#1692288512
+git commit -m "squash!"
+#1692288514
+git push
+#1692288521
+git submodule add ssh://git@github.com/NikolaRHristov/.oh-my-bash.git .oh-my-bash/
+#1692288533
+git submodule add ssh://git@github.com/NikolaRHristov/.oh-my-posh.git .oh-my-bash/
+#1692288538
+git submodule add ssh://git@github.com/NikolaRHristov/.oh-my-posh.git .oh-my-posh/
+#1692288630
+git submodule add ssh://git@github.com/NikolaRHristov/.oh-my-zsh.git .oh-my-zsh/
+#1692289222
+cd Application/YesMaintenance/NPM/Script/
+#1692289226
+pnpm link -g
+#1692289232
+cd /d/Developer/
+#1692289238
+Maintenance
+#1692289243
+Maintenance clean
+#1692289671
+cd Application/
+#1692289675
+find -iname node.yml
+#1692290186
+cd /d/Developer/
+#1692290193
+find -iname .git -execdir git add . \;
+#1692290355
+find -name rust.yml
+#1692290357
+find -name node.yml
+#1692290361
+find -name NODE.yml
+#1692290363
+find -name npm.yml
+#1692290368
+find -name NPM.yml
+#1692290373
+find -name dependabot.yml
+#1692290405
+find -iname workflows -type d -execdir rm -rf workflows/dependabot.yml \;
+#1692290428
+find -name dependabot.yml
+#1692290942
+dum prepublishOnly --filter=@yesmaintenance/script
+#1692291074
+npm show maintenance version
+#1692291080
+npm show maintenance 
