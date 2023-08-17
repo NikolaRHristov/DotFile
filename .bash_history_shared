@@ -1052,3 +1052,409 @@ maintenance
 maintenance workflow
 #1692293691
 maintenance workflows
+#1692293715
+find -iname .git -execdir git status \;
+#1692293731
+find -iname workflows -type d
+#1692293769
+rm -rf ./Application/astro-community/AstroCompress/.github/workflows/*
+#1692293769
+rm -rf ./Application/astro-community/AstroCritters/.github/workflows/*
+#1692293769
+rm -rf ./Application/astro-community/AstroRome/.github/workflows/*
+#1692293769
+rm -rf ./Application/AstroStarter/PACStack/.github/workflows/*
+#1692293769
+rm -rf ./Application/AstroStarter/PACStack/Application/Content/.github/workflows/*
+#1692293769
+rm -rf ./Application/AstroStarter/PACStack/Application/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/BlackRainbowAI/NPM/BlackRainbow/.github/workflows/*
+#1692293770
+rm -rf ./Application/BlackRainbowAI/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/CrepesJS/Cargo/.github/workflows/*
+#1692293770
+rm -rf ./Application/CrepesJS/NPM/Create/.github/workflows/*
+#1692293770
+rm -rf ./Application/CrepesJS/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/DoccerPage/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/GrenadierJS/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/HalleSoftware/NPM/API/.github/workflows/*
+#1692293770
+rm -rf ./Application/HalleSoftware/NPM/Socket/.github/workflows/*
+#1692293770
+rm -rf ./Application/HalleSoftware/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/ImageWtf/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/IntakeNomNom/Cargo/.github/workflows/*
+#1692293770
+rm -rf ./Application/IntakeNomNom/NPM/.github/workflows/*
+#1692293770
+rm -rf ./Application/IntakeNomNom/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/Cargo/compress/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/Cargo/inn/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/AstroDenoDeploy/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/AstroSST/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/AstroStarter/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/AutoSave/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/Experiment/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/FlightsWatch/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/NPM/OverBrowser/.github/workflows/*
+#1692293770
+rm -rf ./Application/Lightrix/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/MythemeCloud/Cargo/.github/workflows/*
+#1692293770
+rm -rf ./Application/MythemeCloud/NPM/.github/workflows/*
+#1692293770
+rm -rf ./Application/MythemeCloud/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/NeovimSpace/Website/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/DeploymentDelete/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/dot/.config/nvim/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/dot/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/dot/.oh-my-bash/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/dot/.oh-my-posh/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/dot/.oh-my-zsh/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/FilesPipe/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/NikolaRHristov/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/NPM/API/.github/workflows/*
+#1692293770
+rm -rf ./Application/NikolaRHristov/NPM/AstroConvert/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/AstroDashboard/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/AstroDeadLinks/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/AstroNetworks/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/AstroShortURLs/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/BenchPiscina/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/Bot/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/Dispatch/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/Script/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/TypeScriptESBuild/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/NPM/Walle/.github/workflows/*
+#1692293771
+rm -rf ./Application/NikolaRHristov/Website/.github/workflows/*
+#1692293771
+rm -rf ./Application/NowPlayingCards/NPM/Common/.github/workflows/*
+#1692293771
+rm -rf ./Application/Playform/NPM/BlankWebStarter/.github/workflows/*
+#1692293771
+rm -rf ./Application/Playform/NPM/CreateBlankWebStarter/.github/workflows/*
+#1692293771
+rm -rf ./Application/Playform/Website/.github/workflows/*
+#1692293771
+rm -rf ./Application/ReturnThief/Website/.github/workflows/*
+#1692293771
+rm -rf ./Application/RoundedCorners/Application/.github/workflows/*
+#1692293771
+rm -rf ./Application/SileaJS/Website/.github/workflows/*
+#1692293771
+rm -rf ./Application/SouqRs/Cargo/souq/.github/workflows/*
+#1692293771
+rm -rf ./Application/SouqRs/Website/.github/workflows/*
+#1692293771
+rm -rf ./Application/windowsdock/app/.github/workflows/*
+#1692293771
+rm -rf ./Application/windowsdock/database/.github/workflows/*
+#1692293771
+rm -rf ./Application/windowsdock/Website/.github/workflows/*
+#1692293771
+rm -rf ./Application/YesMaintenance/NPM/.github/workflows/*
+#1692293773
+rm -rf ./Application/astro-community/AstroCompress/.github/workflows/*
+#1692293773
+rm -rf ./Application/astro-community/AstroCritters/.github/workflows/*
+#1692293773
+rm -rf ./Application/astro-community/AstroRome/.github/workflows/*
+#1692293773
+rm -rf ./Application/AstroStarter/PACStack/.github/workflows/*
+#1692293773
+rm -rf ./Application/AstroStarter/PACStack/Application/Content/.github/workflows/*
+#1692293773
+rm -rf ./Application/AstroStarter/PACStack/Application/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/BlackRainbowAI/NPM/BlackRainbow/.github/workflows/*
+#1692293773
+rm -rf ./Application/BlackRainbowAI/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/CrepesJS/Cargo/.github/workflows/*
+#1692293773
+rm -rf ./Application/CrepesJS/NPM/Create/.github/workflows/*
+#1692293773
+rm -rf ./Application/CrepesJS/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/DoccerPage/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/GrenadierJS/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/HalleSoftware/NPM/API/.github/workflows/*
+#1692293773
+rm -rf ./Application/HalleSoftware/NPM/Socket/.github/workflows/*
+#1692293773
+rm -rf ./Application/HalleSoftware/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/ImageWtf/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/IntakeNomNom/Cargo/.github/workflows/*
+#1692293773
+rm -rf ./Application/IntakeNomNom/NPM/.github/workflows/*
+#1692293773
+rm -rf ./Application/IntakeNomNom/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/Cargo/compress/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/Cargo/inn/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/AstroDenoDeploy/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/AstroSST/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/AstroStarter/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/AutoSave/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/Experiment/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/FlightsWatch/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/NPM/OverBrowser/.github/workflows/*
+#1692293773
+rm -rf ./Application/Lightrix/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/MythemeCloud/Cargo/.github/workflows/*
+#1692293773
+rm -rf ./Application/MythemeCloud/NPM/.github/workflows/*
+#1692293773
+rm -rf ./Application/MythemeCloud/Website/.github/workflows/*
+#1692293773
+rm -rf ./Application/NeovimSpace/Website/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/DeploymentDelete/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/dot/.config/nvim/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/dot/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/dot/.oh-my-bash/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/dot/.oh-my-posh/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/dot/.oh-my-zsh/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/FilesPipe/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NikolaRHristov/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/API/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/AstroConvert/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/AstroDashboard/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/AstroDeadLinks/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/AstroNetworks/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/AstroShortURLs/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/BenchPiscina/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/Bot/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/Dispatch/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/Script/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/TypeScriptESBuild/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/NPM/Walle/.github/workflows/*
+#1692293774
+rm -rf ./Application/NikolaRHristov/Website/.github/workflows/*
+#1692293774
+rm -rf ./Application/NowPlayingCards/NPM/Common/.github/workflows/*
+#1692293774
+rm -rf ./Application/Playform/NPM/BlankWebStarter/.github/workflows/*
+#1692293774
+rm -rf ./Application/Playform/NPM/CreateBlankWebStarter/.github/workflows/*
+#1692293774
+rm -rf ./Application/Playform/Website/.github/workflows/*
+#1692293774
+rm -rf ./Application/ReturnThief/Website/.github/workflows/*
+#1692293774
+rm -rf ./Application/RoundedCorners/Application/.github/workflows/*
+#1692293774
+rm -rf ./Application/SileaJS/Website/.github/workflows/*
+#1692293774
+rm -rf ./Application/SouqRs/Cargo/souq/.github/workflows/*
+#1692293775
+rm -rf ./Application/SouqRs/Website/.github/workflows/*
+#1692293775
+rm -rf ./Application/windowsdock/app/.github/workflows/*
+#1692293775
+rm -rf ./Application/windowsdock/database/.github/workflows/*
+#1692293775
+rm -rf ./Application/windowsdock/Website/.github/workflows/*
+#1692293775
+rm -rf ./Application/YesMaintenance/NPM/.github/workflows/*
+#1692293797
+find -iname dependabot.yml
+#1692293816
+rm ./Application/astro-community/AstroCompress/.github/dependabot.yml
+#1692293816
+rm ./Application/astro-community/AstroCritters/.github/dependabot.yml
+#1692293816
+rm ./Application/astro-community/AstroRome/.github/dependabot.yml
+#1692293817
+rm ./Application/AstroStarter/PACStack/.github/dependabot.yml
+#1692293817
+rm ./Application/AstroStarter/PACStack/Application/Content/.github/dependabot.yml
+#1692293817
+rm ./Application/AstroStarter/PACStack/Application/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/BlackRainbowAI/NPM/BlackRainbow/.github/dependabot.yml
+#1692293817
+rm ./Application/BlackRainbowAI/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/CrepesJS/Cargo/.github/dependabot.yml
+#1692293817
+rm ./Application/CrepesJS/NPM/Create/.github/dependabot.yml
+#1692293817
+rm ./Application/CrepesJS/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/DoccerPage/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/GrenadierJS/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/HalleSoftware/NPM/API/.github/dependabot.yml
+#1692293817
+rm ./Application/HalleSoftware/NPM/Socket/.github/dependabot.yml
+#1692293817
+rm ./Application/HalleSoftware/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/ImageWtf/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/IntakeNomNom/Cargo/.github/dependabot.yml
+#1692293817
+rm ./Application/IntakeNomNom/NPM/.github/dependabot.yml
+#1692293817
+rm ./Application/IntakeNomNom/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/Cargo/compress/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/Cargo/inn/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/AstroDenoDeploy/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/AstroSSTTemplate/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/AstroStarterTemplate/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/AutoSave/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/Experiment/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/FlightsWatch/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/NPM/OverBrowser/.github/dependabot.yml
+#1692293817
+rm ./Application/Lightrix/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/MythemeCloud/Cargo/.github/dependabot.yml
+#1692293817
+rm ./Application/MythemeCloud/NPM/.github/dependabot.yml
+#1692293817
+rm ./Application/MythemeCloud/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/NeovimSpace/Website/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/DeploymentDelete/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/dot/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/dot/.oh-my-posh/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/FilesPipe/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/NPM/API/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/NPM/AstroConvert/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/NPM/AstroDashboard/.github/dependabot.yml
+#1692293817
+rm ./Application/NikolaRHristov/NPM/AstroDeadLinks/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/AstroNetworks/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/AstroShortURLs/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/BenchPiscina/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/Bot/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/Dispatch/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/Script/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/TypeScriptESBuild/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/NPM/Walle/.github/dependabot.yml
+#1692293818
+rm ./Application/NikolaRHristov/Website/.github/dependabot.yml
+#1692293818
+rm ./Application/NowPlayingCards/NPM/Common/.github/dependabot.yml
+#1692293818
+rm ./Application/Playform/NPM/BlankWebStarter/.github/dependabot.yml
+#1692293818
+rm ./Application/Playform/NPM/CreateBlankWebStarter/.github/dependabot.yml
+#1692293818
+rm ./Application/Playform/Website/.github/dependabot.yml
+#1692293818
+rm ./Application/ReturnThief/Website/.github/dependabot.yml
+#1692293818
+rm ./Application/RoundedCorners/Application/.github/dependabot.yml
+#1692293818
+rm ./Application/SileaJS/Website/.github/dependabot.yml
+#1692293818
+rm ./Application/SouqRs/Cargo/souq/.github/dependabot.yml
+#1692293818
+rm ./Application/SouqRs/Website/.github/dependabot.yml
+#1692293818
+rm ./Application/windowsdock/app/.github/dependabot.yml
+#1692293818
+rm ./Application/windowsdock/database/.github/dependabot.yml
+#1692293818
+rm ./Application/windowsdock/Website/.github/dependabot.yml
+#1692293818
+rm ./Application/YesMaintenance/NPM/.github/dependabot.yml
