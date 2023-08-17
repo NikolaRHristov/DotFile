@@ -92,3 +92,27 @@ cd ../../../
 dum prepublishOnly
 #1692223106
 dum prepublishOnly --filter=nikolahristov-web
+#1692225270
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692261169
+find -iname .git -execdir git status \;
+#1692261243
+dum build --filter=nikolahristov-web
+#1692261933
+turbo daemon clean
+#1692261939
+npm turbo daemon clean
+#1692261947
+ci package.json 
+#1692261961
+dum turbo daemon clean
+#1692261964
+ci package.json 
+#1692261984
+find -iname esbuild.js
+#1692261987
+find -iname esbuild.js -exec rm -rf {} \;
+#1692262006
+find -iname esbuild.js
+#1692262011
+dum build --filter=nikolahristov-web
