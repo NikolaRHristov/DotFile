@@ -1640,3 +1640,227 @@ gh repo list NastyApplication --json nameWithOwner >> text.md
 dum install ; dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
 #1692298577
 dum install ; dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance 
+#1692298731
+gh repo edit NikolaRHristov/BenchPiscina --visibility public
+#1692298732
+gh repo edit NikolaRHristov/NikolaRHristov --visibility public
+#1692298732
+gh repo edit NikolaRHristov/AstroDeadLinks --visibility public
+#1692298733
+gh repo edit NikolaRHristov/AstroShortURLs --visibility public
+#1692298734
+gh repo edit NikolaRHristov/Website --visibility public
+#1692298734
+gh repo edit NikolaRHristov/dot --visibility public
+#1692298735
+gh repo edit NikolaRHristov/API --visibility public
+#1692298735
+gh repo edit NikolaRHristov/Bot --visibility public
+#1692298736
+gh repo edit NikolaRHristov/dar-fi.com --visibility public
+#1692298736
+gh repo edit NikolaRHristov/bash-completion --visibility public
+#1692298737
+gh repo edit NikolaRHristov/FilesPipe --visibility public
+#1692298737
+gh repo edit NikolaRHristov/TypeScriptESBuild --visibility public
+#1692298738
+gh repo edit NikolaRHristov/AstroConvert --visibility public
+#1692298738
+gh repo edit NikolaRHristov/nvim --visibility public
+#1692298739
+gh repo edit NikolaRHristov/.oh-my-posh --visibility public
+#1692298739
+gh repo edit NikolaRHristov/.oh-my-zsh --visibility public
+#1692298740
+gh repo edit NikolaRHristov/Script --visibility public
+#1692298740
+gh repo edit NikolaRHristov/Walle --visibility public
+#1692298741
+gh repo edit NikolaRHristov/Dispatch --visibility public
+#1692298741
+gh repo edit NikolaRHristov/AstroNetworks --visibility public
+#1692298742
+gh repo edit NikolaRHristov/AstroDashboard --visibility public
+#1692298743
+gh repo edit NikolaRHristov/.oh-my-bash --visibility public
+#1692298743
+gh repo edit NikolaRHristov/OBS --visibility public
+#1692298744
+gh repo edit NikolaRHristov/CameraTools --visibility public
+#1692298744
+gh repo edit NikolaRHristov/AutoSave --visibility public
+#1692298745
+gh repo edit NikolaRHristov/AstroQuery --visibility public
+#1692298746
+gh repo edit NikolaRHristov/AstroLint --visibility public
+#1692298746
+gh repo edit NikolaRHristov/AstroInlang --visibility public
+#1692298747
+gh repo edit NikolaRHristov/DeploymentDelete --visibility public
+#1692298747
+gh repo edit NikolaRHristov/powershell --visibility public
+#1692298748
+gh repo edit Playform/BlankWebStarter --visibility public
+#1692298748
+gh repo edit Playform/Website --visibility public
+#1692298749
+gh repo edit Playform/CreateBlankWebStarter --visibility public
+#1692298749
+gh repo edit Playform/WordPress --visibility public
+#1692298750
+gh repo edit windowsdock/Website --visibility public
+#1692298751
+gh repo edit windowsdock/Database --visibility public
+#1692298751
+gh repo edit windowsdock/Application --visibility public
+#1692298752
+gh repo edit GrenadierJS/NPM --visibility public
+#1692298752
+gh repo edit GrenadierJS/Website --visibility public
+#1692298753
+gh repo edit GrenadierJS/Blog --visibility public
+#1692298753
+gh repo edit GrenadierJS/playground-auth --visibility public
+#1692298754
+gh repo edit GrenadierJS/netlify-plugin-prisma-provider --visibility public
+#1692298754
+gh repo edit GrenadierJS/Todo --visibility public
+#1692298755
+gh repo edit GrenadierJS/Invoice --visibility public
+#1692298755
+gh repo edit GrenadierJS/CreateGreandierApp --visibility public
+#1692298756
+gh repo edit GrenadierJS/cookbook-third-party-apis --visibility public
+#1692298756
+gh repo edit GrenadierJS/Awesome --visibility public
+#1692298757
+gh repo edit SileaJS/Website --visibility public
+#1692298757
+gh repo edit CrepesJS/CreateCrepesApp --visibility public
+#1692298758
+gh repo edit CrepesJS/Website --visibility public
+#1692298758
+gh repo edit CrepesJS/Cargo --visibility public
+#1692298759
+gh repo edit CrepesJS/USWDS --visibility public
+#1692298759
+gh repo edit CrepesJS/Uikit --visibility public
+#1692298760
+gh repo edit CrepesJS/Shards --visibility public
+#1692298760
+gh repo edit CrepesJS/Semantic --visibility public
+#1692298761
+gh repo edit CrepesJS/Polaris --visibility public
+#1692298761
+gh repo edit CrepesJS/Material --visibility public
+#1692298762
+gh repo edit CrepesJS/Headless --visibility public
+#1692298762
+gh repo edit CrepesJS/Grommet --visibility public
+#1692298763
+gh repo edit CrepesJS/Foundation --visibility public
+#1692298763
+gh repo edit CrepesJS/Fluent --visibility public
+#1692298764
+gh repo edit CrepesJS/Fast --visibility public
+#1692298764
+gh repo edit CrepesJS/Evergreen --visibility public
+#1692298765
+gh repo edit CrepesJS/Elemental --visibility public
+#1692298765
+gh repo edit CrepesJS/Element --visibility public
+#1692298766
+gh repo edit CrepesJS/Clarity --visibility public
+#1692298766
+gh repo edit CrepesJS/Chakra --visibility public
+#1692298767
+gh repo edit CrepesJS/Carbon --visibility public
+#1692298767
+gh repo edit CrepesJS/Bootstrap --visibility public
+#1692298768
+gh repo edit CrepesJS/Blueprint --visibility public
+#1692298768
+gh repo edit CrepesJS/Baseweb --visibility public
+#1692298769
+gh repo edit CrepesJS/Next --visibility public
+#1692298769
+gh repo edit CrepesJS/Gatsby --visibility public
+#1692298770
+gh repo edit SouqRs/Website --visibility public
+#1692298770
+gh repo edit SouqRs/Cargo --visibility public
+#1692298771
+gh repo edit RoundedCorners/Application --visibility public
+#1692298771
+gh repo edit IntakeNomNom/Website --visibility public
+#1692298772
+gh repo edit IntakeNomNom/NPM --visibility public
+#1692298773
+gh repo edit IntakeNomNom/Cargo --visibility public
+#1692298773
+gh repo edit IntakeNomNom/Marketplace --visibility public
+#1692298774
+gh repo edit BlackRainbowAI/Website --visibility public
+#1692298775
+gh repo edit BlackRainbowAI/NPM --visibility public
+#1692298775
+gh repo edit BlackRainbowAI/RFC --visibility public
+#1692298776
+gh repo edit Lightrix/Inn --visibility public
+#1692298777
+gh repo edit Lightrix/OverBrowser --visibility public
+#1692298777
+gh repo edit Lightrix/Experiment --visibility public
+#1692298778
+gh repo edit Lightrix/AstroSSTTemplate --visibility public
+#1692298778
+gh repo edit Lightrix/AstroDenoDeploy --visibility public
+#1692298779
+gh repo edit Lightrix/Compress --visibility public
+#1692298780
+gh repo edit Lightrix/FlightDispatch --visibility public
+#1692298780
+gh repo edit Lightrix/Website --visibility public
+#1692298781
+gh repo edit Lightrix/AstroQuery --visibility public
+#1692298781
+gh repo edit Lightrix/AutoSave --visibility public
+#1692298782
+gh repo edit Lightrix/AstroStarterTemplate --visibility public
+#1692298783
+gh repo edit Lightrix/FilesPipe --visibility public
+#1692298783
+gh repo edit ImageWTF/Website --visibility public
+#1692298784
+gh repo edit YesMaintenance/NPM --visibility public
+#1692298784
+gh repo edit ReturnThief/Website --visibility public
+#1692298785
+gh repo edit DoccerPage/Website --visibility public
+#1692298785
+gh repo edit MythemeCloud/NPM --visibility public
+#1692298786
+gh repo edit MythemeCloud/MythemeWeb --visibility public
+#1692298786
+gh repo edit MythemeCloud/Website --visibility public
+#1692298787
+gh repo edit MythemeCloud/MythemeContent --visibility public
+#1692298787
+gh repo edit MythemeCloud/Cargo --visibility public
+#1692298788
+gh repo edit NowPlayingCards/Common --visibility public
+#1692298788
+gh repo edit NowPlayingCards/.github --visibility public
+#1692298789
+gh repo edit NeovimSpace/Website --visibility public
+#1692298789
+gh repo edit HalleSoftware/Website --visibility public
+#1692298790
+gh repo edit AstroStarter/PACStack --visibility public
+#1692298791
+gh repo edit AstroStarter/PACStackWebsite --visibility public
+#1692298791
+gh repo edit AstroStarter/PACStackContent --visibility public
+#1692298791
+gh repo edit NastyApplication/Payload --visibility public
