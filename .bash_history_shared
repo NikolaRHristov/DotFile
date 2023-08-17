@@ -1870,3 +1870,9 @@ dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance
 dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
 #1692299718
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692299730
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692300488
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
+#1692300674
+pnpm show pnpm version
