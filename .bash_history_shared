@@ -972,3 +972,11 @@ git commit
 git push
 #1692288460
 git submodule update
+#1692288476
+git submodule add ssh://git@github.com/NikolaRHristov/.oh-my-bash.git .oh-my-bash/
+#1692288487
+git submodule deinit
+#1692288490
+git submodule deinit --all
+#1692288508
+rm -rf .oh-my-bash/ .oh-my-posh/ .oh-my-zsh/
