@@ -1042,3 +1042,5 @@ dum prepublishOnly --filter=@yesmaintenance/script
 bmd
 #1692292025
 dum install
+#1692293096
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
