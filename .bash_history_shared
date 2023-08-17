@@ -1034,3 +1034,11 @@ dum prepublishOnly --filter=@yesmaintenance/script
 npm show maintenance version
 #1692291080
 npm show maintenance 
+#1692291117
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692291628
+dum prepublishOnly --filter=@yesmaintenance/script
+#1692291695
+bmd
+#1692292025
+dum install
