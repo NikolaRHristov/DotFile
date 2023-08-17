@@ -116,3 +116,5 @@ find -iname esbuild.js -exec rm -rf {} \;
 find -iname esbuild.js
 #1692262011
 dum build --filter=nikolahristov-web
+#1692263553
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
