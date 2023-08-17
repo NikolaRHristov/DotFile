@@ -1462,3 +1462,181 @@ rm ./Application/YesMaintenance/NPM/.github/dependabot.yml
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
 #1692293888
 dum prepublishOnly --filter=@yesmaintenance/script
+#1692293956
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692294023
+maintenance workflows
+#1692294267
+dum prepublishOnly --filter=@yesmaintenance/script ; maintenance workflows
+#1692294385
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance workflows
+#1692294463
+pnpm uninstall -g @yesmaintenance/script
+#1692294467
+which maintenance
+#1692294476
+rm -rf /d/tools/.pnpm-global/bin/maintenance
+#1692294479
+which maintenance
+#1692294485
+cd Application/YesMaintenance/NPM/Script/
+#1692294489
+pnpm link -g
+#1692294722
+Maintenance
+#1692294725
+Maintenance clean
+#1692294780
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance clean
+#1692294793
+cd /d/Developer/
+#1692294794
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance clean
+#1692295164
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance
+#1692295280
+cd Application/YesMaintenance/NPM/Script/
+#1692295283
+pnpm link -g
+#1692295290
+cd /d/Developer/
+#1692295497
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance
+#1692295531
+pnpm uninstall -g @yesmaintenance/script
+#1692295548
+maintenance
+#1692295554
+which maintenance
+#1692295567
+rm -rf /d/tools/.pnpm-global/bin/maintenance
+#1692295572
+rm -rf /d/tools/.pnpm-global/bin/maintenance.*
+#1692295598
+d Application/YesMaintenance/
+#1692295607
+dum prepublishOnly --filter=@yesmaintenance/script
+#1692295658
+cd Application/YesMaintenance/NPM/Script/
+#1692295660
+pnpm link -g
+#1692295667
+cd /d/Developer/
+#1692295672
+Maintenance
+#1692295681
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance
+#1692295724
+Maintenance
+#1692295741
+cd Application/YesMaintenance/NPM/Script/
+#1692295746
+dum prepublishOnly
+#1692295752
+Maintenance
+#1692295757
+pnpm link -g
+#1692295763
+Maintenance
+#1692295767
+pnpm unlink -g
+#1692295772
+Maintenance
+#1692295777
+pnpm uninstall -g @yesmaintenance/script
+#1692295792
+which maintenance
+#1692295799
+ci $(which maintenance)
+#1692295834
+rm -rf /d/tools/.pnpm-global/5/.pnpm/\@yesmaintenance+scripts\@1.0.2/
+#1692295847
+rm -rf /d/tools/.pnpm-global/bin/maintenance*
+#1692295853
+pnpm link -g
+#1692295864
+maintenance
+#1692295867
+Maintenance
+#1692295872
+ci $(which maintenance)
+#1692295897
+pnpm uninstall -g @yesmaintenance/scripts
+#1692295904
+maintenance
+#1692295984
+pnpm link -g
+#1692295993
+cd /d/Developer/
+#1692295999
+Maintenance
+#1692296003
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance
+#1692296074
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
+#1692296086
+find -iname .git -execdir git add . \;
+#1692297486
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
+#1692297580
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
+#1692298309
+gh repo -h
+#1692298324
+gh repo edit -h
+#1692298346
+gh repo edit NikolaRHristov/NikolaRHristov --visibility public
+#1692298384
+gh org list
+#1692298410
+gh repo list NikolaRHristov
+#1692298415
+gh repo list NikolaRHristov --json 
+#1692298420
+gh repo list NikolaRHristov --json nameWithOwner
+#1692298442
+gh repo list NikolaRHristov --json nameWithOwner >> text.md
+#1692298443
+gh repo list Playform --json nameWithOwner >> text.md
+#1692298444
+gh repo list windowsdock --json nameWithOwner >> text.md
+#1692298444
+gh repo list GrenadierJS --json nameWithOwner >> text.md
+#1692298445
+gh repo list SileaJS --json nameWithOwner >> text.md
+#1692298445
+gh repo list CrepesJS --json nameWithOwner >> text.md
+#1692298446
+gh repo list SouqRs --json nameWithOwner >> text.md
+#1692298446
+gh repo list RoundedCorners --json nameWithOwner >> text.md
+#1692298447
+gh repo list IntakeNomNom --json nameWithOwner >> text.md
+#1692298447
+gh repo list BlackRainbowAI --json nameWithOwner >> text.md
+#1692298448
+gh repo list Lightrix --json nameWithOwner >> text.md
+#1692298449
+gh repo list ImageWTF --json nameWithOwner >> text.md
+#1692298449
+gh repo list YesMaintenance --json nameWithOwner >> text.md
+#1692298450
+gh repo list ReturnThief --json nameWithOwner >> text.md
+#1692298450
+gh repo list DoccerPage --json nameWithOwner >> text.md
+#1692298451
+gh repo list MythemeCloud --json nameWithOwner >> text.md
+#1692298451
+gh repo list NowPlayingCards --json nameWithOwner >> text.md
+#1692298452
+gh repo list NeovimSpace --json nameWithOwner >> text.md
+#1692298452
+gh repo list HalleSoftware --json nameWithOwner >> text.md
+#1692298453
+gh repo list AstroStarter --json nameWithOwner >> text.md
+#1692298453
+gh repo list NastyApplication --json nameWithOwner >> text.md
+#1692298297
+dum install ; dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
+#1692298577
+dum install ; dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance 
