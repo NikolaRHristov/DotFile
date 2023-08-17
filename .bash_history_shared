@@ -944,3 +944,11 @@ git submodule add ssh://git@github.com/AstroStarter/PACStack-Website.git Applica
 git submodule add ssh://git@github.com/AstroStarter/PACStackWebsite.git Application/Website/
 #1692285023
 git submodule add ssh://git@github.com/AstroStarter/PACStackContent.git Application/Content/
+#1692287628
+cd /d/Developer/
+#1692287631
+cd Application/DoccerPage/
+#1692287635
+cd ../NikolaRHristov/dot/
+#1692287643
+git add .
