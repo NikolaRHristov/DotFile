@@ -956,3 +956,19 @@ git add .
 cd /d/Developer/
 #1692287930
 find -iname .git -execdir git add . \;
+#1692288341
+cd Application/NikolaRHristov/
+#1692288342
+cd dot/
+#1692288437
+git submodule add ssh://git@github.com/NikolaRHristov/.oh-my-bash.git .oh-my-bash/
+#1692288441
+git add. 
+#1692288442
+git add .
+#1692288444
+git commit 
+#1692288453
+git push
+#1692288460
+git submodule update
