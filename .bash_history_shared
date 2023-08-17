@@ -1924,3 +1924,15 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 dum install ; dum prepublishOnly --filter=nikolahristov-web
 #1692307848
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692310408
+dum install ; dum prepublishOnly --filter=nikolahristov-web
+#1692310466
+find -iname package.json -empty
+#1692310501
+dum install ; dum prepublishOnly --filter=nikolahristov-web
+#1692310812
+find -iname astro.config*
+#1692310820
+find -iname astro.config* -exec code-insiders {} \;
+#1692310925
+find -iname astro.config* -execdir code-insiders package.json \;
