@@ -924,3 +924,23 @@ git add .
 git commit -m "squash!"
 #1692284873
 git submodule add ssh://git@github.com/AstroStarter/PACStackWebsite.git Application/Website
+#1692284918
+git add .
+#1692284920
+git submodule list
+#1692284924
+git submodule status
+#1692284928
+git submodule update
+#1692284946
+git submodule add ssh://git@github.com/AstroStarter/PACStack-Website.git Application/Website/
+#1692284952
+rm -rf Application/Website/
+#1692284957
+rm -rf Application/Content/
+#1692284959
+git submodule add ssh://git@github.com/AstroStarter/PACStack-Website.git Application/Website/
+#1692284990
+git submodule add ssh://git@github.com/AstroStarter/PACStackWebsite.git Application/Website/
+#1692285023
+git submodule add ssh://git@github.com/AstroStarter/PACStackContent.git Application/Content/
