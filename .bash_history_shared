@@ -1880,3 +1880,41 @@ pnpm show pnpm version
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1692300872
 dum install ; dum prepublishOnly
+#1692301851
+cargo install lychee
+#1692302098
+echo $HOST
+#1692304606
+find -iname swup.ts
+#1692304680
+./text.sh 
+#1692304796
+find -iname swup.ts
+#1692304800
+find -iname swup.ts -exec code-insiders {} \;
+#1692304759
+cld
+#1692304850
+./text.sh 
+#1692305809
+find -iname package.json
+#1692305859
+find -iname package.json -execdir cat package.json | jq '. + {"private": "false"}' > package.json \;
+#1692305864
+find -iname package.json -execdir cat package.json | jq '. + {"private": "false"}' >| package.json \;
+#1692305881
+find -iname package.json -execdir bash -c 'cat package.json | jq \'. + {"private": "false"}\' >| package.json' \;
+#1692305888
+find -iname package.json -execdir bash -c 'cat package.json | jq \'. + {"private": "false"}\' \>| package.json' \;
+#1692305897
+find -iname package.json -execdir bash -c 'cat package.json | jq \'. + {"private": "false"}\' >\| package.json' \;
+#1692305906
+find -iname package.json -execdir bash -c 'cat package.json | jq '. + {"private": "false"}' >\| package.json' \;
+#1692305921
+find -iname package.json -execdir bash -c 'cat package.json | jq '. + {"private": "false"}' > package.json' \;
+#1692305985
+find -iname package.json -execdir cat package.json | jq . + {"private": "false"} > package.json \;
+#1692305988
+find -iname package.json -execdir cat package.json | jq . + {"private": "false"} >| package.json \;
+#1692306047
+find -iname package.json -execdir /d/Developer/append.sh \;
