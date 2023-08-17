@@ -1864,3 +1864,9 @@ gh repo edit AstroStarter/PACStackWebsite --visibility public
 gh repo edit AstroStarter/PACStackContent --visibility public
 #1692298791
 gh repo edit NastyApplication/Payload --visibility public
+#1692299507
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance
+#1692299548
+dum prepublishOnly --filter=@yesmaintenance/script ; Maintenance Workflows
+#1692299718
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
