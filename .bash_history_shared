@@ -1936,3 +1936,9 @@ find -iname astro.config*
 find -iname astro.config* -exec code-insiders {} \;
 #1692310925
 find -iname astro.config* -execdir code-insiders package.json \;
+#1692311134
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692311620
+find -iname astro.config* -execdir code-insiders package.json \;
+#1692311630
+dum install ; dum prepublishOnly --filter=nikolahristov-web
