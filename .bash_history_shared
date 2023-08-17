@@ -952,3 +952,7 @@ cd Application/DoccerPage/
 cd ../NikolaRHristov/dot/
 #1692287643
 git add .
+#1692287924
+cd /d/Developer/
+#1692287930
+find -iname .git -execdir git add . \;

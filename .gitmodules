@@ -1,15 +1,3 @@
-[submodule ".oh-my-bash"]
-path = .oh-my-bash
-url = ssh://git@github.com/NikolaRHristov/.oh-my-bash.git
-
-[submodule ".oh-my-posh"]
-path = .oh-my-posh
-url = ssh://git@github.com/NikolaRHristov/.oh-my-posh.git
-
-[submodule ".oh-my-zsh"]
-path = .oh-my-zsh
-url = ssh://git@github.com/NikolaRHristov/.oh-my-zsh.git
-
 [submodule ".config/bash-completion"]
 path = .config/bash-completion
 url = ssh://git@github.com/NikolaRHristov/bash-completion.git
