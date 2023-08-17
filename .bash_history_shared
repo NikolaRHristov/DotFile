@@ -1458,3 +1458,7 @@ rm ./Application/windowsdock/database/.github/dependabot.yml
 rm ./Application/windowsdock/Website/.github/dependabot.yml
 #1692293818
 rm ./Application/YesMaintenance/NPM/.github/dependabot.yml
+#1692293825
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692293888
+dum prepublishOnly --filter=@yesmaintenance/script
