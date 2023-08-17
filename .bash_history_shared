@@ -118,3 +118,809 @@ find -iname esbuild.js
 dum build --filter=nikolahristov-web
 #1692263553
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ' \;
+#1692264775
+bmd ; dum install ; dum build
+#1692264784
+bmd ; dum install ; dum prepublishOnly
+#1692265550
+cd app/AstroStarter/pac-stack
+#1692265557
+git submodule foreach git fetch
+#1692265562
+git add .
+#1692265563
+git commit
+#1692265566
+cd app/web/
+#1692265568
+git add .
+#1692265570
+git status
+#1692265571
+git add .
+#1692265585
+git commit -m "squash!"
+#1692265593
+git push
+#1692265595
+cd ../
+#1692265600
+cd content/
+#1692265602
+git add .
+#1692265604
+cd ../
+#1692265607
+git add .
+#1692265610
+git commit -m "squash!"
+#1692265611
+git push
+#1692265665
+cd. ./
+#1692265666
+cd ../
+#1692265671
+rm -rf pac-stack-*
+#1692265956
+cd /d/Developer/
+#1692265963
+dum prepublishOnly
+#1692266169
+find -iname .git -execdir bash -c 'pwd ; git remote -v ' \;
+#1692266182
+find -iname .git -execdir bash -c 'pwd ; git remote -v ' \; > text.md
+#1692266399
+cd app/
+#1692266404
+cd AstroStarter/PACStack/
+#1692266407
+git status
+#1692266410
+git add .
+#1692266413
+ci .gitmodules 
+#1692266477
+git add. 
+#1692266479
+git add .
+#1692266482
+git commit
+#1692266486
+cd app/
+#1692266489
+cd content2/
+#1692266490
+git remote -v
+#1692266538
+cd app/Playform/
+#1692266541
+cd ../AstroStarter/
+#1692266542
+cd PACStack/
+#1692266544
+cd app/
+#1692266548
+cd Content/
+#1692266549
+git remote -v
+#1692266572
+git remote set-url origin ssh://git@github.com/AstroStarter/PACStack-Content.git
+#1692266574
+cd ..w/e
+#1692266576
+cd ../Web/
+#1692266578
+cd ../
+#1692266581
+mv Web/ Website
+#1692266583
+cd Website/
+#1692266588
+git remote set-url origin ssh://git@github.com/AstroStarter/PACStack-Website.git
+#1692266614
+cd app/AstroStarter/PACStack/
+#1692266617
+cd app/Website/
+#1692266620
+git remote -v
+#1692268418
+cd Application/NikolaRHristov/bash
+#1692268423
+cd ../bash-completion/
+#1692268425
+git remote -v
+#1692268430
+git sync
+#1692268463
+git add .
+#1692268593
+git commit
+#1692268640
+git push
+#1692268911
+find -iname npm -type d
+#1692268915
+find -iname npm -type d -execdir ls
+#1692268917
+find -iname npm -type d -execdir ls \;
+#1692268934
+find -iname npm -type d -execdir pwd \;
+#1692268940
+find -iname npm -type d -exec pwd \;
+#1692268943
+find -iname npm -type d -exec pwd {} \;
+#1692268946
+find -iname npm -type d -exec ls {} \;
+#1692268955
+find -iname npm -type d -execdir pwd \;
+#1692277693
+bmd
+#1692278218
+find -type d
+#1692278233
+find -type d -iname styles
+#1692278251
+find -iname astro.config.ts -execdir code-insiders tsconfig.json \;
+#1692278599
+find -iname .git -execdir git add . \;
+#1692278648
+find -iname modules
+#1692278653
+\find . -iname modules
+#1692278661
+rm ./Application/AstroStarter/PACStack/.git/modules
+#1692278666
+rm -rf ./Application/AstroStarter/PACStack/.git/modules
+#1692278670
+rm -rf ./Application/NikolaRHristov/dot/.git/modules
+#1692278674
+find -iname .git -execdir git add . \;
+#1692278686
+find -iname .git -type f
+#1692278691
+find -iname .git -type f -exec code-insiders {} \;
+#1692278467
+cld ; bmd ; dum install ;
+#1692278894
+gh repo -h
+#1692278908
+gh repo list 
+#1692278924
+gh repo list -h
+#1692278938
+gh repo list -L 5000 | less
+#1692278947
+gh org list
+#1692278889
+dum install
+#1692279536
+gh org list -h
+#1692279545
+gh repo list -h
+#1692279548
+gh repo list --json
+#1692279553
+gh repo list 
+#1692279556
+gh repo list -h
+#1692279563
+gh repo list NikolaRHristov -q
+#1692279569
+gh repo list NikolaRHristov -q .[].full_name
+#1692279573
+gh repo list NikolaRHristov --json -q .[].full_name
+#1692279585
+gh repo list NikolaRHristov
+#1692279592
+gh repo list NikolaRHristov -l 600
+#1692279596
+gh repo list NikolaRHristov -L 600
+#1692280331
+gh repo list NikolaRHristov -L 600 --json full_name
+#1692280347
+gh repo list NikolaRHristov -L 600
+#1692280351
+gh repo list NikolaRHristov -L 600 --json full_name
+#1692280359
+gh repo list NikolaRHristov -L 600 --json nameWithOwner
+#1692280365
+gh repo list NikolaRHristov -L 600 --json nameWithOwner --silent
+#1692280373
+gh repo list NikolaRHristov -L 600 --json nameWithOwner > text.md
+#1692280389
+gh repo list NikolaRHristov -L 600 --json nameWithOwner >> text.md
+#1692280929
+gh repo list NikolaRHristov -L 500  >> text.md
+#1692280930
+gh repo list Playform -L 500  >> text.md
+#1692280931
+gh repo list windowsdock -L 500 >> text.md
+#1692280931
+gh repo list GrenadierJS -L 500 >> text.md
+#1692280932
+gh repo list SileaJS -L 500 >> text.md
+#1692280932
+gh repo list CrepesJS -L 500 >> text.md
+#1692280932
+gh repo list SouqRs -L 500 >> text.md
+#1692280933
+gh repo list RoundedCorners -L 500 >> text.md
+#1692280933
+gh repo list IntakeNomNom -L 500 >> text.md
+#1692280934
+gh repo list BlackRainbowAI -L 500 >> text.md
+#1692280935
+gh repo list Lightrix -L 500 >> text.md
+#1692280935
+gh repo list ImageWTF -L 500 >> text.md
+#1692280936
+gh repo list YesMaintenance -L 500 >> text.md
+#1692280936
+gh repo list ReturnThief -L 500 >> text.md
+#1692280937
+gh repo list DoccerPage -L 500 >> text.md
+#1692280937
+gh repo list MythemeCloud -L 500 >> text.md
+#1692280938
+gh repo list NowPlayingCards -L 500 >> text.md
+#1692280938
+gh repo list NeovimSpace -L 500 >> text.md
+#1692280939
+gh repo list HalleSoftware -L 500 >> text.md
+#1692280939
+gh repo list AstroStarter -L 500 >> text.md
+#1692280940
+gh repo list NastyApplication -L 500 >> text.md
+#1692280962
+gh repo list Playform -L 500 --json nameWithOwner >> text.md
+#1692280963
+gh repo list windowsdock -L 500 --json nameWithOwner >> text.md
+#1692280963
+gh repo list GrenadierJS -L 500 --json nameWithOwner >> text.md
+#1692280964
+gh repo list SileaJS -L 500 --json nameWithOwner >> text.md
+#1692280964
+gh repo list CrepesJS -L 500 --json nameWithOwner >> text.md
+#1692280965
+gh repo list SouqRs -L 500 --json nameWithOwner >> text.md
+#1692280965
+gh repo list RoundedCorners -L 500 --json nameWithOwner >> text.md
+#1692280966
+gh repo list IntakeNomNom -L 500 --json nameWithOwner >> text.md
+#1692280966
+gh repo list BlackRainbowAI -L 500 --json nameWithOwner >> text.md
+#1692280967
+gh repo list Lightrix -L 500 --json nameWithOwner >> text.md
+#1692280968
+gh repo list ImageWTF -L 500 --json nameWithOwner >> text.md
+#1692280968
+gh repo list YesMaintenance -L 500 --json nameWithOwner >> text.md
+#1692280969
+gh repo list ReturnThief -L 500 --json nameWithOwner >> text.md
+#1692280969
+gh repo list DoccerPage -L 500 --json nameWithOwner >> text.md
+#1692280970
+gh repo list MythemeCloud -L 500 --json nameWithOwner >> text.md
+#1692280970
+gh repo list NowPlayingCards -L 500 --json nameWithOwner >> text.md
+#1692280971
+gh repo list NeovimSpace -L 500 --json nameWithOwner >> text.md
+#1692280972
+gh repo list HalleSoftware -L 500 --json nameWithOwner >> text.md
+#1692280972
+gh repo list AstroStarter -L 500 --json nameWithOwner >> text.md
+#1692280972
+gh repo list NastyApplication -L 500 --json nameWithOwner >> text.md
+#1692281110
+gh repo list NikolaRhristov -L 500 --json nameWithOwner >> text.md
+#1692281147
+gh repo 
+#1692281150
+gh repo rename 
+#1692281152
+gh repo rename -h
+#1692281617
+gh repo rename -R AstroStarter/PACStack AstroStarter/PACStack --yes
+#1692281617
+gh repo rename -R AstroStarter/PACStackContent AstroStarter/PACStackContent --yes
+#1692281618
+gh repo rename -R AstroStarter/PACStackWebsite AstroStarter/PACStackWebsite --yes
+#1692281619
+gh repo rename -R BlackRainbowAI/blackrainbow.media BlackRainbowAI/Website --yes
+#1692281619
+gh repo rename -R BlackRainbowAI/npm BlackRainbowAI/NPM --yes
+#1692281620
+gh repo rename -R BlackRainbowAI/rfc BlackRainbowAI/RFC --yes
+#1692281621
+gh repo rename -R CrepesJS/crates CrepesJS/Cargo --yes
+#1692281621
+gh repo rename -R CrepesJS/create-crepes-app CrepesJS/CreateCrepesApp --yes
+#1692281622
+gh repo rename -R CrepesJS/crepes.dev CrepesJS/Website --yes
+#1692281622
+gh repo rename -R CrepesJS/mfw-gatsby CrepesJS/Gatsby --yes
+#1692281623
+gh repo rename -R CrepesJS/mfw-next CrepesJS/Next --yes
+#1692281624
+gh repo rename -R CrepesJS/ui-baseweb CrepesJS/Baseweb --yes
+#1692281624
+gh repo rename -R CrepesJS/ui-blueprint CrepesJS/Blueprint --yes
+#1692281625
+gh repo rename -R CrepesJS/ui-bootstrap CrepesJS/Bootstrap --yes
+#1692281626
+gh repo rename -R CrepesJS/ui-carbon CrepesJS/Carbon --yes
+#1692281626
+gh repo rename -R CrepesJS/ui-chakra CrepesJS/Chakra --yes
+#1692281627
+gh repo rename -R CrepesJS/ui-clarity CrepesJS/Clarity --yes
+#1692281627
+gh repo rename -R CrepesJS/ui-element CrepesJS/Element --yes
+#1692281628
+gh repo rename -R CrepesJS/ui-elemental CrepesJS/Elemental --yes
+#1692281629
+gh repo rename -R CrepesJS/ui-evergreen CrepesJS/Evergreen --yes
+#1692281629
+gh repo rename -R CrepesJS/ui-fast CrepesJS/Fast --yes
+#1692281630
+gh repo rename -R CrepesJS/ui-fluent CrepesJS/Fluent --yes
+#1692281631
+gh repo rename -R CrepesJS/ui-foundation CrepesJS/Foundation --yes
+#1692281632
+gh repo rename -R CrepesJS/ui-grommet CrepesJS/Grommet --yes
+#1692281632
+gh repo rename -R CrepesJS/ui-headless CrepesJS/Headless --yes
+#1692281633
+gh repo rename -R CrepesJS/ui-material CrepesJS/Material --yes
+#1692281634
+gh repo rename -R CrepesJS/ui-polaris CrepesJS/Polaris --yes
+#1692281634
+gh repo rename -R CrepesJS/ui-semantic CrepesJS/Semantic --yes
+#1692281635
+gh repo rename -R CrepesJS/ui-shards CrepesJS/Shards --yes
+#1692281635
+gh repo rename -R CrepesJS/ui-uikit CrepesJS/Uikit --yes
+#1692281636
+gh repo rename -R CrepesJS/ui-uswds CrepesJS/USWDS --yes
+#1692281637
+gh repo rename -R DoccerPage/doccer.page DoccerPage/Website --yes
+#1692281638
+gh repo rename -R GrenadierJS/awesome-grenadier GrenadierJS/Awesome --yes
+#1692281639
+gh repo rename -R GrenadierJS/cookbook-third-party-apis GrenadierJS/cookbook-third-party-apis --yes
+#1692281639
+gh repo rename -R GrenadierJS/create-grenadier-app GrenadierJS/CreateGreandierApp --yes
+#1692281640
+gh repo rename -R GrenadierJS/example-blog GrenadierJS/Blog --yes
+#1692281641
+gh repo rename -R GrenadierJS/example-invoice GrenadierJS/Invoice --yes
+#1692281641
+gh repo rename -R GrenadierJS/example-todo GrenadierJS/Todo --yes
+#1692281642
+gh repo rename -R GrenadierJS/grenadier.dev GrenadierJS/Website --yes
+#1692281643
+gh repo rename -R GrenadierJS/netlify-plugin-prisma-provider GrenadierJS/netlify-plugin-prisma-provider --yes
+#1692281643
+gh repo rename -R GrenadierJS/npm GrenadierJS/NPM --yes
+#1692281644
+gh repo rename -R GrenadierJS/playground-auth GrenadierJS/playground-auth --yes
+#1692281644
+gh repo rename -R HalleSoftware/halle.software HalleSoftware/Website --yes
+#1692281645
+gh repo rename -R ImageWTF/image.wtf ImageWTF/Website --yes
+#1692281646
+gh repo rename -R IntakeNomNom/crates IntakeNomNom/Cargo --yes
+#1692281646
+gh repo rename -R IntakeNomNom/intakenomnom.com IntakeNomNom/Website --yes
+#1692281647
+gh repo rename -R IntakeNomNom/marketplace IntakeNomNom/Marketplace --yes
+#1692281648
+gh repo rename -R IntakeNomNom/npm IntakeNomNom/NPM --yes
+#1692281648
+gh repo rename -R Lightrix/astro-deno-deploy Lightrix/AstroDenoDeploy --yes
+#1692281649
+gh repo rename -R Lightrix/astro-query Lightrix/AstroQuery --yes
+#1692281650
+gh repo rename -R Lightrix/astro-sst-template Lightrix/AstroSSTTemplate --yes
+#1692281650
+gh repo rename -R Lightrix/astro-starter-template Lightrix/AstroStarterTemplate --yes
+#1692281651
+gh repo rename -R Lightrix/auto-save Lightrix/AutoSave --yes
+#1692281651
+gh repo rename -R Lightrix/compress Lightrix/Compress --yes
+#1692281652
+gh repo rename -R Lightrix/experiments Lightrix/Experiment --yes
+#1692281653
+gh repo rename -R Lightrix/files-pipe Lightrix/FilesPipe --yes
+#1692281653
+gh repo rename -R Lightrix/flights-dispatch Lightrix/FlightDispatch --yes
+#1692281654
+gh repo rename -R Lightrix/inn Lightrix/Inn --yes
+#1692281655
+gh repo rename -R Lightrix/lightrix.help Lightrix/Website --yes
+#1692281655
+gh repo rename -R Lightrix/overbrowser Lightrix/OverBrowser --yes
+#1692281656
+gh repo rename -R MythemeCloud/cargo MythemeCloud/Cargo --yes
+#1692281657
+gh repo rename -R MythemeCloud/mytheme-content MythemeCloud/MythemeContent --yes
+#1692281657
+gh repo rename -R MythemeCloud/mytheme-web MythemeCloud/MythemeWeb --yes
+#1692281658
+gh repo rename -R MythemeCloud/mytheme.cloud MythemeCloud/Website --yes
+#1692281659
+gh repo rename -R MythemeCloud/npm MythemeCloud/NPM --yes
+#1692281659
+gh repo rename -R NastyApplication/payload NastyApplication/Payload --yes
+#1692281660
+gh repo rename -R NeovimSpace/neovim.space NeovimSpace/Website --yes
+#1692281661
+gh repo rename -R NikolaRHristov/api NikolaRHristov/API --yes
+#1692281661
+gh repo rename -R NikolaRHristov/astro-convert NikolaRHristov/AstroConvert --yes
+#1692281662
+gh repo rename -R NikolaRHristov/astro-dashboard NikolaRHristov/AstroDashboard --yes
+#1692281663
+gh repo rename -R NikolaRHristov/astro-dead-links NikolaRHristov/AstroDeadLinks --yes
+#1692281664
+gh repo rename -R NikolaRHristov/astro-inlang NikolaRHristov/AstroInlang --yes
+#1692281664
+gh repo rename -R NikolaRHristov/astro-lint NikolaRHristov/AstroLint --yes
+#1692281665
+gh repo rename -R NikolaRHristov/astro-networks NikolaRHristov/AstroNetworks --yes
+#1692281666
+gh repo rename -R NikolaRHristov/astro-query NikolaRHristov/AstroQuery --yes
+#1692281666
+gh repo rename -R NikolaRHristov/astro-short-urls NikolaRHristov/AstroShortURLs --yes
+#1692281667
+gh repo rename -R NikolaRHristov/auto-save NikolaRHristov/Auto-Save --yes
+#1692281667
+gh repo rename -R NikolaRHristov/bench-piscina NikolaRHristov/BenchPiscina --yes
+#1692281668
+gh repo rename -R NikolaRHristov/bot NikolaRHristov/Bot --yes
+#1692281668
+gh repo rename -R NikolaRHristov/camera-tools NikolaRHristov/CameraTools --yes
+#1692281670
+gh repo rename -R NikolaRHristov/DeploymentDelete NikolaRHristov/DeploymentDelete --yes
+#1692281671
+gh repo rename -R NikolaRHristov/dispatch NikolaRHristov/Dispatch --yes
+#1692281671
+gh repo rename -R NikolaRHristov/FilesPipe NikolaRHristov/FilesPipe --yes
+#1692281672
+gh repo rename -R NikolaRHristov/nikolahristov.tech NikolaRHristov/Website --yes
+#1692281672
+gh repo rename -R NikolaRHristov/NikolaRHristov NikolaRHristov/NikolaRHristov --yes
+#1692281673
+gh repo rename -R NikolaRHristov/obs NikolaRHristov/OBS --yes
+#1692281674
+gh repo rename -R NikolaRHristov/Script NikolaRHristov/Script --yes
+#1692281674
+gh repo rename -R NikolaRHristov/TypeScriptESBuild NikolaRHristov/TypeScriptESBuild --yes
+#1692281675
+gh repo rename -R NikolaRHristov/walle NikolaRHristov/Walle --yes
+#1692281676
+gh repo rename -R NowPlayingCards/api NowPlayingCards/API --yes
+#1692281676
+gh repo rename -R NowPlayingCards/common NowPlayingCards/Common --yes
+#1692281677
+gh repo rename -R NowPlayingCards/now-playing.cards NowPlayingCards/Website --yes
+#1692281677
+gh repo rename -R NowPlayingCards/now-playing.cards.backup NowPlayingCards/Website.backup --yes
+#1692281678
+gh repo rename -R NowPlayingCards/socket NowPlayingCards/Socket --yes
+#1692281679
+gh repo rename -R Playform/aws Playform/AWS --yes
+#1692281679
+gh repo rename -R Playform/blank-web-starter Playform/BlankWebStarter --yes
+#1692281680
+gh repo rename -R Playform/create-blank-web-starter Playform/CreateBlankWebStarter --yes
+#1692281681
+gh repo rename -R Playform/ec2 Playform/EC2 --yes
+#1692281681
+gh repo rename -R Playform/playform.cloud Playform/Website --yes
+#1692281682
+gh repo rename -R Playform/wordpress Playform/WordPress --yes
+#1692281682
+gh repo rename -R ReturnThief/returnthief.quest ReturnThief/Website --yes
+#1692281683
+gh repo rename -R RoundedCorners/Application RoundedCorners/Application --yes
+#1692281684
+gh repo rename -R SileaJS/silea.dev SileaJS/Website --yes
+#1692281684
+gh repo rename -R SouqRs/crates SouqRs/Cargo --yes
+#1692281685
+gh repo rename -R SouqRs/souq.dev SouqRs/Website --yes
+#1692281685
+gh repo rename -R windowsdock/app windowsdock/Application --yes
+#1692281686
+gh repo rename -R windowsdock/database windowsdock/Database --yes
+#1692281687
+gh repo rename -R windowsdock/windowsdock.app windowsdock/Website --yes
+#1692281688
+gh repo rename -R YesMaintenance/NPM YesMaintenance/NPM --yes
+#1692282157
+rm text.md 
+#1692282173
+ci ~/.bash_history_shared 
+#1692282215
+gh repo list AstroStarter -L 500 --json nameWithOwner >> text.md
+#1692282215
+gh repo list BlackRainbowAI -L 500 --json nameWithOwner >> text.md
+#1692282216
+gh repo list CrepesJS -L 500 --json nameWithOwner >> text.md
+#1692282216
+gh repo list DoccerPage -L 500 --json nameWithOwner >> text.md
+#1692282217
+gh repo list GrenadierJS -L 500 --json nameWithOwner >> text.md
+#1692282217
+gh repo list HalleSoftware -L 500 --json nameWithOwner >> text.md
+#1692282218
+gh repo list ImageWTF -L 500 --json nameWithOwner >> text.md
+#1692282218
+gh repo list IntakeNomNom -L 500 --json nameWithOwner >> text.md
+#1692282219
+gh repo list Lightrix -L 500 --json nameWithOwner >> text.md
+#1692282219
+gh repo list MythemeCloud -L 500 --json nameWithOwner >> text.md
+#1692282220
+gh repo list NastyApplication -L 500 --json nameWithOwner >> text.md
+#1692282220
+gh repo list NeovimSpace -L 500 --json nameWithOwner >> text.md
+#1692282221
+gh repo list NikolaRHristov -L 500 --json nameWithOwner >> text.md
+#1692282221
+gh repo list NikolaRHristov -L 600 --json nameWithOwner >> text.md
+#1692282222
+gh repo list NowPlayingCards -L 500 --json nameWithOwner >> text.md
+#1692282223
+gh repo list Playform -L 500 --json nameWithOwner >> text.md
+#1692282223
+gh repo list ReturnThief -L 500 --json nameWithOwner >> text.md
+#1692282224
+gh repo list RoundedCorners -L 500 --json nameWithOwner >> text.md
+#1692282224
+gh repo list SileaJS -L 500 --json nameWithOwner >> text.md
+#1692282225
+gh repo list SouqRs -L 500 --json nameWithOwner >> text.md
+#1692282225
+gh repo list windowsdock -L 500 --json nameWithOwner >> text.md
+#1692282226
+gh repo list YesMaintenance -L 500 --json nameWithOwner >> text.md
+#1692283215
+gh repo rename -R AstroStarter/AstroStarter-PACStack PACStack --yes
+#1692283216
+gh repo rename -R AstroStarter/AstroStarter-PACStackContent PACStackContent --yes
+#1692283217
+gh repo rename -R AstroStarter/AstroStarter-PACStackWebsite PACStackWebsite --yes
+#1692283217
+gh repo rename -R BlackRainbowAI/BlackRainbowAI-NPM NPM --yes
+#1692283218
+gh repo rename -R BlackRainbowAI/BlackRainbowAI-RFC RFC --yes
+#1692283219
+gh repo rename -R BlackRainbowAI/BlackRainbowAI-Website Website --yes
+#1692283219
+gh repo rename -R CrepesJS/CrepesJS-Baseweb Baseweb --yes
+#1692283220
+gh repo rename -R CrepesJS/CrepesJS-Blueprint Blueprint --yes
+#1692283221
+gh repo rename -R CrepesJS/CrepesJS-Bootstrap Bootstrap --yes
+#1692283221
+gh repo rename -R CrepesJS/CrepesJS-Carbon Carbon --yes
+#1692283222
+gh repo rename -R CrepesJS/CrepesJS-Cargo Cargo --yes
+#1692283223
+gh repo rename -R CrepesJS/CrepesJS-Chakra Chakra --yes
+#1692283224
+gh repo rename -R CrepesJS/CrepesJS-Clarity Clarity --yes
+#1692283224
+gh repo rename -R CrepesJS/CrepesJS-CreateCrepesApp CreateCrepesApp --yes
+#1692283225
+gh repo rename -R CrepesJS/CrepesJS-Element Element --yes
+#1692283225
+gh repo rename -R CrepesJS/CrepesJS-Elemental Elemental --yes
+#1692283226
+gh repo rename -R CrepesJS/CrepesJS-Evergreen Evergreen --yes
+#1692283227
+gh repo rename -R CrepesJS/CrepesJS-Fast Fast --yes
+#1692283227
+gh repo rename -R CrepesJS/CrepesJS-Fluent Fluent --yes
+#1692283228
+gh repo rename -R CrepesJS/CrepesJS-Foundation Foundation --yes
+#1692283229
+gh repo rename -R CrepesJS/CrepesJS-Gatsby Gatsby --yes
+#1692283229
+gh repo rename -R CrepesJS/CrepesJS-Grommet Grommet --yes
+#1692283230
+gh repo rename -R CrepesJS/CrepesJS-Headless Headless --yes
+#1692283231
+gh repo rename -R CrepesJS/CrepesJS-Material Material --yes
+#1692283232
+gh repo rename -R CrepesJS/CrepesJS-Next Next --yes
+#1692283232
+gh repo rename -R CrepesJS/CrepesJS-Polaris Polaris --yes
+#1692283233
+gh repo rename -R CrepesJS/CrepesJS-Semantic Semantic --yes
+#1692283233
+gh repo rename -R CrepesJS/CrepesJS-Shards Shards --yes
+#1692283234
+gh repo rename -R CrepesJS/CrepesJS-Uikit Uikit --yes
+#1692283235
+gh repo rename -R CrepesJS/CrepesJS-USWDS USWDS --yes
+#1692283235
+gh repo rename -R CrepesJS/CrepesJS-Website Website --yes
+#1692283236
+gh repo rename -R DoccerPage/DoccerPage-Website Website --yes
+#1692283237
+gh repo rename -R GrenadierJS/GrenadierJS-Awesome Awesome --yes
+#1692283237
+gh repo rename -R GrenadierJS/GrenadierJS-Blog Blog --yes
+#1692283238
+gh repo rename -R GrenadierJS/GrenadierJS-cookbook-third-party-apis cookbook-third-party-apis --yes
+#1692283239
+gh repo rename -R GrenadierJS/GrenadierJS-CreateGreandierApp CreateGreandierApp --yes
+#1692283239
+gh repo rename -R GrenadierJS/GrenadierJS-Invoice Invoice --yes
+#1692283240
+gh repo rename -R GrenadierJS/GrenadierJS-netlify-plugin-prisma-provider netlify-plugin-prisma-provider --yes
+#1692283240
+gh repo rename -R GrenadierJS/GrenadierJS-NPM NPM --yes
+#1692283241
+gh repo rename -R GrenadierJS/GrenadierJS-playground-auth playground-auth --yes
+#1692283242
+gh repo rename -R GrenadierJS/GrenadierJS-Todo Todo --yes
+#1692283242
+gh repo rename -R GrenadierJS/GrenadierJS-Website Website --yes
+#1692283243
+gh repo rename -R HalleSoftware/HalleSoftware-Website Website --yes
+#1692283244
+gh repo rename -R ImageWTF/ImageWTF-Website Website --yes
+#1692283244
+gh repo rename -R IntakeNomNom/IntakeNomNom-Cargo Cargo --yes
+#1692283245
+gh repo rename -R IntakeNomNom/IntakeNomNom-Marketplace Marketplace --yes
+#1692283245
+gh repo rename -R IntakeNomNom/IntakeNomNom-NPM NPM --yes
+#1692283246
+gh repo rename -R IntakeNomNom/IntakeNomNom-Website Website --yes
+#1692283247
+gh repo rename -R Lightrix/Lightrix-AstroDenoDeploy AstroDenoDeploy --yes
+#1692283247
+gh repo rename -R Lightrix/Lightrix-AstroQuery AstroQuery --yes
+#1692283248
+gh repo rename -R Lightrix/Lightrix-AstroSSTTemplate AstroSSTTemplate --yes
+#1692283249
+gh repo rename -R Lightrix/Lightrix-AstroStarterTemplate AstroStarterTemplate --yes
+#1692283249
+gh repo rename -R Lightrix/Lightrix-AutoSave AutoSave --yes
+#1692283250
+gh repo rename -R Lightrix/Lightrix-Compress Compress --yes
+#1692283251
+gh repo rename -R Lightrix/Lightrix-Experiment Experiment --yes
+#1692283251
+gh repo rename -R Lightrix/Lightrix-FilesPipe FilesPipe --yes
+#1692283252
+gh repo rename -R Lightrix/Lightrix-FlightDispatch FlightDispatch --yes
+#1692283252
+gh repo rename -R Lightrix/Lightrix-Inn Inn --yes
+#1692283253
+gh repo rename -R Lightrix/Lightrix-OverBrowser OverBrowser --yes
+#1692283254
+gh repo rename -R Lightrix/Lightrix-Website Website --yes
+#1692283254
+gh repo rename -R MythemeCloud/MythemeCloud-Cargo Cargo --yes
+#1692283255
+gh repo rename -R MythemeCloud/MythemeCloud-MythemeContent MythemeContent --yes
+#1692283256
+gh repo rename -R MythemeCloud/MythemeCloud-MythemeWeb MythemeWeb --yes
+#1692283256
+gh repo rename -R MythemeCloud/MythemeCloud-NPM NPM --yes
+#1692283257
+gh repo rename -R MythemeCloud/MythemeCloud-Website Website --yes
+#1692283258
+gh repo rename -R NastyApplication/NastyApplication-Payload Payload --yes
+#1692283258
+gh repo rename -R NeovimSpace/NeovimSpace-Website Website --yes
+#1692283259
+gh repo rename -R NikolaRHristov/NikolaRHristov-API API --yes
+#1692283260
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroConvert AstroConvert --yes
+#1692283261
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroDashboard AstroDashboard --yes
+#1692283261
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroDeadLinks AstroDeadLinks --yes
+#1692283262
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroInlang AstroInlang --yes
+#1692283263
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroLint AstroLint --yes
+#1692283263
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroNetworks AstroNetworks --yes
+#1692283264
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroQuery AstroQuery --yes
+#1692283264
+gh repo rename -R NikolaRHristov/NikolaRHristov-AstroShortURLs AstroShortURLs --yes
+#1692283265
+gh repo rename -R NikolaRHristov/NikolaRHristov-Auto-Save Auto-Save --yes
+#1692283266
+gh repo rename -R NikolaRHristov/NikolaRHristov-BenchPiscina BenchPiscina --yes
+#1692283266
+gh repo rename -R NikolaRHristov/NikolaRHristov-Bot Bot --yes
+#1692283267
+gh repo rename -R NikolaRHristov/NikolaRHristov-CameraTools CameraTools --yes
+#1692283267
+gh repo rename -R NikolaRHristov/NikolaRHristov-DeploymentDelete DeploymentDelete --yes
+#1692283268
+gh repo rename -R NikolaRHristov/NikolaRHristov-Dispatch Dispatch --yes
+#1692283269
+gh repo rename -R NikolaRHristov/NikolaRHristov-FilesPipe FilesPipe --yes
+#1692283269
+gh repo rename -R NikolaRHristov/NikolaRHristov-NikolaRHristov NikolaRHristov --yes
+#1692283270
+gh repo rename -R NikolaRHristov/NikolaRHristov-OBS OBS --yes
+#1692283271
+gh repo rename -R NikolaRHristov/NikolaRHristov-Script Script --yes
+#1692283271
+gh repo rename -R NikolaRHristov/NikolaRHristov-TypeScriptESBuild TypeScriptESBuild --yes
+#1692283272
+gh repo rename -R NikolaRHristov/NikolaRHristov-Walle Walle --yes
+#1692283273
+gh repo rename -R NikolaRHristov/NikolaRHristov-Website Website --yes
+#1692283273
+gh repo rename -R NowPlayingCards/NowPlayingCards-API API --yes
+#1692283274
+gh repo rename -R NowPlayingCards/NowPlayingCards-Common Common --yes
+#1692283274
+gh repo rename -R NowPlayingCards/NowPlayingCards-Socket Socket --yes
+#1692283275
+gh repo rename -R NowPlayingCards/NowPlayingCards-Website Website --yes
+#1692283276
+gh repo rename -R NowPlayingCards/NowPlayingCards-Website.backup Website.backup --yes
+#1692283276
+gh repo rename -R Playform/Playform-AWS AWS --yes
+#1692283277
+gh repo rename -R Playform/Playform-BlankWebStarter BlankWebStarter --yes
+#1692283278
+gh repo rename -R Playform/Playform-CreateBlankWebStarter CreateBlankWebStarter --yes
+#1692283278
+gh repo rename -R Playform/Playform-EC2 EC2 --yes
+#1692283279
+gh repo rename -R Playform/Playform-Website Website --yes
+#1692283279
+gh repo rename -R Playform/Playform-WordPress WordPress --yes
+#1692283280
+gh repo rename -R ReturnThief/ReturnThief-Website Website --yes
+#1692283281
+gh repo rename -R RoundedCorners/RoundedCorners-Application Application --yes
+#1692283281
+gh repo rename -R SileaJS/SileaJS-Website Website --yes
+#1692283282
+gh repo rename -R SouqRs/SouqRs-Cargo Cargo --yes
+#1692283283
+gh repo rename -R SouqRs/SouqRs-Website Website --yes
+#1692283283
+gh repo rename -R windowsdock/windowsdock-Application Application --yes
+#1692283284
+gh repo rename -R windowsdock/windowsdock-Database Database --yes
+#1692283284
+gh repo rename -R windowsdock/windowsdock-Website Website --yes
+#1692283285
+gh repo rename -R YesMaintenance/YesMaintenance-NPM NPM --yes
+#1692284023
+gh repo rename -R windowsdock/windowsdock-Website Website --yes
+#1692284064
+find -name .git -execdir pwd
+#1692284065
+find -name .git -execdir pwd \;
+#1692284080
+find -iname .git.*
+#1692284087
+find -iname .git.* -exec code-insiders {} \;
+#1692284184
+cd Application/AstroStarter/
+#1692284188
+cd PACStack/
+#1692284192
+git add .
+#1692284205
+git commit -m "squash!"
+#1692284873
+git submodule add ssh://git@github.com/AstroStarter/PACStackWebsite.git Application/Website
