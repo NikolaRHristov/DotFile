@@ -1998,3 +1998,7 @@ bmd
 bmd ; dum install ;
 #1692352168
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692352902
+find -iname firebase.ts
+#1692352915
+find -iname firebase.ts -execdir mv FIREBASE.ts FIREBASE2.ts \;
