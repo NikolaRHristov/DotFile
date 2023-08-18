@@ -1948,3 +1948,9 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 dum install ; dum prepublishOnly --filter=nikolahristov-web
 #1692313535
 /d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+#1692313837
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692348533
+find -iname astro.config.ts
+#1692348548
+find -iname astro.config.ts -execdir dum install -D -E astro-compress astro-critters astro-rome \;
