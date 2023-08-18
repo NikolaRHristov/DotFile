@@ -2180,3 +2180,15 @@ git push --force
 git remote -v
 #1692378010
 cd /d/Developer/
+#1692378011
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692378693
+cd Application/RoundedCorners/
+#1692378703
+git clone ssh://git@github.com/RoundedCorners/Website.git
+#1692378706
+cd Website/
+#1692378707
+;s
+#1692378710
+bmd
