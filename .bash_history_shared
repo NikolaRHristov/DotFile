@@ -2034,3 +2034,9 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 rm -rf Application/astro-community/AstroCompress/.trunk/
 #1692359536
 rm -rf Application/astro-community/AstroCompress/.gitignore 
+#1692359538
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692360020
+find -iname .trunk
+#1692360023
+find -iname .trunk -exec rm -rf {} \;
