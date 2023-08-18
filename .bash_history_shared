@@ -2052,3 +2052,23 @@ pnpm show astro-compress version
 pnpm show astro-rome version
 #1692366741
 pnpm show astro-critters version
+#1692367973
+wrangler
+#1692367981
+wrangler pages
+#1692367985
+wrangler pages project
+#1692367987
+wrangler pages project -h
+#1692367991
+wrangler pages project -h list
+#1692368007
+which wrangler
+#1692368011
+ci $(which wrangler)
+#1692368018
+pnpm uninstall -g wrangler
+#1692368024
+npm list -g
+#1692368161
+npm uninstall -g @trout.run/cli
