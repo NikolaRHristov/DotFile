@@ -1954,3 +1954,29 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 find -iname astro.config.ts
 #1692348548
 find -iname astro.config.ts -execdir dum install -D -E astro-compress astro-critters astro-rome \;
+#1692349155
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692349766
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1692349770
+ci package.json CHANGELOG.md 
+#1692349780
+npm show typescript-esbuild version
+#1692350059
+cd ../../FilesPipe/
+#1692350061
+cd. ./
+#1692350062
+cd ..
+#1692350067
+mv FilesPipe NPM/
+#1692350077
+cd NPM/FilesPipe/
+#1692350080
+ci CHANGELOG.md package.json 
+#1692350095
+bmd
+#1692350125
+cd ../TypeScriptESBuild/
+#1692350245
+VERSION="0.1.14" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
