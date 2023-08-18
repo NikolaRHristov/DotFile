@@ -2072,3 +2072,75 @@ pnpm uninstall -g wrangler
 npm list -g
 #1692368161
 npm uninstall -g @trout.run/cli
+#1692368180
+npm uninstall -g diskernet generator-code google-closure-compiler ndb yo
+#1692368196
+pnpm list -g
+#1692368224
+pnpm unlink -g @lightrix/script
+#1692368242
+cd Application/Lightrix/NPM/
+#1692368278
+pnpm uninstall -g @lightrix/script
+#1692368293
+cd /d/Developer/
+#1692368297
+find -iname Syclone
+#1692368301
+pnpm uninstall -g sclone
+#1692368304
+pnpm uninstall -g syclone
+#1692368320
+pnpm show typescript-esbuild
+#1692368325
+pnpm show typescriptesbuild
+#1692368332
+pnpm uninstall -g typescriptesbuild
+#1692368342
+pnpm list -g
+#1692368355
+cd /d/Developer/
+#1692368359
+cd /d/
+#1692368362
+find -iname typescriptbuild
+#1692368378
+cd tools/.pnpm-global/
+#1692368381
+cd 5/
+#1692368383
+ci package.json 
+#1692368404
+ncu -u -g
+#1692368419
+npm -g install npm-check-updates@16.12.2 prettier-plugin-astro@0.11.1
+#1692368433
+ncu -u
+#1692368442
+pnpm install
+#1692368453
+cd /d/Developer/
+#1692368853
+find -iname .github -type d -execdir ls README.md \;
+#1692368872
+find -iname .github -type d -execdir bash -c 'pwd ; ls README.md ; ' \;
+#1692368912
+find -iname .github -type d -execdir bash -c 'pwd ; ls README.md ; ' \; > text.md
+#1692368460
+cld ; bmd ; dum install 
+#1692368930
+ci text.md 
+#1692368934
+ci .
+#1692368472
+/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+#1692370227
+find -iname .github -type d
+#1692370336
+find -iname .github -type d -exec ls README.md \;
+#1692370406
+find -iname .github -type d -exec ls {}/README.md \;
+#1692370569
+./text.sh 
+#1692370575
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
