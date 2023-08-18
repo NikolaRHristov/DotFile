@@ -2160,3 +2160,7 @@ grep -rnw '"extends": "typescript-esbuild' . >text.md
 grep -rnw '"extends": "typescript-esbuild' . > text.md
 #1692371014
 grep -rnw '"extends": "typescript-esbuild' . >| text.md
+#1692371228
+./text.sh 
+#1692374212
+cld ; bmd ; dum install 
