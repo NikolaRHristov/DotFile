@@ -1996,3 +1996,5 @@ cd /d/Developer/
 bmd
 #1692351296
 bmd ; dum install ;
+#1692352168
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
