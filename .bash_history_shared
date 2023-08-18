@@ -123,7 +123,7 @@ bmd ; dum install ; dum build
 #1692264784
 bmd ; dum install ; dum prepublishOnly
 #1692265550
-cd app/AstroStarter/pac-stack
+cd app/AstroStarter/PACStack
 #1692265557
 git submodule foreach git fetch
 #1692265562
