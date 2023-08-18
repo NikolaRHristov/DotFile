@@ -2042,3 +2042,11 @@ find -iname .trunk
 find -iname .trunk -exec rm -rf {} \;
 #1692360027
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692366528
+pnpm show astro-compress
+#1692366530
+pnpm show astro-rome
+#1692366539
+pnpm show astro-compress version
+#1692366548
+pnpm show astro-rome version
