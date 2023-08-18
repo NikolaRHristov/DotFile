@@ -2196,3 +2196,5 @@ bmd
 cd /d/Developer/
 #1692379256
 bmd ; dum install ; dum prepublishOnly
+#1692379247
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
