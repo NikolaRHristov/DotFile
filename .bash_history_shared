@@ -2040,3 +2040,5 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 find -iname .trunk
 #1692360023
 find -iname .trunk -exec rm -rf {} \;
+#1692360027
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
