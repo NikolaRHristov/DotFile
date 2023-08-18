@@ -10,7 +10,7 @@
 		"url": "https://nikolahristov.tech"
 	},
 	"devDependencies": {
-		"typescript-esbuild": "0.1.13"
+		"typescript-esbuild": "0.1.14"
 	},
 	"publishConfig": {
 		"access": "public"
