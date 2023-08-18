@@ -2164,3 +2164,17 @@ grep -rnw '"extends": "typescript-esbuild' . >| text.md
 ./text.sh 
 #1692374212
 cld ; bmd ; dum install 
+#1692374849
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692377522
+cd Application/MythemeCloud/Website/
+#1692377523
+git remote -v
+#1692377538
+git remote set-url origin ssh://git@github.com/MythemeCloud/Website.git
+#1692377539
+git sync
+#1692377549
+git push --force
+#1692377632
+git remote -v
