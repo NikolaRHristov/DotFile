@@ -2016,3 +2016,21 @@ find -iname firebase2.ts
 find -iname firebase.ts
 #1692353247
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692354327
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692355537
+curl https://getmic.ro | bash
+#1692355544
+micro
+#1692355546
+./micro.exe 
+#1692357592
+find -iname .github
+#1692357986
+./text.sh 
+#1692359516
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692359533
+rm -rf Application/astro-community/AstroCompress/.trunk/
+#1692359536
+rm -rf Application/astro-community/AstroCompress/.gitignore 
