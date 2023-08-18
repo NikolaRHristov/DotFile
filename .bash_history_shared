@@ -2144,3 +2144,19 @@ find -iname .github -type d -exec ls {}/README.md \;
 ./text.sh 
 #1692370575
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692370957
+cd Application/windowsdock/
+#1692370958
+cd Website/
+#1692370965
+ci tsconfig.json 
+#1692370980
+cd /d/Developer/
+#1692370987
+grep -rnw '"extends": "typescript-esbuild' .
+#1692370996
+grep -rnw '"extends": "typescript-esbuild' . >text.md
+#1692371011
+grep -rnw '"extends": "typescript-esbuild' . > text.md
+#1692371014
+grep -rnw '"extends": "typescript-esbuild' . >| text.md
