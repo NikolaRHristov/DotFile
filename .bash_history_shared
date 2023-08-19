@@ -2600,3 +2600,5 @@ cd Application/AstroCommunity/AstroCompress/
 dum start --filter=nikolahristov-web
 #1692456782
 dum prepublishOnly --filter=nikolahristov-web
+#1692458708
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
