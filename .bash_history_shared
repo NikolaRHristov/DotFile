@@ -2686,3 +2686,23 @@ code-insiders /d/Developer/Application/NikolaRHristov/Website/Source/Header.astr
 code-insiders /d/Developer/Application/Playform/Website/Source/Header.astro
 #1692468370
 code-insiders /d/Developer/Application/Lightrix/Website/Source/Component/Footer.astro /d/Developer/Application/Lightrix/Website/Source/Component/Header.astro /d/Developer/Application/NikolaRHristov/Website/Source/Component/Footer.astro /d/Developer/Application/NikolaRHristov/Website/Source/Component/Header.astro /d/Developer/Application/Playform/Website/Source/Component/Header.astro
+#1692468934
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692469374
+cld ; bmd ; dum install ; dum prepublishOnly 
+#1692471772
+dum prepublishOnly
+#1692471899
+cd Application/NikolaRHristov/DeploymentDelete/
+#1692471904
+wrangler publish
+#1692471908
+cargo install wrangler
+#1692472012
+echo $OPENSSL_DIR/
+#1692472015
+openssl.exe 
+#1692472021
+cargo install wrangler
+#1692472027
+npm install -g wrangler
