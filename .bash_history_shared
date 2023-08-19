@@ -2650,3 +2650,39 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 cld ; bmd ; dum install ; dum prepublishOnly
 #1692466733
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692467403
+/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh 
+#1692467970
+find -iname component* -type d
+#1692467978
+find -iname component* -type d -exec ls {} \;
+#1692467996
+find -iname component* -type d -exec code-insiders $({}/*.astro) \;
+#1692468053
+find -iname component -type d
+#1692468071
+find -iname component -type d -execdir code-insiders Component/*.astro
+#1692468076
+find -iname component -type d -execdir code-insiders Component/*.astro \;
+#1692468210
+find -iname component -type d -execdir ls {} \;
+#1692468236
+find -iname component -type d -execdir bash -c 'pwd ; ls {}' \; | 
+#1692468240
+find -iname component -type d -execdir bash -c 'pwd ; ls {}' \;
+#1692468250
+find -iname component -type d -execdir bash -c 'pwd ; ls -h {}' \;
+#1692468253
+find -iname component -type d -execdir bash -c 'pwd ; ls -l {}' \;
+#1692468325
+code-insiders /d/Developer/Application/Lightrix/Website/Source/Footer.astro
+#1692468327
+code-insiders /d/Developer/Application/Lightrix/Website/Source/Header.astro
+#1692468328
+code-insiders /d/Developer/Application/NikolaRHristov/Website/Source/Footer.astro
+#1692468330
+code-insiders /d/Developer/Application/NikolaRHristov/Website/Source/Header.astro
+#1692468331
+code-insiders /d/Developer/Application/Playform/Website/Source/Header.astro
+#1692468370
+code-insiders /d/Developer/Application/Lightrix/Website/Source/Component/Footer.astro /d/Developer/Application/Lightrix/Website/Source/Component/Header.astro /d/Developer/Application/NikolaRHristov/Website/Source/Component/Footer.astro /d/Developer/Application/NikolaRHristov/Website/Source/Component/Header.astro /d/Developer/Application/Playform/Website/Source/Component/Header.astro
