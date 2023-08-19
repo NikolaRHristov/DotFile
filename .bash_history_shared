@@ -2294,3 +2294,23 @@ gh release delete "v${VERSION}" -y
 gh release create "v${VERSION}" --generate-notes
 #1692439156
 cd /d/Developer/
+#1692439157
+bmd
+#1692440110
+tsc --watch -p tsconfig.json 
+#1692440228
+dum install ; dum prepublishOnly --filter=nikolahristov-web
+#1692440330
+dum build --filter=nikolahristov-web
+#1692440391
+dum prepublishOnly --filter=nikolahristov-web
+#1692442495
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692444210
+/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/dot/Script/security-organization.sh 
+#1692444754
+dum prepublishOnly --filter=nikolahristov-web
+#1692447796
+find -iname astro.config.ts
+#1692447807
+find -iname astro.config.ts -execdir code-insiders package.json \;
