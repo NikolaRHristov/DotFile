@@ -2314,3 +2314,89 @@ dum prepublishOnly --filter=nikolahristov-web
 find -iname astro.config.ts
 #1692447807
 find -iname astro.config.ts -execdir code-insiders package.json \;
+#1692448095
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692448903
+cd ~/
+#1692448906
+npm transfer -h
+#1692448911
+npm help
+#1692448917
+npm owner add
+#1692448928
+cd /d/Developer/Application/AstroCommunity/AstroCompress/
+#1692448932
+npm owner add nikirhristov
+#1692448982
+npm 
+#1692449005
+npm owner add nikirhristov astro-compress
+#1692449017
+npm auth login
+#1692449024
+npm login
+#1692449058
+npm whoami
+#1692449063
+cd ~/
+#1692449068
+npm owner add 
+#1692449080
+npm owner add nikirhristov astro-compress
+#1692449087
+cd /d/Developer/
+#1692449100
+find -iname package.json -execdir cat package.json | tr .[].name
+#1692449101
+find -iname package.json -execdir cat package.json | tr .[].name \;
+#1692449108
+find -iname package.json -execdir cat package.json \| tr .[].name \;
+#1692449117
+find -iname package.json -execdir tr '.[].name' \;
+#1692449121
+find -iname package.json -execdir jq '.[].name' \;
+#1692449129
+find -iname package.json -execdir cat package.json | jq '.[].name' \;
+#1692449131
+find -iname package.json -execdir cat package.json \| jq '.[].name' \;
+#1692449144
+find -iname package.json -execdir jq '.[].name' < package.json \;
+#1692449153
+find -iname package.json -execdir jq -r '.[].name' < cat package.json \;
+#1692449161
+find -iname package.json -execdir jq -r '.name' < cat package.json \;
+#1692449163
+find -iname package.json -execdir jq -r '.name' < package.json \;
+#1692449177
+find -iname package.json -execdir jq -r '.name' < $(pwd)/package.json \;
+#1692449184
+find -iname package.json -execdir jq -r '.name' < pwd/package.json \;
+#1692449193
+find -iname package.json -exec jq -r '.name' < {} \;
+#1692449197
+find -iname package.json -exec jq -r '.name' \< {} \;
+#1692449210
+find -iname package.json -exec bash -c 'jq -r ".name" < {} \;
+#1692449215
+find -iname package.json -exec bash -c 'jq -r ".name" < {}\ \;
+#1692449217
+find -iname package.json -exec bash -c 'jq -r ".name" < {}' \;
+#1692449421
+find -iname package.json -exec bash -c '$(jq -r ".name" < {})' \;
+#1692449429
+find -iname package.json -exec bash -c 'npm owner add nikirhristov $(jq -r ".name" < {})' \;
+#1692449709
+cd /d/Developer/
+#1692450898
+dum start --filter=nikolarhristov-web
+#1692450903
+dum start --filter=nikolahristov-web
+#1692450937
+ci turbo.json 
+#1692451611
+find -name Node.yml
+#1692451625
+find -name Node.yml -execdir code-insiders GitHub.yml \;
+#1692452247
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
