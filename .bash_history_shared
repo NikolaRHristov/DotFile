@@ -2706,3 +2706,103 @@ openssl.exe
 cargo install wrangler
 #1692472027
 npm install -g wrangler
+#1692471757
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692476538
+cd Application/NikolaRHristov/Cargo/
+#1692476540
+cd Compress/
+#1692476542
+cargo init
+#1692476568
+rustup target add wasm32-unknown-unknown
+#1692476614
+npx wrangler generate hello-world-rust https://github.com/cloudflare/workers-sdk/templates/experimental/worker-rust
+#1692476637
+cd hello-world-rust/
+#1692476761
+cd src/
+#1692476763
+cd ../
+#1692476766
+cd ./
+#1692476771
+cd ../
+#1692476774
+rm -rf hello-world-rust/
+#1692476848
+cd Application/NikolaRHristov/Cargo/Compress/
+#1692476850
+dum install
+#1692476891
+wrangler deploy
+#1692477135
+wrangler dev
+#1692477215
+dum install -D -E typescript-esbuild
+#1692477427
+wrangler build
+#1692483878
+wrangler dev
+#1692484754
+wrangler build
+#1692484761
+cargo build
+#1692484799
+cd Application/NikolaRHristov/Cargo/Compress/
+#1692484802
+git init
+#1692484898
+cargo build
+#1692485074
+cargo install image_compressor
+#1692485079
+cargo add image_compressor
+#1692484867
+wrangler dev
+#1692485320
+cd Application/NikolaRHristov/Cargo/Compress/
+#1692485323
+wrangler dev
+#1692485349
+cargo build
+#1692485589
+cargo dev
+#1692485610
+wrangler dev
+#1692485644
+cargo build
+#1692485651
+wrangler dev
+#1692485660
+cargo clean
+#1692485663
+wrangler dev
+#1692485709
+rustup target add wasm32-unknown-emscripten
+#1692485771
+wrangler dev
+#1692486393
+cd ../../NikolaRHristov/
+#1692486395
+cd ../Website/
+#1692486398
+git add .
+#1692486399
+git status
+#1692486435
+git add .
+#1692486468
+git commit -m "squash!"
+#1692486492
+git push
+#1692486494
+git sync
+#1692486658
+git add . ; git commit -m "squash!" ; git push 
+#1692486862
+git config --global core.symlinks true
+#1692486909
+git add . ; git commit -m "squash!" ; git push 
+#1692488486
+cd /d/Developer/

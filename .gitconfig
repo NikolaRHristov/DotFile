@@ -12,7 +12,7 @@ required = true
 [core]
 autocrlf = input
 fscache = true
-symlinks = true
+	symlinks = true
 pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
