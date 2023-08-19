@@ -2602,3 +2602,7 @@ dum start --filter=nikolahristov-web
 dum prepublishOnly --filter=nikolahristov-web
 #1692458708
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692460907
+dum start --filter=nikolahristov-web
+#1692460915
+dum prepublishOnly --filter=nikolahristov-web
