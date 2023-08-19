@@ -2400,3 +2400,203 @@ find -name Node.yml
 find -name Node.yml -execdir code-insiders GitHub.yml \;
 #1692452247
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692453386
+Maintenance Dispatch
+#1692455017
+npm ls baxast
+#1692455024
+npm ls -h
+#1692455031
+npm -h
+#1692455034
+npm owner -h
+#1692455043
+npm owner ls 
+#1692455049
+npm owner ls baxast
+#1692455096
+npm list -g --depth=0
+#1692455119
+npx npm-gui@latest
+#1692455218
+npm -h
+#1692455243
+npm view
+#1692455251
+npm view -h
+#1692455376
+npm owner add nikirhristov astro-compress
+#1692455378
+npm owner add nikirhristov astro-convert
+#1692455380
+npm owner add nikirhristov astro-critters
+#1692455382
+npm owner add nikirhristov astro-dashboard
+#1692455385
+npm owner add nikirhristov astro-dead-links
+#1692455387
+npm owner add nikirhristov astro-deno-deploy
+#1692455389
+npm owner add nikirhristov astro-inlang
+#1692455392
+npm owner add nikirhristov astro-lint
+#1692455394
+npm owner add nikirhristov astro-networks
+#1692455396
+npm owner add nikirhristov astro-query
+#1692455399
+npm owner add nikirhristov astro-rome
+#1692455401
+npm owner add nikirhristov astro-short-urls
+#1692455404
+npm owner add nikirhristov astro-sst-template
+#1692455406
+npm owner add nikirhristov astro-starter-template
+#1692455408
+npm owner add nikirhristov baxast
+#1692455411
+npm owner add nikirhristov deploymentdelete
+#1692455413
+npm owner add nikirhristov files-pipe
+#1692455415
+npm owner add nikirhristov javascriptbuild
+#1692455418
+npm owner add nikirhristov syclone
+#1692455421
+npm owner add nikirhristov typescript-esbuild
+#1692455625
+npm login
+#1692455690
+npm owner rm baxast astro-compress
+#1692455704
+npm owner rm baxast astro-convert
+#1692455710
+npm owner rm baxast astro-critters
+#1692455710
+npm owner rm baxast astro-dashboard
+#1692455711
+npm owner rm baxast astro-dead-links
+#1692455713
+npm owner rm baxast astro-deno-deploy
+#1692455716
+npm owner rm baxast astro-inlang
+#1692455716
+npm owner rm baxast astro-lint
+#1692455716
+npm owner rm baxast astro-networks
+#1692455716
+npm owner rm baxast astro-query
+#1692455716
+npm owner rm baxast astro-rome
+#1692455717
+npm owner rm baxast astro-short-urls
+#1692455717
+npm owner rm baxast astro-sst-template
+#1692455717
+npm owner rm baxast astro-starter-template
+#1692455717
+npm owner rm baxast baxast
+#1692455717
+npm owner rm baxast deploymentdelete
+#1692455717
+npm owner rm baxast files-pipe
+#1692455717
+npm owner rm baxast javascriptbuild
+#1692455717
+npm owner rm baxast syclone
+#1692455717
+npm owner rm baxast typescript-esbuild
+#1692455725
+npm owner rm -h
+#1692455746
+npm owner rm baxast astro-compress ; 
+#1692455748
+npm owner rm baxast astro-convert ; 
+#1692455761
+npm owner rm baxast astro-critters ; 
+#1692455791
+npm owner rm baxast astro-dashboard ; 
+#1692455794
+npm owner rm baxast astro-dead-links ; 
+#1692455794
+npm owner rm baxast astro-deno-deploy ; 
+#1692455794
+npm owner rm baxast astro-inlang ; 
+#1692455796
+npm owner rm baxast astro-lint ; 
+#1692455796
+npm owner rm baxast astro-networks ; 
+#1692455797
+npm owner rm baxast astro-query ; 
+#1692455797
+npm owner rm baxast astro-rome ; 
+#1692455797
+npm owner rm baxast astro-short-urls ; 
+#1692455797
+npm owner rm baxast astro-sst-template ; 
+#1692455797
+npm owner rm baxast astro-starter-template ; 
+#1692455797
+npm owner rm baxast baxast ; 
+#1692455797
+npm owner rm baxast deploymentdelete ; 
+#1692455797
+npm owner rm baxast files-pipe ; 
+#1692455800
+npm owner rm baxast javascriptbuild ; 
+#1692455800
+npm owner rm baxast syclone ; 
+#1692455800
+npm owner rm baxast typescript-esbuild ; 
+#1692455805
+npm login
+#1692455827
+npm owner rm baxast astro-compress ; 
+#1692455831
+npm owner rm baxast astro-convert ; 
+#1692455835
+npm owner rm baxast astro-critters ; 
+#1692455837
+npm owner rm baxast astro-dashboard ; 
+#1692455839
+npm owner rm baxast astro-dead-links ; 
+#1692455841
+npm owner rm baxast astro-deno-deploy ; 
+#1692455843
+npm owner rm baxast astro-inlang ; 
+#1692455846
+npm owner rm baxast astro-lint ; 
+#1692455848
+npm owner rm baxast astro-networks ; 
+#1692455851
+npm owner rm baxast astro-query ; 
+#1692455854
+npm owner rm baxast astro-rome ; 
+#1692455856
+npm owner rm baxast astro-short-urls ; 
+#1692455859
+npm owner rm baxast astro-sst-template ; 
+#1692455862
+npm owner rm baxast astro-starter-template ; 
+#1692455865
+npm owner rm baxast baxast ; 
+#1692455867
+npm owner rm baxast deploymentdelete ; 
+#1692455870
+npm owner rm baxast files-pipe ; 
+#1692455872
+npm owner rm baxast javascriptbuild ; 
+#1692455874
+npm owner rm baxast syclone ; 
+#1692455877
+npm owner rm baxast typescript-esbuild ; 
+#1692456024
+npm login
+#1692456506
+ci /e/MEGA/PROJECTS/Personal/Credentials/Recovery/npm.md 
+#1692456699
+cd Application/AstroCommunity/AstroCompress/
+#1692450950
+dum start --filter=nikolahristov-web
+#1692456782
+dum prepublishOnly --filter=nikolahristov-web
