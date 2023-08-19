@@ -2200,3 +2200,97 @@ bmd ; dum install ; dum prepublishOnly
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1692379873
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692380506
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692431353
+cd apl
+#1692431358
+cd Application/
+#1692431366
+mv astro-community AstroCommunity
+#1692431368
+cd AstroCommunity/
+#1692431371
+cd AstroCompress/
+#1692431377
+cd ../../NikolaRHristov/NPM/FilesPipe/
+#1692431380
+ci package.json CHANGELOG.md 
+#1692431392
+npm show files-pipe versions
+#1692432036
+cd /d/Developer/
+#1692432318
+ci tsconfig.json 
+#1692432048
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692432702
+tsc --watch -p tsconfig.json 
+#1692432885
+cd Application/AstroCommunity/AstroC
+#1692432887
+cd Application/AstroCommunity/AstroCompress/
+#1692432899
+tsc --watch -p tsconfig.json 
+#1692433035
+cd Application/AstroCommunity/AstroCompress/
+#1692433041
+cd /d/Developer/
+#1692433043
+tsc --watch -p tsconfig.json 
+#1692433235
+tsc --watch -p tsconfig.json 
+#1692433259
+dum prepublishOnly --filter=nikolahristov-web
+#1692433345
+tsc --watch -p tsconfig.json 
+#1692435438
+dum install -D -E typescript-esbuild
+#1692435441
+dum install -D -E typescript-esbuild -w
+#1692435492
+tsc --watch -p tsconfig.json 
+#1692435812
+find -iname tsconfig.json
+#1692435835
+tsc --watch -p tsconfig.json 
+#1692435874
+npx --node-options="--max-old-space-size=16000" tsc --watch -p tsconfig.json 
+#1692435914
+npx cross-env NODE_OPTIONS=--max-old-space-size=16384 tsc --watch -p tsconfig.json 
+#1692438689
+cd Application/AstroCommunity/AstroCompress/
+#1692438694
+pnpm show astro-compress version
+#1692438817
+ci package.json CHANGELOG.md 
+#1692439024
+VERSION="2.0.13"
+#1692439024
+clean_dependencies
+#1692439024
+bump_dependencies
+#1692439028
+dum install
+#1692439056
+dum prepublishOnly
+#1692439058
+git add .
+#1692439058
+git commit -m $VERSION
+#1692439068
+git sync
+#1692439072
+git tag -d "v${VERSION}"
+#1692439072
+git push --delete origin "v${VERSION}"
+#1692439074
+git tag -s -m "v${VERSION}" -a "v${VERSION}"
+#1692439074
+git push --tags
+#1692439076
+gh release delete "v${VERSION}" -y
+#1692439077
+gh release create "v${VERSION}" --generate-notes
+#1692439156
+cd /d/Developer/
