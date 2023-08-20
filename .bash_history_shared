@@ -2906,3 +2906,5 @@ dum install -D -E typescript@next -w
 ./Application/NikolaRHristov/dot/Script/settings-organization.sh 
 #1692530742
 dum prepublishOnly
+#1692530737
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
