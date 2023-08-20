@@ -2822,3 +2822,71 @@ cd Application/YesMaintain/NPM/Script/
 cd /d/Developer/
 #1692526697
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692527281
+cd Application/YesMaintain/NPM/Script/
+#1692527287
+dum install -D -E esbuild-plugin-copy
+#1692527406
+cd /d/Developer/
+#1692527443
+dum uninstall -g @yesmaintenance/script
+#1692527446
+dum uninstall -g @yesmaintenance/script -w
+#1692527450
+pnpm uninstall -g @yesmaintenance/script -w
+#1692527453
+cd ../
+#1692527454
+pnpm uninstall -g @yesmaintenance/script -w
+#1692527456
+pnpm uninstall -g @yesmaintenance/script 
+#1692527464
+cd /d/tools/.pnpm-global/5/
+#1692527467
+ci package.json 
+#1692527477
+cd ../
+#1692527484
+find -iname @yes*
+#1692527490
+find -iname \@yes*
+#1692527496
+find -iname *yesmaintenance*
+#1692527505
+find -iname *yesmaintenance* -exec rm -rf {} \;
+#1692527516
+cd /d/Developer/Application/YesMaintain/NPM/Script/
+#1692527518
+pnpm link -g
+#1692527560
+cd /d/Developer/
+#1692527566
+cd /d/tools/
+#1692527568
+cd .pnpm-global/
+#1692527572
+cd 5/
+#1692527575
+rm -rf node_modules/
+#1692527592
+cd .pnpm/
+#1692527599
+cd ../
+#1692527602
+rm pnpm-lock.yaml 
+#1692527604
+cd ../
+#1692527606
+cd cache/
+#1692527609
+cd ../
+#1692527611
+rm -rf cache/
+#1692527613
+cd /d/Developer/
+#1692527618
+cld ; dum install
+#1692527722
+dum install
+#1692528714
+cld
