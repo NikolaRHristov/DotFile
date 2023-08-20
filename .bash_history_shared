@@ -3190,3 +3190,7 @@ cd /d/Developer/
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
 #1692561643
 find -iname .git -execdir bash -c 'pwd ; git fetch upstream' \;
+#1692561845
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream' \; > text.md
+#1692567210
+cld ; bmd ; dum install ; dum prepublishOnly
