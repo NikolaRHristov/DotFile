@@ -2894,3 +2894,9 @@ cld
 bmd
 #1692528659
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692529632
+dum install
+#1692530027
+tsc --watch -p tsconfig.json 
+#1692530041
+dum install -D -E typescript@next
