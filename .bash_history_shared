@@ -2808,3 +2808,17 @@ git add . ; git commit -m "squash!" ; git push
 cd /d/Developer/
 #1692488492
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692522573
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1692525519
+ci /e/MEGA/PROJECTS/Personal/Credentials/Recovery/npm.md 
+#1692525739
+cd Application/YesMaintenance/NPM/
+#1692525744
+git add .
+#1692525961
+cd Application/YesMaintain/NPM/Script/
+#1692526695
+cd /d/Developer/
+#1692526697
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
