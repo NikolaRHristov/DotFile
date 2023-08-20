@@ -3176,3 +3176,15 @@ find -iname astro.config.ts
 find -iname astro.config.ts -execdir bash -c ' pwd ; git remote -v ' \; > text.md
 #1692561378
 ./text.sh 
+#1692561414
+cd Application/Playform/
+#1692561428
+cd NPM/BlankWebStarter/
+#1692561432
+git remote remove upstream
+#1692561440
+cd /d/Developer/
+#1692561442
+./text.sh 
+#1692561117
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
