@@ -2908,3 +2908,17 @@ dum install -D -E typescript@next -w
 dum prepublishOnly
 #1692530737
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1692533455
+dum prepublishOnly --filter=astro-deno-deploy
+#1692533872
+cd Application/YesMaintain/NPM/Script/
+#1692533888
+ci package.json CHANGELOG.md 
+#1692534348
+pnpm link -g
+#1692534358
+dum prepublishOnly
+#1692534370
+cd /d/Developer/
+#1692534380
+Maintenance
