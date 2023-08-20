@@ -2964,3 +2964,29 @@ git push
 cd Script/
 #1692534964
 VERSION="0.0.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m "@yesmaintain/script@${VERSION}" ; git sync ; git tag -d "@yesmaintain/script@v${VERSION}" ; git push --delete origin "@yesmaintain/script@v${VERSION}" ; git tag -s -m "@yesmaintain/script@v${VERSION}" -a "@yesmaintain/script@v${VERSION}" ; git push --tags ; gh release delete "@yesmaintain/script@v${VERSION}" -y ; gh release create "@yesmaintain/script@v${VERSION}" --generate-notes
+#1692535103
+ci ~/.bash_history_shared 
+#1692535136
+VERSION="0.0.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m "@yesmaintain/script@${VERSION}" ; git sync ; git tag -d "@yesmaintain/script@v${VERSION}" ; git push --delete origin "@yesmaintain/script@v${VERSION}" ; git tag -s -m "@yesmaintain/script@v${VERSION}" -a "@yesmaintain/script@v${VERSION}" ; git push --tags ; gh release delete "@yesmaintain/script@v${VERSION}" -y ; gh release create "@yesmaintain/script@v${VERSION}" --generate-notes ;
+#1692535200
+git remote -v
+#1692535214
+git remote set-url origin ssh://git@github.com/YesMaintain/Script.git
+#1692535249
+VERSION="0.0.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m "@yesmaintain/script@${VERSION}" ; git sync ; git tag -d "@yesmaintain/script@v${VERSION}" ; git push --delete origin "@yesmaintain/script@v${VERSION}" ; git tag -s -m "@yesmaintain/script@v${VERSION}" -a "@yesmaintain/script@v${VERSION}" ; git push --tags ; gh release delete "@yesmaintain/script@v${VERSION}" -y ; gh release create "@yesmaintain/script@v${VERSION}" --generate-notes ;
+#1692535352
+git remote -v
+#1692535356
+git remote set-url origin ssh://git@github.com/YesMaintain/NPM.git
+#1692535359
+VERSION="0.0.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m "@yesmaintain/script@${VERSION}" ; git sync ; git tag -d "@yesmaintain/script@v${VERSION}" ; git push --delete origin "@yesmaintain/script@v${VERSION}" ; git tag -s -m "@yesmaintain/script@v${VERSION}" -a "@yesmaintain/script@v${VERSION}" ; git push --tags ; gh release delete "@yesmaintain/script@v${VERSION}" -y ; gh release create "@yesmaintain/script@v${VERSION}" --generate-notes ;
+#1692535791
+cd /d/Developer/
+#1692535820
+dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
+#1692536673
+cd -
+#1692536670
+Maintain Workflow
+#1692536675
+VERSION="0.0.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m "@yesmaintain/script@${VERSION}" ; git sync ; git tag -d "@yesmaintain/script@v${VERSION}" ; git push --delete origin "@yesmaintain/script@v${VERSION}" ; git tag -s -m "@yesmaintain/script@v${VERSION}" -a "@yesmaintain/script@v${VERSION}" ; git push --tags ; gh release delete "@yesmaintain/script@v${VERSION}" -y ; gh release create "@yesmaintain/script@v${VERSION}" --generate-notes ;
