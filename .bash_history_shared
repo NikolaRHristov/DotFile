@@ -3166,3 +3166,13 @@ cd /e/MEGA/PROJECTS/Personal/Credentials/Recovery/
 ci RECOVERY-CODES-nikola\@playform.cloud.md 
 #1692560121
 cd /d/Developer/
+#1692560123
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692560617
+pnpm show astro-compress version
+#1692561245
+find -iname astro.config.ts
+#1692561257
+find -iname astro.config.ts -execdir bash -c ' pwd ; git remote -v ' \; > text.md
+#1692561378
+./text.sh 
