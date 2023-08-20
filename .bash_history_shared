@@ -3024,3 +3024,33 @@ grep -rnw Astro.props . --exclude-dir=Target --exclude-dir=node_modules
 code-insiders ./Application/AstroStarter/PACStack/Application/Website/Source/Layout/Base.astro ./Application/BlackRainbowAI/Website/Source/Layout/Base.astro ./Application/CrepesJS/Website/Source/Layout/Base.astro ./Application/DoccerPage/Website/Source/Layout/Base.astro ./Application/GrenadierJS/Website/Source/Layout/Base.astro ./Application/HalleSoftware/Website/Source/Layout/Base.astro ./Application/ImageWtf/Website/Source/Layout/Base.astro ./Application/IntakeNomNom/Website/Source/Layout/Base.astro ./Application/Lightrix/NPM/AstroDenoDeploy/Source/Layout/Base.astro ./Application/Lightrix/NPM/AstroSSTTemplate/Source/Layout/Base.astro ./Application/Lightrix/NPM/AstroStarterTemplate/Source/Layout/Base.astro ./Application/Lightrix/NPM/OverBrowser/Source/Layout/Base.astro ./Application/Lightrix/Website/Source/Layout/Base.astro ./Application/MythemeCloud/Website/Source/Layout/Base.astro ./Application/NeovimSpace/Website/Source/Layout/Base.astro ./Application/NikolaRHristov/Website/Source/Component/Readme/Heading.astro ./Application/NikolaRHristov/Website/Source/Component/Readme/Row.astro ./Application/NikolaRHristov/Website/Source/Layout/Base.astro ./Application/NikolaRHristov/Website/Source/pages/Raw/Readme/NikolaRHristov/index.astro ./Application/NowPlayingCard/Website/Source/Layout/Base.astro ./Application/NowPlayingCard/Website/Source/Layout/View.astro ./Application/Playform/NPM/BlankWebStarter/Source/Layout/Base.astro ./Application/Playform/Website/Source/Layout/Base.astro ./Application/ReturnThief/Website/Source/Layout/Base.astro ./Application/RoundedCorners/Website/Source/Layout/Base.astro ./Application/SileaJS/Website/Source/Layout/Base.astro ./Application/SouqRs/Website/Source/Layout/Base.astro ./Application/windowsdock/Website/Source/Layout/Base.astro
 #1692541569
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
+#1692541953
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692542446
+cd Application/NikolaRHristov/MailSend/
+#1692542447
+wrangler init
+#1692542965
+dum install -D -E typescript-esbuild
+#1692543167
+git init
+#1692543375
+dum install -D -E mimetext
+#1692547104
+cd ../../YesMaintain/NPM/Script/
+#1692547114
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692547326
+npm publish
+#1692547347
+npm publish --scope @yesmaintain
+#1692547647
+npm whoami
+#1692547654
+npm login
+#1692547810
+npm publish
+#1692548121
+npm show @yesmaintain/script
+#1692549222
+cd /d/Developer/
