@@ -3054,3 +3054,5 @@ npm publish
 npm show @yesmaintain/script
 #1692549222
 cd /d/Developer/
+#1692549224
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
