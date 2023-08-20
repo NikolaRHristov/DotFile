@@ -2890,3 +2890,7 @@ cld ; dum install
 dum install
 #1692528714
 cld
+#1692528719
+bmd
+#1692528659
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
