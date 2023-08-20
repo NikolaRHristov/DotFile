@@ -2904,3 +2904,5 @@ dum install -D -E typescript@next
 dum install -D -E typescript@next -w
 #1692530165
 ./Application/NikolaRHristov/dot/Script/settings-organization.sh 
+#1692530742
+dum prepublishOnly
