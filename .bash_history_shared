@@ -2806,3 +2806,5 @@ git config --global core.symlinks true
 git add . ; git commit -m "squash!" ; git push 
 #1692488486
 cd /d/Developer/
+#1692488492
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
