@@ -3056,3 +3056,105 @@ npm show @yesmaintain/script
 cd /d/Developer/
 #1692549224
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692551830
+cd -
+#1692551838
+cd ../../../NikolaRHristov/
+#1692551842
+cd MailSend/
+#1692551849
+dum install -D -E @types/mimetipe
+#1692551854
+dum install -D -E @types/mimetext
+#1692551991
+wrangler publish
+#1692552036
+dum install -D -E itty-router
+#1692552096
+wrangler deploy
+#1692552474
+npm show mailsend
+#1692552565
+sort-package-json
+#1692552688
+wrangler publish
+#1692552721
+npm publish --dry-run
+#1692552820
+wrangler dev
+#1692552862
+npm show cloudflare
+#1692552903
+npm show astro-compress
+#1692553378
+wrangler dev
+#1692553397
+wrangler publish
+#1692553437
+wrangler log
+#1692553442
+wrangler tail
+#1692553560
+cld ; bmd ;dum install ; dum prepublishOnly
+#1692554145
+wrangler publish
+#1692554162
+npm publish
+#1692554255
+wrangler publish
+#1692554285
+dum uninstall -D -E @types/mimetext
+#1692555185
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692555295
+wrangler publish
+#1692555346
+wrangler tail
+#1692555378
+wrangler publish
+#1692555455
+wrangler tail
+#1692555516
+wrangler publish
+#1692555534
+git init
+#1692555543
+gh repo create NikolaRHristov/MailSend --public
+#1692555578
+git remote -v
+#1692555589
+git remote add origin ssh://git@github.com/NikolaRHristov/MailSend.git
+#1692555590
+git add .
+#1692555595
+git commit -m "Initial commit"
+#1692555601
+git log --oneline 
+#1692555603
+git push
+#1692555611
+rm -rf .git/
+#1692555613
+git init
+#1692555618
+git remote add origin ssh://git@github.com/NikolaRHristov/MailSend.git
+#1692555620
+git add .
+#1692555627
+git commit -m "Initial commit"
+#1692555629
+git push --force
+#1692555670
+wrangler publish
+#1692555689
+git push
+#1692556379
+npm unpublish
+#1692556401
+cd ../
+#1692556403
+rm -rf MailSend/
+#1692556406
+npm unpublish mailsend
+#1692556411
+cd ~/
