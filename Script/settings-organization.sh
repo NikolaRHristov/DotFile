@@ -15,13 +15,13 @@ done
 for ORG in "${ORGS[@]}"; do
 	EMAIL_BILLING="hello@lightrix.help"
 	EMAIL="hello@lightrix.help"
-	TWITTER="LightrixHelp"
+	TWITTER="LGHTRX"
 
 	case "$ORG" in
 	"Playform")
 		EMAIL_BILLING="hello@playform.cloud"
 		EMAIL="hello@playform.cloud"
-		TWITTER="PlayformCloud"
+		TWITTER="LGHTRX"
 		;;
 	"windowsdock")
 		EMAIL_BILLING="hello@windowsdock.app"
@@ -65,10 +65,10 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL_BILLING="hello@mytheme.cloud"
 		EMAIL="hello@mytheme.cloud"
 		;;
-	"NowPlayingCards")
+	"NowPlayingCard")
 		EMAIL_BILLING="hello@nowplaying.cards"
 		EMAIL="hello@nowplaying.cards"
-		TWITTER="NowPlayingC"
+		TWITTER="NowPlayingCard"
 		;;
 	"NeovimSpace")
 		EMAIL_BILLING="hello@neovim.space"

@@ -2900,3 +2900,7 @@ dum install
 tsc --watch -p tsconfig.json 
 #1692530041
 dum install -D -E typescript@next
+#1692530044
+dum install -D -E typescript@next -w
+#1692530165
+./Application/NikolaRHristov/dot/Script/settings-organization.sh 
