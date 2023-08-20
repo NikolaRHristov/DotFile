@@ -3158,3 +3158,5 @@ rm -rf MailSend/
 npm unpublish mailsend
 #1692556411
 cd ~/
+#1692558024
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
