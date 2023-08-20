@@ -3194,3 +3194,11 @@ find -iname .git -execdir bash -c 'pwd ; git fetch upstream' \;
 find -iname .git -execdir bash -c 'pwd ; git fetch upstream' \; > text.md
 #1692567210
 cld ; bmd ; dum install ; dum prepublishOnly
+#1692567306
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692568753
+find -iname .git -execdir git fetch upstream \;
+#1692569040
+dum prepublishOnly --filter=playform-web
+#1692570306
+dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
