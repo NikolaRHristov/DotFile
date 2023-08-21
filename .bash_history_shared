@@ -3346,3 +3346,9 @@ pnpm install -g server
 pnpm install -g serve
 #1692636157
 serve Target/
+#1692646582
+cd /d/Developer/
+#1692646588
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692647845
+cd Application/NowPlayingCard/Website/
