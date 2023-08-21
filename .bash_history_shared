@@ -3234,3 +3234,5 @@ git push
 ci README.md
 #1692577059
 cd /d/Developer/
+#1692577071
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
