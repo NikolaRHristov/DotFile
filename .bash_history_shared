@@ -3236,3 +3236,13 @@ ci README.md
 cd /d/Developer/
 #1692577071
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692619950
+cld ; bmd ; dum instlal ; dum prepublishOnly --filter=@yesmaintain/script
+#1692619962
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@yesmaintain/script
+#1692621095
+cd Application/NowPlayingCard/Website/
+#1692621284
+dum install
+#1692621685
+dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
