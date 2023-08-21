@@ -3352,3 +3352,17 @@ cd /d/Developer/
 cld ; bmd ; dum install ; dum prepublishOnly
 #1692647845
 cd Application/NowPlayingCard/Website/
+#1692647753
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692654539
+cd /d/Developer/Application/NowPlayingCard/
+#1692654565
+cd NPM/API/
+#1692654568
+wrangler publish
+#1692654573
+cd /d/Developer/Application/NowPlayingCard/NPM/Socket/
+#1692654577
+wrangler publish
+#1692655273
+cd /d/Developer/
