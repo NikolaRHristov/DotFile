@@ -3246,3 +3246,91 @@ cd Application/NowPlayingCard/Website/
 dum install
 #1692621685
 dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
+#1692622661
+cd Application/NowPlayingCard/NPM/API/
+#1692622664
+wrangler publish
+#1692623117
+cd ../
+#1692623122
+cd API/
+#1692623125
+wrangler pubish
+#1692623129
+wrangler publish
+#1692623151
+cld ; bmd ; dum install dum prepublishOnly
+#1692623156
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692623190
+cd ../Socket/
+#1692623192
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692623270
+cd /d/Developer/Application/NowPlayingCard/NPM/
+#1692623273
+cd API/
+#1692623283
+cd Application/NowPlayingCard/NPM/Socket/
+#1692623276
+wrangler publish
+#1692623286
+wrangler publish
+#1692625821
+cd /d/Developer/Application/NowPlayingCard/
+#1692625823
+cd NPM/
+#1692625831
+cd Common/
+#1692625841
+dum prepublishOnly
+#1692627081
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692627096
+Y
+#1692627073
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692627088
+cld ; bmd ; dum install ; dum prepublishOnly ; wrangler publish
+#1692621096
+dum start
+#1692627099
+cld ; bmd ; dum install ; dum prepublishOnly ; wrangler publish
+#1692628164
+wrangler tail
+#1692628156
+wrangler tail
+#1692628666
+wrangler publish
+#1692628669
+wrangler publish
+#1692627165
+cld ; bmd ; dum install ; dum start
+#1692631921
+cd Application/NowPlayingCard/
+#1692631923
+cd Website/
+#1692631925
+dum build
+#1692631938
+dum prepublishOnly
+#1692633770
+cd /d/Developer/
+#1692633889
+dum prepublishOnly --filter=@yesmaintain/script
+#1692633902
+Maintain 
+#1692633912
+Maintain Edit Lightrix/FilesPipe
+#1692633923
+Maintain Edit FilesPipe
+#1692634012
+Maintenance Edit
+#1692634016
+Maintain Edit
+#1692634229
+curl -i https://api.github.com/users/NikolaRHristov
+#1692634241
+Maintain Edit
+#1692635213
+cd Application/NowPlayingCard/Website/
