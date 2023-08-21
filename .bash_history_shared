@@ -3336,3 +3336,13 @@ Maintain Edit
 cd Application/NowPlayingCard/Website/
 #1692635224
 cld ; bmd ; dum prepublishOnly ; dum start
+#1692635291
+cld ; bmd ; dum install ; dum prepublishOnly ; dum start
+#1692636065
+dum prepublishOnly
+#1692636132
+pnpm install -g server
+#1692636134
+pnpm install -g serve
+#1692636157
+serve Target/
