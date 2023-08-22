@@ -3408,3 +3408,7 @@ dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
 dum prepublishOnly --filter=@yesmaintain/script ; Maintain Star
 #1692703965
 dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
+#1692704802
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692706322
+cd Application/NowPlayingCard/Website/
