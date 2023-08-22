@@ -3366,3 +3366,31 @@ cd /d/Developer/Application/NowPlayingCard/NPM/Socket/
 wrangler publish
 #1692655273
 cd /d/Developer/
+#1692655565
+cd ../API/
+#1692655566
+wrangler publish
+#1692655275
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692655888
+cd ../Socket/
+#1692655892
+wrangler publish
+#1692656017
+cd /d/Developer/Application/NowPlayingCard/NPM/API/
+#1692656019
+wrangler publish
+#1692701021
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692701479
+dum install ; dum prepublishOnly
+#1692702515
+dum install -E toml --filter=@yesmaintain/script
+#1692702673
+dum prepublishOnly --filter=@yesmaintain/script ; Maintain
+#1692702789
+cd /d/Developer/
+#1692702790
+dum prepublishOnly --filter=@yesmaintain/script ; Maintain
+#1692702891
+dum prepublishOnly --filter=@yesmaintain/script ; Maintain Cloudflare
