@@ -3412,3 +3412,13 @@ dum prepublishOnly --filter=@yesmaintain/script ; Maintain Workflow
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
 #1692706322
 cd Application/NowPlayingCard/Website/
+#1692710522
+cd Application/NowPlayingCard/
+#1692710525
+cd NPM/API/
+#1692710538
+cd /d/Developer/Application/NowPlayingCard/NPM/Socket/
+#1692710528
+wrangler deploy
+#1692710540
+wrangler deploy
