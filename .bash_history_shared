@@ -3422,3 +3422,9 @@ cd /d/Developer/Application/NowPlayingCard/NPM/Socket/
 wrangler deploy
 #1692710540
 wrangler deploy
+#1692706324
+dum start
+#1692794052
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692803867
+cd Application/NowPlayingCard/Website/
