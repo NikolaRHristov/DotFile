@@ -3514,3 +3514,31 @@ dum prepublishOnly --filter=nowplayingcards-web
 dum prepublishOnly --filter=now-playing-card-web
 #1692915631
 dum prepublishOnly --filter=now-playing-web
+#1692915763
+find -iname .git -execdir git add . \;
+#1692915775
+find -iname .git -execdir git commit -m "squash!" \;
+#1692915888
+dum prepublishOnly --filter=now-playing-web
+#1692915968
+dum install vite-plugin-cloudflare --filter=now-playing-web
+#1692915976
+dum install vite-plugin-cloudflare -D -E --filter=now-playing-web
+#1692915812
+find -iname .git -execdir git sync \;
+#1692916335
+cd Application/NowPlayingCard/
+#1692916337
+cd Website/
+#1692916361
+dum install -D -E vite-plugin-cloudflare
+#1692918131
+cd /d/Developer/
+#1692918138
+find -iname .git -execdir git commit -m "squash!" \;
+#1692918150
+dum prepublishOnly --filter=now-playing-web
+#1692918196
+dum install 
+#1692918225
+dum prepublishOnly --filter=now-playing-web
