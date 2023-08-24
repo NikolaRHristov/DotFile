@@ -3428,3 +3428,89 @@ dum start
 cld ; bmd ; dum install ; dum prepublishOnly
 #1692803867
 cd Application/NowPlayingCard/Website/
+#1692812275
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1692814027
+cd Application/NowPlayingCard/Website/
+#1692830862
+cd Application/NowPlayingCard/NPM/Socket/
+#1692830869
+cd Application/NowPlayingCard/NPM/API/
+#1692830864
+wrangler deploy
+#1692830871
+wrangler deploy
+#1692814028
+dum start
+#1692832093
+dum prepublishOnly
+#1692832424
+dum start
+#1692836947
+dum prepublishOnly
+#1692836995
+dum start
+#1692839294
+Y
+#1692839296
+dum start
+#1692884528
+cd Application/
+#1692884533
+mkdir MBT-BG
+#1692884535
+cd MBT-BG/
+#1692884544
+git clone ssh://git@github.com/MBT-BG/Website.git
+#1692885051
+git push
+#1692885054
+cd Website/
+#1692885055
+git push
+#1692913968
+cd Application/NowPlayingCard/
+#1692913970
+cd NPM/
+#1692913972
+cd API/
+#1692913976
+cld ; bmd 
+#1692913996
+cd Application/NowPlayingCard/Website/
+#1692913999
+cd ../NPM/
+#1692914001
+cd Common/
+#1692914006
+dum prepublishOnly
+#1692914019
+cd Application/NowPlayingCard/NPM/Socket/
+#1692914023
+cld ; bmd 
+#1692914027
+cld ; bmd 
+#1692914042
+sort-package-json
+#1692914047
+sort-package-json
+#1692914049
+sort-package-json
+#1692913965
+cld ; bmd ; dum install ; dum prepublishOnly
+#1692915462
+cd /d/Developer/
+#1692915465
+cd Application/NowPlayingCard/
+#1692915468
+cd /d/Developer/
+#1692915483
+dum prepublishOnly --filter=nowplayingcard-web
+#1692915490
+npx @turbo/codemod update
+#1692915593
+dum prepublishOnly --filter=nowplayingcards-web
+#1692915618
+dum prepublishOnly --filter=now-playing-card-web
+#1692915631
+dum prepublishOnly --filter=now-playing-web
