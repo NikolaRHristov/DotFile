@@ -3636,3 +3636,39 @@ cd /d/Developer/
 cd /f/d
 #1692985013
 cd /d/Developer/
+#1692985058
+find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ;' \;
+#1692990926
+cd Application/Playform/Website/
+#1692990930
+dum install -D -E @swup/overlay-theme
+#1692992205
+find -iname swup.ts
+#1692992214
+find -iname swup.ts | tr -d '\r\n'
+#1692992217
+find -iname swup.ts | tr -d '\r\n' ' '
+#1692992224
+find -iname swup.ts | tr -d '\r\n' ''
+#1692992227
+find -iname swup.ts | tr -d '\r\n' " "
+#1692992230
+find -iname swup.ts | tr -d '\r\n'  
+#1692992234
+find -iname swup.ts | tr -d '\r\n'  ' '
+#1692992237
+find -iname swup.ts | tr -d -r '\r\n'  ' '
+#1692992240
+find -iname swup.ts | tr -r '\r\n'  ' '
+#1692992243
+find -iname swup.ts | tr -d '\r\n'  ' '
+#1692992288
+tr -h
+#1692992292
+tr --help
+#1692992314
+find -iname swup.ts | tr '\r\n'  ' '
+#1692992321
+ci $(find -iname swup.ts | tr '\r\n'  ' ')
+#1693000550
+find -iname .git -execdir git add . \;
