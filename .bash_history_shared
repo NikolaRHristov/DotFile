@@ -3672,3 +3672,5 @@ find -iname swup.ts | tr '\r\n'  ' '
 ci $(find -iname swup.ts | tr '\r\n'  ' ')
 #1693000550
 find -iname .git -execdir git add . \;
+#1693002528
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
