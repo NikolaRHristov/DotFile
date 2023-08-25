@@ -3542,3 +3542,97 @@ dum prepublishOnly --filter=now-playing-web
 dum install 
 #1692918225
 dum prepublishOnly --filter=now-playing-web
+#1692918534
+cd /d/Developer/node_modules/
+#1692918543
+cd ../
+#1692918545
+cd Application/
+#1692918547
+cd NowPlayingCard/Website/
+#1692918548
+s
+#1692918550
+dum install -D -E vite-plugin-node-polyfills
+#1692918143
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1692918646
+dum prepublishOnly --filter=now-playing-web
+#1692919322
+Cclear
+#1692919326
+s
+#1692919580
+cd /d/Developer/
+#1692919944
+cd Application/NowPlayingCard/NPM/API/
+#1692919956
+cd Application/NowPlayingCard/NPM/Common/
+#1692919964
+dum prepublishOnly
+#1692919947
+wrangler deploy
+#1692919973
+cd Application/NowPlayingCard/NPM/Socket/
+#1692919978
+wrangler deploy
+#1692920548
+cd /d/Developer/
+#1692920550
+dum install
+#1692920650
+dum prepublishOnly
+#1692920658
+cd ../API/
+#1692920669
+dum prepublishOnly
+#1692920771
+cd Application/NowPlayingCard/NPM/Socket/
+#1692920760
+wrangler deploy
+#1692920776
+cd ../Common/
+#1692920763
+wrangler deploy
+#1692920782
+dum prepublishOnly
+#1692919590
+dum start --filter=now-playing-web
+#1692920785
+Y
+#1692921268
+dum install ; dum prepublishOnly --filter=now-playing-web
+#1692921793
+git add .
+#1692921797
+git commit -m "squash!"
+#1692921820
+git push
+#1692921856
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1692921843
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1692921865
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1692921953
+dum preblishOnly ; git add . ; git commit -m "squash!" ; git sync ;
+#1692921967
+dum prepublishOnly ; git add . ; git commit -m "squash!" ; git sync ;
+#1692926250
+dum install
+#1692927891
+dum prepublishOnly --filter=@nowplayingcard/common
+#1692928111
+dum install ; dum prepublishOnly --filter=@nowplayingcard/common ; dum instal
+#1692928116
+dum install ; dum prepublishOnly --filter=@nowplayingcard/common ; dum install
+#1692921927
+dum install ; dum start --filter=now-playing-web
+#1692928365
+dum install ; dum prepublishOnly --filter=now-playing-web
+#1692928836
+cd /d/Developer/
+#1692985012
+cd /f/d
+#1692985013
+cd /d/Developer/
