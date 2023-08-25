@@ -3674,3 +3674,13 @@ ci $(find -iname swup.ts | tr '\r\n'  ' ')
 find -iname .git -execdir git add . \;
 #1693002528
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1693003846
+find -iname pages
+#1693003880
+find -iname .git -execdir git fetch upstream \;
+#1693003857
+cld ; bmd ; dum install ; dum prepublishOnly 
+#1693004180
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main'  \;
+#1693006957
+grep -rnw '<<<<<'
