@@ -3684,3 +3684,5 @@ cld ; bmd ; dum install ; dum prepublishOnly
 find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main'  \;
 #1693006957
 grep -rnw '<<<<<'
+#1693006996
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
