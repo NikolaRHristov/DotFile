@@ -3686,3 +3686,51 @@ find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream
 grep -rnw '<<<<<'
 #1693006996
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1693009337
+cld ; bmd ; dum install ; dum prepublishOnly ;
+#1693076632
+cd Application/NowPlayingCard/
+#1693076633
+cd Website/
+#1693076635
+cd ../NPM/
+#1693076637
+cd API/
+#1693076642
+dum prepublishOnly
+#1693076646
+dum install
+#1693076751
+dum prepublishOnly
+#1693076931
+cd ../
+#1693076935
+cd Common/
+#1693076967
+dum install ; dum prepublishOnly
+#1693076426
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693077088
+git add . 
+#1693077095
+git commit -m "squash!"
+#1693077121
+git push --force
+#1693077124
+cd ../Socket/
+#1693080630
+s
+#1693080640
+cd /d/Developer/
+#1693080647
+cd Application/NowPlayingCard/NPM/Socket/
+#1693080653
+cd Application/NowPlayingCard/NPM/Common/
+#1693080665
+cd ../API/
+#1693080677
+wrangler deploy
+#1693080658
+dum install ; dum prepublishOnly
+#1693080681
+wrangler deploy
