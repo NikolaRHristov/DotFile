@@ -3734,3 +3734,169 @@ wrangler deploy
 dum install ; dum prepublishOnly
 #1693080681
 wrangler deploy
+#1693081545
+cd ../../Website/
+#1693081137
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
+#1693081547
+dum start
+#1693083125
+ls 
+#1693083110
+dum start --filter=now-playing-web
+#1693083336
+cd Application/NowPlayingCard/Website/
+#1693083339
+dum starter
+#1693083341
+dum starte
+#1693083342
+dum start
+#1693081490
+wrangler dev
+#1693081501
+wrangler dev
+#1693083982
+npm install -g miniflare
+#1693084228
+miniflare dev
+#1693084230
+miniflare
+#1693084233
+npm install -g miniflare
+#1693084737
+miniflare dev
+#1693084747
+npx miniflare 
+#1693084823
+cd /d/Developer/
+#1693084831
+dum start
+#1693084827
+npm install -g miniflare
+#1693084846
+npx miniflare
+#1693084837
+dum start --filter=nikolahristov-web
+#1693086240
+cd ../
+#1693086243
+cd Socket/
+#1693086267
+cd /d/Developer/Application/NowPlayingCard/
+#1693086268
+cd Website/
+#1693086247
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693086270
+cd node_modules/
+#1693086273
+cd ../
+#1693086261
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693086286
+cd /d/d/
+#1693086441
+cd /d/Developer/
+#1693086444
+cd ../
+#1693086446
+cd /d/Developer/
+#1693086448
+cd Application/NowPlayingCard/Website/
+#1693086453
+cd np
+#1693086457
+cd ../NPM/
+#1693086465
+cd API/
+#1693086483
+cd Application/NowPlayingCard/NPM/Socket/
+#1693086468
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693086491
+cd /d/Developer/cd Application/NowPlayingCard/no
+#1693086492
+cd we
+#1693086495
+cd Application/NowPlayingCard/Website/
+#1693086571
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693086498
+dum start
+#1693088467
+git add .
+#1693088471
+git commit -m "squash!"
+#1693090254
+cd /d/Developer/
+#1693090256
+nvim
+#1693091687
+cd /d/Developer/
+#1693091688
+cd Application/N
+#1693091691
+cd Application/NowPlayingCard/
+#1693091693
+cd NPM/
+#1693091695
+cd API/
+#1693091698
+wrangler dev
+#1693091744
+cd Application/NowPlayingCard/Website/
+#1693091749
+cd ../
+#1693091756
+cd NPM/Socket/
+#1693091740
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693091758
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693092456
+cd Application/NowPlayingCard/Website/
+#1693095634
+cd ./../../Website/
+#1693095639
+git add .
+#1693095652
+gggit sync 
+#1693095655
+git sync 
+#1693092458
+dum start
+#1693095661
+Y
+#1693095678
+cd ../../npap
+#1693095682
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693095690
+cd Application/NowPlayingCard/NPM/Socket/c
+#1693095691
+cd Application/NowPlayingCard/NPM/Socket/
+#1693095692
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693095899
+cd ../
+#1693097941
+cd Application/NowPlayingCard/Website/
+#1693097950
+dum install -D -E astro-pagefind
+#1693099466
+nvim
+#1693099470
+winget search neovim
+#1693099519
+winget install --id Neovim.Neovim.Nightly -s winget -i
+#1693099605
+winget install --id Neovim.Neovim -s winget -i
+#1693100125
+nvim
+#1693100128
+neovim
+#1693107316
+cd /d/Developer/
+#1693107321
+dum prepublishOnly --filter=nikolahristov-web
