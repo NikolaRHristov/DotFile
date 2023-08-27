@@ -3982,3 +3982,115 @@ git fetch upstream
 git remote -v
 #1693171007
 cd ../
+#1693171011
+git add .
+#1693171014
+git commit -m "squash!"
+#1693171557
+cd /d/Developer/
+#1693173131
+cle
+#1693173140
+find -iname .git -execdir git add . \;
+#1693173157
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync " \;
+
+
+
+
+#1693173163
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
+#1693173494
+cd Application/NowPlayingCard/Website/
+#1693173507
+cdcd ../
+#1693173509
+cd ../
+#1693173514
+cd /d/Developer/Application/NowPlayingCard/no
+#1693173520
+cd /d/Developer/Application/NowPlayingCard/Website/
+#1693173523
+cd /d/Developer/Application/NowPlayingCard/NPM/
+#1693173525
+cd API/
+#1693173557
+cd /d/Developer/Application/NowPlayingCard/NPM/Socket/
+#1693173538
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693173566
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693174109
+lc
+#1693174116
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693174128
+cd ../
+#1693174130
+cd API/
+#1693174136
+cd Application/NowPlayingCard/NPM/Common/
+#1693174157
+git remote -v
+#1693174162
+dum instlal 
+#1693174237
+cd Application/NowPlayingCard/no
+#1693174239
+cd Application/NowPlayingCard/NPM/
+#1693174241
+cd Socket/
+#1693174251
+cd Application/NowPlayingCard/no
+#1693174252
+cd we
+#1693174253
+cd clear
+#1693174256
+cd Application/NowPlayingCard/Website/
+#1693174258
+cld 
+#1693174164
+dum install 
+#1693174244
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693174261
+dum install 
+#1693174299
+bmd
+#1693174331
+dum install
+#1693174336
+lear
+#1693174349
+cd /d/Developer/
+#1693174350
+bmd
+#1693175434
+cd .d.d
+#1693174337
+dum start
+#1693175964
+ci package.json CHANGELOG.md 
+#1693176243
+cd /d/Developer/
+#1693176245
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
+#1693176793
+cd Application/NowPlayingCard/
+#1693176794
+cd ../
+#1693176796
+mv NowPlayingCard NowPlayingCards
+#1693175744
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1693176815
+lear
+#1693176823
+cd Application/
+#1693176826
+mv NowPlayingCard NowPlayingCards
+#1693176831
+cd /d/Developer/
+#1693176897
+npm show @nowplayingcards/common
