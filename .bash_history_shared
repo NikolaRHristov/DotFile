@@ -3900,3 +3900,85 @@ neovim
 cd /d/Developer/
 #1693107321
 dum prepublishOnly --filter=nikolahristov-web
+#1693165089
+cd Application/NikolaRHristov/dot/
+#1693165099
+cd .oh-my-bash/
+#1693165102
+git remote -v
+#1693167048
+git remote add upstream ssh://git@github.com/ohmybash/oh-my-bash.git
+#1693167056
+git remote fetch upstream
+#1693167059
+git fetch upstream
+#1693167308
+git merge upstream/master
+#1693167341
+git push
+#1693167345
+cd ../
+#1693167350
+cd .oh-my-posh/
+#1693167353
+git remote -v
+#1693167389
+git remote add upstream ssh://git@github.com/jandedobbeleer/oh-my-posh.git
+#1693167393
+git fetch upstream
+#1693167403
+git merge upstream/main 
+#1693167406
+rm -rf website/
+#1693167411
+git status
+#1693167412
+git add .
+#1693167419
+git reset --hard && git clean -dfx
+#1693167426
+git merge upstream/main -X theirs
+#1693167428
+rm -rf website/
+#1693167429
+git add .
+#1693167431
+git status
+#1693167441
+git add .
+#1693167444
+git commit -m "squash!"
+#1693167446
+git psuh
+#1693167448
+git push
+#1693167451
+git commit 
+#1693167456
+cd ../.oh-my-zsh/
+#1693167458
+git remote -v
+#1693167460
+zsh
+#1693168647
+git remote -v
+#1693168649
+cd ../
+#1693169647
+cd .oh-my-zsh/
+#1693169648
+git remote -v
+#1693170062
+git remote add upstream ssh://github.com/jandedobbeleer/oh-my-posh.git
+#1693170093
+git remote -v
+#1693170097
+git fetch upstream
+#1693170120
+git remote set-url upstream ssh://git@github.com/jandedobbeleer/oh-my-posh.git
+#1693170125
+git fetch upstream
+#1693171004
+git remote -v
+#1693171007
+cd ../
