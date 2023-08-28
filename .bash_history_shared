@@ -4094,3 +4094,29 @@ mv NowPlayingCard NowPlayingCards
 cd /d/Developer/
 #1693176897
 npm show @nowplayingcards/common
+#1693176837
+dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1693177877
+cd /d/Developer/Application/NowPlayingCards/Website/
+#1693177879
+dum start
+#1693177889
+cd /d/Developer/
+#1693177873
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
+#1693179641
+cld 
+#1693179649
+bmd
+#1693181051
+cld
+#1693181067
+bmd
+#1693181473
+dum installl
+#1693181573
+find -iname package.json -execdir sort-package-json \;
+#1693182768
+cld
+#1693182785
+dum install
