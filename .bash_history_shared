@@ -4120,3 +4120,39 @@ find -iname package.json -execdir sort-package-json \;
 cld
 #1693182785
 dum install
+#1693183203
+find -iname package.json -execdir sort-package-json \;
+#1693183252
+dum install
+#1693183409
+dum start --filter=nikolahristov-web
+#1693183439
+cd /d/Developer/
+#1693183441
+cd Application/NowPlayingCards/
+#1693183445
+cd NPM/
+#1693183448
+cd API/
+#1693183460
+cd /d/Developer/Application/NowPlayingCards/NPM/Socket/
+#1693183462
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693183451
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693184939
+cd /d/Developer/
+#1693184940
+cd nowno
+#1693184943
+cd Application/NowPlayingCards/
+#1693185459
+cd NPM/
+#1693185460
+cd Common/
+#1693185469
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1693183415
+dum start --filter=now-playing-web
+#1693208315
+find -iname package.json -execdir sort-package-json \;
