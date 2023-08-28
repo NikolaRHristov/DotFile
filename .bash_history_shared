@@ -4156,3 +4156,58 @@ cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c
 dum start --filter=now-playing-web
 #1693208315
 find -iname package.json -execdir sort-package-json \;
+#1693209022
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1693215945
+cd /d/Developer/
+#1693215948
+find -iname swup.ts
+#1693215965
+find -iname swup.ts -execdir cd ../../ ; ls \;
+#1693215973
+find -iname swup.ts -execdir bash -c 'cd ../../ ; ls' \;
+#1693215979
+find -iname swup.ts -execdir bash -c 'cd ../../ ; cat package.json' \;
+#1693215989
+find -iname swup.ts -execdir bash -c 'cd ../../ ; pwd' \;
+#1693216005
+find -iname swup.ts -execdir bash -c 'cd ../../ ; dum install -D -E @swup/overlay-theme' \;
+#1693216701
+cld
+#1693217395
+dum install ;
+#1693217404
+dum install
+#1693217910
+find -iname swup.ts -execdir bash -c 'cd ../../ ; dum install -D -E @swup/overlay-theme' \;
+#1693257839
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync " \;
+
+
+
+
+
+#1693257845
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
+#1693259121
+cd Application/RoundedCorners/
+#1693259122
+cd Application/
+#1693259124
+git remote -g
+#1693259125
+git remote -v
+#1693259140
+git remote set-url origin ssh://git@github.com/RoundedCorners/Application.git
+#1693259142
+git push
+#1693259352
+cd ./
+#1693259426
+git push --tags
+#1693259432
+git log --oneline 
+#1693260215
+cd /d/Developer/
+#1693260219
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
