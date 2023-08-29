@@ -4211,3 +4211,77 @@ git log --oneline
 cd /d/Developer/
 #1693260219
 find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
+#1693261289
+bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1693263634
+find -iname .git -execdir bash -c ' git add ; git commit -m "squash!" ; git sync ' \;
+#1693265615
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1693265808
+cld
+#1693266737
+lear
+#1693266742
+find -iname node_modules
+#1693266745
+rm -rf node_modules/
+#1693266920
+find -iname .git -execdir git status
+#1693266923
+find -iname .git -execdir git status \;
+#1693266936
+find -iname .git -execdir git add . \;
+#1693267148
+cld
+#1693267276
+dum instal
+#1693267278
+dum install
+#1693267592
+Y
+#1693267595
+dum install
+#1693267665
+cd Application/
+#1693267669
+cd AstroStarter/
+#1693267676
+mv PACStack PAC-STAC
+#1693267677
+cd /d/Developer/
+#1693267754
+cld
+#1693267794
+dum install
+#1693268070
+dum instal
+#1693268072
+dum install
+#1693268402
+rm -rf node_modules/.pnpm/\@rollup+plugin*
+#1693268404
+dum install
+#1693268811
+cd /d/Developer/
+#1693268811
+cd ../tools/
+#1693268812
+cd np
+#1693268814
+cd nodejs/
+#1693268818
+cd node
+#1693268801
+cld
+#1693268819
+cd ../
+#1693268822
+cd .pnpm-global/
+#1693268825
+cd 5/
+#1693268828
+cd node_modules/
+#1693268841
+rm -rf ./*
+#1693268852
+dum install
