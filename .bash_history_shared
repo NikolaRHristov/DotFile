@@ -4305,3 +4305,141 @@ cld
 dum instlal
 #1693269552
 dum install
+#1693270781
+ci ~/.bashrc 
+#1693270832
+find -iname .git -execdir git status \;
+#1693270844
+cd Application/AstroCommunity/
+#1693270846
+cd Astro
+#1693270848
+cd Astrost
+#1693270855
+cd AstroCompress/
+#1693270859
+cd ../
+#1693272377
+cd ../../
+#1693272379
+pwd
+#1693272384
+cld 
+#1693272421
+dum install
+#1693272604
+lslsldalsldasldlsaldasllsdlasdllslls
+#1693272654
+dum install
+#1693272822
+cd /d/Developer/Application/NowPlayingCards/NPM/API/
+#1693272837
+cd Source/
+#1693272841
+cd ..
+#1693272850
+\ls
+#1693272853
+\ls -l
+#1693272855
+\ls -a
+#1693272858
+\ls -h
+#1693272864
+\ls --help
+#1693272879
+ls -G
+#1693272889
+\ls -lhaG
+#1693272896
+\ls -lha --no-group
+#1693272921
+\ls -lhA --no-group
+#1693272924
+\ls -lha --no-group
+#1693272967
+pwd
+#1693272970
+cd ../
+#1693272970
+sl
+#1693272972
+cd API/
+#1693272983
+pwd
+#1693272988
+cd Application/NowPlayingCards/
+#1693272990
+cd NPM/
+#1693272992
+cd Common/
+#1693272974
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693273466
+cd Application/NowPlayingCards/ap
+#1693273469
+cd Application/NowPlayingCards/
+#1693273470
+cd NPM/
+#1693273472
+cd API/
+#1693273480
+cd ../Socket/
+#1693273486
+cd /d/Developer/
+#1693273474
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693273481
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693273488
+dum install
+#1693274378
+wrangler 
+#1693274382
+wrangler
+#1693274390
+wrangler kv:namespace
+#1693275068
+wrangler kv:namespace create HTML
+#1693275075
+wrangler kv:namespace create HTML --preview
+#1693275274
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693275453
+wrangler kv:namespace create CSS --preview
+#1693275463
+wrangler kv:namespace create CSS
+#1693275475
+wrangler kv:namespace create TypeScript --preview
+#1693275483
+wrangler kv:namespace create TypeScript
+#1693275541
+git add .
+#1693275542
+wrangler kv:namespace create TypeScript
+#1693275546
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693279726
+pwd
+#1693279728
+pwd
+#1693279740
+cd Application/NowPlayingCards/NPM/API/
+#1693279756
+cd ls
+#1693279768
+cd ../so
+#1693279775
+cd Application/NowPlayingCards/NPM/Socket/
+#1693279763
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693279776
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693279817
+clera
+#1693279839
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693294057
+wrangler kv:namespace create TypeScript
+#1693294060
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;

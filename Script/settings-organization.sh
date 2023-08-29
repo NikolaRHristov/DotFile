@@ -65,10 +65,10 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL_BILLING="hello@mytheme.cloud"
 		EMAIL="hello@mytheme.cloud"
 		;;
-	"NowPlayingCard")
-		EMAIL_BILLING="hello@nowplaying.cards"
-		EMAIL="hello@nowplaying.cards"
-		TWITTER="NowPlayingCard"
+	"NowPlayingCards")
+		EMAIL_BILLING="hello@now-playing.cards"
+		EMAIL="hello@now-playing.cards"
+		TWITTER="NowPlayingCards"
 		;;
 	"NeovimSpace")
 		EMAIL_BILLING="hello@neovim.space"
