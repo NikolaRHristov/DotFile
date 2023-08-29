@@ -4445,3 +4445,17 @@ wrangler kv:namespace create TypeScript
 wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
 #1693274274
 dum start --filter=now-playing-web
+#1693310839
+Y
+#1693310843
+cd Application/NowPlayingCards/Website/
+#1693310845
+dum prepublishOnly
+#1693312536
+serve Target/
+#1693312547
+pnpm install -g
+#1693312558
+serve Target
+#1693313040
+c;ear
