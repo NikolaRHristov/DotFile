@@ -4285,3 +4285,23 @@ cd node_modules/
 rm -rf ./*
 #1693268852
 dum install
+#1693269097
+find -iname .git -execdir git add . \;
+#1693269204
+find -iname .git -execdir git status \;
+#1693269218
+find -iname .git -execdir git diff --staged \;
+#1693269246
+find -iname .git -execdir git diff --staged & \;
+#1693269254
+find -iname .git -execdir git diff --staged \; &
+#1693269507
+jobs
+#1693269521
+sudo ps -aux | less
+#1693269532
+cld
+#1693269550
+dum instlal
+#1693269552
+dum install
