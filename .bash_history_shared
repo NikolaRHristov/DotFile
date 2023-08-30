@@ -4461,3 +4461,339 @@ serve Target
 c;ear
 #1693313043
 dum start
+#1693315159
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693350544
+Streamer is no \longer sleeping 🧛🏻
+#1693351334
+cd Application/NowPlayingCards/NPM/Socket/
+#1693350638
+bmd ; dum install ; dum prepublishOnly
+#1693351723
+cd /d/Developer/
+#1693351732
+cd Application/NowPlayingCards/NPM/API/
+#1693351710
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693351793
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693351822
+dum start --filter=now-playing-web
+#1693356192
+bmd ; dum install
+#1693361680
+cld 
+#1693361841
+cld
+#1693369675
+bmd
+#1693370108
+dum install
+#1693371257
+dum start --filter=now-playing-web
+#1693371271
+dum install
+#1693371568
+cld
+#1693371609
+dum install
+#1693372312
+dum installl
+#1693372313
+dum install
+#1693372661
+rm -rf /d/Developer/node_modules/.pnpm/*
+#1693372733
+pwd
+#1693372736
+dum install
+#1693372958
+rm -rf /d/Developer/node_modules/.pnpm/*
+#1693372965
+dum install
+#1693372969
+rm -rf node_modules/
+#1693372972
+cld
+#1693373101
+rm -rf /d/tools/.pnpm-global/5/.pnpm/*
+#1693373111
+pnpm install -g
+#1693373126
+cd /d/Developer/
+#1693373129
+cd /d/tools/
+#1693373132
+cd .npm-global/
+#1693373135
+cd cache/
+#1693373142
+rm -rf ./*
+#1693373157
+cd ../node_modules/
+#1693373164
+rm -rf ./*
+#1693373169
+cd ../
+#1693373178
+cd cache/
+#1693373181
+cd. ./../
+#1693373182
+cd ../../
+#1693373185
+cd .pnpm-global/
+#1693373187
+cd bin/
+#1693373189
+cd. ./
+#1693373190
+../
+#1693373192
+ca
+#1693373194
+cacls.exe 
+#1693373195
+cd ../
+#1693373198
+cd .pnpm-global/
+#1693373200
+cd cache/
+#1693373202
+rm -rf metadata/
+#1693373213
+cd ../
+#1693373216
+cd bin/
+#1693373220
+cd ../5/
+#1693373222
+rm pnpm-lock.yaml 
+#1693373223
+ncu -u
+#1693373225
+ci package.json 
+#1693373238
+pnpm install -g
+#1693373253
+ncu -u
+#1693373260
+cd /d/tools/.npm-global/
+#1693373263
+cd node_modules/
+#1693373265
+cd ../
+#1693373269
+cd cache/
+#1693373271
+cd ../
+#1693373281
+pnpm install -g wrangler npm-check-updates
+#1693373296
+rm ncu*
+#1693373299
+rm npm-check-updates*
+#1693373304
+rm -rf wrangler*
+#1693373306
+cd node_modules/
+#1693373308
+cd ../../
+#1693373309
+cd ../
+#1693373314
+cd tools/
+#1693373318
+cd .pnpm-global/
+#1693373321
+cd cache/
+#1693373323
+clear.exe 
+#1693373327
+cd /d/Developer/
+#1693373329
+dum install
+#1693373522
+ci pnpm-workspace.yaml 
+#1693373549
+dum install
+#1693373778
+rm -rf /d/Developer/node_modules/.pnpm/is-stream\@3.0.0/
+#1693373779
+dum install
+#1693374266
+rm -rf /d/Developer/node_modules/.pnpm/\@babel+plugin-*
+#1693374268
+dum install
+#1693374493
+rm -rf /d/Developer/node_modules/.pnpm/\@babel+plugin-*
+#1693374516
+rm -rf /d/Developer/node_modules/.pnpm/\@babel+*
+#1693374552
+dum install
+#1693374724
+rm -rf node_modules/
+#1693374743
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1693374745
+cld 
+#1693374751
+bmd
+#1693374772
+dum install
+#1693374959
+rm -rf /d/Developer/node_modules/.pnpm/unicode-*
+#1693375505
+cd /d/Developer/
+#1693375508
+cld
+#1693375806
+node -v
+#1693375813
+winget search node
+#1693375843
+winget uninstall --id OpenJS.NodeJS -i
+#1693375907
+winget install --id OpenJS.NodeJS -i
+#1693375960
+cld
+#1693375981
+which npm-check-updates
+#1693376007
+cd /d/tools/.pnpm-global/bin/
+#1693376018
+rm -rf ./*
+#1693376020
+cd /d/Developer/
+#1693376024
+which npm
+#1693376102
+node -v
+#1693376109
+npm show pnpm version
+#1693376117
+corepack prepare pnpm@8.7.0 --activate
+#1693376119
+corepack enable
+#1693376122
+dum install
+#1693377599
+dum prepublishOnly --filter=typescript-esbuild
+#1693377626
+pnpm install -g
+#1693378059
+Y
+#1693378060
+pnpm install -g
+#1693378080
+cd /d/tools/
+#1693378085
+cd .pnpm-global/
+#1693378087
+cd bin/
+#1693378090
+cd ../5/
+#1693378093
+ci package.json 
+#1693378099
+ncu -u
+#1693378105
+dum install
+#1693378161
+Y
+#1693378164
+cd /d/Developer/
+#1693378166
+pnpm install -g @prettier/plugin-lua
+#1693378349
+pnpm install -g @prettier/plugin-php
+#1693378367
+pnpm install -g @tailwindcss/aspect-ratio
+#1693378383
+pnpm install -g @tailwindcss/forms
+#1693378397
+pnpm install -g @tailwindcss/typography
+#1693378404
+pnpm install -g @trivago/prettier-plugin-sort-imports
+#1693378410
+pnpm install -g eslint
+#1693378423
+pnpm install -g jshint
+#1693378429
+pnpm install -g npm-check-updates
+#1693378438
+pnpm install -g prettier
+#1693378451
+pnpm install -g prettier-plugin-astro
+#1693378463
+pnpm install -g prettier-plugin-autocorrect
+#1693378475
+pnpm install -g prettier-plugin-java
+#1693378497
+pnpm install -g prettier-plugin-kotlin
+#1693378511
+pnpm install -g prettier-plugin-organize-attributes
+#1693378523
+pnpm install -g prettier-plugin-packagejson
+#1693378543
+pnpm install -g prettier-plugin-pkg
+#1693378552
+pnpm install -g prettier-plugin-sh
+#1693378560
+pnpm install -g prettier-plugin-sort-imports
+#1693378567
+pnpm install -g prettier-plugin-sql
+#1693378577
+pnpm install -g prettier-plugin-svelte
+#1693378592
+pnpm install -g prettier-plugin-tailwindcss
+#1693378602
+pnpm install -g prettier-plugin-toml
+#1693378616
+pnpm install -g serve
+#1693378637
+pnpm install -g sort-package-json
+#1693378648
+pnpm install -g tailwindcss
+#1693378656
+pnpm install -g ts-node
+#1693378662
+pnpm install -g typescript
+#1693378675
+pnpm install -g web-ext
+#1693378686
+pnpm install -g wrangler
+#1693378856
+wrangler -h
+#1693378686
+pnpm install -g wrangler
+#1693378856
+wrangler -h
+#1693379053
+cd /d/Developer/Application/YesMaintain/NPM/Script
+#1693379062
+cd /d/Developer/app/NikolaRHristov/DeploymentDelete
+#1693379069
+cd /d/Developer/app/NikolaRHristov/TypeScriptESBuild
+#1693379069
+pnpm link -g
+#1693379219
+cd /d/Developer/
+#1693378861
+bmd
+#1693379763
+dum install
+#1693380157
+dum prepublishOnly
+#1693380503
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1693380592
+VERSION="0.1.15" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1693381511
+cd ../FilesPipe/
+#1693381514
+ci package.json CHANGELOG.md 
+#1693381544
+VERSION="2.0.18" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1693381840
+cd /d/Developer/
