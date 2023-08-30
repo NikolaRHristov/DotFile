@@ -4797,3 +4797,71 @@ ci package.json CHANGELOG.md
 VERSION="2.0.18" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
 #1693381840
 cd /d/Developer/
+#1693381841
+bmd
+#1693382356
+cd Application/AstroCommunity/
+#1693382359
+cd AstroCompress/
+#1693382363
+dum prepublishOnly
+#1693382379
+git add .
+#1693382448
+pnpm show files-pipe version
+#1693382454
+cd /d/Developer/
+#1693382456
+dum install
+#1693383366
+cd Application/AstroCommunity/
+#1693383367
+cld
+#1693383372
+bmd
+#1693383484
+dum install
+#1693384169
+cd /d/Developer/
+#1693384170
+cld
+#1693384595
+bmd
+#1693385248
+find -iname .git -execdir git add . \;
+#1693385743
+dum install
+#1693386177
+dum prepublishOnly --filter=astro-compress
+#1693386339
+dum prepublishOnly --filter=astro-starter-template
+#1693392066
+bmd ; dum install ; dum prepublishOnly --filter=nikolahristov-web
+#1693394579
+find -iname .git -execdir git add . \;
+#1693395351
+bmd ; dum install ; dum prepublishOnly --filter=nikolahristov-web
+#1693395356
+dum prepublishOnly --filter=nikolahristov-web
+#1693395881
+find -iname .git -execdir git add . \;
+#1693396089
+bmd ; dum install ; dum prepublishOnly
+#1693396918
+nvim pnpm-
+#1693396922
+nvim pnpm-workspace.yaml 
+#1693396957
+nvim package.json 
+#1693397008
+dum prepublishOnly
+#1693397120
+dum install
+#1693397183
+dum prepublishOnly --filter=nikolahristov-web
+#1693399350
+Streamer is sleeping 💤
+#1693437607
+find -iname .git -execdir git add . \;
+#1693438037
+find -iname .git -execdir git status \;
