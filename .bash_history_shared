@@ -5031,3 +5031,5 @@ cd Application/RoundedCorners/Application/
 dum tauri build
 #1693491154
 cd /d/Developer/
+#1693491156
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
