@@ -5003,3 +5003,5 @@ dum prepublishOnly
 Y
 #1693475221
 dum install
+#1693475307
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
