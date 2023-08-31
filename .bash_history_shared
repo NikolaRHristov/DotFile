@@ -5015,3 +5015,9 @@ pnpx npm-check-updates -u
 cd /d/Developer/
 #1693481364
 find -iname package.json -execdir sort-package-json \;
+#1693482470
+dum prepublishOnly --filter=@nikolarhristov/scripts
+#1693482762
+dum install
+#1693482836
+dum prepublishOnly --filter=@nikolarhristov/scripts
