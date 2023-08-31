@@ -5021,3 +5021,13 @@ dum prepublishOnly --filter=@nikolarhristov/scripts
 dum install
 #1693482836
 dum prepublishOnly --filter=@nikolarhristov/scripts
+#1693484553
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693490505
+cd /d/Developer/
+#1693490510
+cd Application/RoundedCorners/Application/
+#1693490515
+dum tauri build
+#1693491154
+cd /d/Developer/
