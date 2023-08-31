@@ -4869,3 +4869,37 @@ find -iname .git -execdir git status \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1693438829
 /d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+#1693439973
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1693440781
+cd Application/NowPlayingCards/Website/
+#1693440783
+git status
+#1693440803
+git add .
+#1693440807
+git commit -m "squash!"
+#1693440809
+git ysnc
+#1693440812
+git sync
+#1693440817
+cd ../.././Apas
+#1693440831
+cd ../../AstroCommunity/AstroC
+#1693440833
+los -G
+#1693440835
+cd ../../AstroCommunity/AstroCompress/
+#1693440865
+ci package.json 
+#1693440890
+pnpm show astro-compress
+#1693440905
+cd /d/Developer/
+#1693441083
+bmd ; find -iname package.json -execdir sort-package-json \;
+#1693441743
+cd /d/Developer/
+#1693441851
+bmd ; find -iname package.json -execdir sort-package-json \;
