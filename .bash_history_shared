@@ -4933,3 +4933,25 @@ dum install
 cd /d/Developer/
 #1693450607
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693453157
+cd Application/NikolaRHristov/dot/.config/
+#1693453161
+cd base/
+#1693453166
+dum install
+#1693453595
+cd /d/Developer/
+#1693453609
+pnpm install -g prettier-plugin-astro
+#1693453598
+dum install
+#1693453681
+pnpm install -g
+#1693454126
+cd Application/NikolaRHristov/dot/.config/base/
+#1693454141
+ci package.json 
+#1693454482
+cd /d/Developer/
+#1693454491
+cld
