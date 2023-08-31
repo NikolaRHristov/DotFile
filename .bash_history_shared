@@ -4865,3 +4865,7 @@ Streamer is sleeping 💤
 find -iname .git -execdir git add . \;
 #1693438037
 find -iname .git -execdir git status \;
+#1693438205
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1693438829
+/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
