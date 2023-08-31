@@ -4907,3 +4907,7 @@ bmd ; find -iname package.json -execdir sort-package-json \;
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1693443130
 pre
+#1693444151
+find -iname .git -execdir git status \;
+#1693444264
+find -iname .git -execdir git add . \;
