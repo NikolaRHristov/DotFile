@@ -4903,3 +4903,7 @@ bmd ; find -iname package.json -execdir sort-package-json \;
 cd /d/Developer/
 #1693441851
 bmd ; find -iname package.json -execdir sort-package-json \;
+#1693442509
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
+#1693443130
+pre
