@@ -4913,3 +4913,21 @@ find -iname .git -execdir git status \;
 find -iname .git -execdir git add . \;
 #1693445932
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693449439
+find -name *nikola*
+#1693449443
+find -name nikola*
+#1693449444
+find -name nikola
+#1693449447
+find -iname nikola
+#1693449454
+find -iname *nikola*
+#1693449501
+cd Application/NikolaRHristov/dot/.config/
+#1693449505
+cd base/
+#1693449510
+dum install
+#1693450181
+cd /d/Developer/
