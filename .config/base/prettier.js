@@ -50,10 +50,8 @@ module.exports = {
 		// "prettier-plugin-svelte",
 		// @TODO: Check for support
 		// "prettier-plugin-tailwindcss",
-		// @TODO: Check for support
-		// "prettier-plugin-toml",
-		// @TODO: Check for support
-		// "prettier-plugin-packagejson",
+		"prettier-plugin-toml",
+		"prettier-plugin-packagejson",
 	],
 	tailwindConfig:
 		"D:\\Developer\\Application\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",

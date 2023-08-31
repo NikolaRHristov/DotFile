@@ -4969,3 +4969,23 @@ dum install
 rm -rf node_modules/.pnpm/\@types+npm-package-arg\@6.1.1/
 #1693457738
 dum install
+#1693458329
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693465115
+cd /d/Developer/
+#1693465121
+cd Application/NikolaRHristov/
+#1693465127
+cd NikolaRHristov/
+#1693465128
+cd ../dot/
+#1693465137
+cd .config/
+#1693465139
+cd base/
+#1693465148
+dum install
+#1693465249
+dum install .
+#1693466283
+cd /d/Developer/
