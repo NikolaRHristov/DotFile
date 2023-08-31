@@ -39,17 +39,9 @@ module.exports = {
 		// @TODO: Check for support
 		// "prettier-plugin-autocorrect",
 		// @TODO: Check for support
-		// "prettier-plugin-pkg",
-		// @TODO: Check for support
-		// "prettier-plugin-sh",
-		// @TODO: Check for support
-		// "prettier-plugin-sort-imports",
-		// @TODO: Check for support
-		// "prettier-plugin-sql",
-		// @TODO: Check for support
-		// "prettier-plugin-svelte",
-		// @TODO: Check for support
-		// "prettier-plugin-tailwindcss",
+		"prettier-plugin-pkg",
+		"prettier-plugin-sh",
+		"prettier-plugin-tailwindcss",
 		"prettier-plugin-toml",
 		"prettier-plugin-packagejson",
 	],
