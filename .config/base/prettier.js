@@ -23,22 +23,8 @@ module.exports = {
 	useTabs: true,
 	vueIndentScriptAndStyle: true,
 	plugins: [
-		// @TODO: Check for support
-		// "@prettier/plugin-lua",
-		// @TODO: Check for support
-		// "@prettier/plugin-php",
-		// @TODO: Check for support
-		// "@trivago/prettier-plugin-sort-imports",
 		"prettier-plugin-astro",
-		// @TODO: Check for support
-		// "prettier-plugin-java",
-		// @TODO: Check for support
-		// "prettier-plugin-kotlin",
-		// @TODO: Check for support
-		// "prettier-plugin-organize-attributes",
-		// @TODO: Check for support
-		// "prettier-plugin-autocorrect",
-		// @TODO: Check for support
+		"prettier-plugin-organize-attributes",
 		"prettier-plugin-sh",
 		"prettier-plugin-tailwindcss",
 		"prettier-plugin-toml",

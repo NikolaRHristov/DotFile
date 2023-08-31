@@ -4991,3 +4991,15 @@ dum install .
 cd /d/Developer/
 #1693466890
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693472324
+dum prepublishOnly --filter=astro-compress
+#1693474404
+dum prepublishOnly
+#1693474600
+bmd
+#1693475212
+dum prepublishOnly
+#1693475218
+Y
+#1693475221
+dum install
