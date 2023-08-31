@@ -4955,3 +4955,13 @@ ci package.json
 cd /d/Developer/
 #1693454491
 cld
+#1693454524
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693455079
+dum install
+#1693455547
+rm /d/Developer/node_modules/.pnpm/stringify-*
+#1693455551
+rm -rf /d/Developer/node_modules/.pnpm/stringify-*
+#1693455553
+dum install
