@@ -5005,3 +5005,13 @@ Y
 dum install
 #1693475307
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
+#1693481298
+cd Application/AstroCommunity/AstroCompress/
+#1693481299
+npx npm-check-updates -u
+#1693481315
+pnpx npm-check-updates -u
+#1693481348
+cd /d/Developer/
+#1693481364
+find -iname package.json -execdir sort-package-json \;
