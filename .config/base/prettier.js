@@ -39,7 +39,6 @@ module.exports = {
 		// @TODO: Check for support
 		// "prettier-plugin-autocorrect",
 		// @TODO: Check for support
-		"prettier-plugin-pkg",
 		"prettier-plugin-sh",
 		"prettier-plugin-tailwindcss",
 		"prettier-plugin-toml",
