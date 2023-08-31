@@ -4931,3 +4931,5 @@ cd base/
 dum install
 #1693450181
 cd /d/Developer/
+#1693450607
+find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
