@@ -5283,3 +5283,19 @@ dum install
 rm -rf node_modules/.pnpm/postcss-image-set-function\@6.0.0_postcss\@8.4.29/
 #1693578912
 dum install
+#1693580849
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
+#1693581609
+cd Application/MythemeCloud/
+#1693581612
+cd Website/
+#1693581615
+git commit
+#1693581633
+git push
+#1693581658
+cd /d/
+#1693581660
+cd /d/Developer/
+#1693581736
+find -iname .git -execdir git add . \;
