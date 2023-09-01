@@ -5177,3 +5177,91 @@ ci package.json
 dum build --filter=marti-content
 #1693566678
 find -iname .git
+#1693567042
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
+#1693567564
+Maintain Workflow
+#1693569798
+mv Application/Marti/ Application/QualityCoutureMN
+#1693569828
+cd Application/QualityCoutureMN/
+#1693569830
+cd Content/
+#1693569834
+cd ../
+#1693569836
+cd Content/
+#1693569838
+cd ../
+#1693570673
+cd Content/
+#1693570684
+git remote add origin ssh://git@github.com/QualityCoutureMN/Content.git
+#1693570687
+git push
+#1693571264
+cd ../Website/
+#1693571275
+git clone ssh://git@github.com/Lightrix/AstroStarterTemplate.git .
+#1693571283
+ci package.json 
+#1693571703
+cd /d/Developer/
+#1693571759
+cd Application/Lightrix/
+#1693571763
+cd NPM/AstroStarterTemplate/
+#1693571769
+cd git remote -v
+#1693571772
+git remote -v
+#1693571777
+git fetch
+#1693571785
+git push --force
+#1693571790
+bmd
+#1693571799
+git add .
+#1693571801
+git commit -m"squash!
+#1693571830
+git commit -m "squash!"
+#1693571945
+git remote -v
+#1693571967
+git remote set-url origin ssh://git@github.com/Lightrix/AstroStarterTemplate.git
+#1693571972
+git push
+#1693571975
+cd ../../
+#1693571979
+cd ../QualityCoutureMN/
+#1693571981
+cd Website/
+#1693571983
+git remote -v
+#1693571704
+bmd
+#1693572629
+cd /d/Developer/Application/AstroCommunity/AstroC
+#1693572631
+cd /d/Developer/Application/AstroCommunity/AstroCompress/
+#1693572637
+ci package.json CHANGELOG.md 
+#1693572644
+pnpm show astro-compress version
+#1693572671
+VERSION="2.0.15" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1693573215
+pnpm show astro-compress
+#1693573226
+cd /d/Developer/
+#1693573572
+pnpm show astro-critters version
+#1693573227
+bmd
+#1693573855
+cd Application/AstroCommunity/AstroCritters/
+#1693573866
+ci package.json CHANGELOG.md 
