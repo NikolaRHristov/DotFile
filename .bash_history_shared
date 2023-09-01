@@ -5065,3 +5065,115 @@ find -iname .git -execdir bash -c ' git add . ; git status ; \;
 find -iname .git -execdir bash -c ' git add . ; git status ; ' \;
 #1693543515
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; ' \;
+#1693543634
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
+#1693543923
+cd Application/Marti/
+#1693543930
+mv Content/content/* Content/
+#1693543932
+cd Content/
+#1693543933
+cd content/
+#1693544005
+cd ../
+#1693544007
+cd /d/Developer/
+#1693544035
+cd Application/Marti/Content/
+#1693544039
+grep -rnw content
+#1693545212
+cd /d/Developer/
+#1693545214
+dum install
+#1693545338
+corepack prepare pnpm@8.7.1 --activate
+#1693545395
+corepack enable
+#1693545525
+cd Application/NikolaRHristov/dot/.config/base/
+#1693545528
+s
+#1693545538
+dum install .
+#1693545638
+pnpm unlink -g
+#1693545645
+dum install .
+#1693546182
+cd /d/Developer/
+#1693546185
+dum install .
+#1693546191
+dum install 
+#1693546354
+rm -rf node_modules/.pnpm/react-select\@5.7.4_\@types+react\@18.0.21_react-dom\@18.2.0_react\@18.2.0/
+#1693546355
+dum install 
+#1693546651
+dum prepublishOnly --filter=astro-compress
+#1693546743
+cd Application/NikolaRHristov/dot/.config/base/
+#1693546745
+ci package.json 
+#1693547455
+cd /d/Developer/
+#1693547465
+find -iname .git -execdir git add . \;
+#1693547554
+bmd
+#1693548711
+cd Application/AstroCommunity/AstroCompress/
+#1693548713
+bmd
+#1693548719
+dum install
+#1693548898
+rm -rf /d/Developer/node_modules/.pnpm/\@firebase*
+#1693548903
+dum install
+#1693549115
+cd /d/Developer/
+#1693549119
+dum install
+#1693549370
+ci Application/Marti/Content/package.json 
+#1693549426
+dum install -D -E typescript-esbuild --filter=marti-content 
+#1693549566
+cd Application/Marti/Content/
+#1693549567
+git status
+#1693549569
+git init
+#1693549580
+dum install
+#1693549670
+ci package.json 
+#1693549686
+dum build
+#1693551225
+git add .
+#1693551230
+git commit -m "Initial commit"
+#1693551252
+gh org -h
+#1693551330
+cd /d/Developer/
+#1693551346
+/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/dot/Script/security-organization.sh 
+#1693553055
+cd /d/Developer/
+#1693553061
+/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/dot/Script/security-organization.sh 
+#1693553615
+dum build --filter=marti-content
+#1693553623
+dum run
+#1693553626
+ci package.json 
+#1693556164
+dum build --filter=marti-content
+#1693566678
+find -iname .git
