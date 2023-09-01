@@ -5299,3 +5299,9 @@ cd /d/
 cd /d/Developer/
 #1693581736
 find -iname .git -execdir git add . \;
+#1693582567
+find -iname .git -execdir git remote -v \;
+#1693582783
+find -iname .git 
+#1693582788
+find -iname .git -execdir git add . \;
