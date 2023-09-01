@@ -5265,3 +5265,21 @@ bmd
 cd Application/AstroCommunity/AstroCritters/
 #1693573866
 ci package.json CHANGELOG.md 
+#1693574267
+cd /d/Developer/
+#1693574267
+cld
+#1693574367
+dum install
+#1693575029
+rm -rf node_modules/.pnpm/get-stream\@8.0.1/
+#1693575030
+dum install
+#1693576375
+rm -rf node_modules/.pnpm/protobufjs\@7.2.5/
+#1693576376
+dum install
+#1693578911
+rm -rf node_modules/.pnpm/postcss-image-set-function\@6.0.0_postcss\@8.4.29/
+#1693578912
+dum install
