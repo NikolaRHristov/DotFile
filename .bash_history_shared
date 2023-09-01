@@ -5039,3 +5039,29 @@ Maintain
 Maintain Workflows
 #1693540147
 Maintain Workflow
+#1693542180
+find -iname .git -execdir git status \;
+#1693542640
+cd Application/
+#1693542646
+mkdir Marti
+#1693542648
+cd Marti/
+#1693542651
+mkdir Website
+#1693542654
+mkdir Content
+#1693542656
+cd Content/
+#1693542792
+npx create-payload-app
+#1693542818
+pnpx create-payload-app
+#1693543391
+cd /d/Developer/
+#1693543403
+find -iname .git -execdir bash -c ' git add . ; git status ; \;
+#1693543422
+find -iname .git -execdir bash -c ' git add . ; git status ; ' \;
+#1693543515
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; ' \;
