@@ -5401,3 +5401,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 chcoo upgrade all -y
 #1693664563
 choco upgrade all -y
+#1693665581
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
