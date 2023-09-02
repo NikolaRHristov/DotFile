@@ -12,7 +12,7 @@ required = true
 [core]
 autocrlf = input
 fscache = true
-	symlinks = true
+symlinks = true
 pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
@@ -81,5 +81,3 @@ directory = C:/Program Files/Git/__w/
 
 [protocol "file"]
 allow = always
-[advice]
-	addEmptyPathspec = false

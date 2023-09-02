@@ -5325,3 +5325,15 @@ find -iname .git -execdir git commit -m "squash!" \;
 cd /d/Developer/
 #1693639047
 find -iname .git -execdir git add . \;
+#1693641300
+dum install
+#1693641350
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693642155
+rm -rf node_modules/.pnpm/querystring*
+#1693642159
+dum install ; dum prepublishOnly
+#1693643559
+find -iname .git -execdir git add . \;
+#1693646132
+dum prepublishOnly
