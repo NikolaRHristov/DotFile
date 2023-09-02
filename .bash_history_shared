@@ -5397,3 +5397,7 @@ find -iname .git -execdir git add . \;
 npm show astro-rome
 #1693663378
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
+#1693664556
+chcoo upgrade all -y
+#1693664563
+choco upgrade all -y
