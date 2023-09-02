@@ -5355,3 +5355,27 @@ dum install
 find -iname .git -execdir git commit -m "squash!" \;
 #1693650367
 find -iname .git -execdir git add . \;
+#1693651046
+bmd ; dum install ; dum prepublishOnly
+#1693651221
+/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+#1693652300
+cd Application/QualityCoutureMN/ls
+#1693652302
+cd Application/QualityCoutureMN/
+#1693652303
+cd Content/
+#1693652310
+cat package.json | jq .scripts
+#1693652313
+dum build
+#1693652317
+dum install
+#1693651848
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693652333
+Y
+#1693652338
+dum install ; dum prepublishOnly
+#1693655917
+cd /d/Developer/
