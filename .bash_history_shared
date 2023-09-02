@@ -5345,3 +5345,13 @@ bmd ; dum install ; dum prepublishOnly
 find -iname .git -execdir git commit \;
 #1693649932
 find -iname .git -execdir git commit -m "squash!" \;
+#1693649948
+find -iname .git -execdir git add . \;
+#1693649662
+bmd
+#1693650019
+dum install 
+#1693650304
+find -iname .git -execdir git commit -m "squash!" \;
+#1693650367
+find -iname .git -execdir git add . \;
