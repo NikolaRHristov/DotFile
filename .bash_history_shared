@@ -5395,3 +5395,5 @@ dum install
 find -iname .git -execdir git add . \;
 #1693663300
 npm show astro-rome
+#1693663378
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
