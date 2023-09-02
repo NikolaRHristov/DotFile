@@ -5337,3 +5337,9 @@ dum install ; dum prepublishOnly
 find -iname .git -execdir git add . \;
 #1693646132
 dum prepublishOnly
+#1693648607
+find -iname .git -execdir git add . \;
+#1693648401
+bmd ; dum install ; dum prepublishOnly
+#1693649121
+find -iname .git -execdir git commit \;
