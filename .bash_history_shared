@@ -5461,3 +5461,31 @@ lychee.exe -c lychee.toml Application/
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1693743349
 /d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+#1693744504
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693747624
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693751485
+dum install ; dum prepublishOnly
+#1693765419
+dum prepublishOnly --filter=now-playing-web
+#1693765505
+cd Application/NowPlayingCards/
+#1693765507
+cd Website/
+#1693765516
+dum prepublishOnly 
+#1693766147
+find -iname *.ts
+#1693766149
+find -iname *.tsx
+#1693766153
+astro check
+#1693766156
+dum check
+#1693766159
+dum astro check
+#1693766256
+dum prepublishOnly
+#1693767389
+cd /d/Developer/
