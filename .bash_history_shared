@@ -5433,3 +5433,27 @@ s
 cld ; bmd ; dum install ; dum prepublishOnly
 #1693726553
 find -iname astro.config.ts -execdir dum install -D -E @astrojs/check typescript \;
+#1693726695
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693730636
+lychee.exe 
+#1693730662
+lychee.exe -h
+#1693730669
+lychee.exe -c lychee.toml 
+#1693730673
+lychee.exe -c lychee.toml Application/
+#1693731638
+ci lychee.
+#1693727314
+find -iname astro.config.ts -execdir dum install -D -E @astrojs/check typescript \;
+#1693731957
+lychee -h
+#1693732481
+ci lychee.toml 
+#1693732490
+ci
+#1693732495
+ci .env 
+#1693732582
+lychee.exe -c lychee.toml Application/
