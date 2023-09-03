@@ -5405,3 +5405,31 @@ choco upgrade all -y
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ' \;
 #1693665788
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693668112
+cd Application/QualityCoutureMN/
+#1693668114
+cd Content/
+#1693668116
+ci package.json 
+#1693668270
+docker-compose up --force-recreate -d --build
+#1693668454
+ci .env
+#1693668731
+docker-compose up --force-recreate -d --build
+#1693670125
+bmd
+#1693670136
+docker-compose up --force-recreate -d --build
+#1693725630
+cd /d/Developer/
+#1693725635
+find -iname .git -execdir git add . \;
+#1693725681
+cld
+#1693725836
+s
+#1693725873
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693726553
+find -iname astro.config.ts -execdir dum install -D -E @astrojs/check typescript \;
