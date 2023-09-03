@@ -5489,3 +5489,5 @@ dum astro check
 dum prepublishOnly
 #1693767389
 cd /d/Developer/
+#1693767392
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
