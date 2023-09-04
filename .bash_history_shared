@@ -5491,3 +5491,7 @@ dum prepublishOnly
 cd /d/Developer/
 #1693767392
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693815281
+dum prepublishOnly --filter=now-playing-web
+#1693815500
+dum prepublishOnly --filter=nikolahristov-web
