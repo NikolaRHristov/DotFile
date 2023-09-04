@@ -5527,3 +5527,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 find -iname swup.ts -execdir code-insiders ../../Style/Global.css \;
 #1693824058
 find -iname swup.ts -execdir code-insiders ../../Source/Style/Global.css \;
+#1693824886
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
