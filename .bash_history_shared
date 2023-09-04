@@ -5533,3 +5533,9 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 ci Application/NowPlayingCards/Website/.env
 #1693827381
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693829650
+cd Application/QualityCoutureMN/Content/
+#1693829660
+docker-compose up --force-recreate -d --build
+#1693829933
+cd /d/Developer/
