@@ -5579,3 +5579,7 @@ find -name Target -type d -exec rm -rf {} \;
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1693851943
 ;s
+#1693851951
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693852520
+dum install ; dum prepublishOnly
