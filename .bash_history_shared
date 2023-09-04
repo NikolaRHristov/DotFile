@@ -5551,3 +5551,27 @@ docker-compose up --force-recreate -d --build
 cd /d/Developer/
 #1693832004
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693834049
+find -iname *.tsx | tr '\n\r' ' '
+#1693834064
+code-insiders $(find -iname *.tsx | tr '\n\r' ' ')
+#1693834213
+find -name Target -type d -exec rm -rf {} \;
+#1693834242
+code-insiders $(find -iname *.tsx | tr '\n\r' ' ')
+#1693834248
+code-insiders $(find -iname *.ts | tr '\n\r' ' ')
+#1693840385
+dum prepublishOnly --filter=typescript-esbuild
+#1693840922
+ci turbo.json pnpm-workspace.yaml package.json 
+#1693840943
+dum prepublishOnly --filter=typescript-esbuild
+#1693843057
+code-insiders $(find -iname *.tsx -o -iname *.ts | tr '\n\r' ' ')
+#1693843445
+dum prepublishOnly --filter=nikolahristov-web
+#1693843470
+find -name Target -type d
+#1693843473
+find -name Target -type d -exec rm -rf {} \;
