@@ -5583,3 +5583,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 cld ; bmd ; dum install ; dum prepublishOnly
 #1693852520
 dum install ; dum prepublishOnly
+#1693854434
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
