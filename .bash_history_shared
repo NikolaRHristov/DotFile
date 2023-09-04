@@ -3621,11 +3621,11 @@ dum prepublishOnly ; git add . ; git commit -m "squash!" ; git sync ;
 #1692926250
 dum install
 #1692927891
-dum prepublishOnly --filter=@nowplayingcard/common
+dum prepublishOnly --filter=@nowplayingcards/common
 #1692928111
-dum install ; dum prepublishOnly --filter=@nowplayingcard/common ; dum instal
+dum install ; dum prepublishOnly --filter=@nowplayingcards/common ; dum instal
 #1692928116
-dum install ; dum prepublishOnly --filter=@nowplayingcard/common ; dum install
+dum install ; dum prepublishOnly --filter=@nowplayingcards/common ; dum install
 #1692921927
 dum install ; dum start --filter=now-playing-web
 #1692928365
@@ -5539,3 +5539,5 @@ cd Application/QualityCoutureMN/Content/
 docker-compose up --force-recreate -d --build
 #1693829933
 cd /d/Developer/
+#1693830161
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
