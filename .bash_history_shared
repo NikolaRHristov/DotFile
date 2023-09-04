@@ -5521,3 +5521,9 @@ bmd ; dum install ; dum prepublishOnly
 find -iname swup.ts
 #1693823231
 find -iname swup.ts -execdir code-insiders ../../package.json \;
+#1693823068
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693824044
+find -iname swup.ts -execdir code-insiders ../../Style/Global.css \;
+#1693824058
+find -iname swup.ts -execdir code-insiders ../../Source/Style/Global.css \;
