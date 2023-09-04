@@ -5529,3 +5529,5 @@ find -iname swup.ts -execdir code-insiders ../../Style/Global.css \;
 find -iname swup.ts -execdir code-insiders ../../Source/Style/Global.css \;
 #1693824886
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693826622
+ci Application/NowPlayingCards/Website/.env
