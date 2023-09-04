@@ -5599,3 +5599,9 @@ cd /d/Developer/
 find -iname .git -execdir git fetch upstream \;
 #1693857843
 find -iname .git -execdir git merge upstream/main \;
+#1693858443
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693859149
+cd Application/QualityCoutureMN/Content/
+#1693859151
+docker-compose up --force-recreate -d --build
