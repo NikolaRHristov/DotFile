@@ -5549,3 +5549,5 @@ cd ../Content/
 docker-compose up --force-recreate -d --build
 #1693832001
 cd /d/Developer/
+#1693832004
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
