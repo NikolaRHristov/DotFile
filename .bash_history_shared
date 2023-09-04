@@ -5575,3 +5575,5 @@ dum prepublishOnly --filter=nikolahristov-web
 find -name Target -type d
 #1693843473
 find -name Target -type d -exec rm -rf {} \;
+#1693843425
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
