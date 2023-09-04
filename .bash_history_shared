@@ -5541,3 +5541,11 @@ docker-compose up --force-recreate -d --build
 cd /d/Developer/
 #1693830161
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693831674
+cd Application/QualityCoutureMN/Website/
+#1693831676
+cd ../Content/
+#1693831680
+docker-compose up --force-recreate -d --build
+#1693832001
+cd /d/Developer/
