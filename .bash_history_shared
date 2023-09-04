@@ -5585,3 +5585,17 @@ cld ; bmd ; dum install ; dum prepublishOnly
 dum install ; dum prepublishOnly
 #1693854434
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693856733
+find -iname astro.config.ts -execdir git remote -v \;
+#1693856756
+find -iname astro.config.ts -execdir bash -c 'echo "----" ; pwd ;git remote -v ;' \;
+#1693856766
+cd /d/Developer/Application/QualityCoutureMN/Website
+#1693856781
+git remote add upstream ssh://git@github.com/Lightrix/AstroStarterTemplate.git
+#1693856791
+cd /d/Developer/
+#1693856799
+find -iname .git -execdir git fetch upstream \;
+#1693857843
+find -iname .git -execdir git merge upstream/main \;
