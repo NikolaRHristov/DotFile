@@ -5495,3 +5495,29 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly --filter=now-playing-web
 #1693815500
 dum prepublishOnly --filter=nikolahristov-web
+#1693819500
+cd /d/Developer/
+#1693819501
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693819692
+cd Application/NowPlayingCards/Website/
+#1693819695
+git remote -v
+#1693819696
+git add .
+#1693819702
+git commit -m "squash!"
+#1693819717
+git remote set-url origin ssh://git@github.com/NowPlayingCards/Website.git
+#1693819719
+git push
+#1693819722
+gbmd 
+#1693819726
+dum install 
+#1693819809
+bmd ; dum install ; dum prepublishOnly
+#1693823217
+find -iname swup.ts
+#1693823231
+find -iname swup.ts -execdir code-insiders ../../package.json \;
