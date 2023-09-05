@@ -5605,3 +5605,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 cd Application/QualityCoutureMN/Content/
 #1693859151
 docker-compose up --force-recreate -d --build
+#1693859565
+cd /d/Developer/
