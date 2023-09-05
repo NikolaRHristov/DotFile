@@ -5619,3 +5619,113 @@ ls Application/NikolaRHristov/Website/Source/Asset/Image/Package/
 cd /d/Developer/
 #1693927290
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693933110
+npm who ami
+#1693933113
+npm whami
+#1693933120
+npm whoami
+#1693933124
+cd ../
+#1693933135
+npm whoami
+#1693933795
+npm list -g
+#1693933800
+npm list -g -h
+#1693934624
+npm owner -h
+#1693934644
+npm owner add nikirhristov astro-inlang
+#1693934716
+npm owner add astro-query
+#1693934717
+npm owner add astro-sst-template
+#1693934718
+npm owner add astro-compress
+#1693934719
+npm owner add astro-convert
+#1693934720
+npm owner add astro-critters
+#1693934720
+npm owner add astro-dashboard
+#1693934720
+npm owner add astro-dead-links
+#1693934721
+npm owner add astro-deno-deploy
+#1693934722
+npm owner add baxast
+#1693934722
+npm owner add astro-rome
+#1693934723
+npm owner add astro-networks
+#1693934723
+npm owner add astro-short-urls
+#1693934723
+npm owner add astro-starter-template
+#1693934723
+npm owner add files-pipe
+#1693934723
+npm owner add deploymentdelete
+#1693934723
+npm owner add typescript-esbuild
+#1693934723
+npm owner add mailsend
+#1693934737
+npm owner add nikolarhristov astro-query
+#1693934748
+npm owner add nikolarhristov astro-sst-template
+#1693934785
+npm owner add nikolarhristov astro-compress
+#1693934799
+npm owner add nikolarhristov astro-convert
+#1693934823
+npm owner add nikolarhristov astro-critters
+#1693934834
+npm owner add nikolarhristov astro-dashboard
+#1693934845
+npm owner add nikolarhristov astro-dead-links
+#1693934859
+npm owner add nikolarhristov astro-deno-deploy
+#1693934878
+npm owner add nikolarhristov baxast
+#1693934893
+npm owner add nikolarhristov astro-rome
+#1693934910
+npm owner add nikolarhristov astro-networks
+#1693934925
+npm owner add nikolarhristov astro-short-urls
+#1693934942
+npm owner add nikolarhristov astro-starter-template
+#1693934956
+npm owner add nikolarhristov files-pipe
+#1693934974
+npm owner add nikolarhristov deploymentdelete
+#1693935063
+npm owner add nikolarhristov typescript-esbuild
+#1693935087
+npm owner add nikolarhristov mailsend
+#1693935439
+npm owner add nikolarhristov astro-lint
+#1693935512
+npm owner add nikolarhristov astro-inlang
+#1693935624
+npm -h
+#1693935693
+npm owner -h
+#1693935736
+npm org -h
+#1693935767
+npm org set yesmaintain nikolarhristov admn
+#1693935771
+npm org set yesmaintain nikolarhristov admin
+#1693935798
+npm org set yesmaintain nikolarhristov owner
+#1693939814
+dum prepublishOnly
+#1693943559
+dum prepublishOnly --filter=files-pipe
+#1693943566
+dum prepublishOnly --filter=astro-compress
+#1693943572
+dum prepublishOnly --filter=nikolahristov-web
