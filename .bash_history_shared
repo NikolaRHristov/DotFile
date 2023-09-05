@@ -5729,3 +5729,7 @@ dum prepublishOnly --filter=files-pipe
 dum prepublishOnly --filter=astro-compress
 #1693943572
 dum prepublishOnly --filter=nikolahristov-web
+#1693946288
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693946924
+cld ; bmd ; dum install ; dum prepublishOnly
