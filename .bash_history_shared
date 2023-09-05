@@ -5613,3 +5613,7 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 find -iname astro.config.ts -execdir npx astro telemetry disable \;
 #1693912871
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693926718
+ls Application/NikolaRHristov/Website/Source/Asset/Image/Package/
+#1693927288
+cd /d/Developer/
