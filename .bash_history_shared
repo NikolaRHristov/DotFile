@@ -5857,3 +5857,61 @@ dum prepublishOnly
 ci astro.config.ts 
 #1694013270
 dum prepublishOnly
+#1694013387
+ci .env
+#1694013392
+dum prepublishOnly
+#1694014150
+cd ../../NikolaRHristov/
+#1694014151
+cd Website/
+#1694014153
+dum prepublishOnly
+#1694014223
+pnpx quickbootjs trace Target/_astro/page.30c903a1.js
+#1694014247
+serve Target/
+#1694014304
+ci Target/_astro/page.30c903a1.quickbootjs-tracedata.json
+#1694014336
+pnpx quickbootjs optimize Target/_astro/page.30c903a1.js
+#1694014379
+serve Target/
+#1694014500
+dum prepublishOnly
+#1694014876
+cd Application/NowPlayingCards/Website/
+#1694014878
+dum prepublishOnly
+#1694014985
+pnpx quickbootjs trace Target/_astro/*.js
+#1694015001
+pnpm install -g quickbootjs
+#1694015106
+dum prepublishOnly
+#1694015472
+quickbootjs trace Target/_astro/hoisted.260bbac3.js
+#1694015479
+serve Target/
+#1694015528
+ci Target/_astro/hoisted.260bbac3.quickbootjs-tracedata.json
+#1694015541
+quickbootjs trace Target/_astro/page.30c903a1.js
+#1694015548
+serve Target/
+#1694015565
+quickbootjs trace Target/_astro/page.30c903a1.js
+#1694015570
+serve Target
+#1694015644
+quickbootjs optimize Target/_astro/page.30c903a1.js
+#1694015649
+quickbootjs optimize Target/_astro/hoisted.260bbac3.
+#1694015652
+quickbootjs optimize Target/_astro/hoisted.260bbac3.js
+#1694015682
+quickbootjs optimize Target/_astro/page.30c903a1.js
+#1694015686
+serve Target
+#1694016390
+cd /d/Developer/
