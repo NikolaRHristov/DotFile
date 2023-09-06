@@ -5749,3 +5749,111 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 npm show astro-compress
 #1693986901
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693990004
+bmd ; dum install ; dum prepublishOnly
+#1693995238
+cd Application/NowPlayingCards/
+#1693995240
+cd NPM/
+#1693995242
+cd API/
+#1693995262
+cd Application/NowPlayingCards/NPM/Socket/
+#1693995271
+cd Application/NowPlayingCards/Website/
+#1693995249
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693995274
+cd ../
+#1693995277
+cd NPM/
+#1693995278
+com
+#1693995281
+cd Common/
+#1693995264
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1693995318
+npm profile set email nhristov@protonmail.ch
+#1693995322
+cd /d/Developer/
+#1693995324
+npm profile set email nhristov@protonmail.ch
+#1693995327
+npm whoami
+#1693995341
+npm profile 
+#1693995346
+cd ~/
+#1693995348
+npm profile 
+#1693995352
+npm profile disable-2fa
+#1693995363
+npm profile get email
+#1693995374
+npm profile set email nikola@lightrix.help
+#1693995386
+npm whoami
+#1693995388
+npm profile set email nikola@lightrix.help
+#1693995408
+ci /d/tools/.npm-global/cache/_logs/2023-09-06T10_16_29_085Z-debug-0.log 
+#1693995413
+npm profile set email nikola@lightrix.help
+#1693995488
+npm profile
+#1693995493
+npm profile get password
+#1693995498
+npm profile set password
+#1693995506
+npm profile set email
+#1693995516
+npm profile set email nikola@playform.cloud
+#1693998408
+cd /d/Developer/
+#1693998409
+cld 
+#1693999182
+ncu -u -g
+#1693999252
+npm -g install npm@10.0.0
+#1693999356
+cd /d/tools/
+#1693999358
+cd .pnpm-global/
+#1693999361
+cd bin/
+#1693999363
+cd ../5/
+#1693999366
+ncu -u
+#1693999423
+pnpm install -g
+#1693999442
+cd -
+#1693999447
+cd /d/Developer/Application/NowPlayingCards/NPM/API/
+#1693999154
+bmd ; dum install ; dum prepublishOnly
+#1693999756
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1694000672
+dum install ; dum prepublishOnly
+#1694002346
+cd Application/NowPlayingCards/Website/
+#1694002878
+dum start
+#1694013034
+cd Application/NowPlayingCards/Website/
+#1694013024
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694013042
+git add .
+#1694013072
+dum prepublishOnly
+#1694013246
+ci astro.config.ts 
+#1694013270
+dum prepublishOnly
