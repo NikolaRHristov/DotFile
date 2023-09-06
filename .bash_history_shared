@@ -5733,3 +5733,13 @@ dum prepublishOnly --filter=nikolahristov-web
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1693946924
 cld ; bmd ; dum install ; dum prepublishOnly
+#1693948292
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693953998
+sh <(curl -L https://nixos.org/nix/install) --daemon
+#1693954014
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+#1693958325
+cld ; bmd ; dum install ; dum prepublishOnly
+#1693959144
+dum prepublishOnly
