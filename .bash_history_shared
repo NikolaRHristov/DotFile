@@ -5743,3 +5743,7 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 cld ; bmd ; dum install ; dum prepublishOnly
 #1693959144
 dum prepublishOnly
+#1693959202
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1693959876
+npm show astro-compress
