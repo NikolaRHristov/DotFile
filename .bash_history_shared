@@ -5919,3 +5919,11 @@ cd /d/Developer/
 dum prepublishOnly
 #1694017904
 cd Application/NowPlayingCards/Website/
+#1694019141
+cd Application/NowPlayingCards/NPM/API/
+#1694019147
+cd Application/NowPlayingCards/NPM/Socket/
+#1694019143
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
+#1694019149
+wrangler publish ; git add . ; git commit -m "squash!" ; git sync ;
