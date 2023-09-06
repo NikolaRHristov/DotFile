@@ -5915,3 +5915,7 @@ quickbootjs optimize Target/_astro/page.30c903a1.js
 serve Target
 #1694016390
 cd /d/Developer/
+#1694016394
+dum prepublishOnly
+#1694017904
+cd Application/NowPlayingCards/Website/
