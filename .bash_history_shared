@@ -5747,3 +5747,5 @@ dum prepublishOnly
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1693959876
 npm show astro-compress
+#1693986901
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
