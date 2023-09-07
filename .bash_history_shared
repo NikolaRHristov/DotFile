@@ -6001,3 +6001,5 @@ pnpm -v
 dum prepublishOnly
 #1694072687
 dum install
+#1694072795
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
