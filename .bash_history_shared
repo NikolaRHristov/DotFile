@@ -6029,3 +6029,5 @@ cd /d/Developer/
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1694111810
 dum prepublishOnly
+#1694111834
+bmd ; dum install ; dum prepublishOnly
