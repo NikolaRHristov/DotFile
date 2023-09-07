@@ -6031,3 +6031,7 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly
 #1694111834
 bmd ; dum install ; dum prepublishOnly
+#1694112470
+dum install ; dum prepublishOnly
+#1694114015
+dum prepublishOnly
