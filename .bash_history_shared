@@ -5947,3 +5947,47 @@ cd Application/NowPlayingCards/NPM/Common/
 cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git sync
 #1694022516
 tmux
+#1694023216
+winget upgrade all -y
+#1694023220
+winget upgrade --all -y
+#1694023223
+winget upgrade --all
+#1694024095
+choco upgrade -h
+#1694024117
+choco upgrade all -y
+#1694024446
+cd /d/Developer/
+#1694024449
+cd Application/NowPlayingCards/
+#1694024451
+cd NPM/
+#1694024453
+cd API/
+#1694024458
+cd Application/NowPlayingCards/NPM/Common/
+#1694024465
+cd Application/NowPlayingCards/NPM/Socket/
+#1694024470
+cd Application/NowPlayingCards/Website/
+#1694025686
+dum start
+#1694025674
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694025682
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694025678
+cld ; bmd ; dum install ; dum prepublishOnly ; git add . ; git commit -m "squash!" ; git sync
+#1694025693
+dum install
+#1694025921
+dum start
+#1694025927
+dum prepublishOnly
+#1694025933
+cd /d/Developer/
+#1694025945
+cd /d/Developer/
+#1694025947
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
