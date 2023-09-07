@@ -3682,8 +3682,6 @@ find -iname .git -execdir git fetch upstream \;
 cld ; bmd ; dum install ; dum prepublishOnly 
 #1693004180
 find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main'  \;
-#1693006957
-grep -rnw '<<<<<'
 #1693006996
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \;
 #1693009337
@@ -6003,3 +6001,11 @@ dum prepublishOnly
 dum install
 #1694072795
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694073142
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694073729
+dum install
+#1694073733
+bmd
+#1694074049
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
