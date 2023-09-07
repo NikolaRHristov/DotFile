@@ -5991,3 +5991,13 @@ cd /d/Developer/
 cd /d/Developer/
 #1694025947
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694072220
+dum install
+#1694072326
+corepack prepare pnpm@8.7.4 --activate
+#1694072336
+pnpm -v
+#1694072393
+dum prepublishOnly
+#1694072687
+dum install
