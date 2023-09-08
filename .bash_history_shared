@@ -6191,3 +6191,5 @@ VERSION="0.1.12" ; clean_dependencies ; bump_dependencies ; dum install ; dum pr
 cd /f/d
 #1694210834
 cd /d/Developer/
+#1694210840
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
