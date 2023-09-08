@@ -1,5 +1,3 @@
-const MODULES_DIR = "D:\\tools\\.pnpm-global\\5\\node_modules\\";
-
 /** @type {import('prettier').Config} */
 module.exports = {
 	editorConfig: true,

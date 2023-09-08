@@ -6035,3 +6035,41 @@ bmd ; dum install ; dum prepublishOnly
 dum install ; dum prepublishOnly
 #1694114015
 dum prepublishOnly
+#1694122399
+pnpm install -g @prettier/plugin-lua
+#1694122406
+pnpm install -g @prettier/plugin-php
+#1694122411
+pnpm install -g @trivago/prettier-plugin-sort-imports
+#1694122415
+pnpm install -g prettier
+#1694122419
+pnpm install -g prettier-plugin-astro
+#1694122424
+pnpm install -g prettier-plugin-autocorrect
+#1694122428
+pnpm install -g prettier-plugin-java
+#1694122433
+pnpm install -g prettier-plugin-kotlin
+#1694122437
+pnpm install -g prettier-plugin-organize-attributes
+#1694122442
+pnpm install -g prettier-plugin-packagejson
+#1694122447
+pnpm install -g prettier-plugin-pkg
+#1694122452
+pnpm install -g prettier-plugin-sh
+#1694122456
+pnpm install -g prettier-plugin-sort-imports
+#1694122460
+pnpm install -g prettier-plugin-sql
+#1694122465
+pnpm install -g prettier-plugin-svelte
+#1694122469
+pnpm install -g prettier-plugin-tailwindcss
+#1694122473
+pnpm install -g prettier-plugin-toml
+#1694122478
+pnpm install -g tailwindcss
+#1694122482
+pnpm install -g typescript-esbuild
