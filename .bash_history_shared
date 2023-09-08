@@ -6133,3 +6133,61 @@ cd .pnpm/
 cd /d/Developer/
 #1694195895
 dum install --filter=@nikolarhristov/base
+#1694197151
+dum install
+#1694198577
+cd Application/Playform/pl
+#1694198579
+cd Application/Playform/Website/
+#1694198581
+dum start
+#1694198590
+cd /d/Developer/
+#1694198591
+cld
+#1694199047
+dum install
+#1694201181
+cd Application/Playform/Website/
+#1694201182
+dum start
+#1694201729
+cd /d/Developer/
+#1694201731
+rm -rf node_modules/
+#1694201808
+dum install
+#1694202576
+curl parrot.live
+#1694202615
+dum install
+#1694207436
+ncu -g
+#1694207464
+npm -v
+#1694207472
+ci ~/.npmrc 
+#1694207481
+npm -v
+#1694207501
+npm install npm -g
+#1694209641
+npm i -g npm-check-updates
+#1694210043
+cd Application/NikolaRHristov/DeploymentDelete/
+#1694210045
+cd ../
+#1694210049
+mv DeploymentDelete/ NPM/
+#1694210051
+cd NPM/DeploymentDelete/
+#1694210073
+ci package.json CHANGELOG.md
+#1694210373
+ci /e/MEGA/PROJECTS/Personal/Credentials/Recovery/npm.md 
+#1694210517
+VERSION="0.1.12" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1694210832
+cd /f/d
+#1694210834
+cd /d/Developer/
