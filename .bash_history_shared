@@ -6119,3 +6119,17 @@ dum install
 cd /d/Developer/
 #1694189614
 dum install
+#1694189427
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694195828
+cd Application/NikolaRHristov/dot/.config/base/
+#1694195831
+dum install
+#1694195870
+cd node_modules/
+#1694195878
+cd .pnpm/
+#1694195886
+cd /d/Developer/
+#1694195895
+dum install --filter=@nikolarhristov/base
