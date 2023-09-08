@@ -6073,3 +6073,35 @@ pnpm install -g prettier-plugin-toml
 pnpm install -g tailwindcss
 #1694122482
 pnpm install -g typescript-esbuild
+#1694170689
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694172834
+cd Application/NowPlayingCards/Website/
+#1694173140
+dum install -D -E effect
+#1694174228
+ci package.json 
+#1694174739
+dum start
+#1694174774
+dum install
+#1694175815
+dum start
+#1694175817
+cd /d/Developer/
+#1694175818
+cld
+#1694179438
+dum install
+#1694180566
+cld
+#1694180568
+dum install
+#1694186388
+cd Application/NikolaRHristov/
+#1694186399
+git clone ssh://git@github.com/NikolaRHristov/indomain.git
+#1694186404
+cd indomain/
+#1694186888
+dum install
