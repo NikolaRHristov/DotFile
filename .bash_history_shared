@@ -6249,3 +6249,13 @@ dum prepublishOnly
 Y
 #1694261773
 dum prepublishOnly
+#1694263127
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694263705
+cd Application/NowPlayingCards/Website/
+#1694263707
+dum start
+#1694269181
+winget upgrade --all
+#1694271719
+cd /d/Developer/
