@@ -6237,3 +6237,15 @@ dum start
 ci /d/tools/.pnpm-global/5/package.json 
 #1694257950
 cd /d/Developer/
+#1694257953
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694258868
+dum prepublishOnly
+#1694260551
+node -v
+#1694260958
+dum prepublishOnly
+#1694261771
+Y
+#1694261773
+dum prepublishOnly

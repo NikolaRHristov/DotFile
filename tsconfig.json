@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"emitDeclarationOnly": false,
-		"lib": ["ESNext", "DOM"],
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"noEmit": true
 	},
 	"exclude": ["**/node_modules/**", "**/Target/**"],
