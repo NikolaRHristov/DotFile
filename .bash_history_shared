@@ -6259,3 +6259,11 @@ dum start
 winget upgrade --all
 #1694271719
 cd /d/Developer/
+#1694271722
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694272249
+cld ; bmd ; dum install ; dum prepublishOnly
+#1694272883
+dum install
+#1694276625
+dum prepublishOnly
