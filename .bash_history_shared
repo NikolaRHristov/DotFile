@@ -6281,3 +6281,45 @@ ci package.json
 cd /d/Developer/
 #1694277555
 dum prepublishOnly --filter=nikolahristov-web
+#1694280715
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694281260
+dum prepublishOnly --filter=nikolahristov-web
+#1694282596
+dum prepublishOnly
+#1694283215
+cd Application/NowPlayingCards/Website/
+#1694283217
+dum start
+#1694284355
+cd /d/Developer/
+#1694284358
+find -iname .git
+#1694284361
+find -iname .git | ln -s
+#1694284365
+find -iname .git | wc -s
+#1694284378
+$(find -iname .git) | wc -l
+#1694284379
+$(find -iname .git) | wc 
+#1694284409
+find -iname .git | wc -l
+#1694284991
+cd Application/NowPlayingCards/NPM/
+#1694284993
+cd API/
+#1694284994
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694285018
+cd ./.so
+#1694285026
+cd ../Socket/
+#1694285028
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694285506
+cd ../we
+#1694285509
+cd ../../Website/
+#1694285684
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
