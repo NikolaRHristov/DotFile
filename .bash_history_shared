@@ -6193,3 +6193,37 @@ cd /f/d
 cd /d/Developer/
 #1694210840
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694212950
+cd Application/NowPlayingCards/Website/
+#1694212952
+dum start
+#1694212972
+dum install -D -E @astrojs/sitemap
+#1694213069
+dum start
+#1694213109
+ci astro.config.ts 
+#1694213118
+dum start
+#1694213202
+astro info
+#1694213205
+npx astro info
+#1694213222
+ci /d/Developer/.npmrc 
+#1694213234
+npx astro info
+#1694213269
+dum start
+#1694221185
+ci astro.config.ts 
+#1694221192
+dum start
+#1694222194
+Y
+#1694222200
+rm .git/index.lock 
+#1694222201
+git add .
+#1694223229
+rm -rf Target/
