@@ -6267,3 +6267,17 @@ cld ; bmd ; dum install ; dum prepublishOnly
 dum install
 #1694276625
 dum prepublishOnly
+#1694276859
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694277502
+npm show files-pipe version
+#1694277511
+cd Application/AstroCommunity/AstroCompress/
+#1694277511
+bmd
+#1694277518
+ci package.json 
+#1694277547
+cd /d/Developer/
+#1694277555
+dum prepublishOnly --filter=nikolahristov-web
