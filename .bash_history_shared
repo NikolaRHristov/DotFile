@@ -6227,3 +6227,13 @@ rm .git/index.lock
 git add .
 #1694223229
 rm -rf Target/
+#1694248892
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694250650
+cd Application/NowPlayingCards/Website/
+#1694250652
+dum start
+#1694252551
+ci /d/tools/.pnpm-global/5/package.json 
+#1694257950
+cd /d/Developer/
