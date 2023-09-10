@@ -6323,3 +6323,17 @@ cd ../we
 cd ../../Website/
 #1694285684
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694285511
+dum start
+#1694292436
+cd /d/Developer/
+#1694292439
+dum install
+#1694292512
+dum prepublishOnly
+#1694293007
+цлеар
+#1694304541
+Y
+#1694304558
+cd /d/Developer/
