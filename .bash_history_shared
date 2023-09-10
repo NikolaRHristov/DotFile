@@ -6337,3 +6337,5 @@ dum prepublishOnly
 Y
 #1694304558
 cd /d/Developer/
+#1694304562
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
