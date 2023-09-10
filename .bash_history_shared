@@ -6341,3 +6341,9 @@ cd /d/Developer/
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1694378526
 cd /d/Developer/
+#1694378973
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694380178
+cd Application/NowPlayingCards/Website/
+#1694379534
+bmd 
