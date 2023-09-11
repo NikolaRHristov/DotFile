@@ -6407,3 +6407,15 @@ cd /d/Developer/
 find -iname build -type d
 #1694397422
 find -iname build -type d -exec rm -rf {} \;
+#1694396951
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694443903
+winget upgrade all -y
+#1694443913
+winget upgrade --all --include-own
+#1694443916
+winget upgrade --all --include-unknown
+#1694446163
+cld
+#1694448856
+bmd
