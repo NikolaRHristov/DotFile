@@ -6347,3 +6347,63 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 cd Application/NowPlayingCards/Website/
 #1694379534
 bmd 
+#1694380183
+dum start
+#1694380814
+cd /d/Developer/
+#1694380818
+cd Application/NowPlayingCards/Website/
+#1694380819
+cd ../
+#1694380821
+cd NPM/
+#1694380275
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694380841
+cd API/ ; wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ; cd ../Socket ; wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694381192
+cd Application/NowPlayingCards/Website/
+#1694381187
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694381193
+dum start
+#1694385396
+cd Application/NowPlayingCards/Website/
+#1694385398
+dum start
+#1694385470
+git add .
+#1694385477
+git commit -m "squash!"
+#1694385491
+git push
+#1694385502
+dum start
+#1694391786
+cd /d/Developer/cd Application/NowPlayingCards/
+#1694391793
+cd /d/Developer/Application/NowPlayingCards/NPM/
+#1694391796
+cd API/
+#1694391797
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694394168
+cd ../Socket/
+#1694394169
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694396157
+cd /d/Developer/Application/NowPlayingCards/Website/
+#1694396160
+git status
+#1694396161
+git add .
+#1694396165
+git commit -m "squash!"
+#1694396177
+git push
+#1694396200
+cd /d/Developer/
+#1694397410
+find -iname build -type d
+#1694397422
+find -iname build -type d -exec rm -rf {} \;
