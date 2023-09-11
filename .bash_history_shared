@@ -6419,3 +6419,5 @@ winget upgrade --all --include-unknown
 cld
 #1694448856
 bmd
+#1694448866
+bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
