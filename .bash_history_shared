@@ -6525,3 +6525,5 @@ VERSION="0.1.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum pr
 ci package.json 
 #1694536284
 VERSION="0.1.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1694540755
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
