@@ -6447,3 +6447,77 @@ git commit -m "squash!"
 git push
 #1694463230
 cd /d/Developer/
+#1694463233
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694463916
+cd Application/NowPlayingCards/Website/
+#1694463920
+dum start
+#1694465697
+cd Application/NowPlayingCards/
+#1694465700
+cd NPM/
+#1694465703
+cd API/
+#1694465707
+dum start
+#1694465717
+cd /d/Developer/Application/NowPlayingCards/NPM/Socket/
+#1694465710
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694465748
+cd ../../Website/
+#1694465722
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694465789
+dum start
+#1694465870
+Y
+#1694465978
+cd ../NPM/API/
+#1694465979
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1694466135
+cd ../
+#1694466136
+cd /d/Developer/
+#1694466136
+cd Application/NowPlayingCards/Website/
+#1694466156
+git ad. 
+#1694466158
+git add . 
+#1694466161
+git commit -m "squash!"
+#1694466167
+gitgit push
+#1694466170
+git push
+#1694466178
+dum start
+#1694477056
+Y
+#1694535311
+npm whoami
+#1694535318
+ci ~/.npmrc 
+#1694535325
+npm whoami
+#1694535329
+npm login
+#1694535406
+npm whoami
+#1694535416
+cd Application/NikolaRHristov/NPM/DeploymentDelete/
+#1694535425
+npm prepublishOnly --dry-run
+#1694535431
+npm run prepublishOnly --dry-run
+#1694535446
+npm publish --dry-run
+#1694535534
+npm publish
+#1694535802
+ci /e/MEGA/PROJECTS/Personal/Credentials/Recovery/npm.md 
+#1694535944
+VERSION="0.1.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
