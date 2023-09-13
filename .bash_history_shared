@@ -6527,3 +6527,31 @@ ci package.json
 VERSION="0.1.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
 #1694540755
 cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1694554129
+cld
+#1694557319
+dum install
+#1694558890
+grep -rnw 'uses:' . --exclude-dir=Target --exclude-dir=node_modules
+#1694558904
+grep -rnw 'uses:' . --exclude-dir=Target --exclude-dir=node_modules >text.md
+#1694559120
+rm text.md 
+#1694559158
+dum install
+#1694559808
+cd Application/NikolaRHristov/
+#1694559835
+cd Website/
+#1694559838
+cd ../NPM/
+#1694559842
+cd DeploymentDelete/
+#1694559862
+ci DeploymentDelete.sh 
+#1694559943
+ci .env
+#1694559963
+./EveryMinute.sh 
+#1694559978
+ci .env
