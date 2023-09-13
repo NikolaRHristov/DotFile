@@ -6565,3 +6565,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 cld
 #1694600409
 dum install
+#1694613757
+cd /d/Developer/Application/NowPlayingCards/Website/
