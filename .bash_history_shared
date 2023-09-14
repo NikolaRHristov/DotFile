@@ -6617,3 +6617,55 @@ dum install
 dum
 #1694721060
 dum install
+#1694721217
+grep -rnw vscode
+#1694721233
+grep -rnw vscode --exclude-dir=.git --exclude-dir=node_modules
+#1694721241
+grep -rnw vscode --exclude-dir=.git --exclude-dir=node_modules .
+#1694721276
+find -iname package.json -exec grep -rnw vscode {} \;
+#1694721318
+dum install
+#1694721539
+cld
+#1694721679
+dum install --filter=@website/nikolahristov_tech
+#1694721967
+cd /d/Developer/
+#1694721967
+cd ../tools/.pnpm-global/
+#1694721958
+cld
+#1694721969
+cd 5/
+#1694721971
+cd node_modules/
+#1694721974
+cd ../
+#1694721977
+rm -rf node_modules/
+#1694722104
+cd .pnpm/
+#1694722114
+rm -rf ./*
+#1694722926
+cld
+#1694722982
+dum install
+#1694723483
+rm -rf node_modules/.pnpm/monaco-editor\@0.
+#1694723485
+rm -rf node_modules/.pnpm/monaco-editor\
+#1694723491
+rm -rf node_modules/.pnpm/monaco-editor\@0.38.0/
+#1694723495
+rm -rf node_modules/.pnpm/monaco-editor\@0.43.0/
+#1694723498
+dum install
+#1694723724
+rm -rf node_modules/.pnpm/prettier-plugin-kotlin\@2.1.0/o
+#1694723732
+rm -rf node_modules/.pnpm/prettier-plugin-kotlin\@2.1.0/
+#1694723735
+dum install
