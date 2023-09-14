@@ -6669,3 +6669,11 @@ rm -rf node_modules/.pnpm/prettier-plugin-kotlin\@2.1.0/o
 rm -rf node_modules/.pnpm/prettier-plugin-kotlin\@2.1.0/
 #1694723735
 dum install
+#1694724388
+dum prepublishOnly --filter=astro-compress
+#1694724440
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694723882
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694724886
+dum prepublishOnly
