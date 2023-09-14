@@ -6571,3 +6571,31 @@ cd /d/Developer/Application/NowPlayingCards/Website/
 cd Application/NowPlayingCards/Website/
 #1694639638
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694696821
+cd 
+#1694696826
+cd /d/Developer/Application/NowPlayingCards/Website/
+#1694696858
+dum start
+#1694712023
+dum prepublishOnly
+#1694712070
+git add . 
+#1694712071
+git commit -m "squash!"
+#1694713886
+git add .
+#1694713889
+git commit -m "squash!"
+#1694713891
+git push
+#1694715714
+cd /d/Developer/
+#1694715722
+dum prepublishOnly --filter=nikolahristov-web
+#1694715799
+dum prepublishOnly --filter=playform-web
+#1694717415
+cld
+#1694717777
+bmd
