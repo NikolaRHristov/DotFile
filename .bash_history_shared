@@ -6599,3 +6599,13 @@ dum prepublishOnly --filter=playform-web
 cld
 #1694717777
 bmd
+#1694718677
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694719836
+npm show astro-compress version
+#1694719858
+cat Application/AstroCommunity/AstroCompress/
+#1694719865
+cat Application/AstroCommunity/AstroCompress/package.json | jq .version
+#1694720066
+cld
