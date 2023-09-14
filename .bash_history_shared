@@ -6679,3 +6679,21 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly
 #1694725270
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694728009
+pnpm install -g
+#1694727651
+dum prepublishOnly
+#1694728260
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694728520
+dum prepublishOnly --filter=files-pipe
+#1694728989
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1694728991
+git status
+#1694728993
+git add .
+#1694728996
+cd /d/Developer/
+#1694729000
+dum prepublishOnly --filter=files-pipe
