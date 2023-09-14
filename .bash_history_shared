@@ -6567,3 +6567,7 @@ cld
 dum install
 #1694613757
 cd /d/Developer/Application/NowPlayingCards/Website/
+#1694639979
+cd Application/NowPlayingCards/Website/
+#1694639638
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
