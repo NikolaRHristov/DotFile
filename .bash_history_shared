@@ -6697,3 +6697,95 @@ git add .
 cd /d/Developer/
 #1694729000
 dum prepublishOnly --filter=files-pipe
+#1694731779
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1694732707
+dum prepublishOnly --filter=files-pipe
+#1694732993
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694736439
+cd Application/RoundedCorners/
+#1694736466
+mv Application Application2
+#1694736468
+cd Application2/
+#1694736470
+git fetch
+#1694736472
+git remote -v
+#1694736490
+git remote set-url origin ssh://git@github.com/RoundedCorners/Application2.git
+#1694736493
+git fetch
+#1694736498
+git pull
+#1694736501
+cd ../
+#1694736513
+git clone ssh://git@github.com/RoundedCorners/Application.git
+#1694737878
+cd Application
+#1694742451
+find -iname files-pipe
+#1694743081
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694743148
+rm -rf Application/RoundedCorners/Application
+#1694743150
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694785013
+d //d
+#1694785014
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694810280
+echo 5
+#1694810284
+echo nikola hristov
+#1694810298
+waitfor -h
+#1694810301
+waitfor 
+#1694810306
+$1
+#1694810309
+echo $1
+#1694810315
+echo $1 -x
+#1694810318
+echo $1 opt
+#1694810324
+$(echo $1) nikola
+#1694810329
+nikola=$(echo $1)
+#1694810334
+nikola
+#1694810342
+echo nikola
+#1694816500
+cd Application/NikolaRHristov/Website/
+#1694816503
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1694816552
+git log --max-count=1 -- Public/Image/Page/index/Rakuten.svg
+#1694816561
+git log --max-count=1 -- Public/Image/Page/index/Rakuten.svg --no-pager
+#1694816567
+git log --max-count=1 -- Public/Image/Page/index/Rakuten.svg --pager=
+#1694816600
+git log --no-pager --format="%" --max-count=1 -- Public/Image/Page/index/Rakuten.svg
+#1694816609
+git log --no-pager --format="%H" --max-count=1 -- Public/Image/Page/index/Rakuten.svg
+#1694816615
+\git log --no-pager --format="%H" --max-count=1 -- Public/Image/Page/index/Rakuten.svg
+#1694816638
+\git --no-pager log --format="%H" --max-count=1 -- Public/Image/Page/index/Rakuten.svg
+#1694816640
+git --no-pager log --format="%H" --max-count=1 -- Public/Image/Page/index/Rakuten.svg
+#1694816650
+git --no-pager log --format="%H" --max-count=1 -- Public/Image/Page/index/Rakuten.svg | tr -d "\n\r"
+#1694832527
+winget search emacs
+#1694832544
+winget install --id gnu.emacs -i
+#1694832632
+emacs
