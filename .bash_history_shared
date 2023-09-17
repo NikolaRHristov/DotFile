@@ -6789,3 +6789,5 @@ winget search emacs
 winget install --id gnu.emacs -i
 #1694832632
 emacs
+#1694885829
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
