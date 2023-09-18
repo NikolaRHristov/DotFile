@@ -6791,3 +6791,15 @@ winget install --id gnu.emacs -i
 emacs
 #1694885829
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695012656
+cd /d/Developer/Application/NowPlayingCards/NPM/
+#1695012658
+cd API/
+#1695012666
+wrangler deploy ; git add . ; git commit -m "squash!" ; git sync ;
+#1695012709
+cd /d/Developer/Application/NowPlayingCards/
+#1695012711
+cd NPM/
+#1695012713
+cd Common/
