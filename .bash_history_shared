@@ -6803,3 +6803,5 @@ cd /d/Developer/Application/NowPlayingCards/
 cd NPM/
 #1695012713
 cd Common/
+#1695069140
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
