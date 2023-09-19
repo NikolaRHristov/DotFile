@@ -9,6 +9,7 @@
 		"email": "nikola@nikolahristov.tech",
 		"url": "https://nikolahristov.tech"
 	},
+	"type": "module",
 	"devDependencies": {
 		"typescript-esbuild": "0.1.16"
 	},
