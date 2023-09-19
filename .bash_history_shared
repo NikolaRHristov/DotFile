@@ -6979,3 +6979,21 @@ find -iname tailwind.config* -exec code-insiders {} \;
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1695159767
 find -iname tailwind.config* -exec code-insiders {} \;
+#1695160187
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695159774
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695161439
+cd Application/AstroCommunity/AstroCompress/
+#1695161478
+ci package.json 
+#1695162640
+cd /d/Developer/
+#1695162644
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695162868
+dum prepublishOnly --filter=files-pipe
+#1695162916
+dum prepublishOnly
+#1695163353
+find -iname tailwind.config* -exec code-insiders {} \;
