@@ -13,5 +13,5 @@
 			"**/samples/**"
 		]
 	},
-	"extends": "typescript-esbuild/tsconfig.json"
+	"extends": "typescript-esbuild/Source/Configuration/TypeScript"
 }

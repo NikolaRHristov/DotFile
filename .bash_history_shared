@@ -6809,3 +6809,137 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1695088173
 npx @turbo/codemod update
+#1695088847
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695088451
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695091822
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695095762
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695096043
+cd /d/Developer/
+#1695096047
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695096104
+dum install
+#1695096148
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695145519
+cd /d/Developer/
+#1695145521
+cd Application/AstroCommunity/
+#1695145523
+cd AstroC
+#1695145525
+cd AstroCompress/
+#1695145529
+git remote -v
+#1695145531
+git fetch
+#1695145533
+git pull
+#1695145538
+ci package.json 
+#1695145548
+ci /d/Developer/
+#1695145558
+ci package.json 
+#1695145598
+git branch -r
+#1695145599
+git branch -v
+#1695145607
+git checkout no-sharp 
+#1695145610
+git pull
+#1695145616
+git pull origin no-sharp 
+#1695145631
+git pull 
+#1695145639
+git branch --set-upstream-to=origin/no-sharp no-sharp 
+#1695145642
+git pull
+#1695145644
+ci package.json 
+#1695145649
+git merge main
+#1695145753
+git add .
+#1695145756
+git commit -m "squash!"
+#1695145770
+git push
+#1695145773
+cd /d/Developer/
+#1695145775
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695145991
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1695146013
+VERSION="0.1.16" dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1695146018
+Y
+#1695146023
+pnpm install -g npm-check-updates
+#1695146034
+npm uninstall -g npm-check-updates
+#1695146039
+bmd
+#1695146057
+rm -rf /d/tools/.npm-global/npm-check-updates*
+#1695146067
+bmd
+#1695146096
+npm install -g npm-check-updates
+#1695146128
+bmd
+#1695146146
+VERSION="0.1.16" dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1695146512
+npm show typescript-esbuild 
+#1695146559
+ci package.json 
+#1695146577
+VERSION="0.1.16" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1695146762
+npm show typescript-esbuild 
+#1695146919
+cd /d/Developer/
+#1695146920
+bmd
+#1695149398
+cd /d/Developer/
+#1695149471
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695149629
+cd /d/Developer/Application/NikolaRHristov/NPM/FilesPipe/
+#1695149632
+ci package.json CHANGELOG.md 
+#1695149638
+npm show files-pipe 
+#1695149400
+bmd
+#1695150794
+ci CHANGELOG.md package.json 
+#1695150813
+VERSION="2.0.19" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1695150914
+cd /d/Developer/
+#1695150915
+bmd
+#1695152394
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695152423
+cld
+#1695152514
+dum install
+#1695153148
+rm -rf node_modules/.pnpm/\@smithy*
+#1695153153
+dum install
+#1695155238
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695155429
+bmd
