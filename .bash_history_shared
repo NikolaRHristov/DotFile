@@ -6943,3 +6943,5 @@ dum install
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1695155429
 bmd
+#1695156350
+dum prepublishOnly --filter=@website/nikolahristov_tech
