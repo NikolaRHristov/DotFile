@@ -7063,3 +7063,23 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 dum prepublishOnly --filter=astro-starter-template
 #1695243022
 dum prepublishOnly --filter=astro-starter-template
+#1695242996
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695243856
+cd /d/tools/
+#1695243861
+find -iname files-pipe*
+#1695243870
+\find . -iname *files-pipe*
+#1695243889
+ci \find . -iname *files-pipe*
+#1695243912
+ci $(\find . -iname *files-pipe*)
+#1695243957
+cd .pnpm-global/cache/metadata/registry.npmjs.org/
+#1695243964
+rm -rf ./*
+#1695243968
+pnpm install -g
+#1695244032
+cld
