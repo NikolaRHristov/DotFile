@@ -7049,3 +7049,17 @@ corepack prepare pnpm@8.7.6 --activate
 dum install
 #1695239834
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695239720
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695240888
+Y
+#1695240890
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695241485
+Y
+#1695241488
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695241965
+dum prepublishOnly --filter=astro-starter-template
+#1695243022
+dum prepublishOnly --filter=astro-starter-template
