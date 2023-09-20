@@ -6999,3 +6999,39 @@ dum prepublishOnly
 find -iname tailwind.config* -exec code-insiders {} \;
 #1695164642
 dum prepublishOnly
+#1695166649
+find -iname tailwind.config* -exec code-insiders {} \;
+#1695167043
+dum prepublishOnly
+#1695167401
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695168754
+dum install
+#1695168801
+rm -rf node_modules/.pnpm/files-pipe\@2.0.16/
+#1695168803
+dum install
+#1695168876
+Y
+#1695168879
+dum install
+#1695168952
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695169111
+cld
+#1695169646
+dum install
+#1695169955
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695170238
+dum install --filter=astro-critters
+#1695170290
+cd Application/AstroCommunity/AstroCompress/node_modules/
+#1695170300
+cd ../../AstroCritters/node_modules/
+#1695170303
+cd files-pipe/
+#1695170317
+cd /d/Developer/
+#1695170323
+dum prepublishOnly --filter=@website/nikolahristov_tech
