@@ -7041,3 +7041,11 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1695182872
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695238673
+cld
+#1695239215
+corepack prepare pnpm@8.7.6 --activate
+#1695239189
+dum install
+#1695239834
+dum prepublishOnly --filter=@website/nikolahristov_tech
