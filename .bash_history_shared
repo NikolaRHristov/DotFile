@@ -7083,3 +7083,15 @@ rm -rf ./*
 pnpm install -g
 #1695244032
 cld
+#1695244940
+dum install
+#1695244505
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695245881
+rm -rf node_modules/.pnpm/\@babel*
+#1695245888
+dum install
+#1695246080
+rm -rf node_modules/.pnpm/ext\@1.7.0/
+#1695246083
+dum install
