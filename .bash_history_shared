@@ -7413,3 +7413,13 @@ find -iname Target
 dum prepublishOnly --filter=astro-starter-template
 #1695371697
 dum prepublishOnly --filter=typescript-esbuild
+#1695371585
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695371780
+bmd
+#1695372293
+dum prepublishOnly --filter=typescript-esbuild
+#1695372311
+dum prepublishOnly --filter=deployment-delete
+#1695372704
+dum prepublishOnly
