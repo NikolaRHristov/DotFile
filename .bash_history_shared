@@ -7367,3 +7367,37 @@ dum prepublishOnly --filter=astro-starter-template
 dum prepublishOnly --filter=TypeScriptESBuild
 #1695360409
 dum prepublishOnly --filter=typescript-esbuild
+#1695360481
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695361058
+dum prepublishOnly --filter=typescript-esbuild
+#1695362223
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1695362228
+pnpm link -g
+#1695362238
+cd /d/Developer/
+#1695362243
+TypeScriptESBuild
+#1695362246
+TypeScriptESBuild -h
+#1695362249
+TypeScriptESBuild -V
+#1695362261
+dum prepublishOnly --filter=typescript-esbuild
+#1695362560
+TypeScriptESBuild -V
+#1695362562
+dum prepublishOnly --filter=typescript-esbuild
+#1695362707
+dum prepublishOnly
+#1695362968
+dum prepublishOnly --filter=deployment-delete
+#1695363007
+dum install
+#1695363344
+dum prepublishOnly --filter=deployment-delete
+#1695364342
+dum prepublishOnly --filter=typescript-esbuild
+#1695364513
+dum prepublishOnly --filter=deployment-delete
