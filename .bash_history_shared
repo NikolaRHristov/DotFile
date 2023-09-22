@@ -7333,3 +7333,25 @@ dum install
 dum prepublishOnly --filter=astro-starter-template
 #1695348762
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695350800
+dum prepublishOnly --filter=astro-starter-template
+#1695351252
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1695351254
+git add . 
+#1695351259
+git commit -m "squash!"
+#1695351282
+git add . 
+#1695351485
+git commit -m "squash!"
+#1695351488
+git add .
+#1695351489
+git commit -m "squash!"
+#1695352562
+cd /d/Developer/
+#1695352565
+dum prepublishOnly --filter=astro-starter-template
+#1695355218
+dum prepublishOnly

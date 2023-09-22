@@ -13,5 +13,5 @@
 			"**/samples/**"
 		]
 	},
-	"extends": "typescript-esbuild/Source/Configuration/TypeScript"
+	"extends": "typescript-esbuild/Source/Notation/TypeScript"
 }
