@@ -7331,3 +7331,5 @@ dum prepublishOnly --filter=astro-starter-template
 dum install
 #1695347361
 dum prepublishOnly --filter=astro-starter-template
+#1695348762
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
