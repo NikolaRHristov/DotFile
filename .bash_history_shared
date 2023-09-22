@@ -7095,3 +7095,231 @@ dum install
 rm -rf node_modules/.pnpm/ext\@1.7.0/
 #1695246083
 dum install
+#1695246329
+rm -rf ./node_modules/.pnpm/\@aws-sdk+*
+#1695246341
+dum install
+#1695246625
+dum install
+#1695246884
+dum prepublishOnly --filter=astro-starter-template
+#1695247100
+dum prepublishOnly
+#1695247489
+dum prepublishOnly --filter=astro-starter-template
+#1695248614
+cd /d/tools/
+#1695248616
+cd .pnpm-global/
+#1695248619
+cd bin/
+#1695248622
+cd ../
+#1695248627
+cd 5/
+#1695248630
+ci package.json pnpm-lock.yaml 
+#1695248658
+cd ../
+#1695248661
+cd cache/
+#1695248664
+cd ../5/
+#1695248667
+cd node_modules/
+#1695248687
+cd /d/Developer/
+#1695248690
+cd node_modules/
+#1695248696
+\find . -iname files-pipe*
+#1695248740
+cd .pnpm/
+#1695248743
+cd fi
+#1695248745
+cd fil
+#1695248748
+cd files-pipe\@2.0.16/
+#1695248756
+cd nd
+#1695248758
+cd node_modules/
+#1695248891
+cd /d/Developer/
+#1695248893
+dum prepublishOnly --filter=astro-starter-template
+#1695249051
+find -iname .test
+#1695249055
+\find . -iname .test
+#1695249071
+dum prepublishOnly --filter=astro-starter-template
+#1695249102
+Y
+#1695249104
+dum prepublishOnly --filter=astro-starter-template
+#1695249177
+find -iname .test
+#1695249191
+dum prepublishOnly --filter=astro-starter-template
+#1695249247
+find -iname .test
+#1695249276
+dum prepublishOnly --filter=astro-starter-template
+#1695249551
+cd Application/Lightrix/NPM/AstroStarterTemplate/
+#1695249553
+git status
+#1695249590
+git log --no-pager --format="%H" --max-count=1
+#1695249601
+git --no-pager log --format="%H" --max-count=1
+#1695249661
+git --no-pager log --pretty-format="%H" --oneline --name-only 
+#1695249674
+git --no-pager log --format="H%" --oneline --name-only 
+#1695249696
+git --no-pager log --format="H%" --oneline
+#1695249706
+git --no-pager log --format="H%" --oneline --name-status 
+#1695249712
+git add .
+#1695249721
+git commit -m "squash!"
+#1695249805
+git --no-pager log --format="H%" --oneline --name-only 
+#1695249812
+git --no-pager log --format="H%" --oneline --name-only -- ./CHANGELOG.md
+#1695249827
+git --no-pager log --format="H%" --max-count=1 --oneline --name-only -- ./CHANGELOG.md
+#1695249834
+git --no-pager log --format="H%" --max-count=1 --oneline -- ./CHANGELOG.md
+#1695250187
+cd /d/Developer/
+#1695250189
+dum prepublishOnly --filter=astro-starter-template
+#1695250645
+Y
+#1695250646
+dum prepublishOnly --filter=astro-starter-template
+#1695250701
+cd -
+#1695250727
+git --no-pager log --format="H%" --max-count=1 --oneline --name-only -- /d/Developer/Application/Lightrix/NPM/AstroStarterTemplate/.test
+#1695250746
+cd -
+#1695250747
+dum prepublishOnly --filter=astro-starter-template
+#1695256561
+cd Application/Lightrix/NPM/AstroStarterTemplate/
+#1695256579
+git --no-pager log --format="H%" --max-count=1 --oneline --name-only -- Cache/
+#1695256659
+cd Application/Lightrix/NPM/AstroStarterTemplate/
+#1695256669
+cclear
+#1695256670
+cd /d/Developer/
+#1695256673
+dum prepublishOnly --filter=astro-starter-template
+#1695256888
+cd -
+#1695256897
+git --no-pager log --format="H%" --max-count=1 --oneline --name-only -- Cache/
+#1695256919
+touch Cache/.gitkeep2
+#1695256920
+git --no-pager log --format="H%" --max-count=1 --oneline --name-only -- Cache/
+#1695256924
+git add .
+#1695256927
+git commit -m "squash!"
+#1695256930
+git --no-pager log --format="H%" --max-count=1 --oneline --name-only -- Cache/
+#1695256939
+git --no-pager log --format="H%" --oneline --name-only -- Cache/
+#1695256951
+git --no-pager log --format="H%" --oneline --name-only -- Cache/**/*
+#1695256956
+git --no-pager log --format="H%" --oneline --name-only -- Cache/*
+#1695256959
+git --no-pager log --format="H%" --oneline --name-only -- Cache
+#1695258492
+rm -rf Cache/
+#1695258494
+ci astro.config.ts 
+#1695275186
+dum prepublishOnly --filter=astro-starter-template
+#1695338560
+maintenance
+#1695338566
+cd Application/YesMaintain/NPM/Script/
+#1695338569
+pnpm link -g
+#1695338596
+Maintain
+#1695338603
+Maintain Edit
+#1695338630
+ci .env 
+#1695338734
+Maintain Edit
+#1695338804
+dum prepublishOnly --filter=@yesmaintain/script
+#1695338826
+Maintain Edit
+#1695338855
+dum prepublishOnly --filter=@yesmaintain/script
+#1695338861
+Maintain Edit
+#1695338885
+dum prepublishOnly --filter=@yesmaintain/script
+#1695339215
+dum prepublishOnly --filter=astro-starter-template
+#1695340484
+cd /d/
+#1695340494
+\find . -iname files-pipe*
+#1695340521
+ci ./tools/.pnpm-global/cache/metadata/registry.npmjs.org/files-pipe.json
+#1695340551
+cd ./Developer/node_modules/.pnpm/astro-critters@2.0.11/node_modules/files-pipe
+#1695340554
+ci package.json 
+#1695340557
+cd -
+#1695340561
+\find . -iname files-pipe*
+#1695340594
+ci ./Developer/Application/AstroCommunity/AstroCompress/node_modules/files-pipe/package.json 
+#1695340602
+ci ./Developer/Application/AstroCommunity/AstroCritters/node_modules/files-pipe/package.json 
+#1695340613
+ci ./Developer/Application/AstroCommunity/AstroRome/node_modules/files-pipe/package.json 
+#1695340632
+ci ./Developer/Application/NikolaRHristov/NPM/AstroConvert/node_modules/files-pipe/package.json 
+#1695340683
+ci ./Developer/Application/NikolaRHristov/NPM/AstroDeadLinks/node_modules/files-pipe/package.json 
+#1695340704
+ci ./Developer/node_modules/.pnpm/astro-critters\@2.0.11/node_modules/files-pipe/package.json 
+#1695340756
+npm show astro-critters version
+#1695340803
+\find . -iname files-pipe*
+#1695340834
+cd /d/Developer/
+#1695341395
+cd /d
+#1695341397
+\find . -iname files-pipe*
+#1695341412
+cd /d/Developer/
+#1695341413
+cld
+#1695341498
+dum install
+#1695341781
+dum prepublishOnly --filter=astro-starter-template
+#1695343920
+dum install
