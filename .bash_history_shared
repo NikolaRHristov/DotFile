@@ -7401,3 +7401,15 @@ dum prepublishOnly --filter=deployment-delete
 dum prepublishOnly --filter=typescript-esbuild
 #1695364513
 dum prepublishOnly --filter=deployment-delete
+#1695367405
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695368294
+dum prepublishOnly
+#1695368983
+dum prepublishOnly --filter=@yesmaintain/script
+#1695371578
+find -iname Target
+#1695371649
+dum prepublishOnly --filter=astro-starter-template
+#1695371697
+dum prepublishOnly --filter=typescript-esbuild
