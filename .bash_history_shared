@@ -7361,3 +7361,9 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly
 #1695358469
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695360331
+dum prepublishOnly --filter=astro-starter-template
+#1695360403
+dum prepublishOnly --filter=TypeScriptESBuild
+#1695360409
+dum prepublishOnly --filter=typescript-esbuild
