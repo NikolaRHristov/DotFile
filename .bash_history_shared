@@ -7423,3 +7423,7 @@ dum prepublishOnly --filter=typescript-esbuild
 dum prepublishOnly --filter=deployment-delete
 #1695372704
 dum prepublishOnly
+#1695372881
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695373592
+dum prepublishOnly
