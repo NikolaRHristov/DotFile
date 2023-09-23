@@ -7499,3 +7499,21 @@ rm -rf Application/NikolaRHristov/NPM/CompileTime/
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1695456710
 dum prepublishOnly
+#1695457680
+dum prepublishOnly --filter=files-pipe
+#1695457320
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695457829
+dum prepublishOnly --filter=nikolahristov-web
+#1695458092
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695458207
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1695458209
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695458213
+dum prepublishOnly
+#1695458221
+cd /d/Developer/
+#1695458267
+dum prepublishOnly --filter=files-pipe
