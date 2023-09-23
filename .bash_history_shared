@@ -7615,3 +7615,47 @@ ci ./Application/AstroCommunity/AstroCompress/Target/Object/JavaScript.d.ts
 dum prepublishOnly --filter=files-pipe
 #1695480696
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695480576
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695489294
+dum prepublishOnly --filter=files-pipe
+#1695489688
+pnpm install -g typedoc
+#1695489723
+dum prepublishOnly --filter=files-pipe
+#1695490436
+pnpm install -g typedoc
+#1695490443
+pnpm install -g serve
+#1695490458
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1695490465
+typedoc --out Documentation Target/
+#1695490482
+ci tsconfig.json 
+#1695490561
+typedoc --out Documentation Target/ --entryPointStrategy
+#1695490566
+typedoc --out Documentation Target/ --entryPointStrategy Target/
+#1695490571
+typedoc --out Documentation Target/ --entryPointStrategy Packages
+#1695490575
+typedoc --out Documentation Target/ --entryPointStrategy Resolve
+#1695490581
+typedoc --out Documentation Target/ --entryPointStrategy Merge
+#1695490585
+serve Documentation/
+#1695490624
+typedoc --out Documentation ./Source/ ; serve Documentation/
+#1695490645
+typedoc --out Documentation ./ ; serve Documentation/
+#1695490719
+typedoc --out Documentation Source/ ; serve Documentation/
+#1695490726
+typedoc --out Documentation Source ; serve Documentation/
+#1695490844
+typedoc --out Documentation Source/Export.ts ; serve Documentation/
+#1695491627
+cd /d/Developer/
+#1695491629
+dum prepublishOnly --filter=files-pipe
