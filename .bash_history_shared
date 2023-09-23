@@ -7517,3 +7517,33 @@ dum prepublishOnly
 cd /d/Developer/
 #1695458267
 dum prepublishOnly --filter=files-pipe
+#1695458223
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695459493
+dum preppublishOnly --filter=@nikolarhristov/common
+#1695459500
+dum prepublishOnly --filter=@nikolarhristov/common
+#1695460323
+dum installl
+#1695460324
+dum install
+#1695461489
+cd Application/NikolaRHristov/com
+#1695461492
+cd Application/NikolaRHristov/NPM/Com
+#1695461496
+cd Application/NikolaRHristov/NPM/Common/
+#1695461504
+cd ../../../NowPlayingCards/
+#1695461505
+cd Website/
+#1695461520
+dum install -D -E @nikolarhristov/common
+#1695461852
+cd /d/Developer/
+#1695461854
+dum install
+#1695462079
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695465071
+dum prepublishOnly
