@@ -7563,3 +7563,55 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1695473258
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695476776
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695477992
+grep -rnw 'import type {' .
+#1695478010
+grep -rnw 'import type {' . --exclude-dir=node_modules
+#1695478017
+grep -rnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target
+#1695478039
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target
+#1695478053
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr -d '\r\n'
+#1695478059
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr -d '\r\n' ' '
+#1695478063
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr -n '\r\n' ' '
+#1695478067
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr '\r\n' ' '
+#1695478888
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr -n '\r\n' ' '
+#1695478892
+grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr '\r\n' ' '
+#1695478958
+code-insiders $(grep -lrnw 'import type {' . --exclude-dir=node_modules --exclude-dir=Target | tr '\r\n' ' ')
+#1695479711
+find -iname Target
+#1695479713
+find -name Target
+#1695479719
+find -name Target -type d
+#1695479723
+find -name Target -type d -exec rm -rf {} \;
+#1695480006
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695480470
+dum prepublishOnly --filter=files-pipe
+#1695480604
+find -iname JavaScript.d.ts
+#1695480608
+find . -iname JavaScript.d.ts
+#1695480611
+\find . -iname JavaScript.d.ts
+#1695480619
+cd ./Application/AstroCommunity/AstroCompress/Target/Interface/JavaScript.d.ts
+#1695480622
+ci ./Application/AstroCommunity/AstroCompress/Target/Interface/JavaScript.d.ts
+#1695480634
+ci ./Application/AstroCommunity/AstroCompress/Target/Object/JavaScript.d.ts
+#1695480673
+dum prepublishOnly --filter=files-pipe
+#1695480696
+dum prepublishOnly --filter=@website/nikolahristov_tech
