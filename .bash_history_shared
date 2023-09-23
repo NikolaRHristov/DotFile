@@ -7451,3 +7451,47 @@ git init
 gh repo create NikolaRHristov/Common --public
 #1695406727
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695453100
+bmd
+#1695454171
+cd Application/NikolaRHristov/NPM/Com
+#1695454173
+cd Application/NikolaRHristov/NPM/CompileTime/
+#1695454176
+dum install -D -E typescript-esbuild
+#1695454488
+dum install
+#1695454691
+dum prepublishOnly
+#1695454732
+cd /d/Developer/
+#1695454744
+sort-package-json
+#1695454781
+cd d/d/
+#1695454762
+find -iname package.json -execdir sort-package-json \;
+#1695454785
+cd Application/NikolaRHristov/NPM/CompileTime/
+#1695454787
+git init
+#1695454799
+gh repo create NikolaRHristov/CompileTime --public
+#1695454815
+git remote add origin ssh://git@github.com/NikolaRHristov/CompileTime.git
+#1695454819
+git add .
+#1695454824
+git commit -m "Initial commit"
+#1695454830
+git push
+#1695454858
+npm publish --dry-rune
+#1695454864
+npm publish --dry-run
+#1695455249
+ci package.json 
+#1695455335
+cd /d/Developer/
+#1695455350
+rm -rf Application/NikolaRHristov/NPM/CompileTime/
