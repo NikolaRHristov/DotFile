@@ -7495,3 +7495,7 @@ ci package.json
 cd /d/Developer/
 #1695455350
 rm -rf Application/NikolaRHristov/NPM/CompileTime/
+#1695455400
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695456710
+dum prepublishOnly
