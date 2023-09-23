@@ -7547,3 +7547,5 @@ dum install
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1695465071
 dum prepublishOnly
+#1695465230
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
