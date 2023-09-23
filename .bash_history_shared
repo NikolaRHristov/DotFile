@@ -7549,3 +7549,5 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 dum prepublishOnly
 #1695465230
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695467315
+dum prepublishOnly --filter=@website/nikolahristov_tech
