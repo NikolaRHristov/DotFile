@@ -7659,3 +7659,31 @@ typedoc --out Documentation Source/Export.ts ; serve Documentation/
 cd /d/Developer/
 #1695491629
 dum prepublishOnly --filter=files-pipe
+#1695492058
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695527402
+dum prepublishOnly --filter=files-pipe
+#1695528211
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695528454
+dum prepublishOnly --filter=astro-short-urls
+#1695528608
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695529641
+find -iname astro.config.ts
+#1695529651
+find -iname astro.config.ts -execdir dum instal -D -E astro-capo \;
+#1695529676
+find -iname astro.config.ts
+#1695529681
+find -iname astro.config.ts | tr -d '\r\n\'
+#1695529684
+find -iname astro.config.ts | tr -d '\r\n'
+#1695529696
+code-insiders $(find -iname astro.config.ts | tr -d '\r\n')
+#1695529724
+code-insiders $(find -iname astro.config.ts | tr '\r\n' ' ')
+#1695529654
+find -iname astro.config.ts -execdir dum install -D -E astro-capo \;
+#1695531369
+dum prepublishOnly --filter=@website/nikolahristov_tech
