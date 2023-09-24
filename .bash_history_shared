@@ -7717,3 +7717,7 @@ find -iname Fn -type d
 find -iname Fn -type d -execdir mv Fn Function \;
 #1695563506
 dum prepublishOnly
+#1695563553
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695571162
+dum install
