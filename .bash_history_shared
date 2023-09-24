@@ -7721,3 +7721,13 @@ dum prepublishOnly
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1695571162
 dum install
+#1695573211
+dum install
+#1695573300
+npm show astro-critters version
+#1695573261
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695573338
+npm sow astro-rome version
+#1695573344
+npm show astro-rome version
