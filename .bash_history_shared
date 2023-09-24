@@ -7687,3 +7687,17 @@ code-insiders $(find -iname astro.config.ts | tr '\r\n' ' ')
 find -iname astro.config.ts -execdir dum install -D -E astro-capo \;
 #1695531369
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695531463
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695532639
+dum prepublishOnly --filter=files-pipe
+#1695537554
+dum prepublishOnly --filter=deployment-delete
+#1695544425
+dum prepublishOnly
+#1695545688
+dum prepublishOnly --filter=files-pipe
+#1695546092
+dum prepublishOnly --filter=@nikolarhristov/common
+#1695546634
+dum prepublishOnly --filter=@website/nikolahristov_tech
