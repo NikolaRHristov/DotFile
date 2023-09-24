@@ -7701,3 +7701,17 @@ dum prepublishOnly --filter=files-pipe
 dum prepublishOnly --filter=@nikolarhristov/common
 #1695546634
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695549811
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695550517
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695552059
+dum prepublishOnly --filter=astro-compress
+#1695553975
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695561993
+find -iname Fn
+#1695561995
+find -iname Fn -type d
+#1695562002
+find -iname Fn -type d -execdir mv Fn Function \;
