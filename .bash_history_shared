@@ -7903,3 +7903,23 @@ dum install
 dum prepublishOnly --filter=deployment-delete
 #1695666334
 cld
+#1695666380
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695667021
+dum prepublishOnly --filter=astro-compress
+#1695667025
+dum install
+#1695667499
+dum prepublishOnly --filter=astro-compress
+#1695668045
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695668819
+dum prepublishOnly --filter=astro-compress
+#1695670501
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695670573
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=astro-compress ; serve Application/AstroCommunity/AstroCompress/Documentation
+#1695670803
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=astro-compress ; serve Application/AstroCommunity/AstroCompress/DocumentationY
+#1695670909
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=astro-compress ; serve Application/AstroCommunity/AstroCompress/Documentation
