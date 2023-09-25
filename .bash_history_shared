@@ -7923,3 +7923,7 @@ find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filt
 find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=astro-compress ; serve Application/AstroCommunity/AstroCompress/DocumentationY
 #1695670909
 find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=astro-compress ; serve Application/AstroCommunity/AstroCompress/Documentation
+#1695671334
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695672292
+dum prepublishOnly
