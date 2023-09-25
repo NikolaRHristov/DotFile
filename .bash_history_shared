@@ -7731,3 +7731,175 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 npm sow astro-rome version
 #1695573344
 npm show astro-rome version
+#1695573765
+dum prepublishOnly --filter=files-pipe
+#1695573789
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1695573799
+typedoc --out Documentation Source ; serve Documentation/
+#1695573832
+ci typedoc.json
+#1695573893
+typedoc 
+#1695573928
+serve Documentation/
+#1695573948
+rm -rf Documentation/
+#1695573978
+find -iname *.ts
+#1695574008
+typedoc 
+#1695574015
+serve Documentation/
+#1695574108
+typedoc ; serve Documentation/
+#1695574794
+cd /d/Developer/Application/NikolaRHristov/NPM/FilesPipe/
+#1695574796
+typedoc ; serve Documentation/
+#1695621690
+dum install
+#1695621785
+dum prepublishOnly --filter=files-pipe
+#1695626347
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1695626349
+rm -rf Documentation/
+#1695626636
+cd ../../NPM/TypeScriptESBuild/
+#1695626652
+dum install -E typedoc @mxssfd/typedoc-theme
+#1695626698
+typdoc -h
+#1695626700
+typedoc -h
+#1695626705
+typedoc --help
+#1695626748
+cd /d/Developer/
+#1695626750
+dum prepublishOnly --filter=files-pipe
+#1695626996
+find -iname docs
+#1695627000
+find -iname docs -exec rm -rf {} \;
+#1695627002
+dum prepublishOnly --filter=files-pipe
+#1695627024
+serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695627080
+dum prepublishOnly --filter=files-pipe
+#1695627099
+serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695628131
+dum prepublishOnly --filter=files-pipe
+#1695628150
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695628249
+dum install -E typedoc-plugin-zod --filter=typescript-esbuild
+#1695628285
+dum install -E typedoc-plugin-mdn-links --filter=typescript-esbuild
+#1695628449
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695628622
+dum install -E typedoc-plugin-merge-modules --filter=typescript-esbuild
+#1695628661
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695628884
+find -iname Documentation
+#1695628887
+find -iname Documentation -exec rm -rf {} \;
+#1695628949
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695629007
+find -iname Documentation
+#1695629030
+dum install -E typedoc-plugin-merge-modules --filter=typescript-esbuild
+#1695629037
+dum prepublishOnly --filter=files-pipe ; 
+#1695629174
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695629634
+dum prepublishOnly --filter=files-pipe ; ls Application/NikolaRHristov/NPM/FilesPipe/Documentation
+#1695629827
+serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695629995
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630265
+dum install
+#1695630303
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630352
+find -iname Documentation -exec rm -rf {} \;
+#1695630353
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630530
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630612
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630654
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630727
+dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630769
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695630874
+dum install
+#1695630912
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695634177
+dum install
+#1695634180
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695634537
+Y
+#1695634539
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695635615
+Y
+#1695635616
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695635868
+Y
+#1695635869
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695638239
+Y
+#1695638243
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695638391
+Y
+#1695638392
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695639686
+Y
+#1695639688
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695642292
+dum prepublishOnly --filter=files-pipe
+#1695642837
+dum prepublishOnly --filter=typescript-esbuild
+#1695643821
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695650678
+dum prepublishOnly --filter=@nikolarhristov/scripts
+#1695651039
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695658964
+dum prepublishOnly --filter=astro-compress
+#1695659295
+dum prepublishOnly --filter=astro-starter-template
+#1695664718
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695665496
+Y
+#1695665501
+dum prepublishOnly --filter=astro-rome
+#1695665531
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695665897
+dum install
+#1695666024
+dum prepublishOnly --filter=deployment-delete
+#1695666334
+cld
