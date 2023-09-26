@@ -7929,3 +7929,37 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly
 #1695706360
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695713990
+dum prepublishOnly --filter=@nikolarhristov/scripts
+#1695714263
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695714547
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695714576
+find -iname Documentation -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
+#1695714580
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695725983
+dum prepublishOnly --filter=files-pipe
+#1695725998
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695726191
+dum prepublishOnly --filter=deployment-delete ; serve Application/NikolaRHristov/NPM/DeploymentDelete/Documentation/
+#1695726411
+cld
+#1695726976
+dum install
+#1695728485
+dum prepublishOnly --filter=deployment-delete ; serve Application/NikolaRHristov/NPM/DeploymentDelete/Documentation/
+#1695728573
+cld
+#1695728576
+dum install
+#1695728617
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695728650
+dum prepublishOnly --filter=deployment-delete ; serve Application/NikolaRHristov/NPM/DeploymentDelete/Documentation/
+#1695728861
+dum prepublishOnly --filter=deployment-delete
+#1695732822
+dum prepublishOnly --filter=deployment-delete ; serve Application/NikolaRHristov/NPM/DeploymentDelete/Documentation/
