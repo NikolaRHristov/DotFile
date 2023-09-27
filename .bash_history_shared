@@ -7963,3 +7963,79 @@ dum prepublishOnly --filter=deployment-delete ; serve Application/NikolaRHristov
 dum prepublishOnly --filter=deployment-delete
 #1695732822
 dum prepublishOnly --filter=deployment-delete ; serve Application/NikolaRHristov/NPM/DeploymentDelete/Documentation/
+#1695732912
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695733657
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695735272
+dum install -E typedoc-plugin-rename-defaults --filter=typescript-esbuild
+#1695735349
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695735864
+dum install -E typedoc-plugin-remove-references --filter=typescript-esbuild
+#1695735895
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695742857
+turso
+#1695742861
+winget search turso
+#1695743140
+turso
+#1695743153
+curl -sSfL https://get.tur.so/install.sh | bash
+#1695743239
+turso db create
+#1695744402
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695744484
+dum prepublishOnly --filter=files-pipe
+#1695744706
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695748060
+cd Application/RoundedCorners/Application2/
+#1695748061
+;s
+#1695748065
+cd ../
+#1695748067
+cd Application2/
+#1695748069
+git remote -v
+#1695748071
+cd ../
+#1695748074
+git clone ssh://git@github.com/RoundedCorners/Application.git
+#1695749641
+cd /d/Developer/
+#1695749644
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695796585
+corepack prepare pnpm@8.8.0 --activate
+#1695796588
+corepack enable
+#1695800521
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695807809
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1695807947
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695808350
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1695808427
+find -iname Documentation 
+#1695808434
+find -iname Documentation  -type d -exec rm -rf {} \;
+#1695808444
+find -iname Documentation  -type d -exec rm -rf {} \; dum prepublishOnly --filter=typescript-esbuild ; 
+#1695808447
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ; 
+#1695810370
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ;  serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695817191
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ; 
+#1695818861
+dum prepublishOnly --filter=files-pipe
+#1695822539
+dum prepublishOnly --filter=astro-compress
+#1695822563
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ; 
