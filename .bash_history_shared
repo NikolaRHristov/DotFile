@@ -8057,3 +8057,5 @@ dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristo
 dum prepublishOnly --filter=typescript-esbuild ; 
 #1695839522
 dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695841048
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
