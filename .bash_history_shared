@@ -8039,3 +8039,21 @@ dum prepublishOnly --filter=files-pipe
 dum prepublishOnly --filter=astro-compress
 #1695822563
 find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ; 
+#1695822626
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695825119
+dum prepublishOnly --filter=files-pipe
+#1695825131
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ;  serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695826469
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ;  
+#1695826914
+dum prepublishOnly --filter=astro-compress
+#1695836877
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1695837277
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695838029
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1695839522
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
