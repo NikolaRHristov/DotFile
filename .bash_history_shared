@@ -8059,3 +8059,53 @@ dum prepublishOnly --filter=typescript-esbuild ;
 dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
 #1695841048
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695898913
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695902750
+dum prepublishOnly --filter=typescript-esbuild ; ls Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695904386
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1695904400
+find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\\1Function/:g
+
+#1695904408
+find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\1Function/:g
+
+#1695904415
+find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\1Function/:g'
+#1695904424
+find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\\1Function/:g'
+#1695904444
+\find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\\1Function/:g'
+#1695904494
+\find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href=")functions/:\\1Function/:g'
+#1695904503
+dum prepublishOnly --filter=typescript-esbuild ; ls Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695904512
+dum prepublishOnly
+#1695904521
+\find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href=")functions/:\1Function/:g'
+#1695904558
+rm -rf Documentation/
+#1695904561
+dum prepublishOnly
+#1695904629
+\find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href=")functions/:\1Function/:g'
+#1695904663
+\find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\\1Function/:g'
+#1695904692
+dum prepublishOnly
+#1695904744
+\find ./Documentation -type f -name '*.html' | xargs sed -i'.bak' 's/href=\"functions/href=\"Function/g'
+#1695904782
+\find ./Documentation -type f -name '*.html' | xargs sed -i.bak --regexp-extended 's:(href="[^"]+)functions/:\1Function/:g'
+#1695904821
+dum prepublishOnly
+#1695904911
+cd /d/Developer/
+#1695904914
+dum prepublishOnly
+#1695906718
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1695907814
+dum prepublishOnly
