@@ -8143,3 +8143,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 dum prepublishOnly
 #1695924375
 dum prepublishOnly --filter=astro-compress
+#1695924430
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
