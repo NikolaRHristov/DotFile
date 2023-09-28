@@ -8151,3 +8151,5 @@ clea
 dum prepublishOnly
 #1695932533
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695934208
+dum prepublishOnly --filter=@website/nikolahristov_tech
