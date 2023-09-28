@@ -8145,3 +8145,7 @@ dum prepublishOnly
 dum prepublishOnly --filter=astro-compress
 #1695924430
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695932516
+clea
+#1695932566
+dum prepublishOnly
