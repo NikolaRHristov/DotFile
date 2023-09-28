@@ -8149,3 +8149,5 @@ find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m
 clea
 #1695932566
 dum prepublishOnly
+#1695932533
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
