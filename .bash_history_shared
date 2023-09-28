@@ -8131,3 +8131,15 @@ dum prepublishOnly --filter=files-pipe
 dum prepublishOnly --filter=typescript-esbuild ; 
 #1695918724
 dum prepublishOnly --filter=astro-compress
+#1695919576
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695921090
+dum prepublishOnly --filter=astro-compress
+#1695921117
+find -iname Documentation  -type d -exec rm -rf {} \; ; dum prepublishOnly --filter=typescript-esbuild ;  
+#1695921233
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695921226
+dum prepublishOnly
+#1695924375
+dum prepublishOnly --filter=astro-compress
