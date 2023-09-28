@@ -8157,3 +8157,29 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1695937000
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1695937461
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695938441
+dum prepublishOnly
+#1695939027
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695939038
+dum prepublishOnly
+#1695939121
+find -iname functions
+#1695939126
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695939195
+find -type f -iwholenamename 'Documentation/*/*.html'
+#1695939199
+find -type f -iwholename 'Documentation/*/*.html'
+#1695939202
+find -type f -iwholename 'Documentation/**/*.html'
+#1695939207
+find -type f -iwholename 'Documentation/*.html'
+#1695939219
+find -type f -iwholename '*/Documentation/*.html'
+#1695939233
+find -type f -iwholename '*/Documentation/*.html' | xargs sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\\1Function/:g'
+#1695939238
+find -type f -iwholename '*/Documentation/*.html' | xargs sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g'
