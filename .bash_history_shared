@@ -8121,3 +8121,13 @@ dum prepublishOnly
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1695916408
 dum prepublishOnly --filter=astro-compress
+#1695917589
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1695917611
+dum prepublishOnly --filter=file-spipe
+#1695917617
+dum prepublishOnly --filter=files-pipe
+#1695918628
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1695918724
+dum prepublishOnly --filter=astro-compress
