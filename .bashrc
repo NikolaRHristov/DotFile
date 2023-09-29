@@ -13,7 +13,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export DO_NOT_TRACK=1
 export PATH=$PATH:/usr/local/go/bin
-export OSH=~/.oh-my-bash
+export OSH=~/Bash
 
 # shellcheck disable=SC2034
 OSH_THEME="rr"

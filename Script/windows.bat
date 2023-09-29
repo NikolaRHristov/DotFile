@@ -7,9 +7,9 @@ rm C:\Users\nikola\.config
 rm C:\Users\nikola\.functions
 rm C:\Users\nikola\.gitconfig
 rm C:\Users\nikola\.gitmessage
-rm C:\Users\nikola\.oh-my-bash
-rm C:\Users\nikola\.oh-my-posh
-rm C:\Users\nikola\.oh-my-zsh
+rm C:\Users\nikola\Bash
+rm C:\Users\nikola\Powershell
+rm C:\Users\nikola\ZSH
 rm C:\Users\nikola\.ssh
 rm C:\Users\nikola\prettier.config.js
 rm C:\Users\nikola\rustfmt.toml
@@ -25,9 +25,9 @@ mklink /D C:\Users\nikola\.config D:\Developer\Application\NikolaRHristov\Dotfil
 mklink C:\Users\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
 mklink C:\Users\nikola\.gitconfig D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig
 mklink C:\Users\nikola\.gitmessage D:\Developer\Application\NikolaRHristov\Dotfile\.gitmessage
-mklink /D C:\Users\nikola\.oh-my-bash D:\Developer\Application\NikolaRHristov\Dotfile\.oh-my-bash
-mklink /D C:\Users\nikola\.oh-my-posh D:\Developer\Application\NikolaRHristov\Dotfile\.oh-my-posh
-mklink /D C:\Users\nikola\.oh-my-zsh D:\Developer\Application\NikolaRHristov\Dotfile\.oh-my-zsh
+mklink /D C:\Users\nikola\Bash D:\Developer\Application\NikolaRHristov\Dotfile\Bash
+mklink /D C:\Users\nikola\Powershell D:\Developer\Application\NikolaRHristov\Dotfile\Powershell
+mklink /D C:\Users\nikola\ZSH D:\Developer\Application\NikolaRHristov\Dotfile\ZSH
 mklink /D C:\Users\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
 mklink C:\Users\nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\Dotfile\prettier.config.js
 mklink C:\Users\nikola\rome.json D:\Developer\Application\NikolaRHristov\Dotfile\rome.json
