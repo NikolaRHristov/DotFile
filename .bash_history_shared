@@ -273,7 +273,7 @@ rm ./Application/AstroStarter/PACStack/.git/modules
 #1692278666
 rm -rf ./Application/AstroStarter/PACStack/.git/modules
 #1692278670
-rm -rf ./Application/NikolaRHristov/dot/.git/modules
+rm -rf ./Application/NikolaRHristov/Dotfile/.git/modules
 #1692278674
 find -iname .git -execdir git add . \;
 #1692278686
@@ -949,7 +949,7 @@ cd /d/Developer/
 #1692287631
 cd Application/DoccerPage/
 #1692287635
-cd ../NikolaRHristov/dot/
+cd ../NikolaRHristov/Dotfile/
 #1692287643
 git add .
 #1692287924
@@ -1127,15 +1127,15 @@ rm -rf ./Application/NeovimSpace/Website/.github/workflows/*
 #1692293770
 rm -rf ./Application/NikolaRHristov/DeploymentDelete/.github/workflows/*
 #1692293770
-rm -rf ./Application/NikolaRHristov/dot/.config/nvim/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.config/nvim/.github/workflows/*
 #1692293770
-rm -rf ./Application/NikolaRHristov/dot/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.github/workflows/*
 #1692293770
-rm -rf ./Application/NikolaRHristov/dot/.oh-my-bash/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.oh-my-bash/.github/workflows/*
 #1692293770
-rm -rf ./Application/NikolaRHristov/dot/.oh-my-posh/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.oh-my-posh/.github/workflows/*
 #1692293770
-rm -rf ./Application/NikolaRHristov/dot/.oh-my-zsh/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.oh-my-zsh/.github/workflows/*
 #1692293770
 rm -rf ./Application/NikolaRHristov/FilesPipe/.github/workflows/*
 #1692293770
@@ -1263,15 +1263,15 @@ rm -rf ./Application/NeovimSpace/Website/.github/workflows/*
 #1692293774
 rm -rf ./Application/NikolaRHristov/DeploymentDelete/.github/workflows/*
 #1692293774
-rm -rf ./Application/NikolaRHristov/dot/.config/nvim/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.config/nvim/.github/workflows/*
 #1692293774
-rm -rf ./Application/NikolaRHristov/dot/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.github/workflows/*
 #1692293774
-rm -rf ./Application/NikolaRHristov/dot/.oh-my-bash/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.oh-my-bash/.github/workflows/*
 #1692293774
-rm -rf ./Application/NikolaRHristov/dot/.oh-my-posh/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.oh-my-posh/.github/workflows/*
 #1692293774
-rm -rf ./Application/NikolaRHristov/dot/.oh-my-zsh/.github/workflows/*
+rm -rf ./Application/NikolaRHristov/Dotfile/.oh-my-zsh/.github/workflows/*
 #1692293774
 rm -rf ./Application/NikolaRHristov/FilesPipe/.github/workflows/*
 #1692293774
@@ -1401,9 +1401,9 @@ rm ./Application/NeovimSpace/Website/.github/dependabot.yml
 #1692293817
 rm ./Application/NikolaRHristov/DeploymentDelete/.github/dependabot.yml
 #1692293817
-rm ./Application/NikolaRHristov/dot/.github/dependabot.yml
+rm ./Application/NikolaRHristov/Dotfile/.github/dependabot.yml
 #1692293817
-rm ./Application/NikolaRHristov/dot/.oh-my-posh/.github/dependabot.yml
+rm ./Application/NikolaRHristov/Dotfile/.oh-my-posh/.github/dependabot.yml
 #1692293817
 rm ./Application/NikolaRHristov/FilesPipe/.github/dependabot.yml
 #1692293817
@@ -1651,7 +1651,7 @@ gh repo edit NikolaRHristov/AstroShortURLs --visibility public
 #1692298734
 gh repo edit NikolaRHristov/Website --visibility public
 #1692298734
-gh repo edit NikolaRHristov/dot --visibility public
+gh repo edit NikolaRHristov/Dotfile --visibility public
 #1692298735
 gh repo edit NikolaRHristov/API --visibility public
 #1692298735
@@ -1947,7 +1947,7 @@ find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sy
 #1692312385
 dum install ; dum prepublishOnly --filter=nikolahristov-web
 #1692313535
-/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/star-used.sh 
 #1692313837
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1692348533
@@ -2133,7 +2133,7 @@ ci text.md
 #1692368934
 ci .
 #1692368472
-/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/star-used.sh 
 #1692370227
 find -iname .github -type d
 #1692370336
@@ -2307,7 +2307,7 @@ dum prepublishOnly --filter=nikolahristov-web
 #1692442495
 cld ; bmd ; dum install ; dum prepublishOnly
 #1692444210
-/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/dot/Script/security-organization.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
 #1692444754
 dum prepublishOnly --filter=nikolahristov-web
 #1692447796
@@ -2651,7 +2651,7 @@ cld ; bmd ; dum install ; dum prepublishOnly
 #1692466733
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1692467403
-/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/settings-organization.sh 
 #1692467970
 find -iname component* -type d
 #1692467978
@@ -2903,7 +2903,7 @@ dum install -D -E typescript@next
 #1692530044
 dum install -D -E typescript@next -w
 #1692530165
-./Application/NikolaRHristov/dot/Script/settings-organization.sh 
+./Application/NikolaRHristov/Dotfile/Script/settings-organization.sh 
 #1692530742
 dum prepublishOnly
 #1692530737
@@ -2997,19 +2997,19 @@ cd /d/Developer/
 #1692537890
 grep -rnw '"private": false,' .
 #1692538734
-code-insiders ./Application/AstroCommunity/AstroCompress/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroCompress/CONTRIBUTING.md ./Application/AstroCommunity/AstroCompress/LICENSE ./Application/AstroCommunity/AstroCritters/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroCritters/CONTRIBUTING.md ./Application/AstroCommunity/AstroCritters/LICENSE ./Application/AstroCommunity/AstroRome/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroRome/CONTRIBUTING.md ./Application/AstroCommunity/AstroRome/LICENSE ./Application/AstroStarter/PACStack/Application/Content/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Content/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Content/LICENSE ./Application/AstroStarter/PACStack/Application/Website/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Website/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Website/LICENSE ./Application/AstroStarter/PACStack/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/CONTRIBUTING.md ./Application/AstroStarter/PACStack/LICENSE ./Application/BlackRainbowAI/NPM/BlackRainbow/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/NPM/BlackRainbow/CONTRIBUTING.md ./Application/BlackRainbowAI/NPM/BlackRainbow/LICENSE ./Application/BlackRainbowAI/Website/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/Website/CONTRIBUTING.md ./Application/BlackRainbowAI/Website/LICENSE ./Application/CrepesJS/NPM/Create/CODE_OF_CONDUCT.md ./Application/CrepesJS/NPM/Create/CONTRIBUTING.md ./Application/CrepesJS/NPM/Create/LICENSE ./Application/DoccerPage/Website/CODE_OF_CONDUCT.md ./Application/DoccerPage/Website/CONTRIBUTING.md ./Application/DoccerPage/Website/LICENSE ./Application/GrenadierJS/Website/CODE_OF_CONDUCT.md ./Application/GrenadierJS/Website/CONTRIBUTING.md ./Application/GrenadierJS/Website/LICENSE ./Application/HalleSoftware/NPM/API/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/API/CONTRIBUTING.md ./Application/HalleSoftware/NPM/API/LICENSE ./Application/HalleSoftware/NPM/Socket/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/Socket/CONTRIBUTING.md ./Application/HalleSoftware/NPM/Socket/LICENSE ./Application/HalleSoftware/Website/CODE_OF_CONDUCT.md ./Application/HalleSoftware/Website/CONTRIBUTING.md ./Application/HalleSoftware/Website/LICENSE ./Application/ImageWtf/Website/CODE_OF_CONDUCT.md ./Application/ImageWtf/Website/CONTRIBUTING.md ./Application/ImageWtf/Website/LICENSE ./Application/IntakeNomNom/NPM/Blur/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Blur/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Blur/LICENSE ./Application/IntakeNomNom/NPM/Intake/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/parse/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/read/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/read/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/read/LICENSE ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/LICENSE ./Application/IntakeNomNom/Website/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/Website/CONTRIBUTING.md ./Application/IntakeNomNom/Website/LICENSE ./Application/Lightrix/NPM/AstroDenoDeploy/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroDenoDeploy/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroDenoDeploy/LICENSE ./Application/Lightrix/NPM/AstroSSTTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroSSTTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroSSTTemplate/LICENSE ./Application/Lightrix/NPM/AstroStarterTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroStarterTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroStarterTemplate/LICENSE ./Application/Lightrix/NPM/Experiment/ui/select/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/Experiment/ui/select/CONTRIBUTING.md ./Application/Lightrix/NPM/Experiment/ui/select/LICENSE ./Application/Lightrix/NPM/FlightsWatch/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/FlightsWatch/CONTRIBUTING.md ./Application/Lightrix/NPM/FlightsWatch/LICENSE ./Application/Lightrix/NPM/OverBrowser/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/OverBrowser/CONTRIBUTING.md ./Application/Lightrix/NPM/OverBrowser/LICENSE ./Application/Lightrix/Website/CODE_OF_CONDUCT.md ./Application/Lightrix/Website/CONTRIBUTING.md ./Application/Lightrix/Website/LICENSE ./Application/MythemeCloud/NPM/Mytheme/CODE_OF_CONDUCT.md ./Application/MythemeCloud/NPM/Mytheme/CONTRIBUTING.md ./Application/MythemeCloud/NPM/Mytheme/LICENSE ./Application/MythemeCloud/Website/CODE_OF_CONDUCT.md ./Application/MythemeCloud/Website/CONTRIBUTING.md ./Application/MythemeCloud/Website/LICENSE ./Application/NeovimSpace/Website/CODE_OF_CONDUCT.md ./Application/NeovimSpace/Website/CONTRIBUTING.md ./Application/NeovimSpace/Website/LICENSE ./Application/NikolaRHristov/DeploymentDelete/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/DeploymentDelete/CONTRIBUTING.md ./Application/NikolaRHristov/DeploymentDelete/LICENSE ./Application/NikolaRHristov/dot/.config/base/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/dot/.config/base/CONTRIBUTING.md ./Application/NikolaRHristov/dot/.config/base/LICENSE ./Application/NikolaRHristov/dot/.oh-my-posh/scripts/bluesky/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/dot/.oh-my-posh/scripts/bluesky/CONTRIBUTING.md ./Application/NikolaRHristov/dot/.oh-my-posh/scripts/bluesky/LICENSE ./Application/NikolaRHristov/dot/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/dot/CONTRIBUTING.md ./Application/NikolaRHristov/dot/LICENSE ./Application/NikolaRHristov/NPM/API/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/API/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/API/LICENSE ./Application/NikolaRHristov/NPM/AstroConvert/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroConvert/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroConvert/LICENSE ./Application/NikolaRHristov/NPM/AstroDashboard/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDashboard/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDashboard/LICENSE ./Application/NikolaRHristov/NPM/AstroDeadLinks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/LICENSE ./Application/NikolaRHristov/NPM/AstroNetworks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroNetworks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroNetworks/LICENSE ./Application/NikolaRHristov/NPM/AstroShortURLs/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroShortURLs/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroShortURLs/LICENSE ./Application/NikolaRHristov/NPM/BenchPiscina/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/BenchPiscina/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/BenchPiscina/LICENSE ./Application/NikolaRHristov/NPM/Bot/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Bot/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Bot/LICENSE ./Application/NikolaRHristov/NPM/Dispatch/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Dispatch/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Dispatch/LICENSE ./Application/NikolaRHristov/NPM/FilesPipe/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/FilesPipe/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/FilesPipe/LICENSE ./Application/NikolaRHristov/NPM/Script/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Script/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Script/LICENSE ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/LICENSE ./Application/NikolaRHristov/NPM/Walle/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Walle/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Walle/LICENSE ./Application/NikolaRHristov/Website/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Website/CONTRIBUTING.md ./Application/NikolaRHristov/Website/LICENSE ./Application/NowPlayingCard/NPM/API/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/API/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/API/LICENSE ./Application/NowPlayingCard/NPM/Common/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Common/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Common/LICENSE ./Application/NowPlayingCard/NPM/Socket/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Socket/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Socket/LICENSE ./Application/Playform/NPM/BlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/NPM/BlankWebStarter/CONTRIBUTING.md ./Application/Playform/NPM/BlankWebStarter/LICENSE ./Application/Playform/NPM/CreateBlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/NPM/CreateBlankWebStarter/CONTRIBUTING.md ./Application/Playform/NPM/CreateBlankWebStarter/LICENSE ./Application/Playform/Website/CODE_OF_CONDUCT.md ./Application/Playform/Website/CONTRIBUTING.md ./Application/Playform/Website/LICENSE ./Application/ReturnThief/Website/CODE_OF_CONDUCT.md ./Application/ReturnThief/Website/CONTRIBUTING.md ./Application/ReturnThief/Website/LICENSE ./Application/RoundedCorners/Application/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Application/CONTRIBUTING.md ./Application/RoundedCorners/Application/LICENSE ./Application/RoundedCorners/Website/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Website/CONTRIBUTING.md ./Application/RoundedCorners/Website/LICENSE ./Application/SileaJS/Website/CODE_OF_CONDUCT.md ./Application/SileaJS/Website/CONTRIBUTING.md ./Application/SileaJS/Website/LICENSE ./Application/SouqRs/Website/CODE_OF_CONDUCT.md ./Application/SouqRs/Website/CONTRIBUTING.md ./Application/SouqRs/Website/LICENSE ./Application/windowsdock/database/CODE_OF_CONDUCT.md ./Application/windowsdock/database/CONTRIBUTING.md ./Application/windowsdock/database/LICENSE ./Application/windowsdock/Website/CODE_OF_CONDUCT.md ./Application/windowsdock/Website/CONTRIBUTING.md ./Application/windowsdock/Website/LICENSE ./Application/YesMaintain/NPM/Script/CODE_OF_CONDUCT.md ./Application/YesMaintain/NPM/Script/CONTRIBUTING.md ./Application/YesMaintain/NPM/Script/LICENSE
+code-insiders ./Application/AstroCommunity/AstroCompress/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroCompress/CONTRIBUTING.md ./Application/AstroCommunity/AstroCompress/LICENSE ./Application/AstroCommunity/AstroCritters/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroCritters/CONTRIBUTING.md ./Application/AstroCommunity/AstroCritters/LICENSE ./Application/AstroCommunity/AstroRome/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroRome/CONTRIBUTING.md ./Application/AstroCommunity/AstroRome/LICENSE ./Application/AstroStarter/PACStack/Application/Content/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Content/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Content/LICENSE ./Application/AstroStarter/PACStack/Application/Website/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Website/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Website/LICENSE ./Application/AstroStarter/PACStack/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/CONTRIBUTING.md ./Application/AstroStarter/PACStack/LICENSE ./Application/BlackRainbowAI/NPM/BlackRainbow/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/NPM/BlackRainbow/CONTRIBUTING.md ./Application/BlackRainbowAI/NPM/BlackRainbow/LICENSE ./Application/BlackRainbowAI/Website/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/Website/CONTRIBUTING.md ./Application/BlackRainbowAI/Website/LICENSE ./Application/CrepesJS/NPM/Create/CODE_OF_CONDUCT.md ./Application/CrepesJS/NPM/Create/CONTRIBUTING.md ./Application/CrepesJS/NPM/Create/LICENSE ./Application/DoccerPage/Website/CODE_OF_CONDUCT.md ./Application/DoccerPage/Website/CONTRIBUTING.md ./Application/DoccerPage/Website/LICENSE ./Application/GrenadierJS/Website/CODE_OF_CONDUCT.md ./Application/GrenadierJS/Website/CONTRIBUTING.md ./Application/GrenadierJS/Website/LICENSE ./Application/HalleSoftware/NPM/API/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/API/CONTRIBUTING.md ./Application/HalleSoftware/NPM/API/LICENSE ./Application/HalleSoftware/NPM/Socket/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/Socket/CONTRIBUTING.md ./Application/HalleSoftware/NPM/Socket/LICENSE ./Application/HalleSoftware/Website/CODE_OF_CONDUCT.md ./Application/HalleSoftware/Website/CONTRIBUTING.md ./Application/HalleSoftware/Website/LICENSE ./Application/ImageWtf/Website/CODE_OF_CONDUCT.md ./Application/ImageWtf/Website/CONTRIBUTING.md ./Application/ImageWtf/Website/LICENSE ./Application/IntakeNomNom/NPM/Blur/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Blur/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Blur/LICENSE ./Application/IntakeNomNom/NPM/Intake/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/parse/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/read/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/read/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/read/LICENSE ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/LICENSE ./Application/IntakeNomNom/Website/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/Website/CONTRIBUTING.md ./Application/IntakeNomNom/Website/LICENSE ./Application/Lightrix/NPM/AstroDenoDeploy/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroDenoDeploy/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroDenoDeploy/LICENSE ./Application/Lightrix/NPM/AstroSSTTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroSSTTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroSSTTemplate/LICENSE ./Application/Lightrix/NPM/AstroStarterTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroStarterTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroStarterTemplate/LICENSE ./Application/Lightrix/NPM/Experiment/ui/select/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/Experiment/ui/select/CONTRIBUTING.md ./Application/Lightrix/NPM/Experiment/ui/select/LICENSE ./Application/Lightrix/NPM/FlightsWatch/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/FlightsWatch/CONTRIBUTING.md ./Application/Lightrix/NPM/FlightsWatch/LICENSE ./Application/Lightrix/NPM/OverBrowser/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/OverBrowser/CONTRIBUTING.md ./Application/Lightrix/NPM/OverBrowser/LICENSE ./Application/Lightrix/Website/CODE_OF_CONDUCT.md ./Application/Lightrix/Website/CONTRIBUTING.md ./Application/Lightrix/Website/LICENSE ./Application/MythemeCloud/NPM/Mytheme/CODE_OF_CONDUCT.md ./Application/MythemeCloud/NPM/Mytheme/CONTRIBUTING.md ./Application/MythemeCloud/NPM/Mytheme/LICENSE ./Application/MythemeCloud/Website/CODE_OF_CONDUCT.md ./Application/MythemeCloud/Website/CONTRIBUTING.md ./Application/MythemeCloud/Website/LICENSE ./Application/NeovimSpace/Website/CODE_OF_CONDUCT.md ./Application/NeovimSpace/Website/CONTRIBUTING.md ./Application/NeovimSpace/Website/LICENSE ./Application/NikolaRHristov/DeploymentDelete/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/DeploymentDelete/CONTRIBUTING.md ./Application/NikolaRHristov/DeploymentDelete/LICENSE ./Application/NikolaRHristov/Dotfile/.config/base/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Dotfile/.config/base/CONTRIBUTING.md ./Application/NikolaRHristov/Dotfile/.config/base/LICENSE ./Application/NikolaRHristov/Dotfile/.oh-my-posh/scripts/bluesky/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Dotfile/.oh-my-posh/scripts/bluesky/CONTRIBUTING.md ./Application/NikolaRHristov/Dotfile/.oh-my-posh/scripts/bluesky/LICENSE ./Application/NikolaRHristov/Dotfile/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Dotfile/CONTRIBUTING.md ./Application/NikolaRHristov/Dotfile/LICENSE ./Application/NikolaRHristov/NPM/API/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/API/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/API/LICENSE ./Application/NikolaRHristov/NPM/AstroConvert/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroConvert/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroConvert/LICENSE ./Application/NikolaRHristov/NPM/AstroDashboard/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDashboard/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDashboard/LICENSE ./Application/NikolaRHristov/NPM/AstroDeadLinks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/LICENSE ./Application/NikolaRHristov/NPM/AstroNetworks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroNetworks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroNetworks/LICENSE ./Application/NikolaRHristov/NPM/AstroShortURLs/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroShortURLs/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroShortURLs/LICENSE ./Application/NikolaRHristov/NPM/BenchPiscina/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/BenchPiscina/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/BenchPiscina/LICENSE ./Application/NikolaRHristov/NPM/Bot/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Bot/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Bot/LICENSE ./Application/NikolaRHristov/NPM/Dispatch/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Dispatch/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Dispatch/LICENSE ./Application/NikolaRHristov/NPM/FilesPipe/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/FilesPipe/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/FilesPipe/LICENSE ./Application/NikolaRHristov/NPM/Script/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Script/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Script/LICENSE ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/LICENSE ./Application/NikolaRHristov/NPM/Walle/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Walle/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Walle/LICENSE ./Application/NikolaRHristov/Website/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Website/CONTRIBUTING.md ./Application/NikolaRHristov/Website/LICENSE ./Application/NowPlayingCard/NPM/API/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/API/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/API/LICENSE ./Application/NowPlayingCard/NPM/Common/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Common/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Common/LICENSE ./Application/NowPlayingCard/NPM/Socket/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Socket/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Socket/LICENSE ./Application/Playform/NPM/BlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/NPM/BlankWebStarter/CONTRIBUTING.md ./Application/Playform/NPM/BlankWebStarter/LICENSE ./Application/Playform/NPM/CreateBlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/NPM/CreateBlankWebStarter/CONTRIBUTING.md ./Application/Playform/NPM/CreateBlankWebStarter/LICENSE ./Application/Playform/Website/CODE_OF_CONDUCT.md ./Application/Playform/Website/CONTRIBUTING.md ./Application/Playform/Website/LICENSE ./Application/ReturnThief/Website/CODE_OF_CONDUCT.md ./Application/ReturnThief/Website/CONTRIBUTING.md ./Application/ReturnThief/Website/LICENSE ./Application/RoundedCorners/Application/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Application/CONTRIBUTING.md ./Application/RoundedCorners/Application/LICENSE ./Application/RoundedCorners/Website/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Website/CONTRIBUTING.md ./Application/RoundedCorners/Website/LICENSE ./Application/SileaJS/Website/CODE_OF_CONDUCT.md ./Application/SileaJS/Website/CONTRIBUTING.md ./Application/SileaJS/Website/LICENSE ./Application/SouqRs/Website/CODE_OF_CONDUCT.md ./Application/SouqRs/Website/CONTRIBUTING.md ./Application/SouqRs/Website/LICENSE ./Application/windowsdock/database/CODE_OF_CONDUCT.md ./Application/windowsdock/database/CONTRIBUTING.md ./Application/windowsdock/database/LICENSE ./Application/windowsdock/Website/CODE_OF_CONDUCT.md ./Application/windowsdock/Website/CONTRIBUTING.md ./Application/windowsdock/Website/LICENSE ./Application/YesMaintain/NPM/Script/CODE_OF_CONDUCT.md ./Application/YesMaintain/NPM/Script/CONTRIBUTING.md ./Application/YesMaintain/NPM/Script/LICENSE
 #1692539135
-code-insiders ./Application/AstroCommunity/AstroCompress/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroCritters/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroRome/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Content/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Website/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/NPM/BlackRainbow/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/Website/CODE_OF_CONDUCT.md ./Application/CrepesJS/NPM/Create/CODE_OF_CONDUCT.md ./Application/DoccerPage/Website/CODE_OF_CONDUCT.md ./Application/GrenadierJS/Website/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/API/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/Socket/CODE_OF_CONDUCT.md ./Application/HalleSoftware/Website/CODE_OF_CONDUCT.md ./Application/ImageWtf/Website/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Blur/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/read/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/Website/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroDenoDeploy/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroSSTTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroStarterTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/Experiment/ui/select/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/FlightsWatch/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/OverBrowser/CODE_OF_CONDUCT.md ./Application/Lightrix/Website/CODE_OF_CONDUCT.md ./Application/MythemeCloud/NPM/Mytheme/CODE_OF_CONDUCT.md ./Application/MythemeCloud/Website/CODE_OF_CONDUCT.md ./Application/NeovimSpace/Website/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/DeploymentDelete/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/dot/.config/base/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/dot/.oh-my-posh/scripts/bluesky/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/dot/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/API/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroConvert/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDashboard/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroNetworks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroShortURLs/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/BenchPiscina/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Bot/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Dispatch/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/FilesPipe/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Script/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Walle/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Website/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/API/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Common/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Socket/CODE_OF_CONDUCT.md ./Application/Playform/NPM/BlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/NPM/CreateBlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/Website/CODE_OF_CONDUCT.md ./Application/ReturnThief/Website/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Application/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Website/CODE_OF_CONDUCT.md ./Application/SileaJS/Website/CODE_OF_CONDUCT.md ./Application/SouqRs/Website/CODE_OF_CONDUCT.md ./Application/windowsdock/database/CODE_OF_CONDUCT.md ./Application/windowsdock/Website/CODE_OF_CONDUCT.md ./Application/YesMaintain/NPM/Script/CODE_OF_CONDUCT.md
+code-insiders ./Application/AstroCommunity/AstroCompress/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroCritters/CODE_OF_CONDUCT.md ./Application/AstroCommunity/AstroRome/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Content/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/Application/Website/CODE_OF_CONDUCT.md ./Application/AstroStarter/PACStack/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/NPM/BlackRainbow/CODE_OF_CONDUCT.md ./Application/BlackRainbowAI/Website/CODE_OF_CONDUCT.md ./Application/CrepesJS/NPM/Create/CODE_OF_CONDUCT.md ./Application/DoccerPage/Website/CODE_OF_CONDUCT.md ./Application/GrenadierJS/Website/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/API/CODE_OF_CONDUCT.md ./Application/HalleSoftware/NPM/Socket/CODE_OF_CONDUCT.md ./Application/HalleSoftware/Website/CODE_OF_CONDUCT.md ./Application/ImageWtf/Website/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Blur/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/Intake/packages/read/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CODE_OF_CONDUCT.md ./Application/IntakeNomNom/Website/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroDenoDeploy/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroSSTTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/AstroStarterTemplate/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/Experiment/ui/select/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/FlightsWatch/CODE_OF_CONDUCT.md ./Application/Lightrix/NPM/OverBrowser/CODE_OF_CONDUCT.md ./Application/Lightrix/Website/CODE_OF_CONDUCT.md ./Application/MythemeCloud/NPM/Mytheme/CODE_OF_CONDUCT.md ./Application/MythemeCloud/Website/CODE_OF_CONDUCT.md ./Application/NeovimSpace/Website/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/DeploymentDelete/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Dotfile/.config/base/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Dotfile/.oh-my-posh/scripts/bluesky/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Dotfile/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/API/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroConvert/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDashboard/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroNetworks/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/AstroShortURLs/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/BenchPiscina/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Bot/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Dispatch/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/FilesPipe/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Script/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/NPM/Walle/CODE_OF_CONDUCT.md ./Application/NikolaRHristov/Website/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/API/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Common/CODE_OF_CONDUCT.md ./Application/NowPlayingCard/NPM/Socket/CODE_OF_CONDUCT.md ./Application/Playform/NPM/BlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/NPM/CreateBlankWebStarter/CODE_OF_CONDUCT.md ./Application/Playform/Website/CODE_OF_CONDUCT.md ./Application/ReturnThief/Website/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Application/CODE_OF_CONDUCT.md ./Application/RoundedCorners/Website/CODE_OF_CONDUCT.md ./Application/SileaJS/Website/CODE_OF_CONDUCT.md ./Application/SouqRs/Website/CODE_OF_CONDUCT.md ./Application/windowsdock/database/CODE_OF_CONDUCT.md ./Application/windowsdock/Website/CODE_OF_CONDUCT.md ./Application/YesMaintain/NPM/Script/CODE_OF_CONDUCT.md
 #1692537864
 cld ; bmd ; dum install ; dum prepublishOnly
 #1692539243
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1692539921
-code-insiders ./Application/AstroCommunity/AstroCompress/CONTRIBUTING.md ./Application/AstroCommunity/AstroCritters/CONTRIBUTING.md ./Application/AstroCommunity/AstroRome/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Content/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Website/CONTRIBUTING.md ./Application/AstroStarter/PACStack/CONTRIBUTING.md ./Application/BlackRainbowAI/NPM/BlackRainbow/CONTRIBUTING.md ./Application/BlackRainbowAI/Website/CONTRIBUTING.md ./Application/CrepesJS/NPM/Create/CONTRIBUTING.md ./Application/DoccerPage/Website/CONTRIBUTING.md ./Application/GrenadierJS/Website/CONTRIBUTING.md ./Application/HalleSoftware/NPM/API/CONTRIBUTING.md ./Application/HalleSoftware/NPM/Socket/CONTRIBUTING.md ./Application/HalleSoftware/Website/CONTRIBUTING.md ./Application/ImageWtf/Website/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Blur/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/read/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CONTRIBUTING.md ./Application/IntakeNomNom/Website/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroDenoDeploy/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroSSTTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroStarterTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/Experiment/ui/select/CONTRIBUTING.md ./Application/Lightrix/NPM/FlightsWatch/CONTRIBUTING.md ./Application/Lightrix/NPM/OverBrowser/CONTRIBUTING.md ./Application/Lightrix/Website/CONTRIBUTING.md ./Application/MythemeCloud/NPM/Mytheme/CONTRIBUTING.md ./Application/MythemeCloud/Website/CONTRIBUTING.md ./Application/NeovimSpace/Website/CONTRIBUTING.md ./Application/NikolaRHristov/DeploymentDelete/CONTRIBUTING.md ./Application/NikolaRHristov/dot/.config/base/CONTRIBUTING.md ./Application/NikolaRHristov/dot/.oh-my-posh/scripts/bluesky/CONTRIBUTING.md ./Application/NikolaRHristov/dot/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/API/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroConvert/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDashboard/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroNetworks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroShortURLs/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/BenchPiscina/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Bot/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Dispatch/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/FilesPipe/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Script/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Walle/CONTRIBUTING.md ./Application/NikolaRHristov/Website/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/API/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Common/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Socket/CONTRIBUTING.md ./Application/Playform/NPM/BlankWebStarter/CONTRIBUTING.md ./Application/Playform/NPM/CreateBlankWebStarter/CONTRIBUTING.md ./Application/Playform/Website/CONTRIBUTING.md ./Application/ReturnThief/Website/CONTRIBUTING.md ./Application/RoundedCorners/Application/CONTRIBUTING.md ./Application/RoundedCorners/Website/CONTRIBUTING.md ./Application/SileaJS/Website/CONTRIBUTING.md ./Application/SouqRs/Website/CONTRIBUTING.md ./Application/windowsdock/database/CONTRIBUTING.md ./Application/windowsdock/Website/CONTRIBUTING.md ./Application/YesMaintain/NPM/Script/CONTRIBUTING.md
+code-insiders ./Application/AstroCommunity/AstroCompress/CONTRIBUTING.md ./Application/AstroCommunity/AstroCritters/CONTRIBUTING.md ./Application/AstroCommunity/AstroRome/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Content/CONTRIBUTING.md ./Application/AstroStarter/PACStack/Application/Website/CONTRIBUTING.md ./Application/AstroStarter/PACStack/CONTRIBUTING.md ./Application/BlackRainbowAI/NPM/BlackRainbow/CONTRIBUTING.md ./Application/BlackRainbowAI/Website/CONTRIBUTING.md ./Application/CrepesJS/NPM/Create/CONTRIBUTING.md ./Application/DoccerPage/Website/CONTRIBUTING.md ./Application/GrenadierJS/Website/CONTRIBUTING.md ./Application/HalleSoftware/NPM/API/CONTRIBUTING.md ./Application/HalleSoftware/NPM/Socket/CONTRIBUTING.md ./Application/HalleSoftware/Website/CONTRIBUTING.md ./Application/ImageWtf/Website/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Blur/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/parse/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/Intake/packages/read/CONTRIBUTING.md ./Application/IntakeNomNom/NPM/NomNom/examples/csv/CONTRIBUTING.md ./Application/IntakeNomNom/Website/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroDenoDeploy/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroSSTTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/AstroStarterTemplate/CONTRIBUTING.md ./Application/Lightrix/NPM/Experiment/ui/select/CONTRIBUTING.md ./Application/Lightrix/NPM/FlightsWatch/CONTRIBUTING.md ./Application/Lightrix/NPM/OverBrowser/CONTRIBUTING.md ./Application/Lightrix/Website/CONTRIBUTING.md ./Application/MythemeCloud/NPM/Mytheme/CONTRIBUTING.md ./Application/MythemeCloud/Website/CONTRIBUTING.md ./Application/NeovimSpace/Website/CONTRIBUTING.md ./Application/NikolaRHristov/DeploymentDelete/CONTRIBUTING.md ./Application/NikolaRHristov/Dotfile/.config/base/CONTRIBUTING.md ./Application/NikolaRHristov/Dotfile/.oh-my-posh/scripts/bluesky/CONTRIBUTING.md ./Application/NikolaRHristov/Dotfile/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/API/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroConvert/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDashboard/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroDeadLinks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroNetworks/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/AstroShortURLs/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/BenchPiscina/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Bot/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Dispatch/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/FilesPipe/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Script/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/TypeScriptESBuild/CONTRIBUTING.md ./Application/NikolaRHristov/NPM/Walle/CONTRIBUTING.md ./Application/NikolaRHristov/Website/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/API/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Common/CONTRIBUTING.md ./Application/NowPlayingCard/NPM/Socket/CONTRIBUTING.md ./Application/Playform/NPM/BlankWebStarter/CONTRIBUTING.md ./Application/Playform/NPM/CreateBlankWebStarter/CONTRIBUTING.md ./Application/Playform/Website/CONTRIBUTING.md ./Application/ReturnThief/Website/CONTRIBUTING.md ./Application/RoundedCorners/Application/CONTRIBUTING.md ./Application/RoundedCorners/Website/CONTRIBUTING.md ./Application/SileaJS/Website/CONTRIBUTING.md ./Application/SouqRs/Website/CONTRIBUTING.md ./Application/windowsdock/database/CONTRIBUTING.md ./Application/windowsdock/Website/CONTRIBUTING.md ./Application/YesMaintain/NPM/Script/CONTRIBUTING.md
 #1692539899
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
 #1692540043
-code-insiders ./Application/AstroCommunity/AstroCompress/LICENSE ./Application/AstroCommunity/AstroCritters/LICENSE ./Application/AstroCommunity/AstroRome/LICENSE ./Application/AstroStarter/PACStack/Application/Content/LICENSE ./Application/AstroStarter/PACStack/Application/Website/LICENSE ./Application/AstroStarter/PACStack/LICENSE ./Application/BlackRainbowAI/NPM/BlackRainbow/LICENSE ./Application/BlackRainbowAI/Website/LICENSE ./Application/CrepesJS/NPM/Create/LICENSE ./Application/DoccerPage/Website/LICENSE ./Application/GrenadierJS/Website/LICENSE ./Application/HalleSoftware/NPM/API/LICENSE ./Application/HalleSoftware/NPM/Socket/LICENSE ./Application/HalleSoftware/Website/LICENSE ./Application/ImageWtf/Website/LICENSE ./Application/IntakeNomNom/NPM/Blur/LICENSE ./Application/IntakeNomNom/NPM/Intake/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/parse/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/read/LICENSE ./Application/IntakeNomNom/NPM/NomNom/examples/csv/LICENSE ./Application/IntakeNomNom/Website/LICENSE ./Application/Lightrix/NPM/AstroDenoDeploy/LICENSE ./Application/Lightrix/NPM/AstroSSTTemplate/LICENSE ./Application/Lightrix/NPM/AstroStarterTemplate/LICENSE ./Application/Lightrix/NPM/Experiment/ui/select/LICENSE ./Application/Lightrix/NPM/FlightsWatch/LICENSE ./Application/Lightrix/NPM/OverBrowser/LICENSE ./Application/Lightrix/Website/LICENSE ./Application/MythemeCloud/NPM/Mytheme/LICENSE ./Application/MythemeCloud/Website/LICENSE ./Application/NeovimSpace/Website/LICENSE ./Application/NikolaRHristov/DeploymentDelete/LICENSE ./Application/NikolaRHristov/dot/.config/base/LICENSE ./Application/NikolaRHristov/dot/.oh-my-posh/scripts/bluesky/LICENSE ./Application/NikolaRHristov/dot/LICENSE ./Application/NikolaRHristov/NPM/API/LICENSE ./Application/NikolaRHristov/NPM/AstroConvert/LICENSE ./Application/NikolaRHristov/NPM/AstroDashboard/LICENSE ./Application/NikolaRHristov/NPM/AstroDeadLinks/LICENSE ./Application/NikolaRHristov/NPM/AstroNetworks/LICENSE ./Application/NikolaRHristov/NPM/AstroShortURLs/LICENSE ./Application/NikolaRHristov/NPM/BenchPiscina/LICENSE ./Application/NikolaRHristov/NPM/Bot/LICENSE ./Application/NikolaRHristov/NPM/Dispatch/LICENSE ./Application/NikolaRHristov/NPM/FilesPipe/LICENSE ./Application/NikolaRHristov/NPM/Script/LICENSE ./Application/NikolaRHristov/NPM/TypeScriptESBuild/LICENSE ./Application/NikolaRHristov/NPM/Walle/LICENSE ./Application/NikolaRHristov/Website/LICENSE ./Application/NowPlayingCard/NPM/API/LICENSE ./Application/NowPlayingCard/NPM/Common/LICENSE ./Application/NowPlayingCard/NPM/Socket/LICENSE ./Application/Playform/NPM/BlankWebStarter/LICENSE ./Application/Playform/NPM/CreateBlankWebStarter/LICENSE ./Application/Playform/Website/LICENSE ./Application/ReturnThief/Website/LICENSE ./Application/RoundedCorners/Application/LICENSE ./Application/RoundedCorners/Website/LICENSE ./Application/SileaJS/Website/LICENSE ./Application/SouqRs/Website/LICENSE ./Application/windowsdock/database/LICENSE ./Application/windowsdock/Website/LICENSE ./Application/YesMaintain/NPM/Script/LICENSE
+code-insiders ./Application/AstroCommunity/AstroCompress/LICENSE ./Application/AstroCommunity/AstroCritters/LICENSE ./Application/AstroCommunity/AstroRome/LICENSE ./Application/AstroStarter/PACStack/Application/Content/LICENSE ./Application/AstroStarter/PACStack/Application/Website/LICENSE ./Application/AstroStarter/PACStack/LICENSE ./Application/BlackRainbowAI/NPM/BlackRainbow/LICENSE ./Application/BlackRainbowAI/Website/LICENSE ./Application/CrepesJS/NPM/Create/LICENSE ./Application/DoccerPage/Website/LICENSE ./Application/GrenadierJS/Website/LICENSE ./Application/HalleSoftware/NPM/API/LICENSE ./Application/HalleSoftware/NPM/Socket/LICENSE ./Application/HalleSoftware/Website/LICENSE ./Application/ImageWtf/Website/LICENSE ./Application/IntakeNomNom/NPM/Blur/LICENSE ./Application/IntakeNomNom/NPM/Intake/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/nomnom/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/parse/LICENSE ./Application/IntakeNomNom/NPM/Intake/packages/read/LICENSE ./Application/IntakeNomNom/NPM/NomNom/examples/csv/LICENSE ./Application/IntakeNomNom/Website/LICENSE ./Application/Lightrix/NPM/AstroDenoDeploy/LICENSE ./Application/Lightrix/NPM/AstroSSTTemplate/LICENSE ./Application/Lightrix/NPM/AstroStarterTemplate/LICENSE ./Application/Lightrix/NPM/Experiment/ui/select/LICENSE ./Application/Lightrix/NPM/FlightsWatch/LICENSE ./Application/Lightrix/NPM/OverBrowser/LICENSE ./Application/Lightrix/Website/LICENSE ./Application/MythemeCloud/NPM/Mytheme/LICENSE ./Application/MythemeCloud/Website/LICENSE ./Application/NeovimSpace/Website/LICENSE ./Application/NikolaRHristov/DeploymentDelete/LICENSE ./Application/NikolaRHristov/Dotfile/.config/base/LICENSE ./Application/NikolaRHristov/Dotfile/.oh-my-posh/scripts/bluesky/LICENSE ./Application/NikolaRHristov/Dotfile/LICENSE ./Application/NikolaRHristov/NPM/API/LICENSE ./Application/NikolaRHristov/NPM/AstroConvert/LICENSE ./Application/NikolaRHristov/NPM/AstroDashboard/LICENSE ./Application/NikolaRHristov/NPM/AstroDeadLinks/LICENSE ./Application/NikolaRHristov/NPM/AstroNetworks/LICENSE ./Application/NikolaRHristov/NPM/AstroShortURLs/LICENSE ./Application/NikolaRHristov/NPM/BenchPiscina/LICENSE ./Application/NikolaRHristov/NPM/Bot/LICENSE ./Application/NikolaRHristov/NPM/Dispatch/LICENSE ./Application/NikolaRHristov/NPM/FilesPipe/LICENSE ./Application/NikolaRHristov/NPM/Script/LICENSE ./Application/NikolaRHristov/NPM/TypeScriptESBuild/LICENSE ./Application/NikolaRHristov/NPM/Walle/LICENSE ./Application/NikolaRHristov/Website/LICENSE ./Application/NowPlayingCard/NPM/API/LICENSE ./Application/NowPlayingCard/NPM/Common/LICENSE ./Application/NowPlayingCard/NPM/Socket/LICENSE ./Application/Playform/NPM/BlankWebStarter/LICENSE ./Application/Playform/NPM/CreateBlankWebStarter/LICENSE ./Application/Playform/Website/LICENSE ./Application/ReturnThief/Website/LICENSE ./Application/RoundedCorners/Application/LICENSE ./Application/RoundedCorners/Website/LICENSE ./Application/SileaJS/Website/LICENSE ./Application/SouqRs/Website/LICENSE ./Application/windowsdock/database/LICENSE ./Application/windowsdock/Website/LICENSE ./Application/YesMaintain/NPM/Script/LICENSE
 #1692540092
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; ' \;
 #1692540258
@@ -3899,7 +3899,7 @@ cd /d/Developer/
 #1693107321
 dum prepublishOnly --filter=nikolahristov-web
 #1693165089
-cd Application/NikolaRHristov/dot/
+cd Application/NikolaRHristov/Dotfile/
 #1693165099
 cd .oh-my-bash/
 #1693165102
@@ -4866,7 +4866,7 @@ find -iname .git -execdir git status \;
 #1693438205
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1693438829
-/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/star-used.sh 
 #1693439973
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ' \;
 #1693440781
@@ -4922,7 +4922,7 @@ find -iname nikola
 #1693449454
 find -iname *nikola*
 #1693449501
-cd Application/NikolaRHristov/dot/.config/
+cd Application/NikolaRHristov/Dotfile/.config/
 #1693449505
 cd base/
 #1693449510
@@ -4932,7 +4932,7 @@ cd /d/Developer/
 #1693450607
 find -iname .git -execdir bash -c ' git add . ; git commit -m "squash!" ; git sync ; ' \; 
 #1693453157
-cd Application/NikolaRHristov/dot/.config/
+cd Application/NikolaRHristov/Dotfile/.config/
 #1693453161
 cd base/
 #1693453166
@@ -4946,7 +4946,7 @@ dum install
 #1693453681
 pnpm install -g
 #1693454126
-cd Application/NikolaRHristov/dot/.config/base/
+cd Application/NikolaRHristov/Dotfile/.config/base/
 #1693454141
 ci package.json 
 #1693454482
@@ -5090,7 +5090,7 @@ corepack prepare pnpm@8.7.1 --activate
 #1693545395
 corepack enable
 #1693545525
-cd Application/NikolaRHristov/dot/.config/base/
+cd Application/NikolaRHristov/Dotfile/.config/base/
 #1693545528
 s
 #1693545538
@@ -5112,7 +5112,7 @@ dum install
 #1693546651
 dum prepublishOnly --filter=astro-compress
 #1693546743
-cd Application/NikolaRHristov/dot/.config/base/
+cd Application/NikolaRHristov/Dotfile/.config/base/
 #1693546745
 ci package.json 
 #1693547455
@@ -5160,11 +5160,11 @@ gh org -h
 #1693551330
 cd /d/Developer/
 #1693551346
-/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/dot/Script/security-organization.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
 #1693553055
 cd /d/Developer/
 #1693553061
-/d/Developer/Application/NikolaRHristov/dot/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/dot/Script/security-organization.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; /d/Developer/Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
 #1693553615
 dum build --filter=marti-content
 #1693553623
@@ -5356,7 +5356,7 @@ find -iname .git -execdir git add . \;
 #1693651046
 bmd ; dum install ; dum prepublishOnly
 #1693651221
-/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/star-used.sh 
 #1693652300
 cd Application/QualityCoutureMN/ls
 #1693652302
@@ -5458,7 +5458,7 @@ lychee.exe -c lychee.toml Application/
 #1693740558
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1693743349
-/d/Developer/Application/NikolaRHristov/dot/Script/star-used.sh 
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/star-used.sh 
 #1693744504
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1693747624
@@ -6110,7 +6110,7 @@ dum instlal
 #1694189563
 dum install
 #1694189576
-cd Application/NikolaRHristov/dot/.config/base/
+cd Application/NikolaRHristov/Dotfile/.config/base/
 #1694189577
 bmd
 #1694189584
@@ -6122,7 +6122,7 @@ dum install
 #1694189427
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
 #1694195828
-cd Application/NikolaRHristov/dot/.config/base/
+cd Application/NikolaRHristov/Dotfile/.config/base/
 #1694195831
 dum install
 #1694195870
@@ -8313,3 +8313,11 @@ serve Documentation/
 cd /d/Developer/
 #1696011948
 bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696015520
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696016336
+find -name dot
+#1696016348
+mv Application/NikolaRHristov/Dotfile/ Application/NikolaRHristov/Dotfile
+#1696017128
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;

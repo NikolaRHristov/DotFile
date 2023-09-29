@@ -2,18 +2,18 @@
 path = .config/bash-completion
 url = ssh://git@github.com/NikolaRHristov/bash-completion.git
 
-[submodule ".config/nvim"]
-path = .config/nvim
-url = ssh://git@github.com/NikolaRHristov/nvim.git
+[submodule ".config/NVIM"]
+path = .config/NVIM
+url = ssh://git@github.com/NikolaRHristov/NVIM.git
 
-[submodule ".oh-my-bash"]
-path = .oh-my-bash
-url = ssh://git@github.com/NikolaRHristov/.oh-my-bash.git
+[submodule "Bash"]
+path = Bash
+url = ssh://git@github.com/NikolaRHristov/Bash.git
 
-[submodule ".oh-my-posh"]
-path = .oh-my-posh
-url = ssh://git@github.com/NikolaRHristov/.oh-my-posh.git
+[submodule "Powershell"]
+path = Powershell
+url = ssh://git@github.com/NikolaRHristov/Powershell.git
 
-[submodule ".oh-my-zsh"]
-path = .oh-my-zsh
-url = ssh://git@github.com/NikolaRHristov/.oh-my-zsh.git
+[submodule "ZSH"]
+path = ZSH
+url = ssh://git@github.com/NikolaRHristov/ZSH.git

@@ -28,7 +28,7 @@ export default {
 		"prettier-plugin-packagejson",
 	],
 	tailwindConfig:
-		"D:\\Developer\\Application\\NikolaRHristov\\dot\\.config\\base\\tailwind.js",
+		"D:\\Developer\\Application\\NikolaRHristov\\Dotfile\\.config\\base\\tailwind.js",
 	overrides: [
 		{
 			files: "*.astro",
