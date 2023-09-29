@@ -8311,3 +8311,5 @@ npm show typescript-esbuild versions
 serve Documentation/
 #1696011937
 cd /d/Developer/
+#1696011948
+bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
