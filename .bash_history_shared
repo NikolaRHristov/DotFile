@@ -8223,3 +8223,91 @@ find -iname .npmignore | tr '\r\n' ' '
 code-insiders $(find -iname .npmignore | tr '\r\n' ' ' )
 #1695988504
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695998925
+grep -lrnw 'uses:' --exclude-dir=Target | tr -n '\r\n' ' '
+#1695998930
+grep -lrnw 'uses:' --exclude-dir=Target | tr '\r\n' ' '
+#1695999069
+grep -lrnw 'uses:' --exclude-dir=Target --exclude-dir=node_modules | tr '\r\n' ' '
+#1695999106
+grep -lrnw 'uses:' --exclude-dir=Target --exclude-dir=node_modules 
+#1695999120
+grep -rnw 'uses:' --exclude-dir=Target --exclude-dir=node_modules 
+#1695999835
+dum prepublishOnly --filter=@yesmaintain/scripts
+#1695999853
+dum prepublishOnly --filter=@yesmaintain/script
+#1696000091
+find -iwholename=*yesmaintain*.ts
+#1696000094
+find -iwholename*yesmaintain*.ts
+#1696000096
+find -iwholename *yesmaintain*.ts
+#1696000108
+find -iwholename *yesmaintain*.ts | tr '\r\n' ''
+#1696000110
+find -iwholename *yesmaintain*.ts | tr '\r\n' ' '
+#1696000116
+code-insiders $(find -iwholename *yesmaintain*.ts | tr '\r\n' ' ')
+#1696001574
+code-insiders $(find -iwholename *TypeScriptESBuild*.ts | tr '\r\n' ' ')
+#1696002757
+dum prepublishOnly --filter=typescript-esbuild ; 
+#1696002792
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696003065
+\find ./Documentation -type f -name '*.html' | xargs sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g'
+#1696003082
+\find ./Documentation -type f -name '*.html' 
+#1696003087
+\find Documentation -type f -name '*.html' 
+#1696003092
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696003094
+\find Documentation -type f -name '*.html' 
+#1696003096
+\find ./Documentation -type f -name '*.html' | xargs sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g'
+#1696003104
+\find ./Documentation -type f -name '*.html' | xargs sed -i *.bak --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g'
+#1696003217
+\find ./Documentation -type f -name '*.html' -exec sed -i -E --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' \;
+#1696003232
+\find ./Documentation -type f -name '*.html' -exec sed -i -E --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' {} + \;
+#1696003235
+\find ./Documentation -type f -name '*.html' -exec sed -i -E --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' {} \;
+#1696003269
+cd /d/Developer/
+#1696003274
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696004287
+find -iname package.json -execdir sort-package-json \;
+#1696004499
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696004503
+sort-package-json
+#1696004550
+VERSION="0.2.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696005022
+npm show typescript-esbuild versions
+#1696005395
+dum prepublishOnly --filter=typescript-esbuild ; serve Documentation/
+#1696005502
+dum prepublishOnly ; serve Documentation/
+#1696005518
+dum prepublishOnly 
+#1696005693
+dum prepublishOnly ; serve Documentation/
+#1696006349
+cd /d/Developer/
+#1696006350
+bmd
+#1696010336
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696010358
+VERSION="0.2.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696010723
+npm show typescript-esbuild versions
+#1696010770
+serve Documentation/
+#1696011937
+cd /d/Developer/
