@@ -8221,3 +8221,5 @@ find -iname .npmignore \;
 find -iname .npmignore | tr '\r\n' ' ' 
 #1695987531
 code-insiders $(find -iname .npmignore | tr '\r\n' ' ' )
+#1695988504
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
