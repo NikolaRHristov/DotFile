@@ -8213,3 +8213,11 @@ cd /d/Developer/
 Maintain
 #1695985628
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1695987478
+find -iname .npmignore
+#1695987509
+find -iname .npmignore \; 
+#1695987522
+find -iname .npmignore | tr '\r\n' ' ' 
+#1695987531
+code-insiders $(find -iname .npmignore | tr '\r\n' ' ' )
