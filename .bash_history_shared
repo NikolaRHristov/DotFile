@@ -10834,3 +10834,27 @@ cd Application/
 cd Content/
 #1697269307
 rm -rf ORIG_HEAD 
+#1697269346
+cd ../Website/
+#1697269349
+cd ../
+#1697269353
+cd ..
+#1697269355
+cd ../
+#1697269357
+cd apl
+#1697269359
+cd Application/
+#1697269361
+cd Website/
+#1697269374
+git remote -v
+#1697269376
+git pull
+#1697269398
+git remote set-url origin ssh://git@github.com/AstroStarter/PAC-STAC-Website.git
+#1697269402
+git pull
+#1697269418
+cd /d/Developer/
