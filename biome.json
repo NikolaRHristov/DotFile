@@ -42,7 +42,8 @@
 			"nursery": {
 				"all": true,
 				"useImportRestrictions": "off",
-				"noConfusingVoidType": "off"
+				"noConfusingVoidType": "off",
+				"noExcessiveComplexity": "off"
 			},
 			"performance": {
 				"all": true
