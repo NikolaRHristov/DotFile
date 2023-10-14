@@ -10788,3 +10788,9 @@ ci Application/NikolaRHristov/NPM/TypeScriptESBuild/node_modules/typedoc/package
 dum install
 #1697263923
 cld
+#1697264286
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697264864
+dum install
+#1697265159
+dum prepublishOnly --filter=@website/nikolahristov_tech
