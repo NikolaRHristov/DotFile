@@ -10613,3 +10613,100 @@ git remote -v
 git remote remove origin
 #1697254204
 git remote add origin ssh://git@github.com/astro-community/AstroBiome.git
+#1697253956
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697254540
+git add .
+#1697254545
+cd ../AstroRome/
+#1697254546
+git add .
+#1697254552
+git commit -m "squash!
+"
+#1697254556
+git push
+#1697254564
+dum prepublishOnly
+#1697254641
+git add .
+#1697254643
+dum prepublishOnly
+#1697254942
+grep -rnw biome
+#1697254991
+dum prepublishOnly
+#1697255059
+git  add .
+#1697255199
+cd ../../Vestniche/Website/
+#1697255201
+git status
+#1697255203
+git pull
+#1697255207
+git remote -v
+#1697255218
+git branch --set-upstream-to=origin/main main 
+#1697255220
+git pull
+#1697255228
+git pull --allow-unrelated-histories 
+#1697255309
+git fetch upstream
+#1697255315
+git merge upstream/main 
+#1697255317
+cd /d/Developer/
+#1697255319
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697255394
+cd Application/AstroCommunity/AstroBiome/
+#1697255396
+git remote -v
+#1697255464
+git remote set-url origin ssh://git@github.com/NikolaRHristov/AstroBiome.git
+#1697255466
+git push
+#1697255512
+git add .
+#1697255515
+git commit -m "squash!"
+#1697255522
+git push
+#1697255612
+cd /d/Developer/
+#1697255615
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697256294
+dum prepublishOnly
+#1697256627
+cd Application/AstroCommunity/AstroBiome/
+#1697256633
+dum install -E @biomejs/biome
+#1697256737
+npm show @biomejs/backend-jsonrpc
+#1697256750
+npm show @biomejs/js-api
+#1697256764
+npm show @biomejs/wasm-nodejs
+#1697256789
+dum install -E @biomejs/backend-jsonrpc @biomejs/js-api @biomejs/wasm-nodejs
+#1697256880
+dum install -E @biomejs/biome
+#1697256920
+dum install
+#1697256960
+npm show typescript versions
+#1697256984
+npm show typescript
+#1697256994
+dum install
+#1697257056
+cd /d/Developer/
+#1697257085
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697257097
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697257057
+cld
