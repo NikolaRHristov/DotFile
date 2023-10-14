@@ -81,14 +81,14 @@ export LANG=en_US.UTF-8
 export EDITOR="nano"
 export ARCHFLAGS="-arch x86_64"
 
-if [[ $PS1 && -f ~/.config/bash-completion/bash_completion ]]; then
+if [[ $PS1 && -f ~/.config/Completion/bash_completion ]]; then
 	# shellcheck source=/dev/null
-	. ~/.config/bash-completion/bash_completion
+	. ~/.config/Completion/bash_completion
 fi
 
-if [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]]; then
+if [[ $PS1 && -f /usr/share/Completion/bash_completion ]]; then
 	# shellcheck source=/dev/null
-	. /usr/share/bash-completion/bash_completion
+	. /usr/share/Completion/bash_completion
 fi
 
 if [ -f "$HOME/.cargo/env" ]; then
