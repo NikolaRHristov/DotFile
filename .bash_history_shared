@@ -10597,3 +10597,19 @@ mv Bash /d/Developer/Backup/
 mv ZSH /d/Developer/Backup/
 #1697251054
 mv Powershell /d/Developer/Backup/
+#1697253937
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697254167
+cd Application/AstroCommunity/
+#1697254169
+cd AstroRome/
+#1697254171
+git remote -v
+#1697254173
+cd ../AstroBiome/
+#1697254175
+git remote -v
+#1697254181
+git remote remove origin
+#1697254204
+git remote add origin ssh://git@github.com/astro-community/AstroBiome.git
