@@ -8321,3 +8321,2279 @@ find -name dot
 mv Application/NikolaRHristov/Dotfile/ Application/NikolaRHristov/Dotfile
 #1696017128
 find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696021651
+dum prepublishOnly 
+#1696023765
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696061823
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696061825
+dum prepublishOnly 
+#1696062194
+cd Documentation/
+#1696062199
+wrangler pages deployment tail
+#1696062351
+pnpm update -g
+#1696062370
+which wrangler
+#1696062376
+cd /d/tools/.pnpm-global/
+#1696062379
+cd bin/
+#1696062382
+cd ../5/
+#1696062384
+ncu -u
+#1696062394
+pnpm install -g
+#1696062410
+cd /d/Developer/
+#1696062415
+wrangler pages deployment tail
+#1696065809
+dum install -D -E @cloudflare/workers-types --filter=typescript-esbuild 
+#1696065978
+dum prepublishOnly --filter=typescript-esbuild
+#1696066873
+wrangler pages deployment tail
+#1696066881
+wrangler pages deployment tail -h
+#1696066887
+wrangler pages deployment tail --project-name typescript-esbuild
+#1696066933
+wrangler pages deployment tail 
+#1696066986
+dum prepublishOnly --filter=typescript-esbuild
+#1696067138
+bmd ; dum install
+#1696067659
+dum prepublishOnly --filter=typescript-esbuild
+#1696067808
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696067846
+dum prepublishOnly --filter=typescript-esbuild
+#1696067814
+wrangler pages dev Documentation/ --compatibility-flags="nodejs_compat"
+#1696067877
+dum prepublishOnly
+#1696067861
+wrangler pages dev Documentation/ --compatibility-flags="nodejs_compat"  --compatibility-date=2023-09-30
+#1696068076
+dum prepublishOnly
+#1696068091
+wrangler pages dev Documentation/
+#1696068951
+wrangler pages -h dev Documentation/ --compatibility-flags="nodejs_compat" --compatibility-date=2023-09-30
+#1696068965
+wrangler pages -h
+#1696068976
+wrangler pages deploy Documentation/ --compatibility-flags="nodejs_compat" --compatibility-date=2023-09-30
+#1696069011
+wrangler pages dev Documentation/
+#1696069206
+wrangler pages dev Documentation/ --compatibility-flags="nodejs_compat"
+#1696069217
+wrangler pages dev Documentation/ --compatibility-flags="nodejs_compat" --compatibility-date=2023-09-30
+#1696069368
+wrangler pages dev Documentation/
+#1696070056
+wrangler pages
+#1696070067
+wrangler pages deploy
+#1696070071
+wrangler pages deploy Documentation/
+#1696070158
+wrangler pages dev Documentation/
+#1696071281
+wrangler pages dev Documentation/ --compatibility-flags="nodejs_compat" --compatibility-date=2023-09-25
+#1696071370
+cd Documentation/
+#1696071375
+wrangler pages dev . --compatibility-flags="nodejs_compat" --compatibility-date=2023-09-25
+#1696071434
+cd ../
+#1696071443
+wrangler pages dev Documentation/ --compatibility-flags="nodejs_compat" --compatibility-date=2023-09-25
+#1696073119
+sed -
+#1696073120
+sed -h
+#1696073248
+dum prepublishOnly
+#1696073763
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\\1Function/:g'
+#1696073767
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\\1Function/:g' + 
+#1696073771
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\\1Function/:g' {} \;
+#1696073774
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\\1Function/:g' {} 
+#1696073778
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' {} 
+#1696073785
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' {} + ;
+#1696073786
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' {} + 
+#1696073789
+find -type f -iwholename '*/Documentation/*.html' -exec sed -i '' -e --regexp-extended 's:(href="([^"]+)?)functions/:\1Function/:g' {} \;
+#1696073815
+find Documentation/ -iname *.html
+#1696073820
+\find Documentation/ -iname *.html \;
+#1696073822
+\find Documentation/ -iname *.html
+#1696073839
+\find Documentation/ -iname *.html -exec sed -i '' -E 's:(href=".*)functions/:\\1Function/:g'
+#1696073841
+\find Documentation/ -iname *.html -exec sed -i '' -E 's:(href=".*)functions/:\\1Function/:g' {}
+#1696073842
+\find Documentation/ -iname *.html -exec sed -i '' -E 's:(href=".*)functions/:\\1Function/:g' {} 
+#1696073844
+\find Documentation/ -iname *.html -exec sed -i '' -E 's:(href=".*)functions/:\\1Function/:g' {} \;
+#1696073847
+\find Documentation/ -iname *.html -exec sed -i '' -E 's:(href=".*)functions/:\1Function/:g' {} \;
+#1696073869
+\find Documentation/ -iname *.html -exec sed -i -E 's:(href=".*)functions/:\1Function/:g'  \;
+#1696073871
+\find Documentation/ -iname *.html -exec sed -i -E 's:(href=".*)functions/:\1Function/:g' {} \;
+#1696073882
+dum prepublishOnly
+#1696073887
+\find Documentation/ -iname *.html -exec sed -i -E 's:(href=".*)functions/:\1Function/:g' {} \;
+#1696073937
+dum prepublishOnly
+#1696074009
+VERSION="0.2.2" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696074078
+npm show typescript-esbuild version
+#1696075757
+dum install -D -E @mxssfd/typedoc-theme
+#1696075816
+dum prepublishOnly
+#1696075920
+VERSION="0.2.3" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696076247
+npm show typescript-esbuild version
+#1696076252
+cd /d/Developer/
+#1696076258
+bmd ; dum install ; dum prepublishOnly
+#1696077429
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696077431
+dum prepublishOnly
+#1696087045
+cd /d/Developer/
+#1696087047
+dum prepublishOnly
+#1696089205
+dum prepublishOnly --filter=typescript-esbuild
+#1696089259
+cd Application/NikolaRHristov/NPM/
+#1696089264
+cd TypeScriptESBuild/
+#1696089268
+dum prepublishOnly --filter=typescript-esbuild
+#1696089274
+dum prepublishOnly
+#1696089252
+bmd
+#1696091037
+serve Documentation/
+#1696091057
+dum prepublishOnly
+#1696095183
+serve Documentation/
+#1696095209
+dum prepublishOnly
+#1696096680
+cd ../../
+#1696096691
+git clone ssh://git@github.com/NikolaRHristov/typedoc.git
+#1696097148
+cd -
+#1696097150
+dum prepublishOnly
+#1696097909
+rm -rf /d/Developer/Application/NikolaRHristov/typedoc/
+#1696098168
+dum prepublishOnly
+#1696098182
+serve Documentation/
+#1696098341
+rm -rf Documentation/ ; dum prepublishOnly
+#1696098766
+npm show typescript-esbuild
+#1696098816
+rm -rf Documentation/ ; dum prepublishOnly
+#1696099457
+rm -rf Documentation/ ; dum prepublishOnly ; serve Documentation/
+#1696099790
+VERSION="0.2.4" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696100636
+cd /d/Developer/
+#1696100640
+npm show typescript-esbuild
+#1696100707
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696100712
+dum install -E @types/node
+#1696100769
+VERSION="0.2.4" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696100933
+rm -rf Documentation/ ; dum prepublishOnly ; serve Documentation/
+#1696101113
+cd /d/Developer/
+#1696101286
+npm show typescript-esbuild
+#1696101480
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696101494
+dum prepublishOnly
+#1696101120
+bmd ; dum install ; dum prepublishOnly
+#1696101643
+cd /d/Developer/
+#1696101977
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696101988
+VERSION="0.2.5" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696101654
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696102188
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696102287
+VERSION="0.2.5" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696102434
+cd /d/Developer/
+#1696102606
+dum prepublishOnly --filter=files-pipe
+#1696102435
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696102978
+dum prepublishOnly --filter=files-pipe
+#1696102670
+bmd ; dum install 
+#1696103465
+dum prepublishOnly --filter=files-pipe
+#1696104129
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696104153
+bmd ; cld ; dum install ; dum prepublishOnly 
+#1696105803
+dum install
+#1696106363
+dum prepublishOnly --filter=files-pipe
+#1696108178
+dum install
+#1696109089
+dum prepublishOnly --filter=files-pipe
+#1696109167
+dum prepublishOnly --filter=typescript-esbuild
+#1696109444
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696111138
+dum prepublishOnly
+#1696155824
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696155900
+dum prepublishOnly --filter=typescript-esbuild
+#1696156337
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696156990
+dum prepublishOnly --filter=typescript-esbuild ;
+#1696157917
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696158995
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696158999
+dum install -E typedoc-plugin-keywords
+#1696159186
+dum prepublishOnly ; serve Documentation/
+#1696159580
+dum prepublishOnly
+#1696159606
+cd /d/Developer/
+#1696159629
+npm show typescript-esbuild version
+#1696159611
+cld ; bmd ; dum install 
+#1696160200
+dum install 
+#1696160924
+dum prepublishOnly
+#1696161036
+dum prepublishOnly --filter=typescript-esbuild
+#1696161220
+dum prepublishOnly --filter=files-pipe
+#1696164643
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696164697
+dum prepublishOnly 
+#1696164711
+dum prepublishOnly ; serve Documentation/
+#1696171016
+dum prepublishOnly
+#1696172682
+dum prepublishOnly ; serve Documentation/
+#1696172875
+dum prepublishOnly
+#1696173096
+dum prepublishOnly ; serve Documentation/
+#1696176350
+cd /d/Developer/
+#1696176354
+dum prepublishOnly
+#1696177131
+cd -
+#1696177133
+dum prepublishOnly ; serve Documentation/
+#1696177915
+cd /d/Developer/
+#1696177927
+dum prepublishOnly
+#1696178369
+cd -
+#1696178371
+dum prepublishOnly ; serve Documentation/
+#1696178588
+cd -
+#1696178590
+dum prepublishOnly ; serve Documentation/
+#1696181885
+npm show typescript-esbuild version
+#1696181921
+VERSION="0.2.6" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696181934
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696181960
+VERSION="0.2.6" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696181978
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696182005
+VERSION="0.2.6" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696182127
+npm show typescript-esbuild version
+#1696182132
+cd /d/Developer/
+#1696182311
+cld ; bmd 
+#1696182707
+dum install
+#1696183422
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696183458
+VERSION="0.2.6" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696183465
+VERSION="0.2.7" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696183589
+cd /d/Developer/
+#1696183592
+npm show typescript-esbuild version
+#1696184191
+bmd ; dum install
+#1696184905
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696184908
+dum prepublishOnly ; serve Documentation/
+#1696186430
+npm show typescript-esbuild version
+#1696186442
+dum prepublishOnly ; serve Documentation/
+#1696186898
+npm show typescript-esbuild version
+#1696187094
+dum prepublishOnly ; serve Documentation/
+#1696187971
+VERSION="0.2.8" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696188080
+npm show typescript-esbuild version
+#1696188085
+cd /d/Developer/
+#1696188092
+bmd ; dum install ; dum prepublishOnly
+#1696188523
+dum prepublishOnly
+#1696189012
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696190324
+dum prepublishOnly --filter=astro-compress
+#1696191245
+find -iname Documentation
+#1696191249
+find -iname Documentation -exec rm -rf {} \;
+#1696191251
+dum prepublishOnly --filter=astro-compress
+#1696192362
+dum prepublishOnly
+#1696192042
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696192718
+dum prepublishOnly --filter=astro-compress
+#1696192735
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696193843
+dum prepublishOnly --filter=astro-compress
+#1696194138
+serve Application/AstroCommunity/AstroCompress/Documentation/
+#1696194228
+dum prepublishOnly --filter=astro-compress
+#1696194563
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696261095
+dum prepublishOnly
+#1696261603
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696263057
+dum prepublishOnly
+#1696263141
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696263149
+VERSION="0.2.9" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696263193
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696263228
+VERSION="0.2.9" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696264119
+cd /d/Developer/
+#1696264120
+bmd
+#1696265176
+dum install
+#1696265218
+dum prepublishOnly
+#1696275299
+swift
+#1696275673
+cld ; bmd 
+#1696276572
+dum instal
+#1696276574
+dum install
+#1696276199
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696277034
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696277043
+dum prepublishOnly ; serve Documentation/
+#1696281967
+dum prepublishOnly ; 
+#1696281984
+dum prepublishOnly ; serve Documentation/
+#1696282387
+VERSION="0.2.10" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696284920
+cd /d/Developer/
+#1696284930
+bmd ; dum install ; dum prepublishOnly
+#1696286046
+dum prepublishOnly
+#1696286913
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696344955
+dum prepublishOnly --filter=astro-compress
+#1696345644
+cd Application/NikolaRHristov/NikolaRHristov/
+#1696345647
+cd ../Website/
+#1696345654
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
+#1696346117
+cd /d/Developer/
+#1696346118
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696346277
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696346803
+dum prepublishOnly
+#1696347422
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696349924
+cd Application/NikolaRHristov/NPM/
+#1696349929
+mkdir TypeDocCloudflare
+#1696349930
+cd Type
+#1696349932
+cd TypeDocCloudflare/
+#1696349934
+git init
+#1696349971
+cd ../
+#1696349978
+mv TypeDocCloudflare TypeDocTheme
+#1696349986
+cd TypeDocTheme/
+#1696349988
+git init
+#1696349990
+npm init
+#1696350020
+cd ../
+#1696350026
+mv TypeDocTheme TypeDocCloudflare
+#1696350029
+cd TypeDocCloudflare/
+#1696350034
+npm init
+#1696353798
+dum install -D -E typescript-esbuild
+#1696353819
+ci tsconfig.json
+#1696353895
+ci package.json 
+#1696354533
+dum install -E typedoc
+#1696354879
+dum install
+#1696355176
+cd /d/Developer/
+#1696355180
+cld ; bmd ; dum install
+#1696356650
+dum install
+#1696357388
+dum prepublishOnly
+#1696357530
+cd Application/NikolaRHristov/NPM/TypeDocCloudflare/
+#1696357533
+dum install -D -E esbuild-plugin-copy
+#1696359196
+dum prepublishOnly
+#1696359308
+serve Documentation/
+#1696359320
+cd /d/Developer/
+#1696359322
+dum install
+#1696359799
+dum prepublishOnly --filter=typedoc-cloudflare
+#1696361316
+ssh pub.colonq.computer
+#1696361361
+cat ~/.ssh/Personal\ Computer.pub
+#1696361383
+sshagent_init 
+#1696361391
+ssh-add ~/.ssh/Personal\ Computer.ppk.SSH 
+#1696361395
+ssh-add ~/.ssh/Personal\ Computer.openssh.SSH 
+#1696361817
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696361824
+dum prepublishOnly
+#1696361862
+cd ../TypeDocCloudflare/
+#1696361864
+dum prepublishOnly
+#1696361886
+cd /d/Developer/
+#1696361889
+dum install
+#1696362810
+dum prepublishOnly --filter=typedoc-cloudflare
+#1696362819
+dum prepublishOnly --filter=typescript-esbuild
+#1696363480
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696363518
+dum prepublishOnly --filter=typescript-esbuild
+#1696363522
+dum prepublishOnly
+#1696363527
+serve Documentation/
+#1696363555
+dum prepublishOnly ; serve Documentation/
+#1696363853
+npm show typescript-esbuild version
+#1696363922
+VERSION="0.2.11" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696365236
+VERSION="0.2.12" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696365303
+npm show typescript-esbuild version
+#1696365336
+cd /d/Developer/
+#1696365340
+cld ; bmd ; dum install
+#1696366773
+dum prepublishOnly ; serve Documentation/
+#1696366999
+cd Application/AstroCommunity/AstroCompress/
+#1696367001
+git status
+#1696367161
+cd /d/Developer/
+#1696367163
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696370485
+dum prepublishOnly ; serve Documentation/
+#1696371142
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696373770
+dum prepublishOnly ; 
+#1696374542
+dum prepublishOnly --filter=typescript-esbuild
+#1696374759
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696375866
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696375870
+VERSION="0.2.13" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696376063
+npm show typescript-esbuild version
+#1696375846
+bmd
+#1696424977
+dum prepublishOnly --filter=typescript-esbuild ; serve Application/NikolaRHristov/NPM/TypeScriptESBuild/Documentation/
+#1696425818
+dum install -E --filter=typescript-esbuild typedoc-plugin-remove-references
+#1696425915
+dum prepublishOnly --filter=typescript-esbuild
+#1696426388
+npm show typescript-esbuild version
+#1696426588
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1696426649
+VERSION="0.2.14" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696428530
+dum prepublishOnly --filter=typescript-esbuild
+#1696428548
+dum prepublishOnly
+#1696429494
+git add .
+#1696429496
+dum prepublishOnly
+#1696429510
+VERSION="0.2.14" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1696430020
+npm show typescript-esbuild version
+#1696430147
+cd /d/Developer/
+#1696430148
+bmd
+#1696430516
+cld ; bmd ; dum install
+#1696433400
+dum install
+#1696433904
+npm show typescript version
+#1696433915
+which tsc
+#1696433921
+pnpm install -g typescript@next
+#1696434524
+grep -lrnw typescript": 
+#1696434529
+grep -lrnw 'typescript":'
+#1696434531
+grep -lrnw 'typescript":' .
+#1696434576
+$(grep -lrnw 'typescript":' . | tr -d '\n\r')
+#1696434591
+$(grep -lrnw 'typescript":' . | tr '\n\r' '' )
+#1696434593
+$(grep -lrnw 'typescript":' . | tr '\n\r' ' ')
+#1696434602
+code-insiders $(grep -lrnw 'typescript":' . | tr '\n\r' ' ')
+#1696434611
+grep -lrnw 'typescript":' .
+#1696434661
+grep -lrnw 'typescript":' . --exclude-dir node_modules
+#1696434678
+grep -lrnw 'typescript":' . --exclude-dir node_modules | tr -d '\n' ' '
+#1696434681
+grep -lrnw 'typescript":' . --exclude-dir node_modules | tr '\n' ' '
+#1696434693
+grep -lrnw 'typescript":' . --exclude-dir node_modules | tr '\r\n' ' '
+#1696434714
+ci $(grep -lrnw 'typescript":' . --exclude-dir node_modules | tr '\r\n' ' ')
+#1696434803
+find -iname .git fetch upstream
+#1696434805
+find -iname .git fetch upstream \;
+#1696434813
+find -iname .git -execdir git fetch upstream \;
+#1696435538
+Maintain
+#1696435798
+dum install
+#1696436248
+dum prepublishOnly
+#1696436273
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696440896
+cd Application/NikolaRHristov/
+#1696440902
+cd Application/NikolaRHristov/Website/
+#1696440904
+dum start
+#1696441287
+cd /d/Developer/
+#1696441369
+cd Application/NikolaRHristov/
+#1696441374
+cd Website/
+#1696441379
+ci package.json astro.config.ts 
+#1696441663
+cd /d/Developer/
+#1696441672
+dum prepublishOnly --filter=astro-rome
+#1696453644
+dum prepublishOnly --filter=@yesmaintain/script
+#1696453771
+dum prepublishOnly --filter=@we
+#1696453837
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1696454041
+dum prepublishOnly --filter=@website/playform_cloud
+#1696454104
+cd Application/AstroCommunity/AstroRome/
+#1696454107
+cd node_modules/
+#1696454113
+find *.json
+#1696454118
+find -iname *.json
+#1696455523
+cd rome/
+#1696455528
+ci configuration_schema.json 
+#1696455538
+pwd
+#1696455556
+cd ../
+#1696455559
+cd \@rometools/
+#1696455561
+cd backend-jsonrpc/
+#1696455564
+cd src/
+#1696455566
+cd ../
+#1696455570
+cd js-api/
+#1696455571
+ks
+#1696455577
+cd ../
+#1696455579
+cd wasm-nodejs/
+#1696455582
+cd ../../
+#1696455583
+cd ../
+#1696455663
+cd /d/Developer/
+#1696455669
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1696455711
+dum prepublishOnly --filter=@website/playform_cloud
+#1696457862
+dum prepublishOnly
+#1696460603
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696505738
+bmd ; dum install ; dum prepublishOnly
+#1696508897
+dum prepublishOnly --filter=files-pipe
+#1696517258
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696521748
+cd Application/Lightrix/
+#1696521752
+cd NPM/
+#1696521754
+cd ../Cargo/
+#1696521760
+cd compress/
+#1696521763
+cd app/
+#1696521770
+mv Library/ Function
+#1696521773
+cd Function/
+#1696521776
+cd ../
+#1696521779
+cd Utility/
+#1696521789
+mv Logger ../
+#1696521794
+cd ../
+#1696521800
+mkdir Class
+#1696521802
+cd Logger/
+#1696521805
+cd Source/
+#1696521809
+ci lib.rs 
+#1696521824
+cd ../../
+#1696521827
+mv Logger Function/
+#1696521831
+cd Class/
+#1696521833
+cd ../
+#1696521843
+nano ~/.aliases 
+#1696521898
+nano ~/.functions 
+#1696522066
+cd Application/
+#1696522069
+nano ~/.functions 
+#1696522090
+cd Application/
+#1696522095
+ls -lha
+#1696522104
+ls -ha
+#1696522108
+ls -a
+#1696522110
+ls -h
+#1696522112
+\ls -h
+#1696522116
+\ls -ha
+#1696522119
+\ls -lha
+#1696522121
+\ls -ha
+#1696522123
+\ls -a
+#1696522126
+\ls -h
+#1696522127
+\ls -a
+#1696522131
+\ls -w
+#1696522140
+man ls
+#1696522143
+ls -h
+#1696522146
+ls --help
+#1696522174
+ls -Z
+#1696522178
+ls -l
+#1696522216
+ls -F
+#1696522218
+\ls -F
+#1696522230
+nano ~/.aliases 
+#1696522319
+source ~/.bashrc 
+#1696522352
+cd /dev/
+#1696522355
+cd /d/Developer/
+#1696522357
+nano ~/.aliases 
+#1696522376
+nano ~/.functions 
+#1696522402
+source ~/.bashrc 
+#1696522406
+cd
+#1696522408
+source ~/.bashrc 
+#1696522413
+nano ~/.functions 
+#1696523822
+cd /d/Developer/
+#1696523825
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696527513
+ci 
+#1696528840
+cd Application/NikolaRHristov/
+#1696528842
+cd ../Playform/Cargo/
+#1696528844
+cd Compress/
+#1696528846
+cd ../
+#1696528848
+mv inn/ inn2
+#1696528853
+mv inn2 Innkeeper
+#1696528855
+cd Compress/
+#1696528856
+l
+#1696528856
+s
+#1696528858
+lc
+#1696529517
+cargo --version
+#1696529521
+rustup update
+#1696529817
+cd ../
+#1696529819
+cd /d/Developer/
+#1696529832
+cd Application/Playform/Cargo/JustCompress/
+#1696529834
+cargo build
+#1696530423
+rustc --explain E0277
+#1696530554
+cargo build
+#1696530563
+cargo 
+#1696530565
+cargo c
+#1696530567
+cargo 
+#1696536331
+cargo c
+#1696536380
+cargo build
+#1696536726
+cd ../Compress/
+#1696536785
+cargo init
+#1696536791
+cargo init -h
+#1696536799
+rm -rf ./*
+#1696536805
+rm -rf ./.*
+#1696536808
+rm -rf ./.* ./*
+#1696536810
+cargo init -h
+#1696536841
+cargo init --lib
+#1696537525
+cargo c
+#1696537603
+cargo build
+#1696538374
+cargo check
+#1696538399
+cd ../Files/
+#1696538399
+cargo check
+#1696540249
+cd Source/Function/
+#1696540252
+cd By
+#1696540343
+cargo init --lib
+#1696540449
+cargo build
+#1696540464
+cargo add tokio
+#1696540480
+cargo build
+#1696542679
+cd ../
+#1696542681
+cd../
+#1696542682
+cd ../
+#1696542683
+sl
+#1696542685
+cd ../
+#1696542782
+cargo check
+#1696543656
+pwd
+#1696543665
+cargo check
+#1696545100
+pwd
+#1696545275
+cargo check
+#1696547181
+cargo install cargo-fuzz
+#1696547587
+cargo check
+#1696548180
+cd Application/NikolaRHristov/Website/
+#1696548183
+dum start
+#1696548186
+dum install 
+#1696548234
+cd /d/Developer/
+#1696548236
+dum install
+#1696548467
+dum start
+#1696548481
+dum prepublishOnly --filter=files-pipe
+#1696548491
+npx @turbo/codemod update
+#1696549620
+dum prepublishOnly --filter=files-pipe
+#1696551382
+dum prepublishOnly
+#1696551599
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696561559
+conda
+#1696561571
+winget search conda
+#1696561586
+winget install --id Anaconda.Anaconda3 -i
+#1696612728
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696615225
+cd Application/Playform/
+#1696615235
+cdn
+#1696615237
+cd NPM/
+#1696615241
+cd ../Cargo/
+#1696615549
+cd /d/Developer/
+#1696615552
+dum prepublishOnly
+#1696615765
+cd Application/Playform/Cargo/
+#1696615766
+cd Files/
+#1696615769
+cargo -h
+#1696615775
+cargo init -h
+#1696615845
+cargo init --lib --edition 2021 
+#1696616029
+echo $CARGO_HOME
+#1696616043
+ci ~/.cargo/config.toml
+#1696616189
+cargo build
+#1696616345
+cargo new Pipe --lib
+#1696616358
+cargo new Source/Pipe --lib
+#1696616384
+\find /d/Developer/Application/NikolaRHristov/NPM/FilesPipe/Source/ -iname *.ts 
+#1696618050
+mkdir -p Source/Function/
+#1696618050
+mkdir -p Source/Signature/
+#1696618050
+mkdir -p Source/Structure/
+#1696618461
+touch Source/Structure/Files.rs
+#1696618461
+touch Source/Function/Apply.rs
+#1696618461
+touch Source/Function/By.rs
+#1696618461
+touch Source/Function/Bytes.rs
+#1696618461
+touch Source/Function/In.rs
+#1696618461
+touch Source/Function/Merge.rs
+#1696618461
+touch Source/Function/Not.rs
+#1696618461
+touch Source/Function/Pipe.rs
+#1696618461
+touch Source/Signature/Action.rs
+#1696618461
+touch Source/Signature/Apply.rs
+#1696618461
+touch Source/Signature/Buffer.rs
+#1696618461
+touch Source/Signature/By.rs
+#1696618461
+touch Source/Signature/Bytes.rs
+#1696618461
+touch Source/Signature/Cache.rs
+#1696618461
+touch Source/Signature/Dir.rs
+#1696618461
+touch Source/Signature/Exclude.rs
+#1696618461
+touch Source/Signature/File.rs
+#1696618461
+touch Source/Signature/Files.rs
+#1696618461
+touch Source/Signature/In.rs
+#1696618462
+touch Source/Signature/Logger.rs
+#1696618462
+touch Source/Signature/Merge.rs
+#1696618462
+touch Source/Signature/Option.rs
+#1696618462
+touch Source/Signature/Path.rs
+#1696618462
+touch Source/Signature/Pipe.rs
+#1696618462
+touch Source/Signature/Plan.rs
+#1696618462
+touch Source/Structure/Option.rs
+#1696618874
+cargo check
+#1696618931
+cargo build
+#1696618972
+rm -rf target/
+#1696618973
+cargo build
+#1696618977
+rm -rf target/
+#1696620312
+cargo run
+#1696620486
+cargo install cargo-watch
+#1696620591
+cargo watch "build --release"
+#1696620908
+cargo watch -x "build --release"
+#1696620926
+cargo watch -x "run --release"
+#1696624927
+find -iname *.rs
+#1696615237
+cd NPM/
+#1696615241
+cd ../Cargo/
+#1696615549
+cd /d/Developer/
+#1696615552
+dum prepublishOnly
+#1696615765
+cd Application/Playform/Cargo/
+#1696615766
+cd Files/
+#1696615769
+cargo -h
+#1696615775
+cargo init -h
+#1696615845
+cargo init --lib --edition 2021 
+#1696616029
+echo $CARGO_HOME
+#1696616043
+ci ~/.cargo/config.toml
+#1696616345
+cargo new Pipe --lib
+#1696616358
+cargo new Source/Pipe --lib
+#1696616384
+\find /d/Developer/Application/NikolaRHristov/NPM/FilesPipe/Source/ -iname *.ts 
+#1696618050
+mkdir -p Source/Function/
+#1696618050
+mkdir -p Source/Signature/
+#1696618050
+mkdir -p Source/Structure/
+#1696618461
+touch Source/Structure/Files.rs
+#1696618461
+touch Source/Function/Apply.rs
+#1696618461
+touch Source/Function/By.rs
+#1696618461
+touch Source/Function/Bytes.rs
+#1696618461
+touch Source/Function/In.rs
+#1696618461
+touch Source/Function/Merge.rs
+#1696618461
+touch Source/Function/Not.rs
+#1696618461
+touch Source/Function/Pipe.rs
+#1696618461
+touch Source/Signature/Action.rs
+#1696618461
+touch Source/Signature/Apply.rs
+#1696618461
+touch Source/Signature/Buffer.rs
+#1696618461
+touch Source/Signature/By.rs
+#1696618461
+touch Source/Signature/Bytes.rs
+#1696618461
+touch Source/Signature/Cache.rs
+#1696618461
+touch Source/Signature/Dir.rs
+#1696618461
+touch Source/Signature/Exclude.rs
+#1696618461
+touch Source/Signature/File.rs
+#1696618461
+touch Source/Signature/Files.rs
+#1696618461
+touch Source/Signature/In.rs
+#1696618462
+touch Source/Signature/Logger.rs
+#1696618462
+touch Source/Signature/Merge.rs
+#1696618462
+touch Source/Signature/Option.rs
+#1696618462
+touch Source/Signature/Path.rs
+#1696618462
+touch Source/Signature/Pipe.rs
+#1696618462
+touch Source/Signature/Plan.rs
+#1696618462
+touch Source/Structure/Option.rs
+#1696618874
+cargo check
+#1696618973
+cargo build
+#1696618977
+rm -rf target/
+#1696620312
+cargo run
+#1696620486
+cargo install cargo-watch
+#1696620591
+cargo watch "build --release"
+#1696620908
+cargo watch -x "build --release"
+#1696620926
+cargo watch -x "run --release"
+#1696624927
+find -iname *.rs
+#1696625035
+mkdir ./Source/Function/Apply/
+#1696625035
+cd ./Source/Function/Apply/
+#1696625035
+mkdir ./Source/Function/Binary/
+#1696625035
+cd ./Source/Function/Binary/
+#1696625035
+mkdir ./Source/Function/By/
+#1696625035
+cd ./Source/Function/By/
+#1696625035
+mkdir ./Source/Function/Bytes/
+#1696625035
+cd ./Source/Function/Bytes/
+#1696625035
+mkdir ./Source/Function/In/
+#1696625035
+cd ./Source/Function/In/
+#1696625036
+mkdir ./Source/Function/Merge/
+#1696625036
+cd ./Source/Function/Merge/
+#1696625036
+mkdir ./Source/Function/Not/
+#1696625036
+cd ./Source/Function/Not/
+#1696625036
+mkdir ./Source/Function/Pipe/
+#1696625036
+cd ./Source/Function/Pipe/
+#1696625036
+mkdir ./Source/Signature/Action/
+#1696625036
+cd ./Source/Signature/Action/
+#1696625036
+mkdir ./Source/Signature/Apply/
+#1696625036
+cd ./Source/Signature/Apply/
+#1696625037
+mkdir ./Source/Signature/Buffer/
+#1696625037
+cd ./Source/Signature/Buffer/
+#1696625037
+mkdir ./Source/Signature/By/
+#1696625037
+cd ./Source/Signature/By/
+#1696625037
+mkdir ./Source/Signature/Bytes/
+#1696625037
+cd ./Source/Signature/Bytes/
+#1696625037
+mkdir ./Source/Signature/Cache/
+#1696625037
+cd ./Source/Signature/Cache/
+#1696625037
+mkdir ./Source/Signature/Dir/
+#1696625037
+cd ./Source/Signature/Dir/
+#1696625038
+mkdir ./Source/Signature/Exclude/
+#1696625038
+cd ./Source/Signature/Exclude/
+#1696625038
+mkdir ./Source/Signature/File/
+#1696625038
+cd ./Source/Signature/File/
+#1696625038
+mkdir ./Source/Signature/Files/
+#1696625038
+cd ./Source/Signature/Files/
+#1696625038
+mkdir ./Source/Signature/In/
+#1696625038
+cd ./Source/Signature/In/
+#1696625038
+mkdir ./Source/Signature/Logger/
+#1696625038
+cd ./Source/Signature/Logger/
+#1696625038
+mkdir ./Source/Signature/Merge/
+#1696625038
+cd ./Source/Signature/Merge/
+#1696625039
+mkdir ./Source/Signature/Option/
+#1696625039
+cd ./Source/Signature/Option/
+#1696625039
+mkdir ./Source/Signature/Path/
+#1696625039
+cd ./Source/Signature/Path/
+#1696625039
+mkdir ./Source/Signature/Pipe/
+#1696625039
+cd ./Source/Signature/Pipe/
+#1696625039
+mkdir ./Source/Signature/Plan/
+#1696625039
+cd ./Source/Signature/Plan/
+#1696625039
+mkdir ./Source/Structure/Files/
+#1696625039
+cd ./Source/Structure/Files/
+#1696625040
+mkdir ./Source/Structure/Option/
+#1696625040
+cd ./Source/Structure/Option/
+#1696625040
+cargo init --lib 
+#1696625040
+cd -
+#1696625126
+find -iname src
+#1696625131
+find -iname src -exec rm -rf {} \;
+#1696625142
+cargo check
+#1696615549
+cd /d/Developer/
+#1696615552
+dum prepublishOnly
+#1696615765
+cd Application/Playform/Cargo/
+#1696615766
+cd Files/
+#1696615769
+cargo -h
+#1696615775
+cargo init -h
+#1696615845
+cargo init --lib --edition 2021 
+#1696616029
+echo $CARGO_HOME
+#1696616043
+ci ~/.cargo/config.toml
+#1696616345
+cargo new Pipe --lib
+#1696616358
+cargo new Source/Pipe --lib
+#1696616384
+\find /d/Developer/Application/NikolaRHristov/NPM/FilesPipe/Source/ -iname *.ts 
+#1696618050
+mkdir -p Source/Function/
+#1696618050
+mkdir -p Source/Signature/
+#1696618050
+mkdir -p Source/Structure/
+#1696618461
+touch Source/Structure/Files.rs
+#1696618461
+touch Source/Function/Apply.rs
+#1696618461
+touch Source/Function/By.rs
+#1696618461
+touch Source/Function/Bytes.rs
+#1696618461
+touch Source/Function/In.rs
+#1696618461
+touch Source/Function/Merge.rs
+#1696618461
+touch Source/Function/Not.rs
+#1696618461
+touch Source/Function/Pipe.rs
+#1696618461
+touch Source/Signature/Action.rs
+#1696618461
+touch Source/Signature/Apply.rs
+#1696618461
+touch Source/Signature/Buffer.rs
+#1696618461
+touch Source/Signature/By.rs
+#1696618461
+touch Source/Signature/Bytes.rs
+#1696618461
+touch Source/Signature/Cache.rs
+#1696618461
+touch Source/Signature/Dir.rs
+#1696618461
+touch Source/Signature/Exclude.rs
+#1696618461
+touch Source/Signature/File.rs
+#1696618461
+touch Source/Signature/Files.rs
+#1696618461
+touch Source/Signature/In.rs
+#1696618462
+touch Source/Signature/Logger.rs
+#1696618462
+touch Source/Signature/Merge.rs
+#1696618462
+touch Source/Signature/Option.rs
+#1696618462
+touch Source/Signature/Path.rs
+#1696618462
+touch Source/Signature/Pipe.rs
+#1696618462
+touch Source/Signature/Plan.rs
+#1696618462
+touch Source/Structure/Option.rs
+#1696618973
+cargo build
+#1696618977
+rm -rf target/
+#1696620312
+cargo run
+#1696620486
+cargo install cargo-watch
+#1696620591
+cargo watch "build --release"
+#1696620908
+cargo watch -x "build --release"
+#1696620926
+cargo watch -x "run --release"
+#1696624927
+find -iname *.rs
+#1696625126
+find -iname src
+#1696625131
+find -iname src -exec rm -rf {} \;
+#1696625142
+cargo check
+#1696625181
+mkdir ./Source/Function/Apply/
+#1696625182
+cd ./Source/Function/Apply/
+#1696625182
+mkdir ./Source/Function/Binary/
+#1696625182
+cd ./Source/Function/Binary/
+#1696625182
+mkdir ./Source/Function/By/
+#1696625182
+cd ./Source/Function/By/
+#1696625182
+mkdir ./Source/Function/Bytes/
+#1696625182
+cd ./Source/Function/Bytes/
+#1696625182
+mkdir ./Source/Function/In/
+#1696625182
+cd ./Source/Function/In/
+#1696625182
+mkdir ./Source/Function/Merge/
+#1696625182
+cd ./Source/Function/Merge/
+#1696625182
+mkdir ./Source/Function/Not/
+#1696625182
+cd ./Source/Function/Not/
+#1696625182
+mkdir ./Source/Function/Pipe/
+#1696625182
+cd ./Source/Function/Pipe/
+#1696625182
+mkdir ./Source/Signature/Action/
+#1696625183
+cd ./Source/Signature/Action/
+#1696625183
+mkdir ./Source/Signature/Apply/
+#1696625183
+cd ./Source/Signature/Apply/
+#1696625183
+mkdir ./Source/Signature/Buffer/
+#1696625183
+cd ./Source/Signature/Buffer/
+#1696625183
+mkdir ./Source/Signature/By/
+#1696625183
+cd ./Source/Signature/By/
+#1696625183
+mkdir ./Source/Signature/Bytes/
+#1696625183
+cd ./Source/Signature/Bytes/
+#1696625183
+mkdir ./Source/Signature/Cache/
+#1696625183
+cd ./Source/Signature/Cache/
+#1696625183
+mkdir ./Source/Signature/Dir/
+#1696625183
+cd ./Source/Signature/Dir/
+#1696625183
+mkdir ./Source/Signature/Exclude/
+#1696625183
+cd ./Source/Signature/Exclude/
+#1696625184
+mkdir ./Source/Signature/File/
+#1696625184
+cd ./Source/Signature/File/
+#1696625184
+mkdir ./Source/Signature/Files/
+#1696625184
+cd ./Source/Signature/Files/
+#1696625184
+mkdir ./Source/Signature/In/
+#1696625184
+cd ./Source/Signature/In/
+#1696625184
+mkdir ./Source/Signature/Logger/
+#1696625184
+cd ./Source/Signature/Logger/
+#1696625184
+mkdir ./Source/Signature/Merge/
+#1696625184
+cd ./Source/Signature/Merge/
+#1696625184
+mkdir ./Source/Signature/Option/
+#1696625184
+cd ./Source/Signature/Option/
+#1696625184
+mkdir ./Source/Signature/Path/
+#1696625184
+cd ./Source/Signature/Path/
+#1696625185
+mkdir ./Source/Signature/Pipe/
+#1696625185
+cd ./Source/Signature/Pipe/
+#1696625185
+mkdir ./Source/Signature/Plan/
+#1696625185
+cd ./Source/Signature/Plan/
+#1696625185
+mkdir ./Source/Structure/Files/
+#1696625185
+cd ./Source/Structure/Files/
+#1696625185
+mkdir ./Source/Structure/Option/
+#1696625185
+cd ./Source/Structure/Option/
+#1696625185
+cargo init --lib 
+#1696625185
+cd -
+#1696625231
+touch ./Source/Function/Apply.rs
+#1696625231
+touch ./Source/Function/Binary.rs
+#1696625231
+touch ./Source/Function/By.rs
+#1696625231
+touch ./Source/Function/Bytes.rs
+#1696625231
+touch ./Source/Function/In.rs
+#1696625231
+touch ./Source/Function/Merge.rs
+#1696625231
+touch ./Source/Function/Not.rs
+#1696625231
+touch ./Source/Function/Pipe.rs
+#1696625231
+touch ./Source/Signature/Action.rs
+#1696625231
+touch ./Source/Signature/Apply.rs
+#1696625231
+touch ./Source/Signature/Buffer.rs
+#1696625231
+touch ./Source/Signature/By.rs
+#1696625231
+touch ./Source/Signature/Bytes.rs
+#1696625231
+touch ./Source/Signature/Cache.rs
+#1696625231
+touch ./Source/Signature/Dir.rs
+#1696625231
+touch ./Source/Signature/Exclude.rs
+#1696625231
+touch ./Source/Signature/File.rs
+#1696625232
+touch ./Source/Signature/Files.rs
+#1696625232
+touch ./Source/Signature/In.rs
+#1696625232
+touch ./Source/Signature/Logger.rs
+#1696625232
+touch ./Source/Signature/Merge.rs
+#1696625232
+touch ./Source/Signature/Option.rs
+#1696625232
+touch ./Source/Signature/Path.rs
+#1696625232
+touch ./Source/Signature/Pipe.rs
+#1696625232
+touch ./Source/Signature/Plan.rs
+#1696625232
+touch ./Source/Structure/Files.rs
+#1696625232
+touch ./Source/Structure/Option.rs
+#1696633807
+cd Application/Playform/Cargo/Files/
+#1696633809
+cd Source/
+#1696633831
+cd Function/
+#1696633833
+cd ../
+#1696633838
+cd Signature/
+#1696633844
+cd ../../
+#1696635369
+cd /d/Developer/
+#1696635377
+dum prepblishOnly --filter=files-pipe
+#1696635387
+dum prepublishOnly --filter=files-pipe
+#1696636238
+find Application/NikolaRHristov/NPM/FilesPipe/Target/ -iname *.js
+#1696636248
+\find Application/NikolaRHristov/NPM/FilesPipe/Target/ -iname *.js
+#1696636254
+find Application/NikolaRHristov/NPM/FilesPipe/Target/ -iname *.js
+#1696636258
+find Application/NikolaRHristov/NPM/FilesPipe/Target/ -iname '*.js'
+#1696636260
+\find Application/NikolaRHristov/NPM/FilesPipe/Target/ -iname '*.js'
+#1696684993
+cd C:\Program Files\PowerShell\7-preview\pwsh.runtimeconfig.json
+#1696685011
+ci /c/Program\ Files/PowerShell/7-preview/pwsh.runtimeconfig.json 
+#1696685394
+winget list powershell
+#1696685407
+winget uninstall Microsoft.PowerShell 
+#1696685469
+winget search powershell
+#1696685492
+winget install --id Microsoft.PowerShell.Preview -i
+#1696688616
+cd Application/Playform/Cargo/
+#1696688617
+cd Files/
+#1696688621
+cargo check
+#1696688681
+carg watch -x 'run --release'
+#1696692340
+cd Application/Playform/Cargo/
+#1696692352
+cd Files/
+#1696692358
+git add .
+#1696692361
+git commit -m "Initial commit"
+#1696692408
+gh repo create --private Playform/Files
+#1696692424
+git remote add origin ssh://git@github.com/Playform/Files.git
+#1696692425
+git push
+#1696692433
+cd Application/Playform/Cargo/Files/
+#1696692435
+git push
+#1696701572
+ci .env 
+#1696688685
+cargo watch -x 'run --release'
+#1696724363
+cd Application/Playform/Cargo/Files/
+#1696729744
+cd Application/Playform/Cargo/
+#1696729746
+cd Files/
+#1696729754
+cargo watch -x 'run --release'
+#1696737973
+cargo add proc_use
+#1696738065
+cargo build
+#1696740204
+cargo build -vv
+#1696740219
+cargo build -vvv
+#1696740238
+cargo clean
+#1696740240
+cargo build -vvv
+#1696740338
+cargo build
+#1696740362
+cargo add proc_use
+#1696740364
+cargo build
+#1696740423
+cargo build -vvv
+#1696743244
+cargo build
+#1696743656
+cargo watch -x 'run --release'
+#1696751302
+git add .
+#1696751306
+git commit -m "squash!"
+#1696751316
+git push
+#1696793828
+cd Application/
+#1696793832
+mkdir Vestniche
+#1696793834
+cd Vestniche/
+#1696793837
+mkdir Website
+#1696794102
+cd Website/
+#1696794564
+gh org
+#1696794568
+gh org --help
+#1696795530
+git init
+#1696795854
+git remote add ssh://git@github.com/Vestniche/Website.git
+#1696795858
+git remote add origin ssh://git@github.com/Vestniche/Website.git
+#1696796819
+gh repo create Vestniche/Website --public
+#1696796882
+git remote add upstream ssh://git@github.com/Playform/AstroStarterTemplate.git
+#1696796887
+git remote -v
+#1696796890
+git fetch upstream
+#1696796913
+git emrge upstream/main
+#1696796918
+git merge upstream/main
+#1696797008
+ci astro.config.ts 
+#1696797012
+cd /d/Developer/
+#1696797014
+dum install
+#1696797487
+cd Apl
+#1696797489
+cd Application/
+#1696797491
+cd Vestniche/
+#1696797491
+cd Website/
+#1696797495
+dum start
+#1696808635
+cd ../../Playform/f
+#1696808636
+cd ../../Playform/Cargo/
+#1696808642
+cd Files/
+#1696808658
+cargo check
+#1696808906
+cd ../../
+#1696808914
+sl
+#1696808942
+cd ../Vestniche/
+#1696808943
+cd Website/
+#1696808981
+cd /f/d
+#1696808982
+cd /d/Developer/
+#1696808986
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696809605
+cd Application/NikolaRHristov/Website/
+#1696809606
+git add. 
+#1696809609
+git add .
+#1696809613
+git commit -m "squash!"
+#1696809614
+git push
+#1696810371
+cd /d/Developer/
+#1696810412
+wrangler 
+#1696810418
+wrangler  pages
+#1696810425
+wrangler pages project
+#1696810428
+wrangler pages project -h
+#1696810431
+wrangler pages project list
+#1696808946
+dum start
+#1696815437
+cd Application/NikolaRHristov/Website/
+#1696815440
+dum prepublishOnly --filter=files-pipe
+#1696815452
+cd Application/Nwe
+#1696815454
+cd Application/NikolaRHristov/Website/
+#1696815457
+dum prepublishOnly --filter=files-pipe
+#1696815467
+cd /d/Developer/cd Application/NikolaRHristov/Website/
+#1696815471
+cd /d/Developer/Application/NikolaRHristov/Website/
+#1696815472
+dum prepublishOnly --filter=files-pipe
+#1696815486
+cd /d/Developer/
+#1696815489
+cd Application/NikolaRHristov/Website/
+#1696815499
+dum prepublishOnly
+#1696815551
+cat Target/Raw/Readme/NikolaRHristov/index.html 
+#1696815562
+ci Target/Raw/Readme/NikolaRHristov/index.html 
+#1696815617
+cd ../NikolaRHristov/
+#1696815618
+git add .
+#1696815624
+git commit -m "squash!"
+#1696815637
+git push --force
+#1696816027
+ci ../Website/.env
+#1696816114
+cd ../Website/
+#1696816116
+dum prepublishOnly
+#1696816209
+ci Target/Raw/Readme/NikolaRHristov/index.html 
+#1696816235
+cd /d/Developer/
+#1696816237
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696818412
+cld ; bmd ; dum install ; dum prepublishOnly
+#1696819142
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696824672
+cd Application/Playform/Cargo/Files/
+#1696824675
+cargo watch -x 'run --release'
+#1696824733
+cd /d/Developer/
+#1696824737
+dum install
+#1696824837
+cd /d/Developer/Application/Playform/Cargo/
+#1696824839
+cd Files/
+#1696967894
+ci ~/.gitig
+#1696967910
+ci ~/.gitconfig 
+#1696967970
+dum install
+#1696968576
+cd Application/NikolaRHristov/Website/
+#1696968581
+pnpm add typescript
+#1696968613
+sort-package-json
+#1696970851
+dum install
+#1696971393
+cd /d/Developer/
+#1696971513
+dum install
+#1696971672
+find -iname astro.config.ts -execdir ci package.json
+#1696971678
+find -iname astro.config.ts -execdir code-insiders package.json \;
+#1696971396
+bmd ; dum install
+#1696971774
+dum install
+#1696972226
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696977081
+find -iname pnpm-lock.yaml
+#1696977088
+find -iname pnpm-lock.yaml -exec rm -rf {} \;
+#1696977374
+dum install
+#1696977591
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696978099
+bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696986993
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696987651
+dum prepublishOnly
+#1696987863
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1696988755
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; " \;
+#1696988761
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; ' \;
+#1696988768
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697054461
+find -iname .git -execdir bash -c ' git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697055311
+./Application/NikolaRHristov/Dotfile/Script/list-star.sh 
+#1697055330
+pip install -U github-dependents-info
+#1697055371
+./Application/NikolaRHristov/Dotfile/Script/list-star.sh 
+#1697055966
+./Application/NikolaRHristov/Dotfile/Script/star-used.sh 
+#1697056917
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697061116
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697061119
+ci tsconfig.json 
+#1697061338
+dum prepublishOnly ; serve Documentation/
+#1697061807
+git add .
+#1697062621
+ci  CHANGELOG.md README.md package.json 
+#1697062637
+VERSION="0.2.15" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697062687
+Y
+#1697062691
+corepack prepare pnpm@8.9.0 --activate
+#1697062694
+corepack eanble
+#1697062697
+corepack enable
+#1697062733
+VERSION="0.2.15" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697062969
+npm show typescript version
+#1697062977
+npm show typescript-esbuild version
+#1697063006
+cd /b/d
+#1697063008
+cd /d/d
+#1697063010
+cd /d/Developer/
+#1697063212
+cd Application/MembershipInk/Website/
+#1697063221
+git clone ssh://git@github.com/MembershipInk/Website.git
+#1697063223
+git clone ssh://git@github.com/MembershipInk/Website.git .
+#1697063234
+ci tsconfig.json 
+#1697063021
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697063325
+git remote add upstream ssh://git@github.com/Playform/AstroStarterTemplate.git
+#1697063329
+git fetch upstream
+#1697063355
+git merge upstream/main
+#1697063360
+git add .
+#1697063364
+git commit -m "squash!"
+#1697063365
+git push
+#1697063378
+git merge --allow-unrelated-histories upstream/main 
+#1697063470
+bmd
+#1697064812
+find -iname .git -execdir bash -c ' git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697068805
+bmd ; dum install ; dum prepublishOnly
+#1697069949
+cd Application/NikolaRHristov/Website/
+#1697069564
+find -iname .git -execdir bash -c ' git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697078251
+bmd ; dum install ; dum prepublishOnly ;
+#1697078764
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1697078784
+ci package.json CHANGELOG.md 
+#1697078789
+npm show files-pipe version
+#1697080271
+cd /d/Developer/
+#1697080452
+npm show files-pipe version
+#1697080510
+dum install
+#1697080273
+bmd
+#1697080530
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697082305
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697082572
+dum prepublishOnly --filter=astro-starter-template
+#1697084227
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697084278
+dum prepublishOnly --filter=astro-starter-template
+#1697088109
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697088153
+dum prepublishOnly --filter=astro-starter-template
+#1697089869
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697091067
+dum prepublishOnly --filter=astro-starter-template
+#1697096824
+cd /d/Developer/
+#1697096854
+cld ; bmd ; dum install ; dum prepublishonly
+#1697097409
+dum install ; dum prepublishonly
+#1697097542
+dum prepublishonly
+#1697097546
+dum prepublishOnly --filter=astro-starter-template
+#1697100906
+bmd
+#1697101083
+find -iname .git -execdir bash -c ' git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697102489
+dum prepublishOnly --filter=astro-starter-template
+#1697103243
+ls node_modules/rome/configuration_schema.json 
+#1697104378
+dum prepublishOnly --filter=astro-starter-template
+#1697152701
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697154427
+dum install ; dum prepublishOnly
+#1697154637
+dum install
+#1697162224
+dum prepublishOnly --filter=astro-starter-template
+#1697164918
+dum install
+#1697165408
+dum prepublishOnly --filter=astro-starter-template
+#1697168973
+./Application/NikolaRHristov/Dotfile/Script/settings-organization.sh 
+#1697170675
+dum prepublishOnly --filter=astro-starter-template
+#1697176787
+cd /d/Developer/
+#1697176789
+dum prepublishOnly --filter=astro-starter-template
+#1697186437
+cd Application/Playform/NPM/AstroStarterTemplate/
+#1697186441
+dum prepublishOnly
+#1697186531
+cd /d/Developer/
+#1697186533
+dum prepublishOnly --filter=astro-starter-template
+#1697186562
+find -iname Documentation -type d
+#1697186625
+find -name Documentation -type d -exec rm -rf {} \;
+#1697186657
+find iname firebase.ts -exec code-insders {} \;
+#1697186628
+dum prepublishOnly --filter=astro-starter-template
+#1697186660
+find -iname firebase.ts -exec code-insders {} \;
+#1697186663
+find -iname firebase.ts -exec code-insiders {} \;
+#1697187007
+dum prepublishOnly --filter=astro-starter-template
+#1697187410
+find -name Object -type d
+#1697187429
+find -name Object -type d -exec code-insiders {}/.test \;
+#1697187075
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697187574
+dum prepublishOnly --filter=astro-starter-template
+#1697188051
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697189640
+dum prepublishOnly
+#1697189997
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697190946
+find -iname firebase.ts | tr - '\r\n' ' '
+#1697190949
+find -iname firebase.ts | tr '\r\n' ' '
+#1697190958
+code-insiders $(find -iname firebase.ts | tr '\r\n' ' ')
+#1697190899
+find -iname .git -execdir bash -c ' pwd ; git add . ; git status ; git commit -m "squash!" ; git sync ' \;
+#1697194025
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697197548
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697197818
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697197841
+ci CHANGELOG.md package.json README.md 
+#1697197874
+dum prepublishOnly
+#1697198182
+pnpm install -g @biomejs/biome
+#1697198249
+cd ../../NikolaRHristov/
+#1697198250
+cd ../
+#1697198252
+cd Dotfile/
+#1697198273
+biome -h
+#1697198277
+biome init
+#1697198548
+npm show astro-biome
+#1697198964
+gh repo create NikolaRHristov/AstroBiome --public
+#1697198974
+cd /d/Developer/Application/AstroCommunity/AstroBiome/
+#1697198975
+git add .
+#1697198979
+git commit -m "Initial commit"
+#1697198988
+git push
+#1697199111
+cd /d/Developer/
+#1697199132
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
+#1697200644
+gh auth login
+#1697200668
+/d/Developer/Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
+#1697200677
+gh whoami
+#1697243603
+bmd
+#1697243748
+./Application/NikolaRHristov/Dotfile/Script/list-star.sh 
+#1697244705
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697245683
+dum prepublishOnly --filter=@yesmaintain/script
+#1697246668
+cd /d/Developer/Application/NikolaRHristov/Dotfile/Bash
+#1697246672
+git status
+#1697246674
+ci .git
+#1697246389
+find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697250558
+grep -rnw .oh-my-bash
+#1697250570
+grep -rnw .oh-my-bash --exclude-dir node_modules
+#1697250593
+grep -lrnw .oh-my-bash --exclude-dir=node_modules .
+#1697250621
+cd Application/NikolaRHristov/Dotfile/
+#1697250626
+nano .gitmodules 
+#1697250633
+cd b
+#1697250635
+cd Bash/
+#1697250638
+nano .git
+#1697250648
+cd ../Powershell/
+#1697250651
+nano .git
+#1697250657
+cd ../
+#1697250663
+nano ZSH/
+#1697250666
+nano ZSH/.git
+#1697250702
+cd ZSH/
+#1697250703
+git status
+#1697250706
+cd ../
+#1697250709
+cd .git
+#1697250710
+cd modules/
+#1697250717
+mv .oh-my-bash Bash
+#1697250723
+mv .oh-my-posh Powershell
+#1697250726
+mv .oh-my-zsh ZSH
+#1697250728
+cd -
+#1697250730
+cd ../
+#1697250732
+cd ZSH/
+#1697250744
+git status
+#1697250749
+cat .git
+#1697250755
+cd ../.git/modules/ZSH/
+#1697250761
+cd ../
+#1697250772
+cd Powershell/
+#1697251003
+git status
+#1697251011
+cd ../
+#1697251029
+mkdir /d/Developer/Backup
+#1697251036
+mv Bash /d/Developer/Backup/
+#1697251047
+mv ZSH /d/Developer/Backup/
+#1697251054
+mv Powershell /d/Developer/Backup/

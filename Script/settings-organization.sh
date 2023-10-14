@@ -13,15 +13,15 @@ for E in "${array[@]}"; do
 done
 
 for ORG in "${ORGS[@]}"; do
-	EMAIL_BILLING="hello@lightrix.help"
-	EMAIL="hello@lightrix.help"
-	TWITTER="LGHTRX"
+	EMAIL_BILLING="hello@playform.cloud"
+	EMAIL="hello@playform.cloud"
+	TWITTER="PLFRMCLD"
 
 	case "$ORG" in
 		"Playform")
 			EMAIL_BILLING="hello@playform.cloud"
 			EMAIL="hello@playform.cloud"
-			TWITTER="LGHTRX"
+			TWITTER="PLFRMCLD"
 			;;
 		"windowsdock")
 			EMAIL_BILLING="hello@windowsdock.app"
@@ -29,8 +29,8 @@ for ORG in "${ORGS[@]}"; do
 			TWITTER="windowsdock"
 			;;
 		"NastyApplication")
-			EMAIL_BILLING="nasty@lightrix.help"
-			EMAIL="nasty@lightrix.help"
+			EMAIL_BILLING="nasty@playform.cloud"
+			EMAIL="nasty@playform.cloud"
 			TWITTER="NastyApplication"
 			;;
 		"RoundedCorners")
@@ -81,23 +81,23 @@ for ORG in "${ORGS[@]}"; do
 			TWITTER="HalleSoftware"
 			;;
 		"GrenadierJS")
-			EMAIL_BILLING="grenadier@lightrix.help"
-			EMAIL="grenadier@lightrix.help"
+			EMAIL_BILLING="grenadier@playform.cloud"
+			EMAIL="grenadier@playform.cloud"
 			TWITTER="GrenadierJS"
 			;;
 		"SileaJS")
-			EMAIL_BILLING="silea@lightrix.help"
-			EMAIL="silea@lightrix.help"
+			EMAIL_BILLING="silea@playform.cloud"
+			EMAIL="silea@playform.cloud"
 			TWITTER="SileaJS"
 			;;
 		"CrepesJS")
-			EMAIL_BILLING="crepes@lightrix.help"
-			EMAIL="crepes@lightrix.help"
+			EMAIL_BILLING="crepes@playform.cloud"
+			EMAIL="crepes@playform.cloud"
 			TWITTER="CrepesJS"
 			;;
 		"SouqRs")
-			EMAIL_BILLING="souq@lightrix.help"
-			EMAIL="souq@lightrix.help"
+			EMAIL_BILLING="souq@playform.cloud"
+			EMAIL="souq@playform.cloud"
 			TWITTER="SouqRs"
 			;;
 	esac
@@ -108,7 +108,7 @@ for ORG in "${ORGS[@]}"; do
 		-H "X-GitHub-Api-Version: 2022-11-28" \
 		orgs/"${ORG}" \
 		-f location='Bulgaria' \
-		-f company='Lightrix' \
+		-f company='Playform' \
 		-f billing_email=${EMAIL_BILLING} \
 		-f email=${EMAIL} \
 		-f twitter_username=${TWITTER} \
@@ -130,6 +130,6 @@ for ORG in "${ORGS[@]}"; do
 		-F secret_scanning_enabled_for_new_repositories=true \
 		-F secret_scanning_push_protection_enabled_for_new_repositories=true \
 		-F secret_scanning_push_protection_custom_link_enabled=true \
-		-F secret_scanning_push_protection_custom_link='https://link.lightrix.help/protection-push' \
+		-F secret_scanning_push_protection_custom_link='https://link.nikolahristov.tech/protection-push' \
 		--silent
 done

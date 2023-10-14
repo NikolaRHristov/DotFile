@@ -15,6 +15,7 @@ rm C:\Users\nikola\prettier.config.js
 rm C:\Users\nikola\rustfmt.toml
 rm C:\Users\nikola\tailwind.config.js
 rm C:\Users\nikola\rome.json
+rm C:\Users\nikola\biome.json
 
 mklink C:\Users\nikola\.aliases D:\Developer\Application\NikolaRHristov\Dotfile\.aliases
 mklink C:\Users\nikola\.bash_profile D:\Developer\Application\NikolaRHristov\Dotfile\.bash_profile
@@ -31,6 +32,7 @@ mklink /D C:\Users\nikola\ZSH D:\Developer\Application\NikolaRHristov\Dotfile\ZS
 mklink /D C:\Users\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
 mklink C:\Users\nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\Dotfile\prettier.config.js
 mklink C:\Users\nikola\rome.json D:\Developer\Application\NikolaRHristov\Dotfile\rome.json
+mklink C:\Users\nikola\biome.json D:\Developer\Application\NikolaRHristov\Dotfile\biome.json
 mklink C:\Users\nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\Dotfile\rustfmt.toml
 mklink C:\Users\nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\Dotfile\tailwind.config.js
 
@@ -45,6 +47,7 @@ rm D:\Developer\.prettierignore
 rm D:\Developer\.stylua.toml 
 rm D:\Developer\jsconfig.json 
 rm D:\Developer\rome.json 
+rm D:\Developer\biome.json 
 rm D:\Developer\rustfmt.toml 
 rm D:\Developer\tsconfig.json 
 
@@ -57,5 +60,6 @@ mklink D:\Developer\.prettierignore D:\Developer\Application\NikolaRHristov\Dotf
 mklink D:\Developer\.stylua.toml D:\Developer\Application\NikolaRHristov\Dotfile\.stylua.toml
 mklink D:\Developer\jsconfig.json D:\Developer\Application\NikolaRHristov\Dotfile\jsconfig.json
 mklink D:\Developer\rome.json D:\Developer\Application\NikolaRHristov\Dotfile\rome.json
+mklink D:\Developer\biome.json D:\Developer\Application\NikolaRHristov\Dotfile\biome.json
 mklink D:\Developer\rustfmt.toml D:\Developer\Application\NikolaRHristov\Dotfile\rustfmt.toml
 mklink D:\Developer\tsconfig.json D:\Developer\Application\NikolaRHristov\Dotfile\tsconfig.json

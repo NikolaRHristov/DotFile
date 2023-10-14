@@ -1,22 +1,28 @@
 {
-	"$schema": "node_modules/rome/configuration_schema.json",
-	"files": {
-		"maxSize": 5000000
+	"$schema": "https://biomejs.dev/schemas/1.2.2/schema.json",
+	"organizeImports": {
+		"enabled": true
 	},
 	"formatter": {
 		"enabled": true,
-		"formatWithErrors": false,
+		"formatWithErrors": true,
+		"indentWidth": 4,
 		"indentStyle": "tab",
 		"lineWidth": 80
 	},
 	"javascript": {
 		"formatter": {
+			"enabled": true,
+			"arrowParentheses": "always",
+			"indentStyle": "tab",
+			"indentWidth": 4,
+			"jsxQuoteStyle": "double",
+			"lineWidth": 80,
 			"quoteProperties": "asNeeded",
 			"quoteStyle": "double",
 			"semicolons": "always",
 			"trailingComma": "all"
-		},
-		"globals": []
+		}
 	},
 	"linter": {
 		"enabled": true,
@@ -24,39 +30,33 @@
 			"a11y": {
 				"all": true
 			},
+			"all": true,
 			"complexity": {
-				"all": true
+				"all": true,
+				"noForEach": "off",
+				"useLiteralKeys": "off"
 			},
 			"correctness": {
 				"all": true
 			},
 			"nursery": {
-				"all": true
+				"all": true,
+				"useImportRestrictions": "off"
 			},
 			"performance": {
 				"all": true
 			},
-			"recommended": true,
 			"security": {
 				"all": true
 			},
 			"style": {
 				"all": true,
-				"noCommaOperator": "off"
+				"useNamingConvention": "off"
 			},
 			"suspicious": {
 				"all": true,
-				"noAssignInExpressions": "off"
+				"noConsoleLog": "off"
 			}
 		}
-	},
-	"organizeImports": {
-		"enabled": true
-	},
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"root": ".",
-		"useIgnoreFile": true
 	}
 }
