@@ -10798,3 +10798,39 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1697266664
 dum prepublishOnly --filter=astro-starter-template
+#1697269080
+cd Application/AstroStarter/PAC-STAC/Application/Content/Source/
+#1697269085
+git remote -v
+#1697269086
+cd ../
+#1697269088
+git remote -v
+#1697269112
+git remote set-url origin ssh://git@github.com/AstroStarter/PAC-STAC-Content.git
+#1697269115
+git push
+#1697269119
+git sync
+#1697269127
+git pull
+#1697269239
+git status
+#1697269243
+git pull
+#1697269251
+git fetch
+#1697269255
+git pull
+#1697269281
+cd ../
+#1697269292
+ci .gitmodules 
+#1697269299
+cd .git/modules/
+#1697269300
+cd Application/
+#1697269302
+cd Content/
+#1697269307
+rm -rf ORIG_HEAD 
