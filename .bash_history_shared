@@ -10858,3 +10858,37 @@ git remote set-url origin ssh://git@github.com/AstroStarter/PAC-STAC-Website.git
 git pull
 #1697269418
 cd /d/Developer/
+#1697269937
+cd /d/Developer/Application/QualityCoutureMN/Website
+#1697269939
+git remote -v
+#1697269956
+git remote set-url origin ssh://git@github.com/QualityCoutureMN/Website.git
+#1697269960
+git sync
+#1697269420
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697270441
+dum prepublishOnly --filter=astro-starter-template
+#1697270778
+dum install
+#1697270806
+dum prepublishOnly --filter=astro-starter-template
+#1697270993
+npm show typescript-esbuild
+#1697271033
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697271036
+VERSION="0.2.16" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697271131
+cd /d/Developer/
+#1697271133
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697271134
+cd -
+#1697271136
+dum prepublishOnly --filter=astro-starter-template
+#1697271448
+biome rage
+#1697271554
+biome rage > text2.md

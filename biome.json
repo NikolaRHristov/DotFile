@@ -6,16 +6,15 @@
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": true,
-		"indentWidth": 4,
 		"indentStyle": "tab",
-		"lineWidth": 80
+		"lineWidth": 80,
+		"indentSize": 4
 	},
 	"javascript": {
 		"formatter": {
 			"enabled": true,
 			"arrowParentheses": "always",
 			"indentStyle": "tab",
-			"indentWidth": 4,
 			"jsxQuoteStyle": "double",
 			"lineWidth": 80,
 			"quoteProperties": "asNeeded",
