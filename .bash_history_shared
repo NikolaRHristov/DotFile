@@ -10928,3 +10928,11 @@ find -iname firebase.ts -exec code-insiders {} \;
 code-insiders $(find -iname firebase.ts | tr '\r\n')
 #1697280163
 code-insiders $(find -iname firebase.ts | tr '\r\n' ' ')
+#1697280235
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697285953
+dum prepublishOnly --filter=astro-starter-template
+#1697286244
+find -iname swup.ts
+#1697286252
+find -iname swup.ts -execdir mv swup.ts swup2.ts \;
