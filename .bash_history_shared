@@ -10710,3 +10710,77 @@ find -iname .git -execdir bash -c 'pwd ; git fetch upstream ; git merge upstream
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1697257057
 cld
+#1697257649
+dum install
+#1697258835
+find -iname package.json -execdir sort-package-json \;
+#1697259165
+dum install
+#1697260021
+cd Application/NikolaRHristov/Dotfile/
+#1697260025
+cd ZSH/
+#1697260032
+git remote -v
+#1697260051
+git remote add upstream ssh://git@github.com/ohmyzsh/ohmyzsh.git
+#1697260054
+git fetch upstream
+#1697260058
+git merge upstream/master 
+#1697260082
+git reset --hard
+#1697260086
+git clean -dfx
+#1697260090
+git merge upstream/master -X theirs
+#1697260100
+git add .
+#1697260103
+git commit
+#1697260132
+git push
+#1697260135
+cd ../Powershell/
+#1697260135
+git remote -v
+#1697260156
+git remtoe add upstream ssh://git@github.com/JanDeDobbeleer/oh-my-posh.git
+#1697260161
+git remote add  upstream ssh://git@github.com/JanDeDobbeleer/oh-my-posh.git
+#1697260165
+git fetch upstream
+#1697260176
+git merge upstream/main 
+#1697260199
+git reset --hard && git clean -dfx
+#1697260205
+git merge upstream/main -X theirs
+#1697260208
+rm -rf website/
+#1697260209
+git add .
+#1697260225
+git commit -m "squash!"
+#1697260227
+git push
+#1697260230
+cd ../Bash/
+#1697260230
+git remote -v
+#1697260267
+git remote add upstream ssh://git@github.com/ohmybash/oh-my-bash.git
+#1697260270
+git fetch upstream
+#1697260364
+git merge upstream/master -X theirs
+#1697260392
+git reset --hard && git clean -dfx
+#1697260394
+git merge upstream/master -X theirs
+#1697260433
+cd /d/Developer/
+#1697260435
+dum install
+#1697260917
+ci Application/NikolaRHristov/NPM/TypeScriptESBuild/node_modules/typedoc/package.json 
