@@ -10920,3 +10920,5 @@ bmd ; dum install
 dum install
 #1697279014
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697279777
+dum prepublishOnly --filter=astro-starter-template
