@@ -10892,3 +10892,9 @@ dum prepublishOnly --filter=astro-starter-template
 biome rage
 #1697271554
 biome rage > text2.md
+#1697271798
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697272941
+dum prepublishOnly --filter=astro-starter-template
+#1697273507
+find -iname biome.json

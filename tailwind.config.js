@@ -1,1 +1,1 @@
-module.exports = require("./.config/base/tailwind.js");
+export default (await import("./.config/base/tailwind.js")).default;

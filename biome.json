@@ -35,12 +35,14 @@
 				"noForEach": "off",
 				"useLiteralKeys": "off"
 			},
+
 			"correctness": {
 				"all": true
 			},
 			"nursery": {
 				"all": true,
-				"useImportRestrictions": "off"
+				"useImportRestrictions": "off",
+				"noConfusingVoidType": "off"
 			},
 			"performance": {
 				"all": true
