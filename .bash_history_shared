@@ -10936,3 +10936,21 @@ dum prepublishOnly --filter=astro-starter-template
 find -iname swup.ts
 #1697286252
 find -iname swup.ts -execdir mv swup.ts swup2.ts \;
+#1697286256
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697287667
+code-insiders $(find -iname astro.config.ts | tr '\r\n' ' ')
+#1697288087
+cd Application/NowPlayingCards/Website/
+#1697288089
+dum install
+#1697288490
+cd /d/Developer/
+#1697288619
+cd Application/NowPlayingCards/NPM/Common/
+#1697288622
+dum prepublishOnly
+#1697291334
+cd /d/Developer/
+#1697291337
+dum prepublishOnly
