@@ -601,7 +601,7 @@ gh repo rename -R NikolaRHristov/walle NikolaRHristov/Walle --yes
 #1692281676
 gh repo rename -R NowPlayingCards/api NowPlayingCards/API --yes
 #1692281676
-gh repo rename -R NowPlayingCards/common NowPlayingCards/Common --yes
+gh repo rename -R common/now-playing_cards common/now-playing_cards --yes
 #1692281677
 gh repo rename -R NowPlayingCards/now-playing.cards NowPlayingCards/Website --yes
 #1692281677
@@ -1849,7 +1849,7 @@ gh repo edit MythemeCloud/MythemeContent --visibility public
 #1692298787
 gh repo edit MythemeCloud/Cargo --visibility public
 #1692298788
-gh repo edit NowPlayingCards/Common --visibility public
+gh repo edit common/now-playing_cards --visibility public
 #1692298788
 gh repo edit NowPlayingCards/.github --visibility public
 #1692298789
@@ -3621,11 +3621,11 @@ dum prepublishOnly ; git add . ; git commit -m "squash!" ; git sync ;
 #1692926250
 dum install
 #1692927891
-dum prepublishOnly --filter=@nowplayingcards/common
+dum prepublishOnly --filter=@common/now-playing_cards
 #1692928111
-dum install ; dum prepublishOnly --filter=@nowplayingcards/common ; dum instal
+dum install ; dum prepublishOnly --filter=@common/now-playing_cards ; dum instal
 #1692928116
-dum install ; dum prepublishOnly --filter=@nowplayingcards/common ; dum install
+dum install ; dum prepublishOnly --filter=@common/now-playing_cards ; dum install
 #1692921927
 dum install ; dum start --filter=now-playing-web
 #1692928365
@@ -4091,7 +4091,7 @@ mv NowPlayingCard NowPlayingCards
 #1693176831
 cd /d/Developer/
 #1693176897
-npm show @nowplayingcards/common
+npm show @common/now-playing_cards
 #1693176837
 dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
 #1693177877
@@ -10981,4 +10981,38 @@ cd /d/Developer/
 #1697341814
 bmd ; dum install ; dum prepublishOnly
 #1697342734
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697344096
+dum install
+#1697345097
+./Application/NikolaRHristov/Dotfile/Script/star-used.sh 
+#1697348031
+dum prepublishOnly --filter=@nowplayingcards/*
+#1697348249
+cld
+#1697348517
+bmd ; dum installl
+#1697349174
+dum install
+#1697354828
+dum prepublishOnly --filter=@nowplayingcards/*
+#1697354959
+dum prepublishOnly --filter=@*/now-playing_cards
+#1697364490
+claer
+#1697365341
+dum prepublishOnly --filter=@*/now-playing_cards
+#1697365909
+cd Application/NowPlayingCards/NPM/Common/
+#1697365932
+dum install -D -E @coudflare/workers-types
+#1697365950
+dum install -D -E cloudflare/workers-types
+#1697365953
+dum install -D -E @cloudflare/workers-types
+#1697366739
+cd /d/Developer/
+#1697366763
+find -iname package.json -execdir code-insiders .npmignore \;
+#1697370592
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;

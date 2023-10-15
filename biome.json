@@ -35,9 +35,9 @@
 				"noForEach": "off",
 				"useLiteralKeys": "off"
 			},
-
 			"correctness": {
-				"all": true
+				"all": true,
+				"noUnusedVariables": "off"
 			},
 			"nursery": {
 				"all": true,
