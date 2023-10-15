@@ -10956,3 +10956,29 @@ cd /d/Developer/
 dum prepublishOnly
 #1697291343
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697331316
+cld
+#1697331636
+dum install
+#1697336231
+ncu -u -g
+#1697338158
+npm -g install npm-check-updates@16.14.6 npm@10.2.0
+#1697339570
+cd /d/tools/.pnpm-global/
+#1697339572
+cd bin/
+#1697339591
+cd .../5
+#1697339594
+ncu -u
+#1697339600
+bmd 
+#1697339609
+dum install
+#1697341809
+cd /d/Developer/
+#1697341814
+bmd ; dum install ; dum prepublishOnly
+#1697342734
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
