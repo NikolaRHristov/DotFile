@@ -11016,3 +11016,23 @@ cd /d/Developer/
 find -iname package.json -execdir code-insiders .npmignore \;
 #1697370592
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697373305
+dum prepublishOnly --filter=@*/now-playing_cards
+#1697373745
+dum prepublishOnly --filter=astro-compress
+#1697373812
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697373955
+find -iname *Swup*
+#1697373962
+dum prepublishOnly
+#1697449022
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697449458
+dum prepublishOnly --filter=astro-compress
+#1697449716
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697450468
+ci /d/Developer/Application/NikolaRHristov/Website/Target/_astro/hoisted.1e8c537f.js
+#1697450566
+dum prepublishOnly --filter=@website/nikolahristov_tech
