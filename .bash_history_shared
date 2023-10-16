@@ -11080,3 +11080,5 @@ VERSION="0.2.17" ; clean_dependencies ; bump_dependencies ; dum install ; dum pr
 npm show typescript-esbuild
 #1697464719
 cd /d/Developer/
+#1697464723
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
