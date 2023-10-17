@@ -11096,3 +11096,5 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 ci .env 
 #1697524337
 ci Application/NikolaRHristov/Website/.env
+#1697524605
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
