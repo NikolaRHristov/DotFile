@@ -11120,3 +11120,15 @@ npm show typescript-esbuild
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697538964
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697539413
+find -iname documentation
+#1697539416
+find -iname documentation -type d
+#1697539424
+find -iname documentation -type d -exec rm -rf {} \;
+#1697539427
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697538961
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697540286
+dum prepublishOnly
