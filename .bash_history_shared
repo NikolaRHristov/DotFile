@@ -11086,3 +11086,13 @@ find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; g
 cd /d/Developer/
 #1697473881
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697523948
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697524173
+ci Application/NikolaRHristov/Website/Target/Raw/Readme/NikolaRHristov/index.html 
+#1697524245
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697524274
+ci .env 
+#1697524337
+ci Application/NikolaRHristov/Website/.env
