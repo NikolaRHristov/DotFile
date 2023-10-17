@@ -11112,3 +11112,9 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1697530724
 cd /d/Developer/
+#1697530730
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697532066
+npm show typescript-esbuild
+#1697532165
+dum prepublishOnly --filter=@website/nikolahristov_tech
