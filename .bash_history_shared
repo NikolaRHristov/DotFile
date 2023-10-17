@@ -11172,3 +11172,13 @@ find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; g
 npm show files-pipe version
 #1697562222
 npm show files-pipe versions
+#1697562482
+find -iname package.json -execdir code-insiders .npmignore \;
+#1697562488
+find -iname package.json -execdir sort-package-json \;
+#1697566414
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697566767
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697566788
+dum prepublishOnly --filter=@website/nikolahristov_tech
