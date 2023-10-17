@@ -11132,3 +11132,37 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1697540286
 dum prepublishOnly
+#1697544492
+dum prepublishOnly
+#1697544604
+dum prepublishOnly --filter=astro-compress
+#1697544138
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697548850
+dum prepublishOnly
+#1697548964
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697553034
+find -iname Documentation -type d -exec rm -rf {} \;
+#1697553039
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697556148
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697556236
+corepack prepare pnpm@8.9.2 --activate
+#1697556239
+corepack enable
+#1697556214
+VERSION="0.2.18" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697556361
+cd /d/Developer/
+#1697556367
+npm show typescript-esbuild
+#1697556378
+cld ; bmd ; dum install
+#1697557053
+dum install
+#1697558208
+dum prepublishOnly
+#1697558491
+dum prepublishOnly --filter=@website/nikolahristov_tech
