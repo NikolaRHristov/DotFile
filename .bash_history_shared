@@ -11216,3 +11216,7 @@ cld ; bmd ; dum install ; dum prepublishOnly
 npm show files-pipe version
 #1697616797
 cd /d/Developer/
+#1697616804
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git sync ' \;
+#1697619857
+bmd ; dum install ; dum prepublishOnly
