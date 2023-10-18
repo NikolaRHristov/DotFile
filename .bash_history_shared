@@ -11200,3 +11200,7 @@ cd /d/d
 cd /d/Developer/
 #1697600613
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697615983
+dum install -D -E knip --filter=astro-starter-template
+#1697616057
+cd Application/Playform/NPM/AstroStarterTemplate/
