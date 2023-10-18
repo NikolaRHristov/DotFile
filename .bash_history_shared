@@ -11204,3 +11204,15 @@ find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; g
 dum install -D -E knip --filter=astro-starter-template
 #1697616057
 cd Application/Playform/NPM/AstroStarterTemplate/
+#1697616078
+npm run knip
+#1697616085
+ci package.json 
+#1697616097
+dum prepublishOnly
+#1697616372
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697616794
+npm show files-pipe version
+#1697616797
+cd /d/Developer/
