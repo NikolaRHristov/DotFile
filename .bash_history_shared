@@ -11182,3 +11182,21 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1697566788
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697570863
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697593899
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697593914
+dum prepublishOnly --filter=astro-starter-template
+#1697596571
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1697597445
+VERSION="0.2.20" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697600572
+npm show files-pipe
+#1697600609
+cd /d/d
+#1697600611
+cd /d/Developer/
+#1697600613
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
