@@ -11220,3 +11220,27 @@ cd /d/Developer/
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git sync ' \;
 #1697619857
 bmd ; dum install ; dum prepublishOnly
+#1697621634
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697640159
+dum prepublishOnly --filter=files-pipe
+#1697720142
+cd /d/Developer/
+#1697720214
+cd /d/tools/.pnpm-global/
+#1697720215
+cd 5/
+#1697720219
+ncu -u
+#1697720225
+pnpm install -g
+#1697721504
+dum install ; dum prepublishOnly
+#1697722375
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697723677
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697723688
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git sync ' \;
+#1697723732
+pnpm list -g
