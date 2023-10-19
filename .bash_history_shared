@@ -11244,3 +11244,73 @@ find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; g
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git sync ' \;
 #1697723732
 pnpm list -g
+#1697725948
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697726576
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697726702
+bmd
+#1697726749
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697727023
+VERSION="0.2.19" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697728412
+npm show typescript-esbuild
+#1697728422
+cat package.json | grep version
+#1697728424
+cd /d/Developer/
+#1697728431
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697729541
+dum install ; dum prepublishOnly
+#1697730452
+dum install
+#1697730966
+npm show pnpm
+#1697730976
+corepack prepare pnpm@8.9.2 --activate
+#1697730981
+corepack enable
+#1697736033
+cd /d/Developer/
+#1697736035
+dum install
+#1697736269
+corepack prepare pnpm@8.9.0
+#1697736274
+corepack prepare pnpm@8.9.0 --activate
+#1697736279
+corepack enable
+#1697736283
+pnpm -v
+#1697736286
+corepack enable
+#1697736290
+dum install
+#1697736422
+python -v
+#1697739045
+dum install
+#1697739431
+which python
+#1697739435
+winget uninstall python
+#1697739981
+python -v
+#1697739996
+which uninstall nodejs
+#1697740002
+which uninstall --id openjs.nodejs
+#1697740006
+which uninstall --id openjs.node
+#1697740014
+winget uninstall --id OpenJS.NodeJS
+#1697741697
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697742304
+dum install -D -E @biomejs/biome
+#1697741995
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git sync ' \;
+#1697742546
+dum install -D -E @biomejs/biome -w

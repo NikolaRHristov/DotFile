@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.2.2/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.3.0/schema.json",
 	"organizeImports": {
 		"enabled": true
 	},
@@ -8,7 +8,7 @@
 		"formatWithErrors": true,
 		"indentStyle": "tab",
 		"lineWidth": 80,
-		"indentSize": 4
+		"indentWidth": 4
 	},
 	"javascript": {
 		"formatter": {
@@ -41,9 +41,7 @@
 			},
 			"nursery": {
 				"all": true,
-				"useImportRestrictions": "off",
-				"noConfusingVoidType": "off",
-				"noExcessiveComplexity": "off"
+				"useImportRestrictions": "off"
 			},
 			"performance": {
 				"all": true
