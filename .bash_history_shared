@@ -11326,3 +11326,13 @@ ci package.json CHANGELOG.md README.md
 VERSION="0.2.20" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
 #1697801816
 npm show typescript-esbuild
+#1697811444
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697812922
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697813679
+dum install
+#1697813819
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697814489
+biome rage

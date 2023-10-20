@@ -33,7 +33,8 @@
 			"complexity": {
 				"all": true,
 				"noForEach": "off",
-				"useLiteralKeys": "off"
+				"useLiteralKeys": "off",
+				"noExcessiveCognitiveComplexity": "off"
 			},
 			"correctness": {
 				"all": true,
