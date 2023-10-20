@@ -11336,3 +11336,21 @@ dum install
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697814489
 biome rage
+#1697815639
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697816308
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697816311
+ci package.json README.md CHANGELOG.md 
+#1697816288
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697816323
+VERSION="0.2.21" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697821243
+cd /d/Developer/
+#1697821253
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697822716
+dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697823083
+dum prepublishOnly --filter=@website/nikolahristov_tech
