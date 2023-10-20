@@ -11354,3 +11354,5 @@ cld ; bmd ; dum install ; dum prepublishOnly
 dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697823083
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697823227
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
