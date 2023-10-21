@@ -11434,3 +11434,43 @@ npm show files-pipe versions
 ./Application/NikolaRHristov/Dotfile/Script/star-used.sh 
 #1697888299
 cd Application/NikolaRHristov/NPM/FilesPipe/
+#1697888322
+VERSION="2.0.21" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697887962
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697889196
+npm show files-pipe
+#1697889211
+git tag -D v0.2.20 
+#1697889215
+git tag -d v0.2.20 
+#1697889230
+git sync
+#1697890236
+cd ../../Dotfile/
+#1697890239
+cd Powershell/
+#1697890241
+git remote -v
+#1697890244
+git fetch upstream
+#1697890254
+git merge upstream/main
+#1697891874
+cd ../../NPM/FilesPipe/
+#1697891877
+ci package.json  README.md CHANGELOG.md 
+#1697891921
+VERSION="2.0.22" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697892047
+npm show files-pipe version
+#1697892054
+cd /d/Developer/
+#1697892063
+cld ; bmd ; dum install ; dum prepublishOnly --filter=files-pipe
+#1697892449
+dum install ; dum prepublishOnly
+#1697892630
+dum install
+#1697892838
+dum prepublishOnly --filter=@website/nikolahristov_tech
