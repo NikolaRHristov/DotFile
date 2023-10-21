@@ -11598,3 +11598,5 @@ dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697930443
 cd /d/Developer/
+#1697930173
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
