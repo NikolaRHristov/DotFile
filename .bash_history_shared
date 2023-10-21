@@ -11356,3 +11356,81 @@ dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697823227
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697826581
+bmd ; dum install ; dum prepublishOnly
+#1697827931
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697827968
+./Application/NikolaRHristov/Dotfile/Script/star-used.sh 
+#1697827937
+bmd
+#1697828371
+pip install -U github-dependents-info
+#1697828397
+python.exe -m pip install --upgrade pip
+#1697828406
+dum install
+#1697828677
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697835040
+bmd ; dum install
+#1697879081
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697879374
+bmd ; dum install ; dum prepublishOnly
+#1697879873
+dum install
+#1697880530
+dum prepublishOnly --filter=files-pipe
+#1697881559
+which tsc
+#1697881560
+tsc -v
+#1697881589
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697882524
+dum prepublishOnly --filter=files-pipe
+#1697882529
+dum prepublishOnly
+#1697882541
+dum install -E typescript@next
+#1697882618
+cd /d/Developer/
+#1697882619
+dum prepublishOnly --filter=files-pipe
+#1697882985
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697882988
+VERSION="0.2.22" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697883069
+cd /d/Developer/
+#1697883076
+npm show typescript-esbuild versions
+#1697883079
+npm show typescript-esbuild version
+#1697883246
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697883686
+dum install ; dum prepublishOnly
+#1697886089
+cd Application/RoundedCorners/
+#1697886093
+cd Application/
+#1697886095
+dum tauri build
+#1697886688
+dum tauri dev
+#1697887027
+cd /d/Developer/
+#1697887030
+bmd
+#1697887614
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697888165
+npm show files-pipe version
+#1697888167
+npm show files-pipe versions
+#1697887116
+./Application/NikolaRHristov/Dotfile/Script/star-used.sh 
+#1697888299
+cd Application/NikolaRHristov/NPM/FilesPipe/
