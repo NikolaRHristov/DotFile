@@ -11482,3 +11482,75 @@ ci .env
 dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697897279
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697898850
+cd Application/AstroCommunity/AstroCompress/
+#1697898854
+ci package.json CHANGELOG.md 
+#1697898865
+npm show astro-compress version
+#1697898901
+ci package.json CHANGELOG.md 
+#1697899468
+cd /d/Developer/
+#1697899469
+cld 
+#1697899475
+cld
+#1697899487
+cld ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697899828
+dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697900206
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697900440
+cd Application/AstroCommunity/AstroCompress/
+#1697900564
+VERSION="2.1.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697900617
+dum install
+#1697900775
+VERSION="2.1.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697900891
+npm show astro-compress version
+#1697900928
+cd /d/Developer/
+#1697902926
+cld ; bmd ; dum install ; dum prepublishOnly --filter=files-pipe
+#1697903307
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697903497
+dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697904323
+cd Application/AstroCommunity/AstroCritters/
+#1697904274
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697904324
+bmd
+#1697910261
+dum prepublishOnly --filter=astro-critters
+#1697910281
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697913713
+npm show astro-critters
+#1697913725
+dum install
+#1697913856
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697914014
+bmd ; dum install ; dum prepublishOnly
+#1697914775
+dum install ; dum prepublishOnly
+#1697915155
+cd Application/AstroCommunity/AstroCompress/
+#1697915159
+ci package.json CHANGELOG.md 
+#1697915181
+VERSION="2.1.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697916448
+cd /d/Developer/
+#1697916458
+bmd ; dum install ; dum prepublishOnly
+#1697917197
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697922087
+dum install 
