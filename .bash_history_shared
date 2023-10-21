@@ -11562,3 +11562,39 @@ npm show astro-compress
 npm show astro-critters
 #1697923403
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697926162
+cld ; bmd ; dum install ; dum prepublishOnly
+#1697927168
+cd Application/AstroCommunity/
+#1697927170
+cd AstroCompress/
+#1697927195
+cd /d/Developer/
+#1697927197
+dum install
+#1697927270
+cd Application/AstroCommunity/AstroCompress/
+#1697927279
+VERSION="2.1.2" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697927385
+cd /d/Developer/
+#1697927420
+dum install
+#1697927861
+cd Application/AstroCommunity/AstroCompress/
+#1697927867
+VERSION="2.1.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697927880
+VERSION="2.1.2" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1697927985
+npm show astro-compress
+#1697928260
+cd /d/Developer/
+#1697928261
+bmd 
+#1697928613
+dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697930163
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697930443
+cd /d/Developer/
