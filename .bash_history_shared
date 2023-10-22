@@ -11698,3 +11698,7 @@ git remote set-url origin ssh://git@github.com/windowsdock/Website.git
 git sync
 #1697982043
 dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697984742
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1697984753
+VERSION="0.2.23" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
