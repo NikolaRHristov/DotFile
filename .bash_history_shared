@@ -11722,3 +11722,5 @@ VERSION="0.2.24" ; clean_dependencies ; bump_dependencies ; dum install ; dum pr
 npm show typescript-esbuild version
 #1697988182
 cd /d/Developer/
+#1697988967
+cld ; bmd ; dum install ; dum prepublishOnly ; find -iname .git -execdir bash -c 'git add . ; git commit -m "squash!" ; git sync ' \;
