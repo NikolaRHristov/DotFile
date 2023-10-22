@@ -11678,3 +11678,5 @@ npm show astro-critters versions
 npm show astro-rome
 #1697973660
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697974909
+find -iname astro.config.ts -execdir dum install -E typescript@next \;
