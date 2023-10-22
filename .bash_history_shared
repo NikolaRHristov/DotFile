@@ -11686,3 +11686,13 @@ find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; g
 dum prepublishOnly --filter=@website/nikolahristov_tech
 #1697977190
 dum install
+#1697978033
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697979042
+cd /d/Developer/Application/windowsdock/Website/
+#1697979046
+git remote -v
+#1697979064
+git remote set-url origin ssh://git@github.com/windowsdock/Website.git
+#1697979067
+git sync
