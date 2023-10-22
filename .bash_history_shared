@@ -11744,3 +11744,27 @@ find -iname Style -type d -execdir mv Style Stylesheet \;
 find -iname Style -type d
 #1697999086
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698000580
+npm show typescript versions
+#1698000592
+npm show typescript@latest versions
+#1698000598
+npm show typescript@latest 
+#1698000663
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1698000766
+ci CHANGELOG.md package.json 
+#1698000820
+VERSION="0.2.25" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698000917
+cd /d/Developer/
+#1698000931
+npm show typescript-esbuild version
+#1698000948
+cld
+#1698006401
+nvm
+#1698007742
+dum instlal
+#1698007745
+dum install
