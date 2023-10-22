@@ -11644,3 +11644,35 @@ cd /d/Developer/
 cd Application/NikolaRHristov/Website/
 #1697933273
 bmd
+#1697933682
+cd Application/NikolaRHristov/Website/
+#1697933683
+git add .
+#1697933688
+git status
+#1697933696
+cd /d/Developer/
+#1697933235
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697972865
+cd Application/AstroCommunity/AstroCompress/
+#1697972875
+git tag -v
+#1697972879
+git tag -l
+#1697972911
+npm show astro-compress versions
+#1697972915
+cd ~
+#1697972916
+npm show astro-compress versions
+#1697973056
+cd /d/Developer/
+#1697973058
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697973378
+npm show astro-compress versions
+#1697973385
+npm show astro-critters versions
+#1697973617
+npm show astro-rome
