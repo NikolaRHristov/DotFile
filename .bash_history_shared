@@ -11696,3 +11696,5 @@ git remote -v
 git remote set-url origin ssh://git@github.com/windowsdock/Website.git
 #1697979067
 git sync
+#1697982043
+dum prepublishOnly --filter=@website/nikolahristov_tech
