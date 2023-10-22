@@ -11768,3 +11768,13 @@ nvm
 dum instlal
 #1698007745
 dum install
+#1698009371
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698010000
+npm show files-pipe version
+#1698010031
+npm show astro-compress version
+#1698010034
+npm show astro-compress versions
+#1698010080
+dum install
