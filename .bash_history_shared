@@ -11732,3 +11732,15 @@ dum prepublishOnly --filter=@website/nikolahristov_tech
 cld ; bmd ; dum install 
 #1697993345
 dum install 
+#1697995758
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1697997197
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1697999069
+find -iname Style -type d
+#1697999078
+find -iname Style -type d -execdir mv Style Stylesheet \;
+#1697999082
+find -iname Style -type d
+#1697999086
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
