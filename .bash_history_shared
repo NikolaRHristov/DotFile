@@ -11864,3 +11864,11 @@ cd /d/Developer/
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1698074478
 ./Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; ./Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
+#1698075015
+gh auth
+#1698075018
+gh auth logout
+#1698075020
+gh auth login
+#1698075053
+./Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; ./Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
