@@ -11828,3 +11828,31 @@ biome rage
 cd /d/Developer/
 #1698062633
 biome rage
+#1698064661
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698067134
+dum prepublishOnly --filter=astro-compress
+#1698071907
+cd Application/Playform/we
+#1698071909
+cd Application/Playform/
+#1698071918
+git clone ssh://git@github.com/Playform/Website.git
+#1698071987
+cd Website/
+#1698071987
+git remtoe -v
+#1698071994
+git remote -v
+#1698072009
+git remote add upstream ssh://git@github.com/Playform/AstroStarterTemplate.git
+#1698072011
+git fetch upstream
+#1698072017
+git emrge upstream
+#1698072022
+git merge upstream/main 
+#1698072190
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698072110
+cld ; bmd ; dum install ; dum prepublishOnly
