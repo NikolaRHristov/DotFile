@@ -11872,3 +11872,13 @@ gh auth logout
 gh auth login
 #1698075053
 ./Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; ./Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
+#1698078611
+cld
+#1698078675
+npx npm-dependents 
+#1698078682
+npm -g install npm-dependents
+#1698078697
+npm-dependents
+#1698078711
+npm uninstall -g npm-dependents
