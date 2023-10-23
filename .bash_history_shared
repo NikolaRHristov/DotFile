@@ -11856,3 +11856,7 @@ git merge upstream/main
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
 #1698072110
 cld ; bmd ; dum install ; dum prepublishOnly
+#1698072705
+dum install ; dum prepublishOnly
+#1698073388
+cd /d/Developer/
