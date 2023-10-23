@@ -11860,3 +11860,7 @@ cld ; bmd ; dum install ; dum prepublishOnly
 dum install ; dum prepublishOnly
 #1698073388
 cd /d/Developer/
+#1698073391
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698074478
+./Application/NikolaRHristov/Dotfile/Script/settings-organization.sh ; ./Application/NikolaRHristov/Dotfile/Script/security-organization.sh 
