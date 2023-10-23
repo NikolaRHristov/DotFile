@@ -11882,3 +11882,13 @@ npm -g install npm-dependents
 npm-dependents
 #1698078711
 npm uninstall -g npm-dependents
+#1698079874
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698081084
+cd Application/NikolaRHristov/NPM/FilesPipe/
+#1698081086
+ci package.json CHANGELOG.md 
+#1698081415
+VERSION="2.1.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698081768
+cd /d/Developer/
