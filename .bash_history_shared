@@ -11780,3 +11780,51 @@ npm show astro-compress versions
 dum install
 #1698010085
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698060775
+ncu -g
+#1698061898
+npm install -g npm
+#1698061901
+cd /d/tools/
+#1698061953
+cd .pnpm-global/
+#1698062061
+cd 5/
+#1698062065
+ncu -u
+#1698062075
+dum install
+#1698062121
+cd /d/Developer/
+#1698062126
+bmd 
+#1698062588
+cd /d/tools/
+#1698062591
+cd .npm-global/
+#1698062594
+cd bin/
+#1698062597
+cd ../
+#1698062599
+cd node_modules/
+#1698062604
+ncu -u
+#1698062610
+cd /d/Developer/
+#1698062611
+cd ../
+#1698062614
+cd .pnpm-store/
+#1698062617
+cd v3/
+#1698062622
+cd files/
+#1698062624
+cd ../
+#1698062628
+biome rage
+#1698062631
+cd /d/Developer/
+#1698062633
+biome rage

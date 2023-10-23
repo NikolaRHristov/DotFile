@@ -42,8 +42,7 @@
 			},
 			"nursery": {
 				"all": true,
-				"useImportRestrictions": "off",
-				"noUselessLoneBlockStatements": "off"
+				"useImportRestrictions": "off"
 			},
 			"performance": {
 				"all": true
