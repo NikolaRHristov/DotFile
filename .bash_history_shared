@@ -11892,3 +11892,71 @@ ci package.json CHANGELOG.md
 VERSION="2.1.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
 #1698081768
 cd /d/Developer/
+#1698082185
+dum install ; dum prepublishOnly --filter=@website/playform_cloud
+#1698081770
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698082404
+cd Application/AstroCommunity/AstroCompress/
+#1698082413
+VERSION="2.1.4" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698082566
+npm show astro-compress versions
+#1698082583
+git tag -d 2.1.0
+#1698082586
+git tag -D 2.1.0
+#1698082589
+git tag -v
+#1698082595
+npm show astro-compress versions
+#1698082608
+git tag -v
+#1698082611
+git tag -l
+#1698082619
+git tag -L
+#1698082660
+npm show astro-compress versions
+#1698082685
+git tag -d v2.1.0
+#1698082687
+git tag -d v2.1.1
+#1698082688
+git tag -d v2.1.2
+#1698082689
+git tag -d v2.1.3
+#1698082771
+npm show astro-compress version
+#1698082796
+npm show astro-compress versions
+#1698082330
+bmd ; dum install ; dum prepublishOnly
+#1698082818
+VERSION="2.1.4" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698082966
+ci package.json CHANGELOG.md 
+#1698082988
+VERSION="2.1.5" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698083032
+npm show astro-compress versions
+#1698083084
+cd /d/Developer/
+#1698083107
+dum install --filter=@website/playform_cloud
+#1698083193
+dum prepublishOnly --filter=@website/playform_cloud
+#1698083222
+dum install --filter=@website/playform_cloud
+#1698083533
+cd Application/AstroCommunity/AstroCompress/
+#1698083538
+git tag -D v2.1.4 
+#1698083542
+git tag -d v2.1.4 
+#1698083548
+git push --delete origin v2.1.4
+#1698083754
+cd /d/Developer/
+#1698083792
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
