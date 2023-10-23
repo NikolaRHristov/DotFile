@@ -11962,3 +11962,11 @@ cd /d/Developer/
 cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
 #1698088042
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698090758
+npm show astro-compress versions
+#1698091473
+bmd
+#1698091846
+npm show astro-compress versions
+#1698093760
+npm show astro-critters versions
