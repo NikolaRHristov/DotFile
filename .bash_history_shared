@@ -11970,3 +11970,59 @@ bmd
 npm show astro-compress versions
 #1698093760
 npm show astro-critters versions
+#1698093809
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698094631
+dum install --filter=@website/playform_cloud
+#1698095910
+dum prepublishOnly --filter=@website/playform_cloud
+#1698096445
+npm show astro-critters version
+#1698096545
+dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1698096892
+cd Application/AstroCommunity/AstroCritters/
+#1698098328
+ci package.json CHANGELOG.md 
+#1698098498
+VERSION="2.1.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698098513
+cd /d/Developer/
+#1698098530
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1698099159
+dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
+#1698100165
+cd Application/AstroCommunity/AstroCritters/
+#1698100166
+cat package.json 
+#1698100172
+VERSION="2.1.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698100688
+npm show astro-critters version
+#1698100692
+npm show astro-critters versions
+#1698100764
+sort-package-json
+#1698100771
+cd ../AstroRome/
+#1698100773
+sort-package-json
+#1698101500
+cd /d/Developer/
+#1698101879
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1698102092
+dum prepublishOnly --filter=@website/playform_cloud
+#1698102675
+npm show astro-critters versions
+#1698102682
+npm unpublish astro-critters@2.1.0
+#1698102754
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1698103431
+npm show astro-critters version
+#1698103433
+npm show astro-critters versions
+#1698102816
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
