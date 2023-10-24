@@ -12028,3 +12028,51 @@ npm show astro-critters versions
 cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/nikolahristov_tech
 #1698103446
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698147529
+dum install
+#1698155543
+cclear
+#1698155551
+dum prepublishOnly --filter=@website/nikolahristov_tech
+#1698155697
+cld ; bmd ; dum install ; dum prepublishOnly --filter=@website/playform_cloud
+#1698156659
+dum install ; dum prepublishOnly --filter=@website/playform_cloud
+#1698157814
+cd Application/NikolaRHristov/
+#1698157816
+cd NPM/
+#1698157824
+git clone ssh://git@github.com/NikolaRHristov/critters.git
+#1698157858
+cd critters/
+#1698157859
+git remote -v
+#1698157861
+git branch -v
+#1698157864
+git pull 
+#1698157866
+git fetch
+#1698157873
+git fetch origin include-types:include-types
+#1698157876
+git branch -v
+#1698157881
+git merge include-types 
+#1698158037
+git add .
+#1698158040
+git commit -m "squash!"
+#1698158046
+git push
+#1698158656
+cd Application/NikolaRHristov/NPM/Critters/
+#1698158660
+dum install -D -E typescript-esbuild
+#1698161155
+dum prepublishOnly
+#1698165328
+cd /d/Developer/
+#1698165335
+dum prepublishOnly --filter=@website/nikolahristov_tech
