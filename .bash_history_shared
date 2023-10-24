@@ -12092,3 +12092,37 @@ dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/Fi
 dum prepublishOnly --filter=files-pipe
 #1698170989
 find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
+#1698174392
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1698174396
+ci package.json CHANGELOG.md 
+#1698174421
+npm show typescript@latest version
+#1698174511
+VERSION="0.2.26" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698174680
+cd /d/Developer/
+#1698174963
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1698174969
+VERSION="0.3.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698175030
+VERSION="0.3.0" ; gh release create "v${VERSION}" --generate-notes
+#1698175048
+dum install ; dum prepublishOnly
+#1698175091
+VERSION="0.3.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698174686
+cld ; bmd ; dum install ; dum prepublishOnly
+#1698175172
+dum install ; dum prepublishOnly
+#1698175637
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1698175644
+ci package.json CHANGELOG.md README.md 
+#1698175801
+cat package.json | grep version
+#1698175804
+VERSION="0.3.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698175912
+cd /d/Developer/
