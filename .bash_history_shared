@@ -12090,3 +12090,5 @@ dum prepublishOnly --filter=files-pipe
 dum prepublishOnly --filter=files-pipe ; serve Application/NikolaRHristov/NPM/FilesPipe/Documentation/
 #1698170774
 dum prepublishOnly --filter=files-pipe
+#1698170989
+find -iname .git -execdir bash -c 'pwd ; git add . ; git commit -m "squash!" ; git fetch upstream ; git merge upstream/main ; git add . ; git commit --no-edit ; git sync ' \;
