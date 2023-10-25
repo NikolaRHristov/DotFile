@@ -15,13 +15,13 @@ done
 for ORG in "${ORGS[@]}"; do
 	EMAIL_BILLING="hello@playform.cloud"
 	EMAIL="hello@playform.cloud"
-	TWITTER="PLFRMCLD"
+	TWITTER="PlayformCloud"
 
 	case "$ORG" in
 		"Playform")
 			EMAIL_BILLING="hello@playform.cloud"
 			EMAIL="hello@playform.cloud"
-			TWITTER="PLFRMCLD"
+			TWITTER="PlayformCloud"
 			;;
 		"windowsdock")
 			EMAIL_BILLING="hello@windowsdock.app"

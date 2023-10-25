@@ -12174,3 +12174,5 @@ git pull
 npm show clear
 #1698261167
 cd /d/Developer/
+#1698262845
+ci .env 
