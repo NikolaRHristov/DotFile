@@ -12148,3 +12148,29 @@ dum install
 bmd ; dum install ; dum prepublishOnly --filter=@website/playform_cloud
 #1698247112
 dum install ; dum prepublishOnly --filter=@website/playform_cloud
+#1698247427
+dum prepublishOnly --filter=@website/playform_cloud
+#1698259783
+cd Application/NikolaRHristov/NPM/TypeScriptESBuild/
+#1698259788
+ci package.json CHANGELOG.md README.md 
+#1698259804
+VERSION="0.3.1" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698260183
+cd ../FilesPipe/
+#1698260227
+VERSION="2.1.2" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; git add . ; git commit -m $VERSION ; git sync ; git tag -d "v${VERSION}" ; git push --delete origin "v${VERSION}" ; git tag -s -m "v${VERSION}" -a "v${VERSION}" ; git push --tags ; gh release delete "v${VERSION}" -y ; gh release create "v${VERSION}" --generate-notes
+#1698260628
+npm show files-pipe versions
+#1698260708
+git tag -d v0.2.20 
+#1698260716
+git push --delete origin v0.2.20
+#1698260738
+git tag -d v2.0.21
+#1698260748
+git pull
+#1698260753
+npm show clear
+#1698261167
+cd /d/Developer/
