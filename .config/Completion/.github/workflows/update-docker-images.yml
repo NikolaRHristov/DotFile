@@ -1,0 +1,43 @@
+name: update-docker-images
+
+# Update Docker images when the set of commands required present for testing
+# change. This is not perfect as it would be good to have the new commands
+# installed already at PR time, and at least at time the change lands in the
+# default branch. That way it'd be tested immediately then with images
+# containing it, instead of later along with some other, completely unrelated
+# change.
+
+on:
+  push:
+    paths:
+      - test/test-cmd-list.txt
+      - test/docker/*/Dockerfile
+      - test/docker/*/install-packages.sh
+  workflow_dispatch:
+
+jobs:
+  update-test-image:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'scop' && github.ref == 'refs/heads/master'
+    strategy:
+      matrix:
+        include:
+          - dist: alpine
+          - dist: centos7
+          - dist: debian10
+          - dist: fedoradev
+          - dist: ubuntu14
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{github.repository_owner}}
+          password: ${{secrets.GITHUB_TOKEN}}
+      - uses: docker/build-push-action@v3
+        with:
+          context: test
+          file: test/docker/${{matrix.dist}}/Dockerfile
+          tags: |
+            ghcr.io/scop/bash-completion/test:${{matrix.dist}}
+          push: true

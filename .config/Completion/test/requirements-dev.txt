@@ -1,0 +1,7 @@
+# Python >= 3.7 required here
+
+-r requirements.txt
+
+black==23.1.0
+mypy==1.2.0
+ruff==0.0.272

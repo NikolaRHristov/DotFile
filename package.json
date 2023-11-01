@@ -1,0 +1,19 @@
+{
+	"name": "dotfile",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Nikola Hristov's Dot Files",
+	"license": "MIT",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@nikolahristov.tech",
+		"url": "https://nikolahristov.tech"
+	},
+	"type": "module",
+	"devDependencies": {
+		"typescript-esbuild": "0.3.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

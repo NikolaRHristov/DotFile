@@ -1,0 +1,262 @@
+#!/bin/bash
+function backup_database() {
+	DB_EXCLUDE=(
+		"accounts"
+		"information_schema"
+		"mysql"
+		"performance_schema"
+		"sys"
+		"tmp"
+	)
+
+	echo "Enter Backup Directory:"
+	read -r -s DB_DIR
+
+	echo "Enter User:"
+	read -r -s DB_USER
+
+	echo "Enter Password:"
+	read -r -s DB_PASS
+
+	echo "Enter Host:"
+	read -r -s DB_HOST
+
+	mkdir -p "$DB_DIR"
+	builtin cd "$DB_DIR" || exit
+
+	DBS=$(mysql -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" -e "SHOW DATABASES;" | tr -d "| " | grep -v Database)
+	BACKUP_DATE=$(date +%d_%m_%Y)
+
+	mkdir -p "$BACKUP_DATE"
+
+	for DBC in $DBS; do
+		for DBX in "${DB_EXCLUDE[@]}"; do
+			if [[ "$DBC" == "$DBX" ]]; then
+				continue 2
+			fi
+		done
+
+		if [[ "$DBC" != _* ]]; then
+			echo "Dumping Database: $DBC"
+			mysqldump --single-transaction --set-gtid-purged=OFF -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" --databases "$DBC" >"$BACKUP_DATE"/"$DBC".sql
+		fi
+	done
+
+	builtin cd - || exit
+
+	unset DB_EXCLUDE
+	unset DBS
+	unset BACKUP_DATE
+}
+
+function build_npm() {
+	if [ -f "package.json" ]; then
+		npm run build
+	fi
+}
+
+function cd() {
+	builtin cd "$@" && ls
+}
+
+function delete_all_tags() {
+	git fetch
+	git tag | xargs -L 1 | xargs git push origin --delete
+	git tag | xargs -L 1 | xargs git tag --delete
+}
+
+function erase_history() {
+	cat /dev/null >~/.bash_history && history -c
+	cat /dev/null >~/.nano/search_history
+	exit
+}
+
+function extract() {
+	if [ -z "$1" ]; then
+		echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+	else
+		if [ -f "$1" ]; then
+			case $1 in
+			*.tar.bz2) tar xvjf ./"$1" ;;
+			*.tar.gz) tar xvzf ./"$1" ;;
+			*.tar.xz) tar xvJf ./"$1" ;;
+			*.lzma) unlzma ./"$1" ;;
+			*.bz2) bunzip2 ./"$1" ;;
+			*.rar) unrar x -ad ./"$1" ;;
+			*.gz) gunzip ./"$1" ;;
+			*.tar) tar xvf ./"$1" ;;
+			*.tbz2) tar xvjf ./"$1" ;;
+			*.tgz) tar xvzf ./"$1" ;;
+			*.zip) unzip ./"$1" ;;
+			*.Z) uncompress ./"$1" ;;
+			*.7z) 7z x ./"$1" ;;
+			*.xz) unxz ./"$1" ;;
+			*.exe) cabextract ./"$1" ;;
+			*) echo "extract: '$1' - unknown archive method" ;;
+			esac
+		else
+			echo "$1 - file does not exist"
+		fi
+	fi
+}
+
+function firebase_deploy() {
+	if [ -f "firebase.json" ]; then
+		firebase deploy
+	fi
+}
+
+function get_id() {
+	if [ -z "$1" ]; then
+		printf "Usage: get_id <process_name>"
+	else
+		printf "Listing IDs for %s:\n\n" "$1"
+
+		bash -c "ps aux | grep '$1' | awk '{printf \$11\" \"\$12 \" %s  \\n\", \$2} END {print \"\"}'"
+	fi
+}
+
+function install_composer() {
+	if [ -f "composer.json" ]; then
+		composer install
+	fi
+}
+
+function install_npm() {
+	if [ -f "package.json" ]; then
+		npm install
+	fi
+}
+
+function proper_permissions() {
+	find -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
+	find -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
+}
+
+function run_in_dirs() {
+	for DIR in ./*; do
+		if [ -d "$DIR" ]; then
+			builtin cd "$DIR" || exit
+			echo "$PWD"
+			bash -cl "$*"
+			builtin cd "$OLDPWD" || exit
+		fi
+	done
+
+	unset DIR
+}
+
+function secure_pass() {
+	tr -dc 'a-zA-Z0-9~!@#$%^&*_-' </dev/urandom | head -c 24
+	echo -n
+}
+
+function sign_all_commits() {
+	git rebase --exec 'git commit --amend --no-edit -n -S' -i --root
+}
+
+function sign_commits() {
+	git rebase --exec 'git commit --amend --no-edit -n -S' -i "$1"
+}
+
+function sshagent_findsockets() {
+	\find /tmp -uid "$(id -u)" -type s -name agent.\* 2>/dev/null
+}
+
+function sshagent_testsocket() {
+	if [ ! -x "$(which ssh-add)" ]; then
+		echo "ssh-add is not available; agent testing aborted"
+		return 1
+	fi
+
+	if [ X"$1" != X ]; then
+		export SSH_AUTH_SOCK=$1
+	fi
+
+	if [ X"$SSH_AUTH_SOCK" = X ]; then
+		return 2
+	fi
+
+	if [ -S "$SSH_AUTH_SOCK" ]; then
+		ssh-add -l >/dev/null
+		if [ $? = 2 ]; then
+			echo "Socket $SSH_AUTH_SOCK is dead!  Deleting!"
+			rm -f "$SSH_AUTH_SOCK"
+			return 4
+		else
+			echo "Found ssh-agent $SSH_AUTH_SOCK"
+			return 0
+		fi
+	else
+		echo "$SSH_AUTH_SOCK is not a socket!"
+		return 3
+	fi
+}
+
+function sshagent_init() {
+	AGENTFOUND=0
+
+	if sshagent_testsocket; then AGENTFOUND=1; fi
+
+	if [ $AGENTFOUND = 0 ]; then
+		for agentsocket in $(sshagent_findsockets); do
+			if [ $AGENTFOUND != 0 ]; then break; fi
+			if sshagent_testsocket "$agentsocket"; then AGENTFOUND=1; fi
+		done
+	fi
+
+	if [ $AGENTFOUND = 0 ]; then
+		eval "$(ssh-agent)"
+	fi
+
+	unset AGENTFOUND
+	unset agentsocket
+
+	ssh-add -l
+}
+
+function update_composer() {
+	if [ -f "composer.json" ]; then
+		composer update
+	fi
+}
+
+function update_npm() {
+	if [ -f "package.json" ]; then
+		ncu -u
+	fi
+}
+
+function bump_dependencies() {
+	find -iname cargo.toml -execdir cargo upgrade --incompatible \;
+	find -iname composer.json -execdir composer update \;
+	find -iname package.json -execdir bash -c 'ncu -u --deep --dep "dev,optional,peer,prod,bundle" --color --concurrency 60' \;
+}
+
+function clean_dependencies() {
+	find -iname .pnpm-store -prune -exec rm -rf {} \;
+	find -iname node_modules -prune -exec rm -rf {} \;
+	find -iname .turbo -prune -exec rm -rf {} \;
+	find -iname .pnpm-debug.log -prune -exec rm -rf {} \;
+	find -iname .next -prune -exec rm -rf {} \;
+	find -iname yarn.lock -exec rm {} \;
+	find -iname yaml.lock -exec rm {} \;
+	find -iname berry.lock -exec rm {} \;
+	find -iname pnpm-lock.yaml -exec rm {} \;
+	find -iname package-lock.json -exec rm {} \;
+	find -iname composer.lock -execdir cargo clean \;
+	find -iname cargo.toml -execdir cargo clean \;
+	find -iname cargo.lock -exec rm {} \;
+	find -iname bun.lockb -exec rm {} \;
+}
+
+function tere() {
+	local result
+	result=$(/c/Users/nikola/.cargo/bin/tere "$@")
+	[ -n "$result" ] && cd -- "$result" || exit
+}
+
+function refresh() {
+	# shellcheck source=/dev/null
+	source ~/.bash_profile
+}
