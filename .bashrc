@@ -16,7 +16,7 @@ export PATH=$PATH:/usr/local/go/bin
 export OSH=~/Bash
 
 # shellcheck disable=SC2034
-OSH_THEME="rr"
+OSH_THEME="half-life"
 # shellcheck disable=SC2034
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
