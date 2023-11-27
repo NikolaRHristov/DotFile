@@ -110,6 +110,16 @@ for ORG in "${ORGS[@]}"; do
 			EMAIL="signup@playform.cloud"
 			TWITTER="SecretSignup"
 			;;
+		"327b5")
+			EMAIL_BILLING="327b5@nikolahristov.tech"
+			EMAIL="327b5@nikolahristov.tech"
+			TWITTER=""
+			;;
+		"ae6a6")
+			EMAIL_BILLING="ae6a6@nikolahristov.tech"
+			EMAIL="ae6a6@nikolahristov.tech"
+			TWITTER=""
+			;;
 	esac
 
 	echo "Settings for $ORG"
