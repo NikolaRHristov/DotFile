@@ -8,7 +8,16 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true
 	},
-	"exclude": ["node_modules"],
+	"exclude": [
+		".git",
+		"node_modules",
+		"Target",
+		"samples",
+		"**/.git/**",
+		"**/node_modules/**",
+		"**/Target/**",
+		"**/samples/**"
+	],
 	"jshint.options": {
 		"esversion": 6
 	}
