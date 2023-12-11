@@ -54,7 +54,8 @@
 			},
 			"style": {
 				"all": true,
-				"useNamingConvention": "off"
+				"useNamingConvention": "off",
+				"noUselessElse": "off"
 			},
 			"suspicious": {
 				"all": true,
