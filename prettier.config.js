@@ -1,1 +1,1 @@
-module.exports = require("./.config/base/prettier.js");
+export { default } from "./.config/base/prettier.js";
