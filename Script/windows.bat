@@ -107,7 +107,6 @@ mklink /D C:\Users\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
 mklink /D C:\msys64\home\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
 
 mklink /D C:\Users\nikola\AppData\Local\nvim C:\Users\nikola\.config\nvim
-mklink /D C:\msys64\home\nikola\AppData\Local\nvim C:\Users\nikola\.config\nvim
 
 rm D:\Developer\.clang-format 
 rm D:\Developer\.csharpierrc 
