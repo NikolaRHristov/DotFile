@@ -2,10 +2,6 @@
 path = .config/Completion
 url = ssh://git@github.com/NikolaRHristov/Completion.git
 
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = ssh://git@github.com/NikolaRHristov/NVIM.git
-
 [submodule "Bash"]
 path = Bash
 url = ssh://git@github.com/NikolaRHristov/Bash.git
