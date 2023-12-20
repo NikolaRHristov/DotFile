@@ -6,7 +6,7 @@ from conftest import TestUnitBase, assert_bash_exec, assert_complete
 @pytest.mark.bashcomp(
     cmd=None,
     ignore_env=r"^[+-](COMP(_(WORDS|CWORD|LINE|POINT)|REPLY)|"
-    r"cur|cword|words)=|^\+declare -f _cmd1$",
+    r"cur|prev|cword|words)=|^\+declare -f _cmd1$",
 )
 class TestUnitInitCompletion(TestUnitBase):
     def test_1(self, bash):
@@ -55,5 +55,12 @@ class TestUnitInitCompletion(TestUnitBase):
 
         completion = assert_complete(
             bash, "cmd1 %s f" % redirect, cwd="shared/default"
+        )
+        assert "foo" in completion
+
+    @pytest.mark.parametrize("redirect", "> >> 2> < &>".split())
+    def test_redirect_3(self, bash, redirect):
+        completion = assert_complete(
+            bash, "cmd1 %sf" % redirect, cwd="shared/default"
         )
         assert "foo" in completion

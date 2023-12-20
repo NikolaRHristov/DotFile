@@ -28,6 +28,8 @@
 /autoupdate
 /avahi-browse-domains
 /b2sum
+/_black
+/_blackd
 /bmake
 /bsdtar
 /btdownloadcurses.py
@@ -36,6 +38,7 @@
 /c++
 /cc
 /cdrecord
+/_chezmoi
 /chrome
 /chromium
 /ci
@@ -50,10 +53,12 @@
 /compare
 /compgen
 /composite
+/_conda
 /conjure
 /_constellation
 /_consul
 /cowthink
+/_crc
 /createdb
 /createuser
 /_cz
@@ -67,6 +72,7 @@
 /dpkg-deb
 /dpkg-query
 /dpkg-reconfigure
+/_dprint
 /dropdb
 /dropuser
 /edquota
@@ -75,6 +81,7 @@
 /f95
 /filebucket
 /firefox-esr
+/_flask
 /freeciv-gtk2
 /freeciv-gtk3
 /freeciv-sdl
@@ -115,6 +122,7 @@
 /host
 /hping
 /hping3
+/_httpx
 /_hugo
 /iceweasel
 /identify
@@ -147,6 +155,7 @@
 /ldapmodrdn
 /ldappasswd
 /ldapwhoami
+/_lefthook
 /_linkerd
 /links2
 /lintian-info
@@ -189,6 +198,8 @@
 /neomutt
 /_nfpm
 /_nomad
+/_npm
+/_oc
 /_okteto
 /_op
 /_ory
@@ -202,6 +213,7 @@
 /pinfo
 /ping4
 /ping6
+/_pip3
 /pkg_deinstall
 /pkg_info
 /pkgconf
@@ -298,6 +310,8 @@
 /_tanzu-core
 /_tendermint
 /_terraform
+/_tkn
+/_tkn-pac
 /tightvncviewer
 /tracepath6
 /_trivy

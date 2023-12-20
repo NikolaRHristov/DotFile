@@ -37,6 +37,19 @@ class TestUtilCompgen:
             "complete -F _comp_cmd_fcd fcd",
         )
 
+        # test_8_option_U
+        assert_bash_exec(
+            bash,
+            "_comp_compgen_gen8() { local -a arr=(x y z); _comp_compgen -U arr -- -W '\"${arr[@]}\"'; }",
+        )
+
+        # test_9_inherit_a
+        assert_bash_exec(
+            bash,
+            '_comp_compgen_gen9sub() { local -a gen=(00); _comp_compgen -v gen -- -W 11; _comp_compgen_set "${gen[@]}"; }; '
+            "_comp_compgen_gen9() { _comp_compgen_gen9sub; _comp_compgen -a gen9sub; }",
+        )
+
     def test_1_basic(self, bash, functions):
         output = assert_bash_exec(
             bash, "_comp__test_words 12 34 56 ''", want_output=True
@@ -146,3 +159,15 @@ class TestUtilCompgen:
 
             completions = assert_complete(bash, "compgen-cmd2 '")
             assert completions == ["012", "123", "234", "5foo", "6bar", "7baz"]
+
+    def test_8_option_U(self, bash, functions):
+        output = assert_bash_exec(
+            bash, "_comp__test_compgen gen8", want_output=True
+        )
+        assert output.strip() == "<x><y><z>"
+
+    def test_9_inherit_a(self, bash, functions):
+        output = assert_bash_exec(
+            bash, "_comp__test_compgen gen9", want_output=True
+        )
+        assert output.strip() == "<11><11>"

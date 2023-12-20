@@ -18,7 +18,7 @@ _comp_cmd_tipc__media()
 _comp_cmd_tipc__bearer()
 {
     local optind=$1
-    local media i
+    local media="" i
 
     if _comp_cmd_tipc__media "$optind"; then
         return
@@ -43,7 +43,7 @@ _comp_cmd_tipc__bearer()
         case "$media" in
             "udp")
                 local names=$(
-                    tipc bearer list 2>/dev/null | awk -F: '/^udp:/ {print $2}'
+                    tipc bearer list 2>/dev/null | _comp_awk -F : '/^udp:/ {print $2}'
                 )
                 _comp_compgen -- -W '$names'
                 ;;
@@ -70,7 +70,7 @@ _comp_cmd_tipc__link()
     elif ((cword == optind + 1)); then
         # awk drops link state and last trailing :
         local links=$(tipc link list 2>/dev/null |
-            awk '{print substr($1, 0, length($1))}')
+            _comp_awk '{print substr($1, 0, length($1))}')
         local -a exclude
         [[ $filter == peers ]] && exclude=(-X broadcast-link)
         _comp_compgen -- "${exclude[@]}" -W '$links'
@@ -109,7 +109,7 @@ _comp_cmd_tipc()
 
             case "${words[optind]}" in
                 enable)
-                    local media params
+                    local media="" params
                     ((optind++))
 
                     if ((cword < optind + 4)); then
@@ -153,7 +153,7 @@ _comp_cmd_tipc()
                         done
                     done
 
-                    _comp_compgen -- -W '"${params[@]}"'
+                    _comp_compgen -- -W '"${params[@]}"' -X ''
                     ;;
                 disable)
                     ((optind++))

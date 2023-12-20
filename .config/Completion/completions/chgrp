@@ -16,7 +16,7 @@ _comp_cmd_chgrp()
 
     # options completion
     if [[ $cur == -* ]]; then
-        local w opts
+        local w opts=""
         for w in "${words[@]}"; do
             [[ $w == -@(R|-recursive) ]] && opts="-H -L -P" && break
         done
@@ -30,7 +30,7 @@ _comp_cmd_chgrp()
     if [[ $cword -eq 1 && $cur != -* || $prev == -* ]]; then
         _comp_compgen_allowed_groups
     else
-        _comp_compgend filedir
+        _comp_compgen_filedir
     fi
 
 } &&

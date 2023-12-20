@@ -7,7 +7,7 @@
 _comp_cmd_xm__domain_names()
 {
     _comp_compgen_split -- "$(xm list 2>/dev/null |
-        awk '!/Name|Domain-0/ { print $1 }')"
+        _comp_awk '!/Name|Domain-0/ { print $1 }')"
 }
 
 _comp_cmd_xm()
@@ -17,7 +17,7 @@ _comp_cmd_xm()
 
     # TODO: split longopt
 
-    local args command commands options
+    local ret command commands options
 
     commands='console vncviewer create new delete destroy domid domname
         dump-core list mem-max mem-set migrate pause reboot rename reset
@@ -79,21 +79,21 @@ _comp_cmd_xm()
                     mem-max | pause | reboot | rename | shutdown | unpause | \
                     vcpu-list | vcpu-pin | vcpu-set | block-list | \
                     network-list | vtpm-list)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
                     esac
                     ;;
                 migrate)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
                         3)
-                            _known_hosts_real -- "$cur"
+                            _comp_compgen_known_hosts -- "$cur"
                             ;;
                     esac
                     ;;
@@ -101,8 +101,8 @@ _comp_cmd_xm()
                     _comp_compgen_filedir
                     ;;
                 save)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
@@ -112,8 +112,8 @@ _comp_cmd_xm()
                     esac
                     ;;
                 sysrq)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
@@ -123,8 +123,8 @@ _comp_cmd_xm()
                     esac
                     ;;
                 block-attach)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
@@ -140,20 +140,20 @@ _comp_cmd_xm()
                     esac
                     ;;
                 block-detach)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
                         3)
                             _comp_compgen_split -- "$(xm block-list "$prev" \
-                                2>/dev/null | awk '!/Vdev/ { print $1 }')"
+                                2>/dev/null | _comp_awk '!/Vdev/ { print $1 }')"
                             ;;
                     esac
                     ;;
                 network-attach)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
@@ -164,14 +164,14 @@ _comp_cmd_xm()
                     esac
                     ;;
                 network-detach)
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;
                         3)
                             _comp_compgen_split -- "$(xm network-list "$prev" \
-                                2>/dev/null | awk '!/Idx/ { print $1 }')"
+                                2>/dev/null | _comp_awk '!/Idx/ { print $1 }')"
                             ;;
                     esac
                     ;;
@@ -201,8 +201,8 @@ _comp_cmd_xm()
                             ;;
                     esac
 
-                    _count_args
-                    case $args in
+                    _comp_count_args
+                    case $ret in
                         2)
                             _comp_cmd_xm__domain_names
                             ;;

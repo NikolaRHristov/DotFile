@@ -9,7 +9,7 @@ _comp_cmd_povray()
     local povcur=$cur pfx oext defoext
     defoext=png # default output extension, if cannot be determined FIXME
 
-    _expand || return
+    _comp_expand || return
 
     case $povcur in
         [-+]I*)
@@ -46,11 +46,9 @@ _comp_cmd_povray()
         *.ini\[ | *.ini\[*[^]]) # sections in .ini files
             cur="${povcur#*\[}"
             pfx="${povcur%\["$cur"}" # prefix == filename
-            [[ -r $pfx ]] || return
-            COMPREPLY=($(
-                command sed -e 's/^[[:space:]]*\[\('"$cur"'[^]]*\]\).*$/\1/' \
-                    -e 't' -e 'd' -- "$pfx"
-            ))
+            [[ -f $pfx && -r $pfx ]] || return
+            COMPREPLY=($(command sed -ne \
+                's/^[[:space:]]*\[\('"$cur"'[^]]*\]\).*$/\1/p' -- "$pfx"))
             # to prevent [bar] expand to nothing.  can be done more easily?
             ((${#COMPREPLY[@]})) && COMPREPLY=("${COMPREPLY[@]/#/${pfx}[}")
             return

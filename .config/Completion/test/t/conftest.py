@@ -132,7 +132,7 @@ def _avahi_hosts(bash: pexpect.spawn) -> List[str]:
 def known_hosts(bash: pexpect.spawn) -> List[str]:
     output = assert_bash_exec(
         bash,
-        '_known_hosts_real ""; '
+        '_comp_compgen_known_hosts ""; '
         r'printf "%s\n" "${COMPREPLY[@]}"; unset -v COMPREPLY',
         want_output=True,
     )
@@ -379,9 +379,9 @@ def is_bash_type(bash: pexpect.spawn, cmd: Optional[str]) -> bool:
 
 def load_completion_for(bash: pexpect.spawn, cmd: str) -> bool:
     try:
-        # Allow __load_completion to fail so we can test completions
+        # Allow _comp_load to fail so we can test completions
         # that are directly loaded in bash_completion without a separate file.
-        assert_bash_exec(bash, "__load_completion %s || :" % cmd)
+        assert_bash_exec(bash, "_comp_load %s || :" % cmd)
         assert_bash_exec(bash, "complete -p %s &>/dev/null" % cmd)
     except AssertionError:
         return False
@@ -426,20 +426,22 @@ def assert_bash_exec(
     )
     if want_output is not None:
         if output:
-            assert (
-                want_output
-            ), 'Unexpected output from "%s": exit status=%s, output="%s"' % (
-                cmd,
-                status,
-                output,
+            assert want_output, (
+                'Unexpected output from "%s": exit status=%s, output="%s"'
+                % (
+                    cmd,
+                    status,
+                    output,
+                )
             )
         else:
-            assert (
-                not want_output
-            ), 'Expected output from "%s": exit status=%s, output="%s"' % (
-                cmd,
-                status,
-                output,
+            assert not want_output, (
+                'Expected output from "%s": exit status=%s, output="%s"'
+                % (
+                    cmd,
+                    status,
+                    output,
+                )
             )
 
     return output

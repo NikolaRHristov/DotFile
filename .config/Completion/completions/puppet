@@ -24,7 +24,7 @@ _comp_cmd_puppet__certs()
     if [[ $1 == --all ]]; then
         cert_list=$(
             $puppetca --list --all |
-                command sed -e 's/^[+-]\{0,1\}\s*\(\S\+\)\s\+.*$/\1/'
+                command sed -e 's/^[+-]\{0,1\}[[:space:]]*\([^[:space:]]\{1,\}\)[[:space:]]\{1,\}.*$/\1/'
         )
     else
         cert_list=$("$puppetca" --list)
@@ -35,7 +35,7 @@ _comp_cmd_puppet__certs()
 _comp_cmd_puppet__types()
 {
     puppet_types=$(
-        puppet describe --list | command sed -e 's/^\(\S\{1,\}\).*$/\1/'
+        puppet describe --list | command sed -e 's/^\([^[:space:]]\{1,\}\).*$/\1/'
     )
     _comp_compgen -a -- -W "$puppet_types"
 }
@@ -47,7 +47,7 @@ _comp_cmd_puppet__references()
         puppetdoc=puppetdoc
 
     puppet_doc_list=$(
-        $puppetdoc --list | command sed -e 's/^\(\S\{1,\}\).*$/\1/'
+        $puppetdoc --list | command sed -e 's/^\([^[:space:]]\{1,\}\).*$/\1/'
     )
     _comp_compgen -a -- -W "$puppet_doc_list"
 }
@@ -122,7 +122,7 @@ _comp_cmd_puppet()
         agent)
             case $prev in
                 --certname)
-                    _known_hosts_real -- "$cur"
+                    _comp_compgen_known_hosts -- "$cur"
                     return
                     ;;
                 --digest)
@@ -130,7 +130,7 @@ _comp_cmd_puppet()
                     return
                     ;;
                 --fqdn)
-                    _known_hosts_real -- "$cur"
+                    _comp_compgen_known_hosts -- "$cur"
                     return
                     ;;
                 -l | --logdest)
@@ -196,7 +196,7 @@ _comp_cmd_puppet()
                             return
                             ;;
                         generate | --generate)
-                            _known_hosts_real -- "$cur"
+                            _comp_compgen -a known_hosts -- "$cur"
                             return
                             ;;
                         clean | print | revoke | --clean | --print | --revoke)
@@ -251,7 +251,7 @@ _comp_cmd_puppet()
         filebucket)
             case $prev in
                 -s | --server)
-                    _known_hosts_real -- "$cur"
+                    _comp_compgen_known_hosts -- "$cur"
                     return
                     ;;
                 -b | --bucket)
@@ -275,7 +275,7 @@ _comp_cmd_puppet()
                     return
                     ;;
                 --host)
-                    _known_hosts_real -- "$cur"
+                    _comp_compgen_known_hosts -- "$cur"
                     return
                     ;;
                 -t | --tag)
@@ -285,7 +285,7 @@ _comp_cmd_puppet()
                     if [[ $cur == -* ]]; then
                         _comp_cmd_puppet__subcmd_opts "$1" "$subcommand"
                     else
-                        _known_hosts_real -- "$cur"
+                        _comp_compgen_known_hosts -- "$cur"
                     fi
                     return
                     ;;

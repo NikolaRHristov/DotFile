@@ -9,11 +9,11 @@ repos:
       - id: gitlint
 
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.6.0-1
+    rev: v3.7.0-4
     hooks:
-      - id: shfmt-docker
+      - id: shfmt
         types: [text]
-        files: ^(bash_completion(\.d/[^/]+\.bash)?|completions/.+|test/(config/bashrc|update-test-cmd-list)|.+\.sh(\.in)?)$
+        files: ^(bash_completion(\.d/[^/]+\.bash)?|completions/.+|test/(config/bashrc|fallback/update-fallback-links|runLint|update-test-cmd-list)|.+\.sh(\.in)?)$
         exclude: ^completions/(\.gitignore|Makefile.*)$
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
@@ -22,7 +22,7 @@ repos:
       - id: shellcheck
         args: [-f, gcc]
         types: [text]
-        files: ^(bash_completion(\.d/[^/]+\.bash)?|completions/.+|test/(config/bashrc|update-test-cmd-list)|.+\.sh(\.in)?)$
+        files: ^(bash_completion(\.d/[^/]+\.bash)?|completions/.+|test/(config/bashrc|fallback/update-fallback-links|runLint|update-test-cmd-list)|.+\.sh(\.in)?)$
         exclude: ^completions/(\.gitignore|Makefile.*)$
         require_serial: false  # We disable SC1090 anyway, so parallel is ok
 
@@ -43,17 +43,13 @@ repos:
         pass_filenames: false
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.272
+    rev: v0.1.6
     hooks:
       - id: ruff
         types: [text]
         files: ^(helpers/python|.+\.py)$
         exclude: ^completions/
-
-  - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 23.1.0
-    hooks:
-      - id: black
+      - id: ruff-format
         types: [text]
         files: ^(helpers/python|.+\.py)$
         exclude: ^completions/

@@ -1,4 +1,4 @@
-# bts completion                                      -*- shell-script -*-
+# bts completion                                           -*- shell-script -*-
 
 # Generate bug numbers from bugs cache in ~/.devscripts_cache/bts
 _comp_cmd_bts__compgen_cached_bugs()
@@ -9,15 +9,16 @@ _comp_cmd_bts__compgen_cached_bugs()
             -name "${cur}[0-9]*.html" \
             -printf "%f\n" | cut -d'.' -f1
     )
-    _comp_compgen -aR -- -W '$bugs'
+    _comp_compgen -RU bugs -- -W '$bugs'
 }
 
 # Generate APT source packages prefixed with "src:"
 _comp_cmd_bts__compgen_src_packages_with_prefix()
 {
-    local ppn=${cur:4} # partial package name, after stripping "src:"
-    _comp_compgen -ac "$ppn" split -P "src:" -- \
-        "$(_comp_xfunc apt-cache sources "$ppn")"
+    local _ppn=${cur:4} # partial package name, after stripping "src:"
+    local sources
+    _comp_compgen -v sources -c "$_ppn" -x apt-cache sources &&
+        _comp_compgen -U sources -- -P "src:" -W '"${sources[@]}"'
 }
 
 _comp_cmd_bts()
@@ -28,8 +29,8 @@ _comp_cmd_bts()
     case $prev in
         show | bugs)
             _comp_compgen -- -W 'release-critical RC from: tag: usertag:'
-            _comp_cmd_bts__compgen_cached_bugs
-            _comp_cmd_bts__compgen_src_packages_with_prefix
+            _comp_compgen -ai bts cached_bugs
+            _comp_compgen -ai bts src_packages_with_prefix
             return
             ;;
         select)
@@ -40,7 +41,7 @@ _comp_cmd_bts()
             ;;
         status)
             _comp_compgen -- -W 'file: fields: verbose'
-            _comp_cmd_bts__compgen_cached_bugs
+            _comp_compgen -ai bts cached_bugs
             return
             ;;
         block | unblock)
@@ -58,22 +59,22 @@ _comp_cmd_bts()
             return
             ;;
         clone | "done" | reopen | archive | unarchive | retitle | summary | submitter | found | notfound | fixed | notfixed | merge | forcemerge | unmerge | claim | unclaim | forwarded | notforwarded | owner | noowner | subscribe | unsubscribe | reportspam | spamreport | affects | usertag | usertags | reassign | tag | tags)
-            _comp_cmd_bts__compgen_cached_bugs
+            _comp_compgen -i bts cached_bugs
             return
             ;;
         package)
-            COMPREPLY=($(_comp_xfunc apt-cache packages))
+            _comp_compgen -x apt-cache packages
             return
             ;;
         cache)
-            COMPREPLY=($(_comp_xfunc apt-cache packages))
-            _comp_cmd_bts__compgen_src_packages_with_prefix
+            _comp_compgen -x apt-cache packages
+            _comp_compgen -ai bts src_packages_with_prefix
             _comp_compgen -a -- -W 'from: release-critical RC'
             return
             ;;
         cleancache)
-            COMPREPLY=($(_comp_xfunc apt-cache packages))
-            _comp_cmd_bts__compgen_src_packages_with_prefix
+            _comp_compgen -x apt-cache packages
+            _comp_compgen -ai bts src_packages_with_prefix
             _comp_compgen -a -- -W 'from: tag: usertag: ALL'
             return
             ;;
@@ -86,7 +87,8 @@ _comp_cmd_bts()
             # COMP_WORDS would be: "bts cleancache src : <partial_pkg_name>"
             pos=$((COMP_CWORD - 2))
             if [[ $pos -gt 0 && ${COMP_WORDS[pos]} == "src" ]]; then
-                COMPREPLY=($(_comp_xfunc apt-cache src_packages))
+                _comp_compgen -x apt-cache sources
+
                 return
             fi
             ;;

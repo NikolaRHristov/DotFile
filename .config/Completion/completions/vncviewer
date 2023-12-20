@@ -7,7 +7,7 @@ _comp_cmd_vncviewer__bootstrap()
     case $ret in
         *xvnc4viewer) fname=_comp_cmd_xvnc4viewer ;;
         *tightvncviewer) fname=_comp_cmd_tightvncviewer ;;
-        *) fname=_known_hosts ;;
+        *) fname=_comp_complete_known_hosts ;;
     esac
 
     # Install real completion for subsequent completions
@@ -32,7 +32,7 @@ _comp_cmd_tightvncviewer()
             return
             ;;
         -via)
-            _known_hosts_real -- "$cur"
+            _comp_compgen_known_hosts -- "$cur"
             return
             ;;
     esac
@@ -43,7 +43,7 @@ _comp_cmd_tightvncviewer()
             -truecolour -truecolor -depth -compresslevel -quality -nojpeg
             -nocursorshape -x11cursor'
     else
-        _known_hosts_real -- "$cur"
+        _comp_compgen_known_hosts -- "$cur"
     fi
 } &&
     complete -F _comp_cmd_tightvncviewer tightvncviewer
@@ -68,7 +68,7 @@ _comp_cmd_xvnc4viewer()
             return
             ;;
         -via)
-            _known_hosts_real -- "$cur"
+            _comp_compgen_known_hosts -- "$cur"
             return
             ;;
     esac
@@ -91,7 +91,7 @@ _comp_cmd_xvnc4viewer()
         done))
         $reset
     else
-        _known_hosts_real -- "$cur"
+        _comp_compgen_known_hosts -- "$cur"
     fi
 } &&
     complete -F _comp_cmd_xvnc4viewer xvnc4viewer

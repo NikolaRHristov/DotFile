@@ -1,4 +1,4 @@
-# uscan completion                                      -*- shell-script -*-
+# uscan completion                                         -*- shell-script -*-
 
 _comp_cmd_uscan()
 {
@@ -7,7 +7,7 @@ _comp_cmd_uscan()
 
     case $prev in
         --package)
-            COMPREPLY=($(_comp_xfunc apt-cache src_packages))
+            _comp_compgen -x apt-cache sources
             return
             ;;
         --watchfile)

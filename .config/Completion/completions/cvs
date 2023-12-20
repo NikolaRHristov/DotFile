@@ -23,7 +23,7 @@ _comp_cmd_cvs__modules()
 _comp_cmd_cvs__compgen_commands()
 {
     _comp_compgen_split -- "$(
-        "$1" --help-commands 2>&1 | awk '/^(     *|\t)/ { print $1 }'
+        "$1" --help-commands 2>&1 | _comp_awk '/^(     *|\t)/ { print $1 }'
     )"
 }
 
@@ -42,10 +42,10 @@ _comp_xfunc_cvs_compgen_roots()
 {
     local -a cvsroots=()
     [[ -v CVSROOT ]] && cvsroots=("$CVSROOT")
-    [[ -r ~/.cvspass ]] && cvsroots+=($(awk '{ print $2 }' ~/.cvspass))
-    [[ -r CVS/Root ]] && mapfile -tO ${#cvsroots[@]} cvsroots <CVS/Root
+    [[ -r ~/.cvspass ]] && cvsroots+=($(_comp_awk '{ print $2 }' ~/.cvspass))
+    [[ -r CVS/Root ]] && mapfile -tO "${#cvsroots[@]}" cvsroots <CVS/Root
     ((${#cvsroots[@]})) &&
-        _comp_compgen -- -W '"${cvsroots[@]}"'
+        _comp_compgen -U cvsroots -- -W '"${cvsroots[@]}"'
     _comp_ltrim_colon_completions "$cur"
 }
 
@@ -56,7 +56,7 @@ _comp_cmd_cvs()
     local cur prev words cword comp_args
     _comp_initialize -n : -- "$@" || return
 
-    local count mode="" i cvsroot="" has_cvsroot="" cvsroots pwd
+    local count mode="" i cvsroot="" has_cvsroot="" pwd
     local -a flags files entries changed newremoved
 
     local noargopts='!(-*|*[d]*)'
@@ -237,7 +237,7 @@ _comp_cmd_cvs()
             if [[ $cur != -* ]]; then
                 [[ ! $has_cvsroot ]] && cvsroot=${CVSROOT-}
                 COMPREPLY=($(cvs -d "$cvsroot" co -c 2>/dev/null |
-                    awk '{print $1}'))
+                    _comp_awk '{print $1}'))
                 ((${#COMPREPLY[@]})) &&
                     _comp_compgen -- -W '"${COMPREPLY[@]}"'
             else
@@ -321,7 +321,7 @@ _comp_cmd_cvs()
 
             if [[ $cur != -* ]]; then
                 [[ ! $has_cvsroot ]] && cvsroot=${CVSROOT-}
-                COMPREPLY=($(cvs -d "$cvsroot" co -c | awk '{print $1}'))
+                COMPREPLY=($(cvs -d "$cvsroot" co -c | _comp_awk '{print $1}'))
                 ((${#COMPREPLY[@]})) &&
                     _comp_compgen -- -W '"${COMPREPLY[@]}"'
             else
