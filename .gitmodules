@@ -13,6 +13,7 @@ url = ssh://git@github.com/NikolaRHristov/Powershell.git
 [submodule "ZSH"]
 path = ZSH
 url = ssh://git@github.com/NikolaRHristov/ZSH.git
+
 [submodule ".config/nvim"]
-	path = .config/nvim
-	url = ssh://git@github.com/NikolaRHristov/NVIM.git
+path = .config/nvim
+url = ssh://git@github.com/NikolaRHristov/NVIM.git
