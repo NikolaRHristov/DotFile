@@ -1,22 +1,19 @@
 [submodule ".config/Completion"]
-	path = .config/Completion
-	url = ssh://git@github.com/NikolaRhristov/Completion.git
+path = .config/Completion
+url = ssh://git@github.com/NikolaRhristov/Completion.git
 
 [submodule "Bash"]
-	path = Bash
-	url = ssh://git@github.com/NikolaRHristov/Bash.git
+path = Bash
+url = ssh://git@github.com/NikolaRHristov/Bash.git
 
 [submodule "Powershell"]
-	path = Powershell
-	url = ssh://git@github.com/NikolaRHristov/Powershell.git
+path = Powershell
+url = ssh://git@github.com/NikolaRHristov/Powershell.git
 
 [submodule "ZSH"]
-	path = ZSH
-	url = ssh://git@github.com/NikolaRHristov/ZSH.git
+path = ZSH
+url = ssh://git@github.com/NikolaRHristov/ZSH.git
 
 [submodule ".config/nvim"]
-	path = .config/nvim
-	url = ssh://git@github.com/NikolaRHristov/NVIM.git
-[submodule ".config/NVIM"]
-	path = .config/NVIM
-	url = ssh://git@github.com/NikolaRHristov/NVIM.git
+path = .config/nvim
+url = ssh://git@github.com/NikolaRHristov/NVIM.git
