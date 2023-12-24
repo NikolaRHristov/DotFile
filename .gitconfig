@@ -74,7 +74,7 @@ prune = true
 autoSetupMerge = true
 
 [alias]
-sync = !git pull && git push
+sync = '!git pull ; git push'
 
 [safe]
 directory = C:/Program Files/Git/__w/
