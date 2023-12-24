@@ -1,2 +1,0 @@
-echo 'cmd2: sourced from userdir2'
-complete -C true "$1"

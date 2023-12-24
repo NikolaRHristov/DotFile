@@ -1,2 +1,0 @@
-echo 'cmd2: sourced from prefix1'
-complete -C true "$1"
