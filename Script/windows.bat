@@ -13,6 +13,9 @@ rm C:\msys64\home\nikola\.bash_history_shared
 rm C:\Users\nikola\.bashrc
 rm C:\msys64\home\nikola\.bashrc
 
+rm C:\Users\nikola\.zshrc
+rm C:\msys64\home\nikola\.zshrc
+
 rm C:\Users\nikola\.config
 rm C:\msys64\home\nikola\.config
 
@@ -64,6 +67,9 @@ mklink C:\msys64\home\nikola\.bash_logout D:\Developer\Application\NikolaRHristo
 mklink C:\Users\nikola\.bash_history_shared D:\Developer\Application\NikolaRHristov\Dotfile\.bash_history_shared
 mklink C:\msys64\home\nikola\.bash_history_shared D:\Developer\Application\NikolaRHristov\Dotfile\.bash_history_shared
 
+mklink C:\Users\nikola\.zshrc D:\Developer\Application\NikolaRHristov\Dotfile\.zshrc
+mklink C:\msys64\home\nikola\.zshrc D:\Developer\Application\NikolaRHristov\Dotfile\.zshrc
+
 mklink C:\Users\nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
 mklink C:\msys64\home\nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
 
@@ -71,7 +77,7 @@ mklink C:\Users\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfil
 mklink C:\msys64\home\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
 
 mklink C:\Users\nikola\.gitconfig D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig
-mklink C:\msys64\home\nikola\.gitconfig D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig
+cp D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig C:\msys64\home\nikola\.gitconfig
 
 mklink C:\Users\nikola\.gitmessage D:\Developer\Application\NikolaRHristov\Dotfile\.gitmessage
 mklink C:\msys64\home\nikola\.gitmessage D:\Developer\Application\NikolaRHristov\Dotfile\.gitmessage
