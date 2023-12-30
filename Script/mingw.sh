@@ -30,7 +30,7 @@ ln -s "$DOTFILE".zshrc ~/.zshrc
 ln -s "$DOTFILE".bashrc ~/.bashrc
 ln -s "$DOTFILE".config ~/.config
 ln -s "$DOTFILE".functions ~/.functions
-ln -s "$DOTFILE".gitconfig ~/.gitconfig
+cp "$DOTFILE".gitconfig ~/.gitconfig
 ln -s "$DOTFILE".gitmessage ~/.gitmessage
 ln -s "$DOTFILE"Bash ~/Bash
 ln -s "$DOTFILE"Powershell ~/Powershell

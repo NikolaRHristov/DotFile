@@ -15,7 +15,6 @@ rm ~/.gitmessage
 rm ~/Bash
 rm ~/Powershell
 rm ~/ZSH
-rm ~/.ssh
 rm ~/prettier.config.js
 rm ~/rustfmt.toml
 rm ~/tailwind.config.js
