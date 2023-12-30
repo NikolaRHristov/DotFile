@@ -2,24 +2,24 @@
 
 DOTFILE="/media/sf_Developer/Application/NikolaRHristov/Dotfile/"
 
-rm ~/.aliases
-rm ~/.bash_profile
-rm ~/.bash_logout
-rm ~/.bash_history_shared
-rm ~/.bashrc
-rm ~/.zshrc
-rm ~/.config
-rm ~/.functions
-rm ~/.gitconfig
-rm ~/.gitmessage
-rm ~/Bash
-rm ~/Powershell
-rm ~/ZSH
-rm ~/prettier.config.js
-rm ~/rustfmt.toml
-rm ~/tailwind.config.js
-rm ~/rome.json
-rm ~/biome.json
+rm -rf ~/.aliases
+rm -rf ~/.bash_profile
+rm -rf ~/.bash_logout
+rm -rf ~/.bash_history_shared
+rm -rf ~/.bashrc
+rm -rf ~/.zshrc
+rm -rf ~/.config
+rm -rf ~/.functions
+rm -rf ~/.gitconfig
+rm -rf ~/.gitmessage
+rm -rf ~/Bash
+rm -rf ~/Powershell
+rm -rf ~/ZSH
+rm -rf ~/prettier.config.js
+rm -rf ~/rustfmt.toml
+rm -rf ~/tailwind.config.js
+rm -rf ~/rome.json
+rm -rf ~/biome.json
 
 ln -s "$DOTFILE".aliases ~/.aliases
 ln -s "$DOTFILE".bash_profile ~/.bash_profile
@@ -39,7 +39,6 @@ ln -s "$DOTFILE".config ~/.config
 ln -s "$DOTFILE"Bash ~/Bash
 ln -s "$DOTFILE"Powershell ~/Powershell
 ln -s "$DOTFILE"ZSH ~/ZSH
-ln -s ~/.config/nvim ~/AppData/Local/nvim
 
 rm ~/Developer/.clang-format
 rm ~/Developer/.csharpierrc
@@ -54,15 +53,15 @@ rm ~/Developer/biome.json
 rm ~/Developer/rustfmt.toml
 rm ~/Developer/tsconfig.json
 
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.clang-format ~/Developer/.clang-format
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.csharpierrc ~/Developer/.csharpierrc
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.editorconfig ~/Developer/.editorconfig
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.jshintrc ~/Developer/.jshintrc
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.npmrc ~/Developer/.npmrc
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.prettierignore ~/Developer/.prettierignore
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/.stylua.toml ~/Developer/.stylua.toml
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/jsconfig.json ~/Developer/jsconfig.json
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/rome.json ~/Developer/rome.json
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/biome.json ~/Developer/biome.json
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/rustfmt.toml ~/Developer/rustfmt.toml
-ln -s /media/sf_Developer/Application/NikolaRHristov/Dotfile/tsconfig.json ~/Developer/tsconfig.json
+ln -s "$DOTFILE".clang-format ~/Developer/.clang-format
+ln -s "$DOTFILE".csharpierrc ~/Developer/.csharpierrc
+ln -s "$DOTFILE".editorconfig ~/Developer/.editorconfig
+ln -s "$DOTFILE".jshintrc ~/Developer/.jshintrc
+ln -s "$DOTFILE".npmrc ~/Developer/.npmrc
+ln -s "$DOTFILE".prettierignore ~/Developer/.prettierignore
+ln -s "$DOTFILE".stylua.toml ~/Developer/.stylua.toml
+ln -s "$DOTFILE"jsconfig.json ~/Developer/jsconfig.json
+ln -s "$DOTFILE"rome.json ~/Developer/rome.json
+ln -s "$DOTFILE"biome.json ~/Developer/biome.json
+ln -s "$DOTFILE"rustfmt.toml ~/Developer/rustfmt.toml
+ln -s "$DOTFILE"tsconfig.json ~/Developer/tsconfig.json

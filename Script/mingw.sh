@@ -2,25 +2,25 @@
 
 DOTFILE="/d/Developer/Application/NikolaRHristov/Dotfile/"
 
-rm ~/.aliases
-rm ~/.bash_profile
-rm ~/.bash_logout
-rm ~/.bash_history_shared
-rm ~/.bashrc
-rm ~/.zshrc
-rm ~/.config
-rm ~/.functions
-rm ~/.gitconfig
-rm ~/.gitmessage
-rm ~/Bash
-rm ~/Powershell
-rm ~/ZSH
-rm ~/.ssh
-rm ~/prettier.config.js
-rm ~/rustfmt.toml
-rm ~/tailwind.config.js
-rm ~/rome.json
-rm ~/biome.json
+rm -rf ~/.aliases
+rm -rf ~/.bash_profile
+rm -rf ~/.bash_logout
+rm -rf ~/.bash_history_shared
+rm -rf ~/.bashrc
+rm -rf ~/.zshrc
+rm -rf ~/.config
+rm -rf ~/.functions
+rm -rf ~/.gitconfig
+rm -rf ~/.gitmessage
+rm -rf ~/Bash
+rm -rf ~/Powershell
+rm -rf ~/ZSH
+rm -rf ~/.ssh
+rm -rf ~/prettier.config.js
+rm -rf ~/rustfmt.toml
+rm -rf ~/tailwind.config.js
+rm -rf ~/rome.json
+rm -rf ~/biome.json
 
 ln -s "$DOTFILE".aliases ~/.aliases
 ln -s "$DOTFILE".bash_profile ~/.bash_profile
