@@ -13,12 +13,14 @@ required = true
 autocrlf = input
 fscache = true
 symlinks = true
-pager = delta
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
 ignorecase = false
+
+[pager]
+difftool = true
 
 [pull]
 rebase = false
@@ -37,9 +39,13 @@ template = C:/Users/nikola/.gitmessage
 tool = vscode
 
 [diff]
-colorMoved = default
-tool = vscode
-context = 0
+tool = difftastic
+
+[difftool]
+prompt = false
+
+[difftool "difftastic"]
+cmd = difft "$LOCAL" "$REMOTE"
 
 [delta]
 features = unobtrusive-line-numbers decorations
