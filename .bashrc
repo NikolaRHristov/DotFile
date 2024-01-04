@@ -78,7 +78,13 @@ source "$OSH"/oh-my-bash.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 
-export EDITOR="nano"
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+	export EDITOR='nano'
+else
+	export EDITOR='nano'
+fi
+
 export ARCHFLAGS="-arch x86_64"
 
 if [[ $PS1 && -f ~/.config/Completion/bash_completion ]]; then
@@ -160,12 +166,9 @@ export GPG_AGENT_INFO
 
 export RUSTC_WRAPPER=sccache
 
-# Append commands to the history file as soon as they are executed
 shopt -s histappend
-
-# Set the maximum number of history lines to store (optional)
-HISTSIZE=10000
-HISTFILESIZE=10000
-
-# Define a common history file
 HISTFILE="$HOME/.bash_history_shared"
+HISTSIZE=1000
+HISTFILESIZE=10000
+# shellcheck disable=SC2034
+SAVEHIST=1000
