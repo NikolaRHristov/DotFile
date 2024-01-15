@@ -172,3 +172,7 @@ HISTSIZE=1000
 HISTFILESIZE=10000
 # shellcheck disable=SC2034
 SAVEHIST=1000
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
+eval "$(atuin init bash)"

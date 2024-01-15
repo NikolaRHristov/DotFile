@@ -128,3 +128,5 @@ HISTFILE="$HOME/.zsh_history_shared"
 HISTSIZE=1000
 HISTFILESIZE=10000
 SAVEHIST=1000
+
+eval "$(atuin init zsh)"

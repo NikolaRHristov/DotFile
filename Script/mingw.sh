@@ -7,6 +7,7 @@ rm -rf ~/.bash_profile
 rm -rf ~/.bash_logout
 rm -rf ~/.bash_history_shared
 rm -rf ~/.bashrc
+rm -rf ~/.bash-preexec.sh
 rm -rf ~/.zshrc
 rm -rf ~/.config
 rm -rf ~/.functions
@@ -28,6 +29,7 @@ ln -s "$DOTFILE".bash_logout ~/.bash_logout
 ln -s "$DOTFILE".bash_history_shared ~/.bash_history_shared
 ln -s "$DOTFILE".zshrc ~/.zshrc
 ln -s "$DOTFILE".bashrc ~/.bashrc
+ln -s "$DOTFILE".bash-preexec.sh ~/.bash-preexec.sh
 ln -s "$DOTFILE".config ~/.config
 ln -s "$DOTFILE".functions ~/.functions
 cp "$DOTFILE".gitconfig ~/.gitconfig

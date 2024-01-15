@@ -13,6 +13,9 @@ rm C:\msys64\home\nikola\.bash_history_shared
 rm C:\Users\nikola\.bashrc
 rm C:\msys64\home\nikola\.bashrc
 
+rm C:\Users\nikola\.bash-preexec.sh
+rm C:\msys64\home\nikola\.bash-preexec.sh
+
 rm C:\Users\nikola\.zshrc
 rm C:\msys64\home\nikola\.zshrc
 
@@ -72,6 +75,9 @@ mklink C:\msys64\home\nikola\.zshrc D:\Developer\Application\NikolaRHristov\Dotf
 
 mklink C:\Users\nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
 mklink C:\msys64\home\nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
+
+mklink C:\Users\nikola\.bash-preexec.sh D:\Developer\Application\NikolaRHristov\Dotfile\.bash-preexec.sh
+mklink C:\msys64\home\nikola\.bash-preexec.sh D:\Developer\Application\NikolaRHristov\Dotfile\.bash-preexec.sh
 
 mklink C:\Users\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
 mklink C:\msys64\home\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
