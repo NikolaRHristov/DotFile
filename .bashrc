@@ -4,9 +4,7 @@ case $- in
 *) return ;;
 esac
 
-if [ -f ${WSLENV+} ]; then
-	export PATH="$PATH:$HOME/.config/xclip"
-fi
+[[ -f ${WSLENV+} ]] && export PATH="$PATH:$HOME/.config/xclip"
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -73,7 +71,7 @@ plugins=(
 #  fi
 
 # shellcheck source=/dev/null
-source "$OSH"/oh-my-bash.sh
+[[ -f "$OSH/oh-my-bash.sh" ]] && . "$OSH/oh-my-bash.sh"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
@@ -97,32 +95,22 @@ if [[ $PS1 && -f /usr/share/Completion/bash_completion ]]; then
 	. /usr/share/Completion/bash_completion
 fi
 
-if [ -f "$HOME/.cargo/env" ]; then
-	# shellcheck source=/dev/null
-	. "$HOME/.cargo/env"
-fi
+# shellcheck source=/dev/null
+[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
 
 export PATH="$PATH:$HOME/.cargo/bin"
 
-if [ -f "$NVM_DIR/nvm.sh" ]; then
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/nvm.sh"
-fi
+# shellcheck source=/dev/null
+[[ -f "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"
 
-if [ -f "$NVM_DIR/bash_completion" ]; then
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/bash_completion"
-fi
+# shellcheck source=/dev/null
+[[ -f "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
 
-if [ -f ~/.aliases ]; then
-	# shellcheck source=/dev/null
-	. ~/.aliases
-fi
+# shellcheck source=/dev/null
+[[ -f ~/.aliases ]] && . ~/.aliases
 
-if [ -f ~/.functions ]; then
-	# shellcheck source=/dev/null
-	. ~/.functions
-fi
+# shellcheck source=/dev/null
+[[ -f ~/.functions ]] && . ~/.functions
 
 export PATH="$PATH:/c/Users/nikola/.bin"
 export AWS_CLI_AUTO_PROMPT=on-partial
@@ -173,6 +161,7 @@ HISTFILESIZE=10000
 # shellcheck disable=SC2034
 SAVEHIST=1000
 
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+# shellcheck disable=SC1090
+[[ -f ~/.bash-preexec.sh ]] && . ~/.bash-preexec.sh
 
-eval "$(atuin init bash)"
+# eval "$(atuin init bash)"

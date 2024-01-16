@@ -129,4 +129,4 @@ HISTSIZE=1000
 HISTFILESIZE=10000
 SAVEHIST=1000
 
-eval "$(atuin init zsh)"
+# eval "$(atuin init zsh)"

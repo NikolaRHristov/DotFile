@@ -1,9 +1,11 @@
 #!/bin/sh
-if [ -f ~/.bashrc ]; then
-	# shellcheck source=/dev/null
-	. ~/.bashrc
-fi
 
-if [ -e /home/nikola/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nikola/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# shellcheck disable=SC1090
+# shellcheck disable=SC3010
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# shellcheck disable=SC3010
+# shellcheck disable=SC1091
+[[ -f /home/nikola/.nix-profile/etc/profile.d/nix.sh ]] && . /home/nikola/.nix-profile/etc/profile.d/nix.sh
 
 [ -d "/d/Developer" ] && cd /d/Developer || cd ~/ || exit
