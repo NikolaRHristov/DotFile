@@ -1,12 +1,7 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.5.2/schema.json",
 	"files": {
-		"ignore": [
-			"**/Target/**/*",
-			"**/Documentation/**/*",
-			"**/dist/**/*",
-			"**/CodeEditorLand/**/*"
-		],
+		"ignore": ["**/Target/**/*", "**/Documentation/**/*", "**/dist/**/*"],
 		"maxSize": 10000000
 	},
 	"formatter": {
