@@ -11,13 +11,15 @@ required = true
 
 [core]
 autocrlf = input
-fscache = true
+	fscache = true
 symlinks = true
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
 ignorecase = false
+	ignoreStat = true
+	preloadindex = true
 
 [pager]
 difftool = true
@@ -84,6 +86,9 @@ sync = !git pull && git push
 
 [safe]
 directory = C:/Program Files/Git/__w/
+	directory = D:/Developer/Llama/llama.cpp
 
 [protocol "file"]
 allow = always
+[gc]
+	auto = 256

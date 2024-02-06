@@ -68,7 +68,7 @@ for ORG in "${ORGS[@]}"; do
 		"NowPlayingCards")
 			EMAIL_BILLING="hello@now-playing.cards"
 			EMAIL="hello@now-playing.cards"
-			TWITTER="NowPlayingCards"
+			TWITTER="NowPlayingCard"
 			;;
 		"NeovimSpace")
 			EMAIL_BILLING="hello@neovim.space"
