@@ -11,15 +11,15 @@ required = true
 
 [core]
 autocrlf = input
-	fscache = true
-symlinks = true
+fscache = false
+symlinks = false
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
 ignorecase = false
-	ignoreStat = true
-	preloadindex = true
+ignoreStat = false
+preloadindex = false
 
 [pager]
 difftool = true
@@ -86,9 +86,10 @@ sync = !git pull && git push
 
 [safe]
 directory = C:/Program Files/Git/__w/
-	directory = D:/Developer/Llama/llama.cpp
+directory = D:/Developer/Llama/llama.cpp
+	directory = D:/Developer/Llama/CLBlast
 
 [protocol "file"]
 allow = always
 [gc]
-	auto = 256
+auto = 256
