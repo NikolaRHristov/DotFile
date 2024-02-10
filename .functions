@@ -60,9 +60,15 @@ function cd() {
 }
 
 function delete_all_tags() {
-	git fetch
-	git tag | xargs -L 1 | xargs git push origin --delete
-	git tag | xargs -L 1 | xargs git tag --delete
+	\git --no-pager fetch --all --tags
+
+	TAGS=$(\git --no-pager tag)
+
+	for TAG in $TAGS; do
+		echo "Deleting tag: $TAG"
+		\git push --delete origin "$TAG"
+		\git tag --delete "$TAG"
+	done
 }
 
 function erase_history() {
@@ -152,11 +158,11 @@ function secure_pass() {
 }
 
 function sign_all_commits() {
-	git rebase --exec 'git commit --amend --no-edit -n -S' -i --root
+	git --no-pager rebase --exec 'git --no-pager commit --amend --no-edit -n -S' -i --root
 }
 
 function sign_commits() {
-	git rebase --exec 'git commit --amend --no-edit -n -S' -i "$1"
+	git --no-pager rebase --exec 'git --no-pager commit --amend --no-edit -n -S' -i "$1"
 }
 
 function sshagent_findsockets() {
