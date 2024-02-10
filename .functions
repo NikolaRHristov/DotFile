@@ -62,17 +62,18 @@ function cd() {
 function delete_all_tags() {
 	\git --no-pager fetch --all --tags
 
-	TAGS=$(\git --no-pager tag)
+	Tag=$(\git --no-pager tag)
 
-	for TAG in $TAGS; do
-		echo "Deleting tag: $TAG"
-		\git push --delete origin "$TAG"
-		\git tag --delete "$TAG"
+	for Tag in "${Tag[@]}"; do
+		echo "Deleting tag: $Tag"
+		\git push --delete origin "$Tag"
+		\git tag --delete "$Tag"
 	done
 }
 
 function erase_history() {
 	cat /dev/null >~/.bash_history && history -c
+	cat /dev/null >~/.bash_history_shared && history -c
 	cat /dev/null >~/.nano/search_history
 	exit
 }
