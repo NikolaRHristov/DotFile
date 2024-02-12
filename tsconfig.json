@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"emitDeclarationOnly": false,
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"noEmit": true
+	},
+	"exclude": ["**/node_modules/**", "**/Target/**"],
+	"include": ["./Application/"],
+	"watchOptions": {
+		"excludeDirectories": [
+			"**/node_modules/**",
+			"**/Target/**",
+			"**/samples/**"
+		]
+	},
+	"extends": "typescript-esbuild/Target/Notation/TypeScript"
+}
