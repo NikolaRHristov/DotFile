@@ -60,7 +60,7 @@ function cd() {
 }
 
 function delete_all_tags() {
-	\git --no-pager fetch --all --tags
+	\git fetch --all --tags
 
 	Tag=$(\git --no-pager tag)
 
@@ -159,11 +159,11 @@ function secure_pass() {
 }
 
 function sign_all_commits() {
-	git --no-pager rebase --exec 'git --no-pager commit --amend --no-edit -n -S' -i --root
+	git rebase --exec 'git commit --amend --no-edit -n -S' -i --root
 }
 
 function sign_commits() {
-	git --no-pager rebase --exec 'git --no-pager commit --amend --no-edit -n -S' -i "$1"
+	git rebase --exec 'git commit --amend --no-edit -n -S' -i "$1"
 }
 
 function sshagent_findsockets() {

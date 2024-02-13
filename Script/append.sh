@@ -7,7 +7,7 @@ cat package.json | jq '. + {
 	},
 	"author": {
 		"email": "nikola@nikolahristov.tech",
-		"name": "Nikola Hristov",
+		"name": "Nikola R. Hristov",
 		"url": "https://nikolahristov.tech"
 	},
 	"license": "MIT",

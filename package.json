@@ -2,10 +2,10 @@
 	"name": "dotfile",
 	"version": "0.0.1",
 	"private": false,
-	"description": "Nikola Hristov's Dotfiles",
+	"description": "Nikola R. Hristov's Dotfiles",
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "Nikola Hristov",
+		"name": "Nikola R. Hristov",
 		"email": "nikola@nikolahristov.tech",
 		"url": "https://nikolahristov.tech"
 	},
