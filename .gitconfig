@@ -15,12 +15,12 @@ fscache = false
 symlinks = false
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
-	fsmonitor = true
+fsmonitor = false
 editor = code-insiders --wait
 ignorecase = false
 ignoreStat = false
 preloadindex = false
-	untrackedcache = true
+untrackedcache = false
 
 [pager]
 difftool = true
@@ -93,7 +93,6 @@ auto = 256
 
 [rerere]
 enabled = true
+
 [column]
-	ui = auto
-[pack]
-	allowPackReuse = multi
+ui = auto
