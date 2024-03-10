@@ -32,7 +32,7 @@ rebase = false
 autoSetupRemote = true
 
 [init]
-defaultBranch = main
+defaultBranch = Current
 
 [commit]
 gpgsign = true
