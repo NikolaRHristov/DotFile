@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mapfile -t array < <(printf "%s" "$(gh api -X GET user/orgs | jq -r '.[].login')" | tr -d '\r')
+mapfile -t array < <(printf "%s" "$(\gh api -X GET user/orgs | \jq -r '.[].login')" | tr -d '\r')
 
 OMIT=("astro-community")
 
