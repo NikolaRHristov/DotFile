@@ -6,12 +6,12 @@ cat package.json | jq '. + {
 		"access": "public"
 	},
 	"author": {
-		"email": "nikola@nikolahristov.tech",
+		"email": "Nikola@Playform.Cloud",
 		"name": "Nikola R. Hristov",
 		"url": "https://nikolahristov.tech"
 	},
 	"license": "MIT",
 	"type": "module",
-}' >| package.json
+}' >|package.json
 
 sort-package-json
