@@ -42,7 +42,7 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL="nasty@playform.cloud"
 		TWITTER="NastyApplication"
 		;;
-	"RoundedCorners")
+	"RoundWindows")
 		EMAIL_BILLING="hello@roundedcorners.app"
 		EMAIL="hello@roundedcorners.app"
 		TWITTER="RCAppWindows"
