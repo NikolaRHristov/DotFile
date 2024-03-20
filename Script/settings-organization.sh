@@ -22,14 +22,14 @@ for E in "${array[@]}"; do
 done
 
 for ORG in "${ORGS[@]}"; do
-	EMAIL_BILLING="hello@playform.cloud"
-	EMAIL="hello@playform.cloud"
+	EMAIL_BILLING="Hello@Playform.Cloud"
+	EMAIL="Hello@Playform.Cloud"
 	TWITTER="PlayformCloud"
 
 	case "$ORG" in
 	"Playform")
-		EMAIL_BILLING="hello@playform.cloud"
-		EMAIL="hello@playform.cloud"
+		EMAIL_BILLING="Hello@Playform.Cloud"
+		EMAIL="Hello@Playform.Cloud"
 		TWITTER="PlayformCloud"
 		;;
 	"windowsdock")
