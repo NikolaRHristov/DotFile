@@ -83,7 +83,7 @@ prune = true
 autoSetupMerge = true
 
 [alias]
-sync = !git pull && git push
+sync = "!git pull -q ; git push -q"
 
 [protocol "file"]
 allow = always
