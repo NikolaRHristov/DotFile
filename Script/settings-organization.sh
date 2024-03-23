@@ -119,6 +119,11 @@ for ORG in "${ORGS[@]}"; do
 		EMAIL="signup@playform.cloud"
 		TWITTER="SecretSignup"
 		;;
+	"SecurityCodeEditorLand")
+		EMAIL_BILLING="Security.Land@Playform.Cloud"
+		EMAIL="Security.Land@Playform.Cloud"
+		TWITTER="SCodeEditorLand"
+		;;
 	"327b5")
 		EMAIL_BILLING="327b5@nikolahristov.tech"
 		EMAIL="327b5@nikolahristov.tech"
