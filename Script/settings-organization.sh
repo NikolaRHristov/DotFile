@@ -1,138 +1,119 @@
 #!/bin/bash
 
-mapfile -t array < <(printf "%s" "$(\gh api -X GET user/orgs | \jq -r '.[].login')" | tr -d '\r')
+mapfile -t Organization < <(printf "%s" "$(\gh api -X GET user/orgs | \jq -r '.[].login')" | tr -d '\r')
 
-OMIT=("astro-community")
-
-ORGS=()
-
-for E in "${array[@]}"; do
-	skip=false
-
-	for item in "${OMIT[@]}"; do
-		if [[ "$E" == *"$item"* ]]; then
-			skip=true
-			break
-		fi
-	done
-
-	if [ "$skip" = false ]; then
-		ORGS+=("$E")
-	fi
-done
-
-for ORG in "${ORGS[@]}"; do
-	EMAIL_BILLING="Hello@Playform.Cloud"
-	EMAIL="Hello@Playform.Cloud"
-	TWITTER="PlayformCloud"
+for Organization in "${Organization[@]}"; do
+	Billing="Hello@Playform.Cloud"
+	Email="Hello@Playform.Cloud"
+	Twitter="PlayformCloud"
 
 	case "$ORG" in
 	"Playform")
-		EMAIL_BILLING="Hello@Playform.Cloud"
-		EMAIL="Hello@Playform.Cloud"
-		TWITTER="PlayformCloud"
+		Billing="Hello@Playform.Cloud"
+		Email="Hello@Playform.Cloud"
+		Twitter="PlayformCloud"
 		;;
 	"windowsdock")
-		EMAIL_BILLING="hello@windowsdock.app"
-		EMAIL="hello@windowsdock.app"
-		TWITTER="windowsdock"
+		Billing="hello@Windowsdock.App"
+		Email="hello@Windowsdock.App"
+		Twitter="windowsdock"
 		;;
 	"NastyApplication")
-		EMAIL_BILLING="nasty@playform.cloud"
-		EMAIL="nasty@playform.cloud"
-		TWITTER="NastyApplication"
+		Billing="nasty@Playform.Cloud"
+		Email="nasty@Playform.Cloud"
+		Twitter="NastyApplication"
 		;;
 	"RoundWindows")
-		EMAIL_BILLING="hello@roundedcorners.app"
-		EMAIL="hello@roundedcorners.app"
-		TWITTER="RCAppWindows"
+		Billing="hello@Roundedcorners.App"
+		Email="hello@Roundedcorners.App"
+		Twitter="RCAppWindows"
 		;;
 	"BlackRainbowAI")
-		EMAIL_BILLING="hello@blackrainbow.media"
-		EMAIL="hello@blackrainbow.media"
-		TWITTER="BlackRainbowAI"
+		Billing="hello@Blackrainbow.Media"
+		Email="hello@Blackrainbow.Media"
+		Twitter="BlackRainbowAI"
 		;;
 	"ImageWTF")
-		EMAIL_BILLING="hello@image.wtf"
-		EMAIL="hello@image.wtf"
-		TWITTER="ImageWTF"
+		Billing="hello@Image.Wtf"
+		Email="hello@Image.Wtf"
+		Twitter="ImageWTF"
 		;;
 	"ReturnThief")
-		EMAIL_BILLING="hello@returnthief.quest"
-		EMAIL="hello@returnthief.quest"
+		Billing="hello@Returnthief.Quest"
+		Email="hello@Returnthief.Quest"
 		;;
 	"DoccerPage")
-		EMAIL_BILLING="hello@doccer.page"
-		EMAIL="hello@doccer.page"
+		Billing="hello@Doccer.Page"
+		Email="hello@Doccer.Page"
 		;;
 	"HristovFoundation")
-		EMAIL_BILLING="hello@hristov.foundation"
-		EMAIL="hello@hristov.foundation"
-		TWITTER="NikolaRHristov"
+		Billing="hello@Hristov.Foundation"
+		Email="hello@Hristov.Foundation"
+		Twitter="NikolaRHristov"
 		;;
 	"MythemeCloud")
-		EMAIL_BILLING="hello@mytheme.cloud"
-		EMAIL="hello@mytheme.cloud"
+		Billing="hello@Mytheme.Cloud"
+		Email="hello@Mytheme.Cloud"
 		;;
 	"NowPlayingCards")
-		EMAIL_BILLING="hello@now-playing.cards"
-		EMAIL="hello@now-playing.cards"
-		TWITTER="NowPlayingCard"
+		Billing="hello@Now-Playing.Cards"
+		Email="hello@Now-Playing.Cards"
+		Twitter="NowPlayingCard"
 		;;
 	"NeovimSpace")
-		EMAIL_BILLING="hello@neovim.space"
-		EMAIL="hello@neovim.space"
-		TWITTER="NeovimSpace"
+		Billing="hello@Neovim.Space"
+		Email="hello@Neovim.Space"
+		Twitter="NeovimSpace"
 		;;
 	"HalleSoftware")
-		EMAIL_BILLING="hello@halle.software"
-		EMAIL="hello@halle.software"
-		TWITTER="HalleSoftware"
+		Billing="hello@Halle.Software"
+		Email="hello@Halle.Software"
+		Twitter="HalleSoftware"
 		;;
 	"GrenadierJS")
-		EMAIL_BILLING="grenadier@playform.cloud"
-		EMAIL="grenadier@playform.cloud"
-		TWITTER="GrenadierJS"
+		Billing="grenadier@Playform.Cloud"
+		Email="grenadier@Playform.Cloud"
+		Twitter="GrenadierJS"
 		;;
 	"SileaJS")
-		EMAIL_BILLING="silea@playform.cloud"
-		EMAIL="silea@playform.cloud"
-		TWITTER="SileaJS"
+		Billing="silea@Playform.Cloud"
+		Email="silea@Playform.Cloud"
+		Twitter="SileaJS"
 		;;
 	"CrepesJS")
-		EMAIL_BILLING="crepes@playform.cloud"
-		EMAIL="crepes@playform.cloud"
-		TWITTER="CrepesJS"
+		Billing="crepes@Playform.Cloud"
+		Email="crepes@Playform.Cloud"
+		Twitter="CrepesJS"
 		;;
 	"SouqRs")
-		EMAIL_BILLING="souq@playform.cloud"
-		EMAIL="souq@playform.cloud"
-		TWITTER="SouqRs"
+		Billing="souq@Playform.Cloud"
+		Email="souq@Playform.Cloud"
+		Twitter="SouqRs"
 		;;
 	"CodeEditorLand")
-		EMAIL_BILLING="land@playform.cloud"
-		EMAIL="land@playform.cloud"
-		TWITTER="CodeEditorLand"
+		Billing="land@Playform.Cloud"
+		Email="land@Playform.Cloud"
+		Twitter="CodeEditorLand"
 		;;
 	"SecretSignup")
-		EMAIL_BILLING="signup@playform.cloud"
-		EMAIL="signup@playform.cloud"
-		TWITTER="SecretSignup"
+		Billing="signup@Playform.Cloud"
+		Email="signup@Playform.Cloud"
+		Twitter="SecretSignup"
 		;;
 	"SecurityCodeEditorLand")
-		EMAIL_BILLING="Security.Land@Playform.Cloud"
-		EMAIL="Security.Land@Playform.Cloud"
-		TWITTER="SCodeEditorLand"
+		Billing="Security.Land@Playform.Cloud"
+		Email="Security.Land@Playform.Cloud"
+		Twitter="SCodeEditorLand"
 		;;
 	"327b5")
-		EMAIL_BILLING="327b5@nikolahristov.tech"
-		EMAIL="327b5@nikolahristov.tech"
-		TWITTER=""
+		Billing="327b5@NikolaHristov.Tech"
+		Email="327b5@NikolaHristov.Tech"
+		Twitter=""
 		;;
 	"ae6a6")
-		EMAIL_BILLING="ae6a6@nikolahristov.tech"
-		EMAIL="ae6a6@nikolahristov.tech"
-		TWITTER=""
+		Billing="ae6a6@NikolaHristov.Tech"
+		Email="ae6a6@NikolaHristov.Tech"
+		Twitter=""
 		;;
 	esac
 
@@ -145,9 +126,9 @@ for ORG in "${ORGS[@]}"; do
 		orgs/"${ORG}" \
 		-f location='Bulgaria' \
 		-f company='Playform' \
-		-f billing_email=${EMAIL_BILLING} \
-		-f email=${EMAIL} \
-		-f twitter_username=${TWITTER} \
+		-f billing_email=${Billing} \
+		-f email=${Email} \
+		-f twitter_username=${Twitter} \
 		-F has_organization_projects=false \
 		-F has_repository_projects=false \
 		-f default_repository_permission='none' \
