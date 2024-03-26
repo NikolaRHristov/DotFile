@@ -1,5 +1,5 @@
 # bash-preexec.sh -- Bash support for ZSH-like 'preexec' and 'precmd' functions.
-# HTTPS://GitHub.Com/rcaloras/bash-preexec
+# https://github.com/rcaloras/bash-preexec
 #
 #
 # 'preexec' functions are executed before each interactive command is
