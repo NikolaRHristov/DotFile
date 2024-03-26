@@ -11,7 +11,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"typescript-esbuild": "0.4.5"
+		"typescript-esbuild": "0.4.6"
 	},
 	"publishConfig": {
 		"access": "public"
