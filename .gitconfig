@@ -1,6 +1,6 @@
 [user]
 name = Nikola R. Hristov
-email = Nikola@Playform.Cloud
+email = nikola@nikolahristov.tech
 signingkey = BAF2F5C7BAAD1367
 
 [filter "lfs"]
@@ -96,3 +96,7 @@ enabled = true
 
 [column]
 ui = auto
+
+[oh-my-bash]
+hide-status = 1
+hide-dirty = 1

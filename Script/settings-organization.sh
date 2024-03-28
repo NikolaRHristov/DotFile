@@ -1,129 +1,129 @@
 #!/bin/bash
 
-mapfile -t Organization < <(printf "%s" "$(\gh api -X GET user/orgs | \jq -r '.[].login')" | tr -d '\r')
+mapfile -t Organization < <(printf "%s" "$(\gh api users/NikolaRHristov/orgs | \jq -r '.[].login')" | tr -d '\r')
 
 for Organization in "${Organization[@]}"; do
-	Billing="Hello@Playform.Cloud"
-	Email="Hello@Playform.Cloud"
+	Billing="hello@playform.cloud"
+	Email="hello@playform.cloud"
 	Twitter="PlayformCloud"
 
-	case "$ORG" in
+	case "$Organization" in
 	"Playform")
-		Billing="Hello@Playform.Cloud"
-		Email="Hello@Playform.Cloud"
+		Billing="hello@playform.cloud"
+		Email="hello@playform.cloud"
 		Twitter="PlayformCloud"
 		;;
 	"windowsdock")
-		Billing="hello@Windowsdock.App"
-		Email="hello@Windowsdock.App"
+		Billing="hello@windowsdock.app"
+		Email="hello@windowsdock.app"
 		Twitter="windowsdock"
 		;;
 	"NastyApplication")
-		Billing="nasty@Playform.Cloud"
-		Email="nasty@Playform.Cloud"
+		Billing="nasty@playform.cloud"
+		Email="nasty@playform.cloud"
 		Twitter="NastyApplication"
 		;;
 	"RoundWindows")
-		Billing="hello@Roundedcorners.App"
-		Email="hello@Roundedcorners.App"
+		Billing="hello@roundedcorners.app"
+		Email="hello@roundedcorners.app"
 		Twitter="RCAppWindows"
 		;;
 	"BlackRainbowAI")
-		Billing="hello@Blackrainbow.Media"
-		Email="hello@Blackrainbow.Media"
+		Billing="hello@blackrainbow.media"
+		Email="hello@blackrainbow.media"
 		Twitter="BlackRainbowAI"
 		;;
 	"ImageWTF")
-		Billing="hello@Image.Wtf"
-		Email="hello@Image.Wtf"
+		Billing="hello@image.wtf"
+		Email="hello@image.wtf"
 		Twitter="ImageWTF"
 		;;
 	"ReturnThief")
-		Billing="hello@Returnthief.Quest"
-		Email="hello@Returnthief.Quest"
+		Billing="hello@returnthief.quest"
+		Email="hello@returnthief.quest"
 		;;
 	"DoccerPage")
-		Billing="hello@Doccer.Page"
-		Email="hello@Doccer.Page"
+		Billing="hello@doccer.page"
+		Email="hello@doccer.page"
 		;;
 	"HristovFoundation")
-		Billing="hello@Hristov.Foundation"
-		Email="hello@Hristov.Foundation"
+		Billing="hello@hristov.foundation"
+		Email="hello@hristov.foundation"
 		Twitter="NikolaRHristov"
 		;;
 	"MythemeCloud")
-		Billing="hello@Mytheme.Cloud"
-		Email="hello@Mytheme.Cloud"
+		Billing="hello@mytheme.cloud"
+		Email="hello@mytheme.cloud"
 		;;
 	"NowPlayingCards")
-		Billing="hello@Now-Playing.Cards"
-		Email="hello@Now-Playing.Cards"
+		Billing="hello@now-playing.cards"
+		Email="hello@now-playing.cards"
 		Twitter="NowPlayingCard"
 		;;
 	"NeovimSpace")
-		Billing="hello@Neovim.Space"
-		Email="hello@Neovim.Space"
+		Billing="hello@neovim.space"
+		Email="hello@neovim.space"
 		Twitter="NeovimSpace"
 		;;
 	"HalleSoftware")
-		Billing="hello@Halle.Software"
-		Email="hello@Halle.Software"
+		Billing="hello@halle.software"
+		Email="hello@halle.software"
 		Twitter="HalleSoftware"
 		;;
 	"GrenadierJS")
-		Billing="grenadier@Playform.Cloud"
-		Email="grenadier@Playform.Cloud"
+		Billing="grenadier@playform.cloud"
+		Email="grenadier@playform.cloud"
 		Twitter="GrenadierJS"
 		;;
 	"SileaJS")
-		Billing="silea@Playform.Cloud"
-		Email="silea@Playform.Cloud"
+		Billing="silea@playform.cloud"
+		Email="silea@playform.cloud"
 		Twitter="SileaJS"
 		;;
 	"CrepesJS")
-		Billing="crepes@Playform.Cloud"
-		Email="crepes@Playform.Cloud"
+		Billing="crepes@playform.cloud"
+		Email="crepes@playform.cloud"
 		Twitter="CrepesJS"
 		;;
 	"SouqRs")
-		Billing="souq@Playform.Cloud"
-		Email="souq@Playform.Cloud"
+		Billing="souq@playform.cloud"
+		Email="souq@playform.cloud"
 		Twitter="SouqRs"
 		;;
 	"CodeEditorLand")
-		Billing="land@Playform.Cloud"
-		Email="land@Playform.Cloud"
+		Billing="land@playform.cloud"
+		Email="land@playform.cloud"
 		Twitter="CodeEditorLand"
 		;;
 	"SecretSignup")
-		Billing="signup@Playform.Cloud"
-		Email="signup@Playform.Cloud"
+		Billing="signup@playform.cloud"
+		Email="signup@playform.cloud"
 		Twitter="SecretSignup"
 		;;
 	"SecurityCodeEditorLand")
-		Billing="Security.Land@Playform.Cloud"
-		Email="Security.Land@Playform.Cloud"
+		Billing="Security.Land@playform.cloud"
+		Email="Security.Land@playform.cloud"
 		Twitter="SCodeEditorLand"
 		;;
 	"327b5")
-		Billing="327b5@NikolaHristov.Tech"
-		Email="327b5@NikolaHristov.Tech"
+		Billing="327b5@nikolahristov.tech"
+		Email="327b5@nikolahristov.tech"
 		Twitter=""
 		;;
 	"ae6a6")
-		Billing="ae6a6@NikolaHristov.Tech"
-		Email="ae6a6@NikolaHristov.Tech"
+		Billing="ae6a6@nikolahristov.tech"
+		Email="ae6a6@nikolahristov.tech"
 		Twitter=""
 		;;
 	esac
 
-	echo "Settings for $ORG"
+	\echo "Settings for $Organization"
 
-	gh api \
+	\gh api \
 		--method PATCH \
 		-H "Accept: application/vnd.github+json" \
 		-H "X-GitHub-Api-Version: 2022-11-28" \
-		orgs/"${ORG}" \
+		orgs/"${Organization}" \
 		-f location='Bulgaria' \
 		-f company='Playform' \
 		-f billing_email=${Billing} \

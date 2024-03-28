@@ -6,7 +6,7 @@ cat package.json | jq '. + {
 		"access": "public"
 	},
 	"author": {
-		"email": "Nikola@Playform.Cloud",
+		"email": "nikola@playform.cloud",
 		"name": "Nikola R. Hristov",
 		"url": "https://nikolahristov.tech"
 	},
