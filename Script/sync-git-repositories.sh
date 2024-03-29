@@ -35,7 +35,7 @@ for USER in "${USERS[@]}"; do
 			REPO=$(echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
 
 			if [[ "$ORG" == "astro-community" ]]; then
-				if [[ "$REPO" =~ .*astro-critters.* ]] || [[ "$REPO" =~ .*compress-astro.* ]] || [[ "$REPO" =~ .*github-actions-runner.* ]] || [[ "$REPO" =~ .*astro-rome.* ]]; then
+				if [[ "$REPO" =~ .*critters-astro.* ]] || [[ "$REPO" =~ .*compress-astro.* ]] || [[ "$REPO" =~ .*github-actions-runner.* ]] || [[ "$REPO" =~ .*rome-astro.* ]]; then
 					git clone --recurse-submodules "$REPO"
 				fi
 			else
