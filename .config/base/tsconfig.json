@@ -2,5 +2,5 @@
 	"compilerOptions": {
 		"baseUrl": "./"
 	},
-	"extends": "@playform/build/Target/Notation/TypeScript"
+	"extends": "@playform/build/tsconfig"
 }
