@@ -13,5 +13,6 @@
 			"**/samples/**"
 		]
 	},
-	"extends": "@playform/build/tsconfig"
+	"extends": "@playform/build/tsconfig",
+	"include": ["Source"]
 }
