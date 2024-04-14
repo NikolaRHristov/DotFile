@@ -91,8 +91,8 @@ for Organization in "${Organization[@]}"; do
 			Twitter="SouqRs"
 			;;
 		"CodeEditorLand")
-			Billing="land@playform.cloud"
-			Email="land@playform.cloud"
+			Billing="Land@Playform.Cloud"
+			Email="Land@Playform.Cloud"
 			Twitter="CodeEditorLand"
 			;;
 		"SecretSignup")
