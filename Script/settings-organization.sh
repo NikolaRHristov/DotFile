@@ -8,7 +8,7 @@ for Organization in "${Organization[@]}"; do
 	Twitter="PlayformCloud"
 
 	case "$Organization" in
-		"Playform")
+		"PlayForm")
 			Billing="hello@playform.cloud"
 			Email="hello@playform.cloud"
 			Twitter="PlayformCloud"
@@ -91,8 +91,8 @@ for Organization in "${Organization[@]}"; do
 			Twitter="SouqRs"
 			;;
 		"CodeEditorLand")
-			Billing="Land@Playform.Cloud"
-			Email="Land@Playform.Cloud"
+			Billing="Land@PlayForm.Cloud"
+			Email="Land@PlayForm.Cloud"
 			Twitter="CodeEditorLand"
 			;;
 		"SecretSignup")
@@ -120,7 +120,7 @@ for Organization in "${Organization[@]}"; do
 		-H "X-GitHub-Api-Version: 2022-11-28" \
 		orgs/"${Organization}" \
 		-f location='Bulgaria' \
-		-f company='Playform' \
+		-f company='PlayForm' \
 		-f billing_email=${Billing} \
 		-f email=${Email} \
 		-f twitter_username=${Twitter} \
