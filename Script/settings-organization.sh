@@ -5,13 +5,13 @@ mapfile -t Organization < <(printf "%s" "$(\gh api users/NikolaRHristov/orgs | \
 for Organization in "${Organization[@]}"; do
 	Billing="hello@playform.cloud"
 	Email="hello@playform.cloud"
-	Twitter="PlayformCloud"
+	Twitter="PlayFormCloud"
 
 	case "$Organization" in
 		"PlayForm")
 			Billing="hello@playform.cloud"
 			Email="hello@playform.cloud"
-			Twitter="PlayformCloud"
+			Twitter="PlayFormCloud"
 			;;
 		"windowsdock")
 			Billing="hello@windowsdock.app"

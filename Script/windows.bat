@@ -1,124 +1,124 @@
-rm C:\Users\nikola\.aliases
+rm C:\Users\Nikola\.aliases
 rm C:\msys64\home\nikola\.aliases
 
-rm C:\Users\nikola\.bash_profile
+rm C:\Users\Nikola\.bash_profile
 rm C:\msys64\home\nikola\.bash_profile
 
-rm C:\Users\nikola\.bash_logout
+rm C:\Users\Nikola\.bash_logout
 rm C:\msys64\home\nikola\.bash_logout
 
-rm C:\Users\nikola\.bash_history_shared
+rm C:\Users\Nikola\.bash_history_shared
 rm C:\msys64\home\nikola\.bash_history_shared
 
-rm C:\Users\nikola\.bashrc
+rm C:\Users\Nikola\.bashrc
 rm C:\msys64\home\nikola\.bashrc
 
-rm C:\Users\nikola\.bash-preexec.sh
+rm C:\Users\Nikola\.bash-preexec.sh
 rm C:\msys64\home\nikola\.bash-preexec.sh
 
-rm C:\Users\nikola\.zshrc
+rm C:\Users\Nikola\.zshrc
 rm C:\msys64\home\nikola\.zshrc
 
-rm C:\Users\nikola\.config
+rm C:\Users\Nikola\.config
 rm C:\msys64\home\nikola\.config
 
-rm C:\Users\nikola\.functions
+rm C:\Users\Nikola\.functions
 rm C:\msys64\home\nikola\.functions
 
-rm C:\Users\nikola\.gitconfig
+rm C:\Users\Nikola\.gitconfig
 rm C:\msys64\home\nikola\.gitconfig
 
-rm C:\Users\nikola\.gitmessage
+rm C:\Users\Nikola\.gitmessage
 rm C:\msys64\home\nikola\.gitmessage
 
-rm C:\Users\nikola\Bash
+rm C:\Users\Nikola\Bash
 rm C:\msys64\home\nikola\Bash
 
-rm C:\Users\nikola\Powershell
+rm C:\Users\Nikola\Powershell
 rm C:\msys64\home\nikola\Powershell
 
-rm C:\Users\nikola\ZSH
+rm C:\Users\Nikola\ZSH
 rm C:\msys64\home\nikola\ZSH
 
-rm C:\Users\nikola\.ssh
+rm C:\Users\Nikola\.ssh
 rm C:\msys64\home\nikola\.ssh
 
-rm C:\Users\nikola\prettier.config.js
+rm C:\Users\Nikola\prettier.config.js
 rm C:\msys64\home\nikola\prettier.config.js
 
-rm C:\Users\nikola\rustfmt.toml
+rm C:\Users\Nikola\rustfmt.toml
 rm C:\msys64\home\nikola\rustfmt.toml
 
-rm C:\Users\nikola\tailwind.config.js
+rm C:\Users\Nikola\tailwind.config.js
 rm C:\msys64\home\nikola\tailwind.config.js
 
-rm C:\Users\nikola\rome.json
+rm C:\Users\Nikola\rome.json
 rm C:\msys64\home\nikola\rome.json
 
-rm C:\Users\nikola\biome.json
+rm C:\Users\Nikola\biome.json
 rm C:\msys64\home\nikola\biome.json
 
-mklink C:\Users\nikola\.aliases D:\Developer\Application\NikolaRHristov\Dotfile\.aliases
+mklink C:\Users\Nikola\.aliases D:\Developer\Application\NikolaRHristov\Dotfile\.aliases
 mklink C:\msys64\home\nikola\.aliases D:\Developer\Application\NikolaRHristov\Dotfile\.aliases
 
-mklink C:\Users\nikola\.bash_profile D:\Developer\Application\NikolaRHristov\Dotfile\.bash_profile
+mklink C:\Users\Nikola\.bash_profile D:\Developer\Application\NikolaRHristov\Dotfile\.bash_profile
 mklink C:\msys64\home\nikola\.bash_profile D:\Developer\Application\NikolaRHristov\Dotfile\.bash_profile
 
-mklink C:\Users\nikola\.bash_logout D:\Developer\Application\NikolaRHristov\Dotfile\.bash_logout
+mklink C:\Users\Nikola\.bash_logout D:\Developer\Application\NikolaRHristov\Dotfile\.bash_logout
 mklink C:\msys64\home\nikola\.bash_logout D:\Developer\Application\NikolaRHristov\Dotfile\.bash_logout
 
-mklink C:\Users\nikola\.bash_history_shared D:\Developer\Application\NikolaRHristov\Dotfile\.bash_history_shared
+mklink C:\Users\Nikola\.bash_history_shared D:\Developer\Application\NikolaRHristov\Dotfile\.bash_history_shared
 mklink C:\msys64\home\nikola\.bash_history_shared D:\Developer\Application\NikolaRHristov\Dotfile\.bash_history_shared
 
-mklink C:\Users\nikola\.zshrc D:\Developer\Application\NikolaRHristov\Dotfile\.zshrc
+mklink C:\Users\Nikola\.zshrc D:\Developer\Application\NikolaRHristov\Dotfile\.zshrc
 mklink C:\msys64\home\nikola\.zshrc D:\Developer\Application\NikolaRHristov\Dotfile\.zshrc
 
-mklink C:\Users\nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
+mklink C:\Users\Nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
 mklink C:\msys64\home\nikola\.bashrc D:\Developer\Application\NikolaRHristov\Dotfile\.bashrc
 
-mklink C:\Users\nikola\.bash-preexec.sh D:\Developer\Application\NikolaRHristov\Dotfile\.bash-preexec.sh
+mklink C:\Users\Nikola\.bash-preexec.sh D:\Developer\Application\NikolaRHristov\Dotfile\.bash-preexec.sh
 mklink C:\msys64\home\nikola\.bash-preexec.sh D:\Developer\Application\NikolaRHristov\Dotfile\.bash-preexec.sh
 
-mklink C:\Users\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
+mklink C:\Users\Nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
 mklink C:\msys64\home\nikola\.functions D:\Developer\Application\NikolaRHristov\Dotfile\.functions
 
-mklink C:\Users\nikola\.gitconfig D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig
+mklink C:\Users\Nikola\.gitconfig D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig
 cp D:\Developer\Application\NikolaRHristov\Dotfile\.gitconfig C:\msys64\home\nikola\.gitconfig
 
-mklink C:\Users\nikola\.gitmessage D:\Developer\Application\NikolaRHristov\Dotfile\.gitmessage
+mklink C:\Users\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\Dotfile\.gitmessage
 mklink C:\msys64\home\nikola\.gitmessage D:\Developer\Application\NikolaRHristov\Dotfile\.gitmessage
 
-mklink C:\Users\nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\Dotfile\prettier.config.js
+mklink C:\Users\Nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\Dotfile\prettier.config.js
 mklink C:\msys64\home\nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\Dotfile\prettier.config.js
 
-mklink C:\Users\nikola\rome.json D:\Developer\Application\NikolaRHristov\Dotfile\rome.json
+mklink C:\Users\Nikola\rome.json D:\Developer\Application\NikolaRHristov\Dotfile\rome.json
 mklink C:\msys64\home\nikola\rome.json D:\Developer\Application\NikolaRHristov\Dotfile\rome.json
 
-mklink C:\Users\nikola\biome.json D:\Developer\Application\NikolaRHristov\Dotfile\biome.json
+mklink C:\Users\Nikola\biome.json D:\Developer\Application\NikolaRHristov\Dotfile\biome.json
 mklink C:\msys64\home\nikola\biome.json D:\Developer\Application\NikolaRHristov\Dotfile\biome.json
 
-mklink C:\Users\nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\Dotfile\rustfmt.toml
+mklink C:\Users\Nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\Dotfile\rustfmt.toml
 mklink C:\msys64\home\nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\Dotfile\rustfmt.toml
 
-mklink C:\Users\nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\Dotfile\tailwind.config.js
+mklink C:\Users\Nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\Dotfile\tailwind.config.js
 mklink C:\msys64\home\nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\Dotfile\tailwind.config.js
 
-mklink /D C:\Users\nikola\.config D:\Developer\Application\NikolaRHristov\Dotfile\.config
+mklink /D C:\Users\Nikola\.config D:\Developer\Application\NikolaRHristov\Dotfile\.config
 mklink /D C:\msys64\home\nikola\.config D:\Developer\Application\NikolaRHristov\Dotfile\.config
 
-mklink /D C:\Users\nikola\Bash D:\Developer\Application\NikolaRHristov\Dotfile\Bash
+mklink /D C:\Users\Nikola\Bash D:\Developer\Application\NikolaRHristov\Dotfile\Bash
 mklink /D C:\msys64\home\nikola\Bash D:\Developer\Application\NikolaRHristov\Dotfile\Bash
 
-mklink /D C:\Users\nikola\Powershell D:\Developer\Application\NikolaRHristov\Dotfile\Powershell
+mklink /D C:\Users\Nikola\Powershell D:\Developer\Application\NikolaRHristov\Dotfile\Powershell
 mklink /D C:\msys64\home\nikola\Powershell D:\Developer\Application\NikolaRHristov\Dotfile\Powershell
 
-mklink /D C:\Users\nikola\ZSH D:\Developer\Application\NikolaRHristov\Dotfile\ZSH
+mklink /D C:\Users\Nikola\ZSH D:\Developer\Application\NikolaRHristov\Dotfile\ZSH
 mklink /D C:\msys64\home\nikola\ZSH D:\Developer\Application\NikolaRHristov\Dotfile\ZSH
 
-mklink /D C:\Users\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
-mklink /D C:\msys64\home\nikola\.ssh E:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
+mklink /D C:\Users\Nikola\.ssh F:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
+mklink /D C:\msys64\home\nikola\.ssh F:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
 
-mklink /D C:\Users\nikola\AppData\Local\nvim C:\Users\nikola\.config\nvim
+mklink /D C:\Users\Nikola\AppData\Local\nvim C:\Users\Nikola\.config\nvim
 
 rm D:\Developer\.clang-format 
 rm D:\Developer\.csharpierrc 
