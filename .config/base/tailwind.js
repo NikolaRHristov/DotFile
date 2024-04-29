@@ -1,4 +1,4 @@
-const MODULES_DIR = "D:\\tools\\.pnpm-global\\5\\node_modules\\";
+const MODULES_DIR = "D:\\Tool\\Global\\PNPM\\global\\5\\node_modules\\";
 
 export default {
 	content: [
