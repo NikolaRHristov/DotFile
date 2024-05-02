@@ -6,9 +6,9 @@ url = ssh://git@github.com/NikolaRHristov/Completion.git
 path = Bash
 url = ssh://git@github.com/NikolaRHristov/Bash.git
 
-[submodule "Powershell"]
-path = Powershell
-url = ssh://git@github.com/NikolaRHristov/Powershell.git
+[submodule "PowerShell"]
+path = PowerShell
+url = ssh://git@github.com/NikolaRHristov/PowerShell.git
 
 [submodule "ZSH"]
 path = ZSH
