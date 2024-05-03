@@ -2,16 +2,16 @@
 	"name": "dotfile",
 	"version": "0.0.1",
 	"private": false,
-	"description": "Nikola R. Hristov's Dotfiles",
+	"description": "🫥 DotFile",
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Nikola R. Hristov",
-		"email": "Nikola@Playform.Cloud",
+		"email": "nikola@playform.cloud",
 		"url": "https://nikolahristov.tech"
 	},
 	"type": "module",
 	"devDependencies": {
-		"typescript-esbuild": "0.4.9"
+		"@playform/build": "0.0.7"
 	},
 	"publishConfig": {
 		"access": "public"

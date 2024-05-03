@@ -5,7 +5,7 @@
 		"noEmit": true
 	},
 	"exclude": ["**/node_modules/**", "**/Target/**"],
-	"include": ["./Application/"],
+	"include": ["Application"],
 	"watchOptions": {
 		"excludeDirectories": [
 			"**/node_modules/**",
@@ -13,5 +13,5 @@
 			"**/samples/**"
 		]
 	},
-	"extends": "typescript-esbuild/Target/Notation/TypeScript"
+	"extends": "@playform/build/tsconfig"
 }

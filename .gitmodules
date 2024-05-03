@@ -1,7 +1,3 @@
-[submodule ".config/Completion"]
-path = .config/Completion
-url = ssh://git@github.com/NikolaRHristov/Completion.git
-
 [submodule "Bash"]
 path = Bash
 url = ssh://git@github.com/NikolaRHristov/Bash.git

@@ -235,8 +235,8 @@ function update_npm() {
 }
 
 function bump_dependencies() {
-	# find -iname cargo.toml -execdir cargo upgrade --incompatible \;
-	# find -iname composer.json -execdir composer update \;
+	find -iname cargo.toml -execdir cargo upgrade --incompatible \;
+	find -iname composer.json -execdir composer update \;
 	find -iname package.json -execdir bash -c 'ncu -u --deep --dep "dev,optional,peer,prod,bundle" --color --concurrency 60' \;
 }
 
@@ -266,4 +266,18 @@ function tere() {
 function refresh() {
 	# shellcheck source=/dev/null
 	source ~/.bash_profile
+}
+
+function yy() {
+	local Directory
+
+	Directory="$(mktemp -t "yazi-cwd.XXXXX")"
+
+	yazi "$@" --cwd-file="$Directory"
+
+	if Current="$(cat -- "$Directory")" && [ -n "$Current" ] && [ "$Current" != "$PWD" ]; then
+		cd -- "$Current" || exit
+	fi
+
+	rm -f -- "$Directory"
 }

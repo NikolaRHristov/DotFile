@@ -1,69 +1,67 @@
 #!/bin/bash
 
-Home="/home/nikola/"
-Developer="${Home}Developer/"
-DotFile="${Developer}Application/NikolaRHristov/DotFile/"
+DOTFILE="/media/sf_Developer/Application/NikolaRHristov/DotFile/"
 
-rm -rf "${Home}.aliases"
-rm -rf "${Home}.bash_profile"
-rm -rf "${Home}.bash_logout"
-rm -rf "${Home}.bash_history_shared"
-rm -rf "${Home}.bashrc"
-rm -rf "${Home}.zshrc"
-rm -rf "${Home}.config"
-rm -rf "${Home}.functions"
-rm -rf "${Home}.gitconfig"
-rm -rf "${Home}.gitmessage"
-rm -rf "${Home}Bash"
-rm -rf "${Home}PowerShell"
-rm -rf "${Home}ZSH"
-rm -rf "${Home}prettier.config.js"
-rm -rf "${Home}rustfmt.toml"
-rm -rf "${Home}tailwind.config.js"
-rm -rf "${Home}rome.json"
-rm -rf "${Home}biome.json"
+rm -rf ~/.aliases
+rm -rf ~/.bash_profile
+rm -rf ~/.bash_logout
+rm -rf ~/.bash_history_shared
+rm -rf ~/.bashrc
+rm -rf ~/.zshrc
+rm -rf ~/.config
+rm -rf ~/.functions
+rm -rf ~/.gitconfig
+rm -rf ~/.gitmessage
+rm -rf ~/Bash
+rm -rf ~/Powershell
+rm -rf ~/ZSH
+rm -rf ~/prettier.config.js
+rm -rf ~/rustfmt.toml
+rm -rf ~/tailwind.config.js
+rm -rf ~/rome.json
+rm -rf ~/biome.json
 
-ln -s "$DotFile".aliases "${Home}.aliases"
-ln -s "$DotFile".bash_profile "${Home}.bash_profile"
-ln -s "$DotFile".bash_logout "${Home}.bash_logout"
-ln -s "$DotFile".bash_history_shared "${Home}.bash_history_shared"
-ln -s "$DotFile".zshrc "${Home}.zshrc"
-ln -s "$DotFile".bashrc "${Home}.bashrc"
-ln -s "$DotFile".functions "${Home}.functions"
-cp "${DotFile}.gitconfig" "${Home}.gitconfig"
-ln -s "$DotFile".gitmessage "${Home}.gitmessage"
-ln -s "$DotFile"prettier.config.js "${Home}prettier.config.js"
-ln -s "$DotFile"rome.json "${Home}rome.json"
-ln -s "$DotFile"biome.json "${Home}biome.json"
-ln -s "$DotFile"rustfmt.toml "${Home}rustfmt.toml"
-ln -s "$DotFile"tailwind.config.js "${Home}tailwind.config.js"
-ln -s "$DotFile".config "${Home}.config"
-ln -s "$DotFile"Bash "${Home}Bash"
-ln -s "$DotFile"PowerShell "${Home}PowerShell"
-ln -s "$DotFile"ZSH "${Home}ZSH"
+ln -s "$DOTFILE".aliases ~/.aliases
+ln -s "$DOTFILE".bash_profile ~/.bash_profile
+ln -s "$DOTFILE".bash_logout ~/.bash_logout
+ln -s "$DOTFILE".bash_history_shared ~/.bash_history_shared
+ln -s "$DOTFILE".zshrc ~/.zshrc
+ln -s "$DOTFILE".bashrc ~/.bashrc
+ln -s "$DOTFILE".functions ~/.functions
+cp "$DOTFILE".gitconfig ~/.gitconfig
+ln -s "$DOTFILE".gitmessage ~/.gitmessage
+ln -s "$DOTFILE"prettier.config.js ~/prettier.config.js
+ln -s "$DOTFILE"rome.json ~/rome.json
+ln -s "$DOTFILE"biome.json ~/biome.json
+ln -s "$DOTFILE"rustfmt.toml ~/rustfmt.toml
+ln -s "$DOTFILE"tailwind.config.js ~/tailwind.config.js
+ln -s "$DOTFILE".config ~/.config
+ln -s "$DOTFILE"Bash ~/Bash
+ln -s "$DOTFILE"Powershell ~/Powershell
+ln -s "$DOTFILE"ZSH ~/ZSH
 
-rm -rf ${Developer}.clang-format
-rm -rf ${Developer}.csharpierrc
-rm -rf ${Developer}.editorconfig
-rm -rf ${Developer}.jshintrc
-rm -rf ${Developer}.npmrc
-rm -rf ${Developer}.prettierignore
-rm -rf ${Developer}.stylua.toml
-rm -rf ${Developer}jsconfig.json
-rm -rf ${Developer}rome.json
-rm -rf ${Developer}biome.json
-rm -rf ${Developer}rustfmt.toml
-rm -rf ${Developer}tsconfig.json
+rm ~/Developer/.clang-format
+rm ~/Developer/.csharpierrc
+rm ~/Developer/.editorconfig
+rm ~/Developer/.jshintrc
+rm ~/Developer/.npmrc
+rm ~/Developer/.prettierignore
+rm ~/Developer/.stylua.toml
+rm ~/Developer/jsconfig.json
+rm ~/Developer/rome.json
+rm ~/Developer/biome.json
+rm ~/Developer/rustfmt.toml
+rm ~/Developer/tsconfig.json
 
-ln -s "$DotFile".clang-format ${Developer}.clang-format
-ln -s "$DotFile".csharpierrc ${Developer}.csharpierrc
-ln -s "$DotFile".editorconfig ${Developer}.editorconfig
-ln -s "$DotFile".jshintrc ${Developer}.jshintrc
-ln -s "$DotFile".npmrc ${Developer}.npmrc
-ln -s "$DotFile".prettierignore ${Developer}.prettierignore
-ln -s "$DotFile".stylua.toml ${Developer}.stylua.toml
-ln -s "$DotFile"jsconfig.json ${Developer}jsconfig.json
-ln -s "$DotFile"rome.json ${Developer}rome.json
-ln -s "$DotFile"biome.json ${Developer}biome.json
-ln -s "$DotFile"rustfmt.toml ${Developer}rustfmt.toml
-ln -s "$DotFile"tsconfig.json ${Developer}tsconfig.json
+ln -s "$DOTFILE".clang-format ~/Developer/.clang-format
+ln -s "$DOTFILE".csharpierrc ~/Developer/.csharpierrc
+ln -s "$DOTFILE".editorconfig ~/Developer/.editorconfig
+ln -s "$DOTFILE".jshintrc ~/Developer/.jshintrc
+ln -s "$DOTFILE".npmrc ~/Developer/.npmrc
+ln -s "$DOTFILE".prettierignore ~/Developer/.prettierignore
+ln -s "$DOTFILE".stylua.toml ~/Developer/.stylua.toml
+ln -s "$DOTFILE"jsconfig.json ~/Developer/jsconfig.json
+ln -s "$DOTFILE"rome.json ~/Developer/rome.json
+ln -s "$DOTFILE"biome.json ~/Developer/biome.json
+ln -s "$DOTFILE"rustfmt.toml ~/Developer/rustfmt.toml
+ln -s "$DOTFILE"tsconfig.json ~/Developer/tsconfig.json
