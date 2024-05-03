@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"target": "ES2020",
+		"jsx": "react",
+		"esversion": 6,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true
+	},
+	"exclude": [
+		".git",
+		"node_modules",
+		"Target",
+		"samples",
+		"**/.git/**",
+		"**/node_modules/**",
+		"**/Target/**",
+		"**/samples/**"
+	],
+	"jshint.options": {
+		"esversion": 6
+	}
+}

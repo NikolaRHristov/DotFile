@@ -1,0 +1,15 @@
+[submodule ".config/Completion"]
+path = .config/Completion
+url = ssh://git@github.com/NikolaRHristov/Completion.git
+
+[submodule "Bash"]
+path = Bash
+url = ssh://git@github.com/NikolaRHristov/Bash.git
+
+[submodule "ZSH"]
+path = ZSH
+url = ssh://git@github.com/NikolaRHristov/ZSH.git
+
+[submodule ".config/nvim"]
+path = .config/nvim
+url = ssh://git@github.com/NikolaRHristov/NVIM.git

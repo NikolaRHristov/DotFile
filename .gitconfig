@@ -1,0 +1,98 @@
+[user]
+name = Nikola R. Hristov
+email = Nikola@Playform.Cloud
+signingkey = BAF2F5C7BAAD1367
+
+[filter "lfs"]
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true
+
+[core]
+autocrlf = input
+fscache = false
+symlinks = false
+excludesfile = "D:\\Developer\\.gitignore"
+sshCommand = plink
+fsmonitor = false
+editor = code-insiders --wait
+ignorecase = false
+ignoreStat = false
+preloadindex = false
+untrackedcache = false
+
+[pager]
+difftool = true
+
+[pull]
+rebase = false
+
+[push]
+autoSetupRemote = true
+
+[init]
+defaultBranch = Current
+
+[commit]
+gpgsign = true
+template = C:/Users/nikola/.gitmessage
+
+[merge]
+tool = vscode
+
+[diff]
+tool = difftastic
+
+[difftool]
+prompt = false
+
+[difftool "difftastic"]
+cmd = difft "$LOCAL" "$REMOTE"
+
+[delta]
+features = unobtrusive-line-numbers decorations
+whitespace-error-style = 22 reverse
+
+[delta "unobtrusive-line-numbers"]
+line-numbers = true
+line-numbers-minus-style = "#fafafa"
+line-numbers-zero-style = "#fafafa"
+line-numbers-plus-style = "#fafafa"
+line-numbers-left-format = "{nm:>3}┊"
+line-numbers-right-format = "{np:>3}│"
+line-numbers-left-style = blue
+line-numbers-right-style = blue
+
+[delta "decorations"]
+commit-decoration-style = bold yellow box ul
+file-style = bold yellow ul
+file-decoration-style = none
+hunk-header-decoration-style = yellow box ul
+
+[mergetool "vscode"]
+cmd = code-insiders --wait $MERGED
+
+[difftool "vscode"]
+cmd = code-insiders --wait --diff $LOCAL $REMOTE
+
+[fetch]
+prune = true
+
+[branch]
+autoSetupMerge = true
+
+[alias]
+sync = "!git pull -q ; git push -q"
+
+[protocol "file"]
+allow = always
+
+[gc]
+auto = 256
+
+[rerere]
+enabled = true
+
+[column]
+ui = auto
