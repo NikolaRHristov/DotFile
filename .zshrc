@@ -123,7 +123,7 @@ export GPG_AGENT_INFO
 
 export RUSTC_WRAPPER=sccache
 
-shopt -s histappend
+# shopt -s histappend
 HISTFILE="$HOME/.zsh_history_shared"
 HISTSIZE=1000
 HISTFILESIZE=10000
