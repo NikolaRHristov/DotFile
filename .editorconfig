@@ -9,3 +9,7 @@ indent_style = tab
 
 [*.{yaml,yml}]
 indent_style = space
+
+[*.php]
+php_diagnostic_php6401 = false
+php_diagnostic = false

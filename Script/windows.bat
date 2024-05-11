@@ -115,8 +115,8 @@ mklink /D C:\msys64\home\nikola\Powershell D:\Developer\Application\NikolaRHrist
 mklink /D C:\Users\Nikola\ZSH D:\Developer\Application\NikolaRHristov\DotFile\ZSH
 mklink /D C:\msys64\home\nikola\ZSH D:\Developer\Application\NikolaRHristov\DotFile\ZSH
 
-mklink /D C:\Users\Nikola\.ssh F:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
-mklink /D C:\msys64\home\nikola\.ssh F:\MEGA\PROJECTS\Personal\Credentials\Keys\SSH
+mklink /D C:\Users\Nikola\.ssh F:\MEGA\PROJECTS\Personal\Credential\Key\SSH
+mklink /D C:\msys64\home\nikola\.ssh F:\MEGA\PROJECTS\Personal\Credential\Key\SSH
 
 mklink /D C:\Users\Nikola\AppData\Local\nvim C:\Users\Nikola\.config\nvim
 

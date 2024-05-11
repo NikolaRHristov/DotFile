@@ -9,3 +9,9 @@
 [[ -f /home/nikola/.nix-profile/etc/profile.d/nix.sh ]] && . /home/nikola/.nix-profile/etc/profile.d/nix.sh
 
 [ -d "/d/Developer" ] && cd /d/Developer || cd ~/ || exit
+
+# shellcheck disable=SC2088
+[ -d "/home/nikola/Tool/Bin/PNPM" ] && export PATH=/home/nikola/Tool/Bin/PNPM:"$PATH"
+
+# shellcheck disable=SC1091
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

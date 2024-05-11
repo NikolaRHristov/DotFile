@@ -74,7 +74,7 @@ plugins=(
 [[ -f "$OSH/oh-my-bash.sh" ]] && . "$OSH/oh-my-bash.sh"
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -165,3 +165,15 @@ SAVEHIST=1000
 [[ -f ~/.bash-preexec.sh ]] && . ~/.bash-preexec.sh
 
 # eval "$(atuin init bash)"
+
+# grit
+export GRIT_INSTALL="$HOME/.grit"
+export PATH=$GRIT_INSTALL/bin:$PATH
+
+# pnpm
+export PNPM_HOME="/home/nikola/.local/share/pnpm"
+case ":$PATH:" in
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
