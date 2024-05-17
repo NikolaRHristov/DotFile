@@ -77,7 +77,7 @@ cmd = code-insiders --wait $MERGED
 cmd = code-insiders --wait --diff $LOCAL $REMOTE
 
 [fetch]
-prune = true
+	prune = true
 
 [branch]
 autoSetupMerge = true
@@ -96,3 +96,5 @@ enabled = true
 
 [column]
 ui = auto
+[remote "origin"]
+	prune = true

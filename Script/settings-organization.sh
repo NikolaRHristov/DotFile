@@ -3,91 +3,91 @@
 mapfile -t Organization < <(printf "%s" "$(\gh api users/NikolaRHristov/orgs | \jq -r '.[].login')" | tr -d '\r')
 
 for Organization in "${Organization[@]}"; do
-	Billing="hello@playform.cloud"
-	Email="hello@playform.cloud"
+	Billing="Hello@PlayForm.Cloud"
+	Email="Hello@PlayForm.Cloud"
 	Twitter="PlayFormCloud"
 
 	case "$Organization" in
 		"PlayForm")
-			Billing="hello@playform.cloud"
-			Email="hello@playform.cloud"
+			Billing="Hello@PlayForm.Cloud"
+			Email="Hello@PlayForm.Cloud"
 			Twitter="PlayFormCloud"
 			;;
 		"windowsdock")
-			Billing="hello@windowsdock.app"
-			Email="hello@windowsdock.app"
+			Billing="Hello@windowsdock.app"
+			Email="Hello@windowsdock.app"
 			Twitter="windowsdock"
 			;;
 		"NastyApplication")
-			Billing="nasty@playform.cloud"
-			Email="nasty@playform.cloud"
+			Billing="nasty@PlayForm.Cloud"
+			Email="nasty@PlayForm.Cloud"
 			Twitter="NastyApplication"
 			;;
 		"RoundWindows")
-			Billing="hello@roundedcorners.app"
-			Email="hello@roundedcorners.app"
+			Billing="Hello@RoundedCorners.App"
+			Email="Hello@RoundedCorners.App"
 			Twitter="RCAppWindows"
 			;;
 		"BlackRainbowAI")
-			Billing="hello@blackrainbow.media"
-			Email="hello@blackrainbow.media"
+			Billing="Hello@BlackRainbow.Media"
+			Email="Hello@BlackRainbow.Media"
 			Twitter="BlackRainbowAI"
 			;;
 		"ImageWTF")
-			Billing="hello@image.wtf"
-			Email="hello@image.wtf"
+			Billing="Hello@Image.WTF"
+			Email="Hello@Image.WTF"
 			Twitter="ImageWTF"
 			;;
 		"ReturnThief")
-			Billing="hello@returnthief.quest"
-			Email="hello@returnthief.quest"
+			Billing="Hello@ReturnThief.Quest"
+			Email="Hello@ReturnThief.Quest"
 			;;
 		"DoccerPage")
-			Billing="hello@doccer.page"
-			Email="hello@doccer.page"
+			Billing="Hello@Doccer.Page"
+			Email="Hello@Doccer.Page"
 			;;
 		"HristovFoundation")
-			Billing="hello@hristov.foundation"
-			Email="hello@hristov.foundation"
+			Billing="Hello@Hristov.Foundation"
+			Email="Hello@Hristov.Foundation"
 			Twitter="NikolaRHristov"
 			;;
 		"MythemeCloud")
-			Billing="hello@mytheme.cloud"
-			Email="hello@mytheme.cloud"
+			Billing="Hello@Mytheme.Cloud"
+			Email="Hello@Mytheme.Cloud"
 			;;
 		"NowPlayingCards")
-			Billing="hello@now-playing.cards"
-			Email="hello@now-playing.cards"
+			Billing="Hello@Now-Playing.Cards"
+			Email="Hello@Now-Playing.Cards"
 			Twitter="NowPlayingCard"
 			;;
 		"NeovimSpace")
-			Billing="hello@neovim.space"
-			Email="hello@neovim.space"
+			Billing="Hello@Neovim.Space"
+			Email="Hello@Neovim.Space"
 			Twitter="NeovimSpace"
 			;;
 		"HalleSoftware")
-			Billing="hello@halle.software"
-			Email="hello@halle.software"
+			Billing="Hello@Halle.Software"
+			Email="Hello@Halle.Software"
 			Twitter="HalleSoftware"
 			;;
 		"GrenadierJS")
-			Billing="grenadier@playform.cloud"
-			Email="grenadier@playform.cloud"
+			Billing="Grenadier@PlayForm.Cloud"
+			Email="Grenadier@PlayForm.Cloud"
 			Twitter="GrenadierJS"
 			;;
 		"SileaJS")
-			Billing="silea@playform.cloud"
-			Email="silea@playform.cloud"
+			Billing="Silea@PlayForm.Cloud"
+			Email="Silea@PlayForm.Cloud"
 			Twitter="SileaJS"
 			;;
 		"CrepesJS")
-			Billing="crepes@playform.cloud"
-			Email="crepes@playform.cloud"
+			Billing="Crepes@PlayForm.Cloud"
+			Email="Crepes@PlayForm.Cloud"
 			Twitter="CrepesJS"
 			;;
 		"SouqRs")
-			Billing="souq@playform.cloud"
-			Email="souq@playform.cloud"
+			Billing="Souq@PlayForm.Cloud"
+			Email="Souq@PlayForm.Cloud"
 			Twitter="SouqRs"
 			;;
 		"CodeEditorLand")
@@ -96,8 +96,8 @@ for Organization in "${Organization[@]}"; do
 			Twitter="CodeEditorLand"
 			;;
 		"SecretSignup")
-			Billing="signup@playform.cloud"
-			Email="signup@playform.cloud"
+			Billing="Signup@PlayForm.Cloud"
+			Email="Signup@PlayForm.Cloud"
 			Twitter="SecretSignup"
 			;;
 		"327b5")
