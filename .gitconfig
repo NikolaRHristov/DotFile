@@ -96,5 +96,6 @@ enabled = true
 
 [column]
 ui = auto
+
 [remote "origin"]
-	prune = true
+prune = true
