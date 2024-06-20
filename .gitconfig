@@ -99,3 +99,5 @@ ui = auto
 
 [remote "origin"]
 prune = true
+[advice]
+	setUpstreamFailure = false
