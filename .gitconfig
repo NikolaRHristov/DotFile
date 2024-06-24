@@ -102,3 +102,4 @@ prune = true
 
 [advice]
 setUpstreamFailure = false
+	addEmbeddedRepo = false
