@@ -6,7 +6,7 @@
 
 # NPM
 
-# VERSION="Name/v0.0.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; dum Document ; Maintain Workflow ; git add . ; git commit -m "${VERSION}" ; git sync ; git tag -d "${VERSION}" ; git push --delete Source "${VERSION}" ; git tag -s -m "${VERSION}" -a "${VERSION}" ; git push --tags ; gh release delete "${VERSION}" -y ; gh release create "${VERSION}" --generate-notes
+# VERSION="Name/v0.0.0" ; clean_dependencies ; bump_dependencies ; dum install ; dum prepublishOnly ; Document 'Source/**/*.ts' ; Maintain Workflow ; git add . ; git commit -m "${VERSION}" ; git sync ; git tag -d "${VERSION}" ; git push --delete Source "${VERSION}" ; git tag -s -m "${VERSION}" -a "${VERSION}" ; git push --tags ; gh release delete "${VERSION}" -y ; gh release create "${VERSION}" --generate-notes
 
 VERSION="x"
 clean_dependencies
