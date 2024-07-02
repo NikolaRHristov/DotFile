@@ -165,3 +165,5 @@ SAVEHIST=1000
 [[ -f ~/.bash-preexec.sh ]] && . ~/.bash-preexec.sh
 
 # eval "$(atuin init bash)"
+
+set +o noclobber
