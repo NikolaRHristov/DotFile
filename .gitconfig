@@ -36,7 +36,7 @@ defaultBranch = Current
 
 [commit]
 gpgsign = true
-template = C:/Users/Nikola/.gitmessage
+# template = C:/Users/Nikola/.gitmessage
 
 [merge]
 tool = vscode
@@ -84,6 +84,7 @@ autoSetupMerge = true
 
 [alias]
 sync = "!git pull -q ; git push -q"
+ecommit = commit -a --allow-empty-message -m \"\"
 
 [protocol "file"]
 allow = always
