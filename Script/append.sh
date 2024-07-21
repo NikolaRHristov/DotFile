@@ -3,6 +3,7 @@
 cat package.json | jq '. + {
 	"private": false,
 	"publishConfig": {
+		"provenance": true,
 		"access": "public"
 	},
 	"author": {

@@ -12,15 +12,18 @@ required = true
 [core]
 autocrlf = input
 fscache = false
-symlinks = false
+	symlinks = false
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
 editor = code-insiders --wait
-ignorecase = false
+	ignorecase = false
 ignoreStat = false
 preloadindex = false
 untrackedcache = false
+	logallrefupdates = false
+	bare = false
+	filemode = false
 
 [pager]
 difftool = true
