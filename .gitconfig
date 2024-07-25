@@ -24,6 +24,7 @@ untrackedcache = false
 logallrefupdates = false
 bare = false
 filemode = false
+whitespace = fix
 
 [pager]
 difftool = true
