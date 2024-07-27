@@ -13,6 +13,6 @@ cat package.json | jq '. + {
 	},
 	"license": "MIT",
 	"type": "module",
-}' >|package.json
+}' >| package.json
 
 sort-package-json
