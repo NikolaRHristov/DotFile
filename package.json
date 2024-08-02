@@ -11,7 +11,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@playform/build": "0.1.2"
+		"@playform/build": "0.1.3"
 	},
 	"publishConfig": {
 		"access": "public",
