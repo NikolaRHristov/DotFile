@@ -124,7 +124,7 @@ for Organization in "${Organization[@]}"; do
 		-f billing_email=${Billing} \
 		-f email=${Email} \
 		-f twitter_username=${Twitter} \
-		-F has_organization_projects=false \
+		-F has_organization_projects=true \
 		-F has_repository_projects=false \
 		-f default_repository_permission='none' \
 		-F members_can_create_repositories=false \
