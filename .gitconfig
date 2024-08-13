@@ -95,6 +95,7 @@ allow = always
 
 [gc]
 auto = 256
+	pruneExpire = now
 
 [rerere]
 enabled = true
