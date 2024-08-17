@@ -135,3 +135,5 @@ unsetopt correct
 unsetopt correct_all
 
 . "$HOME/.grit/bin/env"
+
+export PATH="/home/nikola/Tool/Global/PNPM:$PATH"

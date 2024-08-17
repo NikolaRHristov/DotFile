@@ -112,7 +112,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # shellcheck source=/dev/null
 [[ -f ~/.functions ]] && . ~/.functions
 
-export PATH="$PATH:/c/Users/nikola/.bin"
+# export PATH="$PATH:/c/Users/nikola/.bin"
 export AWS_CLI_AUTO_PROMPT=on-partial
 
 # Telemetry
@@ -176,4 +176,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# shellcheck disable=SC1091
 . "$HOME/.grit/bin/env"
+
+export PATH="/home/nikola/Tool/Global/PNPM:$PATH"
