@@ -14,10 +14,10 @@ rm -rf ~/.functions
 rm -rf ~/.gitconfig
 rm -rf ~/.gitmessage
 rm -rf ~/Bash
-rm -rf ~/Powershell
+rm -rf ~/PowerShell
 rm -rf ~/ZSH
 rm -rf ~/.ssh
-rm -rf ~/prettier.config.js
+rm -rf ~/prettier.config.mjs
 rm -rf ~/rustfmt.toml
 rm -rf ~/tailwind.config.js
 rm -rf ~/rome.json
@@ -35,10 +35,10 @@ ln -s "$DOTFILE".functions ~/.functions
 cp "$DOTFILE".gitconfig ~/.gitconfig
 ln -s "$DOTFILE".gitmessage ~/.gitmessage
 ln -s "$DOTFILE"Bash ~/Bash
-ln -s "$DOTFILE"Powershell ~/Powershell
+ln -s "$DOTFILE"PowerShell ~/PowerShell
 ln -s "$DOTFILE"ZSH ~/ZSH
 ln -s /f/MEGA/PROJECTS/Personal/Credential/Key/SSH ~/.ssh
-ln -s "$DOTFILE"prettier.config.js ~/prettier.config.js
+ln -s "$DOTFILE"prettier.config.mjs ~/prettier.config.mjs
 ln -s "$DOTFILE"rome.json ~/rome.json
 ln -s "$DOTFILE"biome.json ~/biome.json
 ln -s "$DOTFILE"rustfmt.toml ~/rustfmt.toml
