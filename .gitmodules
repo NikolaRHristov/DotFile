@@ -2,6 +2,10 @@
 path = Bash
 url = ssh://git@github.com/NikolaRHristov/Bash.git
 
+[submodule "PowerShell"]
+path = PowerShell
+url = ssh://git@github.com/NikolaRHristov/PowerShell.git
+
 [submodule "ZSH"]
 path = ZSH
 url = ssh://git@github.com/NikolaRHristov/ZSH.git
@@ -10,6 +14,6 @@ url = ssh://git@github.com/NikolaRHristov/ZSH.git
 path = .config/Completion
 url = ssh://git@github.com/NikolaRHristov/Completion.git
 
-[submodule "PowerShell"]
-path = PowerShell
-url = ssh://git@github.com/NikolaRHristov/PowerShell.git
+[submodule ".config/nvim"]
+path = .config/nvim
+url = ssh://git@github.com/NikolaRHristov/NVIM.git
