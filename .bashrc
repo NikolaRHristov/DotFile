@@ -167,3 +167,13 @@ SAVEHIST=1000
 # eval "$(atuin init bash)"
 
 set +o noclobber
+
+# pnpm
+export PNPM_HOME="/home/nikola/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+. "$HOME/.grit/bin/env"

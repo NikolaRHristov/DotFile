@@ -130,3 +130,8 @@ HISTFILESIZE=10000
 SAVEHIST=1000
 
 # eval "$(atuin init zsh)"
+
+unsetopt correct
+unsetopt correct_all
+
+. "$HOME/.grit/bin/env"
