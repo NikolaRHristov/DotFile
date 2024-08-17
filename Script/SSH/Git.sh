@@ -2,9 +2,9 @@
 
 # shellcheck disable=SC1090
 # shellcheck disable=SC3046
-source ~/.alias
+source ~/.aliases
 source ~/.functions
 
 sshagent_init
 
-exec ssh-agent ssh "$@"
+exec ssh "$@"
