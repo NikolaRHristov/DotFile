@@ -34,8 +34,8 @@ rm C:\msys64\home\nikola\.gitmessage
 rm C:\Users\Nikola\Bash
 rm C:\msys64\home\nikola\Bash
 
-rm C:\Users\Nikola\Powershell
-rm C:\msys64\home\nikola\Powershell
+rm C:\Users\Nikola\PowerShell
+rm C:\msys64\home\nikola\PowerShell
 
 rm C:\Users\Nikola\ZSH
 rm C:\msys64\home\nikola\ZSH
@@ -43,8 +43,8 @@ rm C:\msys64\home\nikola\ZSH
 rm C:\Users\Nikola\.ssh
 rm C:\msys64\home\nikola\.ssh
 
-rm C:\Users\Nikola\prettier.config.js
-rm C:\msys64\home\nikola\prettier.config.js
+rm C:\Users\Nikola\prettier.config.mjs
+rm C:\msys64\home\nikola\prettier.config.mjs
 
 rm C:\Users\Nikola\rustfmt.toml
 rm C:\msys64\home\nikola\rustfmt.toml
@@ -88,8 +88,8 @@ cp D:\Developer\Application\NikolaRHristov\DotFile\.gitconfig C:\msys64\home\nik
 mklink C:\Users\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 mklink C:\msys64\home\nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 
-mklink C:\Users\Nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\DotFile\prettier.config.js
-mklink C:\msys64\home\nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\DotFile\prettier.config.js
+mklink C:\Users\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\prettier.config.mjs
+mklink C:\msys64\home\nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\prettier.config.mjs
 
 mklink C:\Users\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\rome.json
 mklink C:\msys64\home\nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\rome.json
@@ -109,8 +109,8 @@ mklink /D C:\msys64\home\nikola\.config D:\Developer\Application\NikolaRHristov\
 mklink /D C:\Users\Nikola\Bash D:\Developer\Application\NikolaRHristov\DotFile\Bash
 mklink /D C:\msys64\home\nikola\Bash D:\Developer\Application\NikolaRHristov\DotFile\Bash
 
-mklink /D C:\Users\Nikola\Powershell D:\Developer\Application\NikolaRHristov\DotFile\Powershell
-mklink /D C:\msys64\home\nikola\Powershell D:\Developer\Application\NikolaRHristov\DotFile\Powershell
+mklink /D C:\Users\Nikola\PowerShell D:\Developer\Application\NikolaRHristov\DotFile\PowerShell
+mklink /D C:\msys64\home\nikola\PowerShell D:\Developer\Application\NikolaRHristov\DotFile\PowerShell
 
 mklink /D C:\Users\Nikola\ZSH D:\Developer\Application\NikolaRHristov\DotFile\ZSH
 mklink /D C:\msys64\home\nikola\ZSH D:\Developer\Application\NikolaRHristov\DotFile\ZSH

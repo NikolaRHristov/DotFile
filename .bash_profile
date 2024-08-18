@@ -15,3 +15,5 @@
 
 # shellcheck disable=SC1091
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+. "$HOME/.grit/bin/env"
