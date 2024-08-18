@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILE="/d/Developer/Application/NikolaRHristov/DotFile/"
+DOTFILE="~/Developer/Application/NikolaRHristov/DotFile/"
 
 rm -rf ~/.aliases
 rm -rf ~/.bash_profile

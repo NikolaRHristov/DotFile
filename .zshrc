@@ -10,7 +10,7 @@ export PATH=$PATH:/usr/local/go/bin
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/nikola/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -116,7 +116,7 @@ export STRIPE_CLI_TELEMETRY_OPTOUT=1
 export TERRAFORM_TELEMETRY=0
 
 # Turso
-export PATH="/home/nikola/.turso:$PATH"
+export PATH="$HOME/.turso:$PATH"
 GPG_TTY=$(tty)
 export GPG_TTY
 export GPG_AGENT_INFO

@@ -147,7 +147,7 @@ export STRIPE_CLI_TELEMETRY_OPTOUT=1
 export TERRAFORM_TELEMETRY=0
 
 # Turso
-export PATH="/home/nikola/.turso:$PATH"
+export PATH="$HOME/.turso:$PATH"
 GPG_TTY=$(tty)
 export GPG_TTY
 export GPG_AGENT_INFO
