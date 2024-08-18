@@ -27,14 +27,11 @@ export default {
 		"prettier-plugin-toml",
 		"prettier-plugin-packagejson",
 	],
-	tailwindConfig:
-		"~/tailwind.config.js",
+	tailwindConfig: `${process.env.HOME}/tailwind.config.js`,
 	overrides: [
 		{
 			files: "*.astro",
 			options: {
-
-				
 				parser: "astro",
 			},
 		},
