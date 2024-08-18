@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILE="~/Developer/Application/NikolaRHristov/DotFile/"
+DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
 
 rm -rf ~/.aliases
 rm -rf ~/.bash_profile
@@ -37,7 +37,7 @@ ln -s "$DOTFILE".gitmessage ~/.gitmessage
 ln -s "$DOTFILE"Bash ~/Bash
 ln -s "$DOTFILE"Powershell ~/Powershell
 ln -s "$DOTFILE"ZSH ~/ZSH
-ln -s /f/MEGA/PROJECTS/Personal/Credential/Key/SSH ~/.ssh
+ln -s /e/MEGA/PROJECTS/Personal/Credential/Key/SSH ~/.ssh
 ln -s "$DOTFILE"prettier.config.js ~/prettier.config.js
 ln -s "$DOTFILE"rome.json ~/rome.json
 ln -s "$DOTFILE"biome.json ~/biome.json

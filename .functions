@@ -259,7 +259,7 @@ function clean_dependencies() {
 
 function tere() {
 	local result
-	result=$(/c/Users/nikola/.cargo/bin/tere "$@")
+	result=$("$HOME"/.cargo/bin/tere "$@")
 	[ -n "$result" ] && cd -- "$result" || exit
 }
 

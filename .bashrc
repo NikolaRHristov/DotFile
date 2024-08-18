@@ -112,7 +112,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # shellcheck source=/dev/null
 [[ -f ~/.functions ]] && . ~/.functions
 
-export PATH="$PATH:/c/Users/nikola/.bin"
+export PATH="$HOME/.bin:$PATH"
 export AWS_CLI_AUTO_PROMPT=on-partial
 
 # Telemetry
@@ -167,3 +167,9 @@ SAVEHIST=1000
 # eval "$(atuin init bash)"
 
 set +o noclobber
+
+# shellcheck disable=SC1091
+. "$HOME/.grit/bin/env"
+
+export PATH="/var/lib/snapd/snap/bin:$PATH"
+export PATH="$HOME/Tool/Global/PNPM:$PATH"

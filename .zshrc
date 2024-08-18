@@ -37,13 +37,12 @@ plugins=(
 	git
 	npm
 	pip
-	terraform
 )
 
 source $ZSH/oh-my-zsh.sh
 
-# export MANPATH="/usr/local/man:$MANPATH"
-# export LANG=en_US.UTF-8
+export MANPATH="/usr/local/man:$MANPATH"
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -81,7 +80,7 @@ if [ -f ~/.functions ]; then
 	. ~/.functions
 fi
 
-export PATH="$PATH:/c/Users/nikola/.bin"
+export PATH="$HOME/.bin:$PATH"
 export AWS_CLI_AUTO_PROMPT=on-partial
 
 # Telemetry
@@ -130,3 +129,11 @@ HISTFILESIZE=10000
 SAVEHIST=1000
 
 # eval "$(atuin init zsh)"
+
+unsetopt correct
+unsetopt correct_all
+
+. "$HOME/.grit/bin/env"
+
+export PATH="/var/lib/snapd/snap/bin:$PATH"
+export PATH="$HOME/Tool/Global/PNPM:$PATH"
