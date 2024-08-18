@@ -123,10 +123,41 @@ export GPG_AGENT_INFO
 export RUSTC_WRAPPER=sccache
 
 # shopt -s histappend
-HISTFILE="$HOME/.zsh_history_shared"
-HISTSIZE=1000
 HISTFILESIZE=10000
-SAVEHIST=1000
+
+# Set history file
+HISTFILE="$HOME/.zsh_history_shared"
+
+# Set history size
+HISTSIZE=10000
+SAVEHIST=10000
+
+# Share history across multiple zsh sessions
+setopt SHARE_HISTORY
+
+# Append to history
+setopt APPEND_HISTORY
+
+# Add commands as they are typed, don't wait until shell exits
+setopt INC_APPEND_HISTORY
+
+# Expire duplicate entries first when trimming history
+setopt HIST_EXPIRE_DUPS_FIRST
+
+# Don't record an entry that was just recorded again
+setopt HIST_IGNORE_DUPS
+
+# Delete old recorded entry if new entry is a duplicate
+setopt HIST_IGNORE_ALL_DUPS
+
+# Don't record an entry starting with a space
+setopt HIST_IGNORE_SPACE
+
+# Don't write duplicate entries in the history file
+setopt HIST_SAVE_NO_DUPS
+
+# Remove superfluous blanks before recording entry
+setopt HIST_REDUCE_BLANKS
 
 # eval "$(atuin init zsh)"
 
