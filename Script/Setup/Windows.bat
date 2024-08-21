@@ -43,8 +43,8 @@ rm C:\msys64\home\Nikola\ZSH
 rm C:\Users\Nikola\.ssh
 rm C:\msys64\home\Nikola\.ssh
 
-rm C:\Users\Nikola\prettier.config.mjs
-rm C:\msys64\home\Nikola\prettier.config.mjs
+rm C:\Users\Nikola\prettier.config.js
+rm C:\msys64\home\Nikola\prettier.config.js
 
 rm C:\Users\Nikola\rustfmt.toml
 rm C:\msys64\home\Nikola\rustfmt.toml
@@ -88,20 +88,20 @@ cp D:\Developer\Application\NikolaRHristov\DotFile\.gitconfig C:\msys64\home\Nik
 mklink C:\Users\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 mklink C:\msys64\home\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 
-mklink C:\Users\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\prettier.config.mjs
-mklink C:\msys64\home\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\prettier.config.mjs
+mklink C:\Users\Nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.js
+mklink C:\msys64\home\Nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.js
 
-mklink C:\Users\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\rome.json
-mklink C:\msys64\home\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\rome.json
+mklink C:\Users\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rome.json
+mklink C:\msys64\home\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rome.json
 
-mklink C:\Users\Nikola\biome.json D:\Developer\Application\NikolaRHristov\DotFile\biome.json
-mklink C:\msys64\home\Nikola\biome.json D:\Developer\Application\NikolaRHristov\DotFile\biome.json
+mklink C:\Users\Nikola\biome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\biome.json
+mklink C:\msys64\home\Nikola\biome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\biome.json
 
-mklink C:\Users\Nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\DotFile\rustfmt.toml
-mklink C:\msys64\home\Nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\DotFile\rustfmt.toml
+mklink C:\Users\Nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rustfmt.toml
+mklink C:\msys64\home\Nikola\rustfmt.toml D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rustfmt.toml
 
-mklink C:\Users\Nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\DotFile\tailwind.config.js
-mklink C:\msys64\home\Nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\DotFile\tailwind.config.js
+mklink C:\Users\Nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\DotFile\Configuration\tailwind.config.js
+mklink C:\msys64\home\Nikola\tailwind.config.js D:\Developer\Application\NikolaRHristov\DotFile\Configuration\tailwind.config.js
 
 mklink /D C:\Users\Nikola\.config D:\Developer\Application\NikolaRHristov\DotFile\.config
 mklink /D C:\msys64\home\Nikola\.config D:\Developer\Application\NikolaRHristov\DotFile\.config

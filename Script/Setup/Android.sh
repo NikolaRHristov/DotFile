@@ -15,7 +15,7 @@ rm -rf ~/.gitmessage
 rm -rf ~/Bash
 rm -rf ~/PowerShell
 rm -rf ~/ZSH
-rm -rf ~/prettier.config.mjs
+rm -rf ~/prettier.config.js
 rm -rf ~/rustfmt.toml
 rm -rf ~/tailwind.config.js
 rm -rf ~/rome.json
@@ -30,7 +30,7 @@ cp "$DotFile".bashrc ~/.bashrc
 cp "$DotFile".functions ~/.functions
 cp "$DotFile".gitconfig ~/.gitconfig
 cp "$DotFile".gitmessage ~/.gitmessage
-cp "$DotFile"prettier.config.mjs ~/prettier.config.mjs
+cp "$DotFile"prettier.config.js ~/prettier.config.js
 cp "$DotFile"rome.json ~/rome.json
 cp "$DotFile"biome.json ~/biome.json
 cp "$DotFile"rustfmt.toml ~/rustfmt.toml
