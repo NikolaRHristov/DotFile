@@ -53,32 +53,22 @@ fi
 
 export ARCHFLAGS="-arch x86_64"
 
-if [ -f "$HOME/.cargo/env" ]; then
-	# shellcheck source=/dev/null
-	. "$HOME/.cargo/env"
-fi
+# shellcheck disable=SC1091
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
 export PATH="$PATH:$HOME/.cargo/bin"
 
-if [ -f "$NVM_DIR/nvm.sh" ]; then
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/nvm.sh"
-fi
+# shellcheck source=/dev/null
+[[ -f "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"
 
-if [ -f "$NVM_DIR/bash_completion" ]; then
-	# shellcheck source=/dev/null
-	. "$NVM_DIR/bash_completion"
-fi
+# shellcheck source=/dev/null
+[[ -f "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
 
-if [ -f ~/.aliases ]; then
-	# shellcheck source=/dev/null
-	. ~/.aliases
-fi
+# shellcheck source=/dev/null
+[[ -f ~/.aliases ]] && . ~/.aliases
 
-if [ -f ~/.functions ]; then
-	# shellcheck source=/dev/null
-	. ~/.functions
-fi
+# shellcheck source=/dev/null
+[[ -f ~/.functions ]] && . ~/.functions
 
 export PATH="$HOME/.bin:$PATH"
 export AWS_CLI_AUTO_PROMPT=on-partial
@@ -159,12 +149,11 @@ setopt HIST_SAVE_NO_DUPS
 # Remove superfluous blanks before recording entry
 setopt HIST_REDUCE_BLANKS
 
-# eval "$(atuin init zsh)"
-
 unsetopt correct
 unsetopt correct_all
 
-. "$HOME/.grit/bin/env"
+# shellcheck disable=SC1091
+[ -f "$HOME/.grit/bin/env" ] && . "$HOME/.grit/bin/env"
 
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 export PATH="$HOME/Tool/Global/PNPM:$PATH"

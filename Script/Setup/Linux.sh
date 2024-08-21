@@ -39,29 +39,3 @@ ln -s "$DOTFILE".config ~/.config
 ln -s "$DOTFILE"Bash ~/Bash
 ln -s "$DOTFILE"PowerShell ~/PowerShell
 ln -s "$DOTFILE"ZSH ~/ZSH
-
-rm ~/Developer/.clang-format
-rm ~/Developer/.csharpierrc
-rm ~/Developer/.editorconfig
-rm ~/Developer/.jshintrc
-rm ~/Developer/.npmrc
-rm ~/Developer/.prettierignore
-rm ~/Developer/.stylua.toml
-rm ~/Developer/jsconfig.json
-rm ~/Developer/rome.json
-rm ~/Developer/biome.json
-rm ~/Developer/rustfmt.toml
-rm ~/Developer/tsconfig.json
-
-ln -s "$DOTFILE".clang-format ~/Developer/.clang-format
-ln -s "$DOTFILE".csharpierrc ~/Developer/.csharpierrc
-ln -s "$DOTFILE".editorconfig ~/Developer/.editorconfig
-ln -s "$DOTFILE".jshintrc ~/Developer/.jshintrc
-ln -s "$DOTFILE".npmrc ~/Developer/.npmrc
-ln -s "$DOTFILE".prettierignore ~/Developer/.prettierignore
-ln -s "$DOTFILE".stylua.toml ~/Developer/.stylua.toml
-ln -s "$DOTFILE"jsconfig.json ~/Developer/jsconfig.json
-ln -s "$DOTFILE"rome.json ~/Developer/rome.json
-ln -s "$DOTFILE"biome.json ~/Developer/biome.json
-ln -s "$DOTFILE"rustfmt.toml ~/Developer/rustfmt.toml
-ln -s "$DOTFILE"tsconfig.json ~/Developer/tsconfig.json

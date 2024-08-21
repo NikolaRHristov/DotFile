@@ -164,12 +164,10 @@ SAVEHIST=1000
 # shellcheck disable=SC1090
 [[ -f ~/.bash-preexec.sh ]] && . ~/.bash-preexec.sh
 
-# eval "$(atuin init bash)"
-
 set +o noclobber
 
 # shellcheck disable=SC1091
-. "$HOME/.grit/bin/env"
+[ -f "$HOME/.grit/bin/env" ] && . "$HOME/.grit/bin/env"
 
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 export PATH="$HOME/Tool/Global/PNPM:$PATH"

@@ -40,28 +40,28 @@ cp "$DotFile"Bash ~/Bash
 cp "$DotFile"PowerShell ~/PowerShell
 cp "$DotFile"ZSH ~/ZSH
 
-rm ~/Developer/.clang-format
-rm ~/Developer/.csharpierrc
-rm ~/Developer/.editorconfig
-rm ~/Developer/.jshintrc
-rm ~/Developer/.npmrc
-rm ~/Developer/.prettierignore
-rm ~/Developer/.stylua.toml
-rm ~/Developer/jsconfig.json
-rm ~/Developer/rome.json
-rm ~/Developer/biome.json
-rm ~/Developer/rustfmt.toml
-rm ~/Developer/tsconfig.json
+# rm ~/Developer/.clang-format
+# rm ~/Developer/.csharpierrc
+# rm ~/Developer/.editorconfig
+# rm ~/Developer/.jshintrc
+# rm ~/Developer/.npmrc
+# rm ~/Developer/.prettierignore
+# rm ~/Developer/.stylua.toml
+# rm ~/Developer/jsconfig.json
+# rm ~/Developer/rome.json
+# rm ~/Developer/biome.json
+# rm ~/Developer/rustfmt.toml
+# rm ~/Developer/tsconfig.json
 
-ln -s "$DotFile".clang-format ~/Developer/.clang-format
-ln -s "$DotFile".csharpierrc ~/Developer/.csharpierrc
-ln -s "$DotFile".editorconfig ~/Developer/.editorconfig
-ln -s "$DotFile".jshintrc ~/Developer/.jshintrc
-ln -s "$DotFile".npmrc ~/Developer/.npmrc
-ln -s "$DotFile".prettierignore ~/Developer/.prettierignore
-ln -s "$DotFile".stylua.toml ~/Developer/.stylua.toml
-ln -s "$DotFile"jsconfig.json ~/Developer/jsconfig.json
-ln -s "$DotFile"rome.json ~/Developer/rome.json
-ln -s "$DotFile"biome.json ~/Developer/biome.json
-ln -s "$DotFile"rustfmt.toml ~/Developer/rustfmt.toml
-ln -s "$DotFile"tsconfig.json ~/Developer/tsconfig.json
+# ln -s "$DotFile".clang-format ~/Developer/.clang-format
+# ln -s "$DotFile".csharpierrc ~/Developer/.csharpierrc
+# ln -s "$DotFile".editorconfig ~/Developer/.editorconfig
+# ln -s "$DotFile".jshintrc ~/Developer/.jshintrc
+# ln -s "$DotFile".npmrc ~/Developer/.npmrc
+# ln -s "$DotFile".prettierignore ~/Developer/.prettierignore
+# ln -s "$DotFile".stylua.toml ~/Developer/.stylua.toml
+# ln -s "$DotFile"jsconfig.json ~/Developer/jsconfig.json
+# ln -s "$DotFile"rome.json ~/Developer/rome.json
+# ln -s "$DotFile"biome.json ~/Developer/biome.json
+# ln -s "$DotFile"rustfmt.toml ~/Developer/rustfmt.toml
+# ln -s "$DotFile"tsconfig.json ~/Developer/tsconfig.json
