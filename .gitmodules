@@ -1,6 +1,6 @@
-[submodule "Bash"]
-path = Bash
-url = ssh://git@github.com/NikolaRHristov/Bash.git
+# [submodule "Bash"]
+# path = Bash
+# url = ssh://git@github.com/NikolaRHristov/Bash.git
 
 [submodule "PowerShell"]
 path = PowerShell
