@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mapfile -t Organization < <(printf "%s" "$(\gh api users/NikolaRHristov/orgs | \jq -r '.[].login')" | tr -d '\r')
 

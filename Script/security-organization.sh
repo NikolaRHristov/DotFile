@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mapfile -t array < <(printf "%s" "$(\gh api -X GET user/orgs | \jq -r '.[].login')" | tr -d '\r')
 

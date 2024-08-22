@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 cat package.json | jq '. + {
 	"private": false,

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
 
