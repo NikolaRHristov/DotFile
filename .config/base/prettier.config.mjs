@@ -15,6 +15,7 @@ export default {
 	requirePragma: false,
 	semi: true,
 	singleQuote: false,
+
 	tabWidth: 4,
 	trailingComma: "all",
 	useTabs: true,
@@ -27,7 +28,7 @@ export default {
 		"prettier-plugin-toml",
 		"prettier-plugin-packagejson",
 	],
-	tailwindConfig: `${process.env.HOME}/tailwind.config.js`,
+	tailwindConfig: "./tailwind.config.js",
 	overrides: [
 		{
 			files: "*.astro",

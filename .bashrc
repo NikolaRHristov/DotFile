@@ -170,4 +170,6 @@ set +o noclobber
 [ -f "$HOME/.grit/bin/env" ] && . "$HOME/.grit/bin/env"
 
 export PATH="/var/lib/snapd/snap/bin:$PATH"
-export PATH="$HOME/Tool/Global/PNPM:$PATH"
+
+# shellcheck disable=SC2088
+[ -d "/d/Developer" ] && cd /d/Developer || exit
