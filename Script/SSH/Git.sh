@@ -5,6 +5,6 @@
 source ~/.aliases
 source ~/.functions
 
-sshagent_init > /dev/null 2>&1
+sshagent_init >/dev/null 2>&1
 
 exec ssh "$@"
