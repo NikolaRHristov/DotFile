@@ -25,6 +25,7 @@ logallrefupdates = false
 bare = false
 filemode = false
 whitespace = fix
+	longpaths = true
 
 [pager]
 difftool = true
