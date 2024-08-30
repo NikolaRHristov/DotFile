@@ -16,7 +16,7 @@ symlinks = false
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
 fsmonitor = false
-editor = \"D:\\Tool\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+editor = code-insiders --wait
 ignorecase = false
 ignoreStat = false
 preloadindex = false
@@ -25,7 +25,7 @@ logallrefupdates = false
 bare = false
 filemode = false
 whitespace = fix
-	longpaths = true
+longpaths = true
 
 [pager]
 difftool = true
@@ -96,7 +96,7 @@ allow = always
 
 [gc]
 auto = 256
-	pruneExpire = now
+pruneExpire = now
 
 [rerere]
 enabled = true
