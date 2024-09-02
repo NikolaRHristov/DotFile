@@ -6,6 +6,10 @@ debug.log
 package-lock.json
 pnpm-lock.yaml
 
-Target
 Documentation
+Target
+WordPress
+docs
+test
+test_data
 vendor
