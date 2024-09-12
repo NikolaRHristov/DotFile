@@ -113,3 +113,9 @@ addEmbeddedRepo = false
 
 [gitbutler]
 gitbutlerCommitter = 1
+
+[tag]
+gpgsign = true
+
+[gpg]
+program = gpg

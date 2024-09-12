@@ -148,9 +148,6 @@ export TERRAFORM_TELEMETRY=0
 
 # Turso
 export PATH="$HOME/.turso:$PATH"
-GPG_TTY=$(tty)
-export GPG_TTY
-export GPG_AGENT_INFO
 
 export RUSTC_WRAPPER=sccache
 
@@ -173,3 +170,8 @@ export PATH="/var/lib/snapd/snap/bin:$PATH"
 
 # shellcheck disable=SC2088
 [ -d "/d/Developer" ] && cd /d/Developer || exit
+
+GPG_TTY=$(tty)
+export GPG_TTY
+gpgconf --launch gpg-agent
+export GPG_AGENT_INFO
