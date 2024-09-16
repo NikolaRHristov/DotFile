@@ -1,13 +1,12 @@
 {
-	"$schema": "https://raw.githubusercontent.com/CodeEditorLand/biome/Current/packages/%40biomejs/biome/configuration_schema.json",
+	"$schema": "https://raw.githubusercontent.com/biomejs/biome/main/packages/%40biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignore": [
 			"**/Target/**/*",
 			"**/Documentation/**/*",
 			"**/dist/**/*",
 			"**/*.astro",
-			"package.json",
-			"**/Microsoft/vscode/**/*"
+			"package.json"
 		],
 		"maxSize": 10000000
 	},
@@ -34,6 +33,10 @@
 			"quoteStyle": "double",
 			"semicolons": "always",
 			"trailingCommas": "all"
+		},
+		"jsxRuntime": "transparent",
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
 		}
 	},
 	"json": {
@@ -70,8 +73,6 @@
 			"nursery": {
 				"all": true,
 				"useImportRestrictions": "off",
-				"noUndeclaredDependencies": "off",
-				"noConsole": "off",
 				"useSortedClasses": "off"
 			},
 			"performance": {
@@ -87,7 +88,7 @@
 				"useNamingConvention": "off",
 				"useShorthandFunctionType": "off",
 				"useFilenamingConvention": "off",
-				"useNodejsImportProtocol": "off"
+				"useImportType": "off"
 			},
 			"suspicious": {
 				"all": true,
@@ -96,7 +97,7 @@
 		}
 	},
 	"organizeImports": {
-		"enabled": true
+		"enabled": false
 	},
 	"vcs": {
 		"clientKind": "git",
