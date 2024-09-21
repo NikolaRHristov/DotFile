@@ -116,3 +116,11 @@ gitbutlerCommitter = 1
 
 [tag]
 gpgsign = true
+forceSignAnnotated = true
+
+[difftool "sourcetree"]
+cmd = "'' "
+
+[mergetool "sourcetree"]
+cmd = "'' "
+trustExitCode = true
