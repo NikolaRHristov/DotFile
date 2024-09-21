@@ -5,6 +5,7 @@
 		"noEmit": true
 	},
 	"exclude": ["**/node_modules/**", "**/Target/**"],
+	"extends": "@playform/build/tsconfig",
 	"include": ["Application"],
 	"watchOptions": {
 		"excludeDirectories": [
@@ -12,6 +13,5 @@
 			"**/Target/**",
 			"**/samples/**"
 		]
-	},
-	"extends": "@playform/build/tsconfig"
+	}
 }
