@@ -124,3 +124,8 @@ cmd = "'' "
 [mergetool "sourcetree"]
 cmd = "'' "
 trustExitCode = true
+
+# [submodule]
+# recurse = true
+[credential]
+	helper = cache
