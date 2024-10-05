@@ -43,8 +43,8 @@ rm C:\msys64\home\Nikola\ZSH
 rm C:\Users\Nikola\.ssh
 rm C:\msys64\home\Nikola\.ssh
 
-rm C:\Users\Nikola\prettier.config.js
-rm C:\msys64\home\Nikola\prettier.config.js
+rm C:\Users\Nikola\prettier.config.mjs
+rm C:\msys64\home\Nikola\prettier.config.mjs
 
 rm C:\Users\Nikola\rustfmt.toml
 rm C:\msys64\home\Nikola\rustfmt.toml
@@ -88,8 +88,9 @@ cp D:\Developer\Application\NikolaRHristov\DotFile\.gitconfig C:\msys64\home\Nik
 mklink C:\Users\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 mklink C:\msys64\home\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 
-mklink C:\Users\Nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.js
-mklink C:\msys64\home\Nikola\prettier.config.js D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.js
+mklink C:\Users\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.mjs
+mklink C:\Users\Nikola\.prettierignore D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.prettierignore
+mklink C:\msys64\home\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.mjs
 
 mklink C:\Users\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rome.json
 mklink C:\msys64\home\Nikola\rome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rome.json
@@ -120,28 +121,28 @@ mklink /D C:\msys64\home\Nikola\.ssh F:\MEGA\PROJECTS\Personal\Credential\Key\SS
 
 mklink /D C:\Users\Nikola\AppData\Local\nvim C:\Users\Nikola\.config\nvim
 
-@REM rm D:\Developer\.clang-format 
-@REM rm D:\Developer\.csharpierrc 
-@REM rm D:\Developer\.editorconfig 
-@REM rm D:\Developer\.jshintrc 
-@REM rm D:\Developer\.npmrc 
-@REM rm D:\Developer\.prettierignore 
-@REM rm D:\Developer\.stylua.toml 
-@REM rm D:\Developer\jsconfig.json 
-@REM rm D:\Developer\rome.json 
-@REM rm D:\Developer\biome.json 
-@REM rm D:\Developer\rustfmt.toml 
-@REM rm D:\Developer\tsconfig.json 
+rm D:\Developer\.clang-format 
+rm D:\Developer\.csharpierrc 
+rm D:\Developer\.editorconfig 
+rm D:\Developer\.jshintrc 
+rm D:\Developer\.npmrc 
+rm D:\Developer\.prettierignore 
+rm D:\Developer\.stylua.toml 
+rm D:\Developer\jsconfig.json 
+rm D:\Developer\rome.json 
+rm D:\Developer\biome.json 
+rm D:\Developer\rustfmt.toml 
+rm D:\Developer\tsconfig.json 
 
-@REM mklink D:\Developer\.clang-format D:\Developer\Application\NikolaRHristov\DotFile\.clang-format
-@REM mklink D:\Developer\.csharpierrc D:\Developer\Application\NikolaRHristov\DotFile\.csharpierrc
-@REM mklink D:\Developer\.editorconfig D:\Developer\Application\NikolaRHristov\DotFile\.editorconfig
-@REM mklink D:\Developer\.jshintrc D:\Developer\Application\NikolaRHristov\DotFile\.jshintrc
-@REM mklink D:\Developer\.npmrc D:\Developer\Application\NikolaRHristov\DotFile\.npmrc
-@REM mklink D:\Developer\.prettierignore D:\Developer\Application\NikolaRHristov\DotFile\.prettierignore
-@REM mklink D:\Developer\.stylua.toml D:\Developer\Application\NikolaRHristov\DotFile\.stylua.toml
-@REM mklink D:\Developer\jsconfig.json D:\Developer\Application\NikolaRHristov\DotFile\jsconfig.json
-@REM mklink D:\Developer\rome.json D:\Developer\Application\NikolaRHristov\DotFile\rome.json
-@REM mklink D:\Developer\biome.json D:\Developer\Application\NikolaRHristov\DotFile\biome.json
-@REM mklink D:\Developer\rustfmt.toml D:\Developer\Application\NikolaRHristov\DotFile\rustfmt.toml
-@REM mklink D:\Developer\tsconfig.json D:\Developer\Application\NikolaRHristov\DotFile\tsconfig.json
+mklink D:\Developer\.clang-format D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.clang-format
+mklink D:\Developer\.csharpierrc D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.csharpierrc
+mklink D:\Developer\.editorconfig D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.editorconfig
+mklink D:\Developer\.jshintrc D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.jshintrc
+mklink D:\Developer\.npmrc D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.npmrc
+mklink D:\Developer\.prettierignore D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.prettierignore
+mklink D:\Developer\.stylua.toml D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.stylua.toml
+mklink D:\Developer\jsconfig.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\jsconfig.json
+mklink D:\Developer\rome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rome.json
+mklink D:\Developer\biome.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\biome.json
+mklink D:\Developer\rustfmt.toml D:\Developer\Application\NikolaRHristov\DotFile\Configuration\rustfmt.toml
+mklink D:\Developer\tsconfig.json D:\Developer\Application\NikolaRHristov\DotFile\Configuration\tsconfig.json

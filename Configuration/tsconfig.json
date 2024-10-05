@@ -4,13 +4,21 @@
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"noEmit": true
 	},
-	"exclude": ["**/node_modules/**", "**/Target/**"],
+	"exclude": [
+		"**/node_modules/**",
+		"**/Target/**",
+		"**/Dependency/**",
+		"**/Documentation/**",
+		"**/Target/**",
+		"**/node_modules/**"
+	],
 	"extends": "@playform/build/tsconfig",
 	"include": ["Application"],
 	"watchOptions": {
 		"excludeDirectories": [
-			"**/node_modules/**",
+			"**/Dependency/**",
 			"**/Target/**",
+			"**/node_modules/**",
 			"**/samples/**"
 		]
 	}
