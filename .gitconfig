@@ -129,3 +129,5 @@ trustExitCode = true
 # recurse = true
 [credential]
 	helper = cache
+[maintenance]
+	auto = false
