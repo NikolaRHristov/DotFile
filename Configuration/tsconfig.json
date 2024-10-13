@@ -5,21 +5,23 @@
 		"noEmit": true
 	},
 	"exclude": [
-		"**/node_modules/**",
-		"**/Target/**",
 		"**/Dependency/**",
 		"**/Documentation/**",
-		"**/Target/**",
-		"**/node_modules/**"
+		"**/node_modules/**",
+		"**/.git/**",
+		"**/samples/**",
+		"**/Target/**"
 	],
 	"extends": "@playform/build/tsconfig",
 	"include": ["Application"],
 	"watchOptions": {
 		"excludeDirectories": [
 			"**/Dependency/**",
-			"**/Target/**",
+			"**/Documentation/**",
 			"**/node_modules/**",
-			"**/samples/**"
+			"**/.git/**",
+			"**/samples/**",
+			"**/Target/**"
 		]
 	}
 }
