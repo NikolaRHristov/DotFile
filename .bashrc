@@ -1,7 +1,7 @@
 #!/bin/bash
 case $- in
-*i*) ;;
-*) return ;;
+	*i*) ;;
+	*) return ;;
 esac
 
 [[ -f ${WSLENV+} ]] && export PATH="$PATH:$HOME/.config/xclip"
@@ -176,3 +176,6 @@ export GPG_TTY
 gpgconf --launch gpg-agent
 
 export GPG_AGENT_INFO
+
+# Cargo
+export CARGO_NET_GIT_FETCH_WITH_CLI=true
