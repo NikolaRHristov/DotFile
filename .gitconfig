@@ -84,7 +84,8 @@ autoSetupMerge = true
 [alias]
 sync = "!git pull --no-edit --allow-unrelated-histories --no-progress -q ; git push --no-progress -q"
 ecommit = commit -a --allow-empty-message -m \"\"
-gcommit = "!bash -c 'source <(/d/Developer/Maintain/Load.sh /d/Developer/Maintain/Ask/.env) ; /d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Commit/Message.md'"
+gcommit = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Commit/Message.md"
+gecommit = "!bash -c 'source <(/d/Developer/Maintain/Load.sh /d/Developer/Maintain/Ask/.env) ; /d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Commit/Message.md'"
 
 [protocol "file"]
 allow = always
