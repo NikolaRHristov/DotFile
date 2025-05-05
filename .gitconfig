@@ -1,6 +1,6 @@
 [user]
 name = Nikola Hristov
-email = Nikola@PlayForm.LTD
+email = Nikola@PlayForm.Cloud
 signingkey = BAF2F5C7BAAD1367
 
 [core]
@@ -85,6 +85,7 @@ autoSetupMerge = true
 sync = "!git pull --no-edit --allow-unrelated-histories --no-progress -q ; git push --no-progress -q"
 ecommit = commit -a --allow-empty-message -m \"\"
 gcommit = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Commit/Message.md"
+gcommit-Land = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Commit/Message/Land.md"
 gecommit = "!bash -c 'source <(/d/Developer/Maintain/Load.sh /d/Developer/Maintain/Ask/.env) ; /d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Commit/Message.md'"
 
 [protocol "file"]
@@ -132,3 +133,8 @@ auto = false
 usePathWalk = true
 [feature]
 manyFiles = true
+[filter "lfs"]
+process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f

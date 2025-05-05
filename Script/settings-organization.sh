@@ -3,14 +3,14 @@
 mapfile -t Organization < <(printf "%s" "$(\gh api users/NikolaRHristov/orgs | \jq -r '.[].login')" | tr -d '\r')
 
 for Organization in "${Organization[@]}"; do
-	Billing="Hello@PlayForm.LTD"
-	Email="Hello@PlayForm.LTD"
+	Billing="Hello@PlayForm.Cloud"
+	Email="Hello@PlayForm.Cloud"
 	Twitter="PlayFormCloud"
 
 	case "$Organization" in
 	"PlayForm")
-		Billing="Hello@PlayForm.LTD"
-		Email="Hello@PlayForm.LTD"
+		Billing="Hello@PlayForm.Cloud"
+		Email="Hello@PlayForm.Cloud"
 		Twitter="PlayFormCloud"
 		;;
 	"windowsdock")
@@ -19,8 +19,8 @@ for Organization in "${Organization[@]}"; do
 		Twitter="windowsdock"
 		;;
 	"NastyApplication")
-		Billing="nasty@PlayForm.LTD"
-		Email="nasty@PlayForm.LTD"
+		Billing="nasty@PlayForm.Cloud"
+		Email="nasty@PlayForm.Cloud"
 		Twitter="NastyApplication"
 		;;
 	"RoundWindows")
@@ -71,33 +71,33 @@ for Organization in "${Organization[@]}"; do
 		Twitter="HalleSoftware"
 		;;
 	"GrenadierJS")
-		Billing="Grenadier@PlayForm.LTD"
-		Email="Grenadier@PlayForm.LTD"
+		Billing="Grenadier@PlayForm.Cloud"
+		Email="Grenadier@PlayForm.Cloud"
 		Twitter="GrenadierJS"
 		;;
 	"SileaJS")
-		Billing="Silea@PlayForm.LTD"
-		Email="Silea@PlayForm.LTD"
+		Billing="Silea@PlayForm.Cloud"
+		Email="Silea@PlayForm.Cloud"
 		Twitter="SileaJS"
 		;;
 	"CrepesJS")
-		Billing="Crepes@PlayForm.LTD"
-		Email="Crepes@PlayForm.LTD"
+		Billing="Crepes@PlayForm.Cloud"
+		Email="Crepes@PlayForm.Cloud"
 		Twitter="CrepesJS"
 		;;
 	"SouqRs")
-		Billing="Souq@PlayForm.LTD"
-		Email="Souq@PlayForm.LTD"
+		Billing="Souq@PlayForm.Cloud"
+		Email="Souq@PlayForm.Cloud"
 		Twitter="SouqRs"
 		;;
 	"CodeEditorLand")
-		Billing="Land@PlayForm.LTD"
-		Email="Land@PlayForm.LTD"
+		Billing="Land@PlayForm.Cloud"
+		Email="Land@PlayForm.Cloud"
 		Twitter="CodeEditorLand"
 		;;
 	"SecretSignup")
-		Billing="Signup@PlayForm.LTD"
-		Email="Signup@PlayForm.LTD"
+		Billing="Signup@PlayForm.Cloud"
+		Email="Signup@PlayForm.Cloud"
 		Twitter="SecretSignup"
 		;;
 	"327b5")
