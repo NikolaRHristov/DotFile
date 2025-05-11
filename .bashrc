@@ -9,6 +9,7 @@
 colors() {
 	local fgc bgc vals seq0
 
+	# shellcheck disable=SC2016
 	printf "Color escapes are %s\n" '\e[${value};...;${value}m'
 	printf "Values 30..37 are \e[33mforeground colors\e[m\n"
 	printf "Values 40..47 are \e[43mbackground colors\e[m\n"
@@ -26,23 +27,27 @@ colors() {
 
 			seq0="${vals:+\e[${vals}m}"
 			printf "  %-9s" "${seq0:-(default)}"
+			# shellcheck disable=SC2059
 			printf " ${seq0}TEXT\e[m"
+			# shellcheck disable=SC2059
 			printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
 		done
-		echo; echo
+		echo
+		echo
 	done
 }
 
+# shellcheck disable=SC1091
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 # Change the window title of X terminals
 case ${TERM} in
-	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|interix|konsole*)
-		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-		;;
-	screen*)
-		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-		;;
+xterm* | rxvt* | Eterm* | aterm | kterm | gnome* | interix | konsole*)
+	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
+	;;
+screen*)
+	PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+	;;
 esac
 
 use_color=true
@@ -52,26 +57,28 @@ use_color=true
 # instead of using /etc/DIR_COLORS.  Try to use the external file
 # first to take advantage of user additions.  Use internal bash
 # globbing instead of external grep binary.
-safe_term=${TERM//[^[:alnum:]]/?}   # sanitize TERM
+safe_term=${TERM//[^[:alnum:]]/?} # sanitize TERM
 match_lhs=""
-[[ -f ~/.dir_colors   ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
+[[ -f ~/.dir_colors ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
-[[ -z ${match_lhs}    ]] \
-	&& type -P dircolors >/dev/null \
-	&& match_lhs=$(dircolors --print-database)
+[[ -z ${match_lhs} ]] &&
+	type -P dircolors >/dev/null &&
+	match_lhs=$(dircolors --print-database)
 [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] && use_color=true
 
-if ${use_color} ; then
+if ${use_color}; then
 	# Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
-	if type -P dircolors >/dev/null ; then
-		if [[ -f ~/.dir_colors ]] ; then
+	if type -P dircolors >/dev/null; then
+		if [[ -f ~/.dir_colors ]]; then
+			# shellcheck disable=SC2046
 			eval $(dircolors -b ~/.dir_colors)
-		elif [[ -f /etc/DIR_COLORS ]] ; then
+		elif [[ -f /etc/DIR_COLORS ]]; then
+			# shellcheck disable=SC2046
 			eval $(dircolors -b /etc/DIR_COLORS)
 		fi
 	fi
 
-	if [[ ${EUID} == 0 ]] ; then
+	if [[ ${EUID} == 0 ]]; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
@@ -82,7 +89,7 @@ if ${use_color} ; then
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
 else
-	if [[ ${EUID} == 0 ]] ; then
+	if [[ ${EUID} == 0 ]]; then
 		# show root@ when we don't have colors
 		PS1='\u@\h \W \$ '
 	else
@@ -98,7 +105,7 @@ unset use_color safe_term match_lhs sh
 #alias np='nano -w PKGBUILD'
 #alias more=less
 
-xhost +local:root > /dev/null 2>&1
+xhost +local:root >/dev/null 2>&1
 
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
@@ -114,8 +121,8 @@ shopt -s expand_aliases
 shopt -s histappend
 
 case $- in
-	*i*) ;;
-	*) return ;;
+*i*) ;;
+*) return ;;
 esac
 
 [[ -f ${WSLENV+} ]] && export PATH="$PATH:$HOME/.config/xclip"
@@ -293,3 +300,9 @@ export GPG_AGENT_INFO
 
 # Cargo
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
+
+if systemctl --user is-active --quiet ssh-agent.service; then
+	export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+fi
+
+eval `keychain --eval --agents ssh ~/.ssh/PC.openssh.SSH`

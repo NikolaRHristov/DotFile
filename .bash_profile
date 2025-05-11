@@ -6,3 +6,6 @@
 
 # shellcheck disable=SC1091
 [[ -f $HOME/.nix-profile/etc/profile.d/nix.sh ]] && . "$HOME"/.nix-profile/etc/profile.d/nix.sh
+
+# shellcheck disable=SC1091
+. "$HOME/.cargo/env"
