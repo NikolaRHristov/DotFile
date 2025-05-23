@@ -9,7 +9,7 @@ cat package.json | jq '. + {
 	"author": {
 		"email": "Nikola@PlayForm.Cloud",
 		"name": "Nikola R. Hristov",
-		"url": "HTTPS://nikolahristov.tech"
+		"url": "https://nikolahristov.tech"
 	},
 	"license": "MIT",
 	"type": "module",
