@@ -5,16 +5,16 @@ signingkey = BAF2F5C7BAAD1367
 
 [core]
 autocrlf = true
-fscache = true
+fscache = false
 symlinks = false
 excludesfile = "D:\\Developer\\.gitignore"
 sshCommand = plink
-fsmonitor = true
+fsmonitor = false
 	editor = \"C:\\Users\\Nikola\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
 ignorecase = false
 ignoreStat = false
-preloadIndex = true
-untrackedCache = true
+preloadIndex = false
+untrackedCache = false
 logallrefupdates = false
 bare = false
 filemode = false
@@ -29,14 +29,14 @@ rebase = false
 
 [push]
 autoSetupRemote = true
-recurseSubmodules = check
+recurseSubmodules = false
 
 [init]
 defaultBranch = Current
 
 [commit]
 gpgsign = true
-program = "C:\\Program Files\\Git\\usr\\bin\\gpg.exe"
+# program = "C:\\Program Files\\Git\\usr\\bin\\gpg.exe"
 
 [merge]
 tool = vscode
@@ -121,7 +121,7 @@ forceSignAnnotated = true
 helper = cache
 
 [maintenance]
-auto = true
+auto = false
 
 [pack]
 usePathWalk = true

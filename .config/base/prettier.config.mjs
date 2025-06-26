@@ -1,3 +1,4 @@
+/** @type {import('prettier').Config} */
 export default {
 	arrowParens: "always",
 	bracketSameLine: true,
@@ -20,6 +21,7 @@ export default {
 	vueIndentScriptAndStyle: true,
 	plugins: [
 		"@ianvs/prettier-plugin-sort-imports",
+		"@prettier/plugin-oxc",
 		"prettier-plugin-astro",
 		"prettier-plugin-organize-attributes",
 		"prettier-plugin-packagejson",
@@ -30,9 +32,17 @@ export default {
 	tailwindConfig: "./tailwind.config.js",
 	overrides: [
 		{
-			files: "*.mjs",
+			files: "*.{js,mjs,cjs,jsx}",
 			options: {
-				parser: "babel",
+				parser: "oxc",
+				plugins: ["@prettier/plugin-oxc"],
+			},
+		},
+		{
+			files: "*.{ts,mts,cts,tsx}",
+			options: {
+				parser: "oxc-ts",
+				plugins: ["@prettier/plugin-oxc"],
 			},
 		},
 		{
