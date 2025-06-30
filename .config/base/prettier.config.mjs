@@ -21,7 +21,7 @@ export default {
 	vueIndentScriptAndStyle: true,
 	plugins: [
 		"@ianvs/prettier-plugin-sort-imports",
-		"@prettier/plugin-oxc",
+		// "@prettier/plugin-oxc",
 		"prettier-plugin-astro",
 		"prettier-plugin-organize-attributes",
 		"prettier-plugin-packagejson",
@@ -34,15 +34,15 @@ export default {
 		{
 			files: "*.{js,mjs,cjs,jsx}",
 			options: {
-				parser: "oxc",
-				plugins: ["@prettier/plugin-oxc"],
+				parser: "babel",
+				// plugins: ["@prettier/plugin-oxc"],
 			},
 		},
 		{
 			files: "*.{ts,mts,cts,tsx}",
 			options: {
-				parser: "oxc-ts",
-				plugins: ["@prettier/plugin-oxc"],
+				parser: "babel-ts",
+				// plugins: ["@prettier/plugin-oxc"],
 			},
 		},
 		{
