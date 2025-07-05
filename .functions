@@ -235,7 +235,7 @@ function update_npm() {
 }
 
 function bump_dependencies() {
-	find -iname cargo.toml -execdir cargo upgrade --incompatible \;
+	find -iname cargo.toml -execdir cargo upgrade --incompatible allow --compatible allow --pinned ignore --rust-version 1.90.0 --recursive \;
 	find -iname composer.json -execdir composer update \;
 	find -iname package.json -execdir bash -c 'ncu -u --dep "dev,optional,peer,prod,bundle" --color --concurrency 12' \;
 }
