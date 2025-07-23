@@ -156,9 +156,10 @@ unsetopt correct_all
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 
 # shellcheck disable=SC2088
-[ -d "/d/Developer" ] && cd /d/Developer || exit
+# [ -d "/d/Developer" ] && cd /d/Developer || exit
 
-GPG_TTY=$(tty)
-export GPG_TTY
-gpgconf --launch gpg-agent
-export GPG_AGENT_INFO
+#GPG_TTY=$(tty)
+#export GPG_TTY
+#gpgconf --launch gpg-agent
+#export GPG_AGENT_INFO
+

@@ -344,13 +344,13 @@ set +o noclobber
 
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 
-GPG_TTY=$(tty)
+# GPG_TTY=$(tty)
 
-export GPG_TTY
+# export GPG_TTY
 
-gpgconf --launch gpg-agent
+# gpgconf --launch gpg-agent
 
-export GPG_AGENT_INFO
+# export GPG_AGENT_INFO
 
 # Cargo
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
