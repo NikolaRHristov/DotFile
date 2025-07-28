@@ -163,3 +163,17 @@ export PATH="/var/lib/snapd/snap/bin:$PATH"
 #gpgconf --launch gpg-agent
 #export GPG_AGENT_INFO
 
+
+# pnpm
+export PNPM_HOME="/Users/nikolahristov/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bun completions
+[ -s "/Users/nikolahristov/.bun/_bun" ] && source "/Users/nikolahristov/.bun/_bun"
+
+# mise activate
+eval "$(mise activate zsh)"
