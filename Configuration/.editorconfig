@@ -1,0 +1,16 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+tab_width = 4
+indent_size = 4
+indent_style = tab
+trim_trailing_whitespace = false
+
+[*.{yaml,yml,py}]
+indent_style = space
+
+[*.php]
+php_diagnostic_php6401 = false
+php_diagnostic = false

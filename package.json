@@ -1,0 +1,20 @@
+{
+	"name": "dotfile",
+	"version": "0.0.1",
+	"private": false,
+	"description": "DotFile 🫥",
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source ✍🏻 Open 👐🏻",
+		"email": "Source/Open@PlayForm.Cloud",
+		"url": "https://PlayForm.Cloud"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@playform/build": "0.2.5"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	}
+}

@@ -1,0 +1,150 @@
+[user]
+name = Nikola Hristov
+email = Nikola@PlayForm.Cloud
+signingkey = BAF2F5C7BAAD1367
+
+[core]
+autocrlf = true
+fscache = false
+symlinks = false
+excludesfile = "D:\\Developer\\.gitignore"
+
+sshCommand = plink
+fsmonitor = false
+editor = \"C:\\Users\\Nikola\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+ignorecase = false
+ignoreStat = false
+preloadIndex = false
+untrackedCache = false
+logallrefupdates = false
+bare = false
+filemode = false
+whitespace = fix
+longpaths = true
+
+[pager]
+difftool = true
+
+[pull]
+rebase = false
+
+[push]
+autoSetupRemote = true
+recurseSubmodules = false
+
+[init]
+defaultBranch = Current
+
+[commit]
+gpgsign = true
+# program = "C:\\Program Files\\Git\\usr\\bin\\gpg.exe"
+
+[merge]
+tool = vscode
+
+[diff]
+tool = difftastic
+
+[difftool]
+prompt = false
+
+[difftool "difftastic"]
+cmd = difft "$LOCAL" "$REMOTE"
+
+[delta]
+features = unobtrusive-line-numbers decorations
+whitespace-error-style = 22 reverse
+
+[delta "unobtrusive-line-numbers"]
+line-numbers = true
+line-numbers-minus-style = "#fafafa"
+
+line-numbers-zero-style = "#fafafa"
+
+line-numbers-plus-style = "#fafafa"
+
+line-numbers-left-format = "{nm:>3}┊"
+
+line-numbers-right-format = "{np:>3}│"
+
+line-numbers-left-style = blue
+line-numbers-right-style = blue
+
+[delta "decorations"]
+commit-decoration-style = bold yellow box ul
+file-style = bold yellow ul
+file-decoration-style = none
+hunk-header-decoration-style = yellow box ul
+
+[mergetool "vscode"]
+cmd = code-insiders --wait $MERGED
+
+[difftool "vscode"]
+cmd = code-insiders --wait --diff $LOCAL $REMOTE
+
+[fetch]
+prune = true
+recurseSubmodules = false
+
+[branch]
+autoSetupMerge = true
+
+[alias]
+sync = "!git pull --no-edit --allow-unrelated-histories ; git push --recurse-submodules=on-demand"
+
+ecommit = commit -a --allow-empty-message -m \"\"
+
+gcommit = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Save/Message.md --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
+
+gcommit-Land = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Save/Message/Land.md --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
+
+gecommit = "!bash -c 'source <(/d/Developer/Maintain/Load.sh /d/Developer/Maintain/Ask/.env) ; /d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Save/Message.md --extra-body \"{\\\"chat_template_kwargs\\\": {\\\"thinking\\\": true}}\"'"
+
+s = status --ignore-submodules=all
+
+[protocol "file"]
+allow = always
+
+[gc]
+auto = 256
+pruneExpire = now
+
+[rerere]
+enabled = true
+
+[column]
+ui = auto
+
+[advice]
+setUpstreamFailure = false
+addEmbeddedRepo = false
+mergeConflict = false
+
+[gitbutler]
+gitbutlerCommitter = 1
+
+[tag]
+gpgsign = true
+forceSignAnnotated = true
+
+[credential]
+helper = cache
+
+[maintenance]
+auto = false
+
+[pack]
+usePathWalk = true
+
+[feature]
+manyFiles = true
+
+[filter "lfs"]
+process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+
+[status]
+submoduleSummary = false
+recurseSubmodules = false
