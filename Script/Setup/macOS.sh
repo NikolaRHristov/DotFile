@@ -4,12 +4,11 @@
 # macOS Dotfile Setup Script
 #
 # This script manages the setup of dotfiles for a macOS environment.
-# It can install, remove, and display environment variable configurations.
+# It can install and remove configurations.
 #
 # Usage:
 #   ./macos.sh install      - Creates symbolic links for all configurations.
 #   ./macos.sh remove       - Deletes all created symbolic links.
-#   ./macos.sh env          - Shows the telemetry-disabling environment variables.
 #
 # ==============================================================================
 
@@ -22,12 +21,11 @@ DOTFILE_REPO="$HOME/Developer/Application/NikolaRHristov/DotFile/"
 usage() {
     echo "macOS Dotfile Management Script"
     echo "---------------------------------"
-    echo "Usage: $0 {install|remove|env}"
+    echo "Usage: $0 {install|remove}"
     echo
     echo "Commands:"
     echo "  install    Backs up existing files and creates new symbolic links."
     echo "  remove     Removes all symbolic links created by this script."
-    echo "  env        Displays environment variables to add to your shell profile."
     echo
 }
 
@@ -132,52 +130,6 @@ install_dotfiles() {
 }
 
 # ---
-# Display Environment Variable Configuration
-# ---
-show_environment_variables() {
-    echo "------------------------------------------------------------------"
-    echo "Copy the following lines and add them to your shell profile"
-    echo "(e.g., ~/.zshrc or ~/.bash_profile) to disable telemetry."
-    echo "------------------------------------------------------------------"
-    echo
-    cat <<'EOF'
-# --- Environment Variables for Telemetry and Analytics ---
-export ADBLOCK="true"
-export TELEMETRY_DISABLED="1"
-export ASTRO_TELEMETRY_DISABLED="1"
-export AUTOMATEDLAB_TELEMETRY_OPTOUT="1"
-export AZURE_CORE_COLLECT_TELEMETRY="0"
-export CHOOSENIM_NO_ANALYTICS="1"
-export DIEZ_DO_NOT_TRACK="1"
-export DO_NOT_TRACK="1"
-export DOTNET_CLI_TELEMETRY_OPTOUT="1"
-export DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT="1"
-export ET_NO_TELEMETRY="1"
-export GATSBY_TELEMETRY_DISABLED="1"
-export GATSBY_TELEMETRY_OPT_OUT="1"
-export GATSBY_TELEMETRY_OPTOUT="1"
-export HASURA_GRAPHQL_ENABLE_TELEMETRY="false"
-export HINT_TELEMETRY="off"
-export HOMEBREW_NO_ANALYTICS="1"
-export INFLUXD_REPORTING_DISABLED="true"
-export ITERATIVE_DO_NOT_TRACK="1"
-export NEXT_TELEMETRY_DEBUG="1"
-export NEXT_TELEMETRY_DISABLED="1"
-export NG_CLI_ANALYTICS="false"
-export NUXT_TELEMETRY_DISABLED="1"
-export PIN_DO_NOT_TRACK="1"
-export POWERSHELL_TELEMETRY_OPTOUT="1"
-export SAM_CLI_TELEMETRY="0"
-export STNOUPGRADE="1"
-export STRIPE_CLI_TELEMETRY_OPTOUT="1"
-export TERRAFORM_TELEMETRY="0"
-export VCPKG_DISABLE_METRICS="1"
-export RUSTC_WRAPPER="sccache"
-EOF
-    echo
-}
-
-# ---
 # Main Script Logic
 # ---
 case "$1" in
@@ -186,9 +138,6 @@ install)
     ;;
 remove)
     remove_dotfiles
-    ;;
-env)
-    show_environment_variables
     ;;
 *)
     usage

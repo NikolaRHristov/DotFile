@@ -8,7 +8,7 @@ local wezterm = require 'wezterm'
 local config = {}
 
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+    config = wezterm.config_builder()
 end
 
 --==============================================================================
@@ -29,14 +29,14 @@ config.window_decorations = "RESIZE"
 -- config.option_as = 'Alt'
 
 config.font_rules = {
-  {
-    italic = true,
-    font = wezterm.font { family = 'SauceCodePro Nerd Font', style = 'Italic' },
-  },
-  {
-    intensity = 'Bold',
-    font = wezterm.font { family = 'SauceCodePro Nerd Font', weight = 'Bold' },
-  },
+    {
+        italic = true,
+        font = wezterm.font { family = 'SauceCodePro Nerd Font', style = 'Italic' },
+    },
+    {
+        intensity = 'Bold',
+        font = wezterm.font { family = 'SauceCodePro Nerd Font', weight = 'Bold' },
+    },
 }
 
 config.window_padding = { left = 20, right = 20, top = 20, bottom = 10 }
@@ -59,19 +59,19 @@ config.tab_bar_at_bottom = false
 config.tab_max_width = 30
 
 wezterm.on('update-right-status', function(window, pane)
-  local parts = {}
-  local workspace = window:active_workspace()
-  table.insert(parts, ' ' .. wezterm.nerdfonts.md_desktop_mac .. ' ' .. workspace .. ' ')
-  local process_name = pane:get_foreground_process_name():match("[^/\\]+$")
-  if not string.find(process_name, "zsh") and not string.find(process_name, "bash") then
-    table.insert(parts, ' | ' .. wezterm.nerdfonts.fa_cogs .. ' ' .. process_name .. ' ')
-  end
-  local git_branch = pane:get_title()
-  if git_branch and git_branch ~= '' and git_branch ~= 'zsh' then
-    table.insert(parts, ' | ' .. wezterm.nerdfonts.md_git .. ' ' .. git_branch .. ' ')
-  end
-  table.insert(parts, ' | ' .. wezterm.nerdfonts.md_clock .. ' ' .. wezterm.strftime '%H:%M ')
-  window:set_right_status(wezterm.format(parts))
+    local parts = {}
+    local workspace = window:active_workspace()
+    table.insert(parts, ' ' .. wezterm.nerdfonts.md_desktop_mac .. ' ' .. workspace .. ' ')
+    local process_name = pane:get_foreground_process_name():match("[^/\\]+$")
+    if not string.find(process_name, "zsh") and not string.find(process_name, "bash") then
+        table.insert(parts, ' | ' .. wezterm.nerdfonts.fa_cogs .. ' ' .. process_name .. ' ')
+    end
+    local git_branch = pane:get_title()
+    if git_branch and git_branch ~= '' and git_branch ~= 'zsh' then
+        table.insert(parts, ' | ' .. wezterm.nerdfonts.md_git .. ' ' .. git_branch .. ' ')
+    end
+    table.insert(parts, ' | ' .. wezterm.nerdfonts.md_clock .. ' ' .. wezterm.strftime '%H:%M ')
+    window:set_right_status(wezterm.format(parts))
 end)
 
 --==============================================================================
@@ -81,26 +81,26 @@ end)
 config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 1000 }
 
 config.keys = {
-  -- VS CODE FEATURE: Command Palette & Search
-  { key = 'p',          mods = 'CMD|SHIFT', action = wezterm.action.ActivateCommandPalette },
-  { key = 'f',          mods = 'CMD|SHIFT', action = wezterm.action.Search 'CurrentSelectionOrEmptyString' },
+    -- VS CODE FEATURE: Command Palette & Search
+    { key = 'p',          mods = 'CMD|SHIFT', action = wezterm.action.ActivateCommandPalette },
+    { key = 'f',          mods = 'CMD|SHIFT', action = wezterm.action.Search 'CurrentSelectionOrEmptyString' },
 
-  -- Pane Management
-  { key = '"',          mods = 'LEADER',    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
-  { key = '%',          mods = 'LEADER',    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
-  { key = 'h',          mods = 'LEADER',    action = wezterm.action.ActivatePaneDirection 'Left' },
-  { key = 'l',          mods = 'LEADER',    action = wezterm.action.ActivatePaneDirection 'Right' },
+    -- Pane Management
+    { key = '"',          mods = 'LEADER',    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+    { key = '%',          mods = 'LEADER',    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
+    { key = 'h',          mods = 'LEADER',    action = wezterm.action.ActivatePaneDirection 'Left' },
+    { key = 'l',          mods = 'LEADER',    action = wezterm.action.ActivatePaneDirection 'Right' },
 
-  -- Word-wise Navigation for CTRL key.
-  -- The Option/Alt key is now handled globally and correctly by `option_as = 'Alt'`.
-  -- { key = 'LeftArrow',  mods = 'CTRL',      action = wezterm.action.SendString '\x1bb' },
-  -- { key = 'RightArrow', mods = 'CTRL',      action = wezterm.action.SendString '\x1bf' },
+    -- Word-wise Navigation for CTRL key.
+    -- The Option/Alt key is now handled globally and correctly by `option_as = 'Alt'`.
+    { key = 'LeftArrow',  mods = 'CTRL',      action = wezterm.action.SendString '\x1bb' },
+    { key = 'RightArrow', mods = 'CTRL',      action = wezterm.action.SendString '\x1bf' },
 
-  -- Tab Management and Standard Controls
-  { key = 't',          mods = 'CMD',       action = wezterm.action.SpawnTab 'CurrentPaneDomain' },
-  { key = 'w',          mods = 'CMD',       action = wezterm.action.CloseCurrentTab { confirm = true } },
-  { key = 'c',          mods = 'CMD',       action = wezterm.action.CopyTo 'Clipboard' },
-  { key = 'v',          mods = 'CMD',       action = wezterm.action.PasteFrom 'Clipboard' },
+    -- Tab Management and Standard Controls
+    { key = 't',          mods = 'CMD',       action = wezterm.action.SpawnTab 'CurrentPaneDomain' },
+    { key = 'w',          mods = 'CMD',       action = wezterm.action.CloseCurrentTab { confirm = true } },
+    { key = 'c',          mods = 'CMD',       action = wezterm.action.CopyTo 'Clipboard' },
+    { key = 'v',          mods = 'CMD',       action = wezterm.action.PasteFrom 'Clipboard' },
 }
 
 --==============================================================================
@@ -109,11 +109,6 @@ config.keys = {
 
 config.unix_domains = { { name = 'unix' } }
 
-config.ssh_domains = {
-  {
-    name = 'my-remote-server',
-    remote_address = 'user@your-server.com',
-  },
-}
+config.ssh_domains = {}
 
 return config

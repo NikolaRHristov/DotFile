@@ -1,0 +1,14 @@
+#1757413721
+brew install autoenv
+#1757413756
+ci /opt/homebrew/opt/autoenv/activate.sh 
+#1757413763
+source ~/.bashrc 
+#1757413890
+cd /Volumes/CORSAIR/Tool/macOS/npm/cache
+#1757414086
+fzf
+#1757448907
+gpg
+#1757448945
+echo "test" | gpg --clearsign
