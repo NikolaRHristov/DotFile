@@ -12,3 +12,5 @@ fzf
 gpg
 #1757448945
 echo "test" | gpg --clearsign
+#1757804036
+nano ~/.bashrc 

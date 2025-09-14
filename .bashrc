@@ -129,8 +129,6 @@ if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
     _add_to_path "$HOME/.cargo/bin"
 fi
-export RUSTC_WRAPPER=sccache
-export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
 # Turso
 _add_to_path "$HOME/.turso"

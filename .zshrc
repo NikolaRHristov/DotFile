@@ -19,15 +19,9 @@
 #
 # ==============================================================================
 #
-# - [ ] **Plugin Management:** For even faster startup times, consider a
-#       plugin manager like `zinit` or `sheldon` that supports lazy-loading.
-#
-# - [ ] **Explore Modern Tools:**
-#   - **`atuin`**: A powerful replacement for shell history (`Ctrl+R`).
-#   - **`starship`**: A minimal, fast, and highly customizable prompt.
-#
-# - [ ] **Review Aliases:** Periodically review and prune aliases defined in
-#       `~/.aliases` to keep them relevant to your current workflow.
+# - [ ] **Plugin Management:** Consider `zinit` or `sheldon` for lazy-loading.
+# - [ ] **Explore Modern Tools:** `atuin` for history, `starship` for prompt.
+# - [ ] **Review Aliases:** Periodically prune `~/.aliases`.
 #
 # ==============================================================================
 #
@@ -35,80 +29,69 @@
 #
 # ==============================================================================
 
-# --- Tool-Specific Environment Variables ---
-# Define home directories for various development tools first.
-export NVM_DIR="$HOME/.nvm"
-export BUN_INSTALL="$HOME/.bun"
-export CARGO_HOME="$HOME/.cargo"
-export PNPM_HOME="$HOME/Library/pnpm" # As per pnpm's default on macOS
-export ZSH="$HOME/ZSH"                # Oh My Zsh installation directory
+# --- Load Custom Environment Variables ---
+# This sets all our base paths (like $CORSAIR, $HOMEBREW_PREFIX) BEFORE any
+# tools are initialized. This is the most important step.
+[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
 
-# --- General Environment Variables ---
-export LANG="en_US.UTF-8"
-export EDITOR='nano'
-export GPG_TTY=$(tty)
-export RUSTC_WRAPPER="sccache"
-export AWS_CLI_AUTO_PROMPT="on-partial"
-
-# --- macOS & Homebrew Specifics ---
-# Set custom Homebrew Cask directories based on your history.
-export HOMEBREW_CASK_OPTS="--appdir=/Volumes/CORSAIR/Application --caskroom=/Volumes/CORSAIR/Room/Cask"
+# --- Initialize Homebrew Environment ---
+# If Homebrew is installed at a custom location (as defined by $HOMEBREW_PREFIX),
+# this is the OFFICIAL and safest way to add it to the shell's environment.
+# This command sets the PATH and other variables needed for Homebrew to work.
+if [ -f "${HOMEBREW_PREFIX}/bin/brew" ]; then
+	eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+fi
 
 # --- PATH Management ---
-# Use Zsh's `path` array for cleaner and safer PATH management.
-# This automatically prevents duplicate entries.
-# Note: Oh My Zsh and other tools may further modify the path.
+# Use Zsh's `path` array to prevent duplicate entries.
+# We no longer manually define the whole path here. Instead, we let tools like
+# Homebrew (above) and mise (below) add their own paths.
 typeset -U path
 path=(
-	# User-specific binaries
+	# Add your personal/local bin directories first to give them priority.
 	"$HOME/.bin"
 	"$HOME/.local/bin"
 
-	# Tool binaries (order can matter)
+	# Add paths from our custom variables defined in .envsh
 	"$CARGO_HOME/bin"
 	"$BUN_INSTALL/bin"
 	"$PNPM_HOME"
-	"$HOME/.turso"
 
-	# System-level binaries
-	"/usr/local/go/bin"
-	"/var/lib/snapd/snap/bin"
-
-	# Existing system path
+	# Keep the existing system path
 	$path
 )
 
 # --- Telemetry Opt-Out ---
-# A comprehensive list to disable data collection from various CLI tools.
-export ADBLOCK=true
-export TELEMETRY_DISABLED=1
+export ADBLOCK=true 
+export TELEMETRY_DISABLED=1 
 export ASTRO_TELEMETRY_DISABLED=1
-export AUTOMATEDLAB_TELEMETRY_OPTOUT=1
+export AUTOMATEDLAB_TELEMETRY_OPTOUT=1 
 export AZURE_CORE_COLLECT_TELEMETRY=0
-export CHOOSENIM_NO_ANALYTICS=1
-export DIEZ_DO_NOT_TRACK=1
+export CHOOSENIM_NO_ANALYTICS=1 
+export DIEZ_DO_NOT_TRACK=1 
 export DO_NOT_TRACK=1
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=1 
 export DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=1
-export ET_NO_TELEMETRY=1
-export GATSBY_TELEMETRY_DISABLED=1
+export ET_NO_TELEMETRY=1 
+export GATSBY_TELEMETRY_DISABLED=1 
 export GATSBY_TELEMETRY_OPT_OUT=1
-export GATSBY_TELEMETRY_OPTOUT=1
+export GATSBY_TELEMETRY_OPTOUT=1 
 export HASURA_GRAPHQL_ENABLE_TELEMETRY=false
-export HINT_TELEMETRY=off
-export HOMEBREW_NO_ANALYTICS=1
+export HINT_TELEMETRY=off 
+export HOMEBREW_NO_ANALYTICS=1 
 export INFLUXD_REPORTING_DISABLED=true
-export ITERATIVE_DO_NOT_TRACK=1
-export NEXT_TELEMETRY_DEBUG=1
+export ITERATIVE_DO_NOT_TRACK=1 
+export NEXT_TELEMETRY_DEBUG=1 
 export NEXT_TELEMETRY_DISABLED=1
-export NG_CLI_ANALYTICS=false
-export NUXT_TELEMETRY_DISABLED=1
+export NG_CLI_ANALYTICS=false 
+export NUXT_TELEMETRY_DISABLED=1 
 export PIN_DO_NOT_TRACK=1
-export POWERSHELL_TELEMETRY_OPTOUT=1
-export SAM_CLI_TELEMETRY=0
+export POWERSHELL_TELEMETRY_OPTOUT=1 
+export SAM_CLI_TELEMETRY=0 
 export STNOUPGRADE=1
-export STRIPE_CLI_TELEMETRY_OPTOUT=1
-export TERRAFORM_TELEMETRY=0
+export STRIPE_CLI_TELEMETRY_OPTOUT=1 
+export TERRAFORM_TELEMETRY=0 
 export VCPKG_DISABLE_METRICS=1
 
 # ==============================================================================
@@ -118,14 +101,16 @@ export VCPKG_DISABLE_METRICS=1
 # ==============================================================================
 
 # --- Oh My Zsh Configuration ---
-# Set theme, update settings, and other OMZ-specific variables.
 ZSH_THEME="half-life"
 zstyle ':omz:update' mode auto   # Enable auto-updates
 zstyle ':omz:update' frequency 1 # Check for updates daily
 HYPHEN_INSENSITIVE="true"        # Treat hyphens and underscores as equivalent
 
 # --- Oh My Zsh Plugins ---
-# List all the plugins you want to load.
+# RECONFIGURATION NOTE:
+# Removed 'node', 'npm', 'yarn', 'bun', and 'deno' plugins. The 'mise' plugin
+# is a modern version manager that handles all of them, so the others were
+# redundant and could cause conflicts.
 plugins=(
 	# Core & Productivity
 	git
@@ -139,15 +124,10 @@ plugins=(
 	aliases # Enables the 'aliases' command to list all active aliases
 
 	# Language & Version Managers
-	mise
+	mise # <-- This now manages all languages (Node, Rust, etc.)
 	composer
 	pip
 	rust
-	node
-	npm
-	yarn
-	bun
-	deno
 
 	# DevOps & Cloud
 	docker
@@ -181,17 +161,11 @@ fi
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
-setopt APPEND_HISTORY         # Append to history file, don't overwrite
-setopt SHARE_HISTORY          # Share history between all sessions
-setopt INC_APPEND_HISTORY     # Append commands to history immediately
-setopt HIST_IGNORE_DUPS       # Don't record duplicate commands
-setopt HIST_IGNORE_ALL_DUPS   # If a new command is a duplicate, remove the older one
-setopt HIST_EXPIRE_DUPS_FIRST # Prioritize expiring duplicate entries
-setopt HIST_IGNORE_SPACE      # Don't record commands starting with a space
-setopt HIST_REDUCE_BLANKS     # Remove superfluous blanks from commands
+setopt APPEND_HISTORY SHARE_HISTORY INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_SPACE HIST_REDUCE_BLANKS
 
 # --- Keybindings ---
-# Fix for word-wise navigation (Ctrl + Left/Right Arrow).
 bindkey '^[b' backward-word
 bindkey '^[f' forward-word
 bindkey '^[[1;5C' forward-word
@@ -209,11 +183,10 @@ unsetopt correct_all
 
 # --- Tool Initializations ---
 # Load scripts and activate environments for specific command-line tools.
-
-# NVM (Node Version Manager) - Load it lazily for better performance.
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# The order matters: initialize the version manager first.
 
 # mise (polyglot version manager)
+# This will manage Node, Python, Ruby, etc., and modify the PATH accordingly.
 eval "$(mise activate zsh)"
 
 # zoxide (smarter cd)
@@ -223,33 +196,30 @@ eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
 
 # autoenv (directory-based environments)
-if [ -f "$(brew --prefix autoenv)/activate.sh" ]; then
-	source "$(brew --prefix autoenv)/activate.sh"
-fi
+[ -f "$(brew --prefix autoenv)/activate.sh" ] && source "$(brew --prefix autoenv)/activate.sh"
 
 # fzf (fuzzy finder) - Keybindings and completions.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# RECONFIGURATION NOTE: Removed NVM loader. `mise` is now the primary tool
+# for managing Node.js versions. Keeping NVM would lead to conflicts.
+
 # --- Third-Party Completions & Plugins ---
 # These are managed by Homebrew and sourced manually if not handled by a plugin manager.
-
 if type brew &>/dev/null; then
-	# Add Homebrew's completion directory to FPATH.
 	FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"
 
 	# zsh-autosuggestions
-	if [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+	[ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] &&
 		source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-	fi
 
 	# zsh-syntax-highlighting
-	if [ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+	[ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] &&
 		source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-	fi
 fi
 
 # Add Docker's completion directory to FPATH.
-FPATH="$HOME/.docker/completions:$FPATH"
+[ -d "$HOME/.docker/completions" ] && FPATH="$HOME/.docker/completions:$FPATH"
 
 # ==============================================================================
 #
@@ -258,21 +228,15 @@ FPATH="$HOME/.docker/completions:$FPATH"
 # ==============================================================================
 
 # --- Initialize Zsh Completion System ---
-# This block must come *after* all FPATH modifications have been made.
-# The `-u` and `-i` flags prevent insecure directory warnings.
+# Must come *after* all FPATH modifications have been made.
 autoload -Uz compinit
 compinit -u -i
 
 # --- Load Custom User Scripts ---
-# Source personal aliases, functions, and environment variables last
-# to ensure they take precedence.
+# Source personal aliases, functions, etc., last to ensure they take precedence.
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -f ~/.functions ]] && . ~/.functions
-if [ -f "$HOME/.local/bin/env" ]; then
-	. "$HOME/.local/bin/env"
-fi
-
-# --- Load envman ---
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # --- Load Grit ---
@@ -283,3 +247,4 @@ fi
 
 # --- Load ENV ---
 [ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"

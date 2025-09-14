@@ -1,0 +1,34 @@
+# ==============================================================================
+#                 CENTRAL ENVIRONMENT VARIABLE DEFINITIONS
+# ==============================================================================
+# This file defines the base locations for tools and system settings.
+# It should NOT manipulate the PATH directly.
+
+# --- Primary Mount Point ---
+export CORSAIR="/Volumes/CORSAIR"
+
+# --- Tool-Specific Environment Variables ---
+export ZSH="$HOME/ZSH"                # Oh My Zsh installation directory
+export NVM_DIR="$CORSAIR/Tool/NVM"    # Note: This is for legacy/backup. 'mise' is now primary.
+
+# --- Language & Runtimes ---
+export RUSTC_WRAPPER="sccache"
+export RUSTUP_HOME="$CORSAIR/Tool/macOS/rust/rustup"
+export CARGO_HOME="$CORSAIR/Tool/macOS/rust/cargo"
+export CARGO_NET_GIT_FETCH_WITH_CLI=true
+export BUN_INSTALL="$CORSAIR/Tool/macOS/bun"
+export PNPM_HOME="$CORSAIR/Tool/macOS/pnpm/global"
+
+# Note: npm's global path will be managed by the active Node.js version (via mise).
+
+# --- macOS & Homebrew Specifics ---
+# Define custom locations for Homebrew. This is critical.
+export HOMEBREW_PREFIX="/Volumes/CORSAIR/Tool/homebrew"
+export HOMEBREW_CASK_OPTS="--appdir=$CORSAIR/Application --caskroom=$CORSAIR/Room/Cask"
+
+# --- General Environment Variables ---
+export LANG="en_US.UTF-8"
+export EDITOR="code-insiders"
+# shellcheck disable=SC2155
+export GPG_TTY=$(tty)
+export AWS_CLI_AUTO_PROMPT="on-partial"

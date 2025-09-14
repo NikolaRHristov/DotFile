@@ -8,3 +8,4 @@ fi
 # shellcheck disable=SC1090
 # shellcheck disable=SC3010
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+. "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
