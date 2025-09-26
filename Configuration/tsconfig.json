@@ -1,0 +1,61 @@
+{
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM", "DOM.Iterable"]
+	},
+
+	"exclude": [
+		"**/Dependency/**",
+
+		"**/Documentation/**",
+
+		"**/node_modules/**",
+
+		"**/.git/**"
+	],
+
+	"extends": "@playform/build/tsconfig",
+
+	"files": [],
+
+	"include": ["Application"],
+
+	"references": [
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Output"
+		},
+
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Cocoon"
+		},
+
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Wind"
+		},
+
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Sky"
+		},
+
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Common"
+		},
+
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Echo"
+		},
+
+		{
+			"path": "./Application/CodeEditorLand/Land/Element/Worker"
+		}
+	],
+
+	"watchOptions": {
+		"excludeDirectories": [
+			"**/Dependency/**",
+
+			"**/Documentation/**",
+
+			"**/node_modules/**"
+		]
+	}
+}
