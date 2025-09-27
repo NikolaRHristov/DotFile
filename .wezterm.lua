@@ -98,10 +98,11 @@ config.font_rules = {
 -- SECTION 3: CURSOR & SCROLLBAR
 --==============================================================================
 
-config.default_cursor_style = 'BlinkingBar'
+config.default_cursor_style = 'BlinkingUnderline'
 config.scrollback_lines = 3000
 config.scroll_to_bottom_on_input = true
 config.enable_scroll_bar = true
+config.cursor_thickness = "6px"
 
 --==============================================================================
 -- SECTION 4: TAB BAR
