@@ -90,15 +90,15 @@ set -o noclobber
 # and are not already in the PATH. This keeps the PATH clean and efficient.
 
 _add_to_path() {
-    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        export PATH="$1:$PATH"
-    fi
+	if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+		export PATH="$1:$PATH"
+	fi
 }
 
 _add_to_path_suffix() {
-    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        export PATH="$PATH:$1"
-    fi
+	if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+		export PATH="$PATH:$1"
+	fi
 }
 
 # Core utilities and user-specific bins
@@ -114,8 +114,8 @@ _add_to_path "$BUN_INSTALL/bin"
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
 if [ -s "$NVM_DIR/nvm.sh" ]; then
-    # shellcheck source=/dev/null
-    . "$NVM_DIR/nvm.sh"
+	# shellcheck source=/dev/null
+	. "$NVM_DIR/nvm.sh"
 fi
 
 # pnpm
@@ -124,9 +124,9 @@ _add_to_path "$PNPM_HOME"
 
 # Rust/Cargo
 if [ -f "$HOME/.cargo/env" ]; then
-    # shellcheck source=/dev/null
-    . "$HOME/.cargo/env"
-    _add_to_path "$HOME/.cargo/bin"
+	# shellcheck source=/dev/null
+	. "$HOME/.cargo/env"
+	_add_to_path "$HOME/.cargo/bin"
 fi
 
 # Turso
@@ -134,13 +134,13 @@ _add_to_path "$HOME/.turso"
 
 # Nix
 if [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
-    # shellcheck source=/dev/null
-    . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+	# shellcheck source=/dev/null
+	. "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
 
 # Homebrew (macOS)
 if [[ "$(uname)" == "Darwin" ]] && [ -x "/opt/homebrew/bin/brew" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # ------------------------------------------------------------------------------
@@ -149,9 +149,9 @@ fi
 
 # Set the preferred editor for local and remote sessions.
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='nano'
+	export EDITOR='nano'
 else
-    export EDITOR='nano'
+	export EDITOR='nano'
 fi
 
 # ------------------------------------------------------------------------------
@@ -227,27 +227,27 @@ alias sync='git pull && git push'
 # ------------------------------------------------------------------------------
 
 colors() {
-    local fgc bgc vals seq0
-    printf "Color escapes are %s\n" '\e[${value};...;${value}m'
-    printf "Values 30..37 are \e[33mforeground colors\e[m\n"
-    printf "Values 40..47 are \e[43mbackground colors\e[m\n"
-    printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
-    for fgc in {30..37}; do
-        for bgc in {40..47}; do
-            fgc=${fgc#37}
-            bgc=${bgc#40}
-            vals="${fgc:+$fgc;}${bgc}"
-            vals=${vals%%;}
-            seq0="${vals:+\e[${vals}m}"
-            printf "  %-9s" "${seq0:-(default)}"
-            # shellcheck disable=SC2059
-            printf " ${seq0}TEXT\e[m"
-            # shellcheck disable=SC2059
-            printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
-        done
-        echo
-        echo
-    done
+	local fgc bgc vals seq0
+	printf "Color escapes are %s\n" '\e[${value};...;${value}m'
+	printf "Values 30..37 are \e[33mforeground colors\e[m\n"
+	printf "Values 40..47 are \e[43mbackground colors\e[m\n"
+	printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
+	for fgc in {30..37}; do
+		for bgc in {40..47}; do
+			fgc=${fgc#37}
+			bgc=${bgc#40}
+			vals="${fgc:+$fgc;}${bgc}"
+			vals=${vals%%;}
+			seq0="${vals:+\e[${vals}m}"
+			printf "  %-9s" "${seq0:-(default)}"
+			# shellcheck disable=SC2059
+			printf " ${seq0}TEXT\e[m"
+			# shellcheck disable=SC2059
+			printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
+		done
+		echo
+		echo
+	done
 }
 
 # ==============================================================================
@@ -262,11 +262,11 @@ colors() {
 
 case ${TERM} in
 xterm* | rxvt* | Eterm* | aterm | kterm | gnome* | interix | konsole*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-    ;;
+	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
+	;;
 screen*)
-    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-    ;;
+	PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+	;;
 esac
 
 # ------------------------------------------------------------------------------
@@ -277,39 +277,39 @@ use_color=true
 safe_term=${TERM//[^[:alnum:]]/?}
 match_lhs=""
 if [ -f ~/.dir_colors ]; then
-    match_lhs="${match_lhs}$(<~/.dir_colors)"
+	match_lhs="${match_lhs}$(<~/.dir_colors)"
 fi
 if [ -f /etc/DIR_COLORS ]; then
-    match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
+	match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
 fi
 if [ -z "${match_lhs}" ] && type -P dircolors >/dev/null; then
-    match_lhs=$(dircolors --print-database)
+	match_lhs=$(dircolors --print-database)
 fi
 if [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]]; then
-    use_color=true
+	use_color=true
 fi
 
 if ${use_color}; then
-    if type -P dircolors >/dev/null; then
-        if [ -f ~/.dir_colors ]; then
-            # shellcheck disable=SC2046
-            eval "$(dircolors -b ~/.dir_colors)"
-        elif [ -f /etc/DIR_COLORS ]; then
-            # shellcheck disable=SC2046
-            eval "$(dircolors -b /etc/DIR_COLORS)"
-        fi
-    fi
-    if [[ ${EUID} == 0 ]]; then
-        PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
-    else
-        PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
-    fi
+	if type -P dircolors >/dev/null; then
+		if [ -f ~/.dir_colors ]; then
+			# shellcheck disable=SC2046
+			eval "$(dircolors -b ~/.dir_colors)"
+		elif [ -f /etc/DIR_COLORS ]; then
+			# shellcheck disable=SC2046
+			eval "$(dircolors -b /etc/DIR_COLORS)"
+		fi
+	fi
+	if [[ ${EUID} == 0 ]]; then
+		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
+	else
+		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+	fi
 else
-    if [[ ${EUID} == 0 ]]; then
-        PS1='\u@\h \W \$ '
-    else
-        PS1='\u@\h \w \$ '
-    fi
+	if [[ ${EUID} == 0 ]]; then
+		PS1='\u@\h \W \$ '
+	else
+		PS1='\u@\h \w \$ '
+	fi
 fi
 unset use_color safe_term match_lhs
 
@@ -325,32 +325,32 @@ unset use_color safe_term match_lhs
 
 export OSH=~/Bash
 if [ -d "$OSH" ]; then
-    # shellcheck disable=SC2034
-    OSH_THEME="half-life"
-    # shellcheck disable=SC2034
-    DISABLE_AUTO_UPDATE="true"
-    # shellcheck disable=SC2034
-    DISABLE_LS_COLORS="false"
-    # shellcheck disable=SC2034
-    DISABLE_AUTO_TITLE="false"
-    # shellcheck disable=SC2034
-    ENABLE_CORRECTION="false"
-    # shellcheck disable=SC2034
-    COMPLETION_WAITING_DOTS="false"
-    # shellcheck disable=SC2034
-    DISABLE_UNTRACKED_FILES_DIRTY="false"
-    # shellcheck disable=SC2034
-    HIST_STAMPS="mm/dd/yyyy"
-    # shellcheck disable=SC2034
-    completions=(composer defaults dirs docker docker-compose gh git npm pip pip3 ssh terraform)
-    # shellcheck disable=SC2034
-    aliases=(general)
-    # shellcheck disable=SC2034
-    plugins=(git bashmarks npm progress)
-    if [ -f "$OSH/oh-my-bash.sh" ]; then
-        # shellcheck source=/dev/null
-        . "$OSH/oh-my-bash.sh"
-    fi
+	# shellcheck disable=SC2034
+	OSH_THEME="half-life"
+	# shellcheck disable=SC2034
+	DISABLE_AUTO_UPDATE="true"
+	# shellcheck disable=SC2034
+	DISABLE_LS_COLORS="false"
+	# shellcheck disable=SC2034
+	DISABLE_AUTO_TITLE="false"
+	# shellcheck disable=SC2034
+	ENABLE_CORRECTION="false"
+	# shellcheck disable=SC2034
+	COMPLETION_WAITING_DOTS="false"
+	# shellcheck disable=SC2034
+	DISABLE_UNTRACKED_FILES_DIRTY="false"
+	# shellcheck disable=SC2034
+	HIST_STAMPS="mm/dd/yyyy"
+	# shellcheck disable=SC2034
+	completions=(composer defaults dirs docker docker-compose gh git npm pip pip3 ssh terraform)
+	# shellcheck disable=SC2034
+	aliases=(general)
+	# shellcheck disable=SC2034
+	plugins=(git bashmarks npm progress)
+	if [ -f "$OSH/oh-my-bash.sh" ]; then
+		# shellcheck source=/dev/null
+		. "$OSH/oh-my-bash.sh"
+	fi
 fi
 
 # ------------------------------------------------------------------------------
@@ -358,16 +358,16 @@ fi
 # ------------------------------------------------------------------------------
 
 if [ -f /usr/share/bash-completion/bash_completion ]; then
-    # shellcheck source=/dev/null
-    . /usr/share/bash-completion/bash_completion
+	# shellcheck source=/dev/null
+	. /usr/share/bash-completion/bash_completion
 fi
 if [ -f "$HOME/.config/Completion/bash_completion" ]; then
-    # shellcheck source=/dev/null
-    . "$HOME/.config/Completion/bash_completion"
+	# shellcheck source=/dev/null
+	. "$HOME/.config/Completion/bash_completion"
 fi
 if [ -f "$NVM_DIR/bash_completion" ]; then
-    # shellcheck source=/dev/null
-    . "$NVM_DIR/bash_completion"
+	# shellcheck source=/dev/null
+	. "$NVM_DIR/bash_completion"
 fi
 
 # ------------------------------------------------------------------------------
@@ -376,14 +376,14 @@ fi
 
 # envman
 if [ -s "$HOME/.config/envman/load.sh" ]; then
-    # shellcheck source=/dev/null
-    source "$HOME/.config/envman/load.sh"
+	# shellcheck source=/dev/null
+	source "$HOME/.config/envman/load.sh"
 fi
 
 # fzf
 if [ -f ~/.fzf.bash ]; then
-    # shellcheck source=/dev/null
-    source ~/.fzf.bash
+	# shellcheck source=/dev/null
+	source ~/.fzf.bash
 fi
 
 # ==============================================================================
@@ -394,12 +394,12 @@ fi
 
 # Source custom aliases and functions if they exist.
 if [ -f ~/.aliases ]; then
-    # shellcheck source=/dev/null
-    . ~/.aliases
+	# shellcheck source=/dev/null
+	. ~/.aliases
 fi
 if [ -f ~/.functions ]; then
-    # shellcheck source=/dev/null
-    . ~/.functions
+	# shellcheck source=/dev/null
+	. ~/.functions
 fi
 
 # ------------------------------------------------------------------------------
@@ -411,21 +411,24 @@ xhost +local:root >/dev/null 2>&1
 
 # Pre-execution hooks for bash
 if [ -f ~/.bash-preexec.sh ]; then
-    # shellcheck source=/dev/null
-    . ~/.bash-preexec.sh
+	# shellcheck source=/dev/null
+	. ~/.bash-preexec.sh
 fi
 
 # Grit
 if [ -f "$HOME/.grit/bin/env" ]; then
-    # shellcheck source=/dev/null
-    . "$HOME/.grit/bin/env"
+	# shellcheck source=/dev/null
+	. "$HOME/.grit/bin/env"
 fi
 
 # macOS Specific
 if [[ "$(uname)" == "Darwin" ]]; then
-    if [ -f "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env" ]; then
-        # shellcheck source=/dev/null
-        . "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
-    fi
-    _add_to_path "/Volumes/CORSAIR/Tool/macOS/rust/cargo/bin"
+	if [ -f "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env" ]; then
+		# shellcheck source=/dev/null
+		. "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
+	fi
+	_add_to_path "/Volumes/CORSAIR/Tool/macOS/rust/cargo/bin"
 fi
+
+# shellcheck disable=SC1090
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path bash)"

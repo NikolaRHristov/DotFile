@@ -40,7 +40,7 @@
 # this is the OFFICIAL and safest way to add it to the shell's environment.
 # This command sets the PATH and other variables needed for Homebrew to work.
 if [ -f "${HOMEBREW_PREFIX}/bin/brew" ]; then
-    eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+	eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 fi
 
 # --- PATH Management ---
@@ -49,17 +49,17 @@ fi
 # Homebrew (above) add their own paths.
 typeset -U path
 path=(
-    # Add your personal/local bin directories first to give them priority.
-    "$HOME/.bin"
-    "$HOME/.local/bin"
+	# Add your personal/local bin directories first to give them priority.
+	"$HOME/.bin"
+	"$HOME/.local/bin"
 
-    # Add paths from our custom variables defined in .envsh
-    "$CARGO_HOME/bin"
-    "$BUN_INSTALL/bin"
-    "$PNPM_HOME"
+	# Add paths from our custom variables defined in .envsh
+	"$CARGO_HOME/bin"
+	"$BUN_INSTALL/bin"
+	"$PNPM_HOME"
 
-    # Keep the existing system path
-    $path
+	# Keep the existing system path
+	$path
 )
 
 # --- Telemetry Opt-Out ---
@@ -103,11 +103,11 @@ export VCPKG_DISABLE_METRICS=1
 # Dynamically set the theme based on the WEZTERM_THEME environment variable
 # passed by the WezTerm configuration.
 if [[ "$WEZTERM_THEME" == "light" ]]; then
-    # Use a theme that is highly readable on light backgrounds.
-    ZSH_THEME="ys"
+	# Use a theme that is highly readable on light backgrounds.
+	ZSH_THEME="ys"
 else
-    # Use the preferred theme for dark backgrounds.
-    ZSH_THEME="ys"
+	# Use the preferred theme for dark backgrounds.
+	ZSH_THEME="ys"
 fi
 
 zstyle ':omz:update' mode auto   # Enable auto-updates
@@ -120,48 +120,48 @@ HYPHEN_INSENSITIVE="true"        # Treat hyphens and underscores as equivalent
 # is a modern version manager that handles all of them, so the others were
 # redundant and could cause conflicts.
 plugins=(
-    # Core & Productivity
-    git
-    gh
-    brew
-    zoxide
-    fzf
-    sudo
-    thefuck
-    history-substring-search
-    aliases # Enables the 'aliases' command to list all active aliases
+	# Core & Productivity
+	git
+	gh
+	brew
+	zoxide
+	fzf
+	sudo
+	thefuck
+	history-substring-search
+	aliases # Enables the 'aliases' command to list all active aliases
 
-    # Language & Version Managers
-    composer
-    pip
-    rust
+	# Language & Version Managers
+	composer
+	pip
+	rust
 
-    # DevOps & Cloud
-    docker
-    docker-compose
-    kubectl
-    helm
-    terraform
-    aws
+	# DevOps & Cloud
+	docker
+	docker-compose
+	kubectl
+	helm
+	terraform
+	aws
 
-    # Utilities & Tools
-    eza
-    httpie
-    vscode
+	# Utilities & Tools
+	eza
+	httpie
+	vscode
 
-    node
-    npm
-    yarn
-    bun
-    deno
+	node
+	npm
+	yarn
+	bun
+	deno
 )
 
 # --- Source Oh My Zsh ---
 # This line must be present to load the framework.
 if [ -f "$ZSH/oh-my-zsh.sh" ]; then
-    source "$ZSH/oh-my-zsh.sh"
+	source "$ZSH/oh-my-zsh.sh"
 else
-    echo "Error: Oh My Zsh not found at '$ZSH'"
+	echo "Error: Oh My Zsh not found at '$ZSH'"
 fi
 
 # ==============================================================================
@@ -216,15 +216,15 @@ eval "$(thefuck --alias)"
 # --- Third-Party Completions & Plugins ---
 # These are managed by Homebrew and sourced manually if not handled by a plugin manager.
 if type brew &>/dev/null; then
-    FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"
+	FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"
 
-    # zsh-autosuggestions
-    [ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] &&
-        source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+	# zsh-autosuggestions
+	[ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] &&
+		source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-    # zsh-syntax-highlighting
-    [ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] &&
-        source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+	# zsh-syntax-highlighting
+	[ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] &&
+		source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
 
 # Add Docker's completion directory to FPATH.
@@ -257,3 +257,17 @@ compinit -u -i
 # --- Load ENV ---
 [ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
 [ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/nikola/.docker/completions $fpath)
+autoload -Uz compinit
+compinit -u
+# End of Docker CLI completions
+
+# Daytona completion (commented out until file exists)
+# source /Users/nikola/.daytona.completion_script.zsh
+
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+# CEF Configuration for Tauri (added by setup-cef.sh)
+export CEF_PATH="$HOME/.local/share/cef"
+export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:$CEF_PATH:$CEF_PATH/Chromium Embedded Framework.framework/Libraries"

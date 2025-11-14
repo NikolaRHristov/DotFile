@@ -38,6 +38,7 @@ remove_dotfiles() {
     # List of files and directories to remove from the home directory
     targets=(
         ".aliases"
+        ".envsh"
         ".bash_history_shared"
         ".bash_logout"
         ".bash_profile"
@@ -98,6 +99,7 @@ install_dotfiles() {
     # Create symbolic links using -s (symbolic), -f (force/overwrite), -n (no-dereference)
     echo "Linking shell configurations..."
     ln -sfn "$DOTFILE_REPO.aliases" ~/.aliases
+    ln -sfn "$DOTFILE_REPO.envsh" ~/.envsh
     ln -sfn "$DOTFILE_REPO.bash_profile" ~/.bash_profile
     ln -sfn "$DOTFILE_REPO.bash_logout" ~/.bash_logout
     ln -sfn "$DOTFILE_REPO.bash_history_shared" ~/.bash_history_shared
