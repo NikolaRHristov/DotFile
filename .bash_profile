@@ -10,3 +10,5 @@ fi
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 . "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
+
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1

@@ -271,3 +271,14 @@ compinit -u
 # CEF Configuration for Tauri (added by setup-cef.sh)
 export CEF_PATH="$HOME/.local/share/cef"
 export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:$CEF_PATH:$CEF_PATH/Chromium Embedded Framework.framework/Libraries"
+
+# pnpm
+export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
