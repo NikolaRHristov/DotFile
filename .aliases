@@ -38,3 +38,4 @@ alias update_system="sudo apt-get update -y && sudo apt-get upgrade -y && sudo a
 alias wget="wget -c"
 alias gptcommit="gpt-commit.py"
 alias Think="Ask --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
+alias homegit='git --git-dir=/Volumes/CORSAIR/Developer/macOS/Application/NikolaRHristov/Home --work-tree=$HOME'

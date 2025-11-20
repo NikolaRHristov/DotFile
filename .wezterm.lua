@@ -70,9 +70,9 @@ config.macos_window_background_blur = 20
 -- Set initial static padding. These values will be used for top and sides,
 -- while the bottom padding will be dynamically overridden.
 config.window_padding = {
-    left = 0,
-    right = 0,
-    top = 0,
+    left = 5,
+    right = 5,
+    top = 5,
     bottom = 75, -- Fallback value
 }
 
@@ -98,7 +98,7 @@ config.font_rules = {
 -- SECTION 3: CURSOR & SCROLLBAR
 --==============================================================================
 
-config.default_cursor_style = 'BlinkingUnderline'
+config.default_cursor_style = 'SteadyUnderline'
 config.scrollback_lines = 3000
 config.scroll_to_bottom_on_input = true
 config.enable_scroll_bar = true
@@ -224,11 +224,11 @@ config.launch_menu = {
 config.colors = {
     split = '#444444',
     scrollbar_thumb = '#222222',
-    selection_bg = 'rgba(255, 255, 255, 0.2)',
-    selection_fg = 'none',
-    cursor_bg = '#f5e0dc',
-    cursor_fg = '#1e1d2f',
-    cursor_border = '#f5e0dc',
+    selection_bg = 'rgba(255, 255, 255, 0.94)',
+    selection_fg = 'rgba(255, 0, 0, 0.94)',
+    cursor_bg = '#000000',
+    cursor_fg = '#000000',
+    cursor_border = '#000000',
     tab_bar = {
         background = '#11111b',
         active_tab = { bg_color = '#89b4fa', fg_color = '#11111b', intensity = 'Bold' },
@@ -247,9 +247,9 @@ local function set_dynamic_padding(window, pane)
     local dims = window:get_dimensions()
     local overrides = window:get_config_overrides() or {}
     overrides.window_padding = {
-        left = 0,
-        right = 0,
-        top = 0,
+        left = 5,
+        right = 5,
+        top = 5,
         bottom = dims.pixel_height * 0.05,
     }
     window:set_config_overrides(overrides)
