@@ -1,4 +1,5 @@
 #!/bin/bash
+
 alias .....="cd ../../../../"
 alias ....="cd ../../../../"
 alias ...="cd ../../../"
@@ -19,7 +20,6 @@ alias docker_prune="docker system prune && docker volume prune"
 alias find="find . -type d \( -iname node_modules -o -iname vendor -o -iname dist -o -iname target -o -iname \.git -o -iname \.next -o -iname \.venv \) -prune -false -o "
 alias header="curl -I"
 alias headerc="curl -I --compress"
-alias l.="ls -d .*"
 alias ll="ls -la"
 alias ln="ln -i"
 alias ls="ls -FAlhG --color=always"
