@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# shellcheck disable=SC2148
 # ==============================================================================
 #                 CENTRAL ENVIRONMENT VARIABLE DEFINITIONS
 # ==============================================================================
@@ -12,13 +15,27 @@ export ZSH="$HOME/ZSH"                # Oh My Zsh installation directory
 export NVM_DIR="$CORSAIR/Tool/NVM"    # Note: This is for legacy/backup. 
 
 # --- Language & Runtimes ---
+# Rust & Cargo
 export RUSTC_WRAPPER="sccache"
 export RUSTUP_HOME="$CORSAIR/Tool/macOS/rust/rustup"
 export CARGO_HOME="$CORSAIR/Tool/macOS/rust/cargo"
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
+
+# CRITICAL ADDITIONS FOR DISK SPACE:
+# 1. Force all build artifacts (the heaviest files) to external SSD
+export CARGO_TARGET_DIR="$CORSAIR/Tool/macOS/rust/target"
+# 2. Force sccache to external SSD
+export SCCACHE_DIR="$CORSAIR/Tool/macOS/rust/sccache"
+# 3. Increase cache size (since we have space now)
+export SCCACHE_CACHE_SIZE="50G" 
+
+# Node / Bun
 export BUN_INSTALL="$CORSAIR/Tool/macOS/bun"
 export PNPM_HOME="$CORSAIR/Tool/macOS/pnpm/global"
 # Note: npm's global path will be managed by the active Node.js version.
+
+# Python
+export UV_CACHE_DIR="$CORSAIR/Tool/macOS/python/uv_cache"
 
 # --- General Environment Variables ---
 export LANG="en_US.UTF-8"
@@ -26,3 +43,15 @@ export EDITOR="code-insiders"
 # shellcheck disable=SC2155
 export GPG_TTY=$(tty)
 export AWS_CLI_AUTO_PROMPT="on-partial"
+
+export PATH="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin:$PATH"
+export AR="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+export RANLIB="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+
+export ANDROID_HOME="/Volumes/CORSAIR/Tool/Android/sdk"
+export ANDROID_NDK_HOME="/Volumes/CORSAIR/Tool/Android/sdk/ndk/29.0.14206865"
+export ANDROID_NDK_ROOT="$ANDROID_NDK_HOME" 
+export NDK_HOME="$ANDROID_NDK_HOME"
+export ANDROID_NDK="$ANDROID_NDK_HOME"
+export CMAKE_GENERATOR="Ninja"
+export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=0

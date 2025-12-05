@@ -266,7 +266,7 @@ compinit -u
 # Daytona completion (commented out until file exists)
 # source /Users/nikola/.daytona.completion_script.zsh
 
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path zsh)"
 
 # CEF Configuration for Tauri (added by setup-cef.sh)
 export CEF_PATH="$HOME/.local/share/cef"

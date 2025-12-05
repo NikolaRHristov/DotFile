@@ -176,6 +176,32 @@ config.inactive_pane_hsb = { hue = 1.0, saturation = 0.9, brightness = 0.8 }
 --==============================================================================
 
 config.hyperlink_rules = {
+    -- Match Rust compiler output with --> prefix
+    {
+        regex = '\\s*-->\\s+([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+):(\\d+)',
+        format = 'wezterm-open-file://$1@$2@$3',
+    },
+    -- Match paths that may be truncated (e.g. "rate/" instead of "Crate/")
+    {
+        regex = '\\s*([A-Za-z]*[Rr]ate/[A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+):(\\d+)',
+        format = 'wezterm-open-file://$1@$2@$3',
+    },
+    -- Match file paths with line:column notation
+    {
+        regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+):(\\d+)',
+        format = 'wezterm-open-file://$1@$2@$3',
+    },
+    -- Match file paths with just line notation
+    {
+        regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+)',
+        format = 'wezterm-open-file://$1@$2',
+    },
+    -- Match file paths without line/column
+    {
+        regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json))\\b',
+        format = 'wezterm-open-file://$1',
+    },
+    -- Keep existing rules
     { regex = "(\\b[\\w\\d\\\\\\/\\._-]{2,}\\.\\w{2,4})",                                                          format = 'file://$1' },
     { regex = '\\b\\w+://(?:[\\d\\w]|:)+@?[\\w\\d\\.-]+\\.[\\w\\d\\.-]+(?::\\d+)?(?:/[\\w\\d\\./\\?\\+%&~=_-]*)?', format = '$0' },
 }
@@ -257,6 +283,88 @@ end
 
 wezterm.on('window-resized', set_dynamic_padding)
 wezterm.on('window-config-reloaded', set_dynamic_padding)
+
+-- Handle custom file opening
+wezterm.on('open-uri', function(window, pane, uri)
+    -- Check if this is our custom file opening scheme
+    if uri:find('^wezterm%-open%-file://') then
+        -- Remove the custom scheme prefix
+        local file_info = uri:gsub('^wezterm%-open%-file://', '')
+        
+        -- Parse using @ separator
+        local parts = {}
+        for part in file_info:gmatch('[^@]+') do
+            table.insert(parts, part)
+        end
+        
+        local file_path = parts[1] or ""
+        local line = parts[2]
+        local column = parts[3]
+        
+        -- Get the current working directory from the pane
+        local cwd = pane:get_current_working_dir()
+        if cwd and cwd.file_path then
+            cwd = cwd.file_path
+        else
+            -- Fallback to getting CWD from the pane's foreground process
+            local process_info = pane:get_foreground_process_info()
+            if process_info and process_info.cwd then
+                cwd = process_info.cwd
+            else
+                cwd = os.getenv("HOME")
+            end
+        end
+        
+        -- Handle relative paths and truncated paths
+        if not file_path:match('^/') then
+            local original_path = file_path
+            
+            -- Common truncation patterns in Rust compiler output
+            if file_path:match('^rate/') then
+                file_path = 'C' .. file_path  -- Add missing 'C' to make it "Crate/"
+            end
+            
+            -- Build the full path
+            if cwd:sub(-1) == '/' then
+                file_path = cwd .. file_path
+            else
+                file_path = cwd .. '/' .. file_path
+            end
+            
+            -- If the file doesn't exist, try the original path
+            local file_check = io.open(file_path, "r")
+            if not file_check then
+                -- Try without the truncation fix
+                if cwd:sub(-1) == '/' then
+                    file_path = cwd .. original_path
+                else
+                    file_path = cwd .. '/' .. original_path
+                end
+            else
+                file_check:close()
+            end
+        end
+        
+        -- Construct the code-insiders command
+        local cmd
+        if line and column then
+            cmd = string.format('%s --goto "%s:%s:%s"', editor_path, file_path, line, column)
+        elseif line then
+            cmd = string.format('%s --goto "%s:%s"', editor_path, file_path, line)
+        else
+            cmd = string.format('%s "%s"', editor_path, file_path)
+        end
+        
+        -- Execute the command
+        os.execute(cmd)
+        
+        -- Prevent the default URI opening behavior
+        return false
+    end
+    
+    -- Let WezTerm handle other URI schemes normally
+    return true
+end)
 
 --==============================================================================
 -- SECTION 15: DEBUGGING & PERFORMANCE
