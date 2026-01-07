@@ -17,7 +17,9 @@ alias bmd="bump_dependencies"
 alias cmbd="cld && bmd && dum install && dum build"
 alias df="pydf"
 alias docker_prune="docker system prune && docker volume prune"
-alias find="find . -type d \( -iname node_modules -o -iname vendor -o -iname dist -o -iname target -o -iname \.git -o -iname \.next -o -iname \.venv \) -prune -false -o "
+find() {
+    command find . -type d \( -iname node_modules -o -iname vendor -o -iname dist -o -iname target -o -iname \.git -o -iname \.next -o -iname \.venv \) -prune -false -o "$@"
+}
 alias header="curl -I"
 alias headerc="curl -I --compress"
 alias ll="ls -la"

@@ -44,14 +44,14 @@ export EDITOR="code-insiders"
 export GPG_TTY=$(tty)
 export AWS_CLI_AUTO_PROMPT="on-partial"
 
-export PATH="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin:$PATH"
-export AR="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
-export RANLIB="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+# export PATH="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin:$PATH"
+# export AR="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+# export RANLIB="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
 
-export ANDROID_HOME="/Volumes/CORSAIR/Tool/Android/sdk"
-export ANDROID_NDK_HOME="/Volumes/CORSAIR/Tool/Android/sdk/ndk/29.0.14206865"
-export ANDROID_NDK_ROOT="$ANDROID_NDK_HOME" 
-export NDK_HOME="$ANDROID_NDK_HOME"
-export ANDROID_NDK="$ANDROID_NDK_HOME"
-export CMAKE_GENERATOR="Ninja"
-export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=0
+# export ANDROID_HOME="/Volumes/CORSAIR/Tool/Android/sdk"
+# export ANDROID_NDK_HOME="/Volumes/CORSAIR/Tool/Android/sdk/ndk/29.0.14206865"
+# export ANDROID_NDK_ROOT="$ANDROID_NDK_HOME" 
+# export NDK_HOME="$ANDROID_NDK_HOME"
+# export ANDROID_NDK="$ANDROID_NDK_HOME"
+# export CMAKE_GENERATOR="Ninja"
+# export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=0

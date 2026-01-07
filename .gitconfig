@@ -94,11 +94,11 @@ sync = "!git pull --no-edit --allow-unrelated-histories ; git push --recurse-sub
 
 ecommit = commit -a --allow-empty-message -m \"\"
 
-gcommit = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Save/Message.md --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
+gcommit = "!~/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file ~/Developer/Maintain/Ask/Prompt/Save/Message.md --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
 
-gcommit-Land = "!/d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Save/Message/Land.md --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
+gcommit-Land = "!~/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file ~/Developer/Maintain/Ask/Prompt/Save/Message/Land.md --extra-body '{\"chat_template_kwargs\": {\"thinking\": true}}'"
 
-gecommit = "!bash -c 'source <(/d/Developer/Maintain/Load.sh /d/Developer/Maintain/Ask/.env) ; /d/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file /d/Developer/Maintain/Ask/Prompt/Save/Message.md --extra-body \"{\\\"chat_template_kwargs\\\": {\\\"thinking\\\": true}}\"'"
+gecommit = "!bash -c 'source <(~/Developer/Maintain/Load.sh ~/Developer/Maintain/Ask/.env) ; ~/Developer/Maintain/Save/Target/release/Save.exe --system-prompt-file ~/Developer/Maintain/Ask/Prompt/Save/Message.md --extra-body \"{\\\"chat_template_kwargs\\\": {\\\"thinking\\\": true}}\"'"
 
 s = status --ignore-submodules=all
 

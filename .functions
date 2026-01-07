@@ -1,25 +1,29 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function backup_database() {
 	DB_EXCLUDE="accounts information_schema mysql performance_schema sys tmp"
 
 	echo "Enter Backup Directory:"
 	stty -echo
+	# shellcheck disable=SC2162
 	read DB_DIR
 	stty echo
 
 	echo "Enter User:"
 	stty -echo
+	# shellcheck disable=SC2162
 	read DB_USER
 	stty echo
 
 	echo "Enter Password:"
 	stty -echo
+	# shellcheck disable=SC2162
 	read DB_PASS
 	stty echo
 
 	echo "Enter Host:"
 	stty -echo
+	# shellcheck disable=SC2162
 	read DB_HOST
 	stty echo
 
@@ -43,11 +47,11 @@ function backup_database() {
 			continue
 		fi
 		case "$DBC" in
-			_*) continue ;;
-			*)
-				echo "Dumping Database: $DBC"
-				mysqldump --single-transaction --set-gtid-purged=OFF -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" --databases "$DBC" >"$BACKUP_DATE"/"$DBC".sql
-				;;
+		_*) continue ;;
+		*)
+			echo "Dumping Database: $DBC"
+			mysqldump --single-transaction --set-gtid-purged=OFF -u"$DB_USER" -p"$DB_PASS" --host="$DB_HOST" --databases "$DBC" >"$BACKUP_DATE"/"$DBC".sql
+			;;
 		esac
 	done
 
@@ -81,10 +85,14 @@ function delete_all_tags() {
 }
 
 function erase_history() {
-	cat /dev/null >~/.bash_history ; history -c
-	cat /dev/null >~/.bash_history_shared ; history -c
-	cat /dev/null >~/.zsh_history ; history -c
-	cat /dev/null >~/.zsh_history_shared ; history -c
+	cat /dev/null >~/.bash_history
+	history -c
+	cat /dev/null >~/.bash_history_shared
+	history -c
+	cat /dev/null >~/.zsh_history
+	history -c
+	cat /dev/null >~/.zsh_history_shared
+	history -c
 	cat /dev/null >~/.nano/search_history
 	exit
 }
@@ -147,7 +155,10 @@ function install_npm() {
 }
 
 function proper_permissions() {
+	# shellcheck disable=SC2185
 	find -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
+
+	# shellcheck disable=SC2185
 	find -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
 }
 
@@ -187,10 +198,12 @@ function sshagent_testsocket() {
 		return 1
 	fi
 
+	# shellcheck disable=SC2268
 	if [ X"$1" != X ]; then
 		export SSH_AUTH_SOCK=$1
 	fi
 
+	# shellcheck disable=SC2268
 	if [ X"$SSH_AUTH_SOCK" = X ]; then
 		return 2
 	fi
@@ -246,25 +259,42 @@ function update_npm() {
 }
 
 function bump_dependencies() {
+	# shellcheck disable=SC2185
 	find -iname cargo.toml -execdir cargo upgrade --incompatible allow --compatible allow --pinned ignore --rust-version 1.90.0 --recursive \;
+	# shellcheck disable=SC2185
 	find -iname composer.json -execdir composer update \;
+	# shellcheck disable=SC2185
 	find -iname package.json -execdir bash -c 'ncu -u --dep "dev,optional,peer,prod,bundle" --color --concurrency 12' \;
 }
 
 function clean_dependencies() {
+	# shellcheck disable=SC2185
 	find -iname .pnpm-store -prune -exec rm -rf {} \;
+	# shellcheck disable=SC2185
 	find -iname node_modules -prune -exec rm -rf {} \;
+	# shellcheck disable=SC2185
 	find -iname .turbo -prune -exec rm -rf {} \;
+	# shellcheck disable=SC2185
 	find -iname .pnpm-debug.log -prune -exec rm -rf {} \;
+	# shellcheck disable=SC2185
 	find -iname .next -prune -exec rm -rf {} \;
+	# shellcheck disable=SC2185
 	find -iname yarn.lock -exec rm {} \;
+	# shellcheck disable=SC2185
 	find -iname yaml.lock -exec rm {} \;
+	# shellcheck disable=SC2185
 	find -iname berry.lock -exec rm {} \;
+	# shellcheck disable=SC2185
 	find -iname pnpm-lock.yaml -exec rm {} \;
+	# shellcheck disable=SC2185
 	find -iname package-lock.json -exec rm {} \;
+	# shellcheck disable=SC2185
 	find -iname composer.lock -execdir composer clear-cache \;
+	# shellcheck disable=SC2185
 	find -iname cargo.toml -execdir cargo clean \;
+	# shellcheck disable=SC2185
 	find -iname cargo.lock -exec rm {} \;
+	# shellcheck disable=SC2185
 	find -iname bun.lockb -exec rm {} \;
 }
 
