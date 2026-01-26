@@ -1,79 +1,68 @@
-if [ -f ${WSLENV+} ]; then
-	export PATH="$PATH:$HOME/.config/xclip"
+# ==============================================================================
+#
+#              ███████╗███████╗██╗  ██╗██████╗  ██████╗███████╗
+#              ╚══███╔╝██╔════╝██║  ██║██╔══██╗██╔════╝██╔════╝
+#                ███╔╝ ███████╗███████║██████╔╝██║     ███████╗
+#               ███╔╝  ╚════██║██╔══██║██╔══██╗██║     ╚════██║
+#              ███████╗███████║██║  ██║██║  ██║╚██████╗███████║
+#              ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
+#
+# ~/.zshrc: Executed by zsh(1) for interactive shells.
+#
+# This configuration file is structured to be modular, readable, and efficient.
+# It handles environment variables, path management, aliases, plugins, and
+# shell behavior for a powerful and productive command-line experience.
+#
+# ==============================================================================
+#
+#                           TODO: Future Improvements
+#
+# ==============================================================================
+#
+# - [ ] **Plugin Management:** Consider `zinit` or `sheldon` for lazy-loading.
+# - [ ] **Explore Modern Tools:** `atuin` for history, `starship` for prompt.
+# - [ ] **Review Aliases:** Periodically prune `~/.aliases`.
+#
+# ==============================================================================
+#
+#                    SECTION 1: ENVIRONMENT & PATH CONFIGURATION
+#
+# ==============================================================================
+
+# --- Load Custom Environment Variables ---
+# This sets all our base paths (like $CORSAIR, $HOMEBREW_PREFIX) BEFORE any
+# tools are initialized. This is the most important step.
+[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
+
+# --- Initialize Homebrew Environment ---
+# If Homebrew is installed at a custom location (as defined by $HOMEBREW_PREFIX),
+# this is the OFFICIAL and safest way to add it to the shell's environment.
+# This command sets the PATH and other variables needed for Homebrew to work.
+if [ -f "${HOMEBREW_PREFIX}/bin/brew" ]; then
+	eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 fi
 
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
-export DO_NOT_TRACK=1
-export PATH=$PATH:/usr/local/go/bin
+# --- PATH Management ---
+# Use Zsh's `path` array to prevent duplicate entries.
+# We no longer manually define the whole path here. Instead, we let tools like
+# Homebrew (above) add their own paths.
+typeset -U path
+path=(
+	# Add your personal/local bin directories first to give them priority.
+	"$HOME/.bin"
+	"$HOME/.local/bin"
 
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '$HOME/.zshrc'
+	# Add paths from our custom variables defined in .envsh
+	"$CARGO_HOME/bin"
+	"$BUN_INSTALL/bin"
+	"$PNPM_HOME"
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-export ZSH="$HOME/ZSH"
-ZSH_THEME="half-life"
-
-HYPHEN_INSENSITIVE="true"
-
-zstyle ':omz:update' mode auto # update automatically without asking
-
-zstyle ':omz:update' frequency 1
-
-ENABLE_CORRECTION="true"
-
-COMPLETION_WAITING_DOTS="true"
-
-plugins=(
-	composer
-	docker
-	docker-compose
-	gh
-	git
-	npm
-	pip
+	# Keep the existing system path
+	$path
 )
 
-source $ZSH/oh-my-zsh.sh
-
-export MANPATH="/usr/local/man:$MANPATH"
-export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR='nano'
-else
-	export EDITOR='nano'
-fi
-
-export ARCHFLAGS="-arch x86_64"
-
-# shellcheck disable=SC1091
-[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
-
-export PATH="$PATH:$HOME/.cargo/bin"
-
-# shellcheck source=/dev/null
-[[ -f "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"
-
-# shellcheck source=/dev/null
-[[ -f "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"
-
-# shellcheck source=/dev/null
-[[ -f ~/.aliases ]] && . ~/.aliases
-
-# shellcheck source=/dev/null
-[[ -f ~/.functions ]] && . ~/.functions
-
-export PATH="$HOME/.bin:$PATH"
-export AWS_CLI_AUTO_PROMPT=on-partial
-
-# Telemetry
+# --- Telemetry Opt-Out ---
 export ADBLOCK=true
 export TELEMETRY_DISABLED=1
 export ASTRO_TELEMETRY_DISABLED=1
@@ -105,75 +94,197 @@ export STRIPE_CLI_TELEMETRY_OPTOUT=1
 export TERRAFORM_TELEMETRY=0
 export VCPKG_DISABLE_METRICS=1
 
-# Turso
-export PATH="$HOME/.turso:$PATH"
+# ==============================================================================
+#
+#                       SECTION 2: OH MY ZSH FRAMEWORK
+#
+# ==============================================================================
 
-export RUSTC_WRAPPER=sccache
+# Dynamically set the theme based on the WEZTERM_THEME environment variable
+# passed by the WezTerm configuration.
+if [[ "$WEZTERM_THEME" == "light" ]]; then
+	# Use a theme that is highly readable on light backgrounds.
+	ZSH_THEME="ys"
+else
+	# Use the preferred theme for dark backgrounds.
+	ZSH_THEME="ys"
+fi
 
-# shopt -s histappend
-HISTFILESIZE=10000
+zstyle ':omz:update' mode auto   # Enable auto-updates
+zstyle ':omz:update' frequency 1 # Check for updates daily
+HYPHEN_INSENSITIVE="true"        # Treat hyphens and underscores as equivalent
 
-# Set history file
-HISTFILE="$HOME/.zsh_history_shared"
+# --- Oh My Zsh Plugins ---
+# RECONFIGURATION NOTE:
+# Removed 'node', 'npm', 'yarn', 'bun', and 'deno' plugins. The 'mise' plugin
+# is a modern version manager that handles all of them, so the others were
+# redundant and could cause conflicts.
+plugins=(
+	# Core & Productivity
+	git
+	gh
+	brew
+	zoxide
+	fzf
+	sudo
+	thefuck
+	history-substring-search
+	aliases # Enables the 'aliases' command to list all active aliases
 
-# Set history size
+	# Language & Version Managers
+	composer
+	pip
+	rust
+
+	# DevOps & Cloud
+	docker
+	docker-compose
+	kubectl
+	helm
+	terraform
+	aws
+
+	# Utilities & Tools
+	eza
+	httpie
+	vscode
+
+	node
+	npm
+	yarn
+	bun
+	deno
+)
+
+# --- Source Oh My Zsh ---
+# This line must be present to load the framework.
+if [ -f "$ZSH/oh-my-zsh.sh" ]; then
+	source "$ZSH/oh-my-zsh.sh"
+else
+	echo "Error: Oh My Zsh not found at '$ZSH'"
+fi
+
+# ==============================================================================
+#
+#                     SECTION 3: SHELL BEHAVIOR & OPTIONS
+#
+# ==============================================================================
+
+# --- History Configuration ---
+HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
+setopt APPEND_HISTORY SHARE_HISTORY INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_SPACE HIST_REDUCE_BLANKS
 
-# Share history across multiple zsh sessions
-setopt SHARE_HISTORY
+# --- Keybindings ---
+bindkey '^[b' backward-word
+bindkey '^[f' forward-word
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
 
-# Append to history
-setopt APPEND_HISTORY
-
-# Add commands as they are typed, don't wait until shell exits
-setopt INC_APPEND_HISTORY
-
-# Expire duplicate entries first when trimming history
-setopt HIST_EXPIRE_DUPS_FIRST
-
-# Don't record an entry that was just recorded again
-setopt HIST_IGNORE_DUPS
-
-# Delete old recorded entry if new entry is a duplicate
-setopt HIST_IGNORE_ALL_DUPS
-
-# Don't record an entry starting with a space
-setopt HIST_IGNORE_SPACE
-
-# Don't write duplicate entries in the history file
-setopt HIST_SAVE_NO_DUPS
-
-# Remove superfluous blanks before recording entry
-setopt HIST_REDUCE_BLANKS
-
+# --- Disable Zsh's default auto-correction ---
 unsetopt correct
 unsetopt correct_all
 
-# shellcheck disable=SC1091
+# ==============================================================================
+#
+#                SECTION 4: TOOL, COMPLETION & PLUGIN INITIALIZATION
+#
+# ==============================================================================
+
+# --- Tool Initializations ---
+# Load scripts and activate environments for specific command-line tools.
+# The order matters: initialize the version manager first.
+
+# zoxide (smarter cd)
+eval "$(zoxide init zsh)"
+
+# thefuck (corrects previous command)
+eval "$(thefuck --alias)"
+
+# autoenv (directory-based environments)
+[ -f "$(brew --prefix autoenv)/activate.sh" ] && source "$(brew --prefix autoenv)/activate.sh"
+
+# fzf (fuzzy finder) - Keybindings and completions.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# RECONFIGURATION NOTE: Removed NVM loader. `mise` is now the primary tool
+# for managing Node.js versions. Keeping NVM would lead to conflicts.
+
+# --- Third-Party Completions & Plugins ---
+# These are managed by Homebrew and sourced manually if not handled by a plugin manager.
+if type brew &>/dev/null; then
+	FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"
+
+	# zsh-autosuggestions
+	[ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] &&
+		source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+	# zsh-syntax-highlighting
+	[ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] &&
+		source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
+
+# Add Docker's completion directory to FPATH.
+[ -d "$HOME/.docker/completions" ] && FPATH="$HOME/.docker/completions:$FPATH"
+
+# ==============================================================================
+#
+#                   SECTION 5: COMPLETION SYSTEM & CUSTOM SCRIPTS
+#
+# ==============================================================================
+
+# --- Initialize Zsh Completion System ---
+# Must come *after* all FPATH modifications have been made.
+autoload -Uz compinit
+compinit -u -i
+
+# --- Load Custom User Scripts ---
+# Source personal aliases, functions, etc., last to ensure they take precedence.
+[[ -f ~/.aliases ]] && . ~/.aliases
+[[ -f ~/.functions ]] && . ~/.functions
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# --- Load Grit ---
 [ -f "$HOME/.grit/bin/env" ] && . "$HOME/.grit/bin/env"
 
-export PATH="/var/lib/snapd/snap/bin:$PATH"
+# --- Load ZSH Profile ---
+[ -f "$HOME/.zsh_profile" ] && . "$HOME/.zsh_profile"
 
-# shellcheck disable=SC2088
-# [ -d "/d/Developer" ] && cd /d/Developer || exit
+# --- Load ENV ---
+[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/nikola/.docker/completions $fpath)
+autoload -Uz compinit
+compinit -u
+# End of Docker CLI completions
 
-#GPG_TTY=$(tty)
-#export GPG_TTY
-#gpgconf --launch gpg-agent
-#export GPG_AGENT_INFO
+# Daytona completion (commented out until file exists)
+# source /Users/nikola/.daytona.completion_script.zsh
 
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path zsh)"
+
+# CEF Configuration for Tauri (added by setup-cef.sh)
+export CEF_PATH="$HOME/.local/share/cef"
+export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:$CEF_PATH:$CEF_PATH/Chromium Embedded Framework.framework/Libraries"
 
 # pnpm
-export PNPM_HOME="/Users/nikolahristov/Library/pnpm"
+export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
-# bun completions
-[ -s "/Users/nikolahristov/.bun/_bun" ] && source "/Users/nikolahristov/.bun/_bun"
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
-# mise activate
-eval "$(mise activate zsh)"
+export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+# export PATH="/Volumes/CORSAIR/Tool/Android/sdk/platform-tools:$PATH"

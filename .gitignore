@@ -1,1 +1,2 @@
-!.config/*
+.config
+__pycache__
