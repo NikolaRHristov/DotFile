@@ -124,7 +124,7 @@ install_dotfiles() {
     ln -sfn "$DOTFILE_REPO"Bash ~/Bash
     ln -sfn "$DOTFILE_REPO"PowerShell ~/PowerShell
     ln -sfn "$DOTFILE_REPO"ZSH ~/ZSH
-    echo
+
     echo "✅ macOS dotfile setup complete."
     echo "Please restart your terminal or run 'source ~/.zshrc' or 'source ~/.bash_profile'."
 }
