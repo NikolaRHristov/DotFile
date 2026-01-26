@@ -64,6 +64,10 @@ remove_dotfiles() {
             echo "Removing ~/$target"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
 =======
 
 >>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
@@ -134,6 +138,10 @@ install_dotfiles() {
     ln -sfn "$DOTFILE_REPO"ZSH ~/ZSH
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
 =======
 
 >>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
