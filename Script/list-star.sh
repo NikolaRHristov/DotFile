@@ -15,6 +15,7 @@ done
 mapfile -t ORGS_USER < <(printf "%s" "$(\gh api users/${USER}/orgs | \jq -r '.[].login')" | tr -d '\r')
 
 for ORG in "${ORGS_USER[@]}"; do
+<<<<<<< HEAD
 	mapfile -t REPOS_ORG < <(printf "%s" "$(\gh api orgs/"${ORG}"/repos | \jq -r '.[].full_name')" | tr -d '\r')
 
 	for REPO_ORG in "${REPOS_ORG[@]}"; do
@@ -22,5 +23,15 @@ for ORG in "${ORGS_USER[@]}"; do
 
 		for DEPENDENT in "${DEPENDENTS[@]}"; do
 			echo "$DEPENDENT"
+=======
+    mapfile -t REPOS_ORG < <(printf "%s" "$(\gh api orgs/"${ORG}"/repos | \jq -r '.[].full_name')" | tr -d '\r')
+
+    for REPO_ORG in "${REPOS_ORG[@]}"; do
+        mapfile -t DEPENDENTS < <(printf "%s" "$(github-dependents-info --repo "${REPO_ORG}" --json | \jq -r '.all_public_dependent_repos[].name')" | tr -d '\r')
+
+        for DEPENDENT in "${DEPENDENTS[@]}"; do
+            echo "$DEPENDENT"
+        done
+>>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
     done
 done

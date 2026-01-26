@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
+<<<<<<< HEAD
 DEVDIR="$HOME/Developer/app"
+=======
+DEVDIR="~/Developer/app"
+>>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
 
 USERS=(
     "NikolaRHristov"
@@ -12,8 +16,13 @@ for USER in "${USERS[@]}"; do
     readarray -t ORGS < <(gh api users/"$USER"/orgs | jq .[].login)
 
     echo "Cloning all for user: $USER"
+<<<<<<< HEAD
     mkdir -p "$DEVDIR"/"$USER"
     cd "$DEVDIR"/"$USER" || exit
+=======
+    mkdir -p $DEVDIR/"$USER"
+    cd $DEVDIR/"$USER" || exit
+>>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
 
     for REPO in "${REPOS[@]}"; do
         REPO=$(echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
@@ -28,8 +37,13 @@ for USER in "${USERS[@]}"; do
         readarray -t REPOS < <(gh api orgs/"$ORG"/repos | jq .[].ssh_url)
 
         echo "Cloning all for org: $ORG"
+<<<<<<< HEAD
         mkdir -p "$DEVDIR"/"$ORG"
         cd "$DEVDIR"/"$ORG" || exit
+=======
+        mkdir -p $DEVDIR/"$ORG"
+        cd $DEVDIR/"$ORG" || exit
+>>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
 
         for REPO in "${REPOS[@]}"; do
             REPO=$(echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
