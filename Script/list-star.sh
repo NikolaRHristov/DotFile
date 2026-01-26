@@ -15,9 +15,6 @@ done
 mapfile -t ORGS_USER < <(printf "%s" "$(\gh api users/${USER}/orgs | \jq -r '.[].login')" | tr -d '\r')
 
 for ORG in "${ORGS_USER[@]}"; do
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	mapfile -t REPOS_ORG < <(printf "%s" "$(\gh api orgs/"${ORG}"/repos | \jq -r '.[].full_name')" | tr -d '\r')
 
 	for REPO_ORG in "${REPOS_ORG[@]}"; do
@@ -25,11 +22,6 @@ for ORG in "${ORGS_USER[@]}"; do
 
 		for DEPENDENT in "${DEPENDENTS[@]}"; do
 			echo "$DEPENDENT"
-=======
-=======
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
     mapfile -t REPOS_ORG < <(printf "%s" "$(\gh api orgs/"${ORG}"/repos | \jq -r '.[].full_name')" | tr -d '\r')
 
     for REPO_ORG in "${REPOS_ORG[@]}"; do
@@ -38,12 +30,5 @@ for ORG in "${ORGS_USER[@]}"; do
         for DEPENDENT in "${DEPENDENTS[@]}"; do
             echo "$DEPENDENT"
         done
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
     done
 done

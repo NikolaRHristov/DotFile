@@ -62,18 +62,6 @@ remove_dotfiles() {
     for target in "${targets[@]}"; do
         if [ -e "$HOME/$target" ] || [ -L "$HOME/$target" ]; then
             echo "Removing ~/$target"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
-
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
-
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
             # shellcheck disable=SC2115
             rm -rf "$HOME/$target"
         fi
@@ -136,18 +124,6 @@ install_dotfiles() {
     ln -sfn "$DOTFILE_REPO"Bash ~/Bash
     ln -sfn "$DOTFILE_REPO"PowerShell ~/PowerShell
     ln -sfn "$DOTFILE_REPO"ZSH ~/ZSH
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
-
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
-=======
-
->>>>>>> df8efd04ba696a59fd2b12ab29f76ecf64258306
     echo
     echo "✅ macOS dotfile setup complete."
     echo "Please restart your terminal or run 'source ~/.zshrc' or 'source ~/.bash_profile'."
