@@ -156,10 +156,10 @@ function install_npm() {
 
 function proper_permissions() {
 	# shellcheck disable=SC2185
-	find -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
+	find_ignore -type d -name "node_modules" -prune -o -type f -exec chmod 0644 {} \;
 
 	# shellcheck disable=SC2185
-	find -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
+	find_ignore -type d -name "node_modules" -prune -o -type d -exec chmod 0755 {} \;
 }
 
 function run_in_dirs() {
@@ -260,42 +260,42 @@ function update_npm() {
 
 function bump_dependencies() {
 	# shellcheck disable=SC2185
-	find -iname cargo.toml -execdir cargo upgrade --incompatible allow --compatible allow --pinned ignore --rust-version 1.90.0 --recursive \;
+	find_ignore -iname cargo.toml -execdir cargo upgrade --incompatible allow --compatible allow --pinned ignore --rust-version 1.90.0 --recursive \;
 	# shellcheck disable=SC2185
-	find -iname composer.json -execdir composer update \;
+	find_ignore -iname composer.json -execdir composer update \;
 	# shellcheck disable=SC2185
-	find -iname package.json -execdir bash -c 'ncu -u --dep "dev,optional,peer,prod,bundle" --color --concurrency 12' \;
+	find_ignore -iname package.json -execdir bash -c 'ncu -u --dep "dev,optional,peer,prod,bundle" --color --concurrency 12' \;
 }
 
 function clean_dependencies() {
 	# shellcheck disable=SC2185
-	find -iname .pnpm-store -prune -exec rm -rf {} \;
+	find_ignore -iname .pnpm-store -prune -exec rm -rf {} \;
 	# shellcheck disable=SC2185
-	find -iname node_modules -prune -exec rm -rf {} \;
+	find_ignore -iname node_modules -prune -exec rm -rf {} \;
 	# shellcheck disable=SC2185
-	find -iname .turbo -prune -exec rm -rf {} \;
+	find_ignore -iname .turbo -prune -exec rm -rf {} \;
 	# shellcheck disable=SC2185
-	find -iname .pnpm-debug.log -prune -exec rm -rf {} \;
+	find_ignore -iname .pnpm-debug.log -prune -exec rm -rf {} \;
 	# shellcheck disable=SC2185
-	find -iname .next -prune -exec rm -rf {} \;
+	find_ignore -iname .next -prune -exec rm -rf {} \;
 	# shellcheck disable=SC2185
-	find -iname yarn.lock -exec rm {} \;
+	find_ignore -iname yarn.lock -exec rm {} \;
 	# shellcheck disable=SC2185
-	find -iname yaml.lock -exec rm {} \;
+	find_ignore -iname yaml.lock -exec rm {} \;
 	# shellcheck disable=SC2185
-	find -iname berry.lock -exec rm {} \;
+	find_ignore -iname berry.lock -exec rm {} \;
 	# shellcheck disable=SC2185
-	find -iname pnpm-lock.yaml -exec rm {} \;
+	find_ignore -iname pnpm-lock.yaml -exec rm {} \;
 	# shellcheck disable=SC2185
-	find -iname package-lock.json -exec rm {} \;
+	find_ignore -iname package-lock.json -exec rm {} \;
 	# shellcheck disable=SC2185
-	find -iname composer.lock -execdir composer clear-cache \;
+	find_ignore -iname composer.lock -execdir composer clear-cache \;
 	# shellcheck disable=SC2185
-	find -iname cargo.toml -execdir cargo clean \;
+	find_ignore -iname cargo.toml -execdir cargo clean \;
 	# shellcheck disable=SC2185
-	find -iname cargo.lock -exec rm {} \;
+	find_ignore -iname cargo.lock -exec rm {} \;
 	# shellcheck disable=SC2185
-	find -iname bun.lockb -exec rm {} \;
+	find_ignore -iname bun.lockb -exec rm {} \;
 }
 
 function tere() {

@@ -23,7 +23,7 @@ export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
 # CRITICAL ADDITIONS FOR DISK SPACE:
 # 1. Force all build artifacts (the heaviest files) to external SSD
-export CARGO_TARGET_DIR="$CORSAIR/Tool/macOS/rust/target"
+# export CARGO_TARGET_DIR="$CORSAIR/Tool/macOS/rust/target"
 # 2. Force sccache to external SSD
 export SCCACHE_DIR="$CORSAIR/Tool/macOS/rust/sccache"
 # 3. Increase cache size (since we have space now)

@@ -431,4 +431,4 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 
 # shellcheck disable=SC1090
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path bash)"
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path bash)"
