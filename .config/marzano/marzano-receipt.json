@@ -1,0 +1,1 @@
+{"binaries":["marzano.exe"],"binary_aliases":{},"cdylibs":[],"cstaticlibs":[],"install_prefix":"/c/Users/Nikola/.grit/bin","provider":{"source":"cargo-dist","version":"0.22.0"},"source":{"app_name":"marzano","name":"gritql","owner":"getgrit","release_type":"github"},"version":"0.1.0-alpha.1724988485"}

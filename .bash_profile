@@ -9,6 +9,7 @@ fi
 # shellcheck disable=SC3010
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
+# shellcheck disable=SC1091
 . "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
