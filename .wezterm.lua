@@ -399,7 +399,7 @@ local function resolve_project_path(cwd, file_path_param)
 end
 
 -- Handle custom file opening
-wezterm.on('open-uri', function(window, pane, uri)
+wezterm.on('open-uri', function(_, pane, uri)
 	log_debug("=== OPEN URI EVENT TRIGGERED ===")
 	log_debug("RAW URI RECEIVED: " .. uri) -- CRITICAL LOG: Check if this has $2 or numbers
 
@@ -426,6 +426,7 @@ wezterm.on('open-uri', function(window, pane, uri)
 		local cwd = pane:get_current_working_dir()
 		if cwd then
 			if type(cwd) == "userdata" then
+				---@diagnostic disable-next-line: undefined-field
 				cwd = cwd.file_path and cwd.file_path or os.getenv("HOME")
 			else
 				cwd = tostring(cwd)
