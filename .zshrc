@@ -288,3 +288,6 @@ export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
 
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 # export PATH="/Volumes/CORSAIR/Tool/Android/sdk/platform-tools:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/nikola/.antigravity/antigravity/bin:$PATH"

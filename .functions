@@ -260,7 +260,7 @@ function update_npm() {
 
 function bump_dependencies() {
 	# shellcheck disable=SC2185
-	find_ignore -iname cargo.toml -execdir cargo upgrade --incompatible allow --compatible allow --pinned ignore --rust-version 1.90.0 --recursive \;
+	find_ignore -iname cargo.toml -execdir cargo upgrade --incompatible allow --compatible allow --pinned ignore --rust-version 1.95.0 --recursive \;
 	# shellcheck disable=SC2185
 	find_ignore -iname composer.json -execdir composer update \;
 	# shellcheck disable=SC2185
