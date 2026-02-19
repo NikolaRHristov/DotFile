@@ -192,28 +192,29 @@ config.hyperlink_rules = {
 	-- Match Rust compiler output with --> prefix
 	{
 		regex =
-		'\\s*-->\\s+([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+):(\\d+)',
+		'\\s*-->\\s+([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json|app|dmg)):(\\d+):(\\d+)',
 		format = 'wezterm-open-file://$1:$2:$3',
 	},
 	-- Match paths that may be truncated (e.g. "rate/" instead of "Crate/")
 	{
 		regex =
-		'\\s*([A-Za-z]*[Rr]ate/[A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+):(\\d+)',
+		'\\s*([A-Za-z]*[Rr]ate/[A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json|app|dmg)):(\\d+):(\\d+)',
 		format = 'wezterm-open-file://$1:$2:$3',
 	},
 	-- Match file paths with line:column notation
 	{
-		regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+):(\\d+)',
+		regex =
+		'\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json|app|dmg)):(\\d+):(\\d+)',
 		format = 'wezterm-open-file://$1:$2:$3',
 	},
 	-- Match file paths with just line notation
 	{
-		regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json)):(\\d+)',
+		regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json|app|dmg)):(\\d+)',
 		format = 'wezterm-open-file://$1:$2',
 	},
 	-- Match file paths without line/column
 	{
-		regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json))\\b',
+		regex = '\\s*([A-Za-z0-9_./-]+\\.(?:rs|lua|js|ts|py|go|c|cpp|h|hpp|txt|md|toml|yaml|yml|json|app|dmg))\\b',
 		format = 'wezterm-open-file://$1',
 	},
 	-- Keep existing rules
@@ -401,18 +402,20 @@ end
 -- Handle custom file opening
 wezterm.on('open-uri', function(_, pane, uri)
 	log_debug("=== OPEN URI EVENT TRIGGERED ===")
-	log_debug("RAW URI RECEIVED: " .. uri) -- CRITICAL LOG: Check if this has $2 or numbers
+	log_debug("RAW URI RECEIVED: " .. uri)
 
-	local prefix = 'wezterm-open-file://'
+	local wezterm_prefix = 'wezterm-open-file://'
+	local file_prefix = 'file://'
 
-	if uri:sub(1, #prefix) == prefix then
-		local file_info = uri:sub(#prefix + 1)
+	-- Handle wezterm-open-file:// URIs (text files with line/column info)
+	if uri:sub(1, #wezterm_prefix) == wezterm_prefix then
+		local file_info = uri:sub(#wezterm_prefix + 1)
 		log_debug("FILE INFO STRIPPED: " .. file_info)
 
 		local parts = {}
 		for part in string.gmatch(file_info, "[^:]+") do table.insert(parts, part) end
 
-		log_debug("PARSED PARTS: " .. table.concat(parts, " | ")) -- Log the split result
+		log_debug("PARSED PARTS: " .. table.concat(parts, " | "))
 
 		local file_path = parts[1]
 		local line = parts[2]
@@ -453,6 +456,44 @@ wezterm.on('open-uri', function(_, pane, uri)
 		os.execute(command_str .. " &")
 
 		return false
+	end
+
+	-- Handle file:// URIs (generic files, including .app, .dmg bundles)
+	if uri:sub(1, #file_prefix) == file_prefix then
+		local file_path = uri:sub(#file_prefix + 1)
+		log_debug("file:// URI detected, path: " .. file_path)
+
+		-- Check if this is a bundle type that should be opened with macOS 'open'
+		local is_bundle = file_path:match('%.app$') or file_path:match('%.dmg$')
+
+		if is_bundle then
+			-- Use macOS open command for bundles
+			local command_str = string.format('open "%s"', file_path)
+			log_debug("Opening bundle with: " .. command_str)
+			os.execute(command_str .. " &")
+			return false
+		else
+			-- For other file types, try to resolve and open with editor
+			local cwd = pane:get_current_working_dir()
+			if cwd then
+				if type(cwd) == "userdata" then
+					---@diagnostic disable-next-line: undefined-field
+					cwd = cwd.file_path and cwd.file_path or os.getenv("HOME")
+				else
+					cwd = tostring(cwd)
+				end
+			else
+				cwd = os.getenv("HOME")
+			end
+
+			local resolved_path = resolve_project_path(cwd, file_path)
+			log_debug("Final Resolved Path: " .. resolved_path)
+
+			local command_str = string.format('"%s" "%s"', editor_path, resolved_path)
+			log_debug("Executing: " .. command_str)
+			os.execute(command_str .. " &")
+			return false
+		end
 	end
 
 	return true
