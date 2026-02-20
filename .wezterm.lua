@@ -407,6 +407,25 @@ wezterm.on('open-uri', function(_, pane, uri)
 	local wezterm_prefix = 'wezterm-open-file://'
 	local file_prefix = 'file://'
 
+	-- List of bundle/archive extensions that should be opened with macOS 'open' command
+	local bundle_extensions = {
+		'app', 'dmg', 'zip', 'tar', 'gz', 'rar', '7z', 'pkg', 'mpkg',
+		'tgz', 'tbz', 'tbz2', 'xz', 'bz2', 'jar', 'war', 'ear',
+	}
+
+	-- Helper function to check if a file is a bundle/archive type
+	local function is_bundle_type(file_path)
+		local ext = file_path:match('[^.]+$')
+		if not ext then return false end
+		ext = ext:lower()
+		for _, bundle_ext in ipairs(bundle_extensions) do
+			if ext == bundle_ext then
+				return true
+			end
+		end
+		return false
+	end
+
 	-- Handle wezterm-open-file:// URIs (text files with line/column info)
 	if uri:sub(1, #wezterm_prefix) == wezterm_prefix then
 		local file_info = uri:sub(#wezterm_prefix + 1)
@@ -441,6 +460,15 @@ wezterm.on('open-uri', function(_, pane, uri)
 		local resolved_path = resolve_project_path(cwd, file_path)
 		log_debug("Final Resolved Path: " .. resolved_path)
 
+		-- Check if the resolved file is a bundle/archive type
+		if is_bundle_type(resolved_path) then
+			log_debug("File is a bundle/archive type, using macOS 'open' command")
+			local command_str = string.format('open "%s"', resolved_path)
+			log_debug("Executing: " .. command_str)
+			os.execute(command_str .. " &")
+			return false
+		end
+
 		local file_arg
 		if line and column then
 			file_arg = string.format('%s:%s:%s', resolved_path, line, column)
@@ -463,13 +491,11 @@ wezterm.on('open-uri', function(_, pane, uri)
 		local file_path = uri:sub(#file_prefix + 1)
 		log_debug("file:// URI detected, path: " .. file_path)
 
-		-- Check if this is a bundle type that should be opened with macOS 'open'
-		local is_bundle = file_path:match('%.app$') or file_path:match('%.dmg$')
-
-		if is_bundle then
-			-- Use macOS open command for bundles
+		-- Check if this is a bundle/archive type that should be opened with macOS 'open'
+		if is_bundle_type(file_path) then
+			-- Use macOS open command for bundles/archives
 			local command_str = string.format('open "%s"', file_path)
-			log_debug("Opening bundle with: " .. command_str)
+			log_debug("Opening bundle/archive with: " .. command_str)
 			os.execute(command_str .. " &")
 			return false
 		else
