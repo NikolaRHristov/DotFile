@@ -25,6 +25,60 @@
 #
 # ==============================================================================
 #
+#                    SECTION 0: FAST EXIT FOR PROGRAMMATIC SHELLS
+#
+# ==============================================================================
+# When apps like PostHog Code, VS Code, or any program call `zsh -ilc '...'`
+# to resolve the shell environment, they only need PATH and env vars — not OMZ,
+# plugins, completions, thefuck, NVM, etc. Loading the full config takes >5s
+# and causes a recursive zombie process chain (fixPath.ts timeout → orphans).
+#
+# Detection: if no TTY is attached, this is a programmatic invocation.
+# We load only env vars + PATH and return immediately.
+
+if [[ ! -o interactive ]] || [[ ! -t 0 ]]; then
+	# Load env vars and PATH only
+	[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+	[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
+
+	# Minimal PATH setup (no brew shellenv — it's slow)
+	typeset -U path
+	path=(
+		"$HOME/.bin"
+		"$HOME/.local/bin"
+		"$CARGO_HOME/bin"
+		"$BUN_INSTALL/bin"
+		"$PNPM_HOME"
+		"/opt/homebrew/bin"
+		"/opt/homebrew/sbin"
+		"/usr/local/bin"
+		$path
+	)
+
+	# NVM — export dir but don't load the full script (it runs node -v)
+	export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
+	[ -d "$NVM_DIR/versions/node" ] && {
+		# Find the default node version directory and add it to PATH directly
+		local default_node="$NVM_DIR/alias/default"
+		if [ -f "$default_node" ]; then
+			local ver=$(cat "$default_node")
+			[ -d "$NVM_DIR/versions/node/v$ver/bin" ] && path=("$NVM_DIR/versions/node/v$ver/bin" $path)
+		fi
+		# Fallback: use the latest installed version
+		local latest=$(ls -v "$NVM_DIR/versions/node/" 2>/dev/null | tail -1)
+		[ -d "$NVM_DIR/versions/node/$latest/bin" ] && path=("$NVM_DIR/versions/node/$latest/bin" $path)
+	}
+
+	export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
+	export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+	export PATH="$HOME/.composer/vendor/bin:$HOME/.antigravity/antigravity/bin:$HOME/.actual/bin:$PATH"
+	export CEF_PATH="$HOME/.local/share/cef"
+
+	return 0
+fi
+
+# ==============================================================================
+#
 #                    SECTION 1: ENVIRONMENT & PATH CONFIGURATION
 #
 # ==============================================================================
