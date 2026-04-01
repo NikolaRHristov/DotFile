@@ -432,3 +432,6 @@ fi
 
 # shellcheck disable=SC1090
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path bash)"
+
+# Added by Actual Computer installer
+export PATH="$HOME/.actual/bin:$PATH"

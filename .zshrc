@@ -291,3 +291,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/nikola/.antigravity/antigravity/bin:$PATH"
+
+# Added by Actual Computer installer
+export PATH="$HOME/.actual/bin:$PATH"
