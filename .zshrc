@@ -9,20 +9,6 @@
 #
 # ~/.zshrc: Executed by zsh(1) for interactive shells.
 #
-# This configuration file is structured to be modular, readable, and efficient.
-# It handles environment variables, path management, aliases, plugins, and
-# shell behavior for a powerful and productive command-line experience.
-#
-# ==============================================================================
-#
-#                           TODO: Future Improvements
-#
-# ==============================================================================
-#
-# - [ ] **Plugin Management:** Consider `zinit` or `sheldon` for lazy-loading.
-# - [ ] **Explore Modern Tools:** `atuin` for history, `starship` for prompt.
-# - [ ] **Review Aliases:** Periodically prune `~/.aliases`.
-#
 # ==============================================================================
 #
 #                    SECTION 0: FAST EXIT FOR PROGRAMMATIC SHELLS
@@ -84,35 +70,26 @@ fi
 # ==============================================================================
 
 # --- Load Custom Environment Variables ---
-# This sets all our base paths (like $CORSAIR, $HOMEBREW_PREFIX) BEFORE any
-# tools are initialized. This is the most important step.
 [ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
 [ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
 
 # --- Initialize Homebrew Environment ---
-# If Homebrew is installed at a custom location (as defined by $HOMEBREW_PREFIX),
-# this is the OFFICIAL and safest way to add it to the shell's environment.
-# This command sets the PATH and other variables needed for Homebrew to work.
-if [ -f "${HOMEBREW_PREFIX}/bin/brew" ]; then
-	eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+# Cache brew prefix to avoid repeated subprocess calls (~200ms each)
+if [ -f "${HOMEBREW_PREFIX:-/opt/homebrew}/bin/brew" ]; then
+	eval "$(${HOMEBREW_PREFIX:-/opt/homebrew}/bin/brew shellenv)"
 fi
 
+# Cache the brew prefix for later use (avoid repeated $(brew --prefix) calls)
+_BREW_PREFIX="${HOMEBREW_PREFIX:-/opt/homebrew}"
+
 # --- PATH Management ---
-# Use Zsh's `path` array to prevent duplicate entries.
-# We no longer manually define the whole path here. Instead, we let tools like
-# Homebrew (above) add their own paths.
 typeset -U path
 path=(
-	# Add your personal/local bin directories first to give them priority.
 	"$HOME/.bin"
 	"$HOME/.local/bin"
-
-	# Add paths from our custom variables defined in .envsh
 	"$CARGO_HOME/bin"
 	"$BUN_INSTALL/bin"
 	"$PNPM_HOME"
-
-	# Keep the existing system path
 	$path
 )
 
@@ -154,25 +131,20 @@ export VCPKG_DISABLE_METRICS=1
 #
 # ==============================================================================
 
-# Dynamically set the theme based on the WEZTERM_THEME environment variable
-# passed by the WezTerm configuration.
+# Theme
 if [[ "$WEZTERM_THEME" == "light" ]]; then
-	# Use a theme that is highly readable on light backgrounds.
 	ZSH_THEME="ys"
 else
-	# Use the preferred theme for dark backgrounds.
 	ZSH_THEME="ys"
 fi
 
-zstyle ':omz:update' mode auto   # Enable auto-updates
-zstyle ':omz:update' frequency 1 # Check for updates daily
-HYPHEN_INSENSITIVE="true"        # Treat hyphens and underscores as equivalent
+zstyle ':omz:update' mode auto
+zstyle ':omz:update' frequency 1
+HYPHEN_INSENSITIVE="true"
 
 # --- Oh My Zsh Plugins ---
-# RECONFIGURATION NOTE:
-# Removed 'node', 'npm', 'yarn', 'bun', and 'deno' plugins. The 'mise' plugin
-# is a modern version manager that handles all of them, so the others were
-# redundant and could cause conflicts.
+# NOTE: node/npm/yarn/bun/deno removed — they conflict with NVM/mise
+# and spawn subshells that contribute to zombie chains.
 plugins=(
 	# Core & Productivity
 	git
@@ -183,7 +155,7 @@ plugins=(
 	sudo
 	thefuck
 	history-substring-search
-	aliases # Enables the 'aliases' command to list all active aliases
+	aliases
 
 	# Language & Version Managers
 	composer
@@ -202,16 +174,9 @@ plugins=(
 	eza
 	httpie
 	vscode
-
-	node
-	npm
-	yarn
-	bun
-	deno
 )
 
 # --- Source Oh My Zsh ---
-# This line must be present to load the framework.
 if [ -f "$ZSH/oh-my-zsh.sh" ]; then
 	source "$ZSH/oh-my-zsh.sh"
 else
@@ -248,40 +213,28 @@ unsetopt correct_all
 #
 # ==============================================================================
 
-# --- Tool Initializations ---
-# Load scripts and activate environments for specific command-line tools.
-# The order matters: initialize the version manager first.
-
 # zoxide (smarter cd)
 eval "$(zoxide init zsh)"
 
 # thefuck (corrects previous command)
 eval "$(thefuck --alias)"
 
-# autoenv (directory-based environments)
-[ -f "$(brew --prefix autoenv)/activate.sh" ] && source "$(brew --prefix autoenv)/activate.sh"
+# autoenv (directory-based environments) — use cached prefix
+[ -f "$_BREW_PREFIX/opt/autoenv/activate.sh" ] && source "$_BREW_PREFIX/opt/autoenv/activate.sh"
 
-# fzf (fuzzy finder) - Keybindings and completions.
+# fzf (fuzzy finder)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# RECONFIGURATION NOTE: Removed NVM loader. `mise` is now the primary tool
-# for managing Node.js versions. Keeping NVM would lead to conflicts.
+# --- Third-Party Completions & Plugins (using cached brew prefix) ---
+FPATH="$_BREW_PREFIX/share/zsh-completions:$FPATH"
 
-# --- Third-Party Completions & Plugins ---
-# These are managed by Homebrew and sourced manually if not handled by a plugin manager.
-if type brew &>/dev/null; then
-	FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"
+[ -f "$_BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] &&
+	source "$_BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-	# zsh-autosuggestions
-	[ -f "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] &&
-		source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+[ -f "$_BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] &&
+	source "$_BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-	# zsh-syntax-highlighting
-	[ -f "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] &&
-		source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-fi
-
-# Add Docker's completion directory to FPATH.
+# Docker completions
 [ -d "$HOME/.docker/completions" ] && FPATH="$HOME/.docker/completions:$FPATH"
 
 # ==============================================================================
@@ -291,12 +244,11 @@ fi
 # ==============================================================================
 
 # --- Initialize Zsh Completion System ---
-# Must come *after* all FPATH modifications have been made.
+# Called ONCE after all FPATH modifications.
 autoload -Uz compinit
 compinit -u -i
 
 # --- Load Custom User Scripts ---
-# Source personal aliases, functions, etc., last to ensure they take precedence.
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -f ~/.functions ]] && . ~/.functions
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
@@ -308,43 +260,52 @@ compinit -u -i
 # --- Load ZSH Profile ---
 [ -f "$HOME/.zsh_profile" ] && . "$HOME/.zsh_profile"
 
-# --- Load ENV ---
+# --- Load ENV (final pass for overrides) ---
 [ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
 [ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/nikola/.docker/completions $fpath)
-autoload -Uz compinit
-compinit -u
-# End of Docker CLI completions
 
-# Daytona completion (commented out until file exists)
-# source /Users/nikola/.daytona.completion_script.zsh
-
+# --- VS Code shell integration ---
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path zsh)"
 
-# CEF Configuration for Tauri (added by setup-cef.sh)
+# --- CEF Configuration for Tauri ---
 export CEF_PATH="$HOME/.local/share/cef"
 export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:$CEF_PATH:$CEF_PATH/Chromium Embedded Framework.framework/Libraries"
 
-# pnpm
+# --- pnpm ---
 export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
+# --- NVM ---
+# Load NVM lazily: set up the dir and PATH but defer full nvm.sh load
+# until `nvm` is actually called. This prevents "node -v" zombie chains.
 export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Add current default node to PATH directly (no subprocess)
+if [ -f "$NVM_DIR/alias/default" ]; then
+	_nvm_default_ver=$(cat "$NVM_DIR/alias/default")
+	[ -d "$NVM_DIR/versions/node/v${_nvm_default_ver}/bin" ] && \
+		export PATH="$NVM_DIR/versions/node/v${_nvm_default_ver}/bin:$PATH"
+	unset _nvm_default_ver
+else
+	# Fallback: latest installed
+	_nvm_latest=$(ls -v "$NVM_DIR/versions/node/" 2>/dev/null | tail -1)
+	[ -d "$NVM_DIR/versions/node/${_nvm_latest}/bin" ] && \
+		export PATH="$NVM_DIR/versions/node/${_nvm_latest}/bin:$PATH"
+	unset _nvm_latest
+fi
+# Lazy-load nvm on first use
+nvm() {
+	unfunction nvm 2>/dev/null
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+	nvm "$@"
+}
 
+# --- Additional PATH entries ---
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-# export PATH="/Volumes/CORSAIR/Tool/Android/sdk/platform-tools:$PATH"
-
-# Added by Antigravity
-export PATH="/Users/nikola/.antigravity/antigravity/bin:$PATH"
-
-# Added by Actual Computer installer
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 export PATH="$HOME/.actual/bin:$PATH"
