@@ -45,14 +45,22 @@ if [[ ! -o interactive ]] || [[ ! -t 0 ]]; then
 	export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
 	[ -d "$NVM_DIR/versions/node" ] && {
 		# Find the default node version directory and add it to PATH directly
-		local default_node="$NVM_DIR/alias/default"
-		if [ -f "$default_node" ]; then
-			local ver=$(cat "$default_node")
-			[ -d "$NVM_DIR/versions/node/v$ver/bin" ] && path=("$NVM_DIR/versions/node/v$ver/bin" $path)
+		# The alias file may contain just a major (e.g. "24") — resolve to full version
+		local _nvm_resolved=""
+		if [ -f "$NVM_DIR/alias/default" ]; then
+			local _alias=$(cat "$NVM_DIR/alias/default")
+			# Try exact match first (e.g. "24.13.0" → v24.13.0)
+			if [ -d "$NVM_DIR/versions/node/v${_alias}/bin" ]; then
+				_nvm_resolved="v${_alias}"
+			else
+				# Partial match: find latest version starting with this prefix
+				_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | grep "^v${_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+			fi
 		fi
-		# Fallback: use the latest installed version
-		local latest=$(ls -v "$NVM_DIR/versions/node/" 2>/dev/null | tail -1)
-		[ -d "$NVM_DIR/versions/node/$latest/bin" ] && path=("$NVM_DIR/versions/node/$latest/bin" $path)
+		# Fallback: use the latest installed version (proper semver sort)
+		[ -z "$_nvm_resolved" ] && \
+			_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+		[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] && path=("$NVM_DIR/versions/node/${_nvm_resolved}/bin" $path)
 	}
 
 	export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
@@ -285,18 +293,22 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 # until `nvm` is actually called. This prevents "node -v" zombie chains.
 export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
 # Add current default node to PATH directly (no subprocess)
+# The alias file may contain just a major (e.g. "24") — resolve to full version
+_nvm_resolved=""
 if [ -f "$NVM_DIR/alias/default" ]; then
-	_nvm_default_ver=$(cat "$NVM_DIR/alias/default")
-	[ -d "$NVM_DIR/versions/node/v${_nvm_default_ver}/bin" ] && \
-		export PATH="$NVM_DIR/versions/node/v${_nvm_default_ver}/bin:$PATH"
-	unset _nvm_default_ver
-else
-	# Fallback: latest installed
-	_nvm_latest=$(ls -v "$NVM_DIR/versions/node/" 2>/dev/null | tail -1)
-	[ -d "$NVM_DIR/versions/node/${_nvm_latest}/bin" ] && \
-		export PATH="$NVM_DIR/versions/node/${_nvm_latest}/bin:$PATH"
-	unset _nvm_latest
+	_nvm_alias=$(cat "$NVM_DIR/alias/default")
+	if [ -d "$NVM_DIR/versions/node/v${_nvm_alias}/bin" ]; then
+		_nvm_resolved="v${_nvm_alias}"
+	else
+		_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | grep "^v${_nvm_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+	fi
+	unset _nvm_alias
 fi
+[ -z "$_nvm_resolved" ] && \
+	_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] && \
+	export PATH="$NVM_DIR/versions/node/${_nvm_resolved}/bin:$PATH"
+unset _nvm_resolved
 # Lazy-load nvm on first use
 nvm() {
 	unfunction nvm 2>/dev/null
