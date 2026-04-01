@@ -54,12 +54,12 @@ if [[ ! -o interactive ]] || [[ ! -t 0 ]]; then
 				_nvm_resolved="v${_alias}"
 			else
 				# Partial match: find latest version starting with this prefix
-				_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | grep "^v${_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+				_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | command grep "^v${_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
 			fi
 		fi
 		# Fallback: use the latest installed version (proper semver sort)
 		[ -z "$_nvm_resolved" ] && \
-			_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+			_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
 		[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] && path=("$NVM_DIR/versions/node/${_nvm_resolved}/bin" $path)
 	}
 
@@ -140,11 +140,7 @@ export VCPKG_DISABLE_METRICS=1
 # ==============================================================================
 
 # Theme
-if [[ "$WEZTERM_THEME" == "light" ]]; then
-	ZSH_THEME="ys"
-else
-	ZSH_THEME="ys"
-fi
+ZSH_THEME="ys"
 
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 1
@@ -169,6 +165,7 @@ plugins=(
 	composer
 	pip
 	rust
+	golang
 
 	# DevOps & Cloud
 	docker
@@ -182,6 +179,10 @@ plugins=(
 	eza
 	httpie
 	vscode
+	ripgrep
+	git-lfs
+	colored-man-pages
+	encode64
 )
 
 # --- Source Oh My Zsh ---
@@ -199,8 +200,8 @@ fi
 
 # --- History Configuration ---
 HISTFILE="$HOME/.zsh_history"
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 setopt APPEND_HISTORY SHARE_HISTORY INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_SPACE HIST_REDUCE_BLANKS
@@ -268,23 +269,29 @@ compinit -u -i
 # --- Load ZSH Profile ---
 [ -f "$HOME/.zsh_profile" ] && . "$HOME/.zsh_profile"
 
-# --- Load ENV (final pass for overrides) ---
-[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
-[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
+# NOTE: .envsh and .privateenvsh already loaded in Section 1 (lines 81-82).
+# Do not source them again — it re-runs GPG_TTY=$(tty) and other subprocesses.
 
 # --- VS Code shell integration ---
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path zsh)"
+# Use known path instead of spawning code-insiders subprocess (~100ms)
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+	_vscode_si="$HOME/.vscode-insiders/extensions/ms-vscode.vscode-insiders-*/shellIntegration-rc.zsh"
+	# shellcheck disable=SC2086
+	local _found=($_vscode_si(N[1]))
+	if [[ -n "$_found" ]]; then
+		source "$_found"
+	else
+		# Fallback: spawn the subprocess only if cached path doesn't exist
+		. "$(code-insiders --locate-shell-integration-path zsh 2>/dev/null)" 2>/dev/null
+	fi
+fi
 
 # --- CEF Configuration for Tauri ---
 export CEF_PATH="$HOME/.local/share/cef"
 export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:$CEF_PATH:$CEF_PATH/Chromium Embedded Framework.framework/Libraries"
 
-# --- pnpm ---
-export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# NOTE: PNPM_HOME already set in .envsh and added to path array in Section 1.
+# The typeset -U deduplicates. No need to re-export or case-check here.
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
@@ -300,12 +307,12 @@ if [ -f "$NVM_DIR/alias/default" ]; then
 	if [ -d "$NVM_DIR/versions/node/v${_nvm_alias}/bin" ]; then
 		_nvm_resolved="v${_nvm_alias}"
 	else
-		_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | grep "^v${_nvm_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+		_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | command grep "^v${_nvm_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
 	fi
 	unset _nvm_alias
 fi
 [ -z "$_nvm_resolved" ] && \
-	_nvm_resolved=$(ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
+	_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
 [ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] && \
 	export PATH="$NVM_DIR/versions/node/${_nvm_resolved}/bin:$PATH"
 unset _nvm_resolved

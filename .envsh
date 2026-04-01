@@ -12,7 +12,7 @@ export CORSAIR="/Volumes/CORSAIR"
 
 # --- Tool-Specific Environment Variables ---
 export ZSH="$HOME/ZSH"                # Oh My Zsh installation directory
-export NVM_DIR="$CORSAIR/Tool/NVM"    # Note: This is for legacy/backup. 
+export NVM_DIR="$CORSAIR/Tool/NVM"    # Authoritative NVM dir (lazy-loaded in .zshrc)
 
 # --- Language & Runtimes ---
 # Rust & Cargo
@@ -40,8 +40,8 @@ export UV_CACHE_DIR="$CORSAIR/Tool/macOS/python/uv_cache"
 # --- General Environment Variables ---
 export LANG="en_US.UTF-8"
 export EDITOR="code-insiders"
-# shellcheck disable=SC2155
-export GPG_TTY=$(tty)
+# Only set GPG_TTY when a real TTY is attached (avoids subprocess + error in non-interactive shells)
+[[ -t 0 ]] && export GPG_TTY=$(tty)
 export AWS_CLI_AUTO_PROMPT="on-partial"
 
 # export PATH="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin:$PATH"
