@@ -562,6 +562,27 @@ config.set_environment_variables = {
 }
 
 --==============================================================================
+-- SECTION 18: TERMINAL BUFFER CAPTURE FOR CLAUDE CODE
+--==============================================================================
+-- Periodically captures all pane buffers to /tmp/wezterm-buffer.log so that
+-- Claude Code hooks/skills can read the user's terminal output.
+
+local capture_script = os.getenv("HOME") .. "/.local/bin/wezterm-capture"
+
+-- Capture on a 10-second interval via the status update event (piggyback on
+-- the existing status_update_interval = 1000, but throttle to every 10s).
+local last_capture_time = 0
+local CAPTURE_INTERVAL_SEC = 10
+
+wezterm.on('update-status', function(window, pane)
+	local now = os.time()
+	if now - last_capture_time >= CAPTURE_INTERVAL_SEC then
+		last_capture_time = now
+		os.execute(capture_script .. " &")
+	end
+end)
+
+--==============================================================================
 -- FINAL RETURN STATEMENT
 --==============================================================================
 

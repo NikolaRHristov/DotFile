@@ -14,60 +14,24 @@
 #                    SECTION 0: FAST EXIT FOR PROGRAMMATIC SHELLS
 #
 # ==============================================================================
-# When apps like PostHog Code, VS Code, or any program call `zsh -ilc '...'`
-# to resolve the shell environment, they only need PATH and env vars — not OMZ,
-# plugins, completions, thefuck, NVM, etc. Loading the full config takes >5s
-# and causes a recursive zombie process chain (fixPath.ts timeout → orphans).
+# PostHog Code ≥ PR#1435 uses `zsh -lc` (login, non-interactive) so .zshrc is
+# never loaded for its PATH resolution. It also sets POSTHOG_CODE_RESOLVING_ENVIRONMENT=1
+# as a belt-and-suspenders signal — we fast-exit immediately if present.
 #
-# Detection: if no TTY is attached, this is a programmatic invocation.
-# We load only env vars + PATH and return immediately.
+# Legacy tools (some VS Code extensions, other editors) still use `zsh -ilc`
+# (interactive login), which does load .zshrc. The TTY guard below handles
+# those cases and keeps init time ~25ms instead of 5–8s.
+#
+# See: https://github.com/PostHog/code/pull/1435
 
+# Belt-and-suspenders: PostHog Code sets this. .zshenv already handled it,
+# but guard here too for any edge-case -ilc invocation.
+[[ -n "$POSTHOG_CODE_RESOLVING_ENVIRONMENT" ]] && return 0
+
+# Legacy tools (VS Code extensions, some editors) still use `zsh -ilc`.
+# .zshenv already ran and set all vars/PATH — just bail out of the heavy
+# interactive init (OMZ, plugins, completions) for these non-TTY callers.
 if [[ ! -o interactive ]] || [[ ! -t 0 ]]; then
-	# Load env vars and PATH only
-	[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
-	[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
-
-	# Minimal PATH setup (no brew shellenv — it's slow)
-	typeset -U path
-	path=(
-		"$HOME/.bin"
-		"$HOME/.local/bin"
-		"$CARGO_HOME/bin"
-		"$BUN_INSTALL/bin"
-		"$PNPM_HOME"
-		"/opt/homebrew/bin"
-		"/opt/homebrew/sbin"
-		"/usr/local/bin"
-		$path
-	)
-
-	# NVM — export dir but don't load the full script (it runs node -v)
-	export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
-	[ -d "$NVM_DIR/versions/node" ] && {
-		# Find the default node version directory and add it to PATH directly
-		# The alias file may contain just a major (e.g. "24") — resolve to full version
-		local _nvm_resolved=""
-		if [ -f "$NVM_DIR/alias/default" ]; then
-			local _alias=$(cat "$NVM_DIR/alias/default")
-			# Try exact match first (e.g. "24.13.0" → v24.13.0)
-			if [ -d "$NVM_DIR/versions/node/v${_alias}/bin" ]; then
-				_nvm_resolved="v${_alias}"
-			else
-				# Partial match: find latest version starting with this prefix
-				_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | command grep "^v${_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
-			fi
-		fi
-		# Fallback: use the latest installed version (proper semver sort)
-		[ -z "$_nvm_resolved" ] && \
-			_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
-		[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] && path=("$NVM_DIR/versions/node/${_nvm_resolved}/bin" $path)
-	}
-
-	export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
-	export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
-	export PATH="$HOME/.composer/vendor/bin:$HOME/.antigravity/antigravity/bin:$HOME/.actual/bin:$PATH"
-	export CEF_PATH="$HOME/.local/share/cef"
-
 	return 0
 fi
 

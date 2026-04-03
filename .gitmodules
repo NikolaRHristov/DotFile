@@ -1,19 +1,24 @@
 [submodule "Bash"]
 path = Bash
 url = ssh://git@github.com/NikolaRHristov/Bash.git
+ignore = all
 
 [submodule "PowerShell"]
 path = PowerShell
 url = ssh://git@github.com/NikolaRHristov/PowerShell.git
+ignore = all
 
 [submodule "ZSH"]
 path = ZSH
 url = ssh://git@github.com/NikolaRHristov/ZSH.git
+ignore = all
 
 [submodule ".config/Completion"]
 path = .config/Completion
 url = ssh://git@github.com/NikolaRHristov/Completion.git
+ignore = all
 
 [submodule ".config/nvim"]
 path = .config/nvim
 url = ssh://git@github.com/NikolaRHristov/NVIM.git
+ignore = all
