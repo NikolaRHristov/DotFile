@@ -250,10 +250,6 @@ if [[ "$TERM_PROGRAM" == "vscode" ]]; then
 	fi
 fi
 
-# --- CEF Configuration for Tauri ---
-export CEF_PATH="$HOME/.local/share/cef"
-export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:$CEF_PATH:$CEF_PATH/Chromium Embedded Framework.framework/Libraries"
-
 # NOTE: PNPM_HOME already set in .envsh and added to path array in Section 1.
 # The typeset -U deduplicates. No need to re-export or case-check here.
 
@@ -275,9 +271,9 @@ if [ -f "$NVM_DIR/alias/default" ]; then
 	fi
 	unset _nvm_alias
 fi
-[ -z "$_nvm_resolved" ] && \
+[ -z "$_nvm_resolved" ] &&
 	_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
-[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] && \
+[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] &&
 	export PATH="$NVM_DIR/versions/node/${_nvm_resolved}/bin:$PATH"
 unset _nvm_resolved
 # Lazy-load nvm on first use
