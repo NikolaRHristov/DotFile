@@ -288,3 +288,11 @@ nvm() {
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 export PATH="$HOME/.actual/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
