@@ -435,3 +435,10 @@ fi
 
 # Added by Actual Computer installer
 export PATH="$HOME/.actual/bin:$PATH"
+
+# Hermes completions
+if [ -d "$HOME/completions" ]; then
+	for f in "$HOME"/completions/*.bash "$HOME"/completions/*.sh; do
+		[ -f "$f" ] && source "$f"
+	done
+fi
