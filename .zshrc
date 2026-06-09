@@ -16,11 +16,11 @@
 # ==============================================================================
 # PostHog Code ≥ PR#1435 uses `zsh -lc` (login, non-interactive) so .zshrc is
 # never loaded for its PATH resolution. It also sets POSTHOG_CODE_RESOLVING_ENVIRONMENT=1
-# as a belt-and-suspenders signal — we fast-exit immediately if present.
+# as a belt-and-suspenders signal - we fast-exit immediately if present.
 #
 # Legacy tools (some VS Code extensions, other editors) still use `zsh -ilc`
 # (interactive login), which does load .zshrc. The TTY guard below handles
-# those cases and keeps init time ~25ms instead of 5–8s.
+# those cases and keeps init time ~25ms instead of 5-8s.
 #
 # See: https://github.com/PostHog/code/pull/1435
 
@@ -29,7 +29,7 @@
 [[ -n "$POSTHOG_CODE_RESOLVING_ENVIRONMENT" ]] && return 0
 
 # Legacy tools (VS Code extensions, some editors) still use `zsh -ilc`.
-# .zshenv already ran and set all vars/PATH — just bail out of the heavy
+# .zshenv already ran and set all vars/PATH - just bail out of the heavy
 # interactive init (OMZ, plugins, completions) for these non-TTY callers.
 if [[ ! -o interactive ]] || [[ ! -t 0 ]]; then
 	return 0
@@ -111,7 +111,7 @@ zstyle ':omz:update' frequency 1
 HYPHEN_INSENSITIVE="true"
 
 # --- Oh My Zsh Plugins ---
-# NOTE: node/npm/yarn/bun/deno removed — they conflict with NVM/mise
+# NOTE: node/npm/yarn/bun/deno removed - they conflict with NVM/mise
 # and spawn subshells that contribute to zombie chains.
 plugins=(
 	# Core & Productivity
@@ -192,7 +192,7 @@ eval "$(zoxide init zsh)"
 # thefuck (corrects previous command)
 eval "$(thefuck --alias)"
 
-# autoenv (directory-based environments) — use cached prefix
+# autoenv (directory-based environments) - use cached prefix
 [ -f "$_BREW_PREFIX/opt/autoenv/activate.sh" ] && source "$_BREW_PREFIX/opt/autoenv/activate.sh"
 
 # fzf (fuzzy finder)
@@ -234,7 +234,7 @@ compinit -u -i
 [ -f "$HOME/.zsh_profile" ] && . "$HOME/.zsh_profile"
 
 # NOTE: .envsh and .privateenvsh already loaded in Section 1 (lines 81-82).
-# Do not source them again — it re-runs GPG_TTY=$(tty) and other subprocesses.
+# Do not source them again - it re-runs GPG_TTY=$(tty) and other subprocesses.
 
 # --- VS Code shell integration ---
 # Use known path instead of spawning code-insiders subprocess (~100ms)
@@ -260,7 +260,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 # until `nvm` is actually called. This prevents "node -v" zombie chains.
 export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
 # Add current default node to PATH directly (no subprocess)
-# The alias file may contain just a major (e.g. "24") — resolve to full version
+# The alias file may contain just a major (e.g. "24") - resolve to full version
 _nvm_resolved=""
 if [ -f "$NVM_DIR/alias/default" ]; then
 	_nvm_alias=$(cat "$NVM_DIR/alias/default")
@@ -300,5 +300,9 @@ esac
 # Hermes completions
 [ -d "$HOME/completions" ] && FPATH="$HOME/completions:$FPATH"
 
-# Hermes Agent — ensure ~/.local/bin is on PATH
+# Hermes Agent - ensure ~/.local/bin is on PATH
 export PATH="$HOME/.local/bin:$PATH"
+
+# Skip electron binary download during npm install (only needed for e2e tests,
+# not for compile steps; prevents the install from hanging on a 200 MB download)
+export ELECTRON_SKIP_BINARY_DOWNLOAD=1
