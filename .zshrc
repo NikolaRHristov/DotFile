@@ -303,6 +303,7 @@ esac
 # Hermes Agent - ensure ~/.local/bin is on PATH
 export PATH="$HOME/.local/bin:$PATH"
 
-# Skip electron binary download during npm install (only needed for e2e tests,
-# not for compile steps; prevents the install from hanging on a 200 MB download)
+# Skip large binary downloads during npm install (binaries only needed for e2e
+# tests, not for compile steps; prevents install from hanging on 200-300 MB downloads)
 export ELECTRON_SKIP_BINARY_DOWNLOAD=1
+export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
