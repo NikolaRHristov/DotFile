@@ -1,8 +1,8 @@
 #!/usr/env/bin bash
 
 if [ -f ~/.keychain/"$(hostname)"-sh ]; then
-    # shellcheck disable=SC1090
-    . ~/.keychain/"$(hostname)"-sh
+	# shellcheck disable=SC1090
+	. ~/.keychain/"$(hostname)"-sh
 fi
 
 # shellcheck disable=SC1090
@@ -19,3 +19,7 @@ export POWERSHELL_TELEMETRY_OPTOUT=1
 
 # Added by Actual Computer installer
 export PATH="$HOME/.actual/bin:$PATH"
+
+# Added by Antigravity CLI installer
+export PATH="/Users/nikola/.local/bin:$PATH"
+. "$HOME/.cargo/env"

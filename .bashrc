@@ -442,3 +442,6 @@ if [ -d "$HOME/completions" ]; then
 		[ -f "$f" ] && source "$f"
 	done
 fi
+
+# Added by Antigravity CLI installer
+export PATH="/Users/nikola/.local/bin:$PATH"

@@ -292,8 +292,8 @@ export PATH="$HOME/.actual/bin:$PATH"
 # pnpm
 export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
 case ":$PATH:" in
-  *":$PNPM_HOME/bin:"*) ;;
-  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+*":$PNPM_HOME/bin:"*) ;;
+*) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
 
@@ -307,3 +307,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # tests, not for compile steps; prevents install from hanging on 200-300 MB downloads)
 export ELECTRON_SKIP_BINARY_DOWNLOAD=1
 export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+. "/Users/nikola/.acme.sh/acme.sh.env"
+
+# Added by Antigravity CLI installer
+export PATH="/Users/nikola/.local/bin:$PATH"
