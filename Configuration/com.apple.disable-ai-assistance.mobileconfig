@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <!-- 1) System-wide restrictions: disable Siri, assistant, analytics -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>Apple Intelligence &amp; Siri Restrictions</string>
+            <key>PayloadIdentifier</key>
+            <string>com.nikolarhristov.dotfile.ai-assistance.restrictions</string>
+            <key>PayloadType</key>
+            <string>com.apple.applicationaccess</string>
+            <key>PayloadUUID</key>
+            <string>4F2A1C7E-9B3D-4E11-A1F0-7C5E8B2D1A40</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+
+            <!-- Siri & voice assistant -->
+            <key>AllowAssistant</key>
+            <false/>
+            <key>AllowSiri</key>
+            <false/>
+            <!-- Disable "Hey Siri" / listening -->
+            <key>AllowVoiceDialing</key>
+            <false/>
+            <!-- Do not send diagnostics / crash reports to Apple -->
+            <key>AllowDiagnosticSubmission</key>
+            <false/>
+            <key>AllowCrashReporting</key>
+            <false/>
+            <!-- Disable Apple Intelligence (writing tools / on-device generative AI) -->
+            <key>AllowIntelligentFeatures</key>
+            <false/>
+        </dict>
+
+        <!-- 2) System-domain preferences for Apple Intelligence platform -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>Apple Intelligence Platform (system)</string>
+            <key>PayloadIdentifier</key>
+            <string>com.nikolarhristov.dotfile.ai-assistance.assistant-system</string>
+            <key>PayloadType</key>
+            <string>com.apple.assistant</string>
+            <key>PayloadUUID</key>
+            <string>7C9B2E4F-1A6D-4C22-B3E5-9F0D4A7C2B61</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>IntelligencePlatformEnabled</key>
+            <false/>
+            <key>SiriEnabled</key>
+            <false/>
+        </dict>
+
+        <!-- 3) User-domain Siri preferences (applies to every user) -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>Siri Preferences (user)</string>
+            <key>PayloadIdentifier</key>
+            <string>com.nikolarhristov.dotfile.ai-assistance.siri-user</string>
+            <key>PayloadType</key>
+            <string>com.apple.Siri</string>
+            <key>PayloadUUID</key>
+            <string>2E6D8A1B-5C4F-4B33-A7C9-1E3F6D9B0A82</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>AssistantEnabled</key>
+            <false/>
+            <key>StatusMenuVisible</key>
+            <false/>
+            <key>VoiceTriggerUserEnabled</key>
+            <false/>
+            <key>ListeningForSir</key>
+            <false/>
+            <key>UserHasTriggeredSiri</key>
+            <false/>
+        </dict>
+
+        <!-- 4) Spotlight: disable Siri suggestions / web results -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>Spotlight Suggestions</string>
+            <key>PayloadIdentifier</key>
+            <string>com.nikolarhristov.dotfile.ai-assistance.spotlight</string>
+            <key>PayloadType</key>
+            <string>com.apple.Spotlight</string>
+            <key>PayloadUUID</key>
+            <string>9A1C3E5D-7B2F-4A44-8D6E-2C5B8F1A3D94</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>SiriSuggestionsEnabled</key>
+            <false/>
+            <key>BingResults</key>
+            <false/>
+            <key>SuggestionsDisabled</key>
+            <true/>
+        </dict>
+
+        <!-- 5) Safari: disable search & Siri suggestions -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>Safari Suggestions</string>
+            <key>PayloadIdentifier</key>
+            <string>com.nikolarhristov.dotfile.ai-assistance.safari</string>
+            <key>PayloadType</key>
+            <string>com.apple.Safari</string>
+            <key>PayloadUUID</key>
+            <string>3B7E9C2A-6D1F-4E55-B9C4-8A2D5F3E6C15</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>UniversalSearchEnabled</key>
+            <false/>
+            <key>SuppressSearchSuggestions</key>
+            <true/>
+        </dict>
+
+        <!-- 6) Analytics opt-out (system) -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>Analytics Opt-Out</string>
+            <key>PayloadIdentifier</key>
+            <string>com.nikolarhristov.dotfile.ai-assistance.analytics</string>
+            <key>PayloadType</key>
+            <string>com.apple.analytics</string>
+            <key>PayloadUUID</key>
+            <string>6D4F1A8C-2B3E-4C77-9D5A-3F8E1B6C9D27</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>ServicesOptIn</key>
+            <false/>
+        </dict>
+    </array>
+
+    <key>PayloadDisplayName</key>
+    <string>Disable Apple Intelligence, Siri &amp; On-Device AI Assistance</string>
+    <key>PayloadIdentifier</key>
+    <string>com.nikolarhristov.dotfile.ai-assistance</string>
+    <key>PayloadOrganization</key>
+    <string>Nikola R. Hristov</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
