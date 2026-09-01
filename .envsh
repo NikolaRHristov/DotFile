@@ -55,3 +55,6 @@ export AWS_CLI_AUTO_PROMPT="on-partial"
 # export ANDROID_NDK="$ANDROID_NDK_HOME"
 # export CMAKE_GENERATOR="Ninja"
 # export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=0
+
+export UV_SYSTEM_CERTS=1
+export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
