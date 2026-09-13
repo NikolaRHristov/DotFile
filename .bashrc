@@ -46,6 +46,19 @@
 #
 # ==============================================================================
 #                                                                              #
+#                    CENTRAL ENVIRONMENT (~/.envsh)                            #
+#                                                                              #
+# ==============================================================================
+# All shared env vars (CORSAIR, NVM_DIR, CARGO_HOME, telemetry opt-outs, PATH
+# appends, ...) live in ~/.envsh — the single source for both bash and zsh.
+# Source it BEFORE the interactive guard so non-interactive sourcing of this
+# file (e.g. from .bash_profile) still gets the variables.
+
+# shellcheck disable=SC1091
+[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+
+# ==============================================================================
+#                                                                              #
 #                         INITIALIZATION & GUARDS                                #
 #                                                                              #
 # ==============================================================================
@@ -107,30 +120,17 @@ _add_to_path "$HOME/.local/bin"
 _add_to_path "/usr/local/go/bin"
 _add_to_path "/var/lib/snapd/snap/bin"
 
-# Bun
-export BUN_INSTALL="$HOME/.bun"
+# Bun (BUN_INSTALL from ~/.envsh)
 _add_to_path "$BUN_INSTALL/bin"
 
-# NVM (Node Version Manager)
-export NVM_DIR="$HOME/.nvm"
+# NVM (NVM_DIR from ~/.envsh)
 if [ -s "$NVM_DIR/nvm.sh" ]; then
 	# shellcheck source=/dev/null
 	. "$NVM_DIR/nvm.sh"
 fi
 
-# pnpm
-export PNPM_HOME="$HOME/.local/share/pnpm"
+# pnpm (PNPM_HOME from ~/.envsh)
 _add_to_path "$PNPM_HOME"
-
-# Rust/Cargo
-if [ -f "$HOME/.cargo/env" ]; then
-	# shellcheck source=/dev/null
-	. "$HOME/.cargo/env"
-	_add_to_path "$HOME/.cargo/bin"
-fi
-
-# Turso
-_add_to_path "$HOME/.turso"
 
 # Nix
 if [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
@@ -142,63 +142,6 @@ fi
 if [[ "$(uname)" == "Darwin" ]] && [ -x "/opt/homebrew/bin/brew" ]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
-
-# ------------------------------------------------------------------------------
-# Editor Configuration
-# ------------------------------------------------------------------------------
-
-# Set the preferred editor for local and remote sessions.
-if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR='nano'
-else
-	export EDITOR='nano'
-fi
-
-# ------------------------------------------------------------------------------
-# Telemetry and Analytics Opt-Out
-# ------------------------------------------------------------------------------
-#
-# This section disables telemetry and data collection for a wide range of
-# command-line tools and services.
-
-export ADBLOCK=true
-export TELEMETRY_DISABLED=1
-export ASTRO_TELEMETRY_DISABLED=1
-export AUTOMATEDLAB_TELEMETRY_OPTOUT=1
-export AZURE_CORE_COLLECT_TELEMETRY=0
-export CHOOSENIM_NO_ANALYTICS=1
-export DIEZ_DO_NOT_TRACK=1
-export DO_NOT_TRACK=1
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=1
-export ET_NO_TELEMETRY=1
-export GATSBY_TELEMETRY_DISABLED=1
-export GATSBY_TELEMETRY_OPT_OUT=1
-export GATSBY_TELEMETRY_OPTOUT=1
-export HASURA_GRAPHQL_ENABLE_TELEMETRY=false
-export HINT_TELEMETRY=off
-export HOMEBREW_NO_ANALYTICS=1
-export INFLUXD_REPORTING_DISABLED=true
-export ITERATIVE_DO_NOT_TRACK=1
-export NEXT_TELEMETRY_DEBUG=1
-export NEXT_TELEMETRY_DISABLED=1
-export NG_CLI_ANALYTICS=false
-export NUXT_TELEMETRY_DISABLED=1
-export PIN_DO_NOT_TRACK=1
-export POWERSHELL_TELEMETRY_OPTOUT=1
-export SAM_CLI_TELEMETRY=0
-export STNOUPGRADE=1
-export STRIPE_CLI_TELEMETRY_OPTOUT=1
-export TERRAFORM_TELEMETRY=0
-export VCPKG_DISABLE_METRICS=1
-
-# ------------------------------------------------------------------------------
-# Miscellaneous Environment Variables
-# ------------------------------------------------------------------------------
-
-export AWS_CLI_AUTO_PROMPT=on-partial
-export ARCHFLAGS="-arch x86_64"
-export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # ==============================================================================
 #                                                                              #
@@ -320,10 +263,9 @@ unset use_color safe_term match_lhs
 # ==============================================================================
 
 # ------------------------------------------------------------------------------
-# Oh My Bash
+# Oh My Bash (OSH from ~/.envsh)
 # ------------------------------------------------------------------------------
 
-export OSH=~/Bash
 if [ -d "$OSH" ]; then
 	# shellcheck disable=SC2034
 	OSH_THEME="half-life"
@@ -433,16 +375,9 @@ fi
 # shellcheck disable=SC1090
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path bash)"
 
-# Added by Actual Computer installer
-export PATH="$HOME/.actual/bin:$PATH"
-
 # Hermes completions
 if [ -d "$HOME/completions" ]; then
 	for f in "$HOME"/completions/*.bash "$HOME"/completions/*.sh; do
-		# shellcheck disable=SC1090
 		[ -f "$f" ] && source "$f"
 	done
 fi
-
-# Added by Antigravity CLI installer
-export PATH="/Users/nikola/.local/bin:$PATH"

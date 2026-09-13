@@ -4,60 +4,90 @@
 # ==============================================================================
 #                 CENTRAL ENVIRONMENT VARIABLE DEFINITIONS
 # ==============================================================================
-# This file defines the base locations for tools and system settings.
-# It should NOT manipulate the PATH directly.
+# Single source of env vars for BOTH shells:
+#   - zsh: sourced from ~/.zshenv on every zsh invocation
+#   - bash: sourced from ~/.bashrc and ~/.profile (guarded)
+# Order matters: CORSAIR first (dependencies), then tool roots, rust, python,
+# general, telemetry, then PATH appends (deduplicated, at the end).
+# Keep this file fast: exports only, one guarded GPG_TTY subprocess.
 
 # --- Primary Mount Point ---
 export CORSAIR="/Volumes/CORSAIR"
 
 # --- Tool-Specific Environment Variables ---
 export ZSH="$HOME/ZSH"             # Oh My Zsh installation directory
-export NVM_DIR="$CORSAIR/Tool/NVM" # Authoritative NVM dir (lazy-loaded in .zshrc)
+export NVM_DIR="$CORSAIR/Tool/NVM" # Authoritative NVM dir
+export BUN_INSTALL="$CORSAIR/Tool/macOS/bun"
+export PNPM_HOME="$CORSAIR/Tool/macOS/pnpm/global"
 
-# --- Language & Runtimes ---
-# Rust & Cargo
+# --- Rust & Cargo (homes + artifacts on external SSD) ---
 export RUSTC_WRAPPER="sccache"
 export RUSTUP_HOME="$CORSAIR/Tool/macOS/rust/rustup"
 export CARGO_HOME="$CORSAIR/Tool/macOS/rust/cargo"
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
-
-# CRITICAL ADDITIONS FOR DISK SPACE:
-# 1. Force all build artifacts (the heaviest files) to external SSD
-# export CARGO_TARGET_DIR="$CORSAIR/Tool/macOS/rust/target"
-# 2. Force sccache to external SSD
 export SCCACHE_DIR="$CORSAIR/Tool/macOS/rust/sccache"
-# 3. Increase cache size (since we have space now)
 export SCCACHE_CACHE_SIZE="50G"
 
-# Node / Bun
-export BUN_INSTALL="$CORSAIR/Tool/macOS/bun"
-export PNPM_HOME="$CORSAIR/Tool/macOS/pnpm/global"
-# Note: npm's global path will be managed by the active Node.js version.
-
-# Python
+# --- Python / uv ---
 export UV_CACHE_DIR="$CORSAIR/Tool/macOS/python/uv_cache"
+export UV_SYSTEM_CERTS=1
+export UV_LINK_MODE=copy
 
 # --- General Environment Variables ---
 export LANG="en_US.UTF-8"
 export EDITOR="code-insiders"
 # Only set GPG_TTY when a real TTY is attached (avoids subprocess + error in non-interactive shells)
 # shellcheck disable=SC2155
-[[ -t 0 ]] && export GPG_TTY=$(tty)
+[ -t 0 ] && export GPG_TTY=$(tty)
 export AWS_CLI_AUTO_PROMPT="on-partial"
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+export COREPACK_ENABLE_AUTO_PIN=0
+export CEF_PATH="$HOME/.local/share/cef"
+export ARCHFLAGS="-arch x86_64"             # was bash-only; now both shells — verify no impact
+export BASH_SILENCE_DEPRECATION_WARNING=1   # bash-only meaning, harmless elsewhere
+export OSH="$HOME/Bash"                     # Oh My Bash install dir (bash)
+export ELECTRON_SKIP_BINARY_DOWNLOAD=1
+export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 
-# export PATH="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin:$PATH"
-# export AR="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
-# export RANLIB="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+# --- Telemetry Opt-Out ---
+export ADBLOCK=true
+export TELEMETRY_DISABLED=1
+export ASTRO_TELEMETRY_DISABLED=1
+export AUTOMATEDLAB_TELEMETRY_OPTOUT=1
+export AZURE_CORE_COLLECT_TELEMETRY=0
+export CHOOSENIM_NO_ANALYTICS=1
+export DIEZ_DO_NOT_TRACK=1
+export DO_NOT_TRACK=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=1
+export ET_NO_TELEMETRY=1
+export GATSBY_TELEMETRY_DISABLED=1
+export GATSBY_TELEMETRY_OPT_OUT=1
+export GATSBY_TELEMETRY_OPTOUT=1
+export HASURA_GRAPHQL_ENABLE_TELEMETRY=false
+export HINT_TELEMETRY=off
+export HOMEBREW_NO_ANALYTICS=1
+export INFLUXD_REPORTING_DISABLED=true
+export ITERATIVE_DO_NOT_TRACK=1
+export NEXT_TELEMETRY_DEBUG=1
+export NEXT_TELEMETRY_DISABLED=1
+export NG_CLI_ANALYTICS=false
+export NUXT_TELEMETRY_DISABLED=1
+export PIN_DO_NOT_TRACK=1
+export POWERSHELL_TELEMETRY_OPTOUT=1
+export SAM_CLI_TELEMETRY=0
+export STNOUPGRADE=1
+export STRIPE_CLI_TELEMETRY_OPTOUT=1
+export TERRAFORM_TELEMETRY=0
+export VCPKG_DISABLE_METRICS=1
 
-# export ANDROID_HOME="/Volumes/CORSAIR/Tool/Android/sdk"
-# export ANDROID_NDK_HOME="/Volumes/CORSAIR/Tool/Android/sdk/ndk/29.0.14206865"
-# export ANDROID_NDK_ROOT="$ANDROID_NDK_HOME"
-# export NDK_HOME="$ANDROID_NDK_HOME"
-# export ANDROID_NDK="$ANDROID_NDK_HOME"
-# export CMAKE_GENERATOR="Ninja"
-# export ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL=0
-
-export UV_SYSTEM_CERTS=1
-export UV_LINK_MODE=copy
-
+# --- Misc ---
 export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
+
+# --- PATH appends (deduplicated, applied last) ---
+# zsh: ~/.zshenv's path array rebuilds PATH and already includes these dirs;
+#      typeset -U collapses the duplicates. bash: these take effect as-is.
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.actual/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

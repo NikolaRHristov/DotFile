@@ -40,10 +40,10 @@ fi
 #                    SECTION 1: ENVIRONMENT & PATH CONFIGURATION
 #
 # ==============================================================================
-
-# --- Load Custom Environment Variables ---
-[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
-[ -f "$HOME/.privateenvsh" ] && . "$HOME/.privateenvsh"
+# NOTE: All env vars (CORSAIR, NVM_DIR, CARGO_HOME, telemetry opt-outs, PATH
+# appends) are defined in ~/.envsh, sourced by ~/.zshenv on every invocation.
+# Do not re-source it here — it would re-run GPG_TTY=$(tty) and other
+# subprocesses. The zsh PATH array also lives in ~/.zshenv (typeset -U).
 
 # --- Initialize Homebrew Environment ---
 # Cache brew prefix to avoid repeated subprocess calls (~200ms each)
@@ -53,49 +53,6 @@ fi
 
 # Cache the brew prefix for later use (avoid repeated $(brew --prefix) calls)
 _BREW_PREFIX="${HOMEBREW_PREFIX:-/opt/homebrew}"
-
-# --- PATH Management ---
-typeset -U path
-path=(
-	"$HOME/.bin"
-	"$HOME/.local/bin"
-	"$CARGO_HOME/bin"
-	"$BUN_INSTALL/bin"
-	"$PNPM_HOME"
-	$path
-)
-
-# --- Telemetry Opt-Out ---
-export ADBLOCK=true
-export TELEMETRY_DISABLED=1
-export ASTRO_TELEMETRY_DISABLED=1
-export AUTOMATEDLAB_TELEMETRY_OPTOUT=1
-export AZURE_CORE_COLLECT_TELEMETRY=0
-export CHOOSENIM_NO_ANALYTICS=1
-export DIEZ_DO_NOT_TRACK=1
-export DO_NOT_TRACK=1
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=1
-export ET_NO_TELEMETRY=1
-export GATSBY_TELEMETRY_DISABLED=1
-export GATSBY_TELEMETRY_OPT_OUT=1
-export GATSBY_TELEMETRY_OPTOUT=1
-export HASURA_GRAPHQL_ENABLE_TELEMETRY=false
-export HINT_TELEMETRY=off
-export HOMEBREW_NO_ANALYTICS=1
-export INFLUXD_REPORTING_DISABLED=true
-export ITERATIVE_DO_NOT_TRACK=1
-export NEXT_TELEMETRY_DEBUG=1
-export NEXT_TELEMETRY_DISABLED=1
-export NG_CLI_ANALYTICS=false
-export NUXT_TELEMETRY_DISABLED=1
-export PIN_DO_NOT_TRACK=1
-export POWERSHELL_TELEMETRY_OPTOUT=1
-export SAM_CLI_TELEMETRY=0
-export STNOUPGRADE=1
-export STRIPE_CLI_TELEMETRY_OPTOUT=1
-export TERRAFORM_TELEMETRY=0
-export VCPKG_DISABLE_METRICS=1
 
 # ==============================================================================
 #
@@ -233,9 +190,6 @@ compinit -u -i
 # --- Load ZSH Profile ---
 [ -f "$HOME/.zsh_profile" ] && . "$HOME/.zsh_profile"
 
-# NOTE: .envsh and .privateenvsh already loaded in Section 1 (lines 81-82).
-# Do not source them again - it re-runs GPG_TTY=$(tty) and other subprocesses.
-
 # --- VS Code shell integration ---
 # Use known path instead of spawning code-insiders subprocess (~100ms)
 if [[ "$TERM_PROGRAM" == "vscode" ]]; then
@@ -250,33 +204,9 @@ if [[ "$TERM_PROGRAM" == "vscode" ]]; then
 	fi
 fi
 
-# NOTE: PNPM_HOME already set in .envsh and added to path array in Section 1.
-# The typeset -U deduplicates. No need to re-export or case-check here.
-
-export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
-
 # --- NVM ---
-# Load NVM lazily: set up the dir and PATH but defer full nvm.sh load
+# NVM_DIR is set in ~/.envsh. Load nvm lazily: defer full nvm.sh load
 # until `nvm` is actually called. This prevents "node -v" zombie chains.
-export NVM_DIR="/Volumes/CORSAIR/Tool/NVM"
-# Add current default node to PATH directly (no subprocess)
-# The alias file may contain just a major (e.g. "24") - resolve to full version
-_nvm_resolved=""
-if [ -f "$NVM_DIR/alias/default" ]; then
-	_nvm_alias=$(cat "$NVM_DIR/alias/default")
-	if [ -d "$NVM_DIR/versions/node/v${_nvm_alias}/bin" ]; then
-		_nvm_resolved="v${_nvm_alias}"
-	else
-		_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | command grep "^v${_nvm_alias}" | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
-	fi
-	unset _nvm_alias
-fi
-[ -z "$_nvm_resolved" ] &&
-	_nvm_resolved=$(command ls -1 "$NVM_DIR/versions/node/" 2>/dev/null | sed 's/^v//' | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | sed 's/^/v/')
-[ -d "$NVM_DIR/versions/node/${_nvm_resolved}/bin" ] &&
-	export PATH="$NVM_DIR/versions/node/${_nvm_resolved}/bin:$PATH"
-unset _nvm_resolved
-# Lazy-load nvm on first use
 nvm() {
 	unfunction nvm 2>/dev/null
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -284,30 +214,5 @@ nvm() {
 	nvm "$@"
 }
 
-# --- Additional PATH entries ---
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
-export PATH="$HOME/.actual/bin:$PATH"
-
-# pnpm
-export PNPM_HOME="/Volumes/CORSAIR/Tool/macOS/pnpm/global"
-case ":$PATH:" in
-*":$PNPM_HOME/bin:"*) ;;
-*) export PATH="$PNPM_HOME/bin:$PATH" ;;
-esac
-# pnpm end
-
 # Hermes completions
 [ -d "$HOME/completions" ] && FPATH="$HOME/completions:$FPATH"
-
-# Hermes Agent - ensure ~/.local/bin is on PATH
-export PATH="$HOME/.local/bin:$PATH"
-
-# Skip large binary downloads during npm install (binaries only needed for e2e
-# tests, not for compile steps; prevents install from hanging on 200-300 MB downloads)
-export ELECTRON_SKIP_BINARY_DOWNLOAD=1
-export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
-
-
-# Added by Antigravity CLI installer
-export PATH="/Users/nikola/.local/bin:$PATH"
