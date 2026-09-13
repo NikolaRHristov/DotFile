@@ -1,8 +1,8 @@
 #!/usr/env/bin bash
 
-if [ -f ~/.keychain/"$(hostname)"-sh ]; then
+if [ -f ~/.keychain/$(hostname)-sh ]; then
 	# shellcheck disable=SC1090
-	. ~/.keychain/"$(hostname)"-sh
+	. ~/.keychain/$(hostname)-sh
 fi
 
 # shellcheck disable=SC1090
@@ -10,7 +10,8 @@ fi
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # shellcheck disable=SC1091
-. "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
+[ -f "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env" ] && \
+	. "/Volumes/CORSAIR/Tool/macOS/rust/cargo/env"
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export HOMEBREW_NO_ANALYTICS=1
@@ -22,4 +23,3 @@ export PATH="$HOME/.actual/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/Users/nikola/.local/bin:$PATH"
-. "$HOME/.cargo/env"
