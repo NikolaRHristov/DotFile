@@ -439,6 +439,7 @@ export PATH="$HOME/.actual/bin:$PATH"
 # Hermes completions
 if [ -d "$HOME/completions" ]; then
 	for f in "$HOME"/completions/*.bash "$HOME"/completions/*.sh; do
+		# shellcheck disable=SC1090
 		[ -f "$f" ] && source "$f"
 	done
 fi

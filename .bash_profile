@@ -1,4 +1,4 @@
-#!/usr/env/bin bash
+#!/bin/bash
 
 if [ -f ~/.keychain/$(hostname)-sh ]; then
 	# shellcheck disable=SC1090
