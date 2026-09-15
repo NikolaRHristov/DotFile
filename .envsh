@@ -19,6 +19,10 @@ export ZSH="$HOME/ZSH"             # Oh My Zsh installation directory
 export NVM_DIR="$CORSAIR/Tool/NVM" # Authoritative NVM dir
 export BUN_INSTALL="$CORSAIR/Tool/macOS/bun"
 export PNPM_HOME="$CORSAIR/Tool/macOS/pnpm/global"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
 
 # --- Rust & Cargo (homes + artifacts on external SSD) ---
 export RUSTC_WRAPPER="sccache"
@@ -43,7 +47,7 @@ export AWS_CLI_AUTO_PROMPT="on-partial"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export COREPACK_ENABLE_AUTO_PIN=0
 export CEF_PATH="$HOME/.local/share/cef"
-export ARCHFLAGS="-arch x86_64"             # was bash-only; now both shells — verify no impact
+export ARCHFLAGS="-arch x86_64"             # was bash-only; now both shells - verify no impact
 export BASH_SILENCE_DEPRECATION_WARNING=1   # bash-only meaning, harmless elsewhere
 export OSH="$HOME/Bash"                     # Oh My Bash install dir (bash)
 export ELECTRON_SKIP_BINARY_DOWNLOAD=1
@@ -87,6 +91,9 @@ export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
 # --- PATH appends (deduplicated, applied last) ---
 # zsh: ~/.zshenv's path array rebuilds PATH and already includes these dirs;
 #      typeset -U collapses the duplicates. bash: these take effect as-is.
+# Homebrew first here so /opt/homebrew/bin precedes /usr/bin in every context
+# (user dirs below still take priority; brew shellenv re-prepends in rc files).
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 export PATH="$HOME/.actual/bin:$PATH"
