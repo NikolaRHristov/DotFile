@@ -20,8 +20,8 @@ export NVM_DIR="$CORSAIR/Tool/NVM" # Authoritative NVM dir
 export BUN_INSTALL="$CORSAIR/Tool/macOS/bun"
 export PNPM_HOME="$CORSAIR/Tool/macOS/pnpm/global"
 case ":$PATH:" in
-  *":$PNPM_HOME/bin:"*) ;;
-  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+*":$PNPM_HOME/bin:"*) ;;
+*) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 
 # --- Rust & Cargo (homes + artifacts on external SSD) ---
@@ -47,9 +47,9 @@ export AWS_CLI_AUTO_PROMPT="on-partial"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export COREPACK_ENABLE_AUTO_PIN=0
 export CEF_PATH="$HOME/.local/share/cef"
-export ARCHFLAGS="-arch x86_64"             # was bash-only; now both shells - verify no impact
-export BASH_SILENCE_DEPRECATION_WARNING=1   # bash-only meaning, harmless elsewhere
-export OSH="$HOME/Bash"                     # Oh My Bash install dir (bash)
+export ARCHFLAGS="-arch x86_64"           # was bash-only; now both shells - verify no impact
+export BASH_SILENCE_DEPRECATION_WARNING=1 # bash-only meaning, harmless elsewhere
+export OSH="$HOME/Bash"                   # Oh My Bash install dir (bash)
 export ELECTRON_SKIP_BINARY_DOWNLOAD=1
 export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 
@@ -73,7 +73,6 @@ export HINT_TELEMETRY=off
 export HOMEBREW_NO_ANALYTICS=1
 export INFLUXD_REPORTING_DISABLED=true
 export ITERATIVE_DO_NOT_TRACK=1
-export NEXT_TELEMETRY_DEBUG=1
 export NEXT_TELEMETRY_DISABLED=1
 export NG_CLI_ANALYTICS=false
 export NUXT_TELEMETRY_DISABLED=1
@@ -84,6 +83,23 @@ export STNOUPGRADE=1
 export STRIPE_CLI_TELEMETRY_OPTOUT=1
 export TERRAFORM_TELEMETRY=0
 export VCPKG_DISABLE_METRICS=1
+export GH_TELEMETRY=false
+export CHECKPOINT_DISABLE=1
+export SLS_TELEMETRY_DISABLED=1
+export STORYBOOK_DISABLE_TELEMETRY=1
+export SF_DISABLE_TELEMETRY=true
+export AWS_BLOCKS_DISABLE_TELEMETRY=1
+export AMPLIFY_DISABLE_TELEMETRY=1
+export ICP_TELEMETRY_DISABLED=1
+export DISABLE_ZAPIER_ANALYTICS=1
+export NEXT_TELEMETRY_DISABLED=1
+export OTEL_TRACES_EXPORTER=none
+export OTEL_METRICS_EXPORTER=none
+export OTEL_LOGS_EXPORTER=none
+
+ampx configure telemetry disable
+sf config set disable-telemetry=true --global
+gh config set telemetry disabled
 
 # --- Misc ---
 export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
