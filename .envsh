@@ -87,6 +87,7 @@ export KIMI_DISABLE_TELEMETRY=1
 export MERCUR_DISABLE_TELEMETRY=true
 export NEXT_TELEMETRY_DISABLED=1
 export NG_CLI_ANALYTICS=false
+export NO_TELEMETRY=1
 export NUXT_TELEMETRY_DISABLED=1
 export OTEL_LOGS_EXPORTER=none
 export OTEL_METRICS_EXPORTER=none
@@ -106,13 +107,13 @@ export TERRAFORM_TELEMETRY=0
 export TURBO_TELEMETRY_DISABLED=1
 export VCPKG_DISABLE_METRICS=1
 
+aio telemetry off
 ampx configure telemetry disable
-sf config set disable-telemetry=true --global
 gh config set telemetry disabled
 go telemetry off
 netlify --telemetry-disable
-aio telemetry off
 pac telemetry disable
+sf config set disable-telemetry=true --global
 
 # --- Misc ---
 export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
