@@ -107,13 +107,15 @@ export TERRAFORM_TELEMETRY=0
 export TURBO_TELEMETRY_DISABLED=1
 export VCPKG_DISABLE_METRICS=1
 
-aio telemetry off
-ampx configure telemetry disable
-gh config set telemetry disabled
-go telemetry off
-netlify --telemetry-disable
-pac telemetry disable
-sf config set disable-telemetry=true --global
+if [[ $- == *i* ]]; then
+	command -v aio >/dev/null 2>&1 && aio telemetry off >/dev/null 2>&1
+	command -v ampx >/dev/null 2>&1 && ampx configure telemetry disable >/dev/null 2>&1
+	command -v gh >/dev/null 2>&1 && gh config set telemetry disabled >/dev/null 2>&1
+	command -v go >/dev/null 2>&1 && go telemetry off >/dev/null 2>&1
+	command -v netlify >/dev/null 2>&1 && netlify --telemetry-disable >/dev/null 2>&1
+	command -v pac >/dev/null 2>&1 && pac telemetry disable >/dev/null 2>&1
+	command -v sf >/dev/null 2>&1 && sf config set disable-telemetry=true --global >/dev/null 2>&1
+fi
 
 # --- Misc ---
 export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
