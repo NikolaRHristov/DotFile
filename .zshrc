@@ -42,7 +42,7 @@ fi
 # ==============================================================================
 # NOTE: All env vars (CORSAIR, NVM_DIR, CARGO_HOME, telemetry opt-outs, PATH
 # appends) are defined in ~/.envsh, sourced by ~/.zshenv on every invocation.
-# Do not re-source it here — it would re-run GPG_TTY=$(tty) and other
+# Do not re-source it here - it would re-run GPG_TTY=$(tty) and other
 # subprocesses. The zsh PATH array also lives in ~/.zshenv (typeset -U).
 
 # --- Initialize Homebrew Environment ---
@@ -216,3 +216,6 @@ nvm() {
 
 # Hermes completions
 [ -d "$HOME/completions" ] && FPATH="$HOME/completions:$FPATH"
+
+# Env vars live in ~/.envsh (single source; also loaded via ~/.zshenv).
+[ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
