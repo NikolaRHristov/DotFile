@@ -8,7 +8,7 @@ for REPO in "${REPOS_USER[@]}"; do
     mapfile -t DEPENDENTS < <(printf "%s" "$(github-dependents-info --repo "${REPO}" --json | \jq -r '.all_public_dependent_repos[].name')" | tr -d '\r')
 
     for DEPENDENT in "${DEPENDENTS[@]}"; do
-        echo "$DEPENDENT"
+        \echo "$DEPENDENT"
     done
 done
 
@@ -21,7 +21,7 @@ for ORG in "${ORGS_USER[@]}"; do
         mapfile -t DEPENDENTS < <(printf "%s" "$(github-dependents-info --repo "${REPO_ORG}" --json | \jq -r '.all_public_dependent_repos[].name')" | tr -d '\r')
 
         for DEPENDENT in "${DEPENDENTS[@]}"; do
-            echo "$DEPENDENT"
+            \echo "$DEPENDENT"
         done
     done
 done

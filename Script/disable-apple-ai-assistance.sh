@@ -5,7 +5,7 @@
 #  knowledge/suggestion engines, and related telemetry on macOS.
 #
 #  Style: mirrors privacy.sexy (privacy-script-macos.sh) - section headers,
-#  per-step echo, explicit targets. Correctness fix vs. that script: user-domain
+#  per-step \echo, explicit targets. Correctness fix vs. that script: user-domain
 #  `defaults`/`launchctl` are always scoped to the real GUI (console) user even
 #  when the script is launched through `sudo`, so preferences land in YOUR
 #  home, not /var/root.
@@ -43,12 +43,12 @@ MODE="${1:-disable}"
 # ------------------------------------------------------------------------------
 if [ -n "${SUDO_USER:-}" ] && [ "$SUDO_USER" != "root" ]; then
 	REALUSER="$SUDO_USER"
-elif [ "$(stat -f '%u' /dev/console 2>/dev/null || echo 0)" != "0" ]; then
+elif [ "$(stat -f '%u' /dev/console 2>/dev/null || \echo 0)" != "0" ]; then
 	REALUSER="$(stat -f '%Su' /dev/console)"
 else
 	REALUSER="$(whoami)"
 fi
-REALUID="$(id -u "$REALUSER" 2>/dev/null || echo 501)"
+REALUID="$(id -u "$REALUSER" 2>/dev/null || \echo 501)"
 REALHOME="$(dscl . -read "/Users/$REALUSER" NFSHomeDirectory 2>/dev/null | awk 'NR==1{print $2}')"
 [ -z "$REALHOME" ] && REALHOME="/Users/$REALUSER"
 
@@ -161,7 +161,7 @@ PROC_PATTERNS=(
 # -------------------------  REVERT MODE  --------------------------------------
 # ------------------------------------------------------------------------------
 if [ "$MODE" = "revert" ]; then
-	echo '=== REVERT: re-enabling Apple Intelligence / Siri / suggestions ==='
+	\echo '=== REVERT: re-enabling Apple Intelligence / Siri / suggestions ==='
 	for s in "${SIRI_AGENTS[@]}" "${INTEL_AGENTS[@]}"; do
 		enable_user_agent "$s"
 	done
@@ -172,7 +172,7 @@ if [ "$MODE" = "revert" ]; then
 	udefaults com.apple.voiceshortcuts SiriShortcutsEnabled -bool true
 	sdefaults com.apple.Siri StatusMenuVisible -bool true
 	sdefaults com.apple.Siri VoiceTriggerUserEnabled -bool true
-	echo 'Revert complete. A logout/restart is recommended.'
+	\echo 'Revert complete. A logout/restart is recommended.'
 	exit 0
 fi
 
@@ -180,16 +180,16 @@ fi
 # -------------------------  VERIFY MODE  --------------------------------------
 # ------------------------------------------------------------------------------
 if [ "$MODE" = "verify" ]; then
-	echo "=== Disabled user-launch agents (target user: $REALUSER / uid $REALUID) ==="
+	\echo "=== Disabled user-launch agents (target user: $REALUSER / uid $REALUID) ==="
 	for s in "${SIRI_AGENTS[@]}" "${INTEL_AGENTS[@]}"; do
 		if sudo -u "$REALUSER" launchctl print-disabled "gui/$REALUID" 2>/dev/null | grep -q "\"$s\" => disabled"; then
-			echo "  [DISABLED] $s"
+			\echo "  [DISABLED] $s"
 		else
-			echo "  [ACTIVE  ] $s"
+			\echo "  [ACTIVE  ] $s"
 		fi
 	done
-	echo
-	echo "=== Running AI/Siri/Assistant processes (should be none) ==="
+	\echo
+	\echo "=== Running AI/Siri/Assistant processes (should be none) ==="
 	ps aux | grep -iE "intelligence|parsec|generative|callintelligence|knowledge|suggest|siri|assistant|voiceshortcuts" |
 		grep -v grep |
 		grep -ivE "cmiodalassistants|videodriver|cameracaptured|containermanagerd|trustd|secinitd|cfprefsd|distnoted|registerassistantservice|UVCAssistant" |
@@ -198,7 +198,7 @@ if [ "$MODE" = "verify" ]; then
 		grep -v grep |
 		grep -ivE "cmiodalassistants|videodriver|cameracaptured|containermanagerd|trustd|secinitd|cfprefsd|distnoted|registerassistantservice|UVCAssistant" |
 		wc -l | tr -d ' ')
-	echo "  Remaining AI/Siri/Assistant processes: $COUNT"
+	\echo "  Remaining AI/Siri/Assistant processes: $COUNT"
 	exit 0
 fi
 
@@ -209,7 +209,7 @@ fi
 # ----------------------------------------------------------
 # -------------------- 1. Disable Siri ---------------------
 # ----------------------------------------------------------
-echo '--- Disable Siri (preferences)'
+\echo '--- Disable Siri (preferences)'
 udefaults com.apple.Siri AssistantEnabled -bool false
 udefaults com.apple.Siri StatusMenuVisible -bool false
 udefaults com.apple.Siri VoiceTriggerUserEnabled -bool false
@@ -226,7 +226,7 @@ sdefaults com.apple.Siri VoiceTriggerUserEnabled -bool false
 # ----------------------------------------------------------
 # ----------- 2. Disable the Siri / Assistant agents --------
 # ----------------------------------------------------------
-echo '--- Disable Siri / Assistant launch agents'
+\echo '--- Disable Siri / Assistant launch agents'
 for s in "${SIRI_AGENTS[@]}"; do
 	disable_user_agent "$s"
 	disable_system_agent "$s"
@@ -236,7 +236,7 @@ done
 # ----------------------------------------------------------
 # -------- 3. Disable Apple Intelligence platform ------------
 # ----------------------------------------------------------
-echo '--- Disable Apple Intelligence platform'
+\echo '--- Disable Apple Intelligence platform'
 udefaults com.apple.assistant IntelligencePlatformEnabled -bool false # best-effort key
 for s in "${INTEL_AGENTS[@]}"; do
 	disable_user_agent "$s"
@@ -247,7 +247,7 @@ done
 # ----------------------------------------------------------
 # ---- 4. Disable Spotlight "Siri Suggestions" + web --------
 # ----------------------------------------------------------
-echo '--- Disable Spotlight Siri Suggestions / Bing web results'
+\echo '--- Disable Spotlight Siri Suggestions / Bing web results'
 udefaults com.apple.Spotlight SiriSuggestionsEnabled -bool false
 udefaults com.apple.Spotlight BingResults -bool false
 udefaults com.apple.Spotlight SuggestionsDisabled -bool true
@@ -256,7 +256,7 @@ udefaults com.apple.Spotlight SuggestionsDisabled -bool true
 # ----------------------------------------------------------
 # ---- 5. Disable Safari search / Siri suggestions -----------
 # ----------------------------------------------------------
-echo '--- Disable Safari search & Siri suggestions'
+\echo '--- Disable Safari search & Siri suggestions'
 udefaults com.apple.Safari UniversalSearchEnabled -bool false
 udefaults com.apple.Safari SuppressSearchSuggestions -bool true
 udefaults com.apple.Safari DidOpenSafari10Welcome -bool true
@@ -265,7 +265,7 @@ udefaults com.apple.Safari DidOpenSafari10Welcome -bool true
 # ----------------------------------------------------------
 # ---- 6. Disable "Look Up" Siri knowledge popovers ----------
 # ----------------------------------------------------------
-echo '--- Disable Look Up Siri-suggested knowledge'
+\echo '--- Disable Look Up Siri-suggested knowledge'
 udefaults com.apple.LookupView DisableSiriSuggestions -bool true # best-effort key
 udefaults com.apple.LookupView DefaultTab -int 0                 # 0 = Dictionary, not Siri
 # ----------------------------------------------------------
@@ -273,7 +273,7 @@ udefaults com.apple.LookupView DefaultTab -int 0                 # 0 = Dictionar
 # ----------------------------------------------------------
 # ---- 7. Disable analytics & diagnostic submission ----------
 # ----------------------------------------------------------
-echo '--- Disable analytics / diagnostic submission to Apple'
+\echo '--- Disable analytics / diagnostic submission to Apple'
 udefaults com.apple.applicationaccess AllowDiagnosticSubmission -bool false
 udefaults com.apple.applicationaccess AllowCrashReporting -bool false
 udefaults com.apple.crashreporter DialogType -string "none"
@@ -285,7 +285,7 @@ sdefaults com.apple.analytics ServicesOptIn -bool false
 # ----------------------------------------------------------
 # ---- 8. Kill anything still running (user-owned only) ------
 # ----------------------------------------------------------
-echo '--- Terminate running AI/Siri/Assistant processes'
+\echo '--- Terminate running AI/Siri/Assistant processes'
 for p in "${PROC_PATTERNS[@]}"; do
 	kill_user_proc "$p"
 done
@@ -295,24 +295,24 @@ done
 # -------------------------  VERIFY RESULT  ------------------------------------
 # ------------------------------------------------------------------------------
 sleep 2
-echo
-echo '=== RESULT: remaining Apple AI/Siri/Assistant processes ==='
+\echo
+\echo '=== RESULT: remaining Apple AI/Siri/Assistant processes ==='
 COUNT=$(ps aux | grep -iE "intelligence|parsec|generative|callintelligence|knowledge|suggest|siri|assistant|voiceshortcuts" |
 	grep -v grep |
 	grep -ivE "cmiodalassistants|videodriver|cameracaptured|containermanagerd|trustd|secinitd|cfprefsd|distnoted|registerassistantservice|UVCAssistant" |
 	wc -l | tr -d ' ')
-echo "  Remaining: $COUNT"
+\echo "  Remaining: $COUNT"
 if [ "$COUNT" = "0" ]; then
-	echo '  -> CLEAN. Apple Intelligence / Siri / suggestions are stopped.'
+	\echo '  -> CLEAN. Apple Intelligence / Siri / suggestions are stopped.'
 else
-	echo '  -> Some processes remain (may be camera/AV helpers - verify the list above).'
+	\echo '  -> Some processes remain (may be camera/AV helpers - verify the list above).'
 fi
-echo
-echo '=== Disabled launch agents (reboot-persistent) ==='
+\echo
+\echo '=== Disabled launch agents (reboot-persistent) ==='
 sudo -u "$REALUSER" launchctl print-disabled "gui/$REALUID" 2>/dev/null |
 	grep -iE "intelligence|parsec|generative|callintelligence|knowledge|suggest|siri|assistant|voiceshortcuts" |
 	sed 's/^/  /'
-echo
-echo 'Done. State survives a normal reboot. Re-run after any macOS update.'
-echo 'Verify anytime with:  ./disable-apple-ai-assistance.sh verify'
-echo 'Undo with:            ./disable-apple-ai-assistance.sh revert'
+\echo
+\echo 'Done. State survives a normal reboot. Re-run after any macOS update.'
+\echo 'Verify anytime with:  ./disable-apple-ai-assistance.sh verify'
+\echo 'Undo with:            ./disable-apple-ai-assistance.sh revert'

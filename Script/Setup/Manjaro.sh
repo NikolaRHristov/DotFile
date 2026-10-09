@@ -25,7 +25,7 @@ mv ~/rome.json ~/rome.json.bak
 mv ~/rustfmt.toml ~/rustfmt.toml.bak
 mv ~/tailwind.config.js ~/tailwind.config.js.bak
 
-cp "$DOTFILE".gitconfig ~/.gitconfig
+\cp "$DOTFILE".gitconfig ~/.gitconfig
 ln -s "$DOTFILE".aliases ~/.aliases
 ln -s "$DOTFILE".bash_history_shared ~/.bash_history_shared
 ln -s "$DOTFILE".bash_logout ~/.bash_logout

@@ -120,6 +120,10 @@ fi
 # --- Misc ---
 export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
 
+# --- Hermes: disable the stale-write file-state guard (no read-before-write refusals;
+# applies process-wide, subagents included). Revert by removing this line.
+export HERMES_DISABLE_FILE_STATE_GUARD=1
+
 # --- PATH appends (deduplicated, applied last) ---
 # zsh: ~/.zshenv's path array rebuilds PATH and already includes these dirs;
 #      typeset -U collapses the duplicates. bash: these take effect as-is.

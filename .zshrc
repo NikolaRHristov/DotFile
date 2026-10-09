@@ -110,7 +110,7 @@ plugins=(
 if [ -f "$ZSH/oh-my-zsh.sh" ]; then
 	source "$ZSH/oh-my-zsh.sh"
 else
-	echo "Error: Oh My Zsh not found at '$ZSH'"
+	\echo "Error: Oh My Zsh not found at '$ZSH'"
 fi
 
 # ==============================================================================
@@ -219,3 +219,5 @@ nvm() {
 
 # Env vars live in ~/.envsh (single source; also loaded via ~/.zshenv).
 [ -f "$HOME/.envsh" ] && . "$HOME/.envsh"
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/nikola/.local/bin:$PATH"

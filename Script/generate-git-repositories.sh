@@ -7,16 +7,16 @@ USERS=(
 )
 
 for USER in "${USERS[@]}"; do
-    USER=$(echo "$USER" | tr -d '\"')
+    USER=$(\echo "$USER" | tr -d '\"')
     readarray -t REPOS < <(gh api users/"$USER"/repos | jq .[].ssh_url)
     readarray -t ORGS < <(gh api users/"$USER"/orgs | jq .[].login)
 
-    echo "Cloning all for user: $USER"
+    \echo "Cloning all for user: $USER"
     mkdir -p $DEVDIR/"$USER"
     cd $DEVDIR/"$USER" || exit
 
     for REPO in "${REPOS[@]}"; do
-        REPO=$(echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
+        REPO=$(\echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
 
         REPONAME="${REPO/.git/}"
         REPONAME="${REPONAME/ssh:\/\/git@github.com\//}"
@@ -30,15 +30,15 @@ for USER in "${USERS[@]}"; do
     cd - || exit
 
     for ORG in "${ORGS[@]}"; do
-        ORG=$(echo "$ORG" | tr -d '\"')
+        ORG=$(\echo "$ORG" | tr -d '\"')
         readarray -t REPOS < <(gh api orgs/"$ORG"/repos | jq .[].ssh_url)
 
-        echo "Cloning all for org: $ORG"
+        \echo "Cloning all for org: $ORG"
         mkdir -p $DEVDIR/"$ORG"
         cd $DEVDIR/"$ORG" || exit
 
         for REPO in "${REPOS[@]}"; do
-            REPO=$(echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
+            REPO=$(\echo "$REPO" | sed "s/git@github\.com\:/ssh\:\/\/git\@github\.com\//" | tr -d '\"')
 
             REPONAME="${REPO/.git/}"
             REPONAME="${REPONAME/ssh:\/\/git@github.com\//}"

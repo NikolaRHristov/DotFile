@@ -19,21 +19,21 @@ DOTFILE_REPO="$HOME/Developer/Application/NikolaRHristov/DotFile/"
 # Display Usage Instructions
 # ---
 usage() {
-    echo "macOS Dotfile Management Script"
-    echo "---------------------------------"
-    echo "Usage: $0 {install|remove}"
-    echo
-    echo "Commands:"
-    echo "  install    Backs up existing files and creates new symbolic links."
-    echo "  remove     Removes all symbolic links created by this script."
-    echo
+    \echo "macOS Dotfile Management Script"
+    \echo "---------------------------------"
+    \echo "Usage: $0 {install|remove}"
+    \echo
+    \echo "Commands:"
+    \echo "  install    Backs up existing files and creates new symbolic links."
+    \echo "  remove     Removes all symbolic links created by this script."
+    \echo
 }
 
 # ---
 # Remove Existing Dotfile Configurations
 # ---
 remove_dotfiles() {
-    echo "Removing all created dotfile symbolic links and configurations..."
+    \echo "Removing all created dotfile symbolic links and configurations..."
 
     # List of files and directories to remove from the home directory
     targets=(
@@ -61,14 +61,14 @@ remove_dotfiles() {
 
     for target in "${targets[@]}"; do
         if [ -e "$HOME/$target" ] || [ -L "$HOME/$target" ]; then
-            echo "Removing ~/$target"
+            \echo "Removing ~/$target"
             # shellcheck disable=SC2115
             rm -rf "$HOME/$target"
         fi
     done
 
-    echo
-    echo "Cleanup complete."
+    \echo
+    \echo "Cleanup complete."
 }
 
 # ---
@@ -77,17 +77,17 @@ remove_dotfiles() {
 install_dotfiles() {
     # First, ask the user if they want to clean up old files
     read -p "This will overwrite existing configurations. Do you want to remove old files first? (y/n) " -n 1 -r
-    echo # Move to a new line
+    \echo # Move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         remove_dotfiles
     fi
 
-    echo
-    echo "Starting macOS dotfile setup..."
-    echo "Dotfile source: $DOTFILE_REPO"
+    \echo
+    \echo "Starting macOS dotfile setup..."
+    \echo "Dotfile source: $DOTFILE_REPO"
 
     if [ ! -d "$DOTFILE_REPO" ]; then
-        echo "Error: Dotfiles repository not found at $DOTFILE_REPO"
+        \echo "Error: Dotfiles repository not found at $DOTFILE_REPO"
         exit 1
     fi
 
@@ -96,7 +96,7 @@ install_dotfiles() {
     mkdir -p "$HOME/Developer"
 
     # Create symbolic links using -s (symbolic), -f (force/overwrite), -n (no-dereference)
-    echo "Linking shell configurations..."
+    \echo "Linking shell configurations..."
     ln -sfn "$DOTFILE_REPO.aliases" ~/.aliases
     ln -sfn "$DOTFILE_REPO.envsh" ~/.envsh
     ln -sfn "$DOTFILE_REPO.bash_profile" ~/.bash_profile
@@ -107,26 +107,26 @@ install_dotfiles() {
     ln -sfn "$DOTFILE_REPO.functions" ~/.functions
     ln -sfn "$DOTFILE_REPO.bash-preexec.sh" ~/.bash-preexec.sh
 
-    echo "Linking Git configuration..."
+    \echo "Linking Git configuration..."
     # .gitconfig is copied so you can set a machine-specific user/email
-    cp "$DOTFILE_REPO.gitconfig" ~/.gitconfig
+    \cp "$DOTFILE_REPO.gitconfig" ~/.gitconfig
     ln -sfn "$DOTFILE_REPO.gitmessage" ~/.gitmessage
 
-    echo "Linking application configurations..."
+    \echo "Linking application configurations..."
     ln -sfn "$DOTFILE_REPO"prettier.config.mjs ~/prettier.config.mjs
     ln -sfn "$DOTFILE_REPO"rome.json ~/rome.json
     ln -sfn "$DOTFILE_REPO"biome.json ~/biome.json
     ln -sfn "$DOTFILE_REPO"rustfmt.toml ~/rustfmt.toml
     ln -sfn "$DOTFILE_REPO"tailwind.config.js ~/tailwind.config.js
 
-    echo "Linking configuration directories..."
+    \echo "Linking configuration directories..."
     ln -sfn "$DOTFILE_REPO.config" ~/.config
     ln -sfn "$DOTFILE_REPO"Bash ~/Bash
     ln -sfn "$DOTFILE_REPO"PowerShell ~/PowerShell
     ln -sfn "$DOTFILE_REPO"ZSH ~/ZSH
 
-    echo "✅ macOS dotfile setup complete."
-    echo "Please restart your terminal or run 'source ~/.zshrc' or 'source ~/.bash_profile'."
+    \echo "✅ macOS dotfile setup complete."
+    \echo "Please restart your terminal or run 'source ~/.zshrc' or 'source ~/.bash_profile'."
 }
 
 # ---

@@ -15,15 +15,15 @@ ln -s "$DOTFILE".bash_logout ~/.bash_logout
 ln -s "$DOTFILE".bash_history_shared ~/.bash_history_shared
 ln -s "$DOTFILE".zshrc ~/.zshrc
 ln -s "$DOTFILE".bashrc ~/.bashrc
-ln -s "$DOTFILE".bash-preexec.sh ~/.bash-preexec.sh
+ln -s "$DOTFILE".bash-preexec.bash ~/.bash-preexec.sh
 ln -s "$DOTFILE".config ~/.config
 ln -s "$DOTFILE".functions ~/.functions
-cp "$DOTFILE".gitconfig ~/.gitconfig
+\cp "$DOTFILE".gitconfig ~/.gitconfig
 ln -s "$DOTFILE".gitmessage ~/.gitmessage
 ln -s "$DOTFILE"Bash ~/Bash
 ln -s "$DOTFILE"PowerShell ~/PowerShell
 ln -s "$DOTFILE"ZSH ~/ZSH
-cp -rf /mnt/f/MEGA/PROJECTS/Personal/Credential/Key/SSH ~/.ssh
+\cp -rf /mnt/f/MEGA/PROJECTS/Personal/Credential/Key/SSH ~/.ssh
 ln -s "$DOTFILE"prettier.config.js ~/prettier.config.js
 ln -s "$DOTFILE"rome.json ~/rome.json
 ln -s "$DOTFILE"biome.json ~/biome.json
@@ -47,7 +47,7 @@ ln -s "$DOTFILE"tailwind.config.js ~/tailwind.config.js
 # ln -s "$DOTFILE".csharpierrc ~/Developer/.csharpierrc
 # ln -s "$DOTFILE".editorconfig ~/Developer/.editorconfig
 # ln -s "$DOTFILE".jshintrc ~/Developer/.jshintrc
-# cp "$DOTFILE".npmrc ~/Developer/.npmrc
+# \cp "$DOTFILE".npmrc ~/Developer/.npmrc
 # ln -s "$DOTFILE".prettierignore ~/Developer/.prettierignore
 # ln -s "$DOTFILE".stylua.toml ~/Developer/.stylua.toml
 # ln -s "$DOTFILE"jsconfig.json ~/Developer/jsconfig.json

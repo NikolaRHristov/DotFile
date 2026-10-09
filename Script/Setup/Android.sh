@@ -7,24 +7,24 @@ source "$Current/Fn/Remove.sh"
 
 DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
 
-cp "$DOTFILE".aliases ~/.aliases
-cp "$DOTFILE".bash_profile ~/.bash_profile
-cp "$DOTFILE".bash_logout ~/.bash_logout
-cp "$DOTFILE".bash_history_shared ~/.bash_history_shared
-cp "$DOTFILE".zshrc ~/.zshrc
-cp "$DOTFILE".bashrc ~/.bashrc
-cp "$DOTFILE".functions ~/.functions
-cp "$DOTFILE".gitconfig ~/.gitconfig
-cp "$DOTFILE".gitmessage ~/.gitmessage
-cp "$DOTFILE"prettier.config.js ~/prettier.config.js
-cp "$DOTFILE"rome.json ~/rome.json
-cp "$DOTFILE"biome.json ~/biome.json
-cp "$DOTFILE"rustfmt.toml ~/rustfmt.toml
-cp "$DOTFILE"tailwind.config.js ~/tailwind.config.js
-cp "$DOTFILE".config ~/.config
-cp "$DOTFILE"Bash ~/Bash
-cp "$DOTFILE"PowerShell ~/PowerShell
-cp "$DOTFILE"ZSH ~/ZSH
+\cp "$DOTFILE".aliases ~/.aliases
+\cp "$DOTFILE".bash_profile ~/.bash_profile
+\cp "$DOTFILE".bash_logout ~/.bash_logout
+\cp "$DOTFILE".bash_history_shared ~/.bash_history_shared
+\cp "$DOTFILE".zshrc ~/.zshrc
+\cp "$DOTFILE".bashrc ~/.bashrc
+\cp "$DOTFILE".functions ~/.functions
+\cp "$DOTFILE".gitconfig ~/.gitconfig
+\cp "$DOTFILE".gitmessage ~/.gitmessage
+\cp "$DOTFILE"prettier.config.js ~/prettier.config.js
+\cp "$DOTFILE"rome.json ~/rome.json
+\cp "$DOTFILE"biome.json ~/biome.json
+\cp "$DOTFILE"rustfmt.toml ~/rustfmt.toml
+\cp "$DOTFILE"tailwind.config.js ~/tailwind.config.js
+\cp "$DOTFILE".config ~/.config
+\cp "$DOTFILE"Bash ~/Bash
+\cp "$DOTFILE"PowerShell ~/PowerShell
+\cp "$DOTFILE"ZSH ~/ZSH
 
 # rm ~/Developer/.clang-format
 # rm ~/Developer/.csharpierrc
