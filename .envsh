@@ -124,6 +124,18 @@ export NODE_EXTRA_CA_CERTS=/Library/Keychains/System.keychain
 # applies process-wide, subagents included). Revert by removing this line.
 export HERMES_DISABLE_FILE_STATE_GUARD=1
 
+# --- DeepSeek Harness desktop DEV launcher ---
+# Dev-app data lives in ~/.dsh-dev so `pnpm run clean` never wipes it. The env
+# is scoped to the command only; the packaged DeepSeek Harness.app keeps ~/.dsh.
+dshdev() {
+  DSH_HOME="$HOME/.dsh-dev" DSH_DESKTOP_USER_DATA_DIR="$HOME/.dsh-dev/electron-user-data" \
+    pnpm run dev:desktop "$@"
+}
+dshdev-start() {
+  DSH_HOME="$HOME/.dsh-dev" DSH_DESKTOP_USER_DATA_DIR="$HOME/.dsh-dev/electron-user-data" \
+    pnpm run start:desktop "$@"
+}
+
 # --- PATH appends (deduplicated, applied last) ---
 # zsh: ~/.zshenv's path array rebuilds PATH and already includes these dirs;
 #      typeset -U collapses the duplicates. bash: these take effect as-is.
