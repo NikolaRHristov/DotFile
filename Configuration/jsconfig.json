@@ -1,29 +1,48 @@
 {
 	"$schema": "https://json.schemastore.org/jsconfig",
+
 	"compilerOptions": {
 		"baseUrl": "./",
-        "ignoreDeprecations": "6.0",
+
+		"ignoreDeprecations": "6.0",
+
 		"emitDeclarationOnly": false,
+
 		"noEmit": true,
+
 		"outDir": "Target",
+
 		"rootDir": "."
 	},
+
 	"exclude": [
 		"**/Dependency/**",
+
 		"**/Documentation/**",
+
 		"**/node_modules/**",
+
 		"**/.git/**",
+
 		"**/samples/**",
+
 		"**/Target/**"
 	],
+
 	"extends": "@playform/build/jsconfig",
+
 	"watchOptions": {
 		"excludeDirectories": [
 			"**/Dependency/**",
+
 			"**/Documentation/**",
+
 			"**/node_modules/**",
+
 			"**/.git/**",
+
 			"**/samples/**",
+
 			"**/Target/**"
 		]
 	}
